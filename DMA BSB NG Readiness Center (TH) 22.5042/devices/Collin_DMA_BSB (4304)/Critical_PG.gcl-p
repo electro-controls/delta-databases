@@ -1,0 +1,37 @@
+'Critical_PG.Write_Priority' = 4
+
+ If ('DAT' < 38 And (Not 'FreezeMode')) OnFor 1M Then
+  'FreezeMode' = On
+End If
+
+If PowerUp Then
+  'FreezeMode' = Off
+End If
+
+If 'Mode' Changed Then
+  'FreezeMode' = Off
+End If
+
+If 'FreezeMode' OnFor 8H Then
+  'FreezeMode' = Off
+End If
+
+
+
+ If 'FreezeMode' Or 'FreezeStat' Or 'Smoke' Or 'SupplyHiLimit' Then
+      'SFEnable' = Off
+      'ReliefFanEnable' = Off
+      'SFSpeed' = 0
+      'ReliefFanSpeed' = 0
+      'HWV' = 100
+      'EconDamper' = 0
+      'CompCapacity' = 0
+   Else
+      Relinquish 'SFEnable'
+      Relinquish 'ReliefFanEnable'
+      Relinquish 'SFSpeed'
+      Relinquish 'ReliefFanSpeed'
+      Relinquish 'HWV'
+      Relinquish 'EconDamper'
+      Relinquish 'CompCapacity'
+End If
