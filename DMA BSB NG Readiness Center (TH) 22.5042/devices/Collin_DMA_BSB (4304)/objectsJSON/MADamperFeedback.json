@@ -1,8 +1,8 @@
 {
-  "displayName": "DuctStatic",
+  "displayName": "MADamperFeedback",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,4"
+    "value": "analog-input,15"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DuctStatic"
+    "value": "MADamperFeedback"
   },
   "description": {
     "$base": "String",
-    "value": "29Aug2022 AV_ checked okay vs display on sensor"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "inWC"
+    "value": "A"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,40"
+    "value": "aic,8"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "DuctStatic_inH2O_AIC"
+    "value": "Current 0-5V 0-60 A AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "333"
+    "value": "242"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,15 +74,15 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "5"
+    "value": "60"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.001221"
+    "value": "0.014652"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "0.1"
+    "value": "1"
   },
   "ad-filter": {
     "$base": "Unsigned",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "5993157"
+      "value": "12055703"
     }
   },
   "ad-value": {

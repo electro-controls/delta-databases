@@ -1,8 +1,8 @@
 {
-  "displayName": "ReliefFanCurrent",
+  "displayName": "BSP",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,7"
+    "value": "analog-input,11"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReliefFanCurrent"
+    "value": "BSP"
   },
   "description": {
     "$base": "String",
-    "value": "29Aug2022 AV_ checked okay via amp probe. this is an ECM motor and draws .3A when off"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "-0.25"
   },
   "last-value": {
     "$base": "Real",
-    "value": 0
+    "value": "-0.25"
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "A"
+    "value": "inWC"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,26"
+    "value": "aic,49"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,23 +62,23 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Current 0-5V 0-20 A AIC"
+    "value": "SpaceStatic_inH2O_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "346"
+    "value": "242"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": 0
+    "value": "-0.25"
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "20"
+    "value": "0.25"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.00488401"
+    "value": "0.0001221"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "5993163"
+      "value": "12055705"
     }
   },
   "ad-value": {
@@ -109,7 +109,7 @@
   },
   "decimal-places": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "external-control": {
     "$base": "Boolean",

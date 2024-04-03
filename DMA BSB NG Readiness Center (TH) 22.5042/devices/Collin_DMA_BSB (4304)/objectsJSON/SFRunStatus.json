@@ -1,5 +1,5 @@
 {
-  "displayName": "SF_Current",
+  "displayName": "SFRunStatus",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-input,6"
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SF_Current"
+    "value": "SFRunStatus"
   },
   "description": {
     "$base": "String",
-    "value": "29Aug2022 AV_ checked okay vs drive display. this is a feed back from drive not a ct"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,67"
+    "value": "aic,66"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,7 +54,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "shorted-loop"
+    "value": "not-available"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "SF_CurrentFB_0-12.5A"
+    "value": "Current 0-5V 0-30 A AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "333"
+    "value": "242"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,11 +74,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "12.5"
+    "value": "30"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.00381563"
+    "value": "0.00732601"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "5993157"
+      "value": "12055705"
     }
   },
   "ad-value": {

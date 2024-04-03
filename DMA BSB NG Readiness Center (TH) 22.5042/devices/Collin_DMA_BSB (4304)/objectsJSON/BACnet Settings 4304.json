@@ -106,7 +106,7 @@
     "$base": "Sequence",
     "totalSent": {
       "$base": "Unsigned",
-      "value": "1086443"
+      "value": "2204760"
     },
     "sentByApp": {
       "$base": "Unsigned",
@@ -122,7 +122,7 @@
     },
     "totalRcvd": {
       "$base": "Unsigned",
-      "value": "342651"
+      "value": "743128"
     },
     "rcvdByApp": {
       "$base": "Unsigned",
@@ -211,7 +211,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "11819610"
+          "value": "23889514"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -219,15 +219,15 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "122441142"
+          "value": "243824143"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
-          "value": "76"
+          "value": "156"
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": "11"
+          "value": "22"
         }
       },
       "filterFlags": {
@@ -273,7 +273,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "32421178"
+          "value": "65208639"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -281,15 +281,15 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "53899255"
+          "value": "108421564"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
-          "value": "22"
+          "value": "45"
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": 0
+          "value": "1"
         }
       },
       "filterFlags": {
@@ -382,7 +382,7 @@
   },
   "free-que": {
     "$base": "Unsigned",
-    "value": "30"
+    "value": "35"
   },
   "short-free-que": {
     "$base": "Unsigned",
@@ -390,7 +390,7 @@
   },
   "transmit-1-que": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": 0
   },
   "transmit-2-que": {
     "$base": "Unsigned",

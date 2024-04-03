@@ -28,7 +28,7 @@ DoEvery 3S
     AVGResult = SUMArray / 60
 End Do
 
-TargetValue = 'BldgPressure' // Insert the object you want to reference here
+TargetValue = 'BSP' // Insert the object you want to reference here
 'EffBldgStaticPress' = AVGResult // Insert the AV you want to be the AVG result here
 
 //end of building static pressure page
