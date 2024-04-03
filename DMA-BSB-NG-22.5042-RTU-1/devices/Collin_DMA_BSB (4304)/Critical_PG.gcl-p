@@ -1,0 +1,37 @@
+'Critical_PG.Write_Priority' = 4
+
+ If ('DAT' < 38 And (Not 'FreezeMode')) OnFor 1M Then
+  'FreezeMode' = On
+End If
+
+If PowerUp Then
+  'FreezeMode' = Off
+End If
+
+If 'Mode' Changed Then
+  'FreezeMode' = Off
+End If
+
+If 'FreezeMode' OnFor 8H Then
+  'FreezeMode' = Off
+End If
+
+
+
+ If 'FreezeMode' Or 'FreezeStat' Or 'SDSupplyStatus' Or 'SDReturnStatus' Or 'DuctHiLimitStatus' Then
+      'SFVFDEnable' = Off
+      'RFVFDEnable' = Off
+      'SFVFDSpeedRef' = 0
+      'RFVFDSpeedRef' = 0
+      'HWV' = 100
+      'EconDamper' = 0
+      'DXCapacity' = 0
+   Else
+      Relinquish 'SFVFDEnable'
+      Relinquish 'RFVFDEnable'
+      Relinquish 'SFVFDSpeedRef'
+      Relinquish 'RFVFDSpeedRef'
+      Relinquish 'HWV'
+      Relinquish 'EconDamper'
+      Relinquish 'DXCapacity'
+End If
