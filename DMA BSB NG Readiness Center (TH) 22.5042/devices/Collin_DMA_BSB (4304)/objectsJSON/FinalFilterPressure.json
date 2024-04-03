@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "-0.25"
+    "value": 0
   },
   "last-value": {
     "$base": "Real",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,49"
+    "value": "aic,40"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,23 +62,23 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "SpaceStatic_inH2O_AIC"
+    "value": "DuctStatic_inH2O_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "242"
+    "value": "270"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": "-0.25"
+    "value": 0
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "0.25"
+    "value": "5"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.0001221"
+    "value": "0.001221"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "12055705"
+      "value": "12068730"
     }
   },
   "ad-value": {
