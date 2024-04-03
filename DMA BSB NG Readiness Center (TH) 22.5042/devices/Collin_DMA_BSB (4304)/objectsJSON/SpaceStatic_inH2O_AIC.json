@@ -26,11 +26,11 @@
   },
   "max-value": {
     "$base": "Real",
-    "value": "0.25"
+    "value": "1"
   },
   "min-value": {
     "$base": "Real",
-    "value": "-0.25"
+    "value": "-1"
   },
   "scale-range": {
     "1": {
@@ -41,7 +41,7 @@
       },
       "value": {
         "$base": "Real",
-        "value": "-0.25"
+        "value": "-1"
       },
       "adValue": {
         "$base": "Unsigned",
@@ -56,7 +56,22 @@
       },
       "value": {
         "$base": "Real",
-        "value": "0.25"
+        "value": "1"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "2.5"
+      },
+      "value": {
+        "$base": "Real",
+        "value": 0
       },
       "adValue": {
         "$base": "Unsigned",
