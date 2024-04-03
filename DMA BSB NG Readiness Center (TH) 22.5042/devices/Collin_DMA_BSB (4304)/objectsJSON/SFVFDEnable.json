@@ -1,8 +1,8 @@
 {
-  "displayName": "ReliefFanEnable",
+  "displayName": "SFVFDEnable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-output,2"
+    "value": "binary-output,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReliefFanEnable"
+    "value": "SFVFDEnable"
   },
   "description": {
     "$base": "String",
-    "value": "29Aug2022 AV_ checked okay via visual. enable will not run until sf enable.  this is an ECM motor enable speed unknown"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-02T17:58:57.800000-07:00"
+    "value": "2000-01-15T09:31:37.000000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "78"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,17 +83,17 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-02T17:58:57.800000-07:00"
+      "value": "2000-01-15T09:31:37.000000-07:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-02T17:58:09.70"
+      "value": "2000-01-15T09:30:36.80"
     },
     "$base": "Array"
   },
   "minimum-off-time": {
     "$base": "Unsigned",
-    "value": "60"
+    "value": "300"
   },
   "minimum-on-time": {
     "$base": "Unsigned",
@@ -290,7 +290,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-15T10:53:10.50"
+      "value": "2000-01-15T11:45:57.50"
     },
     "5": {
       "$base": "DateTime",
@@ -314,7 +314,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-14T17:25:55.60"
+      "value": "2000-01-15T11:45:57.90"
     },
     "11": {
       "$base": "DateTime",
@@ -338,7 +338,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-01-02T15:09:22.60"
+      "value": "2000-01-02T15:09:13.90"
     },
     "$base": "Array"
   },

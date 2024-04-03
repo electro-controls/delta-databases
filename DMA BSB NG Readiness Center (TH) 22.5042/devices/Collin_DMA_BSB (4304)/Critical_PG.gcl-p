@@ -19,16 +19,16 @@ End If
 
 
  If 'FreezeMode' Or 'FreezeStat' Or 'SDSupplyStatus' Or 'SDReturnStatus' Or 'DuctHiLimitStatus' Then
-      'SFEnable' = Off
-      'ReliefFanEnable' = Off
+      'SFVFDEnable' = Off
+      'RFVFDEnable' = Off
       'SFSpeed' = 0
       'ReliefFanSpeed' = 0
       'HWV' = 100
       'EconDamper' = 0
       'CompCapacity' = 0
    Else
-      Relinquish 'SFEnable'
-      Relinquish 'ReliefFanEnable'
+      Relinquish 'SFVFDEnable'
+      Relinquish 'RFVFDEnable'
       Relinquish 'SFSpeed'
       Relinquish 'ReliefFanSpeed'
       Relinquish 'HWV'
