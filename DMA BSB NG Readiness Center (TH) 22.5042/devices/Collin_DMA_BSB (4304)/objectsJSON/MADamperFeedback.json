@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "A"
+    "value": "%"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,8"
+    "value": "aic,101"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Current 0-5V 0-60 A AIC"
+    "value": "DamperFeedback_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "242"
+    "value": "244"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,11 +74,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "60"
+    "value": "100"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.014652"
+    "value": "0.02442"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "12055703"
+      "value": "12066236"
     }
   },
   "ad-value": {
