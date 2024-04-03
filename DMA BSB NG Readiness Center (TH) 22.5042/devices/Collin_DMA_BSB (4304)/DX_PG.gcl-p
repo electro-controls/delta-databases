@@ -15,7 +15,7 @@ End If
 //DX air Flow Interlocks
 
 If 'RunStatusInt' Then
-    'DX_FlowInt' = Switch ( 'DX_FlowInt', 'DuctStatic', ('DuctStatic_Sp' * 0.2), ('DuctStatic_Sp' * 0.1))
+    'DX_FlowInt' = Switch ( 'DX_FlowInt', 'DuctStaticPressure', ('DuctStatic_Sp' * 0.2), ('DuctStatic_Sp' * 0.1))
   Else
     'DX_FlowInt' = Off
 End If

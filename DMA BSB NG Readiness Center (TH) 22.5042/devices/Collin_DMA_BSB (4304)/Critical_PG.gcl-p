@@ -18,7 +18,7 @@ End If
 
 
 
- If 'FreezeMode' Or 'FreezeStat' Or 'Smoke' Or 'SupplyHiLimit' Then
+ If 'FreezeMode' Or 'FreezeStat' Or 'SDSupplyStatus' Or 'SDReturnStatus' Or 'DuctHiLimitStatus' Then
       'SFEnable' = Off
       'ReliefFanEnable' = Off
       'SFSpeed' = 0

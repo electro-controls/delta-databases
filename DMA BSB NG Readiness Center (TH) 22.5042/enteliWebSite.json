@@ -65,51 +65,6 @@
     {
       "action": "update",
       "device": 4304,
-      "objectId": "pg,9",
-      "objectName": "Critical_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/DMA BSB NG Readiness Center (TH) 22.5042/devices/Collin_DMA_BSB (4304)/Critical_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/2/2024, 3:30:01 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
-      "objectId": "pg,8",
-      "objectName": "DX_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/DMA BSB NG Readiness Center (TH) 22.5042/devices/Collin_DMA_BSB (4304)/DX_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/2/2024, 4:06:43 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
-      "objectId": "pg,3",
-      "objectName": "Fan_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/DMA BSB NG Readiness Center (TH) 22.5042/devices/Collin_DMA_BSB (4304)/Fan_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/3/2024, 10:06:25 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
       "objectId": "pg,10",
       "objectName": "BldgStaticPress_PG",
       "siteName": "Bench",
@@ -135,6 +90,51 @@
         "scheme": "file"
       },
       "date": "4/3/2024, 10:45:46 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,9",
+      "objectName": "Critical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/DMA BSB NG Readiness Center (TH) 22.5042/devices/Collin_DMA_BSB (4304)/Critical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/3/2024, 10:48:58 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,3",
+      "objectName": "Fan_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/DMA BSB NG Readiness Center (TH) 22.5042/devices/Collin_DMA_BSB (4304)/Fan_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/3/2024, 10:50:40 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,8",
+      "objectName": "DX_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/DMA BSB NG Readiness Center (TH) 22.5042/devices/Collin_DMA_BSB (4304)/DX_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/3/2024, 10:51:19 AM",
       "templateTriggered": false
     }
   ],

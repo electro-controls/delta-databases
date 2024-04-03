@@ -9,7 +9,7 @@ End If
 
 //Running status interlock sequence. Used by
 //other routines (economizer, VFD speed, etc..)
-'SFStatus' = Switch ( 'SFStatus', 'SF_Current', 1.5, 0.25)
+'SFStatus' = Switch ( 'SFStatus', 'SFRunStatus', 1.5, 0.25)
 'ReliefFanStatus' = Switch ( 'ReliefFanStatus', 'RF_EffCurrent', 0.05, 0.02)
 
 If 'RunStatusInt' Then
@@ -21,7 +21,7 @@ Else
 End If
 
 If 'ReliefFanEnable' Then
- 'RF_EffCurrent' = 'ReliefFanCurrent'
+ 'RF_EffCurrent' = 'RFRunStatus'
 Else
  'RF_EffCurrent' = 0
 End If
