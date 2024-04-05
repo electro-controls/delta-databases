@@ -50,7 +50,7 @@
     },
     "update-interval": {
         "$base": "Unsigned",
-        "value": "346"
+        "value": "261"
     },
     "algorithm": {
         "$base": "Enumerated",
@@ -78,7 +78,7 @@
         "type": "0-BACnetObjectPropertyReference",
         "objectIdentifier": {
             "$base": "ObjectIdentifier",
-            "value": "analog-input,15"
+            "value": "analog-input,101"
         },
         "propertyIdentifier": {
             "$base": "Enumerated",
@@ -88,7 +88,7 @@
     },
     "controlled-variable-value": {
         "$base": "Real",
-        "value": "5084.42"
+        "value": 0
     },
     "controlled-variable-units": {
         "$base": "Enumerated",
@@ -103,7 +103,7 @@
         "type": "0-BACnetObjectPropertyReference",
         "objectIdentifier": {
             "$base": "ObjectIdentifier",
-            "value": "analog-value,11041"
+            "value": "analog-value,21022"
         },
         "propertyIdentifier": {
             "$base": "Enumerated",
@@ -126,7 +126,7 @@
             "type": "0-BACnetObjectPropertyReference",
             "objectIdentifier": {
                 "$base": "ObjectIdentifier",
-                "value": "analog-value,11041"
+                "value": "analog-value,21022"
             },
             "propertyIdentifier": {
                 "$base": "Enumerated",

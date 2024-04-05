@@ -23,7 +23,7 @@ MinOALimit = Scale ('Eff_OAT', 0, 0, 30, 55, 100)
 
 If 'RunStatusInt' And ('Mode' = 1 Or 'Mode' = 4) Then //Occ/UnOcc Cooling
     'EconDamper' = (Max ('EconCalcMinOA', 'EconClgPct')) * ('EconRampPct' * 0.01) * ('MATLimit_CO' * 0.01)
-    'EconCalcMinOA' = Max ('EconMinOA_Sp', 'ZoneCO2_CO')
+    'EconCalcMinOA' = Max ('OutdoorAirflow_CO', 'ZoneCO2_CO')
 Else
     'EconDamper' = 0
     'EconCalcMinOA' = 0
