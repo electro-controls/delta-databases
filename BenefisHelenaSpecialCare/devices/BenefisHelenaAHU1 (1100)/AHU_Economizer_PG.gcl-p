@@ -1,0 +1,53 @@
+//Economizer sequence
+'EconRampDly' = Scale ('Eff_OAT', 0, 20, 1200, 60, 60)
+'MATLimit' = 'MATLimit_CO'
+
+'FreeCooling' = Switch ( 'FreeCooling', 'Eff_OAT', 'RAT', 'RAT' + 1)
+
+If ('Mode' = 1 Or 'Mode' = 4) And 'FreeCooling' Then //Occ/UnOcc Cooling
+    'EconClgPct' = Scale ('DATClg_CO', 0, 0, 0, 50, 100)
+  Else
+    'EconClgPct' = 0
+End If
+
+//Outside Airflow Control
+'Loc_OutdoorAirflowSp' = 'SFDv' * 0.33 //Per Mechanical Schedules
+
+If 'Rem_OutdoorAirflowSp' < 0 Then
+  'Eff_OutdoorAirflowSp' = 'Loc_OutdoorAirflowSp'
+  Else
+  'Eff_OutdoorAirflowSp' = 'Rem_OutdoorAirflowSp'
+End If
+
+Variable MinOAPct
+
+If ('Mode' = 1 Or 'Mode' = 4) Then //occupied or Bypass
+  MinOAPct = Scale (Max ('OutdoorAirflow_CO', 'CO11200'), 0, 0, 'EconMinOA_Sp', 100, 100)
+Else
+  MinOAPct = 0
+End If
+
+If 'RunStatusInt' And ('Mode' = 1 Or 'Mode' = 4) And 'AHUOutsideAirEnable' Then //Occ/UnOcc Cooling
+    'EconDamper' = (Scale ('EconClgPct', 0, 0, MinOAPct, 100, 'EconRampPct')) * ('MATLimit' * 0.01)
+Else
+    'EconDamper' = 0
+End If
+
+Variable MATInt
+
+If ('MAT' < ('MATLimit_Sp' - 5)) OnFor 30S Then
+    MATInt = Off
+  Else
+    MATInt = On
+End If
+
+If 'RunStatusInt' And MATInt And (('Mode' = 1) Or ('Mode' = 4)) Then //Occ/UnOcc Cooling
+   DoEvery 10S
+   'EconRampPct' = Min (100, 'EconRampPct' + (100 / 'EconRampDly' * 10))
+   End Do
+  Else
+   'EconRampPct' = 0
+End If
+
+//CO2 Alarm
+'BV11201' = Switch ( 'BV11201', 'OADameprFeedBack', 'RACO2Alarm_Sp' + 10, 'RACO2Alarm_Sp' - 10)

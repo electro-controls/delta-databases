@@ -1,0 +1,79 @@
+{
+  "displayName": "MATLimit_Sp",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,11003"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "MATLimit_Sp"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "40"
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": "50"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "°F"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "device,999"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2024-04-05T09:42:52.400000-06:00"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

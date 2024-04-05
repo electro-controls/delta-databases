@@ -1,0 +1,41 @@
+'PG9.Write_Priority' = 4
+
+If ('Freezestat_AR' Or ('DAT' < 40)) OnFor 10S Then //Auto Reset Freezestat
+    'SoftFreeze' = On
+End If
+
+IfOnce PowerUp Then
+  'SoftFreeze' = Off
+End If
+
+IfOnce 'Mode' Changed Then
+  'SoftFreeze' = Off
+End If
+
+If 'SoftFreeze' OnFor 4:H Then
+  'SoftFreeze' = Off
+End If
+
+If 'SoftFreeze' Or 'HiStatic' Or 'LowStatic' Or 'Smoke' Or 'Freezestat_AR' Then
+      'EconDamper' = 0
+      'EADamper' = 0
+      'SF_Wall_Enable' = Off
+      'RF_Wall_Enable' = Off
+      'SF_Wall_Speed' = 0
+      'RF_Wall_Speed' = 0
+   Else
+      Relinquish 'EconDamper'
+      Relinquish 'EADamper'
+      Relinquish 'SF_Wall_Enable'
+      Relinquish 'RF_Wall_Enable'
+      Relinquish 'SF_Wall_Speed'
+      Relinquish 'RF_Wall_Speed'
+End If
+
+If 'SoftFreeze' Or 'Freezestat_AR' Then
+      'HWV' = 100
+      'CWV' = 0
+   Else
+      Relinquish 'HWV'
+      Relinquish 'CWV'
+End If
