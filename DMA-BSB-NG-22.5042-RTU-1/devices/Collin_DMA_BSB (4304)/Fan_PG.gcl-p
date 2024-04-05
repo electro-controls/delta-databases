@@ -65,18 +65,4 @@ If 'RFVFDEnable' Then
 Else
   'RFVFDSpeedRef' = 0
 End If
-
-//Variable rfset
-//rfset = Min (84, (BldgPressure_CO * SFVFDSpeedRef * 0.01))
-
- //EF enable
- If 'EF_Enable' Then
-  'EF1_Speed' = 'EF_SpeedSp'
- Else
- 'EF1_Speed' = 0
- End If
-
- 'EF_Status' = Switch ( 'EF_Status', 'EF1_Current', 0.3, 0.15)
-
-
 //End of Program

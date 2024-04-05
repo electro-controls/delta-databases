@@ -95,21 +95,6 @@
     {
       "action": "update",
       "device": 4304,
-      "objectId": "pg,3",
-      "objectName": "Fan_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/DMA BSB NG Readiness Center (TH) 22.5042/devices/Collin_DMA_BSB (4304)/Fan_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/3/2024, 11:42:52 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
       "objectId": "pg,8",
       "objectName": "DX_PG",
       "siteName": "Bench",
@@ -164,7 +149,37 @@
         "path": "/c:/Development/electro-controls/delta-databases/DMA-BSB-NG-22.5042-RTU-1/devices/Collin_DMA_BSB (4304)/Economizer_PG.gcl-p",
         "scheme": "file"
       },
-      "date": "4/5/2024, 3:29:31 PM",
+      "date": "4/5/2024, 3:49:47 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,5",
+      "objectName": "HWV_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/DMA-BSB-NG-22.5042-RTU-1/devices/Collin_DMA_BSB (4304)/HWV_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/5/2024, 3:57:26 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,3",
+      "objectName": "Fan_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/DMA-BSB-NG-22.5042-RTU-1/devices/Collin_DMA_BSB (4304)/Fan_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/5/2024, 4:04:10 PM",
       "templateTriggered": false
     }
   ],
@@ -490,12 +505,6 @@
           "lastUpdate": "2024-04-03T16:38:19.579Z"
         },
         {
-          "id": "av,21050",
-          "name": "EF_SpeedSp",
-          "fileName": "EF_SpeedSp",
-          "lastUpdate": "2024-04-03T16:38:19.579Z"
-        },
-        {
           "id": "av,21060",
           "name": "DATClg_Sp",
           "fileName": "DATClg_Sp",
@@ -583,7 +592,7 @@
           "id": "bv,21021",
           "name": "ItsBelowFrz",
           "fileName": "ItsBelowFrz",
-          "lastUpdate": "2024-04-03T16:38:19.579Z"
+          "lastUpdate": "2024-04-05T21:41:17.558Z"
         },
         {
           "id": "bv,21032",
@@ -604,21 +613,9 @@
           "lastUpdate": "2024-04-03T16:38:19.579Z"
         },
         {
-          "id": "bv,21050",
-          "name": "EF_Status",
-          "fileName": "EF_Status",
-          "lastUpdate": "2024-04-03T16:38:19.579Z"
-        },
-        {
           "id": "bv,21060",
           "name": "DATMode",
           "fileName": "DATMode",
-          "lastUpdate": "2024-04-03T16:38:19.579Z"
-        },
-        {
-          "id": "bv,21061",
-          "name": "EF_Enable",
-          "fileName": "EF_Enable",
           "lastUpdate": "2024-04-03T16:38:19.579Z"
         },
         {
@@ -980,6 +977,12 @@
           "name": "OutdoorAirflow_CO",
           "fileName": "OutdoorAirflow_CO",
           "lastUpdate": "2024-04-05T21:27:59.353Z"
+        },
+        {
+          "id": "bv,21035",
+          "name": "OA_Damper_Mismatch",
+          "fileName": "OA_Damper_Mismatch",
+          "lastUpdate": "2024-04-05T21:43:30.729Z"
         }
       ]
     }
