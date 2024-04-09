@@ -50,3 +50,12 @@ If ((Abs('EconDamper' - 'OADamperFeedback') > 10) OnFor 5M) Then
   Else
     'OA_Damper_Mismatch' = Off
 End If
+
+//Relief Damper Code
+If 'EffBldgStaticPress' > ('BldgPressureSp' + 0.005) Then
+   DoEvery 10S
+    'EADamper' = 'EconDamper' * ('EconRampPct' * 0.01)
+   End Do
+Else
+  'EADamper' = Off
+End If

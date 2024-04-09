@@ -1,10 +1,12 @@
 //Fan Program
 
 //Fan start/stop sequence
-If 'Mode' <> 5 Then //Off
-    'SFVFDEnable' = On
-  Else
-    'SFVFDEnable' = Off
+If ('Mode' <> 5) And ('Mode' <> 4) Then
+  'SFVFDEnable' = On
+  'RFVFDEnable' = On
+Else
+  'SFVFDEnable' = Off
+  'RFVFDEnable' = Off
 End If
 
 //Running status interlock sequence. Used by
@@ -26,18 +28,16 @@ Else
  'RF_EffCurrent' = 0
 End If
 
-
-
 If 'SFVFDEnable' And 'SFStatus' Then
     'RunStatusInt' = On
   Else
     'RunStatusInt' = Off
 End If
 
-
-//VFD speed sequence. Insures smooth start up via
+//VFD speed sequence. Ensures smooth start up via
 //the ramp routine.
 'SFVFDSpeedRef' = ('VFDRampResult' * 0.01) * 'DuctStatic_CO'
+'RFVFDSpeedRef' = ('SFVFDSpeedRef' - 'SFRFSpeedOffset')
 
 If 'RunStatusInt' Then
   DoEvery 10S
@@ -51,18 +51,4 @@ If PowerUp Then
 'VFDRampResult' = 0
 End If
 
-//Balancer supplied a max Relief of 84%
-If 'EffBldgStaticPress' > ('BldgPressureSp' + 0.005) Then
-  'RFVFDEnable' = Switch ( 'RFVFDEnable', 'EconDamper', 30, 28)
-ElseIf  'EffBldgStaticPress' <= 'BldgPressureSp' Then
-  'RFVFDEnable' = Off
-End If
-
-
-If 'RFVFDEnable' Then
-  //RFVFDSpeedRef = Scale (EconDamper, 0, 30, 10, 100, rfset)
-  'RFVFDSpeedRef' = Min ('BldgPressure_CO', 84)
-Else
-  'RFVFDSpeedRef' = 0
-End If
-//End of Program
+//End of Program 

@@ -1,5 +1,5 @@
 {
-  "displayName": "ReliefDamper_Pct_AOC",
+  "displayName": "EADamper_Pct_AOC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aoc,14"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReliefDamper_Pct_AOC"
+    "value": "EADamper_Pct_AOC"
   },
   "description": {
     "$base": "String",

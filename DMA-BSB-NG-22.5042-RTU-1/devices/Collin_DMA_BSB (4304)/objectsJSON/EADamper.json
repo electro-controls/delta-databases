@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "ReliefDamper_Pct_AOC"
+    "value": "EADamper_Pct_AOC"
   },
   "min-pres-value": {
     "$base": "Real",
