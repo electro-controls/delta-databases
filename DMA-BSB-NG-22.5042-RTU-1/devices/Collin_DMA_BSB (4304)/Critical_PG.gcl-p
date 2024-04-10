@@ -1,16 +1,22 @@
 'Critical_PG.Write_Priority' = 4
 
-If ('DAT' < 38 And (Not 'FreezeMode')) OnFor 1M Then
-  'FreezeMode' = On
-Else // todo ask someone if this is ok.
-  'FreezeMode' = Off
+If PowerUp Then
+  'FreezeStatLatch' = On
 End If
 
-If PowerUp Or 'Mode' Changed Or 'FreezeMode' OnFor 8H Then
-  'FreezeMode' = Off
+If 'Mode' Changed Then
+  'FreezeStatLatch' = On
 End If
 
- If 'FreezeMode' Or 'FreezeStat' Or 'SDSupplyStatus' Or 'SDReturnStatus' Or 'DuctHiLimitStatus' Then
+If ('FreezeStat' OnFor 8:H) Then
+  'FreezeStatLatch' = On
+End If
+
+IfOnce ('FreezeStatLatch') OnFor 30:S Then
+  'FreezeStatLatch' = Off
+End If
+
+ If 'FreezeStat' Or 'SDSupplyStatus' Or 'SDReturnStatus' Or 'DuctHiLimitStatus' Then
       'SFVFDEnable' = Off
       'RFVFDEnable' = Off
       'SFVFDSpeedRef' = 0
@@ -18,6 +24,7 @@ End If
       'HWV' = 100
       'EconDamper' = 0
       'DXCapacity' = 0
+      'EADamper' = 0
    Else
       Relinquish 'SFVFDEnable'
       Relinquish 'RFVFDEnable'
@@ -26,4 +33,5 @@ End If
       Relinquish 'HWV'
       Relinquish 'EconDamper'
       Relinquish 'DXCapacity'
+      Relinquish 'EADamper'
 End If

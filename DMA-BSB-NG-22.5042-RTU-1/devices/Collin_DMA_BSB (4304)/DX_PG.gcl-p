@@ -1,12 +1,3 @@
-Variable DATClgDemand
-If ('DATClg_CO' < 1) OnFor 10M Then
-    DATClgDemand = Off
-End If
-
-If ('DATClg_CO' > 5) And ('DAT' > 'DATClg_Sp') Then
-    DATClgDemand = On
-End If
-
 //DX mechanical cooling sequence
 
 //Outdoor Air Interlocks

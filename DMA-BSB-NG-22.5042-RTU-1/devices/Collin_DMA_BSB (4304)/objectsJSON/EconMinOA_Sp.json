@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": 1000
   },
   "gcl-value": {
     "$base": "Real",
-    "value": 0
+    "value": 1000
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "CFM"
   },
   "event-state": {
     "$base": "Enumerated",

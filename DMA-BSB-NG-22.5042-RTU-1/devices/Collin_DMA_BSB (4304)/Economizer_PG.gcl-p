@@ -6,7 +6,7 @@
 
 //Determines if free cooling can be achived by comparing
 // OAT and RAT
-'FreeCooling' = Switch ( 'FreeCooling', 'Eff_OAT', 'Rem_Zt' - 1, 'Rem_Zt' + 1)
+'FreeCooling' = Switch ( 'FreeCooling', 'Eff_OAT', 'RAT' - 1, 'RAT' + 1)
 
 Variable Itscold
 Itscold = Switch ( Itscold, 'Eff_OAT', 35, 40)
@@ -51,11 +51,5 @@ If ((Abs('EconDamper' - 'OADamperFeedback') > 10) OnFor 5M) Then
     'OA_Damper_Mismatch' = Off
 End If
 
-//Relief Damper Code
-If 'EffBldgStaticPress' > ('BldgPressureSp' + 0.005) Then
-   DoEvery 10S
-    'EADamper' = 'EconDamper' * ('EconRampPct' * 0.01)
-   End Do
-Else
-  'EADamper' = Off
-End If
+// relief damper
+'EADamper' = Scale('EconDamper', 28, 0, 100, max(100 * 'BldgPressure_CO', 30))

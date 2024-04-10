@@ -95,21 +95,6 @@
     {
       "action": "update",
       "device": 4304,
-      "objectId": "pg,8",
-      "objectName": "DX_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/DMA BSB NG Readiness Center (TH) 22.5042/devices/Collin_DMA_BSB (4304)/DX_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/3/2024, 12:54:40 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
       "objectId": "ai,102",
       "objectName": "HWR",
       "siteName": "Bench",
@@ -140,6 +125,21 @@
     {
       "action": "update",
       "device": 4304,
+      "objectId": "pg,8",
+      "objectName": "DX_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/DMA-BSB-NG-22.5042-RTU-1/devices/Collin_DMA_BSB (4304)/DX_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/9/2024, 2:16:36 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
       "objectId": "pg,9",
       "objectName": "Critical_PG",
       "siteName": "Bench",
@@ -149,7 +149,7 @@
         "path": "/c:/Development/electro-controls/delta-databases/DMA-BSB-NG-22.5042-RTU-1/devices/Collin_DMA_BSB (4304)/Critical_PG.gcl-p",
         "scheme": "file"
       },
-      "date": "4/8/2024, 12:06:09 PM",
+      "date": "4/9/2024, 2:43:58 PM",
       "templateTriggered": false
     },
     {
@@ -164,7 +164,7 @@
         "path": "/c:/Development/electro-controls/delta-databases/DMA-BSB-NG-22.5042-RTU-1/devices/Collin_DMA_BSB (4304)/Economizer_PG.gcl-p",
         "scheme": "file"
       },
-      "date": "4/9/2024, 10:27:03 AM",
+      "date": "4/10/2024, 9:46:07 AM",
       "templateTriggered": false
     },
     {
@@ -179,7 +179,7 @@
         "path": "/c:/Development/electro-controls/delta-databases/DMA-BSB-NG-22.5042-RTU-1/devices/Collin_DMA_BSB (4304)/Fan_PG.gcl-p",
         "scheme": "file"
       },
-      "date": "4/9/2024, 10:36:52 AM",
+      "date": "4/10/2024, 9:46:14 AM",
       "templateTriggered": false
     }
   ],
@@ -574,12 +574,6 @@
           "id": "bv,21002",
           "name": "SFStatus",
           "fileName": "SFStatus",
-          "lastUpdate": "2024-04-03T16:38:19.579Z"
-        },
-        {
-          "id": "bv,21010",
-          "name": "ReliefFanStatus",
-          "fileName": "ReliefFanStatus",
           "lastUpdate": "2024-04-03T16:38:19.579Z"
         },
         {

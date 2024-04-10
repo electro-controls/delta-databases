@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": "fault;out-of-service"
   },
   "present-value": {
     "$base": "Real",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": "fault;out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -66,19 +66,19 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "242"
+    "value": "391"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": "-0.25"
+    "value": "-1"
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "0.25"
+    "value": "1"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.0001221"
+    "value": "0.000976801"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "12055705"
+      "value": "17353090"
     }
   },
   "ad-value": {
@@ -109,7 +109,7 @@
   },
   "decimal-places": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "3"
   },
   "external-control": {
     "$base": "Boolean",
