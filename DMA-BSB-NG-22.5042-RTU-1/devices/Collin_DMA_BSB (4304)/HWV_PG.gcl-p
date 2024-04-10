@@ -16,7 +16,7 @@ If 'FreezeStat' Then
     HWVstandby = 0 //hello
 End If
 
- If ItsCold Or 'DATMode' Then
+ If 'DATMode' Then
     HWVSignal = 'DATHtg_CO'
  Else
     HWVSignal = 0

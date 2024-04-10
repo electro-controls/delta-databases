@@ -51,5 +51,5 @@ If ((Abs('EconDamper' - 'OADamperFeedback') > 10) OnFor 5M) Then
     'OA_Damper_Mismatch' = Off
 End If
 
-// relief damper
-'EADamper' = Scale('EconDamper', 28, 0, 100, max(100 * 'BldgPressure_CO', 30))
+// relief damper to scale with econ damper
+'EADamper' = Scale('EconDamper', 0, 0, 0, 100, 'BldgPressure_CO')
