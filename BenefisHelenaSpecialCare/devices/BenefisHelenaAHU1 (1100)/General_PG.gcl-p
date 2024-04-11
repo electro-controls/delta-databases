@@ -1,0 +1,34 @@
+//Power up defaults will be written to after power up or reset
+IfOnce PowerUp Then
+    'Uptime' = 0
+    'ControllerFault' = 1
+End If
+
+//The following releases any manual overrides on power up
+IfOnce PowerUp And 'ResetOverides' Then
+    ForAll BOPoints In "BO*:*"
+        Reset 'BOPoints'
+    End For
+    ForAll AOPoints In "AO*:*"
+        Reset 'AOPoints'
+    End For
+End If
+
+//Upime is for troubleshooting 
+DoEvery 1M
+'Uptime' = 'Uptime' + 1
+End Do
+
+'DIPSetting' = 'BenefisHelenaAHU1.DIP_Setting' //reference current controller DIP setting
+
+//Intercontroller Links
+'Eff_OAT' = '1000.Eff_OAT' //Reference to parent DSC eff OAT
+
+//From HW System Per Sequence 
+DoEvery 10S
+  If '1000.AHUOutsideAirEnable' Then
+    'AHUOutsideAirEnable' = On
+  Else
+    'AHUOutsideAirEnable' = Off
+  End If
+End Do

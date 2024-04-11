@@ -1,0 +1,180 @@
+{
+  "displayName": "HiStatic",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "binary-input,10"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-input"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "HiStatic"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": "not-commissioned"
+  },
+  "present-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "commission-flag": {
+    "$base": "Enumerated",
+    "value": "not-commissioned"
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,2"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "device-type": {
+    "$base": "String",
+    "value": "AlarmNormal_BDC"
+  },
+  "polarity": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Alarm"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Normal"
+  },
+  "prev-change-of-state-times": {
+    "1": {
+      "$base": "DateTime",
+      "value": "2024-02-13T06:15:45.400000-07:00"
+    },
+    "2": {
+      "$base": "DateTime",
+      "value": "2024-02-13T06:14:57.40"
+    },
+    "$base": "Array"
+  },
+  "change-of-state-time": {
+    "$base": "DateTime",
+    "value": "2024-02-13T06:15:45.400000-07:00"
+  },
+  "change-of-state-count": {
+    "$base": "Unsigned",
+    "value": "40"
+  },
+  "time-of-state-count-reset": {
+    "$base": "DateTime",
+    "value": "2023-01-16T11:44:11.100000-07:00"
+  },
+  "update-interval": {
+    "$base": "Unsigned",
+    "value": "353"
+  },
+  "time-delay": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "notification-class": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "alarm-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "event-enable": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "acked-transitions": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "notify-type": {
+    "$base": "Enumerated",
+    "value": "alarm"
+  },
+  "event-time-stamps": {
+    "1": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "2": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "3": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "$base": "Array"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Normal"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  },
+  "value-source": {
+    "$base": "Enumerated",
+    "value": "configuration-(bdc)"
+  },
+  "event-detection-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "intrinsic-info": {
+    "$base": "Array"
+  },
+  "event-message-texts-config": {
+    "1": {
+      "$base": "String",
+      "value": ""
+    },
+    "2": {
+      "$base": "String",
+      "value": ""
+    },
+    "3": {
+      "$base": "String",
+      "value": ""
+    },
+    "$base": "Array"
+  }
+}

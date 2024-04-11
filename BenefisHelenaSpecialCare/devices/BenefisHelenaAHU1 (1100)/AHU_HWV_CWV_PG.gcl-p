@@ -1,0 +1,36 @@
+//HWV Sequence
+Variable ItsCold
+Variable HWVstandby
+Variable HWVSignal
+ItsCold = Switch ( ItsCold, 'Eff_OAT', 45, 46)
+
+//If its cold we want the valve to go open when fan is off
+//for frost prevention.
+If 'SoftFreeze' Then
+    HWVstandby = 100
+  Else
+    HWVstandby = Scale ('MATLimit_CO', 0, 0, 100, 100, 'DATHtg_CO')
+End If
+
+'HWMode' = Switch ( 'HWMode', 'DATHtg_CO', 'DATClg_CO' + 5, 'DATClg_CO')
+
+If ItsCold Or 'HWMode' Then
+    HWVSignal = 'DATHtg_CO'
+ Else
+    HWVSignal = 0
+End If
+
+If 'RunStatusInt' Then
+    'HWV' = HWVSignal
+  Else
+    'HWV' = HWVstandby
+End If
+
+
+If 'RunStatusInt' And (Not 'HWMode') And 'FreeCooling' Then //Economizer is First Stage
+    'CWV' = Scale ('DATClg_CO', 0, 50, 0, 100, 100) //Second Stage
+  ElseIf  'RunStatusInt' And (Not 'HWMode') Then
+    'CWV' = 'DATClg_CO' //First Stage
+  Else
+    'CWV' = 0
+End If

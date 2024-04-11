@@ -1,0 +1,34 @@
+//building static pressure page
+
+//average building static pressure measurements over time to avoid sudden changes
+Variable ArrayTable[60] As Real
+Variable Counter As Integer
+Variable AVGResult As Real
+Variable SUMArray As Real
+Variable MINArray As Real
+Variable MINResult
+Variable TargetValue
+
+//Set sample time after doevery
+
+DoEvery 3S
+  For Counter = 2 To 60 Step 1
+  ArrayTable[62 - Counter] = ArrayTable[62 - (Counter + 1)]
+  End For
+
+  ArrayTable[1] = TargetValue
+  SUMArray = 0
+  MINResult = TargetValue
+  For Counter = 1 To 60 Step 1
+  SUMArray = SUMArray + ArrayTable[Counter]
+  MINArray = ArrayTable[Counter]
+  MINResult = Min (MINResult, MINArray, TargetValue)
+  End For
+//divide by # of samples to get average
+    AVGResult = SUMArray / 60
+End Do
+
+TargetValue = 'BSP' // Insert the object you want to reference here
+'EffBldgStaticPress' = AVGResult // Insert the AV you want to be the AVG result here
+
+//end of building static pressure page

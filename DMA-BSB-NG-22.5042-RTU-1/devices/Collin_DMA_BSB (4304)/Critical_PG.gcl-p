@@ -1,0 +1,37 @@
+'Critical_PG.Write_Priority' = 4
+
+If PowerUp Then
+  'FreezeStatLatch' = On
+End If
+
+If 'Mode' Changed Then
+  'FreezeStatLatch' = On
+End If
+
+If ('FreezeStat' OnFor 8:H) Then
+  'FreezeStatLatch' = On
+End If
+
+IfOnce ('FreezeStatLatch') OnFor 30:S Then
+  'FreezeStatLatch' = Off
+End If
+
+ If 'FreezeStat' Or 'SDSupplyStatus' Or 'SDReturnStatus' Or 'DuctHiLimitStatus' Then
+      'SFVFDEnable' = Off
+      'RFVFDEnable' = Off
+      'SFVFDSpeedRef' = 0
+      'RFVFDSpeedRef' = 0
+      'HWV' = 100
+      'EconDamper' = 0
+      'DXCapacity' = 0
+      'EADamper' = 0
+   Else
+      Relinquish 'SFVFDEnable'
+      Relinquish 'RFVFDEnable'
+      Relinquish 'SFVFDSpeedRef'
+      Relinquish 'RFVFDSpeedRef'
+      Relinquish 'HWV'
+      Relinquish 'EconDamper'
+      Relinquish 'DXCapacity'
+      Relinquish 'EADamper'
+End If

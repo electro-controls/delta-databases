@@ -1,0 +1,31 @@
+//Hot Water Valve Program
+
+//HWV Sequence
+Variable ItsCold
+Variable HWVstandby
+Variable HWVSignal
+ItsCold = Switch ( ItsCold, 'Eff_OAT', 38, 43)
+
+//If its cold we want the valve to go open when fan is off
+//for frost prevention.
+If 'FreezeStat' Then
+    HWVstandby = 100
+  ElseIf  ItsCold Then
+    HWVstandby = Scale ('MATLimit_CO', 0, 0, 100, 100, 'DATHtg_CO')
+  Else
+    HWVstandby = 0 //hello
+End If
+
+ If 'DATMode' Then
+    HWVSignal = 'DATHtg_CO'
+ Else
+    HWVSignal = 0
+ End If
+
+ If 'RunStatusInt' Then
+    'HWV' = HWVSignal
+  Else
+    'HWV' = HWVstandby
+End If
+
+//End of Program

@@ -1,0 +1,67 @@
+//Fan start/stop sequence
+If 'Mode' <> 5 Then //Off
+    'SF_Wall_Enable' = On
+  Else
+    'SF_Wall_Enable' = Off
+End If
+
+//Fan Status
+Switch ( 'SF_VSD1_Status', 'SF_VSD1_Current', 0.5, 0.25)
+Switch ( 'RF_VSD1_Status', 'RF_VSD1_Current', 0.5, 0.25)
+Switch ( 'SF_VSD2_Status', 'SF_VSD2_Currentx', 0.5, 0.25)
+Switch ( 'RF_VSD2_Status', 'RF_VSD2_Currentx', 0.5, 0.25)
+
+//Running status interlock sequence. Used by
+//other routines (economizer, VFD speed, etc..)
+If 'SF_Wall_Enable' And ('SF_VSD1_Status' Or 'SF_VSD2_Status') Then
+    'RunStatusInt' = On
+  Else
+    'RunStatusInt' = Off
+End If
+
+//VFD speed sequence. Insures smooth start up via
+//the ramp routine.
+
+'SF_Wall_Speed' = 'DuctStatic_CO' * 'VFDRampResult' * 0.01
+
+If 'RunStatusInt' Then
+    'RF_Wall_Enable' = On
+  Else
+    'RF_Wall_Enable' = Off
+End If
+
+
+Variable BuildingStaticFactor
+BuildingStaticFactor = Scale ('BuildingStatic_CO', 0, 0, 0.51, 100, 0.7)
+
+If 'RF_Wall_Enable' And ('RF_VSD1_Status' Or 'RF_VSD2_Status') Then
+    'RF_Wall_Speed' = 'SF_Wall_Speed' * BuildingStaticFactor
+  Else
+    'RF_Wall_Speed' = 0
+End If
+
+If 'RunStatusInt' Then
+  DoEvery 10S
+  'VFDRampResult' = Min (100, 'VFDRampResult' + (1000 / 'VSDRamp_Sp'))
+  End Do
+Else
+  'VFDRampResult' = 0
+End If
+
+If PowerUp Then
+'VFDRampResult' = 0
+End If
+
+If 'RunStatusInt' Then
+  'EADamper' = Scale ('EconDamper', 0, 'EconMinOA_Sp', 0, 100, 100)
+  Else
+  'EADamper' = 0
+End If
+
+//AFS calulations
+
+If 'RunStatusInt' Then
+  'OACalcDv' = 'OutsideAirflow'
+  Else
+  'OACalcDv' = 0
+End If
