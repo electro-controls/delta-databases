@@ -1,0 +1,97 @@
+//eZNS pg1
+If PowerUp Then
+  'LinkLCD2.Line_1' = 'Eff_OAT'
+  'LinkLCD2.Line_2' = 'CUH8_Eff_ZoneTemp'
+  'LinkLCD2.Line_3' = 'CUH8_Zone_EffSp'
+  'LinkLCD2.Line_1_Units' = 1
+  'LinkLCD2.Line_2_Units' = 3
+  'LinkLCD2.Line_3_Units' = 1
+  'LinkLCD2.Occupancy' = 2
+  'LinkLCD2.On' = 1
+  'CUH8_DNSAlgMode' = 1
+  'CUH8_BypassTm_Sp' = 2
+End If
+
+//Local setpoint adjust enable
+//Change mode requires that button 2 be pressed 4 times (or as programmed) 
+//prior to being able to change stat setting. This eleviates unauthorized tampering.
+IfOnce 'CUH8_DNSMode' = 1 Then
+    'CUH8_EnableDNS' = On
+    'LinkLCD2.Set' = 0
+End If
+
+IfOnce 'CUH8_DNSMode' = 2 Then
+    'CUH8_EnableDNS' = Off
+    'LinkLCD2.Set' = 0
+End If
+
+If 'CUH8_DNSMode' = 3 Then
+  Variable KeyCount
+  IfOnce ('LinkLCD2.Key_Press' = 2) Then
+    KeyCount = KeyCount + 1
+  End If
+  If KeyCount >= 4 Then
+      'CUH8_EnableDNS' = On
+  End If
+  If ('LinkLCD2.Key_Press' = 0) OnFor 60S Then
+      'CUH8_EnableDNS' = Off
+      KeyCount = 0
+  End If
+  IfOnce 'CUH8_EnableDNS' Then
+    'LinkLCD2.Set' = 1
+  End If
+  IfOnce Not 'CUH8_EnableDNS' Then
+    'LinkLCD2.Set' = 0
+  End If
+End If
+IfOnce 'CUH8_DNSMode' = 2 Then
+    'CUH8_EnableDNS' = Off
+    'LinkLCD2.Set' = 0
+End If
+
+//This updates the display temps on a periodic basis
+DoEvery 1M
+  'LinkLCD2.Line_1' = 'Eff_OAT'
+  'LinkLCD2.Line_2' = 'CUH8_Eff_ZoneTemp'
+  'LinkLCD2.Line_3' = 'CUH8_Zone_EffSp'
+  'LinkLCD2.Line_3_Units' = 1
+End Do
+
+//Occupancy Icons
+IfOnce ('CUH8_OccMode' = 3) Or ('CUH8_OccMode' = 4) Then
+    'LinkLCD2.Occupancy' = 2
+    'LinkLCD2.On' = 1
+    'LinkLCD2.Off' = 0
+End If
+
+IfOnce ('CUH8_OccMode' = 1) Or ('CUH8_OccMode' = 2) Then
+    'LinkLCD2.Occupancy' = 1
+    'LinkLCD2.On' = 0
+    'LinkLCD2.Off' = 1
+End If
+
+//Heat Icon
+IfOnce ('CUH8_EffZoneHtg' >= 5) Then
+    'LinkLCD2.Heating' = 1
+End If
+IfOnce ('CUH8_EffZoneHtg' <= 1) Then
+    'LinkLCD2.Heating' = 0
+End If
+
+//Cool Icon
+IfOnce ('CUH8_EffZoneClg' >= 5) Then
+    'LinkLCD2.Cooling' = 1
+End If
+IfOnce ('CUH8_EffZoneClg' <= 1) Then
+    'LinkLCD2.Cooling' = 0
+End If
+
+//If unit is in alarm the stat will blink
+IfOnce 'CUH8_BlinkDNS' Then
+    'LinkLCD2.Blink' = 1
+End If
+IfOnce Not 'CUH8_BlinkDNS' Then
+    'LinkLCD2.Blink' = 0
+End If
+
+//end of eZNS pg1

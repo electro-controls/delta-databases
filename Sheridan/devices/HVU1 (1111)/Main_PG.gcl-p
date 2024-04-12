@@ -1,0 +1,17 @@
+//Main page
+ 
+//Call all other pages to run
+
+Call 'General_PG'
+Call 'Fan_PG'
+Call 'Economizer_PG'
+Call 'HWV_PG'
+Call 'Critical_PG'
+Call 'FaultDetection_PG'
+
+
+
+
+
+
+//End of main page

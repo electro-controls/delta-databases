@@ -1,0 +1,7 @@
+//DAT page
+
+//slave to CUH12
+'CUH13_DAT_EffSp' = 'CUH12_DAT_EffSp'
+'CUH13_DAT_LocSp' = 'CUH12_DAT_LocSp'
+
+//end of DAT page

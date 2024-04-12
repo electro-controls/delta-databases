@@ -1,0 +1,22 @@
+If ('Gym_ZoneTemp' < 66) Then
+   'GymUH_SW_Enable' = On
+End If
+If ('Gym_ZoneTemp' > 68) Then
+   'GymUH_SW_Enable' = Off
+End If
+
+
+ If ('Gym_ZoneTemp' < 66) Then
+   'GymUH_NW_Enable' = On
+End If
+If ('Gym_ZoneTemp' > 68) Then
+   'GymUH_NW_Enable' = Off
+End If
+
+
+If ('Gym_ZoneTemp' < 66) Then
+   'GymUH_NE_Enable' = On
+End If
+If ('Gym_ZoneTemp' > 68) Then
+   'GymUH_NE_Enable' = Off
+End If

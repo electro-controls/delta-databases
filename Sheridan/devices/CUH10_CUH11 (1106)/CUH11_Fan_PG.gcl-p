@@ -1,0 +1,18 @@
+//fan program 
+
+'CUH11_Enable' = Switch ( 'CUH11_Enable', 'CUH11_EffZoneHtg', 90, 10)
+ 
+
+//fan status
+'CUH11_FanStatus' = Switch ( 'CUH11_FanStatus', 'CUH11_Current', 0.7, 0.4)
+
+If 'CUH11_FanStatus' Then
+    'CUH11_RunStatusInt' = On
+End If
+
+If ('CUH11_FanStatus') OffFor 10S Then
+    'CUH11_RunStatusInt' = Off
+End If
+
+
+//end of fan program

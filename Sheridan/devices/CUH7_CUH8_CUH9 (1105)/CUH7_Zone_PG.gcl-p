@@ -1,0 +1,104 @@
+//zone page
+
+//determine effective sp
+If ('CUH7_OccMode' = 3) Or ('CUH7_OccMode' = 4) Or ('CUH7_OccMode' = 5) Then //occ, bypass, or warmup
+    'CUH7_ZoneHeat_EffSp' = Min (('CUH7_Zone_EffSp' - ('CUH7_ZoneDb_Sp' * 0.5)), 'CUH7_OcHtgMax_Sp')
+    'CUH7_ZoneCool_EffSp' = Max (('CUH7_Zone_EffSp' + ('CUH7_ZoneDb_Sp' * 0.5)), 'CUH7_OcClgMin_Sp')
+  ElseIf  ('CUH7_OccMode' = 2) Then //Standby                              
+    'CUH7_ZoneHeat_EffSp' = Min (('CUH7_Zone_EffSp' - 'CUH7_StandbyOffset_Sp' - ('CUH7_ZoneDb_Sp' * 0.5)), 'CUH7_OcHtgMax_Sp')
+    'CUH7_ZoneCool_EffSp' = Max (('CUH7_Zone_EffSp' + 'CUH7_StandbyOffset_Sp' + ('CUH7_ZoneDb_Sp' * 0.5)), 'CUH7_OcClgMin_Sp')
+  ElseIf  ('CUH7_OccMode' = 6) Then //Purge                            
+    'CUH7_ZoneHeat_EffSp' = Min (('CUH7_Zone_EffSp' - 'CUH7_StandbyOffset_Sp' - ('CUH7_ZoneDb_Sp' * 0.5)), 'CUH7_OcHtgMax_Sp')
+    'CUH7_ZoneCool_EffSp' = Max (('CUH7_Zone_EffSp' + ('CUH7_ZoneDb_Sp' * 0.5)), 'CUH7_OcClgMin_Sp')
+  Else //unocc                                                  
+    'CUH7_ZoneHeat_EffSp' = Min ('CUH7_UnocHt_Sp', 'CUH7_OcHtgMax_Sp')
+    'CUH7_ZoneCool_EffSp' = Max ('CUH7_UnocCl_Sp', 'CUH7_OcClgMin_Sp')
+End If
+
+//Links remote setpoint to effective
+If ('CUH7_OccMode' = 6) Then //purge
+    'CUH7_Zone_EffSp' = 'CUH7_NightPurgeZone_Sp'
+  ElseIf  ('CUH7_Zone_RemSp' > 0) Then
+    'CUH7_Zone_EffSp' = 'CUH7_Zone_RemSp'
+  Else
+    'CUH7_Zone_EffSp' = 'CUH7_Zone_LocSp'
+End If
+
+//calculate local demand after ramp
+'CUH7_LocZoneHtg' = 'CUH7_ZoneHtg_CO' * 'CUH7_HtgRamp' * 0.01
+'CUH7_LocZoneClg' = 'CUH7_ZoneClg_CO' * 'CUH7_ClgRamp' * 0.01
+
+//determine heating and cooling call and previous mode latching
+Variable HtCall
+Variable ClCall
+
+If (('CUH7_ZoneHtg_CO' > ('CUH7_EffZoneClg' + 5)) And 'CUH7_ControlMode' = 3) OnFor 'CUH7_ZoneDbDelay_Sp':S Then
+    HtCall = On
+    'CUH7_PrevControlMode' = 3
+  ElseIf  (('CUH7_ZoneClg_CO' > ('CUH7_EffZoneHtg' + 5)) And 'CUH7_ControlMode' = 3) OnFor 'CUH7_ZoneDbDelay_Sp':S Then
+    ClCall = On
+    'CUH7_PrevControlMode' = 3
+  ElseIf  (('CUH7_ControlMode' = 1) And ('CUH7_EffZoneHtg' <= 0)) OnFor 'CUH7_ZoneDbDelay_Sp':S Then
+    HtCall = Off
+    'CUH7_PrevControlMode' = 1
+  ElseIf  (('CUH7_ControlMode' = 2) And ('CUH7_EffZoneClg' <= 0)) OnFor 'CUH7_ZoneDbDelay_Sp':S Then
+    ClCall = Off
+    'CUH7_PrevControlMode' = 2
+End If
+
+//Set current control mode (heating, cooling, deadband)
+//allow manual override of demand
+If ('CUH7_RemZoneHtg' >= 0) Then //remote heating demand
+    'CUH7_EffZoneHtg' = 'CUH7_RemZoneHtg'
+    'CUH7_EffZoneClg' = 0
+    'CUH7_ControlMode' = 1
+  ElseIf  ('CUH7_RemZoneClg' >= 0) Then //remote cooling demand
+    'CUH7_EffZoneClg' = 'CUH7_RemZoneClg'
+    'CUH7_EffZoneHtg' = 0
+    'CUH7_ControlMode' = 2
+  ElseIf  ClCall Then //calculated cooling call
+    'CUH7_ControlMode' = 2
+    'CUH7_EffZoneHtg' = 'CUH7_LocZoneHtg'
+    'CUH7_EffZoneClg' = 'CUH7_LocZoneClg'
+  ElseIf  HtCall Then //calculated heating call
+    'CUH7_ControlMode' = 1
+    'CUH7_EffZoneHtg' = 'CUH7_LocZoneHtg'
+    'CUH7_EffZoneClg' = 'CUH7_LocZoneClg'
+  Else
+    'CUH7_ControlMode' = 3 //calculated deadband
+    'CUH7_EffZoneHtg' = 'CUH7_LocZoneHtg'
+    'CUH7_EffZoneClg' = 'CUH7_LocZoneClg'
+End If
+
+//ramp delay to minimize overshoot of cascade control loops and
+//provide smoother sequencing of staged outputs (where applicable)
+If ('CUH7_ControlMode' = 1) Then
+    DoEvery 10S
+    'CUH7_HtgRamp' = Min (100, 'CUH7_HtgRamp' + (1000 / 'CUH7_ZoneHtRamp_Sp'))
+    End Do
+  Else
+    'CUH7_HtgRamp' = 0
+End If
+If ('CUH7_ControlMode' = 2) Then
+    DoEvery 10S
+    'CUH7_ClgRamp' = Min (100, 'CUH7_ClgRamp' + (1000 / 'CUH7_ZoneClRamp_Sp'))
+    End Do
+  Else
+    'CUH7_ClgRamp' = 0
+End If
+
+//Unoc Demand
+If ('CUH7_OccMode' = 1) Then //Unoccupied
+    'CUH7_UnocHtCall' = Switch ( 'CUH7_UnocHtCall', 'CUH7_EffZoneHtg', 60, 5)
+    'CUH7_UnocClCall' = Switch ( 'CUH7_UnocClCall', 'CUH7_EffZoneClg', 60, 5)
+  Else
+    'CUH7_UnocHtCall' = Off
+    'CUH7_UnocClCall' = Off
+End If
+
+
+//Standby Demand
+'CUH7_ZoneHtDemand' = Switch ( 'CUH7_ZoneHtDemand', 'CUH7_EffZoneHtg', 60, 5)
+'CUH7_ZoneClDemand' = Switch ( 'CUH7_ZoneClDemand', 'CUH7_EffZoneClg', 60, 5)
+
+//end of fan coil zone page

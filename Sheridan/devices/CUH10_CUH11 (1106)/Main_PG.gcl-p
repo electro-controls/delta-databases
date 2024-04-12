@@ -1,0 +1,41 @@
+//main page
+
+//call all other pages
+
+Call 'General_PG'
+Call 'FaultDetection_PG'
+
+Call 'CUH10_Critical_PG'
+
+Call 'CUH11_Critical_PG'
+Call 'CUH11_eZNSDisplay1_PG'
+Call 'CUH11_eZNSDisplay2_PG'
+
+
+Variable Counter
+DoEvery 5S
+Counter = Counter + 1
+End Do
+
+If Counter >= 3 Then
+    Counter = 0
+End If
+
+If Counter = 1 Then
+    Call 'CUH10_Fan_PG'
+    Call 'CUH10_HWV_PG'
+    Call 'CUH10_Zone_PG'
+    Call 'CUH10_OccMode_PG'
+    Call 'CUH10_DAT_PG'
+End If
+
+
+If Counter = 2 Then
+    Call 'CUH11_Fan_PG'
+    Call 'CUH11_HWV_PG'
+    Call 'CUH11_Zone_PG'
+    Call 'CUH11_OccMode_PG'
+    Call 'CUH11_DAT_PG'
+End If
+
+//end of main page

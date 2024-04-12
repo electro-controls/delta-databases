@@ -1,0 +1,303 @@
+{
+  "displayName": "Database Information 1101",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "dbi,1101"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "database"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Database Information 1101"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Incomplete 60 50 94 80 20 48 05 06 48 10 28 06 01 48"
+  },
+  "present-value": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "total-db-size": {
+    "$base": "Unsigned",
+    "value": "130964"
+  },
+  "free-memory": {
+    "$base": "Unsigned",
+    "value": "122748"
+  },
+  "object-count": {
+    "$base": "Unsigned",
+    "value": "55"
+  },
+  "object-list": {
+    "1": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-input,3"
+    },
+    "2": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-input,4"
+    },
+    "3": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-output,3"
+    },
+    "4": {
+      "$base": "ObjectIdentifier",
+      "value": "device,1101"
+    },
+    "5": {
+      "$base": "ObjectIdentifier",
+      "value": "file,1"
+    },
+    "6": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,1"
+    },
+    "7": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,2"
+    },
+    "8": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,3"
+    },
+    "9": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,4"
+    },
+    "10": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,5"
+    },
+    "11": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,6"
+    },
+    "12": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,7"
+    },
+    "13": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,8"
+    },
+    "14": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,9"
+    },
+    "15": {
+      "$base": "ObjectIdentifier",
+      "value": "des,1"
+    },
+    "16": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,4"
+    },
+    "17": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,24"
+    },
+    "18": {
+      "$base": "ObjectIdentifier",
+      "value": "bdc,2"
+    },
+    "19": {
+      "$base": "ObjectIdentifier",
+      "value": "dbi,1101"
+    },
+    "20": {
+      "$base": "ObjectIdentifier",
+      "value": "sua,1"
+    },
+    "21": {
+      "$base": "ObjectIdentifier",
+      "value": "net,1"
+    },
+    "22": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,1"
+    },
+    "23": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,2"
+    },
+    "24": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,3"
+    },
+    "25": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,4"
+    },
+    "26": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,5"
+    },
+    "27": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,6"
+    },
+    "28": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,7"
+    },
+    "29": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,8"
+    },
+    "30": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,9"
+    },
+    "31": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,10"
+    },
+    "32": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,1"
+    },
+    "33": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,2"
+    },
+    "34": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,3"
+    },
+    "35": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,4"
+    },
+    "36": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,5"
+    },
+    "37": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,6"
+    },
+    "38": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,7"
+    },
+    "39": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,8"
+    },
+    "40": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,9"
+    },
+    "41": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,10"
+    },
+    "42": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,11"
+    },
+    "43": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,12"
+    },
+    "44": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,13"
+    },
+    "45": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,14"
+    },
+    "46": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,15"
+    },
+    "47": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,16"
+    },
+    "48": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,17"
+    },
+    "49": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,18"
+    },
+    "50": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,19"
+    },
+    "51": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,20"
+    },
+    "52": {
+      "$base": "ObjectIdentifier",
+      "value": "evs,1"
+    },
+    "53": {
+      "$base": "ObjectIdentifier",
+      "value": "pan,1"
+    },
+    "54": {
+      "$base": "ObjectIdentifier",
+      "value": "sdl,1"
+    },
+    "55": {
+      "$base": "ObjectIdentifier",
+      "value": "sug,1"
+    },
+    "$base": "Array"
+  },
+  "dictionary-version": {
+    "$base": "String",
+    "value": "2010-9-28(2) 13:35: 8"
+  },
+  "time-of-last-chg": {
+    "$base": "DateTime",
+    "value": "2000-01-02T09:49:24.100000-07:00"
+  },
+  "src-user-of-last-chg": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "all",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "src-device-of-last-chg": {
+    "$base": "ObjectIdentifier",
+    "unspecifiedValue": "true"
+  },
+  "database-revision": {
+    "$base": "Unsigned",
+    "value": "24"
+  },
+  "total-graphic-memory": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  },
+  "free-graphic-memory": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  }
+}

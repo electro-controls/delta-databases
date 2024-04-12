@@ -1,0 +1,35 @@
+{
+  "displayName": "Temperature Selection BDC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,6"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-device-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Temperature Selection BDC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "10K Sensor (AI1)"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "BACstat (AI101)"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

@@ -1,0 +1,62 @@
+//Fan page
+
+//supply fan start/stop sequence
+If 'Rem_SF_Call' Then
+    'SF_Call' = On
+  ElseIf  ('Mode' <> 5) Then // 5 = Off
+    'SF_Call' = On
+  Else
+    'SF_Call' = Off
+End If
+
+//Fan status verified by current read from CTs. amp values to be confirmed in field 
+'SF1A_Status' = Switch ( 'SF1A_Status', 'SF1A_Current', 0.09, 0.06)
+'SF1B_Status' = Switch ( 'SF1B_Status', 'SF1B_Current', 0.09, 0.06)
+'SF2A_Status' = Switch ( 'SF2A_Status', 'SF2A_Current', 0.09, 0.06)
+'SF2B_Status' = Switch ( 'SF2B_Status', 'SF2B_Current', 0.09, 0.06)
+'SF3A_Status' = Switch ( 'SF3A_Status', 'SF3A_Current', 0.09, 0.06)
+'SF3B_Status' = Switch ( 'SF3B_Status', 'SF3B_Current', 0.09, 0.06)
+
+If 'SF1A_Status' Or 'SF1B_Status' Or 'SF2A_Status' Or 'SF2B_Status' Or 'SF3A_Status' Or 'SF3B_Status' Then
+    'SF_Status' = On
+  Else
+    'SF_Status' = Off
+End If
+
+//VFDRamp 
+If 'SF_Call' And 'SF_Status' Then
+   DoEvery 10S
+    'VFDRampResult' = Min (100, 'VFDRampResult' + (1000 / 'VFDRampTime_Sp')) //takes 2 min to ramp up from 0-100%
+   End Do
+  Else
+    'VFDRampResult' = 0
+End If
+
+//Run status interlock  
+If 'SF_Status' Then
+    'RunStatusInt' = On
+    DoEvery 1M
+        'FanUptime' = 'FanUptime' + 1
+    End Do
+  Else
+    'RunStatusInt' = Off
+    'FanUptime' = 0
+End If
+
+//Supply fan speed calc
+
+If 'SF_Call' Then
+    'SF1_Speed' = Scale ('VFDRampResult', 0, 0, 1, 100, 'SF_MaxSpeed')
+    'SF2_Speed' = Scale ('VFDRampResult', 0, 0, 1, 100, 'SF_MaxSpeed')
+    'SF3_Speed' = Scale ('VFDRampResult', 0, 0, 1, 100, 'SF_MaxSpeed')
+  Else
+    'SF1_Speed' = 0
+    'SF2_Speed' = 0
+    'SF3_Speed' = 0
+End If
+
+//no relief damper or fan
+
+        
+
+//End of fan page

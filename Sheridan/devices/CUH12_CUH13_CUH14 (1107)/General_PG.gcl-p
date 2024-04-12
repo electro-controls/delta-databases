@@ -1,0 +1,70 @@
+//power up defaults
+IfOnce PowerUp Then
+    'CUH12_OccMode' = 3
+    'CUH12_Zone_RemSp' = - 1
+    'CUH12_RemZoneClg' = - 1
+    'CUH12_RemZoneHtg' = - 1
+    'CUH12_DAT_RemSp' = - 1
+    'CUH12_Rem_Schedule' = On
+    'CUH12_Rem_WarmupCall' = Off
+    'CUH12_Rem_PurgeCall' = Off
+    'CUH13_OccMode' = 3
+    'CUH13_Zone_RemSp' = - 1
+    'CUH13_RemZoneClg' = - 1
+    'CUH13_RemZoneHtg' = - 1
+    'CUH13_DAT_RemSp' = - 1
+    'CUH13_Rem_Schedule' = On
+    'CUH13_Rem_WarmupCall' = Off
+    'CUH13_Rem_PurgeCall' = Off
+    'CUH14_OccMode' = 3
+    'CUH14_Zone_RemSp' = - 1
+    'CUH14_RemZoneClg' = - 1
+    'CUH14_RemZoneHtg' = - 1
+    'CUH14_DAT_RemSp' = - 1
+    'CUH14_Rem_Schedule' = On
+    'CUH14_Rem_WarmupCall' = Off
+    'CUH14_Rem_PurgeCall' = Off
+    'Eff_OAT' = 35
+    'Uptime' = 0
+End If
+
+//uptime
+DoEvery 1M
+    'Uptime' = 'Uptime' + 1
+End Do
+
+//Intercontroller Links
+'Eff_OAT' = '1100.Eff_OAT'
+
+//Link Zone Temp here
+'CUH12_Eff_ZoneTemp' = 'CUH12_ZoneTemp'
+'CUH13_Eff_ZoneTemp' = 'CUH12_ZoneTemp' //shares room temp w/ 13
+'CUH14_Eff_ZoneTemp' = 'CUH14_ZoneTemp'
+
+
+// Room Variance
+'CUH12_ZoneVariance' = 'CUH12_Eff_ZoneTemp' - 'CUH12_Zone_EffSp'
+'CUH13_ZoneVariance' = 'CUH13_Eff_ZoneTemp' - 'CUH13_Zone_EffSp'
+'CUH14_ZoneVariance' = 'CUH14_Eff_ZoneTemp' - 'CUH14_Zone_EffSp'
+
+
+//Controller will save to flash every 24 hours.  Below code initiates save
+//based on controller address so saves are staggered rather than all at once.  
+ Variable T //Time
+ Variable A1 //Address 1 to 59
+ Variable A2 //Address 60 to 99
+
+ T = Time
+ A1 = 'CUH12_CUH13_CUH14.DIP_Setting'
+
+ If A1 > 59 Then
+   A2 = (A1 - 59) + 99
+  Else
+   A2 = A1
+ End If
+
+ IfOnce T = A2 And (Weekday = 3) Then
+  SaveToFlash
+ End If
+
+ //end of general page

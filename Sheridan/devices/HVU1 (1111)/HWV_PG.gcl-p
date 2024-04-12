@@ -1,0 +1,30 @@
+//HWV Sequence
+
+//determine HW mode & prevent valve cycling between heating and cooling modes
+If ('DATHtg_CO' > ('DATClg_CO' + 5)) And ('HW_Mode' OffFor 120S) Then
+    'HW_Mode' = On
+End If
+If ('DATClg_CO' > ('DATHtg_CO' + 5)) And ('DATHtg_CO' < 5) And ('HW_Mode' OnFor 300S) Then
+    'HW_Mode' = Off
+End If
+
+//bias adjustments
+IfOnce 'HW_Mode' Then
+    'DATHtg_CO.Bias' = 'DATHtg_CO.Bias' * 0.5
+    'DATClg_CO.Bias' = 1
+End If
+IfOnce (Not 'HW_Mode') Then
+    'DATHtg_CO.Bias' = 1
+    'DATClg_CO.Bias' = 'DATClg_CO.Bias' * 0.5
+End If
+
+//HWV
+If 'RunStatusInt' And 'HW_Mode' Then
+    'HWV' = Scale ('DATHtg_CO', 0, 0, 0, 100, 100) //meet DAT Sp when calling for heat & unit is running
+  ElseIf  'RunStatusInt' Then
+    'HWV' = 0 //do not heat when possibly in cooling mode
+  Else
+    'HWV' = Scale ('MATLimit_CO', 0, 0, 100, 100, 'DATHtg_CO') //maintain MAT limit Sp when not running 
+End If
+
+//End of Program

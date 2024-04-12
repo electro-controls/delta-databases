@@ -1,0 +1,134 @@
+//eZNS2 pg
+
+// Bypass time/Bypass Mode
+Variable BPDis //Bypass display mode
+
+If ('CUH12_OccMode' <> 2) Then
+ IfOnce ('LinkLCD1.Key_Press' = 2) And ('CUH12_BypassTmLeft' < 0.5) Then //2 is on button
+    'CUH12_DNSAlgMode' = 1
+    'CUH12_BypassTmLeft' = 'CUH12_BypassTm_Sp'
+    BPDis = On
+ End If
+
+ If ('LinkLCD1.Key_Press' = 2) Then
+    BPDis = On
+ End If
+Else
+ BPDis = Off
+End If
+
+//Allow someone to press ON again to revert back to Temp display
+If ('LinkLCD1.Key_Press' = 2) And (BPDis OnFor 2S) Then
+    BPDis = Off
+End If
+
+IfOnce BPDis Then
+    'LinkLCD1.Line_2' = 'CUH12_BypassTmLeft'
+    'LinkLCD1.Line_2_Units' = 0
+    'LinkLCD1.Line_3' = "Hr"
+    'LinkLCD1.Line_3_Units' = 0
+End If
+IfOnce Not BPDis Then
+    'LinkLCD1.Line_2' = 'CUH12_Eff_ZoneTemp'
+    'LinkLCD1.Line_2_Units' = 3
+    'LinkLCD1.Line_3' = 'CUH12_Zone_EffSp'
+    'LinkLCD1.Line_3_Units' = 1
+End If
+
+If BPDis Then
+    If ('LinkLCD1.Key_Press' = 4) Then
+    'CUH12_BypassTmLeft' = Limit ('CUH12_BypassTmLeft', 'CUH12_BypassTmLeft' + 0.5, 9)
+    'LinkLCD1.Line_2' = 'CUH12_BypassTmLeft'
+    End If
+    If ('LinkLCD1.Key_Press' = 3) Then
+    'CUH12_BypassTmLeft' = Limit ('CUH12_BypassTmLeft', 0.5, 'CUH12_BypassTmLeft' - 0.5)
+    'LinkLCD1.Line_2' = 'CUH12_BypassTmLeft'
+    End If
+End If
+
+Variable line2mode
+If ('LinkLCD1.Key_Press' = 0) OnFor 8S Then
+    If 'CUH12_BypassCall' And (Not 'CUH12_Rem_Schedule') Then
+      If line2mode OnFor 7S Then
+        line2mode = Off
+      End If
+      If line2mode OffFor 3S Then
+        line2mode = On
+      End If
+      IfOnce line2mode Then
+            'LinkLCD1.Line_2' = 'CUH12_Eff_ZoneTemp'
+            'LinkLCD1.Line_2_Units' = 3
+            'LinkLCD1.Line_3' = 'CUH12_Zone_EffSp'
+            'LinkLCD1.Line_3_Units' = 1
+            line2mode = 1
+            BPDis = Off
+      End If
+      IfOnce Not line2mode Then
+            BPDis = On
+      End If
+    Else
+      IfOnce ('LinkLCD1.Key_Press' = 0) Then
+      'LinkLCD1.Line_2' = 'CUH12_Eff_ZoneTemp'
+      'LinkLCD1.Line_2_Units' = 3
+      'LinkLCD1.Line_3' = 'CUH12_Zone_EffSp'
+      'LinkLCD1.Line_3_Units' = 1
+      End If
+      DoEvery 60S
+      'LinkLCD1.Line_2' = 'CUH12_Eff_ZoneTemp'
+      'LinkLCD1.Line_2_Units' = 3
+      'LinkLCD1.Line_3' = 'CUH12_Zone_EffSp'
+      'LinkLCD1.Line_3_Units' = 1
+      End Do
+      line2mode = 1
+      BPDis = Off
+    End If
+End If
+ 
+//If someone presses the off button, unit goes off and resets bypass time left
+//to zero.
+IfOnce ('LinkLCD1.Key_Press' = 1) And 'CUH12_EnableDNS' And 'CUH12_BypassCall' Then
+    'CUH12_DNSAlgMode' = 0
+    'CUH12_BypassTmLeft' = 0
+    BPDis = Off
+End If
+//Put unit into standby mode
+IfOnce ('LinkLCD1.Key_Press' = 1) And 'CUH12_EnableDNS' And 'CUH12_Rem_Schedule' Then
+    'CUH12_DNSAlgMode' = 0
+    'CUH12_BypassTmLeft' = 0
+End If
+
+//Put unit into occ mode from standby mode
+IfOnce ('LinkLCD1.Key_Press' = 2) And 'CUH12_Rem_Schedule' Then
+    'CUH12_DNSAlgMode' = 1
+End If
+
+//Bypass time increments down every 30 minutes.
+If 'CUH12_BypassTmLeft' > 0 Then
+    'CUH12_BypassCall' = On
+    DoEvery 30M
+    'CUH12_BypassTmLeft' = Max (0, 'CUH12_BypassTmLeft' - 0.5)
+    End Do
+  Else
+    'CUH12_BypassCall' = Off
+End If
+
+//Allow for changing space setpoint.
+Variable Update
+If ('LinkLCD1.Key_Press' = 3) And (Not BPDis) And 'CUH12_EnableDNS' Then
+  'CUH12_Zone_LocSp' = Limit ('CUH12_Zone_LocSp' - 0.5, 'CUH12_OcHtgMin_Sp', 'CUH12_OcClgMax_Sp')
+  Update = On
+End If
+If ('LinkLCD1.Key_Press' = 4) And (Not BPDis) And 'CUH12_EnableDNS' Then
+  'CUH12_Zone_LocSp' = Limit ('CUH12_Zone_LocSp' + 0.5, 'CUH12_OcHtgMin_Sp', 'CUH12_OcClgMax_Sp')
+  Update = On
+End If
+
+If Update Then
+  'LinkLCD1.Line_3' = 'CUH12_Zone_EffSp'
+  'LinkLCD1.Line_3_Units' = 1
+End If
+If Update OnFor 5S Then
+  Update = Off
+End If
+
+//end of eZNS2 pg

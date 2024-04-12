@@ -1,0 +1,86 @@
+//Zone_PG
+Variable HtCall
+Variable ClCall
+Variable HtRamp
+Variable ClRamp
+
+//Eff SP
+If ('FT07_OccMode' = 3) Or ('FT07_OccMode' = 4) Or ('FT07_OccMode' = 5) Then //occ, bypass, warmup
+    'FT07_ZoneHtg_EffSp' = Min (('FT07_Zone_EffSp' - ('FT07_ZoneDb_Sp' * 0.5)), 'FT07_OcHtgMax_Sp')
+    'FT07_ZoneClg_EffSp' = Max (('FT07_Zone_EffSp' + ('FT07_ZoneDb_Sp' * 0.5)), 'FT07_OcClgMin_Sp')
+  ElseIf  'FT07_OccMode' = 2 Then //standby
+    'FT07_ZoneHtg_EffSp' = Min (('FT07_Zone_EffSp' - 'FT07_StandbyOffset_Sp' - ('FT07_ZoneDb_Sp' * 0.5)), 'FT07_OcHtgMax_Sp')
+    'FT07_ZoneClg_EffSp' = Max (('FT07_Zone_EffSp' + 'FT07_StandbyOffset_Sp' + ('FT07_ZoneDb_Sp' * 0.5)), 'FT07_OcClgMin_Sp')
+  Else //unocc
+    'FT07_ZoneHtg_EffSp' = Min ('FT07_UnocHt_Sp', 'FT07_OcHtgMax_Sp')
+    'FT07_ZoneClg_EffSp' = Max ('FT07_UnocCl_Sp', 'FT07_OcClgMin_Sp')
+End If
+
+//allow remote override of zone sp
+If 'FT07_Zone_RemSp' > 0 Then
+    'FT07_Zone_EffSp' = 'FT07_Zone_RemSp'
+  Else
+    'FT07_Zone_EffSp' = 'FT07_Zone_LocSp'
+End If
+
+//calculate local demand after ramp
+'FT07_LocZoneHtg' = 'FT07_ZoneHtg_CO' * HtRamp * 0.01
+'FT07_LocZoneClg' = 'FT07_ZoneClg_CO' * ClRamp * 0.01
+
+//heating or cooling call and previous mode latching
+If (('FT07_ZoneHtg_CO' > ('FT07_EffZoneClg' + 5)) And 'FT07_ControlMode' = 3) OnFor 'FT07_ZoneDbDelay_Sp':S Then
+    HtCall = On
+    'FT07_PrevControlMode' = 3
+  ElseIf  (('FT07_ZoneClg_CO' > ('FT07_EffZoneHtg' + 5)) And 'FT07_ControlMode' = 3) OnFor 'FT07_ZoneDbDelay_Sp':S Then
+    ClCall = On
+    'FT07_PrevControlMode' = 3
+  ElseIf  (('FT07_ControlMode' = 1) And ('FT07_EffZoneHtg' <= 0)) OnFor 'FT07_ZoneDbDelay_Sp':S Then
+    HtCall = Off
+    'FT07_PrevControlMode' = 1
+  ElseIf  (('FT07_ControlMode' = 2) And ('FT07_EffZoneClg' <= 0)) OnFor 'FT07_ZoneDbDelay_Sp':S Then
+    ClCall = Off
+      'FT07_PrevControlMode' = 2
+End If
+
+//determine control mode
+If 'FT07_RemZoneHtg' >= 0 Then //remote htg
+    'FT07_EffZoneHtg' = 'FT07_RemZoneHtg'
+    'FT07_EffZoneClg' = 0
+    'FT07_ControlMode' = 1
+  ElseIf  'FT07_RemZoneClg' >= 0 Then //remote clg
+    'FT07_EffZoneClg' = 'FT07_RemZoneClg'
+    'FT07_EffZoneHtg' = 0
+    'FT07_ControlMode' = 2
+  ElseIf  ClCall Then //auto clg
+    'FT07_ControlMode' = 2
+    'FT07_EffZoneHtg' = 'FT07_LocZoneHtg'
+    'FT07_EffZoneClg' = 'FT07_LocZoneClg'
+  ElseIf  HtCall Then
+    'FT07_ControlMode' = 1 //auto htg
+    'FT07_EffZoneHtg' = 'FT07_LocZoneHtg'
+    'FT07_EffZoneClg' = 'FT07_LocZoneClg'
+  Else
+    'FT07_ControlMode' = 3 //auto deadband
+    'FT07_EffZoneHtg' = 'FT07_LocZoneHtg'
+    'FT07_EffZoneClg' = 'FT07_LocZoneClg'
+End If
+
+//Ramp delay
+If 'FT07_ControlMode' = 1 Then
+    DoEvery 10S
+    HtRamp = Min (100, HtRamp + (1000 / 'FT07_ZoneHtRamp_Sp'))
+    End Do
+  Else
+    HtRamp = 0
+End If
+If 'FT07_ControlMode' = 2 Then
+    DoEvery 10S
+    ClRamp = Min (100, ClRamp + (1000 / 'FT07_ZoneClRamp_Sp'))
+    End Do
+  Else
+    ClRamp = 0
+End If
+
+//unocc htg demand & standby deleted bc they weren't used
+
+//End of Program

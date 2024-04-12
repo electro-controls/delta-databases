@@ -1,0 +1,97 @@
+//eZNS pg1
+If PowerUp Then
+  'LinkLCD3.Line_1' = 'Eff_OAT'
+  'LinkLCD3.Line_2' = 'CUH14_Eff_ZoneTemp'
+  'LinkLCD3.Line_3' = 'CUH14_Zone_EffSp'
+  'LinkLCD3.Line_1_Units' = 1
+  'LinkLCD3.Line_2_Units' = 3
+  'LinkLCD3.Line_3_Units' = 1
+  'LinkLCD3.Occupancy' = 2
+  'LinkLCD3.On' = 1
+  'CUH14_DNSAlgMode' = 1
+  'CUH14_BypassTm_Sp' = 2
+End If
+
+//Local setpoint adjust enable
+//Change mode requires that button 2 be pressed 4 times (or as programmed) 
+//prior to being able to change stat setting. This eleviates unauthorized tampering.
+IfOnce 'CUH14_DNSMode' = 1 Then
+    'CUH14_EnableDNS' = On
+    'LinkLCD3.Set' = 0
+End If
+
+IfOnce 'CUH14_DNSMode' = 2 Then
+    'CUH14_EnableDNS' = Off
+    'LinkLCD3.Set' = 0
+End If
+
+If 'CUH14_DNSMode' = 3 Then
+  Variable KeyCount
+  IfOnce ('LinkLCD3.Key_Press' = 2) Then
+    KeyCount = KeyCount + 1
+  End If
+  If KeyCount >= 4 Then
+      'CUH14_EnableDNS' = On
+  End If
+  If ('LinkLCD3.Key_Press' = 0) OnFor 60S Then
+      'CUH14_EnableDNS' = Off
+      KeyCount = 0
+  End If
+  IfOnce 'CUH14_EnableDNS' Then
+    'LinkLCD3.Set' = 1
+  End If
+  IfOnce Not 'CUH14_EnableDNS' Then
+    'LinkLCD3.Set' = 0
+  End If
+End If
+IfOnce 'CUH14_DNSMode' = 2 Then
+    'CUH14_EnableDNS' = Off
+    'LinkLCD3.Set' = 0
+End If
+
+//This updates the display temps on a periodic basis
+DoEvery 1M
+  'LinkLCD3.Line_1' = 'Eff_OAT'
+  'LinkLCD3.Line_2' = 'CUH14_Eff_ZoneTemp'
+  'LinkLCD3.Line_3' = 'CUH14_Zone_EffSp'
+  'LinkLCD3.Line_3_Units' = 1
+End Do
+
+//Occupancy Icons
+IfOnce ('CUH14_OccMode' = 3) Or ('CUH14_OccMode' = 4) Then
+    'LinkLCD3.Occupancy' = 2
+    'LinkLCD3.On' = 1
+    'LinkLCD3.Off' = 0
+End If
+
+IfOnce ('CUH14_OccMode' = 1) Or ('CUH14_OccMode' = 2) Then
+    'LinkLCD3.Occupancy' = 1
+    'LinkLCD3.On' = 0
+    'LinkLCD3.Off' = 1
+End If
+
+//Heat Icon
+IfOnce ('CUH14_EffZoneHtg' >= 5) Then
+    'LinkLCD3.Heating' = 1
+End If
+IfOnce ('CUH14_EffZoneHtg' <= 1) Then
+    'LinkLCD3.Heating' = 0
+End If
+
+//Cool Icon
+IfOnce ('CUH14_EffZoneClg' >= 5) Then
+    'LinkLCD3.Cooling' = 1
+End If
+IfOnce ('CUH14_EffZoneClg' <= 1) Then
+    'LinkLCD3.Cooling' = 0
+End If
+
+//If unit is in alarm the stat will blink
+IfOnce 'CUH14_BlinkDNS' Then
+    'LinkLCD3.Blink' = 1
+End If
+IfOnce Not 'CUH14_BlinkDNS' Then
+    'LinkLCD3.Blink' = 0
+End If
+
+//end of eZNS pg1

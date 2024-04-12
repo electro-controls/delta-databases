@@ -1,0 +1,18 @@
+//fan program 
+
+'CUH3_Enable' = Switch ( 'CUH3_Enable', 'CUH3_EffZoneHtg', 90, 10)
+ 
+
+//fan status
+'CUH3_FanStatus' = Switch ( 'CUH3_FanStatus', 'CUH3_Current', 0.7, 0.4)
+
+If 'CUH3_FanStatus' Then
+    'CUH3_RunStatusInt' = On
+End If
+
+If ('CUH3_FanStatus') OffFor 10S Then
+    'CUH3_RunStatusInt' = Off
+End If
+
+
+//end of fan program

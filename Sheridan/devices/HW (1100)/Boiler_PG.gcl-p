@@ -1,0 +1,138 @@
+//Boiler sequence
+Variable Lead1
+Variable Lead2
+Variable Lag2Latch As Integer
+Variable BoilerDemand
+Variable B1Call As Integer
+Variable B2Call As Integer
+
+If Lag2Latch Then
+  Lead1 = BoilerDemand
+  Lead2 = BoilerDemand
+  BoilerDemand = Scale ('Eff_Demand', 0, 0, 0, 100, 100)
+Else
+  Lead1 = BoilerDemand
+  Lead2 = 0
+  BoilerDemand = Scale ('Eff_Demand', 0, 0, 0, 50, 100)
+End If
+
+//lag 2 latch
+If (BoilerDemand > 'BoilerLagStart_Sp') OnFor 'BoilerLagDly_Sp':M Then
+  Lag2Latch = On
+End If
+If (BoilerDemand < 'BoilerLagStop_Sp') Then
+  Lag2Latch = Off
+End If
+
+//boiler fire rates           
+Variable B1Rate
+Variable B2Rate
+
+If 'LeadBoiler' = 1 Then
+  B1Rate = ('B1_LWT_Limit_CO' / 100) * Scale (Lead1, 0, 0, 0, 100, 100)
+  B2Rate = ('B2_LWT_Limit_CO' / 100) * Scale (Lead2, 0, 0, 0, 100, 100)
+  B1Call = Switch ( B1Call, Lead1, 12, 1)
+  B2Call = Switch ( B2Call, Lead2, 12, 1)
+Else
+  B1Rate = ('B1_LWT_Limit_CO' / 100) * Scale (Lead2, 0, 0, 0, 100, 100)
+  B2Rate = ('B2_LWT_Limit_CO' / 100) * Scale (Lead1, 0, 0, 0, 100, 100)
+  B1Call = Switch ( B1Call, Lead2, 12, 1)
+  B2Call = Switch ( B2Call, Lead1, 12, 1)
+End If
+
+//boiler pump enable
+If B1Call Then
+    'BP1_Enable' = On
+End If
+
+If B1Call OffFor 5M Then
+    'BP1_Enable' = Off
+End If
+
+If B2Call Then
+    'BP2_Enable' = On
+End If
+
+If B2Call OffFor 5M Then
+    'BP2_Enable' = Off
+End If
+
+//boiler pump status
+'BP1_Status' = Switch ( 'BP1_Status', 'BP1_Current', 1, 0.5) //confirm threshold in field
+'BP2_Status' = Switch ( 'BP2_Status', 'BP2_Current', 1, 0.5) //confirm threshold in field
+
+//combustion dampers
+If ((Not B1Call) And (Not B2Call)) OnFor 3M Then
+    'CombDamper' = Off
+End If
+
+If B1Call Or B2Call Then
+    'CombDamper' = On
+End If
+         
+//b1 stage
+Variable B1_Ready
+If 'SystemFlow' And ('CombDamper1_Status' Or 'CombDamper2_Status') And B1Call And 'BP1_Status' Then
+    B1_Ready = On
+  Else
+    B1_Ready = Off
+End If
+
+If B1_Ready OnFor 1M Then
+    'B1_Stg1' = Switch ( 'B1_Stg1', B1Rate, 25, 1)
+  Else
+    'B1_Stg1' = Off
+End If
+
+If B1_Ready And 'B1_Stg1' OnFor 'InterstageDly_Sp':M Then
+    'B1_Stg2' = Switch ( 'B1_Stg2', B1Rate, 50, 25)
+  Else
+    'B1_Stg2' = Off
+End If
+
+If B1_Ready And 'B1_Stg2' OnFor 'InterstageDly_Sp':M Then
+    'B1_Stg3' = Switch ( 'B1_Stg3', B1Rate, 75, 50)
+  Else
+    'B1_Stg3' = Off
+End If
+
+If B1_Ready And 'B1_Stg3' OnFor 'InterstageDly_Sp':M Then
+    'B1_Stg4' = Switch ( 'B1_Stg4', B1Rate, 100, 75)
+  Else
+    'B1_Stg4' = Off
+End If
+
+//b2 staging
+Variable B2_Ready
+If 'SystemFlow' And ('CombDamper1_Status' Or 'CombDamper2_Status') And B2Call And 'BP2_Status' Then
+    B2_Ready = On
+  Else
+    B2_Ready = Off
+End If
+
+If B2_Ready OnFor 1M Then
+    'B2_Stg1' = Switch ( 'B2_Stg1', B2Rate, 25, 1)
+  Else
+    'B2_Stg1' = Off
+End If
+
+If B2_Ready And 'B2_Stg1' OnFor 'InterstageDly_Sp':M Then
+    'B2_Stg2' = Switch ( 'B2_Stg2', B2Rate, 50, 25)
+  Else
+    'B2_Stg2' = Off
+End If
+
+If B2_Ready And 'B2_Stg2' OnFor 'InterstageDly_Sp':M Then
+    'B2_Stg3' = Switch ( 'B2_Stg3', B2Rate, 75, 50)
+  Else
+    'B2_Stg3' = Off
+End If
+
+If B2_Ready And 'B2_Stg3' OnFor 'InterstageDly_Sp':M Then
+    'B2_Stg4' = Switch ( 'B2_Stg4', B2Rate, 100, 75)
+  Else
+    'B2_Stg4' = Off
+End If
+
+
+//end of boiler page

@@ -1,0 +1,31 @@
+  //control valve sequence
+
+If 'CUH7_PurgeHold' Then
+    'CUH7_HWMode' = Off
+  ElseIf  ('CUH7_ControlMode' = 2) Then //cooling
+    'CUH7_HWMode' = Off
+  ElseIf  ('CUH7_ControlMode' = 3) And ('CUH7_PrevControlMode' = 2) Then //deadband and previous cooling
+    'CUH7_HWMode' = Off
+  Else
+    'CUH7_HWMode' = On
+End If
+
+If ('CUH7_OccMode' = 6) Then //Purge
+    'CUH7_PurgeHold' = On
+End If
+
+If ('CUH7_OccMode' <> 6) OnFor 'CUH7_PurgeHoldDly_Sp':H Then
+    'CUH7_PurgeHold' = Off
+End If
+
+
+//HWV                  
+If 'CUH7_RunStatusInt' And 'CUH7_HWMode' Then
+    'CUH7_HWV' = 'CUH7_DATHtg_CO' * 'CUH7_HtgRamp' * 0.01 //DAT control when fan is running
+  ElseIf  'CUH7_HWMode' Then
+    'CUH7_HWV' = 'CUH7_EffZoneHtg' * 'CUH7_HtgRamp' * 0.01 //treat as fanless convector when fan switch is off
+  Else
+    'CUH7_HWV' = 0
+End If
+
+//end of HWV  page

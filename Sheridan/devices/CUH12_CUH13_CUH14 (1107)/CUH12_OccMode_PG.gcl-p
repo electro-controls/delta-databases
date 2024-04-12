@@ -1,0 +1,25 @@
+//occ mode page
+
+If 'CUH12_DNSAlgMode' = 1 And 'CUH12_Rem_Schedule' Then
+    'CUH12_OccMode' = 3 //Occupied
+  ElseIf  'CUH12_BypassCall' Then
+    'CUH12_OccMode' = 4 //Bypass
+  ElseIf  'CUH12_Rem_PurgeCall' Then
+    'CUH12_OccMode' = 6 //Purge
+  ElseIf  'CUH12_Rem_WarmupCall' Then
+    'CUH12_OccMode' = 5 //Warmup
+  ElseIf  'CUH12_DNSAlgMode' = 0 And (Not 'CUH12_Rem_Schedule') Then
+    'CUH12_OccMode' = 1 //Unocc
+  Else
+    'CUH12_OccMode' = 2 //Standby
+End If
+
+IfOnce 'CUH12_Rem_Schedule' Then
+    'CUH12_DNSAlgMode' = 1
+End If
+
+IfOnce (Not 'CUH12_Rem_Schedule') And (Not 'CUH12_BypassCall') Then
+    'CUH12_DNSAlgMode' = 0
+End If
+
+//end of occmode pg

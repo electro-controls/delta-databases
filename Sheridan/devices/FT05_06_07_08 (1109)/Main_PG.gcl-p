@@ -1,0 +1,33 @@
+//Main_PG
+Call 'General_PG'
+Call 'FT05_eZNSDisplay1_PG'
+Call 'FT05_eZNSDisplay2_PG'
+Call 'FT07_eZNSDisplay1_PG'
+Call 'FT07_eZNSDisplay2_PG'
+
+
+Call 'FaultDetection_PG'
+
+
+Variable counter
+DoEvery 5S
+  counter = counter + 1
+  End Do
+  If counter >= 5 Then
+  counter = 0
+  End If
+
+If counter = 1 Then
+Call 'FT05_HW_PG'
+Call 'FT05_Zone_PG'
+Call 'FT05_OccMode_PG'
+End If
+
+
+If counter = 3 Then
+Call 'FT07_HW_PG'
+Call 'FT07_Zone_PG'
+Call 'FT07_OccMode_PG'
+End If
+
+//End Program

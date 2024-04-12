@@ -1,0 +1,31 @@
+'Critical_PG.Write_Priority' = 4
+
+// auto reset software freezemode is 1st line of defense. manual reset hardware freezestat trip is 2nd line
+If 'RunStatusInt' And ('DAT' < 'DAT_LoLimit_Sp') OnFor 1M Then
+    'FreezeMode' = On
+End If
+
+If 'Freezestat' Then //hardware freezestat
+    'FreezeMode' = On
+End If
+
+If ('DAT' > 'DAT_LoLimit_Sp' + 5) And ('FreezeMode' OnFor 60M) And (Not 'Freezestat') Then //Auto retry
+    'FreezeMode' = Off
+End If
+
+//safeties
+If 'FreezeMode' Or 'SmokeXxXx' Then
+      'SF1_Speed' = 0
+      'SF2_Speed' = 0
+      'SF3_Speed' = 0
+      'Econ' = 0
+      'HWV' = 100
+   Else
+      Relinquish 'SF1_Speed'
+      Relinquish 'SF2_Speed'
+      Relinquish 'SF3_Speed'
+      Relinquish 'Econ'
+      Relinquish 'HWV'
+End If
+
+//end of critical page

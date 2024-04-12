@@ -1,0 +1,35 @@
+//zone page
+
+//slave to CUH8
+'CUH9_ZoneHeat_EffSp' = 'CUH8_ZoneHeat_EffSp'
+'CUH9_ZoneCool_EffSp' = 'CUH8_ZoneCool_EffSp'
+'CUH9_ZoneDb_Sp' = 'CUH8_ZoneDb_Sp'
+'CUH9_StandbyOffset_Sp' = 'CUH8_StandbyOffset_Sp'
+'CUH9_OcHtgMax_Sp' = 'CUH8_OcHtgMax_Sp'
+'CUH9_OcClgMin_Sp' = 'CUH8_OcClgMin_Sp'
+'CUH9_UnocHt_Sp' = 'CUH8_UnocHt_Sp'
+'CUH9_UnocCl_Sp' = 'CUH8_UnocCl_Sp'
+
+
+//sp is slave to CUH8
+'CUH9_Zone_EffSp' = 'CUH8_Zone_EffSp'
+'CUH9_Zone_LocSp' = 'CUH8_Zone_LocSp'
+
+
+//slave to CUH8
+'CUH9_LocZoneHtg' = 'CUH8_LocZoneHtg'
+'CUH9_LocZoneClg' = 'CUH8_LocZoneClg'
+
+
+//slave to CUH8
+'CUH9_EffZoneHtg' = 'CUH8_EffZoneHtg'
+'CUH9_EffZoneClg' = 'CUH8_EffZoneClg'
+'CUH9_ControlMode' = 'CUH8_ControlMode'
+
+//slave to CH8
+'CUH9_UnocHtCall' = 'CUH8_UnocHtCall'
+'CUH9_UnocClCall' = 'CUH8_UnocClCall'
+'CUH9_ZoneHtDemand' = 'CUH8_ZoneHtDemand'
+'CUH9_ZoneClDemand' = 'CUH8_ZoneClDemand'
+
+//end of fan coil zone page

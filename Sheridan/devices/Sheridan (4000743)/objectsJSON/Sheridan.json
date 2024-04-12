@@ -1,0 +1,774 @@
+{
+  "displayName": "Sheridan",
+  "apdu-segment-timeout": {
+    "$base": "Unsigned",
+    "value": "5000"
+  },
+  "apdu-timeout": {
+    "$base": "Unsigned",
+    "value": "7000"
+  },
+  "application-software-version": {
+    "$base": "String",
+    "value": "4.25.1.294"
+  },
+  "daylight-savings-status": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "device-address-binding": {
+    "1": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "999"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "10001"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0xa8a159d1523c"
+        }
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1100"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0xd8dc134bbac0"
+        }
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1101"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50011"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x01"
+        }
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1102"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50011"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x02"
+        }
+      }
+    },
+    "5": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1103"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50011"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x03"
+        }
+      }
+    },
+    "6": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1104"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50011"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x04"
+        }
+      }
+    },
+    "7": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1105"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50011"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x05"
+        }
+      }
+    },
+    "8": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1106"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50011"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x06"
+        }
+      }
+    },
+    "9": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1107"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50011"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x07"
+        }
+      }
+    },
+    "10": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1108"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50011"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x08"
+        }
+      }
+    },
+    "11": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1109"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50011"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x09"
+        }
+      }
+    },
+    "12": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1110"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50011"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x0a"
+        }
+      }
+    },
+    "13": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "1111"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50011"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x0b"
+        }
+      }
+    },
+    "$base": "List"
+  },
+  "firmware-revision": {
+    "$base": "String",
+    "value": "7.8.0.PC.1.197"
+  },
+  "local-date": {
+    "$base": "Date",
+    "value": "2024-04-12"
+  },
+  "local-time": {
+    "$base": "Time",
+    "value": "10:54:07.86"
+  },
+  "location": {
+    "$base": "String",
+    "value": ""
+  },
+  "max-apdu-length-accepted": {
+    "$base": "Unsigned",
+    "value": "1476"
+  },
+  "model-name": {
+    "$base": "String",
+    "value": "enteliWEB"
+  },
+  "number-of-apdu-retries": {
+    "$base": "Unsigned",
+    "value": "2"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "device,4000743"
+  },
+  "object-list": {
+    "1": {
+      "$base": "ObjectIdentifier",
+      "value": "device,4000743"
+    },
+    "2": {
+      "$base": "ObjectIdentifier",
+      "value": "file,1"
+    },
+    "3": {
+      "$base": "ObjectIdentifier",
+      "value": "file,2"
+    },
+    "$base": "Array"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Sheridan"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "device"
+  },
+  "protocol-object-types-supported": {
+    "$base": "BitString",
+    "value": "device;file"
+  },
+  "protocol-services-supported": {
+    "$base": "BitString",
+    "value": "confirmedEventNotification;atomicReadFile;atomicWriteFile;addListElement;removeListElement;createObject;deleteObject;readProperty;readPropertyMultiple;writeProperty;writePropertyMultiple;deviceCommunicationControl;confirmedPrivateTransfer;confirmedTextMessage;i-Am;unconfirmedEventNotification;unconfirmedPrivateTransfer;unconfirmedTextMessage;who-Has;who-Is"
+  },
+  "protocol-version": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "segmentation-supported": {
+    "$base": "Enumerated",
+    "value": "segmented-both"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "system-status": {
+    "$base": "Enumerated",
+    "value": "operational"
+  },
+  "time-synchronization-recipients": {
+    "$base": "List"
+  },
+  "utc-offset": {
+    "$base": "Signed",
+    "value": 0
+  },
+  "vendor-identifier": {
+    "$base": "Unsigned",
+    "value": "8"
+  },
+  "vendor-name": {
+    "$base": "String",
+    "value": "Delta Controls Inc."
+  },
+  "protocol-revision": {
+    "$base": "Unsigned",
+    "value": "16"
+  },
+  "database-revision": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "max-segments-accepted": {
+    "$base": "Unsigned",
+    "value": "137"
+  },
+  "align-intervals": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "interval-offset": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "time-synchronization-interval": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "utc-time-synchronization-recipients": {
+    "$base": "List"
+  },
+  "property-list": {
+    "1": {
+      "$base": "Enumerated",
+      "value": "apdu-segment-timeout"
+    },
+    "2": {
+      "$base": "Enumerated",
+      "value": "apdu-timeout"
+    },
+    "3": {
+      "$base": "Enumerated",
+      "value": "application-software-version"
+    },
+    "4": {
+      "$base": "Enumerated",
+      "value": "daylight-savings-status"
+    },
+    "5": {
+      "$base": "Enumerated",
+      "value": "description"
+    },
+    "6": {
+      "$base": "Enumerated",
+      "value": "device-address-binding"
+    },
+    "7": {
+      "$base": "Enumerated",
+      "value": "firmware-revision"
+    },
+    "8": {
+      "$base": "Enumerated",
+      "value": "local-date"
+    },
+    "9": {
+      "$base": "Enumerated",
+      "value": "local-time"
+    },
+    "10": {
+      "$base": "Enumerated",
+      "value": "location"
+    },
+    "11": {
+      "$base": "Enumerated",
+      "value": "max-apdu-length-accepted"
+    },
+    "12": {
+      "$base": "Enumerated",
+      "value": "model-name"
+    },
+    "13": {
+      "$base": "Enumerated",
+      "value": "number-of-apdu-retries"
+    },
+    "14": {
+      "$base": "Enumerated",
+      "value": "object-list"
+    },
+    "15": {
+      "$base": "Enumerated",
+      "value": "protocol-object-types-supported"
+    },
+    "16": {
+      "$base": "Enumerated",
+      "value": "protocol-services-supported"
+    },
+    "17": {
+      "$base": "Enumerated",
+      "value": "protocol-version"
+    },
+    "18": {
+      "$base": "Enumerated",
+      "value": "segmentation-supported"
+    },
+    "19": {
+      "$base": "Enumerated",
+      "value": "status-flags"
+    },
+    "20": {
+      "$base": "Enumerated",
+      "value": "system-status"
+    },
+    "21": {
+      "$base": "Enumerated",
+      "value": "time-synchronization-recipients"
+    },
+    "22": {
+      "$base": "Enumerated",
+      "value": "utc-offset"
+    },
+    "23": {
+      "$base": "Enumerated",
+      "value": "vendor-identifier"
+    },
+    "24": {
+      "$base": "Enumerated",
+      "value": "vendor-name"
+    },
+    "25": {
+      "$base": "Enumerated",
+      "value": "protocol-revision"
+    },
+    "26": {
+      "$base": "Enumerated",
+      "value": "database-revision"
+    },
+    "27": {
+      "$base": "Enumerated",
+      "value": "max-segments-accepted"
+    },
+    "28": {
+      "$base": "Enumerated",
+      "value": "align-intervals"
+    },
+    "29": {
+      "$base": "Enumerated",
+      "value": "interval-offset"
+    },
+    "30": {
+      "$base": "Enumerated",
+      "value": "time-synchronization-interval"
+    },
+    "31": {
+      "$base": "Enumerated",
+      "value": "utc-time-synchronization-recipients"
+    },
+    "32": {
+      "$base": "Enumerated",
+      "value": "serial-number"
+    },
+    "33": {
+      "$base": "Enumerated",
+      "value": "1030"
+    },
+    "34": {
+      "$base": "Enumerated",
+      "value": "1032"
+    },
+    "35": {
+      "$base": "Enumerated",
+      "value": "1037"
+    },
+    "36": {
+      "$base": "Enumerated",
+      "value": "1067"
+    },
+    "37": {
+      "$base": "Enumerated",
+      "value": "1068"
+    },
+    "38": {
+      "$base": "Enumerated",
+      "value": "1069"
+    },
+    "39": {
+      "$base": "Enumerated",
+      "value": "1070"
+    },
+    "40": {
+      "$base": "Enumerated",
+      "value": "1071"
+    },
+    "41": {
+      "$base": "Enumerated",
+      "value": "1072"
+    },
+    "42": {
+      "$base": "Enumerated",
+      "value": "1082"
+    },
+    "43": {
+      "$base": "Enumerated",
+      "value": "1084"
+    },
+    "44": {
+      "$base": "Enumerated",
+      "value": "1085"
+    },
+    "45": {
+      "$base": "Enumerated",
+      "value": "1086"
+    },
+    "46": {
+      "$base": "Enumerated",
+      "value": "1087"
+    },
+    "47": {
+      "$base": "Enumerated",
+      "value": "1088"
+    },
+    "48": {
+      "$base": "Enumerated",
+      "value": "1090"
+    },
+    "49": {
+      "$base": "Enumerated",
+      "value": "1093"
+    },
+    "50": {
+      "$base": "Enumerated",
+      "value": "1108"
+    },
+    "51": {
+      "$base": "Enumerated",
+      "value": "1109"
+    },
+    "52": {
+      "$base": "Enumerated",
+      "value": "1110"
+    },
+    "53": {
+      "$base": "Enumerated",
+      "value": "1111"
+    },
+    "54": {
+      "$base": "Enumerated",
+      "value": "1113"
+    },
+    "55": {
+      "$base": "Enumerated",
+      "value": "1132"
+    },
+    "56": {
+      "$base": "Enumerated",
+      "value": "1152"
+    },
+    "57": {
+      "$base": "Enumerated",
+      "value": "1153"
+    },
+    "$base": "Array"
+  },
+  "serial-number": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "hardware-revision": {
+    "$base": "String",
+    "value": "N/A"
+  },
+  "time-sync-timer": {
+    "$base": "Unsigned",
+    "value": "18446744073709551615"
+  },
+  "latitude": {
+    "$base": "Real",
+    "value": 0
+  },
+  "longitude": {
+    "$base": "Real",
+    "value": 0
+  },
+  "site-elevation": {
+    "$base": "Signed",
+    "value": 0
+  },
+  "site-elevation-units": {
+    "$base": "Enumerated",
+    "value": "m"
+  },
+  "reset-count": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "scan-rate": {
+    "$base": "Real",
+    "value": "4"
+  },
+  "command": {
+    "$base": "Choice",
+    "command": {
+      "$base": "Enumerated",
+      "value": "save-database-to-flash"
+    }
+  },
+  "reset-password": {
+    "$base": "Octet",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "value": ""
+  },
+  "dcc-password": {
+    "$base": "Octet",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "value": ""
+  },
+  "config-password": {
+    "$base": "Octet",
+    "value": "0x"
+  },
+  "commission-flag": {
+    "$base": "Enumerated",
+    "value": "commissioned"
+  },
+  "configuration-files": {
+    "$base": "Array"
+  },
+  "backup-failure-timeout": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "backup-preparation-time": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "restore-preparation-time": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "restore-completion-time": {
+    "$base": "Unsigned",
+    "value": "10"
+  },
+  "backup-and-restore-state": {
+    "$base": "Enumerated",
+    "value": "idle"
+  },
+  "date-time-settings": {
+    "$base": "Sequence",
+    "utc-enable": {
+      "$base": "Boolean",
+      "value": 0
+    },
+    "dst-enable": {
+      "$base": "Boolean",
+      "value": 0
+    },
+    "dst-start": {
+      "$base": "Sequence",
+      "month": {
+        "$base": "Enumerated",
+        "value": "january"
+      },
+      "weekOfMonth": {
+        "$base": "Enumerated",
+        "value": "first"
+      },
+      "dayOfWeek": {
+        "$base": "Enumerated",
+        "value": "monday"
+      }
+    },
+    "dst-start-on-after": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "dst-end": {
+      "$base": "Sequence",
+      "month": {
+        "$base": "Enumerated",
+        "value": "january"
+      },
+      "weekOfMonth": {
+        "$base": "Enumerated",
+        "value": "first"
+      },
+      "dayOfWeek": {
+        "$base": "Enumerated",
+        "value": "monday"
+      }
+    },
+    "dst-end-on-after": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "dst-transition-time": {
+      "$base": "Time",
+      "value": "00:00:00.00"
+    },
+    "dst-offset": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "tags": {
+    "$base": "Array"
+  },
+  "time-sync-to-next-transmit": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "device-uuid": {
+    "$base": "String",
+    "value": "C459C127FEBB4183ACE6A44686382E63"
+  }
+}

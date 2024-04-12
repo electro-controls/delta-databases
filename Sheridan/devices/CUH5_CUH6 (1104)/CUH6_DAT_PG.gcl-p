@@ -1,0 +1,26 @@
+//DAT page
+
+//allow remote override of sp
+If ('CUH6_DAT_RemSp' > 0) Then
+    'CUH6_DAT_EffSp' = 'CUH6_DAT_RemSp'
+  Else
+    'CUH6_DAT_EffSp' = 'CUH6_DAT_LocSp'
+End If
+
+
+//determine local sp
+If ('CUH6_ControlMode' = 1) Then //heating
+    'CUH6_DAT_LocSp' = Scale ('CUH6_EffZoneHtg', 0, 0, 'CUH6_ZoneHeat_EffSp', 75, 'CUH6_DATResetHigh_Sp')
+  Else //cooling or deadband
+    'CUH6_DAT_LocSp' = Scale ('CUH6_EffZoneClg', 0, 0, 'CUH6_ZoneHeat_EffSp' - 0, 75, 'CUH6_DATResetLow_Sp')
+End If
+
+IfOnce ('CUH6_PrevControlMode' = 2) And ('CUH6_ControlMode' = 3) Then //prev cooling and now deadband
+    'CUH6_DATHtg_CO.Bias' = 1
+End If
+
+IfOnce ('CUH6_ControlMode' = 2) Then //cooling
+    'CUH6_DATClg_CO.Bias' = 1
+End If
+
+//end of DAT page

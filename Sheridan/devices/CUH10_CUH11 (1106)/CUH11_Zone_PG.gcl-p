@@ -1,0 +1,104 @@
+//zone page
+
+//determine effective sp
+If ('CUH11_OccMode' = 3) Or ('CUH11_OccMode' = 4) Or ('CUH11_OccMode' = 5) Then //occ, bypass, or warmup
+    'CUH11_ZoneHeat_EffSp' = Min (('CUH11_Zone_EffSp' - ('CUH11_ZoneDb_Sp' * 0.5)), 'CUH11_OcHtgMax_Sp')
+    'CUH11_ZoneCool_EffSp' = Max (('CUH11_Zone_EffSp' + ('CUH11_ZoneDb_Sp' * 0.5)), 'CUH11_OcClgMin_Sp')
+  ElseIf  ('CUH11_OccMode' = 2) Then //Standby                              
+    'CUH11_ZoneHeat_EffSp' = Min (('CUH11_Zone_EffSp' - 'CUH11_StandbyOffset_Sp' - ('CUH11_ZoneDb_Sp' * 0.5)), 'CUH11_OcHtgMax_Sp')
+    'CUH11_ZoneCool_EffSp' = Max (('CUH11_Zone_EffSp' + 'CUH11_StandbyOffset_Sp' + ('CUH11_ZoneDb_Sp' * 0.5)), 'CUH11_OcClgMin_Sp')
+  ElseIf  ('CUH11_OccMode' = 6) Then //Purge                            
+    'CUH11_ZoneHeat_EffSp' = Min (('CUH11_Zone_EffSp' - 'CUH11_StandbyOffset_Sp' - ('CUH11_ZoneDb_Sp' * 0.5)), 'CUH11_OcHtgMax_Sp')
+    'CUH11_ZoneCool_EffSp' = Max (('CUH11_Zone_EffSp' + ('CUH11_ZoneDb_Sp' * 0.5)), 'CUH11_OcClgMin_Sp')
+  Else //unocc                                                  
+    'CUH11_ZoneHeat_EffSp' = Min ('CUH11_UnocHt_Sp', 'CUH11_OcHtgMax_Sp')
+    'CUH11_ZoneCool_EffSp' = Max ('CUH11_UnocCl_Sp', 'CUH11_OcClgMin_Sp')
+End If
+
+//Links remote setpoint to effective
+If ('CUH11_OccMode' = 6) Then //purge
+    'CUH11_Zone_EffSp' = 'CUH11_NightPurgeZone_Sp'
+  ElseIf  ('CUH11_Zone_RemSp' > 0) Then
+    'CUH11_Zone_EffSp' = 'CUH11_Zone_RemSp'
+  Else
+    'CUH11_Zone_EffSp' = 'CUH11_Zone_LocSp'
+End If
+
+//calculate local demand after ramp
+'CUH11_LocZoneHtg' = 'CUH11_ZoneHtg_CO' * 'CUH11_HtgRamp' * 0.01
+'CUH11_LocZoneClg' = 'CUH11_ZoneClg_CO' * 'CUH11_ClgRamp' * 0.01
+
+//determine heating and cooling call and previous mode latching
+Variable HtCall
+Variable ClCall
+
+If (('CUH11_ZoneHtg_CO' > ('CUH11_EffZoneClg' + 5)) And 'CUH11_ControlMode' = 3) OnFor 'CUH11_ZoneDbDelay_Sp':S Then
+    HtCall = On
+    'CUH11_PrevControlMode' = 3
+  ElseIf  (('CUH11_ZoneClg_CO' > ('CUH11_EffZoneHtg' + 5)) And 'CUH11_ControlMode' = 3) OnFor 'CUH11_ZoneDbDelay_Sp':S Then
+    ClCall = On
+    'CUH11_PrevControlMode' = 3
+  ElseIf  (('CUH11_ControlMode' = 1) And ('CUH11_EffZoneHtg' <= 0)) OnFor 'CUH11_ZoneDbDelay_Sp':S Then
+    HtCall = Off
+    'CUH11_PrevControlMode' = 1
+  ElseIf  (('CUH11_ControlMode' = 2) And ('CUH11_EffZoneClg' <= 0)) OnFor 'CUH11_ZoneDbDelay_Sp':S Then
+    ClCall = Off
+    'CUH11_PrevControlMode' = 2
+End If
+
+//Set current control mode (heating, cooling, deadband)
+//allow manual override of demand
+If ('CUH11_RemZoneHtg' >= 0) Then //remote heating demand
+    'CUH11_EffZoneHtg' = 'CUH11_RemZoneHtg'
+    'CUH11_EffZoneClg' = 0
+    'CUH11_ControlMode' = 1
+  ElseIf  ('CUH11_RemZoneClg' >= 0) Then //remote cooling demand
+    'CUH11_EffZoneClg' = 'CUH11_RemZoneClg'
+    'CUH11_EffZoneHtg' = 0
+    'CUH11_ControlMode' = 2
+  ElseIf  ClCall Then //calculated cooling call
+    'CUH11_ControlMode' = 2
+    'CUH11_EffZoneHtg' = 'CUH11_LocZoneHtg'
+    'CUH11_EffZoneClg' = 'CUH11_LocZoneClg'
+  ElseIf  HtCall Then //calculated heating call
+    'CUH11_ControlMode' = 1
+    'CUH11_EffZoneHtg' = 'CUH11_LocZoneHtg'
+    'CUH11_EffZoneClg' = 'CUH11_LocZoneClg'
+  Else
+    'CUH11_ControlMode' = 3 //calculated deadband
+    'CUH11_EffZoneHtg' = 'CUH11_LocZoneHtg'
+    'CUH11_EffZoneClg' = 'CUH11_LocZoneClg'
+End If
+
+//ramp delay to minimize overshoot of cascade control loops and
+//provide smoother sequencing of staged outputs (where applicable)
+If ('CUH11_ControlMode' = 1) Then
+    DoEvery 10S
+    'CUH11_HtgRamp' = Min (100, 'CUH11_HtgRamp' + (1000 / 'CUH11_ZoneHtRamp_Sp'))
+    End Do
+  Else
+    'CUH11_HtgRamp' = 0
+End If
+If ('CUH11_ControlMode' = 2) Then
+    DoEvery 10S
+    'CUH11_ClgRamp' = Min (100, 'CUH11_ClgRamp' + (1000 / 'CUH11_ZoneClRamp_Sp'))
+    End Do
+  Else
+    'CUH11_ClgRamp' = 0
+End If
+
+//Unoc Demand
+If ('CUH11_OccMode' = 1) Then //Unoccupied
+    'CUH11_UnocHtCall' = Switch ( 'CUH11_UnocHtCall', 'CUH11_EffZoneHtg', 60, 5)
+    'CUH11_UnocClCall' = Switch ( 'CUH11_UnocClCall', 'CUH11_EffZoneClg', 60, 5)
+  Else
+    'CUH11_UnocHtCall' = Off
+    'CUH11_UnocClCall' = Off
+End If
+
+
+//Standby Demand
+'CUH11_ZoneHtDemand' = Switch ( 'CUH11_ZoneHtDemand', 'CUH11_EffZoneHtg', 60, 5)
+'CUH11_ZoneClDemand' = Switch ( 'CUH11_ZoneClDemand', 'CUH11_EffZoneClg', 60, 5)
+
+//end of fan coil zone page

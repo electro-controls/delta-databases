@@ -1,0 +1,10 @@
+//occ mode page
+
+
+//occ slave to CUH8
+'CUH9_DNSAlgMode' = 'CUH8_DNSAlgMode'
+'CUH9_Rem_Schedule' = 'CUH8_Rem_Schedule'
+'CUH9_OccMode' = 'CUH8_OccMode'
+
+
+//end of occmode pg

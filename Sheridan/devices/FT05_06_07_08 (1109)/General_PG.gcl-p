@@ -1,0 +1,53 @@
+//General_PG
+
+//Power up defaults
+If PowerUp Then
+    'Eff_OAT' = 32
+    'FT05_OccMode' = 3
+    'FT05_Rem_Schedule' = On
+    'FT05_DNSAlgMode' = 1
+    'FT05_Zone_RemSp' = - 1
+    'FT05_RemZoneHtg' = - 1
+    'FT05_Rem_WarmupCall' = Off
+
+    'FT07_OccMode' = 3
+    'FT07_Rem_Schedule' = On
+    'FT07_DNSAlgMode' = 1
+    'FT07_Zone_RemSp' = - 1
+    'FT07_RemZoneHtg' = - 1
+    'FT07_Rem_WarmupCall' = Off
+
+    'Uptime' = 0
+End If
+
+//Intercontroller Links
+'Eff_OAT' = '1100.Eff_OAT'
+
+DoEvery 1M
+  'Uptime' = 'Uptime' + 1
+End Do
+
+//Link Zone Temp here
+'FT05_Eff_ZoneTemp' = 'FT05_ZoneTemp'
+'FT07_Eff_ZoneTemp' = 'FT07_ZoneTemp'
+
+//Controller will save to flash every 24 hours.  Below code initiates save
+//based on controller address so saves are staggered rather than all at once.  
+ Variable T //Time
+ Variable A1 //Address 1 to 59
+ Variable A2 //Address 60 to 99
+
+ T = Time
+ A1 = 'FT05_06_07_08.DIP_Setting'
+
+ If A1 > 59 Then
+   A2 = (A1 - 59) + 99
+  Else
+   A2 = A1
+ End If
+
+ IfOnce T = A2 And Weekday = 3 Then
+  SaveToFlash
+ End If
+
+//End Program

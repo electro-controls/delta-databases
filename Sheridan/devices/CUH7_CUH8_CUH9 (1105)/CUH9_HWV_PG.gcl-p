@@ -1,0 +1,34 @@
+  //control valve sequence
+
+//If CUH9_PurgeHold Then
+//    CUH9_HWMode = Off
+//  ElseIf  (CUH9_ControlMode = 2) Then //cooling
+//    CUH9_HWMode = Off
+//  ElseIf  (CUH9_ControlMode = 3) And (CUH9_PrevControlMode = 2) Then //deadband and previous cooling
+//    CUH9_HWMode = Off
+//  Else
+//    CUH9_HWMode = On
+//End If
+
+//If (CUH9_OccMode = 6) Then //Purge
+//    CUH9_PurgeHold = On
+//End If
+
+//If (CUH9_OccMode <> 6) OnFor CUH9_PurgeHoldDly_Sp:H Then
+//    CUH9_PurgeHold = Off
+//End If
+
+//slave to CUH8
+'CUH9_HWMode' = 'CUH8_HWMode'
+'CUH9_HtgRamp' = 'CUH8_HtgRamp'
+
+//HWV                  
+If 'CUH9_RunStatusInt' And 'CUH9_HWMode' Then
+    'CUH9_HWV' = 'CUH9_DATHtg_CO' * 'CUH9_HtgRamp' * 0.01 //DAT control when fan is running
+  ElseIf  'CUH9_HWMode' Then
+    'CUH9_HWV' = 'CUH9_EffZoneHtg' * 'CUH9_HtgRamp' * 0.01 //treat as fanless convector when fan switch is off
+  Else
+    'CUH9_HWV' = 0
+End If
+
+//end of HWV  page

@@ -1,0 +1,28 @@
+'PG9.Write_Priority' = 4
+
+
+//software freeze mode
+
+If ('CUH14_Eff_ZoneTemp' < 42) OnFor 60S Then
+    'CUH14_FreezeMode' = On
+End If
+
+If ('CUH14_Eff_ZoneTemp' > 45) OnFor 60S Then
+    'CUH14_FreezeMode' = Off
+End If
+
+If PowerUp Then
+    'CUH14_FreezeMode' = Off
+End If
+
+
+If 'CUH14_FreezeMode' Then
+    'CUH14_Enable' = Off
+    'CUH14_HWV' = 100
+  Else
+    Relinquish 'CUH14_Enable'
+    Relinquish 'CUH14_HWV'
+End If
+
+
+//end of critical page

@@ -1,0 +1,51 @@
+//Economizer sequence
+
+Variable MATInt
+If ('MAT' < ('MATLimit_Sp' - 5)) OnFor 30S Then //MATLimit_Sp is based on coil design entering air temp 
+    MATInt = Off
+  Else
+    MATInt = On
+End If
+
+//Economizer ramp delay is automatically longer during cold weather
+'EconRampDly' = Scale ('Eff_OAT', 0, 20, 2000, 60, 60) //seems too long but ramp is % so it works
+
+//Allow OA damper to ramp open if MAT limit sp is satisfied
+If 'RunStatusInt' And MATInt And (('Mode' = 1) Or ('Mode' = 4)) Then //Occ Mode or UnOcc Cooling
+   DoEvery 10S
+    'EconRampPct' = Min (100, 'EconRampPct' + (100 / 'EconRampDly' * 10)) //seems too long but ramp is % so it works
+   End Do
+  Else
+    'EconRampPct' = 0
+End If
+
+//Determine if free cooling is possible by comparing OAT and RAT
+'FreeCooling' = Switch ( 'FreeCooling', 'Eff_OAT', 'RAT' - 1, 'RAT' + 1)
+
+//Allow free cooling in Occ mode or UnOcc Cooling
+If (Not 'HW_Mode') And 'FreeCooling' Then
+    'Eff_EconClgDemand' = Scale ('DATClg_CO', 0, 0, 0, 100, 100) //no DX. all econo free cooling
+  Else
+    'Eff_EconClgDemand' = 0
+End If
+
+//no CO2 so OA demand follows economizer cooling demand only
+If 'RunStatusInt' Then
+      'Eff_OA_Demand' = Scale ('Eff_EconClgDemand', 0, 0, 0, 100, 100)
+  Else
+      'Eff_OA_Demand' = 0
+End If
+
+//OA Damper modulates in Occ Mode or UnOcc Cooling
+If ('Mode' = 1) Then
+    'Econ' = ('EconRampPct' / 100) * Scale ('Eff_OA_Demand', 0, 0, 'TABMinOAPos', 100, 'MATLimit_CO')
+  ElseIf  ('Mode' = 4) Then
+    'Econ' = ('EconRampPct' / 100) * Scale ('Eff_OA_Demand', 0, 0, 0, 100, 'MATLimit_CO')
+  Else
+    'Econ' = 0
+End If
+
+//return air damper is controlled from same output as econo
+
+
+//End of Program

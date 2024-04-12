@@ -1,0 +1,35 @@
+{
+  "displayName": "Enabled_Disabled BDC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,2"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-device-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Enabled_Disabled BDC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Enabled"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Disabled"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

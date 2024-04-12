@@ -1,0 +1,134 @@
+//eZNS2 pg
+
+// Bypass time/Bypass Mode
+Variable BPDis //Bypass display mode
+
+If ('CUH8_OccMode' <> 2) Then
+ IfOnce ('LinkLCD2.Key_Press' = 2) And ('CUH8_BypassTmLeft' < 0.5) Then //2 is on button
+    'CUH8_DNSAlgMode' = 1
+    'CUH8_BypassTmLeft' = 'CUH8_BypassTm_Sp'
+    BPDis = On
+ End If
+
+ If ('LinkLCD2.Key_Press' = 2) Then
+    BPDis = On
+ End If
+Else
+ BPDis = Off
+End If
+
+//Allow someone to press ON again to revert back to Temp display
+If ('LinkLCD2.Key_Press' = 2) And (BPDis OnFor 2S) Then
+    BPDis = Off
+End If
+
+IfOnce BPDis Then
+    'LinkLCD2.Line_2' = 'CUH8_BypassTmLeft'
+    'LinkLCD2.Line_2_Units' = 0
+    'LinkLCD2.Line_3' = "Hr"
+    'LinkLCD2.Line_3_Units' = 0
+End If
+IfOnce Not BPDis Then
+    'LinkLCD2.Line_2' = 'CUH8_Eff_ZoneTemp'
+    'LinkLCD2.Line_2_Units' = 3
+    'LinkLCD2.Line_3' = 'CUH8_Zone_EffSp'
+    'LinkLCD2.Line_3_Units' = 1
+End If
+
+If BPDis Then
+    If ('LinkLCD2.Key_Press' = 4) Then
+    'CUH8_BypassTmLeft' = Limit ('CUH8_BypassTmLeft', 'CUH8_BypassTmLeft' + 0.5, 9)
+    'LinkLCD2.Line_2' = 'CUH8_BypassTmLeft'
+    End If
+    If ('LinkLCD2.Key_Press' = 3) Then
+    'CUH8_BypassTmLeft' = Limit ('CUH8_BypassTmLeft', 0.5, 'CUH8_BypassTmLeft' - 0.5)
+    'LinkLCD2.Line_2' = 'CUH8_BypassTmLeft'
+    End If
+End If
+
+Variable line2mode
+If ('LinkLCD2.Key_Press' = 0) OnFor 8S Then
+    If 'CUH8_BypassCall' And (Not 'CUH8_Rem_Schedule') Then
+      If line2mode OnFor 7S Then
+        line2mode = Off
+      End If
+      If line2mode OffFor 3S Then
+        line2mode = On
+      End If
+      IfOnce line2mode Then
+            'LinkLCD2.Line_2' = 'CUH8_Eff_ZoneTemp'
+            'LinkLCD2.Line_2_Units' = 3
+            'LinkLCD2.Line_3' = 'CUH8_Zone_EffSp'
+            'LinkLCD2.Line_3_Units' = 1
+            line2mode = 1
+            BPDis = Off
+      End If
+      IfOnce Not line2mode Then
+            BPDis = On
+      End If
+    Else
+      IfOnce ('LinkLCD2.Key_Press' = 0) Then
+      'LinkLCD2.Line_2' = 'CUH8_Eff_ZoneTemp'
+      'LinkLCD2.Line_2_Units' = 3
+      'LinkLCD2.Line_3' = 'CUH8_Zone_EffSp'
+      'LinkLCD2.Line_3_Units' = 1
+      End If
+      DoEvery 60S
+      'LinkLCD2.Line_2' = 'CUH8_Eff_ZoneTemp'
+      'LinkLCD2.Line_2_Units' = 3
+      'LinkLCD2.Line_3' = 'CUH8_Zone_EffSp'
+      'LinkLCD2.Line_3_Units' = 1
+      End Do
+      line2mode = 1
+      BPDis = Off
+    End If
+End If
+ 
+//If someone presses the off button, unit goes off and resets bypass time left
+//to zero.
+IfOnce ('LinkLCD2.Key_Press' = 1) And 'CUH8_EnableDNS' And 'CUH8_BypassCall' Then
+    'CUH8_DNSAlgMode' = 0
+    'CUH8_BypassTmLeft' = 0
+    BPDis = Off
+End If
+//Put unit into standby mode
+IfOnce ('LinkLCD2.Key_Press' = 1) And 'CUH8_EnableDNS' And 'CUH8_Rem_Schedule' Then
+    'CUH8_DNSAlgMode' = 0
+    'CUH8_BypassTmLeft' = 0
+End If
+
+//Put unit into occ mode from standby mode
+IfOnce ('LinkLCD2.Key_Press' = 2) And 'CUH8_Rem_Schedule' Then
+    'CUH8_DNSAlgMode' = 1
+End If
+
+//Bypass time increments down every 30 minutes.
+If 'CUH8_BypassTmLeft' > 0 Then
+    'CUH8_BypassCall' = On
+    DoEvery 30M
+    'CUH8_BypassTmLeft' = Max (0, 'CUH8_BypassTmLeft' - 0.5)
+    End Do
+  Else
+    'CUH8_BypassCall' = Off
+End If
+
+//Allow for changing space setpoint.
+Variable Update
+If ('LinkLCD2.Key_Press' = 3) And (Not BPDis) And 'CUH8_EnableDNS' Then
+  'CUH8_Zone_LocSp' = Limit ('CUH8_Zone_LocSp' - 0.5, 'CUH8_OcHtgMin_Sp', 'CUH8_OcClgMax_Sp')
+  Update = On
+End If
+If ('LinkLCD2.Key_Press' = 4) And (Not BPDis) And 'CUH8_EnableDNS' Then
+  'CUH8_Zone_LocSp' = Limit ('CUH8_Zone_LocSp' + 0.5, 'CUH8_OcHtgMin_Sp', 'CUH8_OcClgMax_Sp')
+  Update = On
+End If
+
+If Update Then
+  'LinkLCD2.Line_3' = 'CUH8_Zone_EffSp'
+  'LinkLCD2.Line_3_Units' = 1
+End If
+If Update OnFor 5S Then
+  Update = Off
+End If
+
+//end of eZNS2 pg

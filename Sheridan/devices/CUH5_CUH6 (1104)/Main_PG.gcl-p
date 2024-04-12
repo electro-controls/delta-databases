@@ -1,0 +1,38 @@
+//main page
+
+//call all other pages
+
+Call 'General_PG'
+Call 'FaultDetection_PG'
+
+Call 'CUH5_Critical_PG'
+Call 'CUH6_Critical_PG'
+
+
+Variable Counter
+DoEvery 5S
+Counter = Counter + 1
+End Do
+
+If Counter >= 3 Then
+    Counter = 0
+End If
+
+If Counter = 1 Then
+    Call 'CUH5_Fan_PG'
+    Call 'CUH5_HWV_PG'
+    Call 'CUH5_Zone_PG'
+    Call 'CUH5_OccMode_PG'
+    Call 'CUH5_DAT_PG'
+End If
+
+
+If Counter = 2 Then
+    Call 'CUH6_Fan_PG'
+    Call 'CUH6_HWV_PG'
+    Call 'CUH6_Zone_PG'
+    Call 'CUH6_OccMode_PG'
+    Call 'CUH6_DAT_PG'
+End If
+
+//end of main page

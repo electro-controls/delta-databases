@@ -1,0 +1,35 @@
+{
+  "displayName": "Engineer Units BDC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,8"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-device-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Engineer Units BDC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Metric"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Imperial"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

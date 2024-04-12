@@ -1,0 +1,18 @@
+//fan program 
+
+'CUH2_Enable' = Switch ( 'CUH2_Enable', 'CUH2_EffZoneHtg', 90, 10)
+ 
+
+//fan status
+'CUH2_FanStatus' = Switch ( 'CUH2_FanStatus', 'CUH2_Current', 0.7, 0.4)
+
+If 'CUH2_FanStatus' Then
+    'CUH2_RunStatusInt' = On
+End If
+
+If ('CUH2_FanStatus') OffFor 10S Then
+    'CUH2_RunStatusInt' = Off
+End If
+
+
+//end of fan program

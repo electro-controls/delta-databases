@@ -1,0 +1,104 @@
+//zone page
+
+//determine effective sp
+If ('CUH5_OccMode' = 3) Or ('CUH5_OccMode' = 4) Or ('CUH5_OccMode' = 5) Then //occ, bypass, or warmup
+    'CUH5_ZoneHeat_EffSp' = Min (('CUH5_Zone_EffSp' - ('CUH5_ZoneDb_Sp' * 0.5)), 'CUH5_OcHtgMax_Sp')
+    'CUH5_ZoneCool_EffSp' = Max (('CUH5_Zone_EffSp' + ('CUH5_ZoneDb_Sp' * 0.5)), 'CUH5_OcClgMin_Sp')
+  ElseIf  ('CUH5_OccMode' = 2) Then //Standby                              
+    'CUH5_ZoneHeat_EffSp' = Min (('CUH5_Zone_EffSp' - 'CUH5_StandbyOffset_Sp' - ('CUH5_ZoneDb_Sp' * 0.5)), 'CUH5_OcHtgMax_Sp')
+    'CUH5_ZoneCool_EffSp' = Max (('CUH5_Zone_EffSp' + 'CUH5_StandbyOffset_Sp' + ('CUH5_ZoneDb_Sp' * 0.5)), 'CUH5_OcClgMin_Sp')
+  ElseIf  ('CUH5_OccMode' = 6) Then //Purge                            
+    'CUH5_ZoneHeat_EffSp' = Min (('CUH5_Zone_EffSp' - 'CUH5_StandbyOffset_Sp' - ('CUH5_ZoneDb_Sp' * 0.5)), 'CUH5_OcHtgMax_Sp')
+    'CUH5_ZoneCool_EffSp' = Max (('CUH5_Zone_EffSp' + ('CUH5_ZoneDb_Sp' * 0.5)), 'CUH5_OcClgMin_Sp')
+  Else //unocc                                                  
+    'CUH5_ZoneHeat_EffSp' = Min ('CUH5_UnocHt_Sp', 'CUH5_OcHtgMax_Sp')
+    'CUH5_ZoneCool_EffSp' = Max ('CUH5_UnocCl_Sp', 'CUH5_OcClgMin_Sp')
+End If
+
+//Links remote setpoint to effective
+If ('CUH5_OccMode' = 6) Then //purge
+    'CUH5_Zone_EffSp' = 'CUH5_NightPurgeZone_Sp'
+  ElseIf  ('CUH5_Zone_RemSp' > 0) Then
+    'CUH5_Zone_EffSp' = 'CUH5_Zone_RemSp'
+  Else
+    'CUH5_Zone_EffSp' = 'CUH5_Zone_LocSp'
+End If
+
+//calculate local demand after ramp
+'CUH5_LocZoneHtg' = 'CUH5_ZoneHtg_CO' * 'CUH5_HtgRamp' * 0.01
+'CUH5_LocZoneClg' = 'CUH5_ZoneClg_CO' * 'CUH5_ClgRamp' * 0.01
+
+//determine heating and cooling call and previous mode latching
+Variable HtCall
+Variable ClCall
+
+If (('CUH5_ZoneHtg_CO' > ('CUH5_EffZoneClg' + 5)) And 'CUH5_ControlMode' = 3) OnFor 'CUH5_ZoneDbDelay_Sp':S Then
+    HtCall = On
+    'CUH5_PrevControlMode' = 3
+  ElseIf  (('CUH5_ZoneClg_CO' > ('CUH5_EffZoneHtg' + 5)) And 'CUH5_ControlMode' = 3) OnFor 'CUH5_ZoneDbDelay_Sp':S Then
+    ClCall = On
+    'CUH5_PrevControlMode' = 3
+  ElseIf  (('CUH5_ControlMode' = 1) And ('CUH5_EffZoneHtg' <= 0)) OnFor 'CUH5_ZoneDbDelay_Sp':S Then
+    HtCall = Off
+    'CUH5_PrevControlMode' = 1
+  ElseIf  (('CUH5_ControlMode' = 2) And ('CUH5_EffZoneClg' <= 0)) OnFor 'CUH5_ZoneDbDelay_Sp':S Then
+    ClCall = Off
+    'CUH5_PrevControlMode' = 2
+End If
+
+//Set current control mode (heating, cooling, deadband)
+//allow manual override of demand
+If ('CUH5_RemZoneHtg' >= 0) Then //remote heating demand
+    'CUH5_EffZoneHtg' = 'CUH5_RemZoneHtg'
+    'CUH5_EffZoneClg' = 0
+    'CUH5_ControlMode' = 1
+  ElseIf  ('CUH5_RemZoneClg' >= 0) Then //remote cooling demand
+    'CUH5_EffZoneClg' = 'CUH5_RemZoneClg'
+    'CUH5_EffZoneHtg' = 0
+    'CUH5_ControlMode' = 2
+  ElseIf  ClCall Then //calculated cooling call
+    'CUH5_ControlMode' = 2
+    'CUH5_EffZoneHtg' = 'CUH5_LocZoneHtg'
+    'CUH5_EffZoneClg' = 'CUH5_LocZoneClg'
+  ElseIf  HtCall Then //calculated heating call
+    'CUH5_ControlMode' = 1
+    'CUH5_EffZoneHtg' = 'CUH5_LocZoneHtg'
+    'CUH5_EffZoneClg' = 'CUH5_LocZoneClg'
+  Else
+    'CUH5_ControlMode' = 3 //calculated deadband
+    'CUH5_EffZoneHtg' = 'CUH5_LocZoneHtg'
+    'CUH5_EffZoneClg' = 'CUH5_LocZoneClg'
+End If
+
+//ramp delay to minimize overshoot of cascade control loops and
+//provide smoother sequencing of staged outputs (where applicable)
+If ('CUH5_ControlMode' = 1) Then
+    DoEvery 10S
+    'CUH5_HtgRamp' = Min (100, 'CUH5_HtgRamp' + (1000 / 'CUH5_ZoneHtRamp_Sp'))
+    End Do
+  Else
+    'CUH5_HtgRamp' = 0
+End If
+If ('CUH5_ControlMode' = 2) Then
+    DoEvery 10S
+    'CUH5_ClgRamp' = Min (100, 'CUH5_ClgRamp' + (1000 / 'CUH5_ZoneClRamp_Sp'))
+    End Do
+  Else
+    'CUH5_ClgRamp' = 0
+End If
+
+//Unoc Demand
+If ('CUH5_OccMode' = 1) Then //Unoccupied
+    'CUH5_UnocHtCall' = Switch ( 'CUH5_UnocHtCall', 'CUH5_EffZoneHtg', 60, 5)
+    'CUH5_UnocClCall' = Switch ( 'CUH5_UnocClCall', 'CUH5_EffZoneClg', 60, 5)
+  Else
+    'CUH5_UnocHtCall' = Off
+    'CUH5_UnocClCall' = Off
+End If
+
+
+//Standby Demand
+'CUH5_ZoneHtDemand' = Switch ( 'CUH5_ZoneHtDemand', 'CUH5_EffZoneHtg', 60, 5)
+'CUH5_ZoneClDemand' = Switch ( 'CUH5_ZoneClDemand', 'CUH5_EffZoneClg', 60, 5)
+
+//end of fan coil zone page

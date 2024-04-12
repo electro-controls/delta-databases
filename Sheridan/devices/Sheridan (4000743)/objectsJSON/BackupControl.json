@@ -1,0 +1,138 @@
+{
+  "displayName": "BackupControl",
+  "archive": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "file-access-method": {
+    "$base": "Enumerated",
+    "value": "stream-access"
+  },
+  "file-size": {
+    "$base": "Unsigned",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "value": ""
+  },
+  "file-type": {
+    "$base": "String",
+    "value": ""
+  },
+  "modification-date": {
+    "$base": "DateTime",
+    "value": "2024-04-12T10:29:55.280000-06:00"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "file,1"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "BackupControl"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "file"
+  },
+  "read-only": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "property-list": {
+    "1": {
+      "$base": "Enumerated",
+      "value": "archive"
+    },
+    "2": {
+      "$base": "Enumerated",
+      "value": "description"
+    },
+    "3": {
+      "$base": "Enumerated",
+      "value": "file-access-method"
+    },
+    "4": {
+      "$base": "Enumerated",
+      "value": "file-size"
+    },
+    "5": {
+      "$base": "Enumerated",
+      "value": "file-type"
+    },
+    "6": {
+      "$base": "Enumerated",
+      "value": "modification-date"
+    },
+    "7": {
+      "$base": "Enumerated",
+      "value": "read-only"
+    },
+    "8": {
+      "$base": "Enumerated",
+      "value": "1030"
+    },
+    "9": {
+      "$base": "Enumerated",
+      "value": "1031"
+    },
+    "10": {
+      "$base": "Enumerated",
+      "value": "1038"
+    },
+    "11": {
+      "$base": "Enumerated",
+      "value": "1039"
+    },
+    "12": {
+      "$base": "Enumerated",
+      "value": "1040"
+    },
+    "13": {
+      "$base": "Enumerated",
+      "value": "1047"
+    },
+    "14": {
+      "$base": "Enumerated",
+      "value": "1051"
+    },
+    "$base": "Array"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "file-flags-internal": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "modification-date-internal": {
+    "$base": "DateTime",
+    "value": "2024-04-12T10:29:33.430000-06:00"
+  },
+  "file-data": {
+    "$base": "Choice",
+    "diskPath": {
+      "$base": "String",
+      "value": ""
+    }
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "tags": {
+    "$base": "Array"
+  },
+  ".contents": {
+    "$base": "OctetString",
+    "truncated": "true"
+  }
+}
