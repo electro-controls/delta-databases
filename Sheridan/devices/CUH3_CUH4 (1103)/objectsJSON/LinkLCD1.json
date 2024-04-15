@@ -18,7 +18,7 @@
   },
   "value": {
     "$base": "String",
-    "value": "57.1"
+    "value": "44.1"
   },
   "type": {
     "$base": "Enumerated",
@@ -30,11 +30,11 @@
   },
   "line-1": {
     "$base": "String",
-    "value": "57.1"
+    "value": "44.1"
   },
   "line-2": {
     "$base": "String",
-    "value": "71.4"
+    "value": "71.6"
   },
   "line-3": {
     "$base": "String",
@@ -143,7 +143,7 @@
   },
   "heating": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "cooling": {
     "$base": "Unsigned",
