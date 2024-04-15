@@ -1,23 +1,7 @@
 {
   "name": "Sheridan",
   "ipAddress": "http://localhost",
-  "uploadQueue": [
-    {
-      "action": "update",
-      "device": 1111,
-      "objectId": "mic,1",
-      "objectName": "Mode MIC",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/HVU1 (1111)/objectsJSON/Mode MIC.json",
-        "scheme": "file"
-      },
-      "date": "4/12/2024, 3:28:35 PM",
-      "templateTriggered": false
-    }
-  ],
+  "uploadQueue": [],
   "devices": [
     {
       "number": 999,
