@@ -29,10 +29,6 @@
       "$base": "String",
       "value": "Warmup"
     },
-    "3": {
-      "$base": "String",
-      "value": "Unoc Heating"
-    },
     "4": {
       "$base": "String",
       "value": "Unoc Cooling"
@@ -56,17 +52,6 @@
       }
     },
     "2": {
-      "$base": "Sequence",
-      "lowerRange": {
-        "$base": "Real",
-        "value": 0
-      },
-      "upperRange": {
-        "$base": "Real",
-        "value": 0
-      }
-    },
-    "3": {
       "$base": "Sequence",
       "lowerRange": {
         "$base": "Real",

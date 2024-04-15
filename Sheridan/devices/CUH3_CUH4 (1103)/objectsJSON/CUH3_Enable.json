@@ -70,7 +70,7 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-08-06T06:59:48.100000-06:00"
+    "value": "2000-08-09T07:26:16.600000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-08-06T06:59:48.100000-06:00"
+      "value": "2000-08-09T07:26:16.600000-06:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-08-06T06:45:02.60"
+      "value": "2000-08-09T07:16:16.40"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "5"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -140,10 +140,7 @@
       }
     },
     "5": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "6": {
       "$base": "Choice",
@@ -296,11 +293,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-08-06T08:08:12.40"
+      "value": "2000-08-09T11:36:52.60"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-02-19T14:39:31.20"
+      "value": "2000-08-09T08:20:39.30"
     },
     "6": {
       "$base": "DateTime",
@@ -320,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-08-06T08:08:06.00"
+      "value": "2000-08-09T11:36:50.80"
     },
     "11": {
       "$base": "DateTime",
@@ -344,7 +341,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-08-06T08:08:01.60"
+      "value": "2000-08-09T11:36:50.30"
     },
     "$base": "Array"
   },
