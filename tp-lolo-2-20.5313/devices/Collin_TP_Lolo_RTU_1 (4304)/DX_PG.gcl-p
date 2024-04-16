@@ -1,0 +1,35 @@
+//DX mechanical cooling sequence
+
+Variable DATDemand
+Variable DX1Demand
+Variable DXEnable
+
+DATDemand = Switch ( DATDemand, 'DAT', 'DATClg_Sp' + 5, 'DATClg_Sp')
+
+If ((('DATClg_CO' >= 70) And DATDemand) OnFor 120S) Then
+    DX1Demand = On
+End If
+
+If ((('DATClg_CO' < 5) And ('DAT' < ('DATClg_Sp' - 5))) OnFor 15M) Then
+    DX1Demand = Off
+End If
+
+If (('DAT' < 43) OnFor 60S) Then
+    DX1Demand = Off
+End If
+
+If (('DATClg_CO' < 1)) OnFor 60M Then
+    DX1Demand = Off
+End If
+
+IfOnce Not DXEnable Then
+    DX1Demand = Off
+End If
+
+If 'DATClg_Sp' > ('Eff_OAT' - 2) Then
+    DX1Demand = Off
+End If
+
+IfOnce DXEnable Then
+ 'DATClg_CO.Bias' = 10
+End If

@@ -1,5 +1,5 @@
 {
-  "displayName": "LinkLCD1",
+  "displayName": "LinkLCD",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "lcd,101"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "LinkLCD1"
+    "value": "LinkLCD"
   },
   "description": {
     "$base": "String",
@@ -34,11 +34,11 @@
   },
   "line-2": {
     "$base": "String",
-    "value": ""
+    "value": "74.6"
   },
   "line-3": {
     "$base": "String",
-    "value": ""
+    "value": "69.0"
   },
   "reference": {
     "$base": "Sequence",
@@ -135,7 +135,7 @@
   },
   "occupancy": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "2"
   },
   "fan": {
     "$base": "Unsigned",
@@ -179,7 +179,7 @@
   },
   "on": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "off": {
     "$base": "Boolean",
@@ -223,7 +223,7 @@
   },
   "key-silent": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "90606176"
   },
   "key-inactive": {
     "$base": "Unsigned",
@@ -251,11 +251,11 @@
   },
   "line-2-units": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "3"
   },
   "line-3-units": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "3"
   },
   "sun-moon": {
     "$base": "Unsigned",
@@ -267,7 +267,7 @@
   },
   "last-key-press": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "10022"
   },
   "line-4": {
     "$base": "String",

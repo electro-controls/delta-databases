@@ -1,0 +1,34 @@
+
+//Discharge Air Program
+
+//This sequence if to make sure we are not
+//heating and Cooling at the same time
+If ('DAT' > 'DATClg_Sp') OnFor 60S Then
+  'DATMode' = 0 //Cooling
+End If
+If ('DAT' < 'DATHtg_Sp') OnFor 30M Then
+  'DATMode' = 1 //Heating
+End If
+
+If Not 'RunStatusInt' Then
+  'DATMode' = 1 //Heating
+End If
+
+IfOnce 'RunStatusInt' Then
+  'DATClg_CO.Bias' = 1
+  'DATHtg_CO.Bias' = 1
+End If
+
+//If we go into cooling Reset the Loop Bias
+IfOnce Not 'DATMode' Then //Cooling
+  'DATClg_CO.Bias' = 1
+  'DATHtg_CO.Bias' = 1
+End If
+
+//If we go into Heating Reset the Loop Bias
+IfOnce 'DATMode' Then //Heating
+  'DATClg_CO.Bias' = 1
+  'DATHtg_CO.Bias' = 1
+End If
+
+//End of Program

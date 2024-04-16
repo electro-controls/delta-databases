@@ -1,5 +1,5 @@
 {
-  "displayName": "LINKnet Device 1",
+  "displayName": "LINKnetDevice",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "lnk,101"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "LINKnet Device 1"
+    "value": "LINKnetDevice"
   },
   "description": {
     "$base": "String",

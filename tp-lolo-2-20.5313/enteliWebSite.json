@@ -1,7 +1,158 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [],
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,9",
+      "objectName": "eZNSDisplay1_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU_1 (4304)/eZNSDisplay1_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/16/2024, 9:22:10 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,1",
+      "objectName": "eZNSDisplay2_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU_1 (4304)/eZNSDisplay2_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/16/2024, 9:22:42 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,4",
+      "objectName": "Fan_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU_1 (4304)/Fan_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/16/2024, 9:28:59 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,5",
+      "objectName": "FaultDetection_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU_1 (4304)/FaultDetection_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/16/2024, 9:29:13 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,6",
+      "objectName": "General_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU_1 (4304)/General_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/16/2024, 9:29:32 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,8",
+      "objectName": "GasHeat",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU_1 (4304)/GasHeat.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/16/2024, 9:31:35 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,7",
+      "objectName": "Main_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU_1 (4304)/Main_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/16/2024, 9:32:15 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,17",
+      "objectName": "Critical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU_1 (4304)/Critical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/16/2024, 9:36:35 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,2",
+      "objectName": "DAT_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU_1 (4304)/DAT_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/16/2024, 9:40:55 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,3",
+      "objectName": "DX_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU_1 (4304)/DX_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/16/2024, 9:48:36 AM",
+      "templateTriggered": false
+    }
+  ],
   "devices": [
     {
       "number": 4304,
@@ -92,15 +243,15 @@
         },
         {
           "id": "lcd,101",
-          "name": "LinkLCD1",
-          "fileName": "LinkLCD1",
-          "lastUpdate": "2024-04-15T21:32:46.263Z"
+          "name": "LinkLCD",
+          "fileName": "LinkLCD",
+          "lastUpdate": "2024-04-16T15:20:45.266Z"
         },
         {
           "id": "lnk,101",
-          "name": "LINKnet Device 1",
-          "fileName": "LINKnet Device 1",
-          "lastUpdate": "2024-04-15T21:32:46.263Z"
+          "name": "LINKnetDevice",
+          "fileName": "LINKnetDevice",
+          "lastUpdate": "2024-04-16T15:20:43.552Z"
         },
         {
           "id": "net,1",
@@ -131,6 +282,156 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-04-15T21:32:46.263Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "FanEnable copy",
+          "fileName": "FanEnable copy",
+          "lastUpdate": "2024-04-15T21:54:32.901Z"
+        },
+        {
+          "id": "bo,2",
+          "name": "DXEnableY",
+          "fileName": "DXEnableY",
+          "lastUpdate": "2024-04-15T21:56:25.260Z"
+        },
+        {
+          "id": "bi,5",
+          "name": "Smoke",
+          "fileName": "Smoke",
+          "lastUpdate": "2024-04-15T22:02:11.631Z"
+        },
+        {
+          "id": "aic,1",
+          "name": "Temperature_DegF T3_AIC",
+          "fileName": "Temperature_DegF T3_AIC",
+          "lastUpdate": "2024-04-15T22:04:46.255Z"
+        },
+        {
+          "id": "bdc,1",
+          "name": "ActiveInactive_BDC",
+          "fileName": "ActiveInactive_BDC",
+          "lastUpdate": "2024-04-15T22:06:22.658Z"
+        },
+        {
+          "id": "aic,66",
+          "name": "Current 0-5V 0-30 A AIC",
+          "fileName": "Current 0-5V 0-30 A AIC",
+          "lastUpdate": "2024-04-15T22:07:18.161Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "AlarmNormal_BDC",
+          "fileName": "AlarmNormal_BDC",
+          "lastUpdate": "2024-04-15T22:08:55.271Z"
+        },
+        {
+          "id": "aic,43",
+          "name": "eZNS OnBoard Temperature degF AIC",
+          "fileName": "eZNS OnBoard Temperature degF AIC",
+          "lastUpdate": "2024-04-15T22:45:39.932Z"
+        },
+        {
+          "id": "pg,9",
+          "name": "eZNSDisplay1_PG",
+          "fileName": "eZNSDisplay1_PG",
+          "lastUpdate": "2024-04-16T15:22:07.889Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "eZNSDisplay2_PG",
+          "fileName": "eZNSDisplay2_PG",
+          "lastUpdate": "2024-04-16T15:22:40.946Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "DAT_PG",
+          "fileName": "DAT_PG",
+          "lastUpdate": "2024-04-16T15:28:31.528Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "DX_PG",
+          "fileName": "DX_PG",
+          "lastUpdate": "2024-04-16T15:28:44.802Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "Fan_PG",
+          "fileName": "Fan_PG",
+          "lastUpdate": "2024-04-16T15:28:59.816Z"
+        },
+        {
+          "id": "pg,5",
+          "name": "FaultDetection_PG",
+          "fileName": "FaultDetection_PG",
+          "lastUpdate": "2024-04-16T15:29:13.270Z"
+        },
+        {
+          "id": "pg,6",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-04-16T15:29:32.858Z"
+        },
+        {
+          "id": "pg,7",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-04-16T15:31:06.769Z"
+        },
+        {
+          "id": "pg,8",
+          "name": "GasHeat",
+          "fileName": "GasHeat",
+          "lastUpdate": "2024-04-16T15:31:35.155Z"
+        },
+        {
+          "id": "pg,17",
+          "name": "Critical_PG",
+          "fileName": "Critical_PG",
+          "lastUpdate": "2024-04-16T15:36:32.980Z"
+        },
+        {
+          "id": "av,21060",
+          "name": "DATClg_Sp",
+          "fileName": "DATClg_Sp",
+          "lastUpdate": "2024-04-16T15:37:24.566Z"
+        },
+        {
+          "id": "bv,21060",
+          "name": "DATMode",
+          "fileName": "DATMode",
+          "lastUpdate": "2024-04-16T15:39:01.357Z"
+        },
+        {
+          "id": "av,21061",
+          "name": "DATHtg_Sp",
+          "fileName": "DATHtg_Sp",
+          "lastUpdate": "2024-04-16T15:39:22.300Z"
+        },
+        {
+          "id": "bv,21001",
+          "name": "RunStatusInt",
+          "fileName": "RunStatusInt",
+          "lastUpdate": "2024-04-16T15:39:55.192Z"
+        },
+        {
+          "id": "co,21060",
+          "name": "DATClg_CO",
+          "fileName": "DATClg_CO",
+          "lastUpdate": "2024-04-16T15:40:40.326Z"
+        },
+        {
+          "id": "co,21061",
+          "name": "DATHtg_CO",
+          "fileName": "DATHtg_CO",
+          "lastUpdate": "2024-04-16T15:40:40.360Z"
+        },
+        {
+          "id": "av,91",
+          "name": "Eff_OAT",
+          "fileName": "Eff_OAT",
+          "lastUpdate": "2024-04-16T15:47:35.058Z"
         }
       ]
     }
