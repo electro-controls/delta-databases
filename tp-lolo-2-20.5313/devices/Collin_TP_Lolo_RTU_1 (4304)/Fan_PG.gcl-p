@@ -1,0 +1,53 @@
+//Fan Program
+
+//Fan start/stop sequence
+If ('Mode' <> 5) And ('Mode' <> 4) Then
+  'SFVFDEnable' = On
+  'RFVFDEnable' = On
+Else
+  'SFVFDEnable' = Off
+  'RFVFDEnable' = Off
+End If
+
+//Running status interlock sequence. Used by
+//other routines (economizer, VFD speed, etc..)
+'SFStatus' = Switch ( 'SFStatus', 'SFRunStatus', 1.5, 0.25)
+
+If 'RunStatusInt' Then
+  DoEvery 1M
+    'SFOntimeRef' = 'SFOntimeRef' + 1
+  End Do
+Else
+  'SFOntimeRef' = 0
+End If
+
+If 'RFVFDEnable' Then
+ 'RF_EffCurrent' = 'RFRunStatus'
+Else
+ 'RF_EffCurrent' = 0
+End If
+
+If 'SFVFDEnable' And 'SFStatus' Then
+    'RunStatusInt' = On
+  Else
+    'RunStatusInt' = Off
+End If
+
+//VFD speed sequence. Ensures smooth start up via
+//the ramp routine.
+'SFVFDSpeedRef' = ('VFDRampResult' * 0.01) * 'DuctStatic_CO'
+'RFVFDSpeedRef' = ('SFVFDSpeedRef' - 'SFRFSpeedOffset')
+
+If 'RunStatusInt' Then
+  DoEvery 10S
+  'VFDRampResult' = Min (100, 'VFDRampResult' + (1000 / 'VSDRamp_Sp'))
+  End Do
+Else
+  'VFDRampResult' = 0
+End If
+
+If PowerUp Then
+'VFDRampResult' = 0
+End If
+
+//End of Program 
