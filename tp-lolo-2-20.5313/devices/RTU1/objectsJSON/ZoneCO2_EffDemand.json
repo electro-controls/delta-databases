@@ -1,8 +1,8 @@
 {
-  "displayName": "AH_CO2OATLimit",
+  "displayName": "ZoneCO2_EffDemand",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,11257"
+    "value": "analog-value,11252"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "AH_CO2OATLimit"
+    "value": "ZoneCO2_EffDemand"
   },
   "description": {
     "$base": "String",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,11201"
+    "value": "program,11250"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-04-16T10:16:55.100000-06:00"
+    "value": "2024-04-16T10:12:14.700000-06:00"
   },
   "cov-increment": {
     "$base": "Real",

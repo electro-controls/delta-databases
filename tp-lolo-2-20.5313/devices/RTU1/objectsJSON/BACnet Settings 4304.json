@@ -1,0 +1,838 @@
+{
+  "displayName": "BACnet Settings 4304",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "net,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "network-setup-object"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "BACnet Settings 4304"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "enabled": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "protocol": {
+    "$base": "Enumerated",
+    "value": "bacnet"
+  },
+  "change": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "protocol-setup": {
+    "$base": "Choice",
+    "bacnet": {
+      "$base": "Sequence",
+      "version": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "revision": {
+        "$base": "Unsigned",
+        "value": "6"
+      },
+      "typesSupported": {
+        "$base": "BitString",
+        "value": "analog-input;analog-output;analog-value;binary-input;binary-output;binary-value;calendar;device;event-enrollment;file;loop;multi-state-input;notification-class;program;schedule;multi-state-value;trend-log;load-control;structured-view"
+      },
+      "servicesSupported": {
+        "$base": "BitString",
+        "value": "acknowledgeAlarm;confirmedCOVNotification;confirmedEventNotification;getAlarmSummary;getEnrollmentSummary;subscribeCOV;atomicReadFile;atomicWriteFile;createObject;deleteObject;readProperty;readPropertyMultiple;writeProperty;writePropertyMultiple;deviceCommunicationControl;confirmedPrivateTransfer;reinitializeDevice;i-Am;i-Have;unconfirmedCOVNotification;unconfirmedEventNotification;unconfirmedPrivateTransfer;timeSynchronization;who-Has;who-Is;readRange;subscribeCOVProperty;getEventInformation"
+      },
+      "localNetworkNumber": {
+        "$base": "Unsigned",
+        "value": "10001"
+      },
+      "maxBroadcastSize": {
+        "$base": "Unsigned",
+        "value": "480"
+      },
+      "maxDevices": {
+        "$base": "Unsigned",
+        "value": "100"
+      },
+      "maxNetworks": {
+        "$base": "Unsigned",
+        "value": "10"
+      },
+      "maxPackets": {
+        "$base": "Unsigned",
+        "value": "40"
+      },
+      "timerInterval": {
+        "$base": "Unsigned",
+        "value": "50"
+      },
+      "maxBufTime": {
+        "$base": "Unsigned",
+        "value": "5000"
+      },
+      "maxSendTime": {
+        "$base": "Unsigned",
+        "value": "3000"
+      },
+      "apduTimeout": {
+        "$base": "Unsigned",
+        "value": "4304"
+      },
+      "apduRetries": {
+        "$base": "Unsigned",
+        "value": "3"
+      },
+      "apduSegmentTimeout": {
+        "$base": "Unsigned",
+        "value": "5000"
+      },
+      "maxApdu": {
+        "$base": "Unsigned",
+        "value": "480"
+      },
+      "segmentation": {
+        "$base": "Enumerated",
+        "value": "segmented-both"
+      }
+    }
+  },
+  "statistics": {
+    "$base": "Sequence",
+    "totalSent": {
+      "$base": "Unsigned",
+      "value": "3426"
+    },
+    "sentByApp": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "sentByDriver": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "sendFailures": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "totalRcvd": {
+      "$base": "Unsigned",
+      "value": "3766"
+    },
+    "rcvdByApp": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "rcvdByDriver": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "invalidRcvd": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "receiveTimeouts": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "resourceErrors": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "packetsDropped": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "main-network": {
+    "$base": "Unsigned",
+    "value": "10001"
+  },
+  "main-mac": {
+    "$base": "Sequence",
+    "size": {
+      "$base": "Unsigned",
+      "value": "6"
+    },
+    "first": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "middle": {
+      "$base": "Unsigned",
+      "value": "3019943488"
+    },
+    "last": {
+      "$base": "Unsigned",
+      "value": "185"
+    }
+  },
+  "basic-adapter": {
+    "1": {
+      "$base": "Sequence",
+      "registryPath": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceDescr": {
+        "$base": "String",
+        "value": ""
+      },
+      "enabled": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "status": {
+        "$base": "Enumerated",
+        "value": "active"
+      },
+      "statusRef": {
+        "$base": "ObjectIdentifier",
+        "value": "net,1"
+      },
+      "statusIndex": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "driverVersion": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "hardwarePort": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "statistics": {
+        "$base": "Sequence",
+        "totalSent": {
+          "$base": "Unsigned",
+          "value": "20715"
+        },
+        "sendFailures": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "totalRcvd": {
+          "$base": "Unsigned",
+          "value": "23594"
+        },
+        "invalidRcvd": {
+          "$base": "Unsigned",
+          "value": "1"
+        },
+        "protocolErrors": {
+          "$base": "Unsigned",
+          "value": 0
+        }
+      },
+      "filterFlags": {
+        "$base": "BitString",
+        "value": ""
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "registryPath": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceDescr": {
+        "$base": "String",
+        "value": ""
+      },
+      "enabled": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "status": {
+        "$base": "Enumerated",
+        "value": "active"
+      },
+      "statusRef": {
+        "$base": "ObjectIdentifier",
+        "value": "net,1"
+      },
+      "statusIndex": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "driverVersion": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "hardwarePort": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "statistics": {
+        "$base": "Sequence",
+        "totalSent": {
+          "$base": "Unsigned",
+          "value": "20332"
+        },
+        "sendFailures": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "totalRcvd": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "invalidRcvd": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "protocolErrors": {
+          "$base": "Unsigned",
+          "value": "1"
+        }
+      },
+      "filterFlags": {
+        "$base": "BitString",
+        "value": ""
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "registryPath": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceDescr": {
+        "$base": "String",
+        "value": ""
+      },
+      "enabled": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "status": {
+        "$base": "Enumerated",
+        "value": "active"
+      },
+      "statusRef": {
+        "$base": "ObjectIdentifier",
+        "value": "net,1"
+      },
+      "statusIndex": {
+        "$base": "Unsigned",
+        "value": "3"
+      },
+      "driverVersion": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "hardwarePort": {
+        "$base": "Unsigned",
+        "value": "3"
+      },
+      "statistics": {
+        "$base": "Sequence",
+        "totalSent": {
+          "$base": "Unsigned",
+          "value": "41"
+        },
+        "sendFailures": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "totalRcvd": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "invalidRcvd": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "protocolErrors": {
+          "$base": "Unsigned",
+          "value": 0
+        }
+      },
+      "filterFlags": {
+        "$base": "BitString",
+        "value": ""
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "registryPath": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceDescr": {
+        "$base": "String",
+        "value": ""
+      },
+      "enabled": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "status": {
+        "$base": "Enumerated",
+        "value": "active"
+      },
+      "statusRef": {
+        "$base": "ObjectIdentifier",
+        "value": "net,1"
+      },
+      "statusIndex": {
+        "$base": "Unsigned",
+        "value": "4"
+      },
+      "driverVersion": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "hardwarePort": {
+        "$base": "Unsigned",
+        "value": "5"
+      },
+      "statistics": {
+        "$base": "Sequence",
+        "totalSent": {
+          "$base": "Unsigned",
+          "value": "5228"
+        },
+        "sendFailures": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "totalRcvd": {
+          "$base": "Unsigned",
+          "value": "5587"
+        },
+        "invalidRcvd": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "protocolErrors": {
+          "$base": "Unsigned",
+          "value": 0
+        }
+      },
+      "filterFlags": {
+        "$base": "BitString",
+        "value": ""
+      }
+    },
+    "5": {
+      "$base": "Sequence",
+      "registryPath": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceDescr": {
+        "$base": "String",
+        "value": ""
+      },
+      "enabled": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "status": {
+        "$base": "Enumerated",
+        "value": "driver-disabled"
+      },
+      "statusRef": {
+        "$base": "ObjectIdentifier",
+        "unspecifiedValue": "true"
+      },
+      "statusIndex": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "driverVersion": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "hardwarePort": {
+        "$base": "Unsigned",
+        "value": "7"
+      },
+      "statistics": {
+        "$base": "Sequence",
+        "totalSent": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "sendFailures": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "totalRcvd": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "invalidRcvd": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "protocolErrors": {
+          "$base": "Unsigned",
+          "value": 0
+        }
+      },
+      "filterFlags": {
+        "$base": "BitString",
+        "value": ""
+      }
+    },
+    "$base": "Array"
+  },
+  "advanced-adapter": {
+    "1": {
+      "$base": "Choice",
+      "mstp": {
+        "$base": "Sequence",
+        "network": {
+          "$base": "Unsigned",
+          "value": "20043"
+        },
+        "port": {
+          "$base": "Enumerated",
+          "value": "rs485-1"
+        },
+        "address": {
+          "$base": "Choice",
+          "address": {
+            "$base": "Unsigned",
+            "value": "7"
+          }
+        },
+        "speed": {
+          "$base": "Enumerated",
+          "value": "76800"
+        },
+        "maxMaster": {
+          "$base": "Unsigned",
+          "value": "127"
+        },
+        "maxInfoFrames": {
+          "$base": "Unsigned",
+          "value": "8"
+        },
+        "forceSpeedChange": {
+          "$base": "Unsigned",
+          "value": 0
+        }
+      }
+    },
+    "2": {
+      "$base": "Choice",
+      "mstp": {
+        "$base": "Sequence",
+        "network": {
+          "$base": "Unsigned",
+          "value": "50007"
+        },
+        "port": {
+          "$base": "Enumerated",
+          "value": "rs485-2"
+        },
+        "address": {
+          "$base": "Choice",
+          "address": {
+            "$base": "Unsigned",
+            "value": 0
+          }
+        },
+        "speed": {
+          "$base": "Enumerated",
+          "value": "76800"
+        },
+        "maxMaster": {
+          "$base": "Unsigned",
+          "value": "127"
+        },
+        "maxInfoFrames": {
+          "$base": "Unsigned",
+          "value": "8"
+        },
+        "forceSpeedChange": {
+          "$base": "Unsigned",
+          "value": 0
+        }
+      }
+    },
+    "3": {
+      "$base": "Choice",
+      "ptp": {
+        "$base": "Sequence",
+        "network": {
+          "$base": "Unsigned",
+          "value": "10001"
+        },
+        "port": {
+          "$base": "Enumerated",
+          "value": "rs232-1"
+        },
+        "serial": {
+          "$base": "Sequence",
+          "speed": {
+            "$base": "Enumerated",
+            "value": "9600"
+          },
+          "fixedSpeed": {
+            "$base": "Boolean",
+            "value": 0
+          },
+          "parity": {
+            "$base": "Enumerated",
+            "value": "none"
+          },
+          "stopBits": {
+            "$base": "Enumerated",
+            "value": "1"
+          },
+          "dataBits": {
+            "$base": "Enumerated",
+            "value": "eight"
+          },
+          "flowControl": {
+            "$base": "Enumerated",
+            "value": "no-flow-control"
+          },
+          "errorControl": {
+            "$base": "Boolean",
+            "value": 0
+          },
+          "commandTimeout": {
+            "$base": "Unsigned",
+            "value": "2"
+          },
+          "autoAnswer": {
+            "$base": "Boolean",
+            "value": 0
+          },
+          "usageType": {
+            "$base": "Enumerated",
+            "value": "incoming/outgoing"
+          },
+          "modemInitString": {
+            "$base": "String",
+            "value": "AT&F1&R1Y0&W0&ATS0=1"
+          },
+          "modemEnabled": {
+            "$base": "Boolean",
+            "value": 0
+          },
+          "modemResetString": {
+            "$base": "String",
+            "value": "ATZ"
+          },
+          "dialingMethod": {
+            "$base": "Enumerated",
+            "value": "tone"
+          },
+          "callTimeout": {
+            "$base": "Unsigned",
+            "value": "60"
+          },
+          "retryDelay": {
+            "$base": "Unsigned",
+            "value": "10"
+          },
+          "modemHangupString": {
+            "$base": "String",
+            "value": "ATH"
+          },
+          "modemAutoAnswerString": {
+            "$base": "String",
+            "value": ""
+          },
+          "remainConnectDuration": {
+            "$base": "Unsigned",
+            "value": "60"
+          },
+          "dropDTRtoHangup": {
+            "$base": "Boolean",
+            "value": "1"
+          },
+          "modemDialPrefix": {
+            "$base": "String",
+            "value": "ATDT"
+          },
+          "numberOfRetries": {
+            "$base": "Unsigned",
+            "value": "2"
+          },
+          "enforcePassword": {
+            "$base": "Boolean",
+            "value": 0
+          },
+          "directOutSUA": {
+            "$base": "ObjectIdentifier",
+            "unspecifiedValue": "true"
+          }
+        },
+        "autoLoginInterval": {
+          "$base": "Unsigned",
+          "value": 0
+        }
+      }
+    },
+    "4": {
+      "$base": "Choice",
+      "bnEther": {
+        "$base": "Sequence",
+        "network": {
+          "$base": "Unsigned",
+          "value": "10001"
+        },
+        "port": {
+          "$base": "Enumerated",
+          "value": "ethernet-1"
+        },
+        "address": {
+          "$base": "String",
+          "value": "00-40-ae-00-b4-b9"
+        },
+        "speed": {
+          "$base": "Enumerated",
+          "value": "10mbps-half-duplex"
+        },
+        "speedDetected": {
+          "$base": "Enumerated",
+          "value": "10mbps-half-duplex"
+        }
+      }
+    },
+    "5": {
+      "$base": "Choice",
+      "bnUDP": {
+        "$base": "Sequence",
+        "network": {
+          "$base": "Unsigned",
+          "value": "40007"
+        },
+        "port": {
+          "$base": "Unsigned",
+          "value": "2"
+        },
+        "deviceType": {
+          "$base": "Enumerated",
+          "value": "regular-device"
+        },
+        "bbmdAddr": {
+          "$base": "String",
+          "value": "000.000.000.000"
+        },
+        "regTimeout": {
+          "$base": "Unsigned",
+          "value": "60"
+        },
+        "proxyAddr": {
+          "$base": "String",
+          "value": "000.000.000.000"
+        },
+        "ipAddress": {
+          "$base": "String",
+          "value": ""
+        },
+        "subnetMask": {
+          "$base": "String",
+          "value": ""
+        },
+        "gatewayAddr": {
+          "$base": "String",
+          "value": ""
+        },
+        "udpPort": {
+          "$base": "Unsigned",
+          "value": "47808"
+        },
+        "enableDHCP": {
+          "$base": "Boolean",
+          "value": 0
+        },
+        "useProxy": {
+          "$base": "Boolean",
+          "value": 0
+        },
+        "enforcePassword": {
+          "$base": "Boolean",
+          "value": 0
+        },
+        "foreignSUA": {
+          "$base": "ObjectIdentifier",
+          "unspecifiedValue": "true"
+        },
+        "dhcpCommand": {
+          "$base": "Enumerated",
+          "value": "none"
+        },
+        "dhcpLeaseTime": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "dhcpLeaseExpires": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "dhcpServerIP": {
+          "$base": "String",
+          "value": ""
+        }
+      }
+    },
+    "$base": "Array"
+  },
+  "maximum-requests": {
+    "$base": "Unsigned",
+    "value": "20"
+  },
+  "free-que": {
+    "$base": "Unsigned",
+    "value": "30"
+  },
+  "short-free-que": {
+    "$base": "Unsigned",
+    "value": "12"
+  },
+  "transmit-1-que": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "transmit-2-que": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "transmit-3-que": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "transmit-4-que": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "web-server-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "web-server-port": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "web-server-pwcheck": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "bacnet-special-config": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

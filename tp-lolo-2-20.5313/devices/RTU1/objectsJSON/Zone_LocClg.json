@@ -1,8 +1,8 @@
 {
-  "displayName": "AH_CO2OATLimit",
+  "displayName": "Zone_LocClg",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,11257"
+    "value": "analog-value,11031"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "AH_CO2OATLimit"
+    "value": "Zone_LocClg"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "100"
+    "value": 0
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "100"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,11201"
+    "value": "program,11010"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-04-16T10:16:55.100000-06:00"
+    "value": "2024-04-16T10:12:07.700000-06:00"
   },
   "cov-increment": {
     "$base": "Real",
@@ -70,10 +70,10 @@
   },
   "decimal-places": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "hvac"
+    "value": ""
   }
 }

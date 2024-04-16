@@ -1,8 +1,8 @@
 {
-  "displayName": "AH_CO2OATLimit",
+  "displayName": "ZoneSpIncrement_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,11257"
+    "value": "analog-value,11016"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "AH_CO2OATLimit"
+    "value": "ZoneSpIncrement_Sp"
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "This is the increment increase/decrease when up/down buttons on an eZNS or DNS sensor. Default: .5."
   },
   "flags": {
     "$base": "BitString",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "0.5"
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "55"
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "°F"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,15 +54,15 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,11201"
+    "value": "device,3658741"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-04-16T10:16:55.100000-06:00"
+    "value": "2022-08-03T15:05:58.200000-06:00"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "1"
+    "value": "0.1"
   },
   "fixed-point": {
     "$base": "Boolean",
@@ -74,6 +74,6 @@
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "hvac"
+    "value": ""
   }
 }

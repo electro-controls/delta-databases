@@ -1,8 +1,8 @@
 {
-  "displayName": "AH_CO2OATLimit",
+  "displayName": "Econ_RemClg",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,11257"
+    "value": "analog-value,11222"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "AH_CO2OATLimit"
+    "value": "Econ_RemClg"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "-1"
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "-1"
   },
   "status-flags": {
     "$base": "BitString",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,11201"
+    "value": "program,11002"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-04-16T10:16:55.100000-06:00"
+    "value": "2024-04-16T10:05:04.800000-06:00"
   },
   "cov-increment": {
     "$base": "Real",

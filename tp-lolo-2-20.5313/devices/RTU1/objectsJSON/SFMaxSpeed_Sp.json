@@ -1,8 +1,8 @@
 {
-  "displayName": "AH_CO2OATLimit",
+  "displayName": "SFMaxSpeed_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,11257"
+    "value": "analog-value,11116"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "AH_CO2OATLimit"
+    "value": "SFMaxSpeed_Sp"
   },
   "description": {
     "$base": "String",
@@ -26,7 +26,7 @@
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "100"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,11201"
+    "value": "device,*"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-04-16T10:16:55.100000-06:00"
+    "value": "2022-05-24T16:43:09.300000-06:00"
   },
   "cov-increment": {
     "$base": "Real",

@@ -1,0 +1,45 @@
+'PG9.Write_Priority' = 4
+
+Switch ( 'HighTempLimit', 'DAT', 160, 100)
+
+If ('DAT' < 40) And 'SFStatus' OnFor 5:M Then
+    'FreezeMode' = On
+End If
+
+If PowerUp Then //Allow occupant/tech to reset by cycling power
+  'FreezeMode' = Off
+End If
+
+IfOnce ('ZoneOccMode' = 1) Then //Retrys on occupancy. Allows occupant to reset by turning stat off and back on.
+  'FreezeMode' = Off
+End If
+
+
+If (Not 'RunStatusInt') Or 'FreezeMode' Or 'Smoke' Then
+    'ClgStg1' = Off
+    'ClgStg2' = Off
+  Else
+    Relinquish 'ClgStg1'
+    Relinquish 'ClgStg2'
+End If
+
+
+If 'FreezeMode' Or 'Smoke' Then
+      'Economizer' = 0
+      'SFEnable' = Off
+      'PEFEnable' = Off
+      'PEFSpeed' = 0
+   Else
+      Relinquish 'Economizer'
+      Relinquish 'SFEnable'
+      Relinquish 'PEFEnable'
+      Relinquish 'PEFSpeed'
+End If
+
+If (Not 'RunStatusInt') Or 'FreezeMode' Or 'Smoke' Or 'HighTempLimit' Then
+    'HeatStg1' = Off
+    'HeatStg2' = Off
+  Else
+    Relinquish 'HeatStg1'
+    Relinquish 'HeatStg2'
+End If
