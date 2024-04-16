@@ -4,38 +4,38 @@ Variable DATHeatDemand As Integer
 
 
 
-If ('Econ_EffClg' < 1) And 'RunStatusInt' And ('DAT_Eff' < ('DATResetLow_Sp' - 5)) Then
+If ('AV11220' < 1) And 'RunStatusInt' And ('DAT_Eff' < ('DATResetLow_Sp' - 5)) Then
     DATHeatDemand = On
 End If
-If ('Econ_EffClg' >= 1) Or 'ClgStg1' Or (Not 'RunStatusInt') Or (('DAT_Eff' > ('DAT_EffSp' + 5)) OnFor 30S) Then
+If ('AV11220' >= 1) Or 'BO5' Or (Not 'RunStatusInt') Or (('DAT_Eff' > ('DAT_EffSp' + 5)) OnFor 30S) Then
     DATHeatDemand = Off
 End If
 
-IfOnce 'HeatStg1' Then //One shot to allow smooth start and modulation of DH gas heat.
+IfOnce 'GasHeatEnableW' Then //One shot to allow smooth start and modulation of DH gas heat.
     'DATHtg_CO.Bias' = 1
 End If
 
 If (('DAT_Eff' < ('DAT_EffSp' - 5)) OnFor 5M) And ('Zone_EffHtg' > 50) Then
-    'HeatStg1' = On
+    'GasHeatEnableW' = On
 End If
 
 If (('DAT_Eff' < ('DAT_EffSp' - 5)) OnFor 5M) And ('DAT' < ('DATResetLow_Sp' - 2)) Then
-    'HeatStg1' = On
+    'GasHeatEnableW' = On
 End If
 
 If ((('DAT_Eff' > ('DAT_EffSp' + 10)) OnFor 6M) Or ('Zone_EffHtg' < 30)) And (Not DATHeatDemand) Then
-    'HeatStg1' = Off
+    'GasHeatEnableW' = Off
 End If
 
-If ('HeatStg1' And ('DAT_Eff' < ('DAT_EffSp' - 5)) OnFor 5M) And ('Zone_EffHtg' > 99) Then
-    'HeatStg2' = On
+If ('GasHeatEnableW' And ('DAT_Eff' < ('DAT_EffSp' - 5)) OnFor 5M) And ('Zone_EffHtg' > 99) Then
+    'BO4' = On
 End If
 
 If (('DAT_Eff' > ('DAT_EffSp' + 10)) OnFor 4M) Or ('Zone_EffHtg' < 80) Then
-    'HeatStg2' = Off
+    'BO4' = Off
 End If
 
-'UH3Enable' = Switch ( 'UH3Enable', 'Zone_EffHtg', 99, 90)
-'UH4Enable' = Switch ( 'UH4Enable', 'Zone_EffHtg', 99, 90) //potentialy use loading dock temp to run this UH
-'UH3Status' = Switch ( 'UH3Status', 'UH3Current', 0.5, 0)
-'UH4Status' = Switch ( 'UH4Status', 'UH4Current', 0.5, 0)
+'BO201' = Switch ( 'BO201', 'Zone_EffHtg', 99, 90)
+'BO202' = Switch ( 'BO202', 'Zone_EffHtg', 99, 90) //potentialy use loading dock temp to run this UH
+'BV11115' = Switch ( 'BV11115', 'AI201', 0.5, 0)
+'BV11116' = Switch ( 'BV11116', 'AI202', 0.5, 0)

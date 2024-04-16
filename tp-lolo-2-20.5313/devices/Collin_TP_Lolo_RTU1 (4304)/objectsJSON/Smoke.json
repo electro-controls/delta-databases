@@ -2,7 +2,7 @@
   "displayName": "Smoke",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-input,9"
+    "value": "binary-input,5"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -71,29 +71,29 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-15T11:22:01.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2024-04-16T10:05:04.700000-06:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-04-16T10:05:04.700000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "9"
+    "value": 0
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2022-05-05T16:47:13.100000-06:00"
+    "value": "2000-01-01T12:31:10.100000-07:00"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "749"
+    "value": "562"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -145,7 +145,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Alarm"
+    "value": "Normal"
   },
   "hal-flags": {
     "$base": "BitString",

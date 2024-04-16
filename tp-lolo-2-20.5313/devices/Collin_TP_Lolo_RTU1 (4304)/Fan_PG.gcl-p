@@ -8,13 +8,11 @@ If ('ZoneOccMode' <> 1) Then
 End If
 
 'SFStatus' = Switch ( 'SFStatus', 'SFCurrent', 0.2, 0.05)
-'PEFStatus' = Switch ( 'PEFStatus', 'PEFCurrent', 0.1, 0.05)
 
 //Running status interlock sequence. Used by
 //other routines (economizer, VFD speed, etc..)
 If 'SFEnable' And 'SFStatus' Then
     'RunStatusInt' = On
-    'SFSpeed' = Scale ('SFRampResult', 0, 0, 'SFMinSpeed_Sp', 100, 'SFMaxSpeed_Sp')
   Else
     'RunStatusInt' = Off
 End If
@@ -26,12 +24,10 @@ Variable HeatingSpeed
 Variable SpeedDemand
 
 
-MAUSpeed = Scale ('EFTotalCalcAirflow', 0, 'SFCalcAirflowAtMinSpeed_Sp', 'SFMinSpeed_Sp', 'SFCalcAirflowAtMaxSpeed_Sp', 'SFMaxSpeed_Sp')
+MAUSpeed = Scale ('AV11150', 0, 'SFCalcAirflowAtMinSpeed_Sp', 'SFMinSpeed_Sp', 'SFCalcAirflowAtMaxSpeed_Sp', 'SFMaxSpeed_Sp')
 CoolingSpeed = Scale ('Zone_EffClg', 0, 50, 'SFMinSpeed_Sp', 100, 'SFMaxSpeed_Sp')
 HeatingSpeed = Scale ('Zone_EffHtg', 0, 80, 'SFMinSpeed_Sp', 100, 'SFMaxSpeed_Sp')
 SpeedDemand = Max (MAUSpeed, CoolingSpeed, HeatingSpeed)
-
-
 
 
 //VFD speed sequence. Insures smooth start up via
@@ -51,75 +47,16 @@ If PowerUp Then
   'SFRampResult' = 0
 End If
 
-'SFCalcOAAirflow' = Scale ('Economizer', 0, 0, 0, 100, 'SFCalcAirflow')
-
-'EconMAUOAPct' = Max (0, 'EFTotalCalcAirflow' / 'SFCalcAirflow') * 100
-
-
-If 'SFStatus' Then
-    'SFCalcAirflow' = Scale ('SFSpeed', 0, 'SFMinSpeed_Sp', 'SFCalcAirflowAtMinSpeed_Sp', 'SFMaxSpeed_Sp', 'SFCalcAirflowAtMaxSpeed_Sp')
-  Else
-    'SFCalcAirflow' = 0
-End If
-
-'EFTotalCalcAirflow' = 'EF1CalcAirflow' + 'EF2CalcAirflow' + 'EF3CalcAirflow' + 'EF5CalcAirflow' + 'EF7CalcAirflow' + 'EF8CalcAirflow'
-
-If 'BV11151' Then
-    'EF1CalcAirflow' = 900 //design is 900 cfm
-  Else
-    'EF1CalcAirflow' = 0
-End If
-
-
-If 'BV11152' Then
-    'EF2CalcAirflow' = 900 //design is 900 cfm
-  Else
-    'EF2CalcAirflow' = 0
-End If
-
-If 'BV11153' Then
-    'EF3CalcAirflow' = 600 //design is 600 cfm
-  Else
-    'EF3CalcAirflow' = 0
-End If
-
-If 'BV11155' Then
-    'EF5CalcAirflow' = 2000 //design is 2000 cfm
-  Else
-    'EF5CalcAirflow' = 0
-End If
-
-If 'BV11157' Then
-    'EF7CalcAirflow' = 110 //design is 110 cfm
-  Else
-    'EF7CalcAirflow' = 0
-End If
-
-If 'BV11158' Then
-    'EF8CalcAirflow' = 110 //design is 110 cfm
-  Else
-    'EF8CalcAirflow' = 0
-End If
-
-
-'OACalcOffset' = 'SFCalcOAAirflow' - 'EFTotalCalcAirflow'
-
-If 'OATisfreezingxx' Then
-    'GravityRelief' = 0
-  Else
-    'GravityRelief' = Scale ('OACalcOffset_CO', 0, 0, 0, 50, 'SpaceStatic_CO')
-End If
-
 If ('OACalcOffset_CO' > 50) And ('SpaceStatic_CO' > 50) Then
-    'PEFEnable' = On
+    'DX1Enable' = On
 End If
 
-If ('OACalcOffset_CO' < 10) And ('PEFEnable' OnFor 5M) Then
-    'PEFEnable' = Off
+If ('OACalcOffset_CO' < 10) And ('DX1Enable' OnFor 5M) Then
+    'DX1Enable' = Off
 End If
 
-If 'PEFEnable' And 'PEFStatus' Then
-    'PEFSpeed' = Min ('SFSpeed', Scale ('OACalcOffset_CO', 0, 50, 0, 100, 'SpaceStatic_CO'))
+If 'DX1Enable' Then
+    'AO10' = Min ('AO9', Scale ('OACalcOffset_CO', 0, 50, 0, 100, 'SpaceStatic_CO'))
 Else
-    'PEFSpeed' = 0
+    'AO10' = 0
 End If

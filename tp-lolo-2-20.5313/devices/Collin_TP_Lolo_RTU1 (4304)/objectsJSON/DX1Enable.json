@@ -1,8 +1,8 @@
 {
-  "displayName": "HeatStg1",
+  "displayName": "DX1Enable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-output,3"
+    "value": "binary-output,2"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,15 +10,15 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HeatStg1"
+    "value": "DX1Enable"
   },
   "description": {
     "$base": "String",
-    "value": "8-22-22 EK via meter/DAT"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2"
+    "value": "private2;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -34,15 +34,15 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,1"
+    "unspecifiedValue": "true"
   },
   "device-type": {
     "$base": "String",
-    "value": "ActiveInactive_BDC"
+    "value": ""
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,15 +62,15 @@
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "OFF"
   },
   "active-text": {
     "$base": "String",
-    "value": "Active"
+    "value": "ON"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:00:01.400000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -83,7 +83,7 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:00:01.400000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
@@ -167,7 +167,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -242,7 +245,7 @@
     },
     "8": {
       "$base": "ObjectIdentifier",
-      "value": "device,999"
+      "unspecifiedValue": "true"
     },
     "9": {
       "$base": "ObjectIdentifier",
@@ -250,7 +253,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,11281"
+      "unspecifiedValue": "true"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -293,11 +296,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:07:01.70"
+      "value": "2000-01-01T16:35:28.30"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-01-02T07:41:13.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -309,7 +312,7 @@
     },
     "8": {
       "$base": "DateTime",
-      "value": "2022-05-16T09:33:22.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "9": {
       "$base": "DateTime",
@@ -317,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:07:03.70"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -341,7 +344,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-01-14T20:11:45.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
@@ -403,7 +406,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "OFF"
   },
   "time-delay": {
     "$base": "Unsigned",

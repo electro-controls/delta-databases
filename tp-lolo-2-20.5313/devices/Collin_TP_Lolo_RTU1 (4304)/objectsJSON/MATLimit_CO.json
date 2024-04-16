@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "present-value": {
     "$base": "Real",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "unreliable-other"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "749"
+    "value": "555"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -117,7 +117,7 @@
   },
   "setpoint": {
     "$base": "Real",
-    "value": "50"
+    "value": 0
   },
   "setpoint-reference": {
     "$base": "Sequence",
@@ -259,7 +259,7 @@
   },
   "average-error": {
     "$base": "Real",
-    "value": "21.6"
+    "value": "89.8806"
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "4326"
+      "value": "143486"
     }
   },
   "self-adj-enable": {
@@ -300,7 +300,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "18000"
+      "value": "144000"
     }
   },
   "setpoint-crossings": {

@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "This is the AD count max of the controller. It could be used to scale other variables when referencing raw counts. It should be manual set to match the controller ADbit. \n4095 for DAC and DSC, 65535 for Entelibus, 65535 for OS3"
+    "value": "This is the AD count max of the controller. It could be used to scale other variables when referencing raw counts. It should be manual set to match the controller ADbit. \n4095 for DAC and DSC, 65535 for Entelibus, 65535 for OS3 todo"
   },
   "flags": {
     "$base": "BitString",

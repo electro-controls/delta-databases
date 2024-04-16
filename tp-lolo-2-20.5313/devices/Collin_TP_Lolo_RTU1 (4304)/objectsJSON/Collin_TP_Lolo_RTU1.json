@@ -837,225 +837,6 @@
       "254": {
         "$base": "Choice"
       },
-      "255": {
-        "$base": "Choice"
-      },
-      "256": {
-        "$base": "Choice"
-      },
-      "257": {
-        "$base": "Choice"
-      },
-      "258": {
-        "$base": "Choice"
-      },
-      "259": {
-        "$base": "Choice"
-      },
-      "260": {
-        "$base": "Choice"
-      },
-      "261": {
-        "$base": "Choice"
-      },
-      "262": {
-        "$base": "Choice"
-      },
-      "263": {
-        "$base": "Choice"
-      },
-      "264": {
-        "$base": "Choice"
-      },
-      "265": {
-        "$base": "Choice"
-      },
-      "266": {
-        "$base": "Choice"
-      },
-      "267": {
-        "$base": "Choice"
-      },
-      "268": {
-        "$base": "Choice"
-      },
-      "269": {
-        "$base": "Choice"
-      },
-      "270": {
-        "$base": "Choice"
-      },
-      "271": {
-        "$base": "Choice"
-      },
-      "272": {
-        "$base": "Choice"
-      },
-      "273": {
-        "$base": "Choice"
-      },
-      "274": {
-        "$base": "Choice"
-      },
-      "275": {
-        "$base": "Choice"
-      },
-      "276": {
-        "$base": "Choice"
-      },
-      "277": {
-        "$base": "Choice"
-      },
-      "278": {
-        "$base": "Choice"
-      },
-      "279": {
-        "$base": "Choice"
-      },
-      "280": {
-        "$base": "Choice"
-      },
-      "281": {
-        "$base": "Choice"
-      },
-      "282": {
-        "$base": "Choice"
-      },
-      "283": {
-        "$base": "Choice"
-      },
-      "284": {
-        "$base": "Choice"
-      },
-      "285": {
-        "$base": "Choice"
-      },
-      "286": {
-        "$base": "Choice"
-      },
-      "287": {
-        "$base": "Choice"
-      },
-      "288": {
-        "$base": "Choice"
-      },
-      "289": {
-        "$base": "Choice"
-      },
-      "290": {
-        "$base": "Choice"
-      },
-      "291": {
-        "$base": "Choice"
-      },
-      "292": {
-        "$base": "Choice"
-      },
-      "293": {
-        "$base": "Choice"
-      },
-      "294": {
-        "$base": "Choice"
-      },
-      "295": {
-        "$base": "Choice"
-      },
-      "296": {
-        "$base": "Choice"
-      },
-      "297": {
-        "$base": "Choice"
-      },
-      "298": {
-        "$base": "Choice"
-      },
-      "299": {
-        "$base": "Choice"
-      },
-      "300": {
-        "$base": "Choice"
-      },
-      "301": {
-        "$base": "Choice"
-      },
-      "302": {
-        "$base": "Choice"
-      },
-      "303": {
-        "$base": "Choice"
-      },
-      "304": {
-        "$base": "Choice"
-      },
-      "305": {
-        "$base": "Choice"
-      },
-      "306": {
-        "$base": "Choice"
-      },
-      "307": {
-        "$base": "Choice"
-      },
-      "308": {
-        "$base": "Choice"
-      },
-      "309": {
-        "$base": "Choice"
-      },
-      "310": {
-        "$base": "Choice"
-      },
-      "311": {
-        "$base": "Choice"
-      },
-      "312": {
-        "$base": "Choice"
-      },
-      "313": {
-        "$base": "Choice"
-      },
-      "314": {
-        "$base": "Choice"
-      },
-      "315": {
-        "$base": "Choice"
-      },
-      "316": {
-        "$base": "Choice"
-      },
-      "317": {
-        "$base": "Choice"
-      },
-      "318": {
-        "$base": "Choice"
-      },
-      "319": {
-        "$base": "Choice"
-      },
-      "320": {
-        "$base": "Choice"
-      },
-      "321": {
-        "$base": "Choice"
-      },
-      "322": {
-        "$base": "Choice"
-      },
-      "323": {
-        "$base": "Choice"
-      },
-      "324": {
-        "$base": "Choice"
-      },
-      "325": {
-        "$base": "Choice"
-      },
-      "326": {
-        "$base": "Choice"
-      },
-      "327": {
-        "$base": "Choice"
-      },
       "$base": "Array"
     }
   },
@@ -1081,7 +862,7 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "12:07:21.00"
+    "value": "16:35:39.00"
   },
   "local-date": {
     "$base": "Date",
@@ -1234,7 +1015,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "1.48148"
+    "value": "1.6"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -1246,7 +1027,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "53"
+    "value": "65"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -1342,7 +1123,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "4419"
+      "value": "165396"
     }
   },
   "logical-base-address": {
@@ -1451,7 +1232,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "7"
+    "value": "93"
   },
   "active-cov-subscriptions": {
     "$base": "List"

@@ -1,40 +1,36 @@
 {
-  "displayName": "Economizer",
+  "displayName": "GasHeatEnableW",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output,7"
+    "value": "binary-output,3"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "analog-output"
+    "value": "binary-output"
   },
   "object-name": {
     "$base": "String",
-    "value": "Economizer"
+    "value": "GasHeatEnableW"
   },
   "description": {
     "$base": "String",
-    "value": "8-22-22 EK visual at 0/50/100% belimo 2-10vdc actuators"
+    "value": "8-22-22 EK via meter/DAT"
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": "private2"
   },
   "present-value": {
-    "$base": "Real",
-    "value": 0
+    "$base": "Enumerated",
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
     "value": 0
-  },
-  "units": {
-    "$base": "Enumerated",
-    "value": "%"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -42,7 +38,11 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aoc,11"
+    "value": "bdc,1"
+  },
+  "device-type": {
+    "$base": "String",
+    "value": "ActiveInactive_BDC"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -50,39 +50,69 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "not-available"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
     "value": 0
   },
-  "device-type": {
-    "$base": "String",
-    "value": "Economizerr_Pct_AOC"
+  "polarity": {
+    "$base": "Enumerated",
+    "value": "normal"
   },
-  "min-pres-value": {
-    "$base": "Real",
+  "inactive-text": {
+    "$base": "String",
+    "value": "Inactive"
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Active"
+  },
+  "change-of-state-time": {
+    "$base": "DateTime",
+    "value": "*-*-*-*T*:*:*.*"
+  },
+  "change-of-state-count": {
+    "$base": "Unsigned",
     "value": 0
   },
-  "max-pres-value": {
-    "$base": "Real",
-    "value": "100"
+  "time-of-state-count-reset": {
+    "$base": "DateTime",
+    "value": "2000-01-01T15:54:15.100000-07:00"
   },
-  "resolution": {
-    "$base": "Real",
-    "value": "0.490196"
+  "prev-change-of-state-times": {
+    "1": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "2": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "$base": "Array"
   },
-  "critical-control": {
-    "$base": "Boolean",
-    "value": "1"
+  "minimum-off-time": {
+    "$base": "Unsigned",
+    "value": "60"
+  },
+  "minimum-on-time": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "minimum-delay-timer": {
+    "$base": "Choice",
+    "minimum-delay-timer": {
+      "$base": "Unsigned",
+      "value": 0
+    }
   },
   "current-priority": {
     "$base": "Unsigned",
     "value": "4"
   },
-  "relinquish-default": {
-    "$base": "Real",
-    "value": 0
+  "critical-control": {
+    "$base": "Boolean",
+    "value": "1"
   },
   "priority-array": {
     "1": {
@@ -170,12 +200,13 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
+  },
+  "relinquish-default": {
+    "$base": "Enumerated",
+    "value": "inactive"
   },
   "last-writer": {
     "1": {
@@ -216,7 +247,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,11201"
+      "value": "program,11281"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -240,7 +271,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,65984"
     },
     "$base": "Array"
   },
@@ -259,11 +290,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:06:36.90"
+      "value": "2000-01-01T16:35:28.80"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-01-15T13:49:24.40"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -283,7 +314,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:06:37.30"
+      "value": "2000-01-01T16:35:29.40"
     },
     "11": {
       "$base": "DateTime",
@@ -307,33 +338,21 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-01-14T20:10:57.10"
+      "value": "2000-01-01T15:54:00.50"
     },
     "$base": "Array"
   },
-  "cov-increment": {
-    "$base": "Real",
-    "value": "1"
-  },
-  "polarity": {
+  "port-status": {
     "$base": "Enumerated",
-    "value": "normal"
+    "value": "active"
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "51"
+    "value": 0
   },
   "output-volt": {
     "$base": "Real",
-    "value": "2"
-  },
-  "port-1-status": {
-    "$base": "Enumerated",
-    "value": "not-available"
-  },
-  "port-2-status": {
-    "$base": "Enumerated",
-    "value": "not-available"
+    "value": 0
   },
   "module-type": {
     "$base": "Enumerated",
@@ -343,8 +362,24 @@
     "$base": "Enumerated",
     "value": "auto"
   },
+  "delay-status": {
+    "$base": "Enumerated",
+    "value": "timer-inactive"
+  },
+  "start-delay-time": {
+    "$base": "Unsigned",
+    "value": "5"
+  },
+  "start-delay-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
   "fback-value": {
-    "$base": "Real",
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "fback-reversed": {
+    "$base": "Boolean",
     "value": 0
   },
   "fback-enable": {
@@ -359,32 +394,13 @@
     "$base": "Enumerated",
     "value": "not-available"
   },
-  "fback-high": {
-    "$base": "Real",
-    "value": 0
+  "delay-count-down": {
+    "$base": "Time",
+    "value": "00:00:00.00"
   },
-  "fback-low": {
-    "$base": "Real",
-    "value": 0
-  },
-  "analog-3-pt-timer": {
-    "$base": "Choice",
-    "analog-3-pt-timer": {
-      "$base": "Unsigned",
-      "value": 0
-    }
-  },
-  "analog-3-pt-output-1": {
-    "$base": "Enumerated",
-    "value": "inactive"
-  },
-  "analog-3-pt-output-2": {
-    "$base": "Enumerated",
-    "value": "inactive"
-  },
-  "analog-3-pt-output-action": {
-    "$base": "Enumerated",
-    "value": "close"
+  "text-value": {
+    "$base": "String",
+    "value": "Inactive"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -394,21 +410,9 @@
     "$base": "Unsigned",
     "value": 0
   },
-  "high-limit": {
-    "$base": "Real",
-    "value": 0
-  },
-  "low-limit": {
-    "$base": "Real",
-    "value": 0
-  },
-  "deadband": {
-    "$base": "Real",
-    "value": 0
-  },
-  "limit-enable": {
-    "$base": "BitString",
-    "value": ""
+  "feedback-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
   },
   "event-enable": {
     "$base": "BitString",
@@ -450,6 +454,79 @@
     "$base": "BitString",
     "value": "hvac"
   },
+  "flick-warn-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "flick-warn-time": {
+    "$base": "Choice",
+    "flick-warn-time": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "flick-warn-timer": {
+    "$base": "Choice",
+    "flick-warn-timer": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "flick-warn-active": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "flick-warn-paenable": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "override-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "all",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "override-prev-val": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "override-time": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "override-timer": {
+    "$base": "Choice",
+    "override-timer": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "reliability-timer": {
+    "$base": "Choice",
+    "reliability-timer": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "event-list": {
+    "$base": "BitString",
+    "value": "status-on;status-off;command-failure;invalid-status"
+  },
+  "prev-reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
   "event-detection-enable": {
     "$base": "Boolean",
     "value": 0
@@ -471,5 +548,40 @@
       "value": ""
     },
     "$base": "Array"
+  },
+  "lc-command": {
+    "$base": "Sequence",
+    "value": {
+      "$base": "Enumerated",
+      "value": "no-action"
+    },
+    "priority": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "flickWarnEnable": {
+      "$base": "Enumerated",
+      "value": "off"
+    },
+    "flickWarnOnTime": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "flickWarnOffTime": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "lc-user-properties": {
+    "$base": "Array"
+  },
+  "lc-internal-properties": {
+    "$base": "Array"
+  },
+  "lc-priority-array": {
+    "$base": "Choice",
+    "lc-priority-array": {
+      "$base": "Array"
+    }
   }
 }

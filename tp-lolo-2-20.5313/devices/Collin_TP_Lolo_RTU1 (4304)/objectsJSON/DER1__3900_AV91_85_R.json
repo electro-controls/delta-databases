@@ -14,7 +14,7 @@
   },
   "exchange-flags": {
     "$base": "BitString",
-    "value": "have-to-poll;no-flags;network-fault"
+    "value": "have-to-poll;dirty;no-flags;network-fault"
   },
   "exchange-type": {
     "$base": "Enumerated",
@@ -22,7 +22,7 @@
   },
   "last-error": {
     "$base": "Signed",
-    "value": "16777287"
+    "value": 0
   },
   "remote-reference": {
     "$base": "Sequence",

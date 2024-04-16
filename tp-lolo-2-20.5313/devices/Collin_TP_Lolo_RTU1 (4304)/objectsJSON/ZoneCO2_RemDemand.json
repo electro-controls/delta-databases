@@ -54,7 +54,7 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,*"
+    "unspecifiedValue": "true"
   },
   "time-of-last-write": {
     "$base": "DateTime",

@@ -1,6 +1,6 @@
 //Outdoor Air Interlocks
 'Dx1_OAInt' = Switch ( 'Dx1_OAInt', 'OAT_Eff', 'AV10261', 'AV10261' - 2)
-'Dx2_OAInt' = Switch ( 'Dx2_OAInt', 'OAT_Eff', 'AV10262', 'AV10262' - 2)
+'BV11252' = Switch ( 'BV11252', 'OAT_Eff', 'AV10262', 'AV10262' - 2)
 
 
 //DX air Flow Interlocks
@@ -13,13 +13,13 @@ End If
 
 //DX1 Interlocks
 If 'Dx1_Demand' And 'Dx1_OAInt' And 'Dx_FlowInt' And ('ZoneControlMode' = 2) And ('SFEnable' OffFor 600S) Then
-    'ClgStg1' = On
+    'BO5' = On
   Else
-    'ClgStg1' = Off
+    'BO5' = Off
 End If
 
-If 'Dx2_Demand' And 'Dx2_OAInt' And 'Dx_FlowInt' And ('ZoneControlMode' = 2) And ('ClgStg1' OffFor 600S) Then
-    'ClgStg2' = On
+If 'BV11262' And 'BV11252' And 'Dx_FlowInt' And ('ZoneControlMode' = 2) And ('BO5' OffFor 600S) Then
+    'BO6' = On
   Else
-    'ClgStg2' = Off
+    'BO6' = Off
 End If
