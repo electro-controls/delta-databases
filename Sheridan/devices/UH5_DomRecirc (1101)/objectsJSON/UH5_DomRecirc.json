@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "asdf"
   },
   "flags": {
     "$base": "BitString",
@@ -240,6 +240,246 @@
       "55": {
         "$base": "Choice"
       },
+      "56": {
+        "$base": "Choice"
+      },
+      "57": {
+        "$base": "Choice"
+      },
+      "58": {
+        "$base": "Choice"
+      },
+      "59": {
+        "$base": "Choice"
+      },
+      "60": {
+        "$base": "Choice"
+      },
+      "61": {
+        "$base": "Choice"
+      },
+      "62": {
+        "$base": "Choice"
+      },
+      "63": {
+        "$base": "Choice"
+      },
+      "64": {
+        "$base": "Choice"
+      },
+      "65": {
+        "$base": "Choice"
+      },
+      "66": {
+        "$base": "Choice"
+      },
+      "67": {
+        "$base": "Choice"
+      },
+      "68": {
+        "$base": "Choice"
+      },
+      "69": {
+        "$base": "Choice"
+      },
+      "70": {
+        "$base": "Choice"
+      },
+      "71": {
+        "$base": "Choice"
+      },
+      "72": {
+        "$base": "Choice"
+      },
+      "73": {
+        "$base": "Choice"
+      },
+      "74": {
+        "$base": "Choice"
+      },
+      "75": {
+        "$base": "Choice"
+      },
+      "76": {
+        "$base": "Choice"
+      },
+      "77": {
+        "$base": "Choice"
+      },
+      "78": {
+        "$base": "Choice"
+      },
+      "79": {
+        "$base": "Choice"
+      },
+      "80": {
+        "$base": "Choice"
+      },
+      "81": {
+        "$base": "Choice"
+      },
+      "82": {
+        "$base": "Choice"
+      },
+      "83": {
+        "$base": "Choice"
+      },
+      "84": {
+        "$base": "Choice"
+      },
+      "85": {
+        "$base": "Choice"
+      },
+      "86": {
+        "$base": "Choice"
+      },
+      "87": {
+        "$base": "Choice"
+      },
+      "88": {
+        "$base": "Choice"
+      },
+      "89": {
+        "$base": "Choice"
+      },
+      "90": {
+        "$base": "Choice"
+      },
+      "91": {
+        "$base": "Choice"
+      },
+      "92": {
+        "$base": "Choice"
+      },
+      "93": {
+        "$base": "Choice"
+      },
+      "94": {
+        "$base": "Choice"
+      },
+      "95": {
+        "$base": "Choice"
+      },
+      "96": {
+        "$base": "Choice"
+      },
+      "97": {
+        "$base": "Choice"
+      },
+      "98": {
+        "$base": "Choice"
+      },
+      "99": {
+        "$base": "Choice"
+      },
+      "100": {
+        "$base": "Choice"
+      },
+      "101": {
+        "$base": "Choice"
+      },
+      "102": {
+        "$base": "Choice"
+      },
+      "103": {
+        "$base": "Choice"
+      },
+      "104": {
+        "$base": "Choice"
+      },
+      "105": {
+        "$base": "Choice"
+      },
+      "106": {
+        "$base": "Choice"
+      },
+      "107": {
+        "$base": "Choice"
+      },
+      "108": {
+        "$base": "Choice"
+      },
+      "109": {
+        "$base": "Choice"
+      },
+      "110": {
+        "$base": "Choice"
+      },
+      "111": {
+        "$base": "Choice"
+      },
+      "112": {
+        "$base": "Choice"
+      },
+      "113": {
+        "$base": "Choice"
+      },
+      "114": {
+        "$base": "Choice"
+      },
+      "115": {
+        "$base": "Choice"
+      },
+      "116": {
+        "$base": "Choice"
+      },
+      "117": {
+        "$base": "Choice"
+      },
+      "118": {
+        "$base": "Choice"
+      },
+      "119": {
+        "$base": "Choice"
+      },
+      "120": {
+        "$base": "Choice"
+      },
+      "121": {
+        "$base": "Choice"
+      },
+      "122": {
+        "$base": "Choice"
+      },
+      "123": {
+        "$base": "Choice"
+      },
+      "124": {
+        "$base": "Choice"
+      },
+      "125": {
+        "$base": "Choice"
+      },
+      "126": {
+        "$base": "Choice"
+      },
+      "127": {
+        "$base": "Choice"
+      },
+      "128": {
+        "$base": "Choice"
+      },
+      "129": {
+        "$base": "Choice"
+      },
+      "130": {
+        "$base": "Choice"
+      },
+      "131": {
+        "$base": "Choice"
+      },
+      "132": {
+        "$base": "Choice"
+      },
+      "133": {
+        "$base": "Choice"
+      },
+      "134": {
+        "$base": "Choice"
+      },
+      "135": {
+        "$base": "Choice"
+      },
       "$base": "Array"
     }
   },
@@ -265,11 +505,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "05:07:08.00"
+    "value": "13:10:59.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2000-03-20"
+    "value": "2000-01-01"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -391,7 +631,7 @@
   },
   "reset-count": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "1"
   },
   "reason-for-reset": {
     "$base": "Enumerated",
@@ -418,7 +658,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "86.1364"
+    "value": "8.44444"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -430,7 +670,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "119"
+    "value": "104"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -438,7 +678,7 @@
   },
   "dynamic-ram-free": {
     "$base": "Unsigned",
-    "value": "100"
+    "value": "99"
   },
   "flash-type": {
     "$base": "Enumerated",
@@ -526,7 +766,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "68008286"
+      "value": "42595"
     }
   },
   "logical-base-address": {
@@ -626,7 +866,7 @@
     "$base": "Choice",
     "dateTime": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-03-25T04:36:48.20"
     }
   },
   "backup-failure-timeout": {
@@ -635,7 +875,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "24"
+    "value": "156"
   },
   "active-cov-subscriptions": {
     "$base": "List"

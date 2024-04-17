@@ -1,7 +1,143 @@
 {
   "name": "Sheridan",
   "ipAddress": "http://localhost",
-  "uploadQueue": [],
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 1101,
+      "objectId": "pg,2",
+      "objectName": "Critical_PG",
+      "siteName": "Sheridan",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/Critical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/17/2024, 9:22:56 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 1101,
+      "objectId": "pg,3",
+      "objectName": "General_PG",
+      "siteName": "Sheridan",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/General_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/17/2024, 9:23:01 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 1101,
+      "objectId": "pg,4",
+      "objectName": "Heat_PG",
+      "siteName": "Sheridan",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/Heat_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/17/2024, 9:23:04 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 1101,
+      "objectId": "pg,5",
+      "objectName": "Zone_PG",
+      "siteName": "Sheridan",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/Zone_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/17/2024, 9:23:12 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 1101,
+      "objectId": "pg,3",
+      "objectName": "Critical_PG",
+      "siteName": "Sheridan",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/Critical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/17/2024, 11:07:54 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 1101,
+      "objectId": "pg,10105",
+      "objectName": "Heat_PG",
+      "siteName": "Sheridan",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/Heat_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/17/2024, 11:07:54 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 1101,
+      "objectId": "pg,10150",
+      "objectName": "Zone_PG",
+      "siteName": "Sheridan",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/Zone_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/17/2024, 11:07:54 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 1101,
+      "objectId": "pg,1",
+      "objectName": "Main_PG",
+      "siteName": "Sheridan",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/Main_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/17/2024, 11:12:19 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 1101,
+      "objectId": "pg,2",
+      "objectName": "General_PG",
+      "siteName": "Sheridan",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/General_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/17/2024, 11:51:01 AM",
+      "templateTriggered": false
+    }
+  ],
   "devices": [
     {
       "number": 999,
@@ -736,161 +872,6 @@
           "name": "HWS_TL",
           "fileName": "HWS_TL",
           "lastUpdate": "2024-04-12T16:39:53.853Z"
-        }
-      ]
-    },
-    {
-      "number": 1101,
-      "objects": [
-        {
-          "id": "ai,3",
-          "name": "DomTemp",
-          "fileName": "DomTemp",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "ai,4",
-          "name": "DomRecircCurrent",
-          "fileName": "DomRecircCurrent",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "aic,4",
-          "name": "Current 0-5V 0-5 A AIC",
-          "fileName": "Current 0-5V 0-5 A AIC",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "aic,24",
-          "name": "TempF10KType3_AIC",
-          "fileName": "TempF10KType3_AIC",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "bdc,2",
-          "name": "Enabled_Disabled BDC",
-          "fileName": "Enabled_Disabled BDC",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "bo,3",
-          "name": "DomRecircEnable",
-          "fileName": "DomRecircEnable",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "dbi,1101",
-          "name": "Database Information 1101",
-          "fileName": "Database Information 1101",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "des,1",
-          "name": "Data Exchange Settings 1101",
-          "fileName": "Data Exchange Settings 1101",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "device,1101",
-          "name": "UH5_DomRecirc",
-          "fileName": "UH5_DomRecirc",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "evc,1",
-          "name": "Maintenance",
-          "fileName": "Maintenance",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "evc,2",
-          "name": "Network",
-          "fileName": "Network",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "evc,3",
-          "name": "Security",
-          "fileName": "Security",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "evc,4",
-          "name": "Critical",
-          "fileName": "Critical",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "evc,5",
-          "name": "Notification",
-          "fileName": "Notification",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "evc,6",
-          "name": "Fire",
-          "fileName": "Fire",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "evc,7",
-          "name": "Access Control Event",
-          "fileName": "Access Control Event",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "evc,8",
-          "name": "Access Control Alarm",
-          "fileName": "Access Control Alarm",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "evc,9",
-          "name": "Archival",
-          "fileName": "Archival",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "evs,1",
-          "name": "Event and Alarm Settings 1101",
-          "fileName": "Event and Alarm Settings 1101",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "file,1",
-          "name": "Database Transfer File",
-          "fileName": "Database Transfer File",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "net,1",
-          "name": "BACnet Settings 1101",
-          "fileName": "BACnet Settings 1101",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "pan,1",
-          "name": "Priority Names 1101",
-          "fileName": "Priority Names 1101",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "sdl,1",
-          "name": "Slave Device List 1101",
-          "fileName": "Slave Device List 1101",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "sua,1",
-          "name": "DELTA",
-          "fileName": "DELTA",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
-        },
-        {
-          "id": "sug,1",
-          "name": "Administrator",
-          "fileName": "Administrator",
-          "lastUpdate": "2024-04-12T16:39:53.854Z"
         }
       ]
     },
@@ -11320,6 +11301,641 @@
           "name": "DELTA",
           "fileName": "DELTA",
           "lastUpdate": "2024-04-15T16:54:59.223Z"
+        }
+      ]
+    },
+    {
+      "number": 1101,
+      "objects": [
+        {
+          "id": "aic,1",
+          "name": "Temperature DegF 10k Thermistor AIC",
+          "fileName": "Temperature DegF 10k Thermistor AIC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "aic,3",
+          "name": "Pressure inH20 4-20mA 0-5.0 AIC",
+          "fileName": "Pressure inH20 4-20mA 0-5.0 AIC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "aic,4",
+          "name": "0_10vdc_0_100",
+          "fileName": "0_10vdc_0_100",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "aic,5",
+          "name": "Pressure inH20 4-20mA .25-.25 AIC",
+          "fileName": "Pressure inH20 4-20mA .25-.25 AIC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "aic,7",
+          "name": "Temp 32_122 DegF_0_10AIC",
+          "fileName": "Temp 32_122 DegF_0_10AIC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "aic,36",
+          "name": "Current 0-5V 0-5 A AIC",
+          "fileName": "Current 0-5V 0-5 A AIC",
+          "lastUpdate": "2024-04-17T16:22:29.238Z"
+        },
+        {
+          "id": "aic,38",
+          "name": "SFCurrent 0-5V 0-20A AIC",
+          "fileName": "SFCurrent 0-5V 0-20A AIC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "aic,42",
+          "name": "DNS-24H Humidity Sensor",
+          "fileName": "DNS-24H Humidity Sensor",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "aic,43",
+          "name": "Pressure inH20 0-5v 0-5.0 AIC",
+          "fileName": "Pressure inH20 0-5v 0-5.0 AIC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "aoc,1",
+          "name": "Valve 0-10V 0-100 % AOC",
+          "fileName": "Valve 0-10V 0-100 % AOC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "aoc,2",
+          "name": "Damper 0-10V 0-100 % AOC",
+          "fileName": "Damper 0-10V 0-100 % AOC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "aoc,4",
+          "name": "VSD 0-10V 0-100 % AOC",
+          "fileName": "VSD 0-10V 0-100 % AOC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,91",
+          "name": "Eff_OAT",
+          "fileName": "Eff_OAT",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10101",
+          "name": "Zone_EffSp",
+          "fileName": "Zone_EffSp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10102",
+          "name": "Zone_LocSp",
+          "fileName": "Zone_LocSp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10103",
+          "name": "Zone_RemSp",
+          "fileName": "Zone_RemSp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10104",
+          "name": "ZoneHeat_EffSp",
+          "fileName": "ZoneHeat_EffSp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10105",
+          "name": "ZoneCool_EffSp",
+          "fileName": "ZoneCool_EffSp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10106",
+          "name": "ZoneDb_Sp",
+          "fileName": "ZoneDb_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10107",
+          "name": "UnocHt_Sp",
+          "fileName": "UnocHt_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10108",
+          "name": "UnocCl_Sp",
+          "fileName": "UnocCl_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10109",
+          "name": "UnocDb_Sp",
+          "fileName": "UnocDb_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10110",
+          "name": "ZoneVariance",
+          "fileName": "ZoneVariance",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10111",
+          "name": "DNSAlgMode",
+          "fileName": "DNSAlgMode",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10112",
+          "name": "OcClgMin_Sp",
+          "fileName": "OcClgMin_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10113",
+          "name": "OcClgMax_Sp",
+          "fileName": "OcClgMax_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10114",
+          "name": "OcHtgMin_Sp",
+          "fileName": "OcHtgMin_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10115",
+          "name": "OcHtgMax_Sp",
+          "fileName": "OcHtgMax_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10117",
+          "name": "StandbyOffset_Sp",
+          "fileName": "StandbyOffset_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10118",
+          "name": "BypassTm_Sp",
+          "fileName": "BypassTm_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10119",
+          "name": "BypassTmLeft",
+          "fileName": "BypassTmLeft",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10120",
+          "name": "ZoneHtRamp_Sp",
+          "fileName": "ZoneHtRamp_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10121",
+          "name": "ZoneClRamp_Sp",
+          "fileName": "ZoneClRamp_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10122",
+          "name": "ZoneDbDelay_Sp",
+          "fileName": "ZoneDbDelay_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10130",
+          "name": "EffZoneClg",
+          "fileName": "EffZoneClg",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10131",
+          "name": "LocZoneClg",
+          "fileName": "LocZoneClg",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10132",
+          "name": "RemZoneClg",
+          "fileName": "RemZoneClg",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10133",
+          "name": "EffZoneHtg",
+          "fileName": "EffZoneHtg",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10134",
+          "name": "LocZoneHtg",
+          "fileName": "LocZoneHtg",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10135",
+          "name": "RemZoneHtg",
+          "fileName": "RemZoneHtg",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10138",
+          "name": "PurgeHold_Sp",
+          "fileName": "PurgeHold_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10139",
+          "name": "PurgeHoldTmLeft",
+          "fileName": "PurgeHoldTmLeft",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,10190",
+          "name": "Eff_ZoneTemp",
+          "fileName": "Eff_ZoneTemp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,11016",
+          "name": "ZoneSpIncrement_Sp",
+          "fileName": "ZoneSpIncrement_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,11051",
+          "name": "ZoneAlgMode",
+          "fileName": "ZoneAlgMode",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,11052",
+          "name": "ZoneBypassTm_Sp",
+          "fileName": "ZoneBypassTm_Sp",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "av,11053",
+          "name": "ZoneBypassTmLeft",
+          "fileName": "ZoneBypassTmLeft",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bdc,1",
+          "name": "On/Off BDC",
+          "fileName": "On~Off BDC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "Alarm/Normal BDC",
+          "fileName": "Alarm~Normal BDC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bdc,3",
+          "name": "Active/Inactive BDC",
+          "fileName": "Active~Inactive BDC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bdc,5",
+          "name": "Direct/Reverse",
+          "fileName": "Direct~Reverse",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "FanEnable",
+          "fileName": "FanEnable",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bo,2",
+          "name": "HWV",
+          "fileName": "HWV",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10108",
+          "name": "FanMode",
+          "fileName": "FanMode",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10121",
+          "name": "Rem_Schedule",
+          "fileName": "Rem_Schedule",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10122",
+          "name": "BypassCall",
+          "fileName": "BypassCall",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10123",
+          "name": "UnocHtCall",
+          "fileName": "UnocHtCall",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10124",
+          "name": "UnocClCall",
+          "fileName": "UnocClCall",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10125",
+          "name": "Rem_WarmCall",
+          "fileName": "Rem_WarmCall",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10126",
+          "name": "Rem_PurgeCall",
+          "fileName": "Rem_PurgeCall",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10127",
+          "name": "ZoneClDemand",
+          "fileName": "ZoneClDemand",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10128",
+          "name": "ZoneHtDemand",
+          "fileName": "ZoneHtDemand",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10138",
+          "name": "HWVLock",
+          "fileName": "HWVLock",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10139",
+          "name": "PurgeHold",
+          "fileName": "PurgeHold",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,11021",
+          "name": "Zone_RemSchedule",
+          "fileName": "Zone_RemSchedule",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,11022",
+          "name": "Zone_SchedueFunction",
+          "fileName": "Zone_SchedueFunction",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,11025",
+          "name": "Zone_RemWarmCall",
+          "fileName": "Zone_RemWarmCall",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,11026",
+          "name": "Zone_RemPurgeCall",
+          "fileName": "Zone_RemPurgeCall",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,11050",
+          "name": "ZoneEnableDNS",
+          "fileName": "ZoneEnableDNS",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,11051",
+          "name": "ZoneBlinkDNS",
+          "fileName": "ZoneBlinkDNS",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,11052",
+          "name": "ZoneBypassCall",
+          "fileName": "ZoneBypassCall",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "co,10101",
+          "name": "ZoneClg_CO",
+          "fileName": "ZoneClg_CO",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "co,10102",
+          "name": "ZoneHtg_CO",
+          "fileName": "ZoneHtg_CO",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "dbi,1101",
+          "name": "Database Information 1101",
+          "fileName": "Database Information 1101",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "der,2",
+          "name": "DER2__1100_AV91_85_R",
+          "fileName": "DER2__1100_AV91_85_R",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 1101",
+          "fileName": "Data Exchange Settings 1101",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "device,1101",
+          "name": "UH5_DomRecirc",
+          "fileName": "UH5_DomRecirc",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 1101",
+          "fileName": "Event and Alarm Settings 1101",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "lcd,101",
+          "name": "LinkLCD1",
+          "fileName": "LinkLCD1",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "mic,1",
+          "name": "ControlMode MIC",
+          "fileName": "ControlMode MIC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "mic,3",
+          "name": "Controller Status",
+          "fileName": "Controller Status",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "mic,4",
+          "name": "OccMode MIC",
+          "fileName": "OccMode MIC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "mic,5",
+          "name": "DNSMode_MIC",
+          "fileName": "DNSMode_MIC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "mic,6",
+          "name": "DNSLocSpFallback_MIC",
+          "fileName": "DNSLocSpFallback_MIC",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "mv,10101",
+          "name": "OccMode",
+          "fileName": "OccMode",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "mv,10103",
+          "name": "ControlMode",
+          "fileName": "ControlMode",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "mv,10104",
+          "name": "PrevControlMode",
+          "fileName": "PrevControlMode",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "mv,11051",
+          "name": "ZoneDNSMode",
+          "fileName": "ZoneDNSMode",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "mv,11052",
+          "name": "ZoneDNSLocSpFallback",
+          "fileName": "ZoneDNSLocSpFallback",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 1101",
+          "fileName": "BACnet Settings 1101",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 1101",
+          "fileName": "Priority Names 1101",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-04-17T17:07:54.625Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-04-17T17:07:54.579Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "Critical_PG",
+          "fileName": "Critical_PG",
+          "lastUpdate": "2024-04-17T17:07:54.565Z"
+        },
+        {
+          "id": "pg,10105",
+          "name": "Heat_PG",
+          "fileName": "Heat_PG",
+          "lastUpdate": "2024-04-17T17:07:54.604Z"
+        },
+        {
+          "id": "pg,10150",
+          "name": "Zone_PG",
+          "fileName": "Zone_PG",
+          "lastUpdate": "2024-04-17T17:07:54.638Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 1101",
+          "fileName": "Slave Device List 1101",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-04-17T16:12:39.586Z"
+        },
+        {
+          "id": "bv,10129",
+          "name": "FanStatus",
+          "fileName": "FanStatus",
+          "lastUpdate": "2024-04-17T16:23:34.971Z"
+        },
+        {
+          "id": "ai,2",
+          "name": "UH5_FanCurrent",
+          "fileName": "UH5_FanCurrent",
+          "lastUpdate": "2024-04-17T17:41:39.454Z"
+        },
+        {
+          "id": "ai,4",
+          "name": "RecircPumpAmps",
+          "fileName": "RecircPumpAmps",
+          "lastUpdate": "2024-04-17T16:25:31.727Z"
+        },
+        {
+          "id": "ai,3",
+          "name": "ReturnTemp",
+          "fileName": "ReturnTemp",
+          "lastUpdate": "2024-04-17T16:27:36.176Z"
+        },
+        {
+          "id": "bo,3",
+          "name": "DomPumpEnable",
+          "fileName": "DomPumpEnable",
+          "lastUpdate": "2024-04-17T16:30:47.274Z"
+        },
+        {
+          "id": "aic,6",
+          "name": "CO2_0_10_0_2000",
+          "fileName": "CO2_0_10_0_2000",
+          "lastUpdate": "2024-04-17T17:53:35.690Z"
         }
       ]
     }

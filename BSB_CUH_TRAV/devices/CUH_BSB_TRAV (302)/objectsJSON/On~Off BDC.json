@@ -1,8 +1,8 @@
 {
-  "displayName": "Enabled_Disabled BDC",
+  "displayName": "On/Off BDC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,2"
+    "value": "bdc,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Enabled_Disabled BDC"
+    "value": "On/Off BDC"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "active-text": {
     "$base": "String",
-    "value": "Enabled"
+    "value": "On"
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Disabled"
+    "value": "Off"
   },
   "hal-flags": {
     "$base": "BitString",

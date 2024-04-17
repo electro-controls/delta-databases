@@ -1,0 +1,40 @@
+If PowerUp Then
+ Zone_RemSp = - 1
+ RemZoneHtg = - 1
+ Rem_Schedule = On
+ PrevControlMode = 3
+End If
+
+Eff_OAT = 1100.Eff_OAT
+//temp - remove once Andrew rewires
+Eff_ZoneTemp = 1100.UH5_Eff_ZoneTemp
+
+
+If Rem_Schedule Then
+   OccMode = 3
+Else
+   OccMode = 1
+End If
+
+
+//Controller will save to flash every 24 hours.
+//Below code initiates save based on controller address
+//so saves are staggered rather than all at once.
+ Variable T //Time
+ Variable A1 //Address 1 to 59
+ Variable A2 //Address 60 to 99
+
+ T = Time
+ A1 = UH5_DomRecirc.DIP_Setting
+
+ If A1 > 59 Then
+   A2 = (A1 - 59) + 99
+  Else
+   A2 = A1
+ End If
+
+ IfOnce T = A2 And Weekday = 3 Then
+  SaveToFlash
+ End If
+
+ //End of Program

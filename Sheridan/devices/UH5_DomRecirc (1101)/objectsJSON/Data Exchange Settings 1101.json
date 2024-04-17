@@ -30,7 +30,7 @@
   },
   "default-exchange-type": {
     "$base": "Enumerated",
-    "value": "optimized-broadcast"
+    "value": "cov-confirmed"
   },
   "poll-startup-delay": {
     "$base": "Unsigned",
@@ -44,7 +44,7 @@
     "$base": "Choice",
     "poll-timer": {
       "$base": "Unsigned",
-      "value": "68008294"
+      "value": "2793"
     }
   },
   "actual-poll-time": {
@@ -63,7 +63,7 @@
     "$base": "Choice",
     "broadcast-timer": {
       "$base": "Unsigned",
-      "value": "68008564"
+      "value": "2763"
     }
   },
   "actual-broadcast-time": {
@@ -89,7 +89,7 @@
   },
   "subscription-startup-delay": {
     "$base": "Unsigned",
-    "value": "11"
+    "value": "1111"
   },
   "subscription-interval": {
     "$base": "Unsigned",
@@ -99,7 +99,7 @@
     "$base": "Choice",
     "subscription-timer": {
       "$base": "Unsigned",
-      "value": "68022114"
+      "value": "11113"
     }
   },
   "actual-subscription-time": {
@@ -114,7 +114,7 @@
     "$base": "Choice",
     "subscription-check-timer": {
       "$base": "Unsigned",
-      "value": "68008284"
+      "value": "2673"
     }
   },
   "subscription-extra-lifetime": {

@@ -1,0 +1,102 @@
+//The following sequnce detrmines the current mode of
+//operation (Heating, Cooling, or Deadband)
+Variable HtCall
+Variable ClCall
+Variable HtRamp
+Variable ClRamp
+Variable LastState
+
+// Effective SP
+If ('OccMode' = 3) Or ('OccMode' = 4) Or ('OccMode' = 5) Then
+    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - ('ZoneDb_Sp' * 0.5)), 'OcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('Zone_EffSp' + ('ZoneDb_Sp' * 0.5)), 'OcClgMin_Sp')
+  ElseIf  'OccMode' = 2 Then //Standby
+    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - 'StandbyOffset_Sp' - ('ZoneDb_Sp' * 0.5)), 'OcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('Zone_EffSp' + 'StandbyOffset_Sp' + ('ZoneDb_Sp' * 0.5)), 'OcClgMin_Sp')
+  ElseIf  'OccMode' = 6 Then //Purge
+    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - 'StandbyOffset_Sp' - ('ZoneDb_Sp' * 0.5)), 'OcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('Zone_EffSp' + ('ZoneDb_Sp' * 0.5)), 'OcClgMin_Sp')
+  Else
+    'ZoneHeat_EffSp' = Min ('UnocHt_Sp', 'OcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max ('UnocCl_Sp', 'OcClgMin_Sp')
+End If
+
+//Links remote setpoint to effective
+If 'Zone_RemSp' > 0 Then
+ 'Zone_EffSp' = 'Zone_RemSp'
+Else
+ 'Zone_EffSp' = 'Zone_LocSp'
+End If
+
+//This just display the value of the CO for display at the NM level
+'LocZoneHtg' = 'ZoneHtg_CO' * HtRamp * 0.01
+'LocZoneClg' = 'ZoneClg_CO' * ClRamp * 0.01
+
+//This determines the actual heating/cooling/deadband mode
+//This also does the previous mode latching. Previous mode could then be used
+//by other routines (like DAT control).
+If (('ZoneHtg_CO' > 'EffZoneClg' + 5) And 'ControlMode' = 3) OnFor 'ZoneDbDelay_Sp':S Then
+    HtCall = On
+    'PrevControlMode' = 3
+  ElseIf  (('ZoneClg_CO' > 'EffZoneHtg' + 5) And 'ControlMode' = 3) OnFor 'ZoneDbDelay_Sp':S Then
+    ClCall = On
+    'PrevControlMode' = 3
+  ElseIf  (('ControlMode' = 1) And ('EffZoneHtg' <= 0)) OnFor 'ZoneDbDelay_Sp':S Then
+    HtCall = Off
+    'PrevControlMode' = 1
+  ElseIf  (('ControlMode' = 2) And ('EffZoneClg' <= 0)) OnFor 'ZoneDbDelay_Sp':S Then
+    ClCall = Off
+    'PrevControlMode' = 2
+End If
+
+//Set current control mode
+//This takes into account a manual override of the space heating/cooling %
+//from the NM
+If 'RemZoneHtg' >= 0 Then
+    'EffZoneHtg' = 'RemZoneHtg'
+    'EffZoneClg' = 0
+    'ControlMode' = 1
+  ElseIf  'RemZoneClg' >= 0 Then
+    'EffZoneClg' = 'RemZoneClg'
+    'EffZoneHtg' = 0
+    'ControlMode' = 2
+  ElseIf  ClCall Then
+    'ControlMode' = 2
+    'EffZoneHtg' = 'LocZoneHtg'
+    'EffZoneClg' = 'LocZoneClg'
+  ElseIf  HtCall Then
+    'ControlMode' = 1
+    'EffZoneHtg' = 'LocZoneHtg'
+    'EffZoneClg' = 'LocZoneClg'
+  Else
+    'ControlMode' = 3
+    'EffZoneHtg' = 'LocZoneHtg'
+    'EffZoneClg' = 'LocZoneClg'
+End If
+
+//This provides ramp delay to sequence in mode %. Intended
+//to minimize overshoot of cooresponding cascade control loops when
+//major swings are seen as setpoints and/or zone temps. Also, allows for
+//smoother sequenceing of staged outputs (when applicable).
+If 'ControlMode' = 1 Then
+    DoEvery 10S
+    HtRamp = Min (100, HtRamp + (1000 / 'ZoneHtRamp_Sp'))
+    End Do
+  Else
+    HtRamp = 0
+End If
+If 'ControlMode' = 2 Then
+    DoEvery 10S
+    ClRamp = Min (100, ClRamp + (1000 / 'ZoneClRamp_Sp'))
+    End Do
+  Else
+    ClRamp = 0
+End If
+
+//Unoc Demand
+'UnocHtCall' = Switch ( 'UnocHtCall', 'Eff_ZoneTemp', 'UnocHt_Sp', 'UnocHt_Sp' + 'UnocDb_Sp')
+'UnocClCall' = Switch ( 'UnocClCall', 'Eff_ZoneTemp', 'UnocCl_Sp', 'UnocCl_Sp' - 'UnocDb_Sp')
+
+//Standby Demand
+'ZoneClDemand' = Switch ( 'ZoneClDemand', 'EffZoneClg', 99, 50)
+'ZoneHtDemand' = Switch ( 'ZoneHtDemand', 'EffZoneHtg', 99, 50)
