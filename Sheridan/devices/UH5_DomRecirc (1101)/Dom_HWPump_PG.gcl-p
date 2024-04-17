@@ -1,1 +1,5 @@
-'Dom_RecircEnable' = Switch('Dom_RecircEnable', 'Dom_Temp_CO', 0, 15)
+If (Dom_Rem_Schedule) Then
+    'Dom_RecircEnable' = Switch('Dom_RecircEnable', 'Dom_Temp_CO', 40, 10)
+Else
+    'Dom_RecircEnable' = Inactive
+End If
