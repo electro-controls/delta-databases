@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Current 0-5V 0-5 A AIC"
+    "value": "UH5_Current 0-5V 0-5 A AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "122"
+    "value": "121"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "55494"
+      "value": "96314"
     }
   },
   "ad-value": {

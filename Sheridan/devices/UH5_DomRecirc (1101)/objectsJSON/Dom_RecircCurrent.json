@@ -1,8 +1,8 @@
 {
-  "displayName": "DomTemp",
+  "displayName": "Dom_RecircCurrent",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,3"
+    "value": "analog-input,4"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,27 +10,27 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DomTemp"
+    "value": "Dom_RecircCurrent"
   },
   "description": {
     "$base": "String",
-    "value": "25Jan2023 AV- strap on sensor. close to temp WH is set at this time 130deg"
+    "value": "25Jan2023 AV- amp probed at 2.1A"
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": "44.0781"
+    "value": 0
   },
   "last-value": {
     "$base": "Real",
-    "value": "88.7537"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "A"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,24"
+    "value": "aic,5"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,7 +54,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "missing-cfg-object"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -62,23 +62,23 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "Dom_Current 0-5V 0-5 A AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "112"
+    "value": "121"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": 0
+    "value": "-0.25"
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "0.25"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.02442"
+    "value": "0.0001221"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "164442"
+      "value": "196484"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1805"
+    "value": 0
   },
   "calibration": {
     "$base": "Real",

@@ -1,5 +1,5 @@
 {
-  "displayName": "Alarm/Normal BDC",
+  "displayName": "UH5_Alarm/Normal BDC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "bdc,2"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Alarm/Normal BDC"
+    "value": "UH5_Alarm/Normal BDC"
   },
   "description": {
     "$base": "String",
