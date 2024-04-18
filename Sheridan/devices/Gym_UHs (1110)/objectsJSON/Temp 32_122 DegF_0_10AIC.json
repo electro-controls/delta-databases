@@ -1,8 +1,8 @@
 {
-  "displayName": "Current 0-5V 0-5 A AIC",
+  "displayName": "Temp 32_122 DegF_0_10AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "aic,36"
+    "value": "analog-input-configuration,5"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Current 0-5V 0-5 A AIC"
+    "value": "Temp 32_122 DegF_0_10AIC"
   },
   "description": {
     "$base": "String",
@@ -22,15 +22,15 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "A"
+    "value": "°F"
   },
   "max-value": {
     "$base": "Real",
-    "value": "5"
+    "value": "122"
   },
   "min-value": {
     "$base": "Real",
-    "value": 0
+    "value": "32"
   },
   "scale-range": {
     "1": {
@@ -41,7 +41,7 @@
       },
       "value": {
         "$base": "Real",
-        "value": 0
+        "value": "32"
       },
       "adValue": {
         "$base": "Unsigned",
@@ -56,7 +56,7 @@
       },
       "value": {
         "$base": "Real",
-        "value": "5"
+        "value": "122"
       },
       "adValue": {
         "$base": "Unsigned",

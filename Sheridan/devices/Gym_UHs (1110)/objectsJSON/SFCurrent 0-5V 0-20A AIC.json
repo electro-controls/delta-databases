@@ -1,8 +1,8 @@
 {
-  "displayName": "Current 0-5V 0-5 A AIC",
+  "displayName": "SFCurrent 0-5V 0-20A AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "aic,36"
+    "value": "analog-input-configuration,3"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Current 0-5V 0-5 A AIC"
+    "value": "SFCurrent 0-5V 0-20A AIC"
   },
   "description": {
     "$base": "String",
@@ -26,7 +26,7 @@
   },
   "max-value": {
     "$base": "Real",
-    "value": "5"
+    "value": "20"
   },
   "min-value": {
     "$base": "Real",
@@ -56,7 +56,7 @@
       },
       "value": {
         "$base": "Real",
-        "value": "5"
+        "value": "20"
       },
       "adValue": {
         "$base": "Unsigned",

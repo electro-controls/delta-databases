@@ -1,8 +1,8 @@
 {
-  "displayName": "Current 0-5V 0-5 A AIC",
+  "displayName": "Pressure inH20 0-5v 0-5.0 AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "aic,36"
+    "value": "analog-input-configuration,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Current 0-5V 0-5 A AIC"
+    "value": "Pressure inH20 0-5v 0-5.0 AIC"
   },
   "description": {
     "$base": "String",
@@ -22,7 +22,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "A"
+    "value": "inWC"
   },
   "max-value": {
     "$base": "Real",

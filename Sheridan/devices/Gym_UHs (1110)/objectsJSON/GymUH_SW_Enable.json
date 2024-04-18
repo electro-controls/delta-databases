@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,6"
+    "value": "bdc,3"
   },
   "device-type": {
     "$base": "String",

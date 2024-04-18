@@ -1,16 +1,16 @@
 {
-  "displayName": "Current 0-5V 0-5 A AIC",
+  "displayName": "DNSLocSpFallback_MIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "aic,36"
+    "value": "mic,6"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "analog-input-configuration"
+    "value": "multi-state-input-configuration"
   },
   "object-name": {
     "$base": "String",
-    "value": "Current 0-5V 0-5 A AIC"
+    "value": "DNSLocSpFallback_MIC"
   },
   "description": {
     "$base": "String",
@@ -20,54 +20,41 @@
     "$base": "Unsigned",
     "value": 0
   },
-  "units": {
-    "$base": "Enumerated",
-    "value": "A"
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "LocSpMatchRem"
+    },
+    "2": {
+      "$base": "String",
+      "value": "LocSpRetainsLoc"
+    },
+    "$base": "Array"
   },
-  "max-value": {
-    "$base": "Real",
-    "value": "5"
-  },
-  "min-value": {
-    "$base": "Real",
-    "value": 0
-  },
-  "scale-range": {
+  "voltage-range": {
     "1": {
       "$base": "Sequence",
-      "voltage": {
+      "lowerRange": {
         "$base": "Real",
         "value": 0
       },
-      "value": {
+      "upperRange": {
         "$base": "Real",
-        "value": 0
-      },
-      "adValue": {
-        "$base": "Unsigned",
         "value": 0
       }
     },
     "2": {
       "$base": "Sequence",
-      "voltage": {
+      "lowerRange": {
         "$base": "Real",
-        "value": "5"
+        "value": 0
       },
-      "value": {
+      "upperRange": {
         "$base": "Real",
-        "value": "5"
-      },
-      "adValue": {
-        "$base": "Unsigned",
         "value": 0
       }
     },
     "$base": "Array"
-  },
-  "sort-required": {
-    "$base": "Boolean",
-    "value": 0
   },
   "hal-flags": {
     "$base": "BitString",

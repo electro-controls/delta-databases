@@ -1,8 +1,8 @@
 {
-  "displayName": "On_Off BDC",
+  "displayName": "Direct/Reverse",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,6"
+    "value": "binary-device-configuration,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "On_Off BDC"
+    "value": "Direct/Reverse"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "active-text": {
     "$base": "String",
-    "value": "On"
+    "value": "Direct"
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Off"
+    "value": "Reverse"
   },
   "hal-flags": {
     "$base": "BitString",

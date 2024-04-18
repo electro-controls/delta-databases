@@ -1,8 +1,8 @@
 {
-  "displayName": "GymUH_NW_Amps",
+  "displayName": "UH5_ZoneTemp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,2"
+    "value": "analog-input,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "GymUH_NW_Amps"
+    "value": "UH5_ZoneTemp"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "26.0028"
   },
   "last-value": {
     "$base": "Real",
-    "value": 0
+    "value": "5"
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "A"
+    "value": "%"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,36"
+    "value": "aic,1"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Current 0-5V 0-5 A AIC"
+    "value": ""
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "29"
+    "value": "128"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,11 +74,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "5"
+    "value": "100"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.001221"
+    "value": "0.02442"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "65458935"
+      "value": "955940"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "2182"
   },
   "calibration": {
     "$base": "Real",
@@ -181,7 +181,7 @@
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "hvac"
+    "value": "lighting"
   },
   "event-detection-enable": {
     "$base": "Boolean",

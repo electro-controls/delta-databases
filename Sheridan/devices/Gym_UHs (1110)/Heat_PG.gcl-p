@@ -1,0 +1,34 @@
+//  Fans
+
+'FanStatus_NE' = Switch ( 'FanStatus_NE', 'GymUH_NE_Amps', 1.0, 0.5)
+'FanStatus_NW' = Switch ( 'FanStatus_NW', 'GymUH_NW_Amps', 1.0, 0.5)
+'FanStatus_SW' = Switch ( 'FanStatus_SW', 'GymUH_SW_Amps', 1.0, 0.5)
+ 
+If 'OccMode' = 6 Then
+    'PurgeHold' = On
+    'PurgeHoldTmLeft' = 'PurgeHold_Sp'
+  Else
+    DoEvery 1M
+    'PurgeHoldTmLeft' = Max (0, 'PurgeHoldTmLeft' - 1)
+    End Do
+End If
+
+If 'Eff_OAT' < 40 Or ('PurgeHoldTmLeft' = 0) Then
+    'PurgeHold' = Off
+End If
+
+'HWVLock' = Switch ( 'HWVLock', 'EffZoneClg', 99, 90)
+
+If 'HWVLock' Or 'PurgeHold' Then
+  'GymUH_NE_Enable' = 0
+  'GymUH_NW_Enable' = 0
+  'GymUH_SW_Enable' = 0
+ Else
+  'GymUH_NE_Enable' = Switch ( 'GymUH_NE_Enable', 'EffZoneHtg', 50, 1)
+  'GymUH_NW_Enable' = Switch ( 'GymUH_NW_Enable', 'EffZoneHtg', 50, 1)
+  'GymUH_SW_Enable' = Switch ( 'GymUH_SW_Enable', 'EffZoneHtg', 50, 1)
+End If
+
+'GymUH_NE_HWV' = 'GymUH_NE_Enable'
+'GymUH_NW_HWV' = 'GymUH_NW_Enable'
+'GymUH_SW_HWV' = 'GymUH_SW_Enable'

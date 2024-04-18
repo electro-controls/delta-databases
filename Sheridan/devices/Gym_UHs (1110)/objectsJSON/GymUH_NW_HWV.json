@@ -1,8 +1,8 @@
 {
-  "displayName": "GymUH_NE_Enable",
+  "displayName": "GymUH_NW_HWV",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-output,3"
+    "value": "binary-output,5"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "GymUH_NE_Enable"
+    "value": "GymUH_NW_HWV"
   },
   "description": {
     "$base": "String",
@@ -42,7 +42,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "On_Off BDC"
+    "value": ""
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,15 +62,15 @@
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Off"
+    "value": "OFF"
   },
   "active-text": {
     "$base": "String",
-    "value": "On"
+    "value": "ON"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-03-10T08:42:37.900000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-03-10T08:42:37.900000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-03-10T08:37:42.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "16"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -170,7 +170,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -203,10 +206,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -300,7 +300,7 @@
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:19:18.30"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -320,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-03-10T11:50:21.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -344,7 +344,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-03-11T04:11:44.70"
+      "value": "2000-03-17T08:39:59.40"
     },
     "$base": "Array"
   },
@@ -406,7 +406,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Off"
+    "value": ""
   },
   "time-delay": {
     "$base": "Unsigned",

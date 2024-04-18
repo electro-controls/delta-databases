@@ -1,8 +1,8 @@
 {
-  "displayName": "Current 0-5V 0-5 A AIC",
+  "displayName": "DNS-24H Humidity Sensor",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "aic,36"
+    "value": "aic,42"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Current 0-5V 0-5 A AIC"
+    "value": "DNS-24H Humidity Sensor"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "A"
+    "value": "%"
   },
   "max-value": {
     "$base": "Real",
-    "value": "5"
+    "value": "100"
   },
   "min-value": {
     "$base": "Real",
@@ -52,11 +52,41 @@
       "$base": "Sequence",
       "voltage": {
         "$base": "Real",
+        "value": "0.8"
+      },
+      "value": {
+        "$base": "Real",
+        "value": 0
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.07"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "100"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
         "value": "5"
       },
       "value": {
         "$base": "Real",
-        "value": "5"
+        "value": "100"
       },
       "adValue": {
         "$base": "Unsigned",

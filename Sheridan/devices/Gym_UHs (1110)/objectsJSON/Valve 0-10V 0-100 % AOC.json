@@ -1,16 +1,16 @@
 {
-  "displayName": "Current 0-5V 0-5 A AIC",
+  "displayName": "Valve 0-10V 0-100 % AOC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "aic,36"
+    "value": "analog-output-configuration,1"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "analog-input-configuration"
+    "value": "analog-output-configuration"
   },
   "object-name": {
     "$base": "String",
-    "value": "Current 0-5V 0-5 A AIC"
+    "value": "Valve 0-10V 0-100 % AOC"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,15 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "A"
+    "value": "%"
+  },
+  "algorithm": {
+    "$base": "Enumerated",
+    "value": "analog-output"
   },
   "max-value": {
     "$base": "Real",
-    "value": "5"
+    "value": "100"
   },
   "min-value": {
     "$base": "Real",
@@ -52,11 +56,11 @@
       "$base": "Sequence",
       "voltage": {
         "$base": "Real",
-        "value": "5"
+        "value": "10"
       },
       "value": {
         "$base": "Real",
-        "value": "5"
+        "value": "100"
       },
       "adValue": {
         "$base": "Unsigned",
@@ -64,6 +68,26 @@
       }
     },
     "$base": "Array"
+  },
+  "run-time": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "min-pulse": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "max-pulse": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "deadband": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "control-band": {
+    "$base": "Unsigned",
+    "value": 0
   },
   "sort-required": {
     "$base": "Boolean",
