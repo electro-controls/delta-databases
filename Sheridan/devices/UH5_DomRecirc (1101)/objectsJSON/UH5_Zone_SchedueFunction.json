@@ -1,32 +1,32 @@
 {
-  "displayName": "UH5_ControlMode",
+  "displayName": "UH5_Zone_SchedueFunction",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "multi-state-value,10103"
+    "value": "binary-value,11022"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "multi-state-value"
+    "value": "binary-value"
   },
   "object-name": {
     "$base": "String",
-    "value": "UH5_ControlMode"
+    "value": "UH5_Zone_SchedueFunction"
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "This abject allow for Rem_schedule to put zone into Unoc or standby. Default would be inactive (sched off go Unoc) \n \nThis is used in faclities were some ventilation might be desired and maintained closer to occupied temperature (sched  off go to Standby)."
   },
   "flags": {
     "$base": "BitString",
     "value": ""
   },
   "present-value": {
-    "$base": "Unsigned",
-    "value": "1"
+    "$base": "Enumerated",
+    "value": "active"
   },
   "gcl-value": {
-    "$base": "Unsigned",
-    "value": "1"
+    "$base": "Enumerated",
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "mic,3"
+    "value": "bdc,12"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -52,43 +52,28 @@
     "$base": "Boolean",
     "value": 0
   },
-  "number-of-states": {
-    "$base": "Unsigned",
-    "value": "4"
+  "active-text": {
+    "$base": "String",
+    "value": "ON"
   },
-  "state-text": {
-    "1": {
-      "$base": "String",
-      "value": "Heating"
-    },
-    "2": {
-      "$base": "String",
-      "value": "Cooling"
-    },
-    "3": {
-      "$base": "String",
-      "value": "Deadband"
-    },
-    "4": {
-      "$base": "String",
-      "value": "ZeroCalibration"
-    },
-    "$base": "Array"
+  "inactive-text": {
+    "$base": "String",
+    "value": "OFF"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,10150"
+    "unspecifiedValue": "true"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-02T12:29:26.100000-07:00"
+    "value": "2022-04-14T12:01:45.900000-06:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "Heating"
+    "value": ""
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "hvac"
   }
 }

@@ -26,7 +26,7 @@
   },
   "free-memory": {
     "$base": "Unsigned",
-    "value": "106032"
+    "value": "105584"
   },
   "object-count": {
     "$base": "Unsigned",
@@ -135,115 +135,115 @@
     },
     "26": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10130"
+      "value": "analog-value,10123"
     },
     "27": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10131"
+      "value": "analog-value,10130"
     },
     "28": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10132"
+      "value": "analog-value,10131"
     },
     "29": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10133"
+      "value": "analog-value,10132"
     },
     "30": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10134"
+      "value": "analog-value,10133"
     },
     "31": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10135"
+      "value": "analog-value,10134"
     },
     "32": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10138"
+      "value": "analog-value,10135"
     },
     "33": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10139"
+      "value": "analog-value,10138"
     },
     "34": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10190"
+      "value": "analog-value,10139"
     },
     "35": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,11051"
+      "value": "analog-value,10190"
     },
     "36": {
       "$base": "ObjectIdentifier",
-      "value": "binary-output,1"
+      "value": "analog-value,11051"
     },
     "37": {
       "$base": "ObjectIdentifier",
-      "value": "binary-output,2"
+      "value": "binary-output,1"
     },
     "38": {
       "$base": "ObjectIdentifier",
-      "value": "binary-output,3"
+      "value": "binary-output,2"
     },
     "39": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10108"
+      "value": "binary-output,3"
     },
     "40": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10121"
+      "value": "binary-value,10108"
     },
     "41": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10122"
+      "value": "binary-value,10121"
     },
     "42": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10123"
+      "value": "binary-value,10122"
     },
     "43": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10124"
+      "value": "binary-value,10123"
     },
     "44": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10125"
+      "value": "binary-value,10124"
     },
     "45": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10126"
+      "value": "binary-value,10125"
     },
     "46": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10127"
+      "value": "binary-value,10126"
     },
     "47": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10128"
+      "value": "binary-value,10127"
     },
     "48": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10129"
+      "value": "binary-value,10128"
     },
     "49": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10138"
+      "value": "binary-value,10129"
     },
     "50": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,10139"
+      "value": "binary-value,10130"
     },
     "51": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,11022"
+      "value": "binary-value,10138"
     },
     "52": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,11050"
+      "value": "binary-value,10139"
     },
     "53": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,11051"
+      "value": "binary-value,11022"
     },
     "54": {
       "$base": "ObjectIdentifier",
@@ -263,43 +263,43 @@
     },
     "58": {
       "$base": "ObjectIdentifier",
-      "value": "program,1"
+      "value": "loop,10103"
     },
     "59": {
       "$base": "ObjectIdentifier",
-      "value": "program,2"
+      "value": "program,1"
     },
     "60": {
       "$base": "ObjectIdentifier",
-      "value": "program,3"
+      "value": "program,2"
     },
     "61": {
       "$base": "ObjectIdentifier",
-      "value": "program,10105"
+      "value": "program,3"
     },
     "62": {
       "$base": "ObjectIdentifier",
-      "value": "program,10150"
+      "value": "program,6"
     },
     "63": {
       "$base": "ObjectIdentifier",
-      "value": "multi-state-value,10101"
+      "value": "program,10105"
     },
     "64": {
       "$base": "ObjectIdentifier",
-      "value": "multi-state-value,10103"
+      "value": "program,10150"
     },
     "65": {
       "$base": "ObjectIdentifier",
-      "value": "multi-state-value,10104"
+      "value": "multi-state-value,10101"
     },
     "66": {
       "$base": "ObjectIdentifier",
-      "value": "multi-state-value,11051"
+      "value": "multi-state-value,10103"
     },
     "67": {
       "$base": "ObjectIdentifier",
-      "value": "multi-state-value,11052"
+      "value": "multi-state-value,10104"
     },
     "68": {
       "$base": "ObjectIdentifier",
@@ -335,35 +335,35 @@
     },
     "76": {
       "$base": "ObjectIdentifier",
-      "value": "aic,36"
+      "value": "aic,24"
     },
     "77": {
       "$base": "ObjectIdentifier",
-      "value": "aic,38"
+      "value": "aic,36"
     },
     "78": {
       "$base": "ObjectIdentifier",
-      "value": "aic,42"
+      "value": "aic,38"
     },
     "79": {
       "$base": "ObjectIdentifier",
-      "value": "aic,43"
+      "value": "aic,42"
     },
     "80": {
       "$base": "ObjectIdentifier",
-      "value": "aoc,1"
+      "value": "aic,43"
     },
     "81": {
       "$base": "ObjectIdentifier",
-      "value": "aoc,2"
+      "value": "aoc,1"
     },
     "82": {
       "$base": "ObjectIdentifier",
-      "value": "aoc,4"
+      "value": "aoc,2"
     },
     "83": {
       "$base": "ObjectIdentifier",
-      "value": "bdc,1"
+      "value": "aoc,4"
     },
     "84": {
       "$base": "ObjectIdentifier",
@@ -553,7 +553,7 @@
   },
   "time-of-last-chg": {
     "$base": "DateTime",
-    "value": "2000-01-01T14:36:49.500000-07:00"
+    "value": "2000-01-01T18:13:38.500000-07:00"
   },
   "src-user-of-last-chg": {
     "$base": "Sequence",
@@ -578,7 +578,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "269"
+    "value": "296"
   },
   "total-graphic-memory": {
     "$base": "Choice",

@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "asdf"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -50,11 +50,11 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "235"
+    "value": "149"
   },
   "algorithm": {
     "$base": "Enumerated",
-    "value": "pid"
+    "value": "pi"
   },
   "action": {
     "$base": "Enumerated",
@@ -78,7 +78,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10290"
+      "value": "analog-input,3"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "83.5588"
+    "value": "115.214"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -103,7 +103,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10204"
+      "value": "analog-value,10123"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -117,7 +117,7 @@
   },
   "setpoint": {
     "$base": "Real",
-    "value": "66.5"
+    "value": "115"
   },
   "setpoint-reference": {
     "$base": "Sequence",
@@ -126,7 +126,7 @@
       "type": "0-BACnetObjectPropertyReference",
       "objectIdentifier": {
         "$base": "ObjectIdentifier",
-        "value": "analog-value,10204"
+        "value": "analog-value,10123"
       },
       "propertyIdentifier": {
         "$base": "Enumerated",
@@ -259,7 +259,7 @@
   },
   "average-error": {
     "$base": "Real",
-    "value": "2.45135"
+    "value": 0
   },
   "previous-error": {
     "$base": "Real",
@@ -305,7 +305,7 @@
   },
   "setpoint-crossings": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "8"
   },
   "setpoint-crossing-flag": {
     "$base": "Boolean",
@@ -313,7 +313,7 @@
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "124.5"
+    "value": "8.51648"
   },
   "hal-flags": {
     "$base": "BitString",

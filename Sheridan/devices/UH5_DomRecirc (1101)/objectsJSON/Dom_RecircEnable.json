@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T13:05:48.200000-07:00"
+    "value": "2000-01-02T12:28:58.600000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "12"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T13:05:48.200000-07:00"
+      "value": "2000-01-02T12:28:58.600000-07:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-01T13:05:31.60"
+      "value": "2000-01-02T12:27:08.10"
     },
     "$base": "Array"
   },
@@ -103,12 +103,12 @@
     "$base": "Choice",
     "minimum-delay-timer": {
       "$base": "Unsigned",
-      "value": 0
+      "value": "881985"
     }
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "6"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -146,10 +146,7 @@
       }
     },
     "6": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "7": {
       "$base": "Choice",
@@ -170,10 +167,7 @@
       }
     },
     "10": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "11": {
       "$base": "Choice",
@@ -256,7 +250,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,6"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -323,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T12:29:15.90"
     },
     "11": {
       "$base": "DateTime",
@@ -347,7 +341,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-01-01T17:26:45.20"
+      "value": "2000-01-02T12:29:04.70"
     },
     "$base": "Array"
   },
@@ -405,7 +399,7 @@
   },
   "delay-count-down": {
     "$base": "Time",
-    "value": "00:00:00.00"
+    "value": "00:00:42.00"
   },
   "text-value": {
     "$base": "String",
