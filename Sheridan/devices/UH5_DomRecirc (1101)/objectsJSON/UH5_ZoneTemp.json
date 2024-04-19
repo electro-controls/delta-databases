@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": "26.0028"
+    "value": "74.6204"
   },
   "last-value": {
     "$base": "Real",
@@ -38,11 +38,11 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "°F"
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -62,23 +62,23 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "UH5_Temperature DegF 10k Thermistor AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "128"
+    "value": "129"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": 0
+    "value": "-58"
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "302"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.02442"
+    "value": "0.0879121"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "955940"
+      "value": "1129434"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "2182"
+    "value": "2102"
   },
   "calibration": {
     "$base": "Real",

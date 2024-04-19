@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "mic,3"
+    "value": "mic,1"
   },
   "event-state": {
     "$base": "Enumerated",

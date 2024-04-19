@@ -38,11 +38,11 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "inWC"
+    "value": "A"
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Pressure inH20 0-5v 0-5.0 AIC"
+    "value": "Current 0-5V 0-5 A AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "29"
+    "value": "40"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "65459019"
+      "value": "65602099"
     }
   },
   "ad-value": {

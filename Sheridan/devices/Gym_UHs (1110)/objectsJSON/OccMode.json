@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "present-value": {
     "$base": "Unsigned",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "mic,4"
+    "value": "mic,2"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -46,7 +46,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "missing-cfg-object"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -54,32 +54,16 @@
   },
   "number-of-states": {
     "$base": "Unsigned",
-    "value": "6"
+    "value": "2"
   },
   "state-text": {
     "1": {
       "$base": "String",
-      "value": "Unoccupied"
+      "value": "OFF"
     },
     "2": {
       "$base": "String",
-      "value": "Standby"
-    },
-    "3": {
-      "$base": "String",
-      "value": "Occupied"
-    },
-    "4": {
-      "$base": "String",
-      "value": "Bypass"
-    },
-    "5": {
-      "$base": "String",
-      "value": "WarmUp"
-    },
-    "6": {
-      "$base": "String",
-      "value": "Purge"
+      "value": "ON"
     },
     "$base": "Array"
   },
@@ -93,7 +77,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Occupied"
+    "value": ""
   },
   "hal-flags": {
     "$base": "BitString",

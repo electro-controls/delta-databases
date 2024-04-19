@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "present-value": {
     "$base": "Unsigned",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "mic,3"
+    "value": "mic,1"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -46,7 +46,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "missing-cfg-object"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -54,24 +54,16 @@
   },
   "number-of-states": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "2"
   },
   "state-text": {
     "1": {
       "$base": "String",
-      "value": "Heating"
+      "value": "OFF"
     },
     "2": {
       "$base": "String",
-      "value": "Cooling"
-    },
-    "3": {
-      "$base": "String",
-      "value": "Deadband"
-    },
-    "4": {
-      "$base": "String",
-      "value": "ZeroCalibration"
+      "value": "ON"
     },
     "$base": "Array"
   },
@@ -85,7 +77,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Deadband"
+    "value": ""
   },
   "hal-flags": {
     "$base": "BitString",
