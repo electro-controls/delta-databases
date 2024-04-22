@@ -862,11 +862,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "16:35:39.00"
+    "value": "11:36:35.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2000-01-01"
+    "value": "2000-01-07"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -1015,7 +1015,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "1.6"
+    "value": "2.15686"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -1123,7 +1123,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "165396"
+      "value": "5169959"
     }
   },
   "logical-base-address": {
@@ -1232,7 +1232,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "93"
+    "value": "96"
   },
   "active-cov-subscriptions": {
     "$base": "List"

@@ -19,7 +19,7 @@ End If
 //Effective values
 'Zone_EffTemp' = 'AI101' //Reference zone temperature input
 'DAT_Eff' = 'DAT' //refernce DAT input
-'Zone_EffCO2' = 'AI10' //Make this 0 if no eZNS CO2
+'Zone_EffCO2' = 0 //Make this 0 if no eZNS CO2
 'MAT_Eff' = 'DAT' //reference MAT input. Use DAT if MAT is not available
 'RAT_Eff' = 'RAT' //reference RAT input. reference Zone_EffTemp if RAT is not avaiable
 // Room Variance
