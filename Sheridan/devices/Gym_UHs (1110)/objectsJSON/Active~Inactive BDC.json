@@ -1,0 +1,35 @@
+{
+  "displayName": "Active/Inactive BDC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "binary-device-configuration,3"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-device-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Active/Inactive BDC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Active"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Inactive"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}
