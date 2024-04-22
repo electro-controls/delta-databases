@@ -275,51 +275,6 @@
     {
       "action": "update",
       "device": 4304,
-      "objectId": "pg,11101",
-      "objectName": "Fan_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/Fan_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/16/2024, 2:27:36 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
-      "objectId": "pg,11281",
-      "objectName": "Heat_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/Heat_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/16/2024, 2:33:06 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
-      "objectId": "pg,11009",
-      "objectName": "ZoneCritical_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/ZoneCritical_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/16/2024, 2:33:06 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
       "objectId": "pg,11051",
       "objectName": "ZoneOccMode_PG",
       "siteName": "Bench",
@@ -335,6 +290,36 @@
     {
       "action": "update",
       "device": 4304,
+      "objectId": "pg,11101",
+      "objectName": "Fan_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/Fan_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/22/2024, 10:46:31 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,11262",
+      "objectName": "DxInterlocks_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/DxInterlocks_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/22/2024, 10:54:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
       "objectId": "pg,11002",
       "objectName": "ZoneGeneral_PG",
       "siteName": "Bench",
@@ -344,7 +329,112 @@
         "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/ZoneGeneral_PG.gcl-p",
         "scheme": "file"
       },
-      "date": "4/22/2024, 10:24:57 AM",
+      "date": "4/22/2024, 10:56:03 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,11052",
+      "objectName": "ZoneeZNSDisplay1_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/ZoneeZNSDisplay1_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/22/2024, 10:56:10 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,11009",
+      "objectName": "ZoneCritical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/ZoneCritical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/22/2024, 10:56:15 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,1",
+      "objectName": "Main_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/Main_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/22/2024, 10:56:19 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,11281",
+      "objectName": "Heat_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/Heat_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/22/2024, 10:56:21 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,2",
+      "objectName": "General_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/General_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/22/2024, 10:56:23 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,98",
+      "objectName": "FaultDetection_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/FaultDetection_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/22/2024, 10:56:25 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,11261",
+      "objectName": "DxDemand_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/DxDemand_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/22/2024, 10:56:35 AM",
       "templateTriggered": false
     }
   ],
@@ -715,12 +805,6 @@
           "id": "aoc,50",
           "name": "HWPSpeed_Pct_AOC",
           "fileName": "HWPSpeed_Pct_AOC",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
-        },
-        {
-          "id": "av,91",
-          "name": "OAT_Eff",
-          "fileName": "OAT_Eff",
           "lastUpdate": "2024-04-16T21:14:46.000Z"
         },
         {

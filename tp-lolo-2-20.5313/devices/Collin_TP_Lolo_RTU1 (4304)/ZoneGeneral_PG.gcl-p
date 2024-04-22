@@ -7,9 +7,6 @@ If PowerUp Then
     'Zone_RemClg' = - 1
     'Zone_RemHtg' = - 1
     'DAT_RemSp' = - 1
-    'AV11222' = - 1
-    'AV11232' = - 1
-    'AV11284' = - 1
     'Zone_RemWarmCall' = Off
     'Zone_RemPurgeCall' = Off
     'OAT_Eff' = 32
@@ -17,7 +14,7 @@ End If
 
 
 //Effective values
-'Zone_EffTemp' = 'AI101' //Reference zone temperature input
+'Zone_EffTemp' = 'ZoneTemp_Local' //Reference zone temperature input
 'DAT_Eff' = 'DAT' //refernce DAT input
 'Zone_EffCO2' = 0 //Make this 0 if no eZNS CO2
 'MAT_Eff' = 'DAT' //reference MAT input. Use DAT if MAT is not available

@@ -15,31 +15,19 @@ IfOnce ('ZoneOccMode' = 1) Then //Retrys on occupancy. Allows occupant to reset 
 End If
 
 
-If (Not 'RunStatusInt') Or 'FreezeMode' Or 'BI9' Then
-    'BO5' = Off
-    'BO6' = Off
-  Else
-    Relinquish 'BO5'
-    Relinquish 'BO6'
-End If
-
-
-If 'FreezeMode' Or 'BI9' Then
-      'AO7' = 0
-      'SFEnable' = Off
-      'DX1Enable' = Off
-      'AO10' = 0
-   Else
-      Relinquish 'AO7'
-      Relinquish 'SFEnable'
-      Relinquish 'DX1Enable'
-      Relinquish 'AO10'
-End If
-
-If (Not 'RunStatusInt') Or 'FreezeMode' Or 'BI9' Or 'HighTempLimit' Then
+If 'FreezeMode' Or 'Smoke' Then
+    'SFEnable' = Off
+    'DX1Enable' = Off
     'GasHeatEnableW' = Off
-    'BO4' = Off
+  Else
+    Relinquish 'SFEnable'
+    Relinquish 'DX1Enable'
+    Relinquish 'GasHeatEnableW'
+     
+End If
+
+If (Not 'RunStatusInt') Or 'FreezeMode' Or 'Smoke' Or 'HighTempLimit' Then
+    'GasHeatEnableW' = Off
   Else
     Relinquish 'GasHeatEnableW'
-    Relinquish 'BO4'
 End If

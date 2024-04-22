@@ -18,18 +18,6 @@ If 'SFEnable' And 'SFStatus' Then
 End If
 
 
-Variable MAUSpeed
-Variable CoolingSpeed
-Variable HeatingSpeed
-Variable SpeedDemand
-
-
-MAUSpeed = Scale ('AV11150', 0, 'SFCalcAirflowAtMinSpeed_Sp', 'SFMinSpeed_Sp', 'SFCalcAirflowAtMaxSpeed_Sp', 'SFMaxSpeed_Sp')
-CoolingSpeed = Scale ('Zone_EffClg', 0, 50, 'SFMinSpeed_Sp', 100, 'SFMaxSpeed_Sp')
-HeatingSpeed = Scale ('Zone_EffHtg', 0, 80, 'SFMinSpeed_Sp', 100, 'SFMaxSpeed_Sp')
-SpeedDemand = Max (MAUSpeed, CoolingSpeed, HeatingSpeed)
-
-
 //VFD speed sequence. Insures smooth start up via
 //the ramp routine.
 //Fan speed reset on zone heat and cooling demand
@@ -53,10 +41,4 @@ End If
 
 If ('OACalcOffset_CO' < 10) And ('DX1Enable' OnFor 5M) Then
     'DX1Enable' = Off
-End If
-
-If 'DX1Enable' Then
-    'AO10' = Min ('AO9', Scale ('OACalcOffset_CO', 0, 50, 0, 100, 'SpaceStatic_CO'))
-Else
-    'AO10' = 0
 End If

@@ -4,10 +4,10 @@ Variable DATHeatDemand As Integer
 
 
 
-If ('AV11220' < 1) And 'RunStatusInt' And ('DAT_Eff' < ('DATResetLow_Sp' - 5)) Then
+If 'RunStatusInt' And ('DAT_Eff' < ('DATResetLow_Sp' - 5)) Then
     DATHeatDemand = On
 End If
-If ('AV11220' >= 1) Or 'BO5' Or (Not 'RunStatusInt') Or (('DAT_Eff' > ('DAT_EffSp' + 5)) OnFor 30S) Then
+If (Not 'RunStatusInt') Or (('DAT_Eff' > ('DAT_EffSp' + 5)) OnFor 30S) Then
     DATHeatDemand = Off
 End If
 
@@ -26,16 +26,3 @@ End If
 If ((('DAT_Eff' > ('DAT_EffSp' + 10)) OnFor 6M) Or ('Zone_EffHtg' < 30)) And (Not DATHeatDemand) Then
     'GasHeatEnableW' = Off
 End If
-
-If ('GasHeatEnableW' And ('DAT_Eff' < ('DAT_EffSp' - 5)) OnFor 5M) And ('Zone_EffHtg' > 99) Then
-    'BO4' = On
-End If
-
-If (('DAT_Eff' > ('DAT_EffSp' + 10)) OnFor 4M) Or ('Zone_EffHtg' < 80) Then
-    'BO4' = Off
-End If
-
-'BO201' = Switch ( 'BO201', 'Zone_EffHtg', 99, 90)
-'BO202' = Switch ( 'BO202', 'Zone_EffHtg', 99, 90) //potentialy use loading dock temp to run this UH
-'BV11115' = Switch ( 'BV11115', 'AI201', 0.5, 0)
-'BV11116' = Switch ( 'BV11116', 'AI202', 0.5, 0)
