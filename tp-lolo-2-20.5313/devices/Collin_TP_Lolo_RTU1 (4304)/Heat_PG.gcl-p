@@ -2,8 +2,6 @@
 
 Variable DATHeatDemand As Integer
 
-
-
 If 'RunStatusInt' And ('DAT_Eff' < ('DATResetLow_Sp' - 5)) Then
     DATHeatDemand = On
 End If

@@ -1,4 +1,4 @@
-//Power up defaults
+//Power up defaults 
 If PowerUp Then
     'ZoneOccMode' = 3
     'Zone_RemSchedule' = 1
@@ -9,7 +9,6 @@ If PowerUp Then
     'DAT_RemSp' = - 1
     'Zone_RemWarmCall' = Off
     'Zone_RemPurgeCall' = Off
-    'OAT_Eff' = 32
 End If
 
 

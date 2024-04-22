@@ -1,6 +1,5 @@
 
-//DX mechanical cooling sequence
-
+//DX mechanical cooling sequences
 Variable DATDemand As Integer
 
 If 'Dx_FlowInt' And ('SFOntimeRef' > 20) And ('DATClg_CO' >= 90) And ('DAT' > ('DAT_EffSp' + 3)) OnFor 300S Then
