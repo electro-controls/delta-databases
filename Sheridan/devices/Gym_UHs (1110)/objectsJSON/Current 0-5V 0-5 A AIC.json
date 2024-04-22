@@ -2,7 +2,7 @@
   "displayName": "Current 0-5V 0-5 A AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "aic,4"
+    "value": "aic,36"
   },
   "object-type": {
     "$base": "Enumerated",

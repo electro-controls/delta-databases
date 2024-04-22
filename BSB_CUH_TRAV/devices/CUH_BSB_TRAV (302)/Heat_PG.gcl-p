@@ -1,0 +1,26 @@
+//  HWV
+
+'FanStatus' = Switch ( 'FanStatus', 'FanCurrent', 1.0, 0.5)
+ 
+If 'OccMode' = 6 Then
+    'PurgeHold' = On
+    'PurgeHoldTmLeft' = 'PurgeHold_Sp'
+  Else
+    DoEvery 1M
+    'PurgeHoldTmLeft' = Max (0, 'PurgeHoldTmLeft' - 1)
+    End Do
+End If
+
+If 'Eff_OAT' < 40 Or ('PurgeHoldTmLeft' = 0) Then
+    'PurgeHold' = Off
+End If
+
+'HWVLock' = Switch ( 'HWVLock', 'EffZoneClg', 99, 90)
+
+If 'HWVLock' Or 'PurgeHold' Then
+  'FanEnable' = 0
+ Else
+  'FanEnable' = Switch ( 'FanEnable', 'EffZoneHtg', 50, 1)
+End If
+
+'HWV' = 'FanEnable'

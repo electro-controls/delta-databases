@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": "66.89"
+    "value": "64.9748"
   },
   "last-value": {
     "$base": "Real",
@@ -42,11 +42,11 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,21"
+    "value": "aic,6"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,23 +62,23 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Temperature 10K -35-240 degF AIC"
+    "value": "Temperature DegF 10k Thermistor AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "32"
+    "value": "44"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": "-35"
+    "value": "-58"
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "240"
+    "value": "302"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.0744496"
+    "value": "0.0879121"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "60199633"
+      "value": "65605587"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "2282"
+    "value": "2326"
   },
   "calibration": {
     "$base": "Real",

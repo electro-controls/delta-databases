@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "wasnt able to get this one to run. will have to look more into it. motor might be toast"
+    "value": "wasnta able to get this one to run. will have to look more into it. motor might be toast"
   },
   "flags": {
     "$base": "BitString",
@@ -34,15 +34,15 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,6"
+    "value": "bdc,3"
   },
   "device-type": {
     "$base": "String",
-    "value": "On_Off BDC"
+    "value": "Active/Inactive BDC"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,11 +62,11 @@
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Off"
+    "value": "Inactive"
   },
   "active-text": {
     "$base": "String",
-    "value": "On"
+    "value": "Active"
   },
   "change-of-state-time": {
     "$base": "DateTime",
@@ -167,7 +167,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -317,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-03-10T11:50:21.00"
+      "value": "2000-03-17T04:17:47.10"
     },
     "11": {
       "$base": "DateTime",
@@ -341,7 +344,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-03-11T04:11:34.40"
+      "value": "2000-03-17T10:15:05.60"
     },
     "$base": "Array"
   },
@@ -403,7 +406,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Off"
+    "value": "Inactive"
   },
   "time-delay": {
     "$base": "Unsigned",

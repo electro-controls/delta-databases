@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "124.249"
+    "value": "115.018"
   },
   "last-value": {
     "$base": "Real",
-    "value": "124.249"
+    "value": "114.969"
   },
   "status-flags": {
     "$base": "BitString",
@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "TempF10KType3_AIC"
+    "value": "Dom_TempF10KType3_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "11"
+    "value": "125"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "68008289"
+      "value": "881481"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1077"
+    "value": "1226"
   },
   "calibration": {
     "$base": "Real",

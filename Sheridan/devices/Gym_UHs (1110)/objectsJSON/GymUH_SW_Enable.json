@@ -34,15 +34,15 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,6"
+    "value": "bdc,3"
   },
   "device-type": {
     "$base": "String",
-    "value": "On_Off BDC"
+    "value": "Active/Inactive BDC"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,15 +62,15 @@
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Off"
+    "value": "Inactive"
   },
   "active-text": {
     "$base": "String",
-    "value": "On"
+    "value": "Active"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-03-10T08:42:37.900000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-03-10T08:42:37.900000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-03-10T08:37:37.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "17"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -170,7 +170,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -300,7 +303,7 @@
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:19:18.30"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -320,7 +323,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-03-10T11:50:21.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -344,7 +347,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-03-11T04:11:19.20"
+      "value": "2000-03-17T10:15:07.20"
     },
     "$base": "Array"
   },
@@ -406,7 +409,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Off"
+    "value": "Inactive"
   },
   "time-delay": {
     "$base": "Unsigned",
