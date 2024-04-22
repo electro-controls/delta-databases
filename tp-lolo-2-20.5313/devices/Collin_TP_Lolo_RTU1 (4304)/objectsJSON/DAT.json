@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,1"
+    "value": "aic,2"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Temperature_DegF T3_AIC"
+    "value": "Temperature_DegF T1_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "500"
+    "value": "441"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "165015"
+      "value": "5152807"
     }
   },
   "ad-value": {

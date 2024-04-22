@@ -38,11 +38,11 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "bdc,1"
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "ActiveInactive_BDC"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,11 +62,11 @@
   },
   "inactive-text": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Inactive"
   },
   "active-text": {
     "$base": "String",
-    "value": "ON"
+    "value": "Active"
   },
   "change-of-state-time": {
     "$base": "DateTime",
@@ -296,7 +296,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-01T16:35:28.30"
+      "value": "2000-01-07T11:24:35.80"
     },
     "5": {
       "$base": "DateTime",
@@ -406,7 +406,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Inactive"
   },
   "time-delay": {
     "$base": "Unsigned",

@@ -290,21 +290,6 @@
     {
       "action": "update",
       "device": 4304,
-      "objectId": "bo,2",
-      "objectName": "PEFEnable",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/objectsJSON/PEFEnable.json",
-        "scheme": "file"
-      },
-      "date": "4/16/2024, 2:27:36 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
       "objectId": "pg,11281",
       "objectName": "Heat_PG",
       "siteName": "Bench",
@@ -416,15 +401,15 @@
         },
         {
           "id": "aic,1",
-          "name": "Temperature_DegF T3_AIC",
-          "fileName": "Temperature_DegF T3_AIC",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
+          "name": "Temperature_DegF TT1_AIC",
+          "fileName": "Temperature_DegF TT1_AIC",
+          "lastUpdate": "2024-04-22T15:57:45.932Z"
         },
         {
           "id": "aic,2",
-          "name": "Temperature_DegF T2_AIC",
-          "fileName": "Temperature_DegF T2_AIC",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
+          "name": "Temperature_DegF TT2_AIC",
+          "fileName": "Temperature_DegF TT2_AIC",
+          "lastUpdate": "2024-04-22T15:58:07.111Z"
         },
         {
           "id": "aic,5",
