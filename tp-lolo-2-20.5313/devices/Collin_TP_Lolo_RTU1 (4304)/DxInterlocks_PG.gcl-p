@@ -7,7 +7,7 @@ If 'RunStatusInt' OnFor 10M Then
 End If
 
 //DX1 Interlocks
-If 'Dx1_Demand' And 'Dx_FlowInt' And ('ZoneControlMode' = 2) And ('SFEnable' OffFor 600S) Then
+If 'Dx1_Demand' And 'Dx_FlowInt' And ('ZoneControlMode' = 2) Then
     'DX1Enable' = On
   Else
     'DX1Enable' = Off

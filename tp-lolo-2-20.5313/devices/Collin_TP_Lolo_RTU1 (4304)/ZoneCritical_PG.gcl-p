@@ -1,4 +1,4 @@
-'PG9.Write_Priority' = 4
+'PG11009.Write_Priority' = 4
 
 Switch ( 'HighTempLimit', 'DAT', 160, 100)
 
@@ -10,7 +10,7 @@ If PowerUp Then //Allow occupant/tech to reset by cycling power
   'FreezeMode' = Off
 End If
 
-IfOnce ('ZoneOccMode' = 1) Then //Retrys on occupancy. Allows occupant to reset by turning stat off and back on.
+IfOnce ('ZoneOccMode' = 3) Then //Retries on occupancy. Allows occupant to reset by turning stat off and back on.
   'FreezeMode' = Off
 End If
 

@@ -241,6 +241,21 @@
       },
       "date": "4/16/2024, 10:28:05 AM",
       "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,11009",
+      "objectName": "ZoneCritical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/devices/Collin_TP_Lolo_RTU1 (4304)/ZoneCritical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/23/2024, 9:50:31 AM",
+      "templateTriggered": false
     }
   ],
   "devices": [
@@ -415,12 +430,6 @@
           "lastUpdate": "2024-04-16T21:14:46.000Z"
         },
         {
-          "id": "aic,33",
-          "name": "Outside Airflow_CFM_AIC",
-          "fileName": "Outside Airflow_CFM_AIC",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
-        },
-        {
           "id": "aic,41",
           "name": "SAVDp_AIC",
           "fileName": "SAVDp_AIC",
@@ -493,12 +502,6 @@
           "lastUpdate": "2024-04-16T21:14:46.000Z"
         },
         {
-          "id": "aic,133",
-          "name": "OutsideAirflow_CMH_AIC",
-          "fileName": "OutsideAirflow_CMH_AIC",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
-        },
-        {
           "id": "aic,145",
           "name": "FilterDp_Pa_AIC",
           "fileName": "FilterDp_Pa_AIC",
@@ -514,12 +517,6 @@
           "id": "aoc,1",
           "name": "Output_Pct_AOC",
           "fileName": "Output_Pct_AOC",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
-        },
-        {
-          "id": "aoc,12",
-          "name": "OADamper_Pct_AOC",
-          "fileName": "OADamper_Pct_AOC",
           "lastUpdate": "2024-04-16T21:14:46.000Z"
         },
         {
@@ -949,12 +946,6 @@
           "lastUpdate": "2024-04-16T21:14:46.000Z"
         },
         {
-          "id": "av,11161",
-          "name": "OACalcOffset",
-          "fileName": "OACalcOffset",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
-        },
-        {
           "id": "av,11162",
           "name": "OACalcOffset_Sp",
           "fileName": "OACalcOffset_Sp",
@@ -1129,12 +1120,6 @@
           "lastUpdate": "2024-04-16T21:14:46.000Z"
         },
         {
-          "id": "bv,91",
-          "name": "OATisfreezingxx",
-          "fileName": "OATisfreezingxx",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
-        },
-        {
           "id": "bv,11021",
           "name": "Zone_RemSchedule",
           "fileName": "Zone_RemSchedule",
@@ -1288,30 +1273,6 @@
           "id": "co,11004",
           "name": "DATClg_CO",
           "fileName": "DATClg_CO",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
-        },
-        {
-          "id": "co,11161",
-          "name": "OACalcOffset_CO",
-          "fileName": "OACalcOffset_CO",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
-        },
-        {
-          "id": "co,11171",
-          "name": "SpaceStatic_CO",
-          "fileName": "SpaceStatic_CO",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
-        },
-        {
-          "id": "co,11201",
-          "name": "MATLimit_CO",
-          "fileName": "MATLimit_CO",
-          "lastUpdate": "2024-04-16T21:14:46.000Z"
-        },
-        {
-          "id": "co,11250",
-          "name": "ZoneCO2_CO",
-          "fileName": "ZoneCO2_CO",
           "lastUpdate": "2024-04-16T21:14:46.000Z"
         },
         {

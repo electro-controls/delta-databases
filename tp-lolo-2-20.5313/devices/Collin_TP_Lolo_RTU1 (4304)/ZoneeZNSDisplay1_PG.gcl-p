@@ -8,7 +8,7 @@ If PowerUp Then
 End If
 
 //Local setpoint adjust enable
-//Change mode requires that button 2 be pressed 4 times (or as programmed) 
+//Change mode requires that button 2 be pressed 4 times (or as programmed)
 //prior to being able to change stat setting. This eleviates unauthorized tampering.
 IfOnce 'ZoneDNSMode' = 1 Then
     'ZoneEnableDNS' = On

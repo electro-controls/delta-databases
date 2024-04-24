@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "13.9048"
+    "value": "2.32967"
   },
   "last-value": {
     "$base": "Real",
-    "value": "13.8681"
+    "value": "2.32845"
   },
   "status-flags": {
     "$base": "BitString",
@@ -58,7 +58,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "441"
+    "value": "306"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,11 +74,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "30"
+    "value": "5"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.00732601"
+    "value": "0.001221"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "5151184"
+      "value": "5993777"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1898"
+    "value": "1908"
   },
   "calibration": {
     "$base": "Real",

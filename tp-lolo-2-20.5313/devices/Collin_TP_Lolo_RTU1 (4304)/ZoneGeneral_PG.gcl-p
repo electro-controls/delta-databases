@@ -1,4 +1,4 @@
-//Power up defaults 
+//Power up defaults
 If PowerUp Then
     'ZoneOccMode' = 3
     'Zone_RemSchedule' = 1

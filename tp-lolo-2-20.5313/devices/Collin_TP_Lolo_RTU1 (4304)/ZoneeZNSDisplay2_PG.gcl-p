@@ -76,7 +76,7 @@ If ('LinkLCD1.Key_Press' = 0) OnFor 8S Then
       BPDis = Off
     End If
 End If
- 
+
 //If someone presses the off button, unit goes off and resets bypass time left
 //to zero.
 IfOnce ('LinkLCD1.Key_Press' = 1) And 'ZoneEnableDNS' And 'ZoneBypassCall' Then

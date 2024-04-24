@@ -34,11 +34,3 @@ End If
 If PowerUp Then
   'SFRampResult' = 0
 End If
-
-If ('OACalcOffset_CO' > 50) And ('SpaceStatic_CO' > 50) Then
-    'DX1Enable' = On
-End If
-
-If ('OACalcOffset_CO' < 10) And ('DX1Enable' OnFor 5M) Then
-    'DX1Enable' = Off
-End If
