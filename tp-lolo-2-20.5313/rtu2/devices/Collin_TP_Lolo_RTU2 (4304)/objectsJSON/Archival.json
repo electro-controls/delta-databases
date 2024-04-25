@@ -52,9 +52,95 @@
     "value": ""
   },
   "destination-list": {
+    "1": {
+      "$base": "Sequence",
+      "validDays": {
+        "$base": "BitString",
+        "value": "monday;tuesday;wednesday;thursday;friday;saturday;sunday"
+      },
+      "fromTime": {
+        "$base": "Time",
+        "value": "00:00:00.00"
+      },
+      "toTime": {
+        "$base": "Time",
+        "value": "23:59:59.99"
+      },
+      "recipient": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "65535"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x"
+          }
+        }
+      },
+      "processIdentifier": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "issueConfirmedNotifications": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "transitions": {
+        "$base": "BitString",
+        "value": "to-offnormal;to-fault;to-normal"
+      },
+      "retry": {
+        "$base": "Boolean",
+        "value": 0
+      }
+    },
     "$base": "Array"
   },
   "recipient-list": {
+    "1": {
+      "$base": "Sequence",
+      "validDays": {
+        "$base": "BitString",
+        "value": "monday;tuesday;wednesday;thursday;friday;saturday;sunday"
+      },
+      "fromTime": {
+        "$base": "Time",
+        "value": "00:00:00.00"
+      },
+      "toTime": {
+        "$base": "Time",
+        "value": "23:59:59.99"
+      },
+      "recipient": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "65535"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x"
+          }
+        }
+      },
+      "processIdentifier": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "issueConfirmedNotifications": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "transitions": {
+        "$base": "BitString",
+        "value": "to-offnormal;to-fault;to-normal"
+      }
+    },
     "$base": "List"
   },
   "always-send": {
@@ -71,6 +157,6 @@
   },
   "notify-type": {
     "$base": "Enumerated",
-    "value": "event"
+    "value": "alarm"
   }
 }

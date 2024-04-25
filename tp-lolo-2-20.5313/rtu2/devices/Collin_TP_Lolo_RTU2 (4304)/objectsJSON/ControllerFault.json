@@ -18,19 +18,19 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -46,7 +46,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "missing-cfg-object"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -85,11 +85,11 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-04-16T10:06:05.600000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",
-    "value": "AI Fault"
+    "value": "Normal"
   },
   "hal-flags": {
     "$base": "BitString",

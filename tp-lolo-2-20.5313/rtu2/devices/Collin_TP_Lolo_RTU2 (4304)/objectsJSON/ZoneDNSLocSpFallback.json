@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "1"
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "1"
   },
   "status-flags": {
     "$base": "BitString",
@@ -73,11 +73,11 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2022-08-03T15:05:58.500000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",
-    "value": "LocSpRetainsLoc"
+    "value": "LocSpMatchRem"
   },
   "hal-flags": {
     "$base": "BitString",

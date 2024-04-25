@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "257"
   },
   "last-value": {
     "$base": "Real",
-    "value": "67.8794"
+    "value": "257"
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "°F"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -54,7 +54,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "missing-cfg-object"
+    "value": "shorted-loop"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -62,23 +62,23 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "eZNSOnBoardTemperature_DegF_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "16"
+    "value": "89"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": 0
+    "value": "-40"
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "257"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.02442"
+    "value": "0.112571"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "151722"
+      "value": "4221"
     }
   },
   "ad-value": {

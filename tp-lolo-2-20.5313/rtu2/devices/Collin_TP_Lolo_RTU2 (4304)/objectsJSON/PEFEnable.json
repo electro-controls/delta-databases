@@ -70,7 +70,7 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-04-16T10:05:05.100000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -78,12 +78,12 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-01T12:02:37.900000-07:00"
   },
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-04-16T10:05:05.100000-06:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "17"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -134,7 +134,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -229,7 +232,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,11009"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -253,7 +256,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,11101"
+      "unspecifiedValue": "true"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -296,11 +299,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-04-16T10:12:17.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-01-02T07:41:13.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -320,7 +323,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-01T13:26:48.70"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -344,7 +347,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-01-14T20:11:26.30"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },

@@ -6,14 +6,14 @@ Variable LastState
 
 // Effective SP
 If ('ZoneOccMode' = 3) Or ('ZoneOccMode' = 4) Or ('ZoneOccMode' = 5) Then //Occ, Bypass, Warmup 
-    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - ('ZoneDb_Sp' * 0.5)), 'ZoneOcHtgMax_Sp')
-    'ZoneCool_EffSp' = Max (('Zone_EffSp' + ('ZoneDb_Sp' * 0.5)), 'ZoneOcClgMin_Sp')
+    'ZoneHeat_EffSp' = Min (('RTU2_Zone_EffSp' - ('ZoneDb_Sp' * 0.5)), 'ZoneOcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('RTU2_Zone_EffSp' + ('ZoneDb_Sp' * 0.5)), 'ZoneOcClgMin_Sp')
   ElseIf  'ZoneOccMode' = 2 Then //Standby
-    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - 'ZoneStandbyOffset_Sp' - ('ZoneDb_Sp' * 0.5)), 'ZoneOcHtgMax_Sp')
-    'ZoneCool_EffSp' = Max (('Zone_EffSp' + 'ZoneStandbyOffset_Sp' + ('ZoneDb_Sp' * 0.5)), 'ZoneOcClgMin_Sp')
+    'ZoneHeat_EffSp' = Min (('RTU2_Zone_EffSp' - 'ZoneStandbyOffset_Sp' - ('ZoneDb_Sp' * 0.5)), 'ZoneOcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('RTU2_Zone_EffSp' + 'ZoneStandbyOffset_Sp' + ('ZoneDb_Sp' * 0.5)), 'ZoneOcClgMin_Sp')
   ElseIf  'ZoneOccMode' = 6 Then //Purge
-    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - 'ZoneStandbyOffset_Sp' - ('ZoneDb_Sp' * 0.5)), 'ZoneOcHtgMax_Sp')
-    'ZoneCool_EffSp' = Max (('Zone_EffSp' + ('ZoneDb_Sp' * 0.5)), 'ZoneOcClgMin_Sp')
+    'ZoneHeat_EffSp' = Min (('RTU2_Zone_EffSp' - 'ZoneStandbyOffset_Sp' - ('ZoneDb_Sp' * 0.5)), 'ZoneOcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('RTU2_Zone_EffSp' + ('ZoneDb_Sp' * 0.5)), 'ZoneOcClgMin_Sp')
   Else //Unocc
     'ZoneHeat_EffSp' = Min ('ZoneUnocHt_Sp', 'ZoneOcHtgMax_Sp')
     'ZoneCool_EffSp' = Max ('ZoneUnocCl_Sp', 'ZoneOcClgMin_Sp')
@@ -21,12 +21,12 @@ End If
 
 //Links remote setpoint to effective
 If 'Zone_RemSp' > 0 Then
- 'Zone_EffSp' = 'Zone_RemSp'
+ 'RTU2_Zone_EffSp' = 'Zone_RemSp'
  If ('ZoneDNSLocSpFallback' = 1) Then
     'Zone_LocSp' = 'Zone_RemSp'
  End If
 Else
- 'Zone_EffSp' = 'Zone_LocSp'
+ 'RTU2_Zone_EffSp' = 'Zone_LocSp'
 End If
 
 //This just display the value of the CO for display at the NM level

@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,3902"
+    "value": "device,4304"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-14T20:10:21.700000-07:00"
+    "value": "2000-01-01T12:07:14.000000-07:00"
   },
   "cov-increment": {
     "$base": "Real",

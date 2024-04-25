@@ -32,3 +32,8 @@ End If
 If ('OAT_Eff' > 35) And ('OATisfreezingxx' OnFor 15M) Then
     'OATisfreezingxx' = Off
 End If
+
+// Some logic for the miscellaineous items on the card
+'EF1Enable' = 'OccUnoc_BDC'
+'EF2Enable' = 'OccUnoc_BDC'
+'HP1_OADamper' = 'OccUnoc_BDC'

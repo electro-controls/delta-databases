@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2"
+    "value": "fault;private2"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -50,7 +50,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "not-available"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -70,7 +70,7 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-04-16T10:05:05.100000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -78,12 +78,12 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-01T12:01:46.900000-07:00"
   },
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-04-16T10:05:05.100000-06:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "17"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -134,7 +134,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -167,7 +170,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -226,7 +232,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,11009"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -242,7 +248,7 @@
     },
     "8": {
       "$base": "ObjectIdentifier",
-      "value": "device,999"
+      "unspecifiedValue": "true"
     },
     "9": {
       "$base": "ObjectIdentifier",
@@ -250,7 +256,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,11281"
+      "unspecifiedValue": "true"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -293,11 +299,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-04-16T10:12:17.60"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-01-02T07:41:13.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -309,7 +315,7 @@
     },
     "8": {
       "$base": "DateTime",
-      "value": "2022-05-16T09:32:33.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "9": {
       "$base": "DateTime",
@@ -317,7 +323,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-04-16T10:11:00.86"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -341,7 +347,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-01-14T20:12:04.30"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
@@ -363,7 +369,7 @@
   },
   "hoa-status": {
     "$base": "Enumerated",
-    "value": "auto"
+    "value": "none"
   },
   "delay-status": {
     "$base": "Enumerated",

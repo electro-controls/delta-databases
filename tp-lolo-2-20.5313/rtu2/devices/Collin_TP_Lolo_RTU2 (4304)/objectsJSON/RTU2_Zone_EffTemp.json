@@ -1,8 +1,8 @@
 {
-  "displayName": "Zone_EffSp",
+  "displayName": "RTU2_Zone_EffTemp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,11001"
+    "value": "analog-value,11090"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Zone_EffSp"
+    "value": "RTU2_Zone_EffTemp"
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "Eff_ZoneTemp is asdf to provide one common variable for zone temperature through out the entire database.  Example: if a zone temperature moved inputs then one change can be made in the General_PG instead of multiple PG's."
   },
   "flags": {
     "$base": "BitString",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "70"
+    "value": 0
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "70"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -54,15 +54,15 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,11010"
+    "value": "program,11002"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-04-16T10:12:05.200000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "0.1"
+    "value": "1"
   },
   "fixed-point": {
     "$base": "Boolean",
@@ -74,6 +74,6 @@
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "hvac"
   }
 }

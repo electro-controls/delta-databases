@@ -26,16 +26,3 @@ End If
 If ((('DAT_Eff' > ('DAT_EffSp' + 10)) OnFor 6M) Or ('Zone_EffHtg' < 30)) And (Not DATHeatDemand) Then
     'HeatStg1' = Off
 End If
-
-If ('HeatStg1' And ('DAT_Eff' < ('DAT_EffSp' - 5)) OnFor 5M) And ('Zone_EffHtg' > 99) Then
-    'HeatStg2' = On
-End If
-
-If (('DAT_Eff' > ('DAT_EffSp' + 10)) OnFor 4M) Or ('Zone_EffHtg' < 80) Then
-    'HeatStg2' = Off
-End If
-
-'UH3Enable' = Switch ( 'UH3Enable', 'Zone_EffHtg', 99, 90)
-'UH4Enable' = Switch ( 'UH4Enable', 'Zone_EffHtg', 99, 90) //potentialy use loading dock temp to run this UH
-'UH3Status' = Switch ( 'UH3Status', 'UH3Current', 0.5, 0)
-'UH4Status' = Switch ( 'UH4Status', 'UH4Current', 0.5, 0)

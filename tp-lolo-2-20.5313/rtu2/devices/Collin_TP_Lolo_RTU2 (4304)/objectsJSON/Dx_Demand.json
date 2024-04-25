@@ -62,11 +62,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,*"
+    "value": "device,0"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2022-05-24T16:43:09.800000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",

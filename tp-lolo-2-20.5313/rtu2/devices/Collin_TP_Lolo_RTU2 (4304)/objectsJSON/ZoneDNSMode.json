@@ -26,7 +26,7 @@
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "1"
   },
   "status-flags": {
     "$base": "BitString",
@@ -73,11 +73,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,*"
+    "value": "device,0"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:08:08.000000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",
