@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2"
+    "value": "out-of-service"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -54,7 +54,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 1
+    "value": "1"
   },
   "polarity": {
     "$base": "Enumerated",
@@ -70,7 +70,7 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T17:10:36.400000-07:00"
+    "value": "2000-01-01T12:00:01.300000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -78,16 +78,16 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2000-01-01T17:13:17.400000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T17:10:36.400000-07:00"
+      "value": "2000-01-01T12:00:01.300000-07:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:17:39.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -134,7 +134,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -226,7 +229,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,11009"
+      "value": "program,9"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -242,7 +245,7 @@
     },
     "8": {
       "$base": "ObjectIdentifier",
-      "value": "device,999"
+      "unspecifiedValue": "true"
     },
     "9": {
       "$base": "ObjectIdentifier",
@@ -250,7 +253,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,11262"
+      "value": "program,3"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -293,7 +296,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-01T17:52:37.10"
+      "value": "2000-01-01T16:48:16.50"
     },
     "5": {
       "$base": "DateTime",
@@ -317,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-01T17:52:37.60"
+      "value": "2000-01-01T16:48:17.00"
     },
     "11": {
       "$base": "DateTime",

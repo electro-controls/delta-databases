@@ -39,7 +39,7 @@
     },
     "units": {
         "$base": "Enumerated",
-        "value": "%"
+        "value": "°F"
     },
     "event-state": {
         "$base": "Enumerated",
