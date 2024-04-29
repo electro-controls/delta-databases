@@ -62,11 +62,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,11101"
+    "value": "program,4"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-02T12:59:54.200000-07:00"
   },
   "text-value": {
     "$base": "String",

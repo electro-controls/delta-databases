@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "8"
   },
   "gcl-value": {
     "$base": "Real",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -50,11 +50,11 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,3658741"
+    "unspecifiedValue": "true"
   },
   "time-of-last-write": {
     "$base": "DateTime",

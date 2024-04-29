@@ -1,4 +1,4 @@
-'PG9.Write_Priority' = 4
+'ZoneCritical_PG.Write_Priority' = 4
 
 Switch ( 'HighTempLimit', 'DAT', 160, 100)
 

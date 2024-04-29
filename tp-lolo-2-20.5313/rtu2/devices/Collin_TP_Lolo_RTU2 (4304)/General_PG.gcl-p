@@ -1,6 +1,6 @@
 'General_PG.Write_Priority' = 4
 
-'OAT_Eff' = '3900.AV91'
+// 'OAT_Eff' = '40200.AV91'
 
 //Power up defaults will be written to after power up or reset
 //IfOnce PowerUp Then
@@ -19,7 +19,7 @@ DoEvery 1M
 'Uptime' = 'Uptime' + 1
 End Do
 
-'DIPSetting' = 'RTU2.DIP_Setting' //reference current controller DIP setting
+'DIPSetting' = 'Collin_TP_Lolo_RTU2.DIP_Setting' //reference current controller DIP setting
 
 //Intercontroller Links
 //Eff_OAT = xxx.Eff_OAT //Reference to parent DSC eff OAT
@@ -34,6 +34,10 @@ If ('OAT_Eff' > 35) And ('OATisfreezingxx' OnFor 15M) Then
 End If
 
 // Some logic for the miscellaineous items on the card
-'EF1Enable' = 'OccUnoc_BDC'
-'EF2Enable' = 'OccUnoc_BDC'
-'HP1_OADamper' = 'OccUnoc_BDC'
+'EF1Enable' = 'EF1ZoneOcc'
+'EF2Enable' = 'EF2ZoneOcc'
+If ('ZoneOccMode' = 3) Then
+    'HP1_OADamper' = On
+Else
+    'HP1_OADamper' = Off
+End If

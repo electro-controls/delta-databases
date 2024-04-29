@@ -14,11 +14,11 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "asdf"
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "asdf"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "asdf"
   },
   "reset": {
     "$base": "Boolean",
@@ -70,7 +70,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Normal"
+    "value": "Alarm"
   },
   "hal-flags": {
     "$base": "BitString",

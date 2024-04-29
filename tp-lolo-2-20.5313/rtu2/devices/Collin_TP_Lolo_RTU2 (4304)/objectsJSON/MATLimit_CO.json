@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "50.1667"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "86"
+    "value": "555"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": 0
+    "value": "-58"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",

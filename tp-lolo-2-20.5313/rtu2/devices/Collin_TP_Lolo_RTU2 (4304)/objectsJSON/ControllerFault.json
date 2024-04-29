@@ -89,7 +89,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Normal"
+    "value": "AI Fault"
   },
   "hal-flags": {
     "$base": "BitString",

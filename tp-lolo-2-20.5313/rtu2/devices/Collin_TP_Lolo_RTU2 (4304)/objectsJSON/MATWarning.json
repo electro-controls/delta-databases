@@ -70,7 +70,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Normal"
+    "value": "Alarm"
   },
   "hal-flags": {
     "$base": "BitString",

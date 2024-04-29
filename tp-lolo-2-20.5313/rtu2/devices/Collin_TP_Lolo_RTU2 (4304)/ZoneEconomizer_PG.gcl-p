@@ -14,7 +14,7 @@ End If
 If ('Economizer.Priority_Array[8]' <= 100) Then //Look for manual override at Pri 8
     'EconRamp' = Min ('EconRamp', 'Economizer') //This puts ramp at overridden value so it doesnt trip freeze after a release to auto
 End If
-    
+
 IfOnce ('ZoneControlMode' = 2) Then //Cooling
     'EconRamp' = Min ('EconRamp', Scale ('OAT_Eff', 0, 0, 25, 60, 75)) //Prevents overshoot when coming into cooling mode
 End If

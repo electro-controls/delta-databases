@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "asdf"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",

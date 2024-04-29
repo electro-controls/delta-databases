@@ -14,11 +14,11 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "asdf"
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "asdf"
   },
   "present-value": {
     "$base": "Real",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "asdf"
   },
   "reset": {
     "$base": "Boolean",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "86"
+    "value": "490"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -317,6 +317,6 @@
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "asdf"
   }
 }

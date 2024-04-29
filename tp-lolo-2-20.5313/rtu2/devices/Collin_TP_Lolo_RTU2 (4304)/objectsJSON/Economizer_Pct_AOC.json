@@ -1,5 +1,5 @@
 {
-  "displayName": "Economizerr_Pct_AOC",
+  "displayName": "Economizer_Pct_AOC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aoc,11"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Economizerr_Pct_AOC"
+    "value": "Economizer_Pct_AOC"
   },
   "description": {
     "$base": "String",

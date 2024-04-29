@@ -972,6 +972,72 @@
       "299": {
         "$base": "Choice"
       },
+      "300": {
+        "$base": "Choice"
+      },
+      "301": {
+        "$base": "Choice"
+      },
+      "302": {
+        "$base": "Choice"
+      },
+      "303": {
+        "$base": "Choice"
+      },
+      "304": {
+        "$base": "Choice"
+      },
+      "305": {
+        "$base": "Choice"
+      },
+      "306": {
+        "$base": "Choice"
+      },
+      "307": {
+        "$base": "Choice"
+      },
+      "308": {
+        "$base": "Choice"
+      },
+      "309": {
+        "$base": "Choice"
+      },
+      "310": {
+        "$base": "Choice"
+      },
+      "311": {
+        "$base": "Choice"
+      },
+      "312": {
+        "$base": "Choice"
+      },
+      "313": {
+        "$base": "Choice"
+      },
+      "314": {
+        "$base": "Choice"
+      },
+      "315": {
+        "$base": "Choice"
+      },
+      "316": {
+        "$base": "Choice"
+      },
+      "317": {
+        "$base": "Choice"
+      },
+      "318": {
+        "$base": "Choice"
+      },
+      "319": {
+        "$base": "Choice"
+      },
+      "320": {
+        "$base": "Choice"
+      },
+      "321": {
+        "$base": "Choice"
+      },
       "$base": "Array"
     }
   },
@@ -997,7 +1063,7 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "12:11:58.00"
+    "value": "17:48:46.00"
   },
   "local-date": {
     "$base": "Date",
@@ -1150,7 +1216,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "12.7273"
+    "value": "1.93548"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -1162,7 +1228,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "90"
+    "value": "44"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -1170,7 +1236,7 @@
   },
   "dynamic-ram-free": {
     "$base": "Unsigned",
-    "value": "98"
+    "value": "97"
   },
   "flash-type": {
     "$base": "Enumerated",
@@ -1258,7 +1324,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "7190"
+      "value": "209269"
     }
   },
   "logical-base-address": {
@@ -1367,7 +1433,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "420"
+    "value": "536"
   },
   "active-cov-subscriptions": {
     "$base": "List"

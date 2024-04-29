@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": "fault;out-of-service"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": "fault;out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,2"
+    "value": "bdc,1"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -50,11 +50,11 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": 1
   },
   "device-type": {
     "$base": "String",
-    "value": "AlarmNormal_BDC"
+    "value": "ActiveInactive_BDC"
   },
   "polarity": {
     "$base": "Enumerated",
@@ -62,26 +62,26 @@
   },
   "active-text": {
     "$base": "String",
-    "value": "Alarm"
+    "value": "Active"
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Normal"
+    "value": "Inactive"
   },
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T10:52:59.800000-07:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T10:52:11.20"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-02T10:52:59.800000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -89,11 +89,11 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:01:57.200000-07:00"
+    "value": "2000-01-02T10:53:04.400000-07:00"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "83"
+    "value": "519"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -145,7 +145,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Normal"
+    "value": "Inactive"
   },
   "hal-flags": {
     "$base": "BitString",
