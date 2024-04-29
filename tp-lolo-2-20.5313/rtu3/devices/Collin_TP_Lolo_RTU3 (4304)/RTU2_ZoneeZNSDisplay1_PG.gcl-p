@@ -1,14 +1,14 @@
 If PowerUp Then
-  'LinkLCD1.Line_2' = 'Zone_EffTemp'
+  'LinkLCD1.Line_2' = 'RTU2_Zone_EffTemp'
   'LinkLCD1.Line_2_Units' = 1
-  'LinkLCD1.Line_3' = 'Zone_EffSp'
+  'LinkLCD1.Line_3' = 'RTU2_Zone_EffSp'
   'LinkLCD1.Line_3_Units' = 1
   'LinkLCD1.Occupancy' = 2
   'ZoneAlgMode' = 1
 End If
 
 //Local setpoint adjust enable
-//Change mode requires that button 2 be pressed 4 times (or as programmed) 
+//Change mode requires that button 2 be pressed 4 times (or as programmed)
 //prior to being able to change stat setting. This eleviates unauthorized tampering.
 IfOnce 'ZoneDNSMode' = 1 Then
     'ZoneEnableDNS' = On
@@ -46,9 +46,9 @@ End If
 
 //This updates the display temps on a periodic basis
 DoEvery 1M
-  'LinkLCD1.Line_2' = 'Zone_EffTemp'
+  'LinkLCD1.Line_2' = 'RTU2_Zone_EffTemp'
   'LinkLCD1.Line_2_Units' = 1
-  'LinkLCD1.Line_3' = 'Zone_EffSp'
+  'LinkLCD1.Line_3' = 'RTU2_Zone_EffSp'
   'LinkLCD1.Line_3_Units' = 1
 End Do
 

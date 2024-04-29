@@ -1,6 +1,6 @@
 //Outdoor Air Interlocks
-'Dx1_OAInt' = Switch ( 'Dx1_OAInt', 'OAT_Eff', 'AV10261', 'AV10261' - 2)
-'Dx2_OAInt' = Switch ( 'Dx2_OAInt', 'OAT_Eff', 'AV10262', 'AV10262' - 2)
+'Dx1_OAInt' = Switch ( 'Dx1_OAInt', 'OAT_Eff', 'Dx1OAInt_Sp', 'Dx1OAInt_Sp' - 2)
+'Dx2_OAInt' = Switch ( 'Dx2_OAInt', 'OAT_Eff', 'Dx2OAInt_Sp', 'Dx2OAInt_Sp' - 2)
 
 
 //DX air Flow Interlocks
