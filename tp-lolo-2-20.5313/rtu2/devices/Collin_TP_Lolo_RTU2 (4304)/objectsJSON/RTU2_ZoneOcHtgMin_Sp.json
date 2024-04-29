@@ -1,8 +1,9 @@
 {
-  "displayName": "RTU2_Zone_EffSp",
+  "$base": "Object",
+  "displayName": "RTU2_ZoneOcHtgMin_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,11001"
+    "value": "analog-value,6"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +11,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RTU2_Zone_EffSp"
+    "value": "RTU2_ZoneOcHtgMin_Sp"
   },
   "description": {
     "$base": "String",
@@ -54,11 +55,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,15"
+    "unspecifiedValue": "true"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-01T17:43:09.300000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "cov-increment": {
     "$base": "Real",

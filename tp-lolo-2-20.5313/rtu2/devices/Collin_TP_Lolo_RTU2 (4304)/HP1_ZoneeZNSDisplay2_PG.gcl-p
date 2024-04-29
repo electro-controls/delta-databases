@@ -76,7 +76,7 @@ If ('LinkLCD2.Key_Press' = 0) OnFor 8S Then
       BPDis = Off
     End If
 End If
- 
+
 //If someone presses the off button, unit goes off and resets bypass time left
 //to zero.
 IfOnce ('LinkLCD2.Key_Press' = 1) And 'ZoneEnableDNS' And 'ZoneBypassCall' Then
@@ -108,11 +108,11 @@ End If
 //Allow for changing space setpoint.
 Variable Update
 If ('LinkLCD2.Key_Press' = 3) And (Not BPDis) And 'ZoneEnableDNS' Then
-  'Zone_LocSp' = Limit ('Zone_LocSp' - 'ZoneSpIncrement_Sp', 'ZoneOcHtgMin_Sp', 'ZoneOcClgMax_Sp')
+  'HP1_Zone_LocSp' = Limit ('HP1_Zone_LocSp' - 'HP1_ZoneSpIncrement_Sp', 'HP1_ZoneOcHtgMin_Sp', 'HP1_ZoneOcClgMax_Sp')
   Update = On
 End If
 If ('LinkLCD2.Key_Press' = 4) And (Not BPDis) And 'ZoneEnableDNS' Then
-  'Zone_LocSp' = Limit ('Zone_LocSp' + 'ZoneSpIncrement_Sp', 'ZoneOcHtgMin_Sp', 'ZoneOcClgMax_Sp')
+  'HP1_Zone_LocSp' = Limit ('HP1_Zone_LocSp' + 'HP1_ZoneSpIncrement_Sp', 'HP1_ZoneOcHtgMin_Sp', 'HP1_ZoneOcClgMax_Sp')
   Update = On
 End If
 

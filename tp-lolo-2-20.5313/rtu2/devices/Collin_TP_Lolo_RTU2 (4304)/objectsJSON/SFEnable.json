@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -54,7 +54,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 1
+    "value": "1"
   },
   "polarity": {
     "$base": "Enumerated",
@@ -70,24 +70,24 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T17:25:09.400000-07:00"
+    "value": "2000-01-01T16:56:35.300000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "3"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2000-01-01T17:54:07.600000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T17:25:09.400000-07:00"
+      "value": "2000-01-01T16:56:34.80"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-01T17:20:19.50"
+      "value": "2000-01-01T16:56:35.300000-07:00"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -134,7 +134,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -223,7 +226,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,9"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -247,7 +250,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,4"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -271,7 +274,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,65984"
     },
     "$base": "Array"
   },
@@ -290,7 +293,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-01T17:58:32.70"
+      "value": "2000-01-01T17:23:42.70"
     },
     "5": {
       "$base": "DateTime",
@@ -314,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-01T17:58:32.70"
+      "value": "2000-01-01T17:23:42.70"
     },
     "11": {
       "$base": "DateTime",
@@ -348,11 +351,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "10"
   },
   "module-type": {
     "$base": "Enumerated",
@@ -400,7 +403,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "Active"
   },
   "time-delay": {
     "$base": "Unsigned",
