@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "50"
+    "value": "38.7271"
   },
   "status-flags": {
     "$base": "BitString",
@@ -262,7 +262,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-04-01T15:21:33.90"
+      "value": "2000-04-04T08:45:12.40"
     },
     "5": {
       "$base": "DateTime",
@@ -286,7 +286,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-04-01T15:21:33.80"
+      "value": "2000-04-04T08:45:12.50"
     },
     "11": {
       "$base": "DateTime",
@@ -310,7 +310,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-04-01T15:20:01.50"
+      "value": "2000-04-04T08:44:59.00"
     },
     "$base": "Array"
   },
@@ -324,11 +324,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "127"
+    "value": "98"
   },
   "output-volt": {
     "$base": "Real",
-    "value": "5"
+    "value": "3.87271"
   },
   "port-1-status": {
     "$base": "Enumerated",

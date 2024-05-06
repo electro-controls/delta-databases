@@ -1,5 +1,5 @@
 {
-  "displayName": "Freezestat",
+  "displayName": "FreezestatAR",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-input,4"
@@ -10,23 +10,23 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Freezestat"
+    "value": "FreezestatAR"
   },
   "description": {
     "$base": "String",
-    "value": "confirm action in the field"
+    "value": "18Apr2024 AV- 3 factory freeze stats wired in series. auto reset. tripped with OA damper open when cold out"
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "out-of-service"
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -50,7 +50,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
@@ -93,7 +93,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "183"
+    "value": "191"
   },
   "time-delay": {
     "$base": "Unsigned",

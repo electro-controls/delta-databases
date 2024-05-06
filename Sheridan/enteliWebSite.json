@@ -80,21 +80,6 @@
     {
       "action": "create",
       "device": 1101,
-      "objectId": "pg,10105",
-      "objectName": "Heat_PG",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/Heat_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/17/2024, 11:07:54 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 1101,
       "objectId": "pg,10150",
       "objectName": "Zone_PG",
       "siteName": "Sheridan",
@@ -320,36 +305,6 @@
     {
       "action": "update",
       "device": 1110,
-      "objectId": "pg,14",
-      "objectName": "Critical_PG",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/Gym_UHs (1110)/Critical_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/18/2024, 10:45:47 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 1110,
-      "objectId": "pg,1",
-      "objectName": "General_PG",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/Gym_UHs (1110)/General_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/18/2024, 11:41:55 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 1110,
       "objectId": "ao,1",
       "objectName": "FanStartStop_UH1_UH2",
       "siteName": "Sheridan",
@@ -375,51 +330,6 @@
         "scheme": "file"
       },
       "date": "4/18/2024, 12:49:24 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 1110,
-      "objectId": "pg,13",
-      "objectName": "Heat_PG",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/Gym_UHs (1110)/Heat_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/18/2024, 3:26:30 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 1110,
-      "objectId": "pg,2",
-      "objectName": "Main_PG",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/Gym_UHs (1110)/Main_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/18/2024, 3:27:07 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 1110,
-      "objectId": "pg,12",
-      "objectName": "Zone_PG",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/Gym_UHs (1110)/Zone_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/18/2024, 3:27:12 PM",
       "templateTriggered": false
     }
   ],
