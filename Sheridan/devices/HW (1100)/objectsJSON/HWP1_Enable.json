@@ -14,15 +14,15 @@
   },
   "description": {
     "$base": "String",
-    "value": "26 Oct2023 AV- sounds like it is binded. told ameresco"
+    "value": "4/18/2024:  andrew confirmed pump has been replaced and is operating at ~15A on our enable signal.  no VFD.   \n \n26 Oct2023 AV- sounds like it is binded. told ameresco"
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": "private2"
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-01-24T17:07:08.000000-07:00"
+    "value": "2024-04-25T02:10:56.600000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "7"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-01-24T17:07:08.000000-07:00"
+      "value": "2024-04-25T00:54:25.80"
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-04-25T02:10:56.600000-06:00"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "5"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -140,7 +140,10 @@
       }
     },
     "5": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "6": {
       "$base": "Choice",
@@ -230,7 +233,7 @@
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "value": "device,4000053"
+      "unspecifiedValue": "true"
     },
     "6": {
       "$base": "ObjectIdentifier",
@@ -297,7 +300,7 @@
     },
     "5": {
       "$base": "DateTime",
-      "value": "2023-10-26T21:55:50.00"
+      "value": "2024-04-18T17:47:27.30"
     },
     "6": {
       "$base": "DateTime",
@@ -317,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-04-12T16:31:32.50"
+      "value": "2024-05-02T22:54:45.70"
     },
     "11": {
       "$base": "DateTime",
@@ -341,7 +344,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2024-04-12T16:30:58.70"
+      "value": "2024-05-02T22:54:37.20"
     },
     "$base": "Array"
   },
@@ -351,11 +354,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "10"
   },
   "module-type": {
     "$base": "Enumerated",
@@ -403,7 +406,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "Active"
   },
   "time-delay": {
     "$base": "Unsigned",

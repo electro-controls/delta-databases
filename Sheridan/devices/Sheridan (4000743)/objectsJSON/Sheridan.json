@@ -263,11 +263,11 @@
   },
   "local-date": {
     "$base": "Date",
-    "value": "2024-04-12"
+    "value": "2024-05-02"
   },
   "local-time": {
     "$base": "Time",
-    "value": "10:54:07.86"
+    "value": "16:45:21.38"
   },
   "location": {
     "$base": "String",
@@ -357,7 +357,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "4"
   },
   "max-segments-accepted": {
     "$base": "Unsigned",
@@ -647,7 +647,7 @@
   },
   "reset-count": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "13"
   },
   "scan-rate": {
     "$base": "Real",

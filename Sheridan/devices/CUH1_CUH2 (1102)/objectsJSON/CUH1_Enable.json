@@ -14,11 +14,11 @@
   },
   "description": {
     "$base": "String",
-    "value": "13 Oct2023 AV- bad fan"
+    "value": "18Apr2024 AV- visual and amps"
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": "private2"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T13:47:32.300000-07:00"
+    "value": "2000-08-26T09:38:52.100000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "64"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T13:47:32.300000-07:00"
+      "value": "2000-08-26T09:38:52.100000-06:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:00:23.00"
+      "value": "2000-08-26T09:06:21.30"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "5"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -140,7 +140,10 @@
       }
     },
     "5": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "6": {
       "$base": "Choice",
@@ -230,7 +233,7 @@
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "value": "device,4000053"
+      "unspecifiedValue": "true"
     },
     "6": {
       "$base": "ObjectIdentifier",
@@ -293,11 +296,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-08-06T09:46:32.20"
+      "value": "2000-08-27T08:58:20.90"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-02-06T10:02:19.60"
+      "value": "2000-08-13T09:10:07.00"
     },
     "6": {
       "$base": "DateTime",
@@ -317,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-08-06T09:46:25.80"
+      "value": "2000-08-27T08:58:21.30"
     },
     "11": {
       "$base": "DateTime",
@@ -341,7 +344,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-08-06T09:46:27.80"
+      "value": "2000-08-27T08:58:21.40"
     },
     "$base": "Array"
   },

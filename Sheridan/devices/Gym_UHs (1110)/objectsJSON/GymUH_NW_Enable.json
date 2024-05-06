@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": "private2"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -167,10 +167,7 @@
       }
     },
     "10": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "11": {
       "$base": "Choice",
@@ -253,7 +250,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,10282"
+      "value": "program,3"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -320,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-03-17T04:17:47.10"
+      "value": "2000-03-31T10:25:52.50"
     },
     "11": {
       "$base": "DateTime",
@@ -344,7 +341,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-03-17T10:15:05.60"
+      "value": "2000-03-31T10:25:38.50"
     },
     "$base": "Array"
   },
