@@ -2,7 +2,7 @@
   "displayName": "OccMode MIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "multi-state-input-configuration,2"
+    "value": "mic,2"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "asdf"
   },
   "flag": {
     "$base": "Unsigned",

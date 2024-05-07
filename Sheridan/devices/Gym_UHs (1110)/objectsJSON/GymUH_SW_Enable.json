@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": "private2"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-04-01T05:06:38.500000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "11050"
+    "value": "650"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-04-01T05:06:38.500000-07:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-04-01T05:04:14.50"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -170,10 +170,7 @@
       }
     },
     "10": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "11": {
       "$base": "Choice",
@@ -256,7 +253,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,10282"
+      "value": "program,3"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -323,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-04-04T02:16:35.50"
     },
     "11": {
       "$base": "DateTime",
@@ -347,7 +344,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-03-17T10:15:07.20"
+      "value": "2000-04-04T11:13:29.60"
     },
     "$base": "Array"
   },

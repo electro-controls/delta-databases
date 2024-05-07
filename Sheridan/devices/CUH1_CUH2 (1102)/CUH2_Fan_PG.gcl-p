@@ -1,8 +1,11 @@
 //fan program 
 
-'CUH2_Enable' = Switch ( 'CUH2_Enable', 'CUH2_EffZoneHtg', 90, 10)
+If ('CUH2_FanMode' = On) And (('CUH2_OccMode' = 3) Or ('CUH2_OccMode' = 4)) Then
+    'CUH2_Enable' = On //in continuous mode, fan shall run during occupied or bypass mode. 
+  Else
+    'CUH2_Enable' = Switch ( 'CUH2_Enable', 'CUH2_EffZoneHtg', 90, 10) //otherwise fan shall cycle w/ heating load
+End If
  
-
 //fan status
 'CUH2_FanStatus' = Switch ( 'CUH2_FanStatus', 'CUH2_Current', 0.7, 0.4)
 

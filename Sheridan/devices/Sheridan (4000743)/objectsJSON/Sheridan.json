@@ -255,6 +255,24 @@
         }
       }
     },
+    "14": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "4000748"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0xd189e6dabac0"
+        }
+      }
+    },
     "$base": "List"
   },
   "firmware-revision": {
@@ -263,11 +281,11 @@
   },
   "local-date": {
     "$base": "Date",
-    "value": "2024-05-02"
+    "value": "2024-05-06"
   },
   "local-time": {
     "$base": "Time",
-    "value": "16:45:21.38"
+    "value": "16:55:36.14"
   },
   "location": {
     "$base": "String",
@@ -647,7 +665,7 @@
   },
   "reset-count": {
     "$base": "Unsigned",
-    "value": "13"
+    "value": "20"
   },
   "scan-rate": {
     "$base": "Real",

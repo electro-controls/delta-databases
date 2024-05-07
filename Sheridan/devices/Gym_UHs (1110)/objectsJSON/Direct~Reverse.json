@@ -2,7 +2,7 @@
   "displayName": "Direct/Reverse",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-device-configuration,1"
+    "value": "bdc,1"
   },
   "object-type": {
     "$base": "Enumerated",

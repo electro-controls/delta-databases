@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "146"
+    "value": "42"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "-57.815"
+    "value": "65.8334"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -103,7 +103,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10105"
+      "value": "analog-value,20"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -126,7 +126,7 @@
       "type": "0-BACnetObjectPropertyReference",
       "objectIdentifier": {
         "$base": "ObjectIdentifier",
-        "value": "analog-value,10105"
+        "value": "analog-value,20"
       },
       "propertyIdentifier": {
         "$base": "Enumerated",
@@ -212,7 +212,7 @@
   },
   "bias": {
     "$base": "Real",
-    "value": "50"
+    "value": "0.199949"
   },
   "derivative": {
     "$base": "Real",
@@ -255,11 +255,11 @@
   },
   "average-crossings": {
     "$base": "Real",
-    "value": "2.62382e-05"
+    "value": 0
   },
   "average-error": {
     "$base": "Real",
-    "value": "11.6116"
+    "value": "4.14038"
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "881582"
+      "value": "81189022"
     }
   },
   "self-adj-enable": {
@@ -300,12 +300,12 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "882000"
+      "value": "81198000"
     }
   },
   "setpoint-crossings": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "setpoint-crossing-flag": {
     "$base": "Boolean",
@@ -313,7 +313,7 @@
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "187"
+    "value": "127.815"
   },
   "hal-flags": {
     "$base": "BitString",

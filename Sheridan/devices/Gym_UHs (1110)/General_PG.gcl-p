@@ -24,7 +24,7 @@ End If
  Variable A2 //Address 60 to 99
 
  T = Time
- A1 = 'Gym_UHs.dip-setting'
+ A1 = 'Gym_UHs.DIP_Setting'
 
  If A1 > 59 Then
    A2 = (A1 - 59) + 99

@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "asdf"
+    "value": "located in 2nd floor attic"
   },
   "flags": {
     "$base": "BitString",
@@ -477,6 +477,9 @@
       "134": {
         "$base": "Choice"
       },
+      "135": {
+        "$base": "Choice"
+      },
       "$base": "Array"
     }
   },
@@ -502,11 +505,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "04:04:08.00"
+    "value": "11:15:09.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2000-03-18"
+    "value": "2000-04-04"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -655,7 +658,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "19.0909"
+    "value": "22.0455"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -667,7 +670,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "103"
+    "value": "96"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -763,7 +766,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "66242489"
+      "value": "81189095"
     }
   },
   "logical-base-address": {
@@ -872,7 +875,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "466"
+    "value": "498"
   },
   "active-cov-subscriptions": {
     "$base": "List"

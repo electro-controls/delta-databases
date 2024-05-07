@@ -2,7 +2,7 @@
   "displayName": "SFCurrent 0-5V 0-20A AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input-configuration,3"
+    "value": "aic,3"
   },
   "object-type": {
     "$base": "Enumerated",
