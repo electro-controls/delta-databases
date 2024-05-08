@@ -7,7 +7,7 @@ End If
 
 'UH5_Eff_OAT' = '1100.Eff_OAT'
 //temp - remove once Andrew rewires
-'UH5_Eff_ZoneTemp' = '1100.UH5_Eff_ZoneTemp'
+'UH5_Eff_ZoneTemp' = 'UH5_ZoneTemp'
 
 
 If 'UH5_Rem_Schedule' Then

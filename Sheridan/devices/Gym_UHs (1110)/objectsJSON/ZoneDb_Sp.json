@@ -2,7 +2,7 @@
   "displayName": "ZoneDb_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,21"
+    "value": "analog-value,10106"
   },
   "object-type": {
     "$base": "Enumerated",

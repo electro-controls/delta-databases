@@ -2,7 +2,7 @@
   "displayName": "OcClgMin_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,4"
+    "value": "analog-value,10112"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "asdf"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",

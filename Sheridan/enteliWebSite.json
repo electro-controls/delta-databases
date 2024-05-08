@@ -5,21 +5,6 @@
     {
       "action": "update",
       "device": 1101,
-      "objectId": "pg,2",
-      "objectName": "Critical_PG",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/Critical_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/17/2024, 9:22:56 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 1101,
       "objectId": "pg,3",
       "objectName": "General_PG",
       "siteName": "Sheridan",
@@ -110,21 +95,6 @@
     {
       "action": "update",
       "device": 1101,
-      "objectId": "pg,2",
-      "objectName": "General_PG",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/UH5_DomRecirc (1101)/General_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/17/2024, 11:51:01 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 1101,
       "objectId": "pg,4",
       "objectName": "Dom_HWPump",
       "siteName": "Sheridan",
@@ -170,36 +140,6 @@
     {
       "action": "create",
       "device": 1110,
-      "objectId": "pg,6",
-      "objectName": "UH5_Zone_PG",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/Gym_UHs (1110)/UH5_Zone_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/18/2024, 10:36:17 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 1110,
-      "objectId": "pg,8",
-      "objectName": "UH5_Critical_PG (pg8)",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/Gym_UHs (1110)/UH5_Critical_PG (pg8).gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/18/2024, 10:39:36 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 1110,
       "objectId": "pg,9",
       "objectName": "UH5_General_PG (pg9)",
       "siteName": "Sheridan",
@@ -240,21 +180,6 @@
         "scheme": "file"
       },
       "date": "4/18/2024, 10:39:37 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 1110,
-      "objectId": "pg,7",
-      "objectName": "Main_PG (pg7)",
-      "siteName": "Sheridan",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Sheridan/devices/Gym_UHs (1110)/Main_PG (pg7).gcl-p",
-        "scheme": "file"
-      },
-      "date": "4/18/2024, 10:39:55 AM",
       "templateTriggered": false
     },
     {
@@ -11974,18 +11899,6 @@
           "lastUpdate": "2024-05-06T23:49:52.754Z"
         },
         {
-          "id": "av,4",
-          "name": "OcClgMin_Sp",
-          "fileName": "OcClgMin_Sp",
-          "lastUpdate": "2024-05-06T23:49:52.754Z"
-        },
-        {
-          "id": "av,5",
-          "name": "OcHtgMax_Sp",
-          "fileName": "OcHtgMax_Sp",
-          "lastUpdate": "2024-05-06T23:49:52.754Z"
-        },
-        {
           "id": "av,6",
           "name": "OcHtgMin_Sp",
           "fileName": "OcHtgMin_Sp",
@@ -12073,12 +11986,6 @@
           "id": "av,20",
           "name": "ZoneCool_EffSp",
           "fileName": "ZoneCool_EffSp",
-          "lastUpdate": "2024-05-06T23:49:52.754Z"
-        },
-        {
-          "id": "av,21",
-          "name": "ZoneDb_Sp",
-          "fileName": "ZoneDb_Sp",
           "lastUpdate": "2024-05-06T23:49:52.754Z"
         },
         {
@@ -12494,6 +12401,36 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-05-06T23:49:52.754Z"
+        },
+        {
+          "id": "av,10106",
+          "name": "ZoneDb_Sp",
+          "fileName": "ZoneDb_Sp",
+          "lastUpdate": "2024-05-08T17:27:07.306Z"
+        },
+        {
+          "id": "av,10112",
+          "name": "OcClgMin_Sp",
+          "fileName": "OcClgMin_Sp",
+          "lastUpdate": "2024-05-08T17:28:27.986Z"
+        },
+        {
+          "id": "av,10115",
+          "name": "OcHtgMax_Sp",
+          "fileName": "OcHtgMax_Sp",
+          "lastUpdate": "2024-05-08T17:28:51.917Z"
+        },
+        {
+          "id": "pg,6",
+          "name": "CUH1_OccMode_PG",
+          "fileName": "CUH1_OccMode_PG",
+          "lastUpdate": "2024-05-08T17:41:10.065Z"
+        },
+        {
+          "id": "pg,8",
+          "name": "OccMode_PG",
+          "fileName": "OccMode_PG",
+          "lastUpdate": "2024-05-08T17:41:28.992Z"
         }
       ]
     }
