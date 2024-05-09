@@ -38,9 +38,9 @@ End If
 
 //OA Damper modulates in Occ Mode or UnOcc Cooling
 If ('Mode' = 1) Then
-    'Econ' = ('EconRampPct' / 100) * Scale ('Eff_OA_Demand', 0, 0, 'TABMinOAPos', 100, 'MATLimit_CO')
+    'Econ' = ('MATLimit_CO' / 100) * Scale ('Eff_OA_Demand', 0, 0, 'TABMinOAPos', 100, 'EconRampPct')
   ElseIf  ('Mode' = 4) Then
-    'Econ' = ('EconRampPct' / 100) * Scale ('Eff_OA_Demand', 0, 0, 0, 100, 'MATLimit_CO')
+    'Econ' = ('MATLimit_CO' / 100) * Scale ('Eff_OA_Demand', 0, 0, 0, 100, 'EconRampPct')
   Else
     'Econ' = 0
 End If

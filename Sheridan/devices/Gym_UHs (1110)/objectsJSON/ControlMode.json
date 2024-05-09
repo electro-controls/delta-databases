@@ -18,19 +18,19 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "3"
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "3"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -46,7 +46,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "missing-cfg-object"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -54,30 +54,34 @@
   },
   "number-of-states": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "3"
   },
   "state-text": {
     "1": {
       "$base": "String",
-      "value": "OFF"
+      "value": "Heating"
     },
     "2": {
       "$base": "String",
-      "value": "ON"
+      "value": "Cooling"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Deadband"
     },
     "$base": "Array"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,10150"
+    "value": "program,5"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-02T12:29:26.100000-07:00"
+    "value": "2000-04-04T02:16:35.500000-06:00"
   },
   "text-value": {
     "$base": "String",
-    "value": ""
+    "value": "Deadband"
   },
   "hal-flags": {
     "$base": "BitString",

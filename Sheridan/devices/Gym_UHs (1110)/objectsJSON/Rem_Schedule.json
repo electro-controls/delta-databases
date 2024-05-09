@@ -2,7 +2,7 @@
   "displayName": "Rem_Schedule",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-value,6"
+    "value": "binary-value,10121"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -62,7 +62,7 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,2"
+    "value": "device,4000743"
   },
   "time-of-last-write": {
     "$base": "DateTime",

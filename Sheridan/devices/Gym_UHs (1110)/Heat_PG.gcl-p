@@ -3,7 +3,7 @@
 'FanStatus_NE' = Switch ( 'FanStatus_NE', 'GymUH_NE_Amps', 1.0, 0.5)
 'FanStatus_NW' = Switch ( 'FanStatus_NW', 'GymUH_NW_Amps', 1.0, 0.5)
 'FanStatus_SW' = Switch ( 'FanStatus_SW', 'GymUH_SW_Amps', 1.0, 0.5)
- 
+
 If 'OccMode' = 6 Then
     'PurgeHold' = On
     'PurgeHoldTmLeft' = 'PurgeHold_Sp'
@@ -28,7 +28,3 @@ If 'HWVLock' Or 'PurgeHold' Then
   'GymUH_NW_Enable' = Switch ( 'GymUH_NW_Enable', 'EffZoneHtg', 50, 1)
   'GymUH_SW_Enable' = Switch ( 'GymUH_SW_Enable', 'EffZoneHtg', 50, 1)
 End If
-
-'GymUH_NE_HWV' = 'GymUH_NE_Enable'
-'GymUH_NW_HWV' = 'GymUH_NW_Enable'
-'GymUH_SW_HWV' = 'GymUH_SW_Enable'

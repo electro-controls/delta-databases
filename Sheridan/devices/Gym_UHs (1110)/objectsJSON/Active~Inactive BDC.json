@@ -2,7 +2,7 @@
   "displayName": "Active/Inactive BDC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-device-configuration,3"
+    "value": "bdc,3"
   },
   "object-type": {
     "$base": "Enumerated",

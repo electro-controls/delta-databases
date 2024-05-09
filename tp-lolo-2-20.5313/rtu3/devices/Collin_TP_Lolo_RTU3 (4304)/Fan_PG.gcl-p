@@ -1,0 +1,45 @@
+//Fan Program
+
+//Fan start/stop sequence
+If ('ZoneOccMode' <> 1) Then
+    'SFEnable' = On
+  Else
+    'SFEnable' = Off
+End If
+
+'SFStatus' = Switch ( 'SFStatus', 'SFCurrent', 0.2, 0.05)
+
+//Running status interlock sequence. Used by
+//other routines (economizer, VFD speed, etc..)
+If 'SFEnable' And 'SFStatus' Then
+    'RunStatusInt' = On
+  Else
+    'RunStatusInt' = Off
+End If
+
+Variable CoolingSpeed
+Variable HeatingSpeed
+
+MAUSpeed = Scale ('EFTotalCalcAirflow', 0, 'SFCalcAirflowAtMinSpeed_Sp', 'SFMinSpeed_Sp', 'SFCalcAirflowAtMaxSpeed_Sp', 'SFMaxSpeed_Sp')
+CoolingSpeed = Scale ('Zone_EffClg', 0, 50, 'SFMinSpeed_Sp', 100, 'SFMaxSpeed_Sp')
+HeatingSpeed = Scale ('Zone_EffHtg', 0, 80, 'SFMinSpeed_Sp', 100, 'SFMaxSpeed_Sp')
+
+//VFD speed sequence. Insures smooth start up via
+//the ramp routine.
+//Fan speed reset on zone heat and cooling demand
+
+If 'RunStatusInt' Then
+    DoEvery 10S
+    'SFRampResult' = Min (100, 'SFRampResult' + (1000 / 'SFRamp_Sp'))
+    End Do
+  Else
+    'SFRampResult' = 0
+End If
+
+If PowerUp Then
+  'SFRampResult' = 0
+End If
+
+'SFCalcOAAirflow' = Scale ('Economizer', 0, 0, 0, 100, 'SFCalcAirflow')
+
+'EconMAUOAPct' = Max (0, 'EFTotalCalcAirflow' / 'SFCalcAirflow') * 100

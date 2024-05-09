@@ -2,7 +2,7 @@
   "displayName": "Valve 0-10V 0-100 % AOC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output-configuration,1"
+    "value": "aoc,1"
   },
   "object-type": {
     "$base": "Enumerated",

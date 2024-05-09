@@ -1,0 +1,20 @@
+//**********************************************
+//* Main Program - Calls all the other programs*
+//**********************************************
+Call 'General_PG'
+Call 'ZoneGeneral_PG'
+Call 'ZoneHtCl_PG'
+Call 'ZoneOccMode_PG'
+Call 'RTU2_ZoneeZNSDisplay1_PG'
+Call 'RTU2_ZoneeZNSDisplay2_PG'
+Call 'HP1_ZoneeZNSDisplay1_PG'
+Call 'HP1_ZoneeZNSDisplay2_PG'
+Call 'FaultDetection_PG'
+Call 'ZoneDAT_PG'
+Call 'ZoneEconomizer_PG'
+Call 'ZoneCO2_PG'
+Call 'DxDemand_PG'
+Call 'DxInterlocks_PG'
+Call 'Fan_PG'
+Call 'Heat_PG'
+Call 'ZoneCritical_PG'

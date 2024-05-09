@@ -1,0 +1,68 @@
+//Economizer sequence
+//Economizer ramp dalay is automatically longer during
+//cold weather.
+'EconRampDelay' = Scale ('OAT_Eff', 0, 20, 2000, 60, 60)
+
+If 'RunStatusInt' And (Not 'MATWarning') And (('ZoneOccMode' = 3) Or ('ZoneOccMode' = 4)) Then //Occ/Bypass
+   DoEvery 10S
+   'EconRamp' = Min (100, 'EconRamp' + (100 / 'EconRampDelay' * 10))
+   End Do
+  Else
+   'EconRamp' = 0
+End If
+
+If ('Economizer.Priority_Array[8]' <= 100) Then //Look for manual override at Pri 8
+    'EconRamp' = Min ('EconRamp', 'Economizer') //This puts ramp at overridden value so it doesnt trip freeze after a release to auto
+End If
+
+IfOnce ('ZoneControlMode' = 2) Then //Cooling
+    'EconRamp' = Min ('EconRamp', Scale ('OAT_Eff', 0, 0, 25, 60, 75)) //Prevents overshoot when coming into cooling mode
+End If
+
+If ('MAT_Eff' < ('EconMATLimit_Sp' - 5)) OnFor 30S Then
+    'MATWarning' = On
+  Else
+    'MATWarning' = Off
+End If
+
+'EconMATLimit' = 'MATLimit_CO'
+
+//Determines if free cooling can be achived by comparing
+// OAT and RAT (or Zone temp)
+'EconFreeClg' = Switch ( 'EconFreeClg', 'OAT_Eff', 'RAT_Eff' - 1, 'RAT_Eff' + 1)
+
+
+If 'Econ_RemClg' >= 0 Then
+    'Econ_EffClg' = 'Econ_RemClg'
+  Else
+    'Econ_EffClg' = 'Econ_LocClg'
+End If
+
+If 'EconFreeClg' And ('ZoneOccMode' = 3 Or 'ZoneOccMode' = 4) And ('ZoneControlMode' = 2) And 'Dx1_OAInt' Then //Occ/Bypass and Cooling
+    'Econ_LocClg' = Scale ('DATClg_CO', 0, 0, 0, 50, 100)
+  ElseIf  'EconFreeClg' And ('ZoneOccMode' = 3 Or 'ZoneOccMode' = 4) And ('ZoneControlMode' = 2) Then
+    'Econ_LocClg' = Scale ('DATClg_CO', 0, 0, 0, 100, 100)
+  Else
+    'Econ_LocClg' = 0
+End If
+
+
+If 'Econ_RemMinOAPct' >= 0 Then
+    'Econ_EffMinOAPct' = 'Econ_RemMinOAPct'
+  Else
+    'Econ_EffMinOAPct' = 'Econ_LocMinOAPct'
+End If
+
+'Econ_LocMinOAPct' = Max ('EconMAUOAPct', Scale (Min ('Zone_CO2Limit_Sp', 'ZoneCO2_EffDemand'), 0, 0, 'EconMinOAPct_Sp', 100, 'AH_CO2OATLimit'))
+
+If 'OAT_Eff' > 70 Then
+    'AH_CO2OATLimit' = Scale ('OAT_Eff', 0, 80, 100, 100, 50) //limit demand in hot weather
+  Else
+    'AH_CO2OATLimit' = Scale ('OAT_Eff', 0, 0, 50, 55, 100) //limit demand in cold weather
+End If
+
+If 'RunStatusInt' And ('ZoneOccMode' = 3 Or 'ZoneOccMode' = 4) Then //Occ/Bypass
+    'Economizer' = (Scale ('Econ_EffClg', 0, 0, 'Econ_EffMinOAPct', 100, 100)) * ('EconMATLimit' * 0.01) * ('EconRamp' * 0.01) //(Max (MinOAPct, EconClgPct)) * (EconRampPct * 0.01) * (MATLimit_CO * 0.01)
+Else
+    'Economizer' = 0
+End If

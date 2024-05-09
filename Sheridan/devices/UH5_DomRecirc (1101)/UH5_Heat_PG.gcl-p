@@ -1,6 +1,6 @@
 //  HWV
 
-'UH5_FanStatus' = Switch ( 'UH5_FanStatus', 'UH5_FanCurrent', 1.0, 0.5)
+'UH5_FanStatus' = Switch ( 'UH5_FanStatus', 'UH5_FanCurrent', 0.7, 0.5)
  
 If 'UH5_OccMode' = 6 Then
     'UH5_PurgeHold' = On
@@ -23,4 +23,4 @@ If 'UH5_HWVLock' Or 'UH5_PurgeHold' Then
   'UH5_FanEnable' = Switch ( 'UH5_FanEnable', 'UH5_EffZoneHtg', 50, 1)
 End If
 
-'UH5_HWV' = 'UH5_FanEnable'
+'UH5_HWV_NOT_USED' = 'UH5_FanEnable'

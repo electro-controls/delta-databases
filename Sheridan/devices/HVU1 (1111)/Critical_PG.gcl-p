@@ -5,11 +5,11 @@ If 'RunStatusInt' And ('DAT' < 'DAT_LoLimit_Sp') OnFor 1M Then
     'FreezeMode' = On
 End If
 
-If 'Freezestat' Then //hardware freezestat
+If 'FreezestatAR' Then //hardware freezestat
     'FreezeMode' = On
 End If
 
-If ('DAT' > 'DAT_LoLimit_Sp' + 5) And ('FreezeMode' OnFor 60M) And (Not 'Freezestat') Then //Auto retry
+If ('DAT' > 'DAT_LoLimit_Sp' + 5) And ('FreezeMode' OnFor 60M) And (Not 'FreezestatAR') Then //Auto retry
     'FreezeMode' = Off
 End If
 

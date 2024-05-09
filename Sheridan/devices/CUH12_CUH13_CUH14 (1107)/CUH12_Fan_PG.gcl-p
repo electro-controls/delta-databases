@@ -1,7 +1,10 @@
 //fan program 
 
-'CUH12_Enable' = Switch ( 'CUH12_Enable', 'CUH12_EffZoneHtg', 90, 10)
- 
+If ('CUH12_FanMode' = On) And (('CUH12_OccMode' = 3) Or ('CUH12_OccMode' = 4)) Then
+    'CUH12_Enable' = On //in continuous mode, fan shall run during occupied or bypass mode. 
+  Else
+    'CUH12_Enable' = Switch ( 'CUH12_Enable', 'CUH12_EffZoneHtg', 90, 10) //otherwise fan shall cycle w/ heating load
+End If 
 
 //fan status
 'CUH12_FanStatus' = Switch ( 'CUH12_FanStatus', 'CUH12_Current', 0.7, 0.4)

@@ -1,0 +1,28 @@
+//Assumption is that DH is capable of handling make up air portion of the load.
+
+Variable DATHeatDemand As Integer
+
+
+
+If ('Econ_EffClg' < 1) And 'RunStatusInt' And ('DAT_Eff' < ('DATResetLow_Sp' - 5)) Then
+    DATHeatDemand = On
+End If
+If ('Econ_EffClg' >= 1) Or 'ClgStg1' Or (Not 'RunStatusInt') Or (('DAT_Eff' > ('DAT_EffSp' + 5)) OnFor 30S) Then
+    DATHeatDemand = Off
+End If
+
+IfOnce 'HeatStg1' Then //One shot to allow smooth start and modulation of DH gas heat.
+    'DATHtg_CO.Bias' = 1
+End If
+
+If (('DAT_Eff' < ('DAT_EffSp' - 5)) OnFor 5M) And ('Zone_EffHtg' > 50) Then
+    'HeatStg1' = On
+End If
+
+If (('DAT_Eff' < ('DAT_EffSp' - 5)) OnFor 5M) And ('DAT' < ('DATResetLow_Sp' - 2)) Then
+    'HeatStg1' = On
+End If
+
+If ((('DAT_Eff' > ('DAT_EffSp' + 10)) OnFor 6M) Or ('Zone_EffHtg' < 30)) And (Not DATHeatDemand) Then
+    'HeatStg1' = Off
+End If

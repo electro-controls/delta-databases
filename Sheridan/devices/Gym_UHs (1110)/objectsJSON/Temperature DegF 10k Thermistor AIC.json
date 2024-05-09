@@ -2,7 +2,7 @@
   "displayName": "Temperature DegF 10k Thermistor AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input-configuration,6"
+    "value": "aic,6"
   },
   "object-type": {
     "$base": "Enumerated",

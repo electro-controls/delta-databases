@@ -1,0 +1,14 @@
+//DX air Flow Interlocks
+
+If 'RunStatusInt' OnFor 10M Then
+    'Dx_FlowInt' = On //Add switch function if duct static or airflow is available
+  Else
+    'Dx_FlowInt' = Off
+End If
+
+//DX1 Interlocks
+If 'Dx1_Demand' And 'Dx_FlowInt' And ('ZoneControlMode' = 2) Then
+    'DX1Enable' = On
+  Else
+    'DX1Enable' = Off
+End If

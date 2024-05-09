@@ -1,0 +1,22 @@
+//Set the occ mode.
+If 'ZoneAlgMode' = 1 And 'Zone_RemSchedule' Then
+    'ZoneOccMode' = 3 //Occupied
+  ElseIf  'ZoneBypassCall' Then
+    'ZoneOccMode' = 4 //Bypass
+  ElseIf  'Zone_RemPurgeCall' Then
+    'ZoneOccMode' = 6 //Purge
+  ElseIf  'Zone_RemWarmCall' Then
+    'ZoneOccMode' = 5 //Warmup
+  ElseIf  'ZoneAlgMode' = 0 And (Not 'Zone_RemSchedule') And (Not 'Zone_SchedueFunction') Then
+    'ZoneOccMode' = 1 //Unocc
+  Else
+    'ZoneOccMode' = 2 //Standby
+End If
+
+IfOnce 'Zone_RemSchedule' Then
+    'ZoneAlgMode' = 1
+End If
+
+IfOnce (Not 'Zone_RemSchedule') And (Not 'ZoneBypassCall') Then
+    'ZoneAlgMode' = 0
+End If

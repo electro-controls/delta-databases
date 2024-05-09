@@ -1,0 +1,89 @@
+
+//DX mechanical cooling sequence
+
+Variable DATDemand As Integer
+Variable ClgStg2Off As Integer
+
+If 'ClgStg2' OffFor 3M Then //This ensure previous stage is off before sequence off another stage
+  ClgStg2Off = On
+Else
+  ClgStg2Off = Off
+End If
+
+
+If 'Dx_FlowInt' And (('SFOntimeRef' > 20) Or (Not 'EconFreeClg')) And ('DATClg_CO' >= 90) And ('DAT' > ('DAT_EffSp' + 3)) OnFor 300S Then
+    DATDemand = On
+End If
+If (Not 'Dx_FlowInt') Or ('DAT' <= ('DAT_EffSp' + 1)) Then //turns off latch near setpoint
+    DATDemand = Off
+End If
+
+If ('Zone_EffClg' >= 90) And 'Dx1_OAInt' And DATDemand And ((Not 'Dx1_Demand') OnFor 300S) Then
+    'Dx1_Demand' = On
+End If
+
+If (('DATClg_CO' < 1) And ('DAT' < ('DAT_EffSp' - 5)) And ClgStg2Off) OnFor 10M Then //turns off if DAT overshoots
+    'Dx1_Demand' = Off
+End If
+
+If (ClgStg2Off And ('Zone_EffClg' < 20)) Then //turns off on decrease of zone cooling
+    'Dx1_Demand' = Off
+End If
+
+If (('DAT' < 40) And ClgStg2Off) OnFor 300S Then //prevent frost on coil due to low DAT
+    'Dx1_Demand' = Off
+End If
+
+If (('DATClg_CO' < 1) And ClgStg2Off) OnFor 60M Then //Turns off if DAT demand is met for a long duration
+    'Dx1_Demand' = Off
+End If
+
+If (Not 'Dx1_OAInt') Then //Kick off on OATInt
+    'Dx1_Demand' = Off
+End If
+
+IfOnce (Not 'ClgStg1') Then //This ensures it will start back with delays in case of manual override or non typical inactive
+    'Dx1_Demand' = Off
+End If
+
+If ('DAT_EffSp' > ('OAT_Eff' - 2)) And (((Not 'Dx_Demand') And 'Dx1_Demand') OnFor 30M) Then //This should bounce it back to economizer for a try
+    'Dx1_Demand' = Off
+End If
+
+
+//DX2 Interlocks
+If ('DATClg_CO' >= 99) And ('Zone_EffClg' >= 99) And 'Dx2_OAInt' And DATDemand And ('ClgStg1' OnFor 10M) Then
+    'Dx2_Demand' = On
+End If
+
+If (('DATClg_CO' < 30) And ('Zone_EffClg' < 60)) OnFor 5M Then
+    'Dx2_Demand' = Off
+End If
+
+If ('Zone_EffClg' < 50) Then
+    'Dx2_Demand' = Off
+End If
+
+If (('DAT' < 40) OnFor 120S) Then //Critical shut off to avoid frost on evap
+    'Dx2_Demand' = Off
+End If
+
+If Not 'Dx2_OAInt' Then
+    'Dx2_Demand' = Off
+End If
+
+IfOnce Not 'ClgStg2' Then
+    'Dx2_Demand' = Off
+End If
+
+If ('DAT_EffSp' > ('OAT_Eff' - 2)) And ('Dx2_Demand' OnFor 30M) Then //Reverts back to try economizer
+    'Dx2_Demand' = Off
+End If
+
+
+
+//Below locks out DX cooling if unoccupied and not unoc cooling call without free cooling
+If ('ZoneOccMode' <> 3) And ('ZoneOccMode' <> 4) And (Not 'ZoneUnocClCall') And (Not 'EconFreeClg') Then
+    'Dx1_Demand' = Off
+    'Dx2_Demand' = Off
+End If

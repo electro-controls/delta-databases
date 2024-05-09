@@ -1,0 +1,25 @@
+//Outdoor Air Interlocks
+'Dx1_OAInt' = Switch ( 'Dx1_OAInt', 'OAT_Eff', 'Dx1OAInt_Sp', 'Dx1OAInt_Sp' - 2)
+'Dx2_OAInt' = Switch ( 'Dx2_OAInt', 'OAT_Eff', 'Dx2OAInt_Sp', 'Dx2OAInt_Sp' - 2)
+
+
+//DX air Flow Interlocks
+
+If 'RunStatusInt' OnFor 10M Then
+    'Dx_FlowInt' = On //Add switch function if duct static or airflow is available
+  Else
+    'Dx_FlowInt' = Off
+End If
+
+//DX1 Interlocks
+If 'Dx1_Demand' And 'Dx1_OAInt' And 'Dx_FlowInt' And ('ZoneControlMode' = 2) And ('SFEnable' OffFor 600S) Then
+    'ClgStg1' = On
+  Else
+    'ClgStg1' = Off
+End If
+
+If 'Dx2_Demand' And 'Dx2_OAInt' And 'Dx_FlowInt' And ('ZoneControlMode' = 2) And ('ClgStg1' OffFor 600S) Then
+    'ClgStg2' = On
+  Else
+    'ClgStg2' = Off
+End If

@@ -2,7 +2,7 @@
   "displayName": "ZoneDb_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,21"
+    "value": "analog-value,10106"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "3"
+    "value": 0
   },
   "gcl-value": {
     "$base": "Real",

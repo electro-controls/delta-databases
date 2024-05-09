@@ -1,0 +1,27 @@
+//Power up defaults
+If PowerUp Then
+    'ZoneOccMode' = 3
+    'Zone_RemSchedule' = 1
+    'ZoneAlgMode' = 1
+    'Zone_RemSp' = - 1
+    'Zone_RemClg' = - 1
+    'Zone_RemHtg' = - 1
+    'DAT_RemSp' = - 1
+    'Econ_RemClg' = - 1
+    'Econ_RemMinOAPct' = - 1
+    'Zone_RemWarmCall' = Off
+    'Zone_RemPurgeCall' = Off
+    'OAT_Eff' = 32
+End If
+
+
+//Effective values
+'RTU2_Zone_EffTemp' = 'RTU2_ZoneTemp_Local' //Reference zone temperature input
+'HP1_Zone_EffTemp' = 'HP1_ZoneTemp_Local' // hp on same card
+'DAT_Eff' = 'DAT' //refernce DAT input
+'Zone_EffCO2' = 0 //Make this 0 if no eZNS CO2
+'MAT_Eff' = 'DAT' //reference MAT input. Use DAT if MAT is not available
+'RAT_Eff' = 'RAT' //reference RAT input. reference Zone_EffTemp if RAT is not avaiable
+// Room Variance
+'RTU2_ZoneVariance' = 'RTU2_Zone_EffTemp' - 'RTU2_Zone_EffSp'
+'HP1_ZoneVariance' = 'HP1_Zone_EffTemp' - 'HP1_Zone_EffSp'

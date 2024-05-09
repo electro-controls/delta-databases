@@ -2,7 +2,7 @@
   "displayName": "Pressure inH20 4-20mA 0-5.0 AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input-configuration,2"
+    "value": "aic,2"
   },
   "object-type": {
     "$base": "Enumerated",

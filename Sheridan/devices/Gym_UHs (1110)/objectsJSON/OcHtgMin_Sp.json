@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "65"
+    "value": 0
   },
   "gcl-value": {
     "$base": "Real",
@@ -54,7 +54,7 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "device,4000743"
   },
   "time-of-last-write": {
     "$base": "DateTime",

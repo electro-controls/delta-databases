@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "present-value": {
     "$base": "Unsigned",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -46,7 +46,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "missing-cfg-object"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -54,30 +54,46 @@
   },
   "number-of-states": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "6"
   },
   "state-text": {
     "1": {
       "$base": "String",
-      "value": "OFF"
+      "value": "Unoccupied"
     },
     "2": {
       "$base": "String",
-      "value": "ON"
+      "value": "Standby"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Occupied"
+    },
+    "4": {
+      "$base": "String",
+      "value": "Bypass"
+    },
+    "5": {
+      "$base": "String",
+      "value": "WarmUp"
+    },
+    "6": {
+      "$base": "String",
+      "value": "Purge"
     },
     "$base": "Array"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,2"
+    "value": "program,1"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-02T12:29:26.300000-07:00"
+    "value": "2000-04-04T11:15:17.600000-06:00"
   },
   "text-value": {
     "$base": "String",
-    "value": ""
+    "value": "Occupied"
   },
   "hal-flags": {
     "$base": "BitString",

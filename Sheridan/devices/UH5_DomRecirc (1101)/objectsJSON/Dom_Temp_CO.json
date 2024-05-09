@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "149"
+    "value": "132"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "115.214"
+    "value": "115.946"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -305,7 +305,7 @@
   },
   "setpoint-crossings": {
     "$base": "Unsigned",
-    "value": "8"
+    "value": "5314"
   },
   "setpoint-crossing-flag": {
     "$base": "Boolean",
@@ -313,7 +313,7 @@
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "8.51648"
+    "value": "13.897"
   },
   "hal-flags": {
     "$base": "BitString",

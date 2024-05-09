@@ -1,0 +1,877 @@
+{
+  "name": "Bench",
+  "ipAddress": "http://localhost",
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,9",
+      "objectName": "EF2Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu2/devices/Collin_TP_Lolo_RTU2 (4304)/objectsJSON/EF2Status.json",
+        "scheme": "file"
+      },
+      "date": "4/24/2024, 2:03:03 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "co,11171",
+      "objectName": "SpaceStatic_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu2/devices/Collin_TP_Lolo_RTU2 (4304)/objectsJSON/SpaceStatic_CO.json",
+        "scheme": "file"
+      },
+      "date": "4/24/2024, 2:07:37 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bi,5",
+      "objectName": "Smoke",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu2/devices/Collin_TP_Lolo_RTU2 (4304)/objectsJSON/Smoke.json",
+        "scheme": "file"
+      },
+      "date": "4/24/2024, 2:16:13 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bi,11",
+      "objectName": "EF2ZoneOcc",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu2/devices/Collin_TP_Lolo_RTU2 (4304)/objectsJSON/EF2ZoneOcc.json",
+        "scheme": "file"
+      },
+      "date": "4/24/2024, 2:17:46 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bi,10",
+      "objectName": "EF1ZoneOcc",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu2/devices/Collin_TP_Lolo_RTU2 (4304)/objectsJSON/EF1ZoneOcc.json",
+        "scheme": "file"
+      },
+      "date": "4/24/2024, 2:18:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bo,2",
+      "objectName": "ClgStg1",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu2/devices/Collin_TP_Lolo_RTU2 (4304)/objectsJSON/ClgStg1.json",
+        "scheme": "file"
+      },
+      "date": "4/24/2024, 2:19:55 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bo,3",
+      "objectName": "ClgStg2",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu2/devices/Collin_TP_Lolo_RTU2 (4304)/objectsJSON/ClgStg2.json",
+        "scheme": "file"
+      },
+      "date": "4/24/2024, 2:19:59 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bo,4",
+      "objectName": "HeatStg1",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu2/devices/Collin_TP_Lolo_RTU2 (4304)/objectsJSON/HeatStg1.json",
+        "scheme": "file"
+      },
+      "date": "4/24/2024, 2:21:53 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bo,5",
+      "objectName": "HeatStg2",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu2/devices/Collin_TP_Lolo_RTU2 (4304)/objectsJSON/HeatStg2.json",
+        "scheme": "file"
+      },
+      "date": "4/24/2024, 2:22:33 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,1",
+      "objectName": "DxDemand_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/DxDemand_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,2",
+      "objectName": "DxInterlocks_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/DxInterlocks_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,3",
+      "objectName": "Fan_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/Fan_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,4",
+      "objectName": "FaultDetection_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/FaultDetection_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,5",
+      "objectName": "General_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/General_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,6",
+      "objectName": "Heat_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/Heat_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,7",
+      "objectName": "HP1_ZoneeZNSDisplay1_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/HP1_ZoneeZNSDisplay1_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,8",
+      "objectName": "HP1_ZoneeZNSDisplay2_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/HP1_ZoneeZNSDisplay2_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,9",
+      "objectName": "Main_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/Main_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,10",
+      "objectName": "RTU2_ZoneeZNSDisplay1_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/RTU2_ZoneeZNSDisplay1_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,11",
+      "objectName": "RTU2_ZoneeZNSDisplay2_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/RTU2_ZoneeZNSDisplay2_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,12",
+      "objectName": "ZoneCritical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/ZoneCritical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,13",
+      "objectName": "ZoneDAT_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/ZoneDAT_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,14",
+      "objectName": "ZoneEconomizer_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/ZoneEconomizer_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,15",
+      "objectName": "ZoneGeneral_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/ZoneGeneral_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,16",
+      "objectName": "ZoneHtCl_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/ZoneHtCl_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,17",
+      "objectName": "ZoneOccMode_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/tp-lolo-2-20.5313/rtu3/devices/Collin_TP_Lolo_RTU3 (4304)/ZoneOccMode_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "4/29/2024, 9:18:11 AM",
+      "templateTriggered": false
+    }
+  ],
+  "devices": [
+    {
+      "number": 4304,
+      "objects": [
+        {
+          "id": "dbi,4304",
+          "name": "Database Information 4304",
+          "fileName": "Database Information 4304",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 4304",
+          "fileName": "Data Exchange Settings 4304",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "device,4304",
+          "name": "Collin_TP_Lolo_RTU2",
+          "fileName": "Collin_TP_Lolo_RTU2",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "evc,3",
+          "name": "Security",
+          "fileName": "Security",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "evc,4",
+          "name": "Critical",
+          "fileName": "Critical",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 4304",
+          "fileName": "Event and Alarm Settings 4304",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "lcd,101",
+          "name": "LinkLCD1",
+          "fileName": "LinkLCD1",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "lnk,101",
+          "name": "LINKnet Device 1",
+          "fileName": "LINKnet Device 1",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 4304",
+          "fileName": "BACnet Settings 4304",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 4304",
+          "fileName": "Priority Names 4304",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 4304",
+          "fileName": "Slave Device List 4304",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "sug,1",
+          "name": "Administrator",
+          "fileName": "Administrator",
+          "lastUpdate": "2024-04-24T16:57:23.350Z"
+        },
+        {
+          "id": "bdc,1",
+          "name": "ActiveInactive_BDC",
+          "fileName": "ActiveInactive_BDC",
+          "lastUpdate": "2024-04-24T16:59:48.006Z"
+        },
+        {
+          "id": "av,11257",
+          "name": "AH_CO2OATLimit",
+          "fileName": "AH_CO2OATLimit",
+          "lastUpdate": "2024-04-24T16:59:48.137Z"
+        },
+        {
+          "id": "aoc,16",
+          "name": "AHU5Damper_Pct_AOC",
+          "fileName": "AHU5Damper_Pct_AOC",
+          "lastUpdate": "2024-04-24T16:59:48.192Z"
+        },
+        {
+          "id": "aic,78",
+          "name": "Airflow_ 0to6400_CFM_AIC",
+          "fileName": "Airflow_ 0to6400_CFM_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.199Z"
+        },
+        {
+          "id": "aic,79",
+          "name": "Airflow_ 0to8000_CFM_AIC",
+          "fileName": "Airflow_ 0to8000_CFM_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.233Z"
+        },
+        {
+          "id": "aic,178",
+          "name": "Airflow_ 0to10874_CMH_AIC",
+          "fileName": "Airflow_ 0to10874_CMH_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.247Z"
+        },
+        {
+          "id": "aic,179",
+          "name": "Airflow_ 0to13592_CMH_AIC",
+          "fileName": "Airflow_ 0to13592_CMH_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.259Z"
+        },
+        {
+          "id": "aic,71",
+          "name": "Airflow_0to315_CFM_AIC",
+          "fileName": "Airflow_0to315_CFM_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.277Z"
+        },
+        {
+          "id": "aic,171",
+          "name": "Airflow_0to535_CMH_AIC",
+          "fileName": "Airflow_0to535_CMH_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.285Z"
+        },
+        {
+          "id": "aic,72",
+          "name": "Airflow_0to800_CFM_AIC",
+          "fileName": "Airflow_0to800_CFM_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.301Z"
+        },
+        {
+          "id": "aic,73",
+          "name": "Airflow_0to1300_CFM_AIC",
+          "fileName": "Airflow_0to1300_CFM_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.312Z"
+        },
+        {
+          "id": "aic,172",
+          "name": "Airflow_0to1359_CMH_AIC",
+          "fileName": "Airflow_0to1359_CMH_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.319Z"
+        },
+        {
+          "id": "aic,74",
+          "name": "Airflow_0to1790_CFM_AIC",
+          "fileName": "Airflow_0to1790_CFM_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.329Z"
+        },
+        {
+          "id": "aic,173",
+          "name": "Airflow_0to2209_CMH_AIC",
+          "fileName": "Airflow_0to2209_CMH_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.336Z"
+        },
+        {
+          "id": "aic,75",
+          "name": "Airflow_0to2750_CFM_AIC",
+          "fileName": "Airflow_0to2750_CFM_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.349Z"
+        },
+        {
+          "id": "aic,174",
+          "name": "Airflow_0to3041_CMH_AIC",
+          "fileName": "Airflow_0to3041_CMH_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.358Z"
+        },
+        {
+          "id": "aic,76",
+          "name": "Airflow_0to3200_CFM_AIC",
+          "fileName": "Airflow_0to3200_CFM_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.375Z"
+        },
+        {
+          "id": "aic,77",
+          "name": "Airflow_0to4000_CFM_AIC",
+          "fileName": "Airflow_0to4000_CFM_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.385Z"
+        },
+        {
+          "id": "aic,175",
+          "name": "Airflow_0to4672_CMH_AIC",
+          "fileName": "Airflow_0to4672_CMH_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.391Z"
+        },
+        {
+          "id": "aic,176",
+          "name": "Airflow_0to5437_CMH_AIC",
+          "fileName": "Airflow_0to5437_CMH_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.398Z"
+        },
+        {
+          "id": "aic,177",
+          "name": "Airflow_0to6796_CMH_AIC",
+          "fileName": "Airflow_0to6796_CMH_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.416Z"
+        },
+        {
+          "id": "aic,30",
+          "name": "Airflow_CFM_AIC",
+          "fileName": "Airflow_CFM_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.427Z"
+        },
+        {
+          "id": "aic,130",
+          "name": "Airflow_CMH_AIC",
+          "fileName": "Airflow_CMH_AIC",
+          "lastUpdate": "2024-04-24T16:59:48.437Z"
+        },
+        {
+          "id": "mic,12",
+          "name": "AirflowCalStatus AIC",
+          "fileName": "AirflowCalStatus AIC",
+          "lastUpdate": "2024-04-24T16:59:48.442Z"
+        },
+        {
+          "id": "mic,11",
+          "name": "AirflowStatus AIC",
+          "fileName": "AirflowStatus AIC",
+          "lastUpdate": "2024-04-24T16:59:48.449Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "AlarmNormal_BDC",
+          "fileName": "AlarmNormal_BDC",
+          "lastUpdate": "2024-04-24T16:59:48.455Z"
+        },
+        {
+          "id": "ai,8",
+          "name": "EF1Status",
+          "fileName": "EF1Status",
+          "lastUpdate": "2024-04-24T18:23:39.522Z"
+        },
+        {
+          "id": "ai,9",
+          "name": "EF2Status",
+          "fileName": "EF2Status",
+          "lastUpdate": "2024-04-24T20:02:21.541Z"
+        },
+        {
+          "id": "co,11171",
+          "name": "SpaceStatic_CO",
+          "fileName": "SpaceStatic_CO",
+          "lastUpdate": "2024-04-24T20:03:40.629Z"
+        },
+        {
+          "id": "ai,102",
+          "name": "HP1_ZoneTemp_Local",
+          "fileName": "HP1_ZoneTemp_Local",
+          "lastUpdate": "2024-04-24T20:59:17.995Z"
+        },
+        {
+          "id": "bi,5",
+          "name": "Smoke",
+          "fileName": "Smoke",
+          "lastUpdate": "2024-04-24T20:16:13.148Z"
+        },
+        {
+          "id": "bi,11",
+          "name": "EF2ZoneOcc",
+          "fileName": "EF2ZoneOcc",
+          "lastUpdate": "2024-04-24T20:17:46.306Z"
+        },
+        {
+          "id": "bi,10",
+          "name": "EF1ZoneOcc",
+          "fileName": "EF1ZoneOcc",
+          "lastUpdate": "2024-04-24T20:18:05.577Z"
+        },
+        {
+          "id": "bo,2",
+          "name": "ClgStg1",
+          "fileName": "ClgStg1",
+          "lastUpdate": "2024-04-24T20:19:55.439Z"
+        },
+        {
+          "id": "bo,3",
+          "name": "ClgStg2",
+          "fileName": "ClgStg2",
+          "lastUpdate": "2024-04-24T20:19:59.453Z"
+        },
+        {
+          "id": "bo,4",
+          "name": "HeatStg1",
+          "fileName": "HeatStg1",
+          "lastUpdate": "2024-04-24T20:21:53.193Z"
+        },
+        {
+          "id": "bo,5",
+          "name": "HeatStg2",
+          "fileName": "HeatStg2",
+          "lastUpdate": "2024-04-24T20:22:18.881Z"
+        },
+        {
+          "id": "bo,6",
+          "name": "EF2Enable",
+          "fileName": "EF2Enable",
+          "lastUpdate": "2024-04-24T20:44:05.317Z"
+        },
+        {
+          "id": "bo,7",
+          "name": "HP1_OADamper",
+          "fileName": "HP1_OADamper",
+          "lastUpdate": "2024-04-24T20:58:14.746Z"
+        },
+        {
+          "id": "ai,101",
+          "name": "RTU2_ZoneTemp_Local",
+          "fileName": "RTU2_ZoneTemp_Local",
+          "lastUpdate": "2024-04-24T20:58:47.040Z"
+        },
+        {
+          "id": "ao,8",
+          "name": "Economizer",
+          "fileName": "Economizer",
+          "lastUpdate": "2024-04-24T21:00:00.724Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "DxDemand_PG",
+          "fileName": "DxDemand_PG",
+          "lastUpdate": "2024-04-29T15:18:11.413Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "DxInterlocks_PG",
+          "fileName": "DxInterlocks_PG",
+          "lastUpdate": "2024-04-29T15:18:11.455Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "Fan_PG",
+          "fileName": "Fan_PG",
+          "lastUpdate": "2024-04-29T15:18:11.461Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "FaultDetection_PG",
+          "fileName": "FaultDetection_PG",
+          "lastUpdate": "2024-04-29T15:18:11.467Z"
+        },
+        {
+          "id": "pg,5",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-04-29T15:18:11.501Z"
+        },
+        {
+          "id": "pg,6",
+          "name": "Heat_PG",
+          "fileName": "Heat_PG",
+          "lastUpdate": "2024-04-29T15:18:11.513Z"
+        },
+        {
+          "id": "pg,7",
+          "name": "HP1_ZoneeZNSDisplay1_PG",
+          "fileName": "HP1_ZoneeZNSDisplay1_PG",
+          "lastUpdate": "2024-04-29T15:18:11.519Z"
+        },
+        {
+          "id": "pg,8",
+          "name": "HP1_ZoneeZNSDisplay2_PG",
+          "fileName": "HP1_ZoneeZNSDisplay2_PG",
+          "lastUpdate": "2024-04-29T15:18:11.535Z"
+        },
+        {
+          "id": "pg,9",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-04-29T15:18:11.552Z"
+        },
+        {
+          "id": "pg,10",
+          "name": "RTU2_ZoneeZNSDisplay1_PG",
+          "fileName": "RTU2_ZoneeZNSDisplay1_PG",
+          "lastUpdate": "2024-04-29T15:18:11.592Z"
+        },
+        {
+          "id": "pg,11",
+          "name": "RTU2_ZoneeZNSDisplay2_PG",
+          "fileName": "RTU2_ZoneeZNSDisplay2_PG",
+          "lastUpdate": "2024-04-29T15:18:11.610Z"
+        },
+        {
+          "id": "pg,12",
+          "name": "ZoneCritical_PG",
+          "fileName": "ZoneCritical_PG",
+          "lastUpdate": "2024-04-29T15:18:11.618Z"
+        },
+        {
+          "id": "pg,13",
+          "name": "ZoneDAT_PG",
+          "fileName": "ZoneDAT_PG",
+          "lastUpdate": "2024-04-29T15:18:11.627Z"
+        },
+        {
+          "id": "pg,14",
+          "name": "ZoneEconomizer_PG",
+          "fileName": "ZoneEconomizer_PG",
+          "lastUpdate": "2024-04-29T15:18:11.635Z"
+        },
+        {
+          "id": "pg,15",
+          "name": "ZoneGeneral_PG",
+          "fileName": "ZoneGeneral_PG",
+          "lastUpdate": "2024-04-29T15:18:11.643Z"
+        },
+        {
+          "id": "pg,16",
+          "name": "ZoneHtCl_PG",
+          "fileName": "ZoneHtCl_PG",
+          "lastUpdate": "2024-04-29T15:18:11.649Z"
+        },
+        {
+          "id": "pg,17",
+          "name": "ZoneOccMode_PG",
+          "fileName": "ZoneOccMode_PG",
+          "lastUpdate": "2024-04-29T15:18:11.655Z"
+        }
+      ]
+    }
+  ]
+}

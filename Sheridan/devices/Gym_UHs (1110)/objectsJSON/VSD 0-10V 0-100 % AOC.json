@@ -2,7 +2,7 @@
   "displayName": "VSD 0-10V 0-100 % AOC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output-configuration,3"
+    "value": "aoc,3"
   },
   "object-type": {
     "$base": "Enumerated",
