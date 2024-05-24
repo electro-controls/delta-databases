@@ -1,0 +1,138 @@
+{
+  "name": "Bench",
+  "ipAddress": "http://localhost",
+  "uploadQueue": [],
+  "devices": [
+    {
+      "number": 4304,
+      "objects": [
+        {
+          "id": "dbi,4304",
+          "name": "Database Information 4304",
+          "fileName": "Database Information 4304",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 4304",
+          "fileName": "Data Exchange Settings 4304",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "device,4304",
+          "name": "Collin_DMA_AHU",
+          "fileName": "Collin_DMA_AHU",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "evc,3",
+          "name": "Security (2)",
+          "fileName": "Security (2)",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "evc,4",
+          "name": "Critical",
+          "fileName": "Critical",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 4304",
+          "fileName": "Event and Alarm Settings 4304",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "lcd,101",
+          "name": "LinkLCD1",
+          "fileName": "LinkLCD1",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "lnk,101",
+          "name": "LINKnet Device 1",
+          "fileName": "LINKnet Device 1",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 4304",
+          "fileName": "BACnet Settings 4304",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 4304",
+          "fileName": "Priority Names 4304",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 4304",
+          "fileName": "Slave Device List 4304",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "_SUA1",
+          "fileName": "_SUA1",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        },
+        {
+          "id": "sug,1",
+          "name": "Administrator",
+          "fileName": "Administrator",
+          "lastUpdate": "2024-05-24T22:22:31.651Z"
+        }
+      ]
+    }
+  ]
+}
