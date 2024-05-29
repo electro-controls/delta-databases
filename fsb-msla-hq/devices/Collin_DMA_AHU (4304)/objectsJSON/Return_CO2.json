@@ -19,7 +19,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "fault;out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
@@ -31,7 +31,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault;out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -39,7 +39,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "ppm"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -55,19 +55,19 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "not-available"
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": 1
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "CO2 ppm 0-10v 0-2000 AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "200"
+    "value": "268"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -75,11 +75,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "2000"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.02442"
+    "value": "0.4884"
   },
   "cov-increment": {
     "$base": "Real",
@@ -93,7 +93,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "15375"
+      "value": "230991"
     }
   },
   "ad-value": {
