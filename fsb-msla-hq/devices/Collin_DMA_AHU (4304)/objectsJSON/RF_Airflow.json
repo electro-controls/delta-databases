@@ -1,8 +1,8 @@
 {
-  "displayName": "ReliefDuctStatic",
+  "displayName": "RF_Airflow",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,1"
+    "value": "analog-input,8"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,27 +10,27 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReliefDuctStatic"
+    "value": "RF_Airflow"
   },
   "description": {
     "$base": "String",
-    "value": "16Dec19 Phil - suspect sensor has an issue as it is reading positive when it should be negative. Pressure did not change when relief damper was opened. \n \nDM 10_30_19 zeroed out sensor and the blew in high port and verifed readings on LCD match our input"
+    "value": "11/15/2019 dmp:  adjusted AIC to match supply fans at min and max VAV box airflow settings, and when relief damper is wide open and return damper closed \n \n11-22-2019 dmp cal notes: \nw/ supply serving max VAV cfms, relief damper open, return shut, OA open: \n   TAB read::  11560cfm  \n   Electro read:  12170cfm \n     cal offset = -610 (offset) entered into AIC at 3.1V  \n \n18Nov19 Phil I put a temporary calibration point on the AIC because we were surging through the return fan during unoc simulation. This will need to be removed when we are ready to calibrate for reals"
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "fault;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "4.956"
+    "value": "6281.52"
   },
   "last-value": {
     "$base": "Real",
-    "value": "4.956"
+    "value": "6281.52"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "inWC"
+    "value": "CFM"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,11"
+    "value": "aic,10"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,7 +54,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "not-available"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -62,27 +62,27 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "ReliefStatic_AIC"
+    "value": "RF Airflow  CFM AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "356"
+    "value": "373"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": "-5"
+    "value": 0
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "5"
+    "value": "19500"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.002442"
+    "value": "4.7619"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "0.1"
+    "value": "5"
   },
   "ad-filter": {
     "$base": "Unsigned",
@@ -92,16 +92,16 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "5259"
+      "value": "5267"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "4095"
+    "value": "1507"
   },
   "calibration": {
     "$base": "Real",
-    "value": "-0.044"
+    "value": 0
   },
   "fixed-point": {
     "$base": "Boolean",
@@ -109,7 +109,7 @@
   },
   "decimal-places": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "external-control": {
     "$base": "Boolean",

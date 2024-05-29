@@ -1,8 +1,8 @@
 {
-  "displayName": "RAT",
+  "displayName": "SF_Airflow",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,101"
+    "value": "analog-input,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RAT"
+    "value": "SF_Airflow"
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "11/25/2019 dmp:  plugged in and verified accuracy of accutrol configuration.  found foam in right SF airflow inlet sensor blocking bluff body. more closedly matches T&B readings now.  adjusted AIC to match VAV box readings at max and min \n \n11-22-2019 dmp cal notes: \n   TAB read:14750 cfm \n   sum of boxes: 14730  \n   Electro read: 10028 cfm \n     cal offset = +4722 (offset) entered into AIC at 2.5V"
   },
   "flags": {
     "$base": "BitString",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "93.2049"
+    "value": "4.956"
   },
   "last-value": {
     "$base": "Real",
-    "value": "93.2049"
+    "value": "9893.21"
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "°F"
+    "value": "inWC"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,1"
+    "value": "aic,9"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -58,46 +58,46 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": 1
   },
   "device-type": {
     "$base": "String",
-    "value": "Temperature DegF 10k Thermistor AIC"
+    "value": "ReliefStatic_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "385"
+    "value": "266"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": "-58"
+    "value": "-5"
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "302"
+    "value": "5"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.0879121"
+    "value": "0.002442"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "1"
+    "value": "5"
   },
   "ad-filter": {
     "$base": "Unsigned",
-    "value": "80"
+    "value": "99"
   },
   "filter-delay-timer": {
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "5280"
+      "value": "212624"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1689"
+    "value": "4095"
   },
   "calibration": {
     "$base": "Real",

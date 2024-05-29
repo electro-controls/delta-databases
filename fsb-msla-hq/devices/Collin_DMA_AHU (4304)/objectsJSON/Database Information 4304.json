@@ -65,38 +65,6 @@
       "$base": "ObjectIdentifier",
       "value": "analog-input,13"
     },
-    "9": {
-      "$base": "ObjectIdentifier",
-      "value": "analog-input,14"
-    },
-    "10": {
-      "$base": "ObjectIdentifier",
-      "value": "analog-input,15"
-    },
-    "11": {
-      "$base": "ObjectIdentifier",
-      "value": "analog-input,16"
-    },
-    "12": {
-      "$base": "ObjectIdentifier",
-      "value": "analog-input,101"
-    },
-    "13": {
-      "$base": "ObjectIdentifier",
-      "value": "analog-input,108"
-    },
-    "14": {
-      "$base": "ObjectIdentifier",
-      "value": "analog-input,109"
-    },
-    "15": {
-      "$base": "ObjectIdentifier",
-      "value": "analog-input,114"
-    },
-    "16": {
-      "$base": "ObjectIdentifier",
-      "value": "analog-input,116"
-    },
     "17": {
       "$base": "ObjectIdentifier",
       "value": "analog-output,3"

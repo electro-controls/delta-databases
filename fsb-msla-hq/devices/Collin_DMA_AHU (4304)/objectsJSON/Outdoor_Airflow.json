@@ -1,8 +1,9 @@
 {
-  "displayName": "SFRight_Current",
+  "$base": "Object",
+  "displayName": "Outdoor_Airflow",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,7"
+    "value": "analog-input,12"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,23 +11,23 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SFRight_Current"
+    "value": "Outdoor_Airflow"
   },
   "description": {
     "$base": "String",
-    "value": "DM 10_30_19  field verifed using an amp clamp on same wire as the CT    at 50 percent speed is was reading 3.6 amps   same as the input \n \nCT is set to 30 and jumper on controller is set to 10 vlt"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": "fault;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "4.7906"
+    "value": 0
   },
   "last-value": {
     "$base": "Real",
-    "value": "4.7906"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,15 +39,15 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "A"
+    "value": "CFM"
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,38"
+    "value": "aic,43"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,11 +63,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "SFCurrent AIC"
+    "value": "OA Airflow  CFM AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "353"
+    "value": "274"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,15 +75,15 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "60"
+    "value": "19500"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.014652"
+    "value": "4.7619"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "0.001"
+    "value": "1"
   },
   "ad-filter": {
     "$base": "Unsigned",
@@ -92,12 +93,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "5249"
+      "value": "220217"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "266"
+    "value": 0
   },
   "calibration": {
     "$base": "Real",
@@ -109,7 +110,7 @@
   },
   "decimal-places": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "external-control": {
     "$base": "Boolean",
@@ -181,7 +182,7 @@
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "lighting"
+    "value": "hvac"
   },
   "event-detection-enable": {
     "$base": "Boolean",

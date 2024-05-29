@@ -1,8 +1,9 @@
 {
-  "displayName": "ReturnLoStatic",
+  "$base": "Object",
+  "displayName": "RF_VFD_Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-input,11"
+    "value": "binary-input,7"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,15 +11,15 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReturnLoStatic"
+    "value": "RF_VFD_Status"
   },
   "description": {
     "$base": "String",
-    "value": "DM 11_12_19  tested by sucking in low port and watching the vfds go into alarm and our status changed"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": "fault;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -26,7 +27,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -34,11 +35,11 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,2"
+    "value": "bdc,3"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,7 +55,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Alarm/Normal BDC"
+    "value": ""
   },
   "polarity": {
     "$base": "Enumerated",
@@ -62,38 +63,38 @@
   },
   "active-text": {
     "$base": "String",
-    "value": "Alarm"
+    "value": "ON"
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Normal"
+    "value": "OFF"
   },
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2019-12-12T19:02:13.300000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2019-12-12T19:02:13.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2019-12-12T19:02:13.300000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "1"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2019-07-15T16:47:00.400000-06:00"
+    "value": "2000-01-01T18:06:21.100000-07:00"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "369"
+    "value": "277"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -145,7 +146,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Normal"
+    "value": "Inactive"
   },
   "hal-flags": {
     "$base": "BitString",

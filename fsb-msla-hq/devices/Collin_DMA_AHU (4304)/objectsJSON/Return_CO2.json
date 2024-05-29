@@ -1,8 +1,9 @@
 {
-  "displayName": "ReturnAirflow",
+  "$base": "Object",
+  "displayName": "Return_CO2",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,15"
+    "value": "analog-input,14"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,27 +11,27 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReturnAirflow"
+    "value": "Return_CO2"
   },
   "description": {
     "$base": "String",
-    "value": "11/15/2019 dmp:  adjusted AIC to match supply fans at min and max VAV box airflow settings, and when relief damper is wide open and return damper closed \n \n11-22-2019 dmp cal notes: \nw/ supply serving max VAV cfms, relief damper open, return shut, OA open: \n   TAB read::  11560cfm  \n   Electro read:  12170cfm \n     cal offset = -610 (offset) entered into AIC at 3.1V  \n \n18Nov19 Phil I put a temporary calibration point on the AIC because we were surging through the return fan during unoc simulation. This will need to be removed when we are ready to calibrate for reals"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;not-commissioned"
+    "value": "not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "6281.52"
+    "value": 0
   },
   "last-value": {
     "$base": "Real",
-    "value": "6281.52"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +39,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "CFM"
+    "value": "%"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -46,7 +47,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,10"
+    "value": "aic,2"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,7 +55,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "not-available"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -62,11 +63,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "RF Airflow  CFM AIC"
+    "value": ""
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "373"
+    "value": "200"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,30 +75,30 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "19500"
+    "value": "100"
   },
   "resolution": {
     "$base": "Real",
-    "value": "4.7619"
+    "value": "0.02442"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "5"
+    "value": "1"
   },
   "ad-filter": {
     "$base": "Unsigned",
-    "value": "99"
+    "value": "80"
   },
   "filter-delay-timer": {
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "5267"
+      "value": "15375"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1507"
+    "value": 0
   },
   "calibration": {
     "$base": "Real",

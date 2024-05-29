@@ -11,9 +11,14 @@ If PowerUp Then //allow technician to reset by powering off and on
     'FreezeMode' = Off
 End If
 
+// todo make these
+'RF_VFD_Status' // bi7
+'Outdoor_Airflow' // ai12
+'Building_Pressure' // ai13
+'Return_CO2' // ai14
 
 
- If 'FreezeMode' Or 'Smoke' Or 'SupplyHiStatic' Or 'ReturnLoStatic' Then
+ If 'FreezeMode' Or 'Smoke' Or 'Supply_Duct_Hi-Limit' Or 'Return_Duct_Low-Limit' Then
       'SF_Enable' = Off
       'RF_Enable' = Off
       'SF_Speed' = 0

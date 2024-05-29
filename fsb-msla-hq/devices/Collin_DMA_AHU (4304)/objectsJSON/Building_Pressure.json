@@ -1,8 +1,9 @@
 {
-  "displayName": "SupplyAirflow",
+  "$base": "Object",
+  "displayName": "Building_Pressure",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,14"
+    "value": "analog-input,13"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +11,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SupplyAirflow"
+    "value": "Building_Pressure"
   },
   "description": {
     "$base": "String",
-    "value": "11/25/2019 dmp:  plugged in and verified accuracy of accutrol configuration.  found foam in right SF airflow inlet sensor blocking bluff body. more closedly matches T&B readings now.  adjusted AIC to match VAV box readings at max and min \n \n11-22-2019 dmp cal notes: \n   TAB read:14750 cfm \n   sum of boxes: 14730  \n   Electro read: 10028 cfm \n     cal offset = +4722 (offset) entered into AIC at 2.5V"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -22,11 +23,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "9893.21"
+    "value": 0
   },
   "last-value": {
     "$base": "Real",
-    "value": "9893.21"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +39,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "CFM"
+    "value": "inWC"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -46,7 +47,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,9"
+    "value": "aic,5"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,11 +63,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "SF Airflow  CFM AIC"
+    "value": "Pressure inH20 4-20mA 0_5 AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "373"
+    "value": "270"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,30 +75,30 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "19500"
+    "value": "5"
   },
   "resolution": {
     "$base": "Real",
-    "value": "4.7619"
+    "value": "0.001221"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "5"
+    "value": "1"
   },
   "ad-filter": {
     "$base": "Unsigned",
-    "value": "99"
+    "value": "80"
   },
   "filter-delay-timer": {
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "5267"
+      "value": "220673"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "2157"
+    "value": 0
   },
   "calibration": {
     "$base": "Real",

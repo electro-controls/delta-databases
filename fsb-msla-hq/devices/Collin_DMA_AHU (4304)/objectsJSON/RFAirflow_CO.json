@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "80.3527"
+    "value": "100"
   },
   "status-flags": {
     "$base": "BitString",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "407"
+    "value": "261"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -78,7 +78,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-input,15"
+      "value": "analog-input,8"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",

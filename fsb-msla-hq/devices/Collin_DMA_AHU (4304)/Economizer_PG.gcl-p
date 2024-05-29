@@ -74,7 +74,7 @@ If ('Mode' = 1) And 'RunStatusInt' Then
     'MinOAAirflow_CO.Bias' = 50
 End If
 
-'RFairflow_EffSp' = ('SupplyAirflow' - 'MinOA_EffSp')
+'RFairflow_EffSp' = ('SF_Airflow' - 'MinOA_EffSp')
 
 'MinOA_EffSp' = 'EconMinOA_Sp' * ('MATLimit_CO' * 0.01) * ('EconRampPct' * 0.01)
 
