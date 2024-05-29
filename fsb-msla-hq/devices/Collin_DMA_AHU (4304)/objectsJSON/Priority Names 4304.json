@@ -27,7 +27,7 @@
     },
     "4": {
       "$base": "String",
-      "value": "LINKnet Default Value"
+      "value": "Priority 4"
     },
     "5": {
       "$base": "String",
@@ -35,11 +35,11 @@
     },
     "6": {
       "$base": "String",
-      "value": "Min On/Off, Startup Delay"
+      "value": "Minimum On/Off"
     },
     "7": {
       "$base": "String",
-      "value": "Door/Elevator Controller"
+      "value": "Priority 7"
     },
     "8": {
       "$base": "String",
@@ -47,19 +47,19 @@
     },
     "9": {
       "$base": "String",
-      "value": "BO Sequencing Delay"
+      "value": "Priority 9"
     },
     "10": {
       "$base": "String",
-      "value": "GCL+"
+      "value": "GCL +"
     },
     "11": {
       "$base": "String",
-      "value": "Control Loop/Flick Warn"
+      "value": "Priority 11"
     },
     "12": {
       "$base": "String",
-      "value": "Schedule/Override"
+      "value": "Priority 12"
     },
     "13": {
       "$base": "String",
@@ -67,7 +67,7 @@
     },
     "14": {
       "$base": "String",
-      "value": "Lighting Group"
+      "value": "Priority 14"
     },
     "15": {
       "$base": "String",

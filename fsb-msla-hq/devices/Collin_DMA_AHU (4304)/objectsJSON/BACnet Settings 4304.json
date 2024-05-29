@@ -58,7 +58,7 @@
       },
       "maxDevices": {
         "$base": "Unsigned",
-        "value": "100"
+        "value": "300"
       },
       "maxNetworks": {
         "$base": "Unsigned",
@@ -66,7 +66,7 @@
       },
       "maxPackets": {
         "$base": "Unsigned",
-        "value": "40"
+        "value": "42"
       },
       "timerInterval": {
         "$base": "Unsigned",
@@ -106,7 +106,7 @@
     "$base": "Sequence",
     "totalSent": {
       "$base": "Unsigned",
-      "value": "1258"
+      "value": "2066"
     },
     "sentByApp": {
       "$base": "Unsigned",
@@ -122,7 +122,7 @@
     },
     "totalRcvd": {
       "$base": "Unsigned",
-      "value": "590"
+      "value": "1126"
     },
     "rcvdByApp": {
       "$base": "Unsigned",
@@ -165,11 +165,11 @@
     },
     "middle": {
       "$base": "Unsigned",
-      "value": 0
+      "value": "755543616"
     },
     "last": {
       "$base": "Unsigned",
-      "value": 0
+      "value": "140"
     }
   },
   "basic-adapter": {
@@ -201,7 +201,7 @@
       },
       "driverVersion": {
         "$base": "Unsigned",
-        "value": 0
+        "value": "6"
       },
       "hardwarePort": {
         "$base": "Unsigned",
@@ -211,7 +211,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "6199"
+          "value": "10720"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -219,7 +219,7 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "60894"
+          "value": "103631"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
@@ -263,7 +263,7 @@
       },
       "driverVersion": {
         "$base": "Unsigned",
-        "value": 0
+        "value": "6"
       },
       "hardwarePort": {
         "$base": "Unsigned",
@@ -273,7 +273,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "18200"
+          "value": "30434"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -281,7 +281,7 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "29755"
+          "value": "50021"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
@@ -382,7 +382,7 @@
   },
   "free-que": {
     "$base": "Unsigned",
-    "value": "28"
+    "value": "25"
   },
   "short-free-que": {
     "$base": "Unsigned",
@@ -390,11 +390,11 @@
   },
   "transmit-1-que": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": 0
   },
   "transmit-2-que": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "8"
   },
   "transmit-3-que": {
     "$base": "Unsigned",

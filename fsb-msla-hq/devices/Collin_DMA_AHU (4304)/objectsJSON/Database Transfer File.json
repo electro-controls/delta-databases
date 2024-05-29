@@ -34,7 +34,7 @@
   },
   "modification-date": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:01:12.700000-07:00"
+    "value": "2000-01-01T12:08:08.600000-07:00"
   },
   "archive": {
     "$base": "Boolean",
@@ -58,7 +58,7 @@
   },
   "modification-date-internal": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "*-*-*-*T*:*:*.00"
   },
   "max-file-size": {
     "$base": "Unsigned",

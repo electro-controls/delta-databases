@@ -1,0 +1,54 @@
+If 'DAH_RemSp' >= 0 Then
+    'DAH_EffSp' = 'DAH_RemSp'
+  Else
+    'DAH_EffSp' = 'DAH_LocSp'
+End If
+
+
+'DAH_LocSp' = Scale ('RAH_CO', 0, 0, 'DAHResetLow_Sp', 100, 'DAHResetHigh_Sp')
+
+If ('SupplyDuctStatic' > 0.1) And 'RunStatusInt' And ('Mode' = 1) Then
+    'HumidifierEnable' = On
+  Else
+    'RAH_CO.Bias' = 1
+    'HumidifierEnable' = Off
+End If
+
+If 'HumidifierEnable' Then
+    'HumDemand' = Scale ('DAH_CO', 0, 0, 0, 100, 'HumRamp')
+    DoEvery 10S
+      'HumRamp' = Min (100, 'HumRamp' + (100 / ('HumRamp_Sp' * 6)))
+    End Do
+  Else
+    'HumDemand' = 0
+    'DAH_CO.Bias' = 1
+    'HumRamp' = 0
+End If
+
+
+//Sensor faults - referenced on critical page
+If 'RAH' < 3 Then
+    'RAHLowFault' = On
+End If
+If (('RAH' > 5) And 'RAHLowFault') OnFor 10M Then
+    'RAHLowFault' = Off
+End If
+If 'RAH' > 80 Then
+    'RAHHighFault' = On
+End If
+If (('RAH' < 70) And 'RAHHighFault') OnFor 10M Then
+    'RAHHighFault' = Off
+End If
+
+If ('DAH' < 3) Then
+    'DAHLowFault' = On
+End If
+If (('DAH' > 5) And 'DAHLowFault') OnFor 10M Then
+    'DAHLowFault' = Off
+End If
+If ('DAH' > 85) Then
+    'DAHHighFault' = On
+End If
+If (('DAH' < 70) And 'DAHHighFault') OnFor 10M Then
+    'DAHHighFault' = Off
+End If

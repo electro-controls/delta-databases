@@ -1,0 +1,970 @@
+{
+  "displayName": "DEL1__AV91_85",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "del,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "data-exchange-local-data"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "DEL1__AV91_85"
+  },
+  "exchange-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "exchange-type": {
+    "$base": "Enumerated",
+    "value": "cov-unconfirmed"
+  },
+  "last-error": {
+    "$base": "Signed",
+    "value": 0
+  },
+  "local-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "device,4304"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,91"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "present-value",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "local-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "local-value": {
+    "$base": "Choice",
+    "real": {
+      "$base": "Real",
+      "value": "64.7221"
+    }
+  },
+  "subscribers": {
+    "1": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x01"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x02"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x03"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x04"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "5": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x05"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "6": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x06"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "7": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x07"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "8": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x08"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "9": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x09"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "10": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x0a"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "11": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x0b"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "12": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x0c"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "13": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x0d"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "14": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x0e"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "15": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x0f"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "16": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x10"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "17": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x11"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "18": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x12"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "19": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x13"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "20": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x14"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "21": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x15"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "22": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x16"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "23": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x17"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "24": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x1a"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "25": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x19"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "36002"
+        }
+      }
+    },
+    "$base": "Array"
+  },
+  "last-sent": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "send-frequency": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": 0
+  }
+}

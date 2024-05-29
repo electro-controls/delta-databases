@@ -78,21 +78,141 @@
     "value": 0
   },
   "cob-long-format": {
+    "1": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "2": {
+      "$base": "String",
+      "value": "[6] - [9]"
+    },
+    "3": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "4": {
+      "$base": "String",
+      "value": "[7]"
+    },
+    "5": {
+      "$base": "String",
+      "value": "[8]"
+    },
     "$base": "Array"
   },
   "cos-long-format": {
+    "1": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "2": {
+      "$base": "String",
+      "value": "[6] - [9]"
+    },
+    "3": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "4": {
+      "$base": "String",
+      "value": "[7]"
+    },
+    "5": {
+      "$base": "String",
+      "value": "[8]"
+    },
     "$base": "Array"
   },
   "cov-long-format": {
+    "1": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "2": {
+      "$base": "String",
+      "value": "[6] - [9]"
+    },
+    "3": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "4": {
+      "$base": "String",
+      "value": "[7]"
+    },
+    "5": {
+      "$base": "String",
+      "value": "[8]"
+    },
     "$base": "Array"
   },
   "command-failure-long-format": {
+    "1": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "2": {
+      "$base": "String",
+      "value": "[6] - [9]"
+    },
+    "3": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "4": {
+      "$base": "String",
+      "value": "[7]"
+    },
+    "5": {
+      "$base": "String",
+      "value": "[8]"
+    },
     "$base": "Array"
   },
   "floating-limit-long-format": {
+    "1": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "2": {
+      "$base": "String",
+      "value": "[6] - [9]"
+    },
+    "3": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "4": {
+      "$base": "String",
+      "value": "[7]"
+    },
+    "5": {
+      "$base": "String",
+      "value": "[8]"
+    },
     "$base": "Array"
   },
   "out-of-range-long-format": {
+    "1": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "2": {
+      "$base": "String",
+      "value": "[6] - [9]"
+    },
+    "3": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "4": {
+      "$base": "String",
+      "value": "[7]"
+    },
+    "5": {
+      "$base": "String",
+      "value": "[8]"
+    },
     "$base": "Array"
   },
   "proprietary-long-format": {
@@ -102,24 +222,68 @@
     "$base": "Array"
   },
   "v2-long-format": {
+    "1": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "2": {
+      "$base": "String",
+      "value": "[6] - [9]"
+    },
+    "3": {
+      "$base": "String",
+      "value": "----------------------------------------"
+    },
+    "4": {
+      "$base": "String",
+      "value": "[7]"
+    },
+    "5": {
+      "$base": "String",
+      "value": "[8] - [12] ([14])"
+    },
     "$base": "Array"
   },
   "cob-short-format": {
+    "1": {
+      "$base": "String",
+      "value": "[6] - [8]"
+    },
     "$base": "Array"
   },
   "cos-short-format": {
+    "1": {
+      "$base": "String",
+      "value": "[6] - [8]"
+    },
     "$base": "Array"
   },
   "cov-short-format": {
+    "1": {
+      "$base": "String",
+      "value": "[6] - [8]"
+    },
     "$base": "Array"
   },
   "command-failure-short-format": {
+    "1": {
+      "$base": "String",
+      "value": "[6] - [8]"
+    },
     "$base": "Array"
   },
   "floating-limit-short-format": {
+    "1": {
+      "$base": "String",
+      "value": "[6] - [8]"
+    },
     "$base": "Array"
   },
   "out-of-range-short-format": {
+    "1": {
+      "$base": "String",
+      "value": "[6] - [8]"
+    },
     "$base": "Array"
   },
   "proprietary-short-format": {
