@@ -1,5 +1,5 @@
 {
-  "displayName": "HumRamp_Sp (2)",
+  "displayName": "HumRamp_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,76"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HumRamp_Sp (2)"
+    "value": "HumRamp_Sp"
   },
   "description": {
     "$base": "String",

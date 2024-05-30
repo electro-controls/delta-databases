@@ -1,5 +1,5 @@
 {
-  "displayName": "ItsCold (2)",
+  "displayName": "ItsCold",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,60"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ItsCold (2)"
+    "value": "ItsCold"
   },
   "description": {
     "$base": "String",

@@ -1,5 +1,5 @@
 {
-  "displayName": "SF_Speed (2)",
+  "displayName": "SF_Speed",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-output,3"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SF_Speed (2)"
+    "value": "SF_Speed"
   },
   "description": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "SF VFD 0-10VDC to 0-100% AOC (2)"
+    "value": "SF VFD 0-10VDC to 0-100% AOC"
   },
   "min-pres-value": {
     "$base": "Real",

@@ -1,5 +1,5 @@
 {
-  "displayName": "MATLimit_Sp (2)",
+  "displayName": "MATLimit_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,3"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "MATLimit_Sp (2)"
+    "value": "MATLimit_Sp"
   },
   "description": {
     "$base": "String",

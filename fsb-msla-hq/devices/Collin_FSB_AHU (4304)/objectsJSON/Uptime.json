@@ -1,5 +1,5 @@
 {
-  "displayName": "Uptime (2)",
+  "displayName": "Uptime",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,98"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Uptime (2)"
+    "value": "Uptime"
   },
   "description": {
     "$base": "String",

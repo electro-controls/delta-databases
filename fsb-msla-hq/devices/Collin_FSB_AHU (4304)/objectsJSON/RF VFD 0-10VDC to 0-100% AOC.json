@@ -1,5 +1,5 @@
 {
-  "displayName": "RF VFD 0-10VDC to 0-100% AOC (2)",
+  "displayName": "RF VFD 0-10VDC to 0-100% AOC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aoc,8"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RF VFD 0-10VDC to 0-100% AOC (2)"
+    "value": "RF VFD 0-10VDC to 0-100% AOC"
   },
   "description": {
     "$base": "String",

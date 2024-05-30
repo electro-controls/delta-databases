@@ -1,5 +1,5 @@
 {
-  "displayName": "HumidifierEnable (2)",
+  "displayName": "HumidifierEnable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-output,11"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HumidifierEnable (2)"
+    "value": "HumidifierEnable"
   },
   "description": {
     "$base": "String",
@@ -42,7 +42,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive BDC (2)"
+    "value": "Active/Inactive BDC"
   },
   "event-state": {
     "$base": "Enumerated",

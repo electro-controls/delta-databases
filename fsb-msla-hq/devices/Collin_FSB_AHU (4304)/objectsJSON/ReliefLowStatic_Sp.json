@@ -1,5 +1,5 @@
 {
-  "displayName": "ReliefLowStatic_Sp (2)",
+  "displayName": "ReliefLowStatic_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,44"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReliefLowStatic_Sp (2)"
+    "value": "ReliefLowStatic_Sp"
   },
   "description": {
     "$base": "String",

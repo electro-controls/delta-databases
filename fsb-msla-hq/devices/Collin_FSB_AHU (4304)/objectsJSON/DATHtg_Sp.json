@@ -1,5 +1,5 @@
 {
-  "displayName": "DATHtg_Sp (2)",
+  "displayName": "DATHtg_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,2"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DATHtg_Sp (2)"
+    "value": "DATHtg_Sp"
   },
   "description": {
     "$base": "String",

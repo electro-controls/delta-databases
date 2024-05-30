@@ -1,5 +1,5 @@
 {
-  "displayName": "MATLimit_CO (2)",
+  "displayName": "MATLimit_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "loop,3"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "MATLimit_CO (2)"
+    "value": "MATLimit_CO"
   },
   "description": {
     "$base": "String",

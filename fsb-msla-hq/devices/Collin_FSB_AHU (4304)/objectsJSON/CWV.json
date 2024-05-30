@@ -1,8 +1,8 @@
 {
-  "displayName": "CWV (2)",
+  "displayName": "CWV",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output,8"
+    "value": "analog-output,9"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CWV (2)"
+    "value": "CWV"
   },
   "description": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "CWV AOC (2)"
+    "value": "CWV AOC"
   },
   "min-pres-value": {
     "$base": "Real",

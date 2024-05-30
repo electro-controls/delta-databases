@@ -1,5 +1,5 @@
 {
-  "displayName": "SFCurrent AIC (2)",
+  "displayName": "SFCurrent AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,38"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SFCurrent AIC (2)"
+    "value": "SFCurrent AIC"
   },
   "description": {
     "$base": "String",

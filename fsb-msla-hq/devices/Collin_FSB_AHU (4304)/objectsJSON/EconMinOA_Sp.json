@@ -1,5 +1,5 @@
 {
-  "displayName": "EconMinOA_Sp (2)",
+  "displayName": "EconMinOA_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,24"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "EconMinOA_Sp (2)"
+    "value": "EconMinOA_Sp"
   },
   "description": {
     "$base": "String",

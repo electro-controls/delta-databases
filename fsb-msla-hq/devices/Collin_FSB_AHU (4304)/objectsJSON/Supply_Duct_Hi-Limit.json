@@ -54,7 +54,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Alarm/Normal BDC (2)"
+    "value": "Alarm/Normal BDC"
   },
   "polarity": {
     "$base": "Enumerated",

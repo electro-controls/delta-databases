@@ -1,5 +1,5 @@
 {
-  "displayName": "Building_Pressure (2)",
+  "displayName": "Building_Pressure",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-input,13"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Building_Pressure (2)"
+    "value": "Building_Pressure"
   },
   "description": {
     "$base": "String",

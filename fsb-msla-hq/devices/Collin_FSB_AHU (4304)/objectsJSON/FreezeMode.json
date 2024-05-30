@@ -1,5 +1,5 @@
 {
-  "displayName": "FreezeMode (2)",
+  "displayName": "FreezeMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,5"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "FreezeMode (2)"
+    "value": "FreezeMode"
   },
   "description": {
     "$base": "String",

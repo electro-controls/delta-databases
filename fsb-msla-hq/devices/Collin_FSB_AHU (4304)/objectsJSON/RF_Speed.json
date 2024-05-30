@@ -1,5 +1,5 @@
 {
-  "displayName": "RF_Speed (2)",
+  "displayName": "RF_Speed",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-output,4"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RF_Speed (2)"
+    "value": "RF_Speed"
   },
   "description": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "RF VFD 0-10VDC to 0-100% AOC (2)"
+    "value": "RF VFD 0-10VDC to 0-100% AOC"
   },
   "min-pres-value": {
     "$base": "Real",

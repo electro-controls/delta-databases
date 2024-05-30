@@ -1,5 +1,5 @@
 {
-  "displayName": "RFairflow_EffSp (2)",
+  "displayName": "RFairflow_EffSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,19"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RFairflow_EffSp (2)"
+    "value": "RFairflow_EffSp"
   },
   "description": {
     "$base": "String",

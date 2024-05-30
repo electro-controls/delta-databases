@@ -1,5 +1,5 @@
 {
-  "displayName": "Clean_Dirty (2)",
+  "displayName": "Clean_Dirty",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "bdc,13"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Clean_Dirty (2)"
+    "value": "Clean_Dirty"
   },
   "description": {
     "$base": "String",

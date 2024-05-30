@@ -1,5 +1,5 @@
 {
-  "displayName": "RAH_Sp (2)",
+  "displayName": "RAH_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,70"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RAH_Sp (2)"
+    "value": "RAH_Sp"
   },
   "description": {
     "$base": "String",

@@ -1,5 +1,5 @@
 {
-  "displayName": "RunStatusInt (2)",
+  "displayName": "RunStatusInt",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,2"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RunStatusInt (2)"
+    "value": "RunStatusInt"
   },
   "description": {
     "$base": "String",

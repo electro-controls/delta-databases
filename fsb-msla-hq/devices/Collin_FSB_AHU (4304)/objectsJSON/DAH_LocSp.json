@@ -1,5 +1,5 @@
 {
-  "displayName": "DAH_LocSp (2)",
+  "displayName": "DAH_LocSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,72"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DAH_LocSp (2)"
+    "value": "DAH_LocSp"
   },
   "description": {
     "$base": "String",

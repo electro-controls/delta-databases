@@ -1,5 +1,5 @@
 {
-  "displayName": "FinalfilterDp_AIC (2)",
+  "displayName": "FinalfilterDp_AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,42"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "FinalfilterDp_AIC (2)"
+    "value": "FinalfilterDp_AIC"
   },
   "description": {
     "$base": "String",

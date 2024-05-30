@@ -1,5 +1,5 @@
 {
-  "displayName": "MinOA_EffSp (2)",
+  "displayName": "MinOA_EffSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,25"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "MinOA_EffSp (2)"
+    "value": "MinOA_EffSp"
   },
   "description": {
     "$base": "String",

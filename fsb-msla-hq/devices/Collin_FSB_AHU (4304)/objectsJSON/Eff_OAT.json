@@ -1,5 +1,5 @@
 {
-  "displayName": "Eff_OAT (2)",
+  "displayName": "Eff_OAT",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,91"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Eff_OAT (2)"
+    "value": "Eff_OAT"
   },
   "description": {
     "$base": "String",

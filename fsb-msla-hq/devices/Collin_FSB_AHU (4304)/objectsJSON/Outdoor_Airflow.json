@@ -1,5 +1,5 @@
 {
-  "displayName": "Outdoor_Airflow (2)",
+  "displayName": "Outdoor_Airflow",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-input,12"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Outdoor_Airflow (2)"
+    "value": "Outdoor_Airflow"
   },
   "description": {
     "$base": "String",
@@ -62,7 +62,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "OA Airflow  CFM AIC (2)"
+    "value": "OA Airflow  CFM AIC"
   },
   "update-interval": {
     "$base": "Unsigned",

@@ -1,5 +1,5 @@
 {
-  "displayName": "SupplyDuctStatic (2)",
+  "displayName": "SupplyDuctStatic",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-input,4"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SupplyDuctStatic (2)"
+    "value": "SupplyDuctStatic"
   },
   "description": {
     "$base": "String",
@@ -62,7 +62,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "SADuctStatic_AIC (2)"
+    "value": "SADuctStatic_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",

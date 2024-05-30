@@ -1,5 +1,5 @@
 {
-  "displayName": "VFDRampResult (2)",
+  "displayName": "VFDRampResult",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,6"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "VFDRampResult (2)"
+    "value": "VFDRampResult"
   },
   "description": {
     "$base": "String",

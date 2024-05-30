@@ -1,5 +1,5 @@
 {
-  "displayName": "SupplyDuctStatic_Sp (2)",
+  "displayName": "SupplyDuctStatic_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,5"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SupplyDuctStatic_Sp (2)"
+    "value": "SupplyDuctStatic_Sp"
   },
   "description": {
     "$base": "String",

@@ -1,5 +1,5 @@
 {
-  "displayName": "AFSDp_AIC (2)",
+  "displayName": "AFSDp_AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,39"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "AFSDp_AIC (2)"
+    "value": "AFSDp_AIC"
   },
   "description": {
     "$base": "String",

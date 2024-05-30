@@ -1,5 +1,5 @@
 {
-  "displayName": "Smoke (2)",
+  "displayName": "Smoke",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-input,9"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Smoke (2)"
+    "value": "Smoke"
   },
   "description": {
     "$base": "String",
@@ -54,7 +54,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Alarm/Normal BDC (2)"
+    "value": "Alarm/Normal BDC"
   },
   "polarity": {
     "$base": "Enumerated",

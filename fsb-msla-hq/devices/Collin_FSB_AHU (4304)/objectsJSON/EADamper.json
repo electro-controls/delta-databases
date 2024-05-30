@@ -1,8 +1,8 @@
 {
-  "displayName": "ReturnDamper (2)",
+  "displayName": "EADamper",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output,9"
+    "value": "analog-output,7"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReturnDamper (2)"
+    "value": "EADamper"
   },
   "description": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Damper 0-10V 0-100 % AOC (2)"
+    "value": "Damper 0-10V 0-100 % AOC"
   },
   "min-pres-value": {
     "$base": "Real",

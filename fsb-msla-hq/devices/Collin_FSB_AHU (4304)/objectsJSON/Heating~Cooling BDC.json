@@ -1,5 +1,5 @@
 {
-  "displayName": "Heating/Cooling BDC (2)",
+  "displayName": "Heating/Cooling BDC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "bdc,14"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Heating/Cooling BDC (2)"
+    "value": "Heating/Cooling BDC"
   },
   "description": {
     "$base": "String",

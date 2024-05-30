@@ -1,5 +1,5 @@
 {
-  "displayName": "RFRight_Status (2)",
+  "displayName": "RFRight_Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,53"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RFRight_Status (2)"
+    "value": "RFRight_Status"
   },
   "description": {
     "$base": "String",

@@ -1,5 +1,5 @@
 {
-  "displayName": "SFLeft_Status (2)",
+  "displayName": "SFLeft_Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,50"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SFLeft_Status (2)"
+    "value": "SFLeft_Status"
   },
   "description": {
     "$base": "String",

@@ -1,5 +1,5 @@
 {
-  "displayName": "PrefilterDp_AIC (2)",
+  "displayName": "PrefilterDp_AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,41"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "PrefilterDp_AIC (2)"
+    "value": "PrefilterDp_AIC"
   },
   "description": {
     "$base": "String",

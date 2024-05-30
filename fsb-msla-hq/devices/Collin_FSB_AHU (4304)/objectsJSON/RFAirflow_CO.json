@@ -1,5 +1,5 @@
 {
-  "displayName": "RFAirflow_CO (2)",
+  "displayName": "RFAirflow_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "loop,4"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RFAirflow_CO (2)"
+    "value": "RFAirflow_CO"
   },
   "description": {
     "$base": "String",

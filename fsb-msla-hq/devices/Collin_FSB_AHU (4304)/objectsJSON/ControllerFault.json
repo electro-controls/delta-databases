@@ -1,5 +1,5 @@
 {
-  "displayName": "ControllerFault (2)",
+  "displayName": "ControllerFault",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "multi-state-value,98"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ControllerFault (2)"
+    "value": "ControllerFault"
   },
   "description": {
     "$base": "String",

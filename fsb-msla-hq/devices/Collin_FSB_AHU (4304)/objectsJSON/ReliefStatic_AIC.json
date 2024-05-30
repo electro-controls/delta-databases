@@ -1,5 +1,5 @@
 {
-  "displayName": "ReliefStatic_AIC (2)",
+  "displayName": "ReliefStatic_AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,11"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReliefStatic_AIC (2)"
+    "value": "ReliefStatic_AIC"
   },
   "description": {
     "$base": "String",

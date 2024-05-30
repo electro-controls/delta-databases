@@ -1,5 +1,5 @@
 {
-  "displayName": "DAHResetHigh_Sp (2)",
+  "displayName": "DAHResetHigh_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,75"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DAHResetHigh_Sp (2)"
+    "value": "DAHResetHigh_Sp"
   },
   "description": {
     "$base": "String",

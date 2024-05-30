@@ -1,5 +1,5 @@
 {
-  "displayName": "Mode MIC (2)",
+  "displayName": "Mode MIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "mic,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Mode MIC (2)"
+    "value": "Mode MIC"
   },
   "description": {
     "$base": "String",

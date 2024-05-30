@@ -1,8 +1,8 @@
 {
-  "displayName": "HumDemand (2)",
+  "displayName": "MADamper",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output,12"
+    "value": "analog-output,6"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,19 +10,19 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HumDemand (2)"
+    "value": "MADamper"
   },
   "description": {
     "$base": "String",
-    "value": "2/5/2020 dmp: drew witnessed displayed humidifier demand at unit matching signal from us"
+    "value": "DM 10_30_19  mounted with spring open when loss of power   had to the reverse the action so 100 percent means 100 percent open   so this actuator will be powerd to open   visually verifed the action of this actuator   this output is not for OA dampers they have their own output"
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": "fault;polarity"
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "100"
   },
   "status-flags": {
     "$base": "BitString",
@@ -42,7 +42,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aoc,10"
+    "value": "aoc,2"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "HumidifierDemand AOC (2)"
+    "value": "Damper 0-10V 0-100 % AOC"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -82,7 +82,7 @@
   },
   "relinquish-default": {
     "$base": "Real",
-    "value": 0
+    "value": "100"
   },
   "priority-array": {
     "1": {
@@ -323,7 +323,7 @@
   },
   "polarity": {
     "$base": "Enumerated",
-    "value": "normal"
+    "value": "reverse"
   },
   "da-value": {
     "$base": "Unsigned",

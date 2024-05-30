@@ -1,5 +1,5 @@
 {
-  "displayName": "Mode (2)",
+  "displayName": "Mode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "multi-state-value,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Mode (2)"
+    "value": "Mode"
   },
   "description": {
     "$base": "String",

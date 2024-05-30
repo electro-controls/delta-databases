@@ -1,5 +1,5 @@
 {
-  "displayName": "OADamper (2)",
+  "displayName": "OADamper",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-output,5"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "OADamper (2)"
+    "value": "OADamper"
   },
   "description": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Damper 0-10V 0-100 % AOC (2)"
+    "value": "Damper 0-10V 0-100 % AOC"
   },
   "min-pres-value": {
     "$base": "Real",

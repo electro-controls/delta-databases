@@ -1,5 +1,5 @@
 {
-  "displayName": "RAH_AIC (2)",
+  "displayName": "RAH_AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,45"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RAH_AIC (2)"
+    "value": "RAH_AIC"
   },
   "description": {
     "$base": "String",

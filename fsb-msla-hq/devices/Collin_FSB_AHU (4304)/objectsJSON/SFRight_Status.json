@@ -1,5 +1,5 @@
 {
-  "displayName": "SFRight_Status (2)",
+  "displayName": "SFRight_Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,51"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SFRight_Status (2)"
+    "value": "SFRight_Status"
   },
   "description": {
     "$base": "String",

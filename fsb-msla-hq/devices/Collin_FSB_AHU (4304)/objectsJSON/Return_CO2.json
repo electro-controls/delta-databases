@@ -62,7 +62,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "CO2 ppm 0-10v 0-2000 AIC (2)"
+    "value": "CO2 ppm 0-10v 0-2000 AIC"
   },
   "update-interval": {
     "$base": "Unsigned",

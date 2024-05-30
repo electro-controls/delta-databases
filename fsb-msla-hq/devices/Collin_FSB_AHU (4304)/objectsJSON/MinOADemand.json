@@ -1,5 +1,5 @@
 {
-  "displayName": "MinOADemand (2)",
+  "displayName": "MinOADemand",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,28"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "MinOADemand (2)"
+    "value": "MinOADemand"
   },
   "description": {
     "$base": "String",

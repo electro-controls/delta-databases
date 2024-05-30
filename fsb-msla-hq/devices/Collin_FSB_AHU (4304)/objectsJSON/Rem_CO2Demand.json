@@ -1,5 +1,5 @@
 {
-  "displayName": "Rem_CO2Demand (2)",
+  "displayName": "Rem_CO2Demand",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,30"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Rem_CO2Demand (2)"
+    "value": "Rem_CO2Demand"
   },
   "description": {
     "$base": "String",

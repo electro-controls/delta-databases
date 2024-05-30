@@ -1,5 +1,5 @@
 {
-  "displayName": "RF_Enable (2)",
+  "displayName": "RF_Enable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-output,2"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RF_Enable (2)"
+    "value": "RF_Enable"
   },
   "description": {
     "$base": "String",
@@ -42,7 +42,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive BDC (2)"
+    "value": "Active/Inactive BDC"
   },
   "event-state": {
     "$base": "Enumerated",

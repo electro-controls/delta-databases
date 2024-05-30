@@ -1,5 +1,5 @@
 {
-  "displayName": "MAT (2)",
+  "displayName": "MAT",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-input,3"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "MAT (2)"
+    "value": "MAT"
   },
   "description": {
     "$base": "String",
@@ -62,7 +62,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Temperature DegF 10k Thermistor AIC (2)"
+    "value": "Temperature DegF 10k Thermistor AIC"
   },
   "update-interval": {
     "$base": "Unsigned",

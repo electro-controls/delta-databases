@@ -1,5 +1,5 @@
 {
-  "displayName": "DAHHighFault (2)",
+  "displayName": "DAHHighFault",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,74"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DAHHighFault (2)"
+    "value": "DAHHighFault"
   },
   "description": {
     "$base": "String",

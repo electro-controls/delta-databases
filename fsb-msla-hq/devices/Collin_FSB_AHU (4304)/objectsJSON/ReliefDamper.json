@@ -1,5 +1,5 @@
 {
-  "displayName": "ReliefDamper (2)",
+  "displayName": "ReliefDamper",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-output,6"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReliefDamper (2)"
+    "value": "ReliefDamper"
   },
   "description": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Damper 0-10V 0-100 % AOC (2)"
+    "value": "Damper 0-10V 0-100 % AOC"
   },
   "min-pres-value": {
     "$base": "Real",

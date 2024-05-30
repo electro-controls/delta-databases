@@ -1,5 +1,5 @@
 {
-  "displayName": "FreezeStat (2)",
+  "displayName": "FreezeStat",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-input,5"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "FreezeStat (2)"
+    "value": "FreezeStat"
   },
   "description": {
     "$base": "String",
@@ -54,7 +54,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive BDC (2)"
+    "value": "Active/Inactive BDC"
   },
   "polarity": {
     "$base": "Enumerated",

@@ -1,5 +1,5 @@
 {
-  "displayName": "HWMode (2)",
+  "displayName": "HWMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,7"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HWMode (2)"
+    "value": "HWMode"
   },
   "description": {
     "$base": "String",

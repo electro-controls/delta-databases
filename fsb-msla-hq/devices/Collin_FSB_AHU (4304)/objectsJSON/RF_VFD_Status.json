@@ -1,5 +1,5 @@
 {
-  "displayName": "RF_VFD_Status (2)",
+  "displayName": "RF_VFD_Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-input,7"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RF_VFD_Status (2)"
+    "value": "RF_VFD_Status"
   },
   "description": {
     "$base": "String",
@@ -54,7 +54,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive BDC (2)"
+    "value": "Active/Inactive BDC"
   },
   "polarity": {
     "$base": "Enumerated",

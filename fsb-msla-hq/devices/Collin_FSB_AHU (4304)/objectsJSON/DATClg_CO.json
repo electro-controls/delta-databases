@@ -1,5 +1,5 @@
 {
-  "displayName": "DATClg_CO (2)",
+  "displayName": "DATClg_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "loop,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DATClg_CO (2)"
+    "value": "DATClg_CO"
   },
   "description": {
     "$base": "String",

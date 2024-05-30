@@ -1,8 +1,8 @@
 {
-  "displayName": "HWV (2)",
+  "displayName": "HWV",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output,7"
+    "value": "analog-output,8"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HWV (2)"
+    "value": "HWV"
   },
   "description": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "HWV AOC (2)"
+    "value": "HWV AOC"
   },
   "min-pres-value": {
     "$base": "Real",

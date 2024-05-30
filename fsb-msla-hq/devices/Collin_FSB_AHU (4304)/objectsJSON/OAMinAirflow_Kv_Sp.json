@@ -1,5 +1,5 @@
 {
-  "displayName": "OAMinAirflow_Kv_Sp (2)",
+  "displayName": "OAMinAirflow_Kv_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,53"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "OAMinAirflow_Kv_Sp (2)"
+    "value": "OAMinAirflow_Kv_Sp"
   },
   "description": {
     "$base": "String",

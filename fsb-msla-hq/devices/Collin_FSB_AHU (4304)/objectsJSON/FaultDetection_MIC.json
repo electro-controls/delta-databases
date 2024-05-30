@@ -1,5 +1,5 @@
 {
-  "displayName": "FaultDetection_MIC (2)",
+  "displayName": "FaultDetection_MIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "mic,19"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "FaultDetection_MIC (2)"
+    "value": "FaultDetection_MIC"
   },
   "description": {
     "$base": "String",

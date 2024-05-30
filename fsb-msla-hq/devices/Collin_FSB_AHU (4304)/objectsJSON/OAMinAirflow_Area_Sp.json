@@ -1,5 +1,5 @@
 {
-  "displayName": "OAMinAirflow_Area_Sp (2)",
+  "displayName": "OAMinAirflow_Area_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,52"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "OAMinAirflow_Area_Sp (2)"
+    "value": "OAMinAirflow_Area_Sp"
   },
   "description": {
     "$base": "String",

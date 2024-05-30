@@ -1,7 +1,1658 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [],
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ao,8",
+      "objectName": "HWV",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/HWV.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:42:47 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,7",
+      "objectName": "VFDRampTime_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/VFDRampTime_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:09 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,6",
+      "objectName": "VFDRampResult",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/VFDRampResult.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:09 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,1",
+      "objectName": "Temperature DegF 10k Thermistor AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Temperature DegF 10k Thermistor AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:09 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bi,10",
+      "objectName": "Supply_Duct_Hi-Limit",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Supply_Duct_Hi-Limit.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:09 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,5",
+      "objectName": "SupplyDuctStatic_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/SupplyDuctStatic_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:09 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "co,5",
+      "objectName": "SupplyDuctStatic_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/SupplyDuctStatic_CO.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:09 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,4",
+      "objectName": "SupplyDuctStatic",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/SupplyDuctStatic.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:09 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bi,6",
+      "objectName": "SF_VFD_Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/SF_VFD_Status.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bi,9",
+      "objectName": "Smoke",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Smoke.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bo,1",
+      "objectName": "SF_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/SF_Enable.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,51",
+      "objectName": "SFRight_Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/SFRight_Status.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,98",
+      "objectName": "Uptime",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Uptime.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ao,3",
+      "objectName": "SF_Speed",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/SF_Speed.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,50",
+      "objectName": "SFLeft_Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/SFLeft_Status.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,38",
+      "objectName": "SFCurrent AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/SFCurrent AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aoc,7",
+      "objectName": "SF VFD 0-10VDC to 0-100% AOC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/SF VFD 0-10VDC to 0-100% AOC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,6",
+      "objectName": "SADuctStatic_AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/SADuctStatic_AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,2",
+      "objectName": "RunStatusInt",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RunStatusInt.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bi,7",
+      "objectName": "RF_VFD_Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RF_VFD_Status.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ao,4",
+      "objectName": "RF_Speed",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RF_Speed.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bo,2",
+      "objectName": "RF_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RF_Enable.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,8",
+      "objectName": "RF_Airflow",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RF_Airflow.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,52",
+      "objectName": "RFLeft_Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RFLeft_Status.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,36",
+      "objectName": "RFCurrent AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RFCurrent AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,19",
+      "objectName": "RFairflow_EffSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RFairflow_EffSp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,53",
+      "objectName": "RFRight_Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RFRight_Status.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aoc,8",
+      "objectName": "RF VFD 0-10VDC to 0-100% AOC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RF VFD 0-10VDC to 0-100% AOC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,10",
+      "objectName": "RF Airflow  CFM AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RF Airflow  CFM AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bi,11",
+      "objectName": "Return_Duct_Low-Limit",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Return_Duct_Low-Limit.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "co,4",
+      "objectName": "RFAirflow_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RFAirflow_CO.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,14",
+      "objectName": "Return_CO2",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Return_CO2.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,30",
+      "objectName": "Rem_CO2Demand",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Rem_CO2Demand.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,11",
+      "objectName": "ReliefStatic_AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/ReliefStatic_AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,43",
+      "objectName": "ReliefDuctStatic_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/ReliefDuctStatic_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,44",
+      "objectName": "ReliefLowStatic_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/ReliefLowStatic_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,10",
+      "objectName": "ReliefDemand",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/ReliefDemand.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,40",
+      "objectName": "RAT 0v to 5v tempF",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RAT 0v to 5v tempF.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ao,6",
+      "objectName": "ReliefDamper",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/ReliefDamper.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,70",
+      "objectName": "RAH_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RAH_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,45",
+      "objectName": "RAH_AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RAH_AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,72",
+      "objectName": "RAHHighFault",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RAHHighFault.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,71",
+      "objectName": "RAHLowFault",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/RAHLowFault.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,41",
+      "objectName": "PrefilterDp_AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/PrefilterDp_AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,7",
+      "objectName": "Pressure 0-10VDC to 0-1inwg",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Pressure 0-10VDC to 0-1inwg.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bdc,1",
+      "objectName": "On~Off BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/On~Off BDC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "mic,4",
+      "objectName": "OccMode MIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/OccMode MIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,12",
+      "objectName": "Outdoor_Airflow",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Outdoor_Airflow.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,51",
+      "objectName": "OAVelocityDp_AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/OAVelocityDp_AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,54",
+      "objectName": "OAMinAirflow_Cf_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/OAMinAirflow_Cf_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,53",
+      "objectName": "OAMinAirflow_Kv_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/OAMinAirflow_Kv_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,51",
+      "objectName": "OAMinAirflow",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/OAMinAirflow.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,52",
+      "objectName": "OAMinAirflow_Area_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/OAMinAirflow_Area_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,43",
+      "objectName": "OA Airflow  CFM AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/OA Airflow  CFM AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "mv,1",
+      "objectName": "Mode",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Mode.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "mic,1",
+      "objectName": "Mode MIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Mode MIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,25",
+      "objectName": "MinOA_EffSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/MinOA_EffSp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,28",
+      "objectName": "MinOADemand",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/MinOADemand.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ao,5",
+      "objectName": "OADamper",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/OADamper.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "co,10",
+      "objectName": "MinOAAirflow_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/MinOAAirflow_CO.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,3",
+      "objectName": "MATLimit_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/MATLimit_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,3",
+      "objectName": "MAT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/MAT.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,60",
+      "objectName": "ItsCold",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/ItsCold.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "co,3",
+      "objectName": "MATLimit_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/MATLimit_CO.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aoc,1",
+      "objectName": "HWV AOC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/HWV AOC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,7",
+      "objectName": "HWMode",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/HWMode.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,77",
+      "objectName": "HumRamp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/HumRamp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aoc,10",
+      "objectName": "HumidifierDemand AOC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/HumidifierDemand AOC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bdc,14",
+      "objectName": "Heating~Cooling BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Heating~Cooling BDC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,76",
+      "objectName": "HumRamp_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/HumRamp_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,5",
+      "objectName": "FreezeMode",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/FreezeMode.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bo,11",
+      "objectName": "HumidifierEnable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/HumidifierEnable.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bi,5",
+      "objectName": "FreezeStat",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/FreezeStat.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,4",
+      "objectName": "FreeCooling",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/FreeCooling.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "mic,19",
+      "objectName": "FaultDetection_MIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/FaultDetection_MIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,42",
+      "objectName": "FinalfilterDp_AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/FinalfilterDp_AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,91",
+      "objectName": "Eff_OAT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Eff_OAT.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,27",
+      "objectName": "EconRampPct",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/EconRampPct.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,26",
+      "objectName": "EconRampDly",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/EconRampDly.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,24",
+      "objectName": "EconMinOA_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/EconMinOA_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aoc,6",
+      "objectName": "EconDmpr 2-10V 0-100 % AOC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/EconDmpr 2-10V 0-100 % AOC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,22",
+      "objectName": "EconClgPct",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/EconClgPct.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,20",
+      "objectName": "EconCalcMinOA",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/EconCalcMinOA.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,2",
+      "objectName": "DATHtg_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DATHtg_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,1",
+      "objectName": "DATClg_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DATClg_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "co,2",
+      "objectName": "DATHtg_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DATHtg_CO.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "co,1",
+      "objectName": "DATClg_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DATClg_CO.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,2",
+      "objectName": "DAT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DAT.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,73",
+      "objectName": "DAH_RemSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DAH_RemSp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aoc,2",
+      "objectName": "Damper 0-10V 0-100 % AOC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Damper 0-10V 0-100 % AOC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,44",
+      "objectName": "DAH_AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DAH_AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,72",
+      "objectName": "DAH_LocSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DAH_LocSp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,71",
+      "objectName": "DAH_EffSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DAH_EffSp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,74",
+      "objectName": "DAHResetLow_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DAHResetLow_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "av,75",
+      "objectName": "DAHResetHigh_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DAHResetHigh_Sp.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,73",
+      "objectName": "DAHLowFault",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DAHLowFault.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bv,74",
+      "objectName": "DAHHighFault",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/DAHHighFault.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "mv,98",
+      "objectName": "ControllerFault",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/ControllerFault.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aoc,9",
+      "objectName": "CWV AOC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/CWV AOC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bdc,2",
+      "objectName": "Alarm~Normal BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Alarm~Normal BDC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,13",
+      "objectName": "Building_Pressure",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Building_Pressure.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bdc,13",
+      "objectName": "Clean_Dirty",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Clean_Dirty.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,2",
+      "objectName": "CO2 ppm 0-10v 0-2000 AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/CO2 ppm 0-10v 0-2000 AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,39",
+      "objectName": "AFSDp_AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/AFSDp_AIC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bdc,3",
+      "objectName": "Active~Inactive BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/Active~Inactive BDC.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:11 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ao,8",
+      "objectName": "CWV",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/CWV.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:43:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "ao,9",
+      "objectName": "ReturnDamper",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/ReturnDamper.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:44:25 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "ao,9",
+      "objectName": "MADamper copy",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/MADamper copy.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:44:26 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ao,7",
+      "objectName": "EADamper",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/EADamper.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:44:50 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ao,6",
+      "objectName": "MADamper",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_FSB_AHU (4304)/objectsJSON/MADamper.json",
+        "scheme": "file"
+      },
+      "date": "5/30/2024, 2:44:53 PM",
+      "templateTriggered": false
+    }
+  ],
   "devices": [
     {
       "number": 4304,
@@ -188,39 +1839,9 @@
         },
         {
           "id": "ao,6",
-          "name": "ReliefDamper",
-          "fileName": "ReliefDamper",
-          "lastUpdate": "2024-05-30T20:27:29.284Z"
-        },
-        {
-          "id": "ao,7",
-          "name": "HWV",
-          "fileName": "HWV",
-          "lastUpdate": "2024-05-30T20:27:29.284Z"
-        },
-        {
-          "id": "ao,8",
-          "name": "CWV",
-          "fileName": "CWV",
-          "lastUpdate": "2024-05-30T20:27:29.284Z"
-        },
-        {
-          "id": "ao,9",
-          "name": "ReturnDamper",
-          "fileName": "ReturnDamper",
-          "lastUpdate": "2024-05-30T20:27:29.284Z"
-        },
-        {
-          "id": "ao,10",
-          "name": "MinOADamper",
-          "fileName": "MinOADamper",
-          "lastUpdate": "2024-05-30T20:27:29.284Z"
-        },
-        {
-          "id": "ao,12",
-          "name": "HumDemand",
-          "fileName": "HumDemand",
-          "lastUpdate": "2024-05-30T20:27:29.284Z"
+          "name": "MADamper",
+          "fileName": "MADamper",
+          "lastUpdate": "2024-05-30T20:44:53.121Z"
         },
         {
           "id": "aoc,1",
@@ -821,6 +2442,24 @@
           "name": "DELTA",
           "fileName": "DELTA",
           "lastUpdate": "2024-05-30T20:27:29.284Z"
+        },
+        {
+          "id": "ao,8",
+          "name": "CWV",
+          "fileName": "CWV",
+          "lastUpdate": "2024-05-30T20:43:11.438Z"
+        },
+        {
+          "id": "ao,9",
+          "name": "MADamper copy",
+          "fileName": "MADamper copy",
+          "lastUpdate": "2024-05-30T20:44:26.033Z"
+        },
+        {
+          "id": "ao,7",
+          "name": "EADamper",
+          "fileName": "EADamper",
+          "lastUpdate": "2024-05-30T20:44:50.606Z"
         }
       ]
     }

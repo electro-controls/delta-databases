@@ -1,5 +1,5 @@
 {
-  "displayName": "FreeCooling (2)",
+  "displayName": "FreeCooling",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,4"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "FreeCooling (2)"
+    "value": "FreeCooling"
   },
   "description": {
     "$base": "String",

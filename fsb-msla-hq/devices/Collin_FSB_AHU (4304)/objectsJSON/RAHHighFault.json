@@ -1,5 +1,5 @@
 {
-  "displayName": "RAHHighFault (2)",
+  "displayName": "RAHHighFault",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,72"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RAHHighFault (2)"
+    "value": "RAHHighFault"
   },
   "description": {
     "$base": "String",

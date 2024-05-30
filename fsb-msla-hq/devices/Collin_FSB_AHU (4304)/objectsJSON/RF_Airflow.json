@@ -1,5 +1,5 @@
 {
-  "displayName": "RF_Airflow (2)",
+  "displayName": "RF_Airflow",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-input,8"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RF_Airflow (2)"
+    "value": "RF_Airflow"
   },
   "description": {
     "$base": "String",
@@ -62,7 +62,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "RF Airflow  CFM AIC (2)"
+    "value": "RF Airflow  CFM AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
