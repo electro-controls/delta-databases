@@ -70,7 +70,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Active"
+    "value": "Inactive"
   },
   "hal-flags": {
     "$base": "BitString",

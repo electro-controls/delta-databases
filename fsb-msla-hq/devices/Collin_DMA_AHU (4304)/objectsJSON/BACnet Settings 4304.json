@@ -382,7 +382,7 @@
   },
   "free-que": {
     "$base": "Unsigned",
-    "value": "25"
+    "value": "35"
   },
   "short-free-que": {
     "$base": "Unsigned",
@@ -394,7 +394,7 @@
   },
   "transmit-2-que": {
     "$base": "Unsigned",
-    "value": "8"
+    "value": 0
   },
   "transmit-3-que": {
     "$base": "Unsigned",

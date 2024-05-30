@@ -19,7 +19,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;not-commissioned"
+    "value": "fault;out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -27,7 +27,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": "fault;out-of-service"
   },
   "reset": {
     "$base": "Boolean",

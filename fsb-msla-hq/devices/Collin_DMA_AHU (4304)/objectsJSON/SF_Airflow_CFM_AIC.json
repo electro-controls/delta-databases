@@ -26,7 +26,7 @@
   },
   "max-value": {
     "$base": "Real",
-    "value": "20000"
+    "value": "19500"
   },
   "min-value": {
     "$base": "Real",

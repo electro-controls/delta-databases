@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "407"
+    "value": "254"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "83.6687"
+    "value": "83.4915"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",

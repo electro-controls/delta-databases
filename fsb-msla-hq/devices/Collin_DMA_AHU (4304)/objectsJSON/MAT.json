@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "263"
+    "value": "266"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "213020"
+      "value": "213049"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1901"
+    "value": "1897"
   },
   "calibration": {
     "$base": "Real",

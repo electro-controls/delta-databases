@@ -19,7 +19,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;not-commissioned"
+    "value": "fault;out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -27,7 +27,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": "fault;out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -94,7 +94,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "270"
+    "value": "266"
   },
   "time-delay": {
     "$base": "Unsigned",

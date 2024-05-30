@@ -1,93 +1,11 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [
-    {
-      "action": "update",
-      "device": 4304,
-      "objectId": "aic,9",
-      "objectName": "SF Airflow  CFM AIC",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_DMA_AHU (4304)/objectsJSON/SF Airflow  CFM AIC.json",
-        "scheme": "file"
-      },
-      "date": "5/30/2024, 9:51:48 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
-      "objectId": "aic,6",
-      "objectName": "SADuctStatic_AIC",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_DMA_AHU (4304)/objectsJSON/SADuctStatic_AIC.json",
-        "scheme": "file"
-      },
-      "date": "5/30/2024, 10:07:02 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
-      "objectId": "aic,10",
-      "objectName": "RF Airflow  CFM AIC",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_DMA_AHU (4304)/objectsJSON/RF Airflow  CFM AIC.json",
-        "scheme": "file"
-      },
-      "date": "5/30/2024, 10:07:07 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
-      "objectId": "aic,5",
-      "objectName": "Building_Pressure_inH20_4-20mA_0-0.25_AIC",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_DMA_AHU (4304)/objectsJSON/Building_Pressure_inH20_4-20mA_0-0.25_AIC.json",
-        "scheme": "file"
-      },
-      "date": "5/30/2024, 10:07:11 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4304,
-      "objectId": "aic,43",
-      "objectName": "OA Airflow  CFM AIC",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/Collin_DMA_AHU (4304)/objectsJSON/OA Airflow  CFM AIC.json",
-        "scheme": "file"
-      },
-      "date": "5/30/2024, 10:08:30 AM",
-      "templateTriggered": false
-    }
-  ],
+  "uploadQueue": [],
   "devices": [
     {
       "number": 4304,
       "objects": [
-        {
-          "id": "ai,1",
-          "name": "SF_Airflow",
-          "fileName": "SF_Airflow",
-          "lastUpdate": "2024-05-29T17:20:30.436Z"
-        },
         {
           "id": "ai,2",
           "name": "DAT",
@@ -125,18 +43,6 @@
           "lastUpdate": "2024-05-29T17:15:06.750Z"
         },
         {
-          "id": "aic,5",
-          "name": "Building_Pressure_inH20_4-20mA_0-0.25_AIC",
-          "fileName": "Building_Pressure_inH20_4-20mA_0-0.25_AIC",
-          "lastUpdate": "2024-05-30T16:00:51.625Z"
-        },
-        {
-          "id": "aic,6",
-          "name": "SADuctStatic_AIC",
-          "fileName": "SADuctStatic_AIC",
-          "lastUpdate": "2024-05-29T17:15:06.750Z"
-        },
-        {
           "id": "aic,7",
           "name": "Pressure 0-10VDC to 0-1inwg",
           "fileName": "Pressure 0-10VDC to 0-1inwg",
@@ -144,15 +50,9 @@
         },
         {
           "id": "aic,9",
-          "name": "SF Airflow  CFM AIC",
-          "fileName": "SF Airflow  CFM AIC",
-          "lastUpdate": "2024-05-29T17:15:06.750Z"
-        },
-        {
-          "id": "aic,10",
-          "name": "RF Airflow  CFM AIC",
-          "fileName": "RF Airflow  CFM AIC",
-          "lastUpdate": "2024-05-29T17:15:06.750Z"
+          "name": "SF_Airflow_CFM_AIC",
+          "fileName": "SF_Airflow_CFM_AIC",
+          "lastUpdate": "2024-05-30T16:19:05.973Z"
         },
         {
           "id": "aic,11",
@@ -194,12 +94,6 @@
           "id": "aic,42",
           "name": "FinalfilterDp_AIC",
           "fileName": "FinalfilterDp_AIC",
-          "lastUpdate": "2024-05-29T17:15:06.750Z"
-        },
-        {
-          "id": "aic,43",
-          "name": "OA Airflow  CFM AIC",
-          "fileName": "OA Airflow  CFM AIC",
           "lastUpdate": "2024-05-29T17:15:06.750Z"
         },
         {
@@ -545,16 +439,10 @@
           "lastUpdate": "2024-05-29T17:15:06.750Z"
         },
         {
-          "id": "bi,10",
-          "name": "Supply_Duct_Hi-Limit",
-          "fileName": "Supply_Duct_Hi-Limit",
-          "lastUpdate": "2024-05-29T17:28:29.154Z"
-        },
-        {
           "id": "bi,11",
-          "name": "ReturnLoStatic",
-          "fileName": "ReturnLoStatic",
-          "lastUpdate": "2024-05-29T17:15:06.750Z"
+          "name": "Return_Duct_Low-Limit",
+          "fileName": "Return_Duct_Low-Limit",
+          "lastUpdate": "2024-05-30T16:20:34.588Z"
         },
         {
           "id": "bmd,1",
@@ -903,6 +791,42 @@
           "name": "RF_Airflow",
           "fileName": "RF_Airflow",
           "lastUpdate": "2024-05-30T16:03:27.820Z"
+        },
+        {
+          "id": "aic,6",
+          "name": "SADuctStatic_AIC",
+          "fileName": "SADuctStatic_AIC",
+          "lastUpdate": "2024-05-30T16:19:03.652Z"
+        },
+        {
+          "id": "ai,1",
+          "name": "SF_Airflow",
+          "fileName": "SF_Airflow",
+          "lastUpdate": "2024-05-30T16:19:06.560Z"
+        },
+        {
+          "id": "bi,10",
+          "name": "Supply_Duct_Hi-Limit",
+          "fileName": "Supply_Duct_Hi-Limit",
+          "lastUpdate": "2024-05-30T16:19:12.304Z"
+        },
+        {
+          "id": "aic,5",
+          "name": "Building_Pressure_inH20_4-20mA_0-0.25_AIC",
+          "fileName": "Building_Pressure_inH20_4-20mA_0-0.25_AIC",
+          "lastUpdate": "2024-05-30T16:19:24.562Z"
+        },
+        {
+          "id": "aic,43",
+          "name": "OA Airflow  CFM AIC",
+          "fileName": "OA Airflow  CFM AIC",
+          "lastUpdate": "2024-05-30T16:20:13.263Z"
+        },
+        {
+          "id": "aic,10",
+          "name": "RF Airflow  CFM AIC",
+          "fileName": "RF Airflow  CFM AIC",
+          "lastUpdate": "2024-05-30T16:20:36.069Z"
         }
       ]
     }

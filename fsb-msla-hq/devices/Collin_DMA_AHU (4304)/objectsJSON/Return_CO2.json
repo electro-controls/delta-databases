@@ -67,7 +67,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "268"
+    "value": "261"
   },
   "min-pres-value": {
     "$base": "Real",

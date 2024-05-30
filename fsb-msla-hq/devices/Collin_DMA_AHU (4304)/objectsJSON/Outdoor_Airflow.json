@@ -39,7 +39,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "CFM"
+    "value": "%"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -63,11 +63,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "OA Airflow  CFM AIC"
+    "value": ""
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "274"
+    "value": "263"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -75,11 +75,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "19500"
+    "value": "100"
   },
   "resolution": {
     "$base": "Real",
-    "value": "4.7619"
+    "value": "0.02442"
   },
   "cov-increment": {
     "$base": "Real",
@@ -93,7 +93,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "220217"
+      "value": "838988"
     }
   },
   "ad-value": {

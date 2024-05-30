@@ -558,57 +558,6 @@
       "161": {
         "$base": "Choice"
       },
-      "162": {
-        "$base": "Choice"
-      },
-      "163": {
-        "$base": "Choice"
-      },
-      "164": {
-        "$base": "Choice"
-      },
-      "165": {
-        "$base": "Choice"
-      },
-      "166": {
-        "$base": "Choice"
-      },
-      "167": {
-        "$base": "Choice"
-      },
-      "168": {
-        "$base": "Choice"
-      },
-      "169": {
-        "$base": "Choice"
-      },
-      "170": {
-        "$base": "Choice"
-      },
-      "171": {
-        "$base": "Choice"
-      },
-      "172": {
-        "$base": "Choice"
-      },
-      "173": {
-        "$base": "Choice"
-      },
-      "174": {
-        "$base": "Choice"
-      },
-      "175": {
-        "$base": "Choice"
-      },
-      "176": {
-        "$base": "Choice"
-      },
-      "177": {
-        "$base": "Choice"
-      },
-      "178": {
-        "$base": "Choice"
-      },
       "$base": "Array"
     }
   },
@@ -634,11 +583,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "12:09:16.00"
+    "value": "11:15:24.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2000-01-01"
+    "value": "2000-01-02"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -787,7 +736,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "2.30769"
+    "value": "3.87755"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -799,7 +748,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "82"
+    "value": "87"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -807,7 +756,7 @@
   },
   "dynamic-ram-free": {
     "$base": "Unsigned",
-    "value": "98"
+    "value": "99"
   },
   "flash-type": {
     "$base": "Enumerated",
@@ -895,7 +844,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "5570"
+      "value": "837248"
     }
   },
   "logical-base-address": {
@@ -1004,7 +953,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "65"
   },
   "active-cov-subscriptions": {
     "1": {
