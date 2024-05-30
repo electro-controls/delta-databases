@@ -1,5 +1,5 @@
 {
-  "displayName": "Pressure inH20 0-5v 0-5.0 AIC (2)",
+  "displayName": "Pressure inH20 0-5v 0-5.0 AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,3"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Pressure inH20 0-5v 0-5.0 AIC (2)"
+    "value": "Pressure inH20 0-5v 0-5.0 AIC"
   },
   "description": {
     "$base": "String",
