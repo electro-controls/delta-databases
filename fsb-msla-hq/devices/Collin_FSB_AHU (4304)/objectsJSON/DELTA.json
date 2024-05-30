@@ -1,5 +1,5 @@
 {
-  "displayName": "DELTA",
+  "displayName": "_SUA1",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "sua,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DELTA"
+    "value": "_SUA1"
   },
   "description": {
     "$base": "String",
@@ -62,11 +62,11 @@
   },
   "password-start-date": {
     "$base": "DateTime",
-    "value": "2019-04-04T15:19:29.460000-06:00"
+    "value": "2000-01-01T12:06:58.300000-07:00"
   },
   "password-expiry-date": {
     "$base": "DateTime",
-    "value": "2019-10-03T15:19:29.000000-06:00"
+    "value": "2000-07-01T12:06:58.000000-06:00"
   },
   "login-last-date": {
     "$base": "DateTime",
@@ -86,8 +86,9 @@
   },
   "login-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "login-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "login-failed-date": {

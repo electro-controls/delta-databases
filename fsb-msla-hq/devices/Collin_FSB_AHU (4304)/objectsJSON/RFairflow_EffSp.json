@@ -1,5 +1,5 @@
 {
-  "displayName": "RFairflow_EffSp",
+  "displayName": "RFairflow_EffSp (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,19"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RFairflow_EffSp"
+    "value": "RFairflow_EffSp (2)"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "6743.21"
+    "value": 0
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "6743.21"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -58,7 +58,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:08:56.700000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "cov-increment": {
     "$base": "Real",

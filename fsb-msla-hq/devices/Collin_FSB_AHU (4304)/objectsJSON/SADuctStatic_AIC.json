@@ -1,5 +1,5 @@
 {
-  "displayName": "SADuctStatic_AIC",
+  "displayName": "SADuctStatic_AIC (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,6"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SADuctStatic_AIC"
+    "value": "SADuctStatic_AIC (2)"
   },
   "description": {
     "$base": "String",

@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Return_CO2",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -59,15 +58,15 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 1
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
-    "value": "CO2 ppm 0-10v 0-2000 AIC"
+    "value": "CO2 ppm 0-10v 0-2000 AIC (2)"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "261"
+    "value": "59"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -93,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "230991"
+      "value": "4806"
     }
   },
   "ad-value": {

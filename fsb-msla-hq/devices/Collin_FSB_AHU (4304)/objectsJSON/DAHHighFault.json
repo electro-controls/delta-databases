@@ -1,5 +1,5 @@
 {
-  "displayName": "DAHHighFault",
+  "displayName": "DAHHighFault (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,74"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DAHHighFault"
+    "value": "DAHHighFault (2)"
   },
   "description": {
     "$base": "String",
@@ -66,7 +66,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2023-09-12T14:20:55.200000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",

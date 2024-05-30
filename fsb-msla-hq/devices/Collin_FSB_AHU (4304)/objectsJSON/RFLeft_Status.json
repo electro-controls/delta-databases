@@ -1,5 +1,5 @@
 {
-  "displayName": "RFLeft_Status",
+  "displayName": "RFLeft_Status (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,52"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RFLeft_Status"
+    "value": "RFLeft_Status (2)"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "gcl-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -66,7 +66,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:09:11.000000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",

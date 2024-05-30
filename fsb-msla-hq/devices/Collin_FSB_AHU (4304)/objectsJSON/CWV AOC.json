@@ -1,5 +1,5 @@
 {
-  "displayName": "CWV AOC",
+  "displayName": "CWV AOC (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aoc,9"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CWV AOC"
+    "value": "CWV AOC (2)"
   },
   "description": {
     "$base": "String",

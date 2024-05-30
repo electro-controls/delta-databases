@@ -1,5 +1,5 @@
 {
-  "displayName": "MinOA_EffSp",
+  "displayName": "MinOA_EffSp (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,25"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "MinOA_EffSp"
+    "value": "MinOA_EffSp (2)"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "3150"
+    "value": 0
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "3150"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -58,7 +58,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:09:05.100000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "cov-increment": {
     "$base": "Real",

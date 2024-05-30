@@ -1,5 +1,5 @@
 {
-  "displayName": "OAMinAirflow",
+  "displayName": "OAMinAirflow (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,51"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "OAMinAirflow"
+    "value": "OAMinAirflow (2)"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "2459.08"
+    "value": 0
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "2459.08"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -58,7 +58,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:08:59.100000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "cov-increment": {
     "$base": "Real",

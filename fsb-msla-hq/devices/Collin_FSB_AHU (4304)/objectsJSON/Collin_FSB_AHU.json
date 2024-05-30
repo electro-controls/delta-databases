@@ -1,5 +1,5 @@
 {
-  "displayName": "Collin_FSB_AHU",
+  "displayName": "3x4 Controller 4304",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "device,4304"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Collin_FSB_AHU"
+    "value": "3x4 Controller 4304"
   },
   "description": {
     "$base": "String",
@@ -558,6 +558,15 @@
       "161": {
         "$base": "Choice"
       },
+      "162": {
+        "$base": "Choice"
+      },
+      "163": {
+        "$base": "Choice"
+      },
+      "164": {
+        "$base": "Choice"
+      },
       "$base": "Array"
     }
   },
@@ -583,11 +592,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "11:15:24.00"
+    "value": "15:40:09.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2000-01-02"
+    "value": "2000-01-01"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -615,15 +624,15 @@
       "$base": "Sequence",
       "month": {
         "$base": "Enumerated",
-        "value": "march"
+        "value": 0
       },
       "weekOfMonth": {
         "$base": "Enumerated",
-        "value": "second"
+        "value": 0
       },
       "dayOfWeek": {
         "$base": "Enumerated",
-        "value": "sunday"
+        "value": 0
       }
     }
   },
@@ -637,15 +646,15 @@
       "$base": "Sequence",
       "month": {
         "$base": "Enumerated",
-        "value": "november"
+        "value": 0
       },
       "weekOfMonth": {
         "$base": "Enumerated",
-        "value": "first"
+        "value": 0
       },
       "dayOfWeek": {
         "$base": "Enumerated",
-        "value": "sunday"
+        "value": 0
       }
     }
   },
@@ -659,7 +668,7 @@
   },
   "daylight-savings-transition": {
     "$base": "Time",
-    "value": "02:00:00.00"
+    "unspecifiedValue": "true"
   },
   "daylight-saving-start-day": {
     "$base": "Choice",
@@ -684,7 +693,7 @@
     "$base": "Choice",
     "time-sync-timer": {
       "$base": "Unsigned",
-      "value": "135358128"
+      "value": 0
     }
   },
   "latitude": {
@@ -717,7 +726,7 @@
   },
   "power-down-time": {
     "$base": "DateTime",
-    "value": "1980-01-01T00:00:00.000000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "flash-load-time": {
     "$base": "DateTime",
@@ -736,7 +745,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "3.87755"
+    "value": "13.7778"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -748,7 +757,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "87"
+    "value": "103"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -784,51 +793,51 @@
   "expansion-boards": {
     "1": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "2": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "3": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "4": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "5": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "6": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "7": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "8": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "9": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "10": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "11": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "12": {
       "$base": "String",
-      "value": "No Device"
+      "value": ""
     },
     "$base": "Array"
   },
@@ -844,7 +853,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "837248"
+      "value": "132099"
     }
   },
   "logical-base-address": {
@@ -944,7 +953,7 @@
     "$base": "Choice",
     "dateTime": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:18:19.20"
+      "value": "*-*-*-*T*:*:*.*"
     }
   },
   "backup-failure-timeout": {
@@ -953,1234 +962,9 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "65"
+    "value": "200"
   },
   "active-cov-subscriptions": {
-    "1": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x01"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3043"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "2": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x02"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3043"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "3": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x03"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3043"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "4": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x04"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "5": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x05"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "6": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x06"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "7": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x07"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "8": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x08"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "9": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x09"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "10": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x0a"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "11": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x0b"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "12": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x0c"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "13": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x0d"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "14": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x0e"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "15": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x0f"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "16": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x10"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "17": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x11"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "18": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x12"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "19": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x13"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "20": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x14"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "21": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x15"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "2"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": "1"
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "22": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x16"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "1"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": 0
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "23": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x17"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "1"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": 0
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "24": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x1a"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "1"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": 0
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
-    "25": {
-      "$base": "Sequence",
-      "recipient": {
-        "$base": "Sequence",
-        "recipient": {
-          "$base": "Choice",
-          "address": {
-            "$base": "Sequence",
-            "network-number": {
-              "$base": "Unsigned",
-              "value": "50010"
-            },
-            "mac-address": {
-              "$base": "Octet",
-              "value": "0x19"
-            }
-          }
-        },
-        "processIdentifier": {
-          "$base": "Unsigned",
-          "value": "1"
-        }
-      },
-      "monitoredPropertyReference": {
-        "$base": "Sequence",
-        "type": "0-BACnetObjectPropertyReference",
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "value": "analog-value,91"
-        },
-        "propertyIdentifier": {
-          "$base": "Enumerated",
-          "value": "present-value",
-          "type": "0-BACnetPropertyIdentifier"
-        }
-      },
-      "issueConfirmedNotifications": {
-        "$base": "Boolean",
-        "value": 0
-      },
-      "timeRemaining": {
-        "$base": "Unsigned",
-        "value": "3042"
-      },
-      "covIncrement": {
-        "$base": "Real",
-        "value": "1"
-      }
-    },
     "$base": "List"
   },
   "max-segments-accepted": {
@@ -2201,7 +985,7 @@
   },
   "dns-server": {
     "$base": "String",
-    "value": "000.000.000.000"
+    "value": ""
   },
   "smtp-timeout": {
     "$base": "Unsigned",
@@ -2256,7 +1040,7 @@
   },
   "prev-hw-status": {
     "$base": "BitString",
-    "value": "database-ok;ee-ok;rtc-present;lcd-not-present;uart-present;ethernet-present"
+    "value": ""
   },
   "firmware-image-name": {
     "$base": "String",

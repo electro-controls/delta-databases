@@ -1,5 +1,5 @@
 {
-  "displayName": "EconDmpr 2-10V 0-100 % AOC",
+  "displayName": "EconDmpr 2-10V 0-100 % AOC (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aoc,6"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "EconDmpr 2-10V 0-100 % AOC"
+    "value": "EconDmpr 2-10V 0-100 % AOC (2)"
   },
   "description": {
     "$base": "String",

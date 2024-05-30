@@ -1,5 +1,5 @@
 {
-  "displayName": "HumDemand",
+  "displayName": "HumDemand (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-output,12"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HumDemand"
+    "value": "HumDemand (2)"
   },
   "description": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "HumidifierDemand AOC"
+    "value": "HumidifierDemand AOC (2)"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "17"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,7 +104,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -137,7 +140,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -192,7 +198,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,9"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -216,7 +222,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,70"
+      "unspecifiedValue": "true"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -259,11 +265,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-02T11:17:10.30"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2020-02-05T15:27:12.50"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -275,7 +281,7 @@
     },
     "8": {
       "$base": "DateTime",
-      "value": "2021-10-06T14:05:37.50"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "9": {
       "$base": "DateTime",
@@ -283,7 +289,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-02T11:17:10.60"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -307,7 +313,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2024-05-24T15:59:33.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },

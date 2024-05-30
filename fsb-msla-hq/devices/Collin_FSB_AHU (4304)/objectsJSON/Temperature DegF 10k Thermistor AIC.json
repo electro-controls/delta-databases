@@ -1,5 +1,5 @@
 {
-  "displayName": "Temperature DegF 10k Thermistor AIC",
+  "displayName": "Temperature DegF 10k Thermistor AIC (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Temperature DegF 10k Thermistor AIC"
+    "value": "Temperature DegF 10k Thermistor AIC (2)"
   },
   "description": {
     "$base": "String",

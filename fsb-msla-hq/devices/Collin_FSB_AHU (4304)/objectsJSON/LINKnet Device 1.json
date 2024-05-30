@@ -90,7 +90,7 @@
   },
   "reset-count": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "out-to-def-on-err": {
     "$base": "Boolean",

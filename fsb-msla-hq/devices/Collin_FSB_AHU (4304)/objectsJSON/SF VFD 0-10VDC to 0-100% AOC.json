@@ -1,5 +1,5 @@
 {
-  "displayName": "SF VFD 0-10VDC to 0-100% AOC",
+  "displayName": "SF VFD 0-10VDC to 0-100% AOC (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aoc,7"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SF VFD 0-10VDC to 0-100% AOC"
+    "value": "SF VFD 0-10VDC to 0-100% AOC (2)"
   },
   "description": {
     "$base": "String",

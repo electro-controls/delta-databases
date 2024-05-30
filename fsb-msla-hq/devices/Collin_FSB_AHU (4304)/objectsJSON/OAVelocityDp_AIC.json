@@ -1,5 +1,5 @@
 {
-  "displayName": "OAVelocityDp_AIC",
+  "displayName": "OAVelocityDp_AIC (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,51"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "OAVelocityDp_AIC"
+    "value": "OAVelocityDp_AIC (2)"
   },
   "description": {
     "$base": "String",

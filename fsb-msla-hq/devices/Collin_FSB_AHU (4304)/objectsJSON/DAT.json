@@ -1,5 +1,5 @@
 {
-  "displayName": "DAT",
+  "displayName": "DAT (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-input,2"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DAT"
+    "value": "DAT (2)"
   },
   "description": {
     "$base": "String",
@@ -18,19 +18,19 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "out-of-service;not-commissioned"
+    "value": "fault;out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "-58"
+    "value": "36"
   },
   "last-value": {
     "$base": "Real",
-    "value": "-58"
+    "value": "20"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "out-of-service"
+    "value": "fault;out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -54,19 +54,19 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "missing-cfg-object"
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 1
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
-    "value": "Temperature DegF 10k Thermistor AIC"
+    "value": "Temperature DegF 10k Thermistor AIC (2)"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "266"
+    "value": "58"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "212815"
+      "value": "4114"
     }
   },
   "ad-value": {

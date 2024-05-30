@@ -1,6 +1,5 @@
 {
-  "$base": "Object",
-  "displayName": "FreezeStat",
+  "displayName": "FreezeStat (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-input,5"
@@ -11,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "FreezeStat"
+    "value": "FreezeStat (2)"
   },
   "description": {
     "$base": "String",
@@ -19,15 +18,15 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "out-of-service;not-commissioned"
+    "value": "fault;out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "out-of-service"
+    "value": "fault;out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -47,15 +46,15 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "not-available"
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 1
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive BDC"
+    "value": "Active/Inactive BDC (2)"
   },
   "polarity": {
     "$base": "Enumerated",
@@ -76,25 +75,25 @@
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-01T18:19:39.500000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T18:19:39.500000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2000-01-01T18:19:27.700000-07:00"
+    "value": "2000-01-01T12:07:08.800000-07:00"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "270"
+    "value": "64"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -146,7 +145,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Active"
+    "value": "Inactive"
   },
   "hal-flags": {
     "$base": "BitString",

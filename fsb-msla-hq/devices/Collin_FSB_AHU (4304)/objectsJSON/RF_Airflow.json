@@ -1,5 +1,5 @@
 {
-  "displayName": "RF_Airflow",
+  "displayName": "RF_Airflow (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-input,8"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RF_Airflow"
+    "value": "RF_Airflow (2)"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "6281.52"
+    "value": 0
   },
   "last-value": {
     "$base": "Real",
-    "value": "6281.52"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "CFM"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -58,15 +58,15 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 1
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "RF Airflow  CFM AIC (2)"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "261"
+    "value": "59"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,11 +74,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "20000"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.02442"
+    "value": "4.88401"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "827299"
+      "value": "4915"
     }
   },
   "ad-value": {

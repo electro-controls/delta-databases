@@ -1,5 +1,5 @@
 {
-  "displayName": "RFAirflow_CO",
+  "displayName": "RFAirflow_CO (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "loop,4"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RFAirflow_CO"
+    "value": "RFAirflow_CO (2)"
   },
   "description": {
     "$base": "String",
@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "58.8338"
+    "value": "71.519"
   },
   "status-flags": {
     "$base": "BitString",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "257"
+    "value": "70"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "6281.52"
+    "value": 0
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -117,7 +117,7 @@
   },
   "setpoint": {
     "$base": "Real",
-    "value": "6743.21"
+    "value": 0
   },
   "setpoint-reference": {
     "$base": "Sequence",
@@ -255,11 +255,11 @@
   },
   "average-crossings": {
     "$base": "Real",
-    "value": 0
+    "value": "0.0838861"
   },
   "average-error": {
     "$base": "Real",
-    "value": "1272.76"
+    "value": 0
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "5543"
+      "value": "132062"
     }
   },
   "self-adj-enable": {
@@ -300,12 +300,12 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "18000"
+      "value": "144000"
     }
   },
   "setpoint-crossings": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": 0
   },
   "setpoint-crossing-flag": {
     "$base": "Boolean",
@@ -313,7 +313,7 @@
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "6363.81"
+    "value": 0
   },
   "hal-flags": {
     "$base": "BitString",

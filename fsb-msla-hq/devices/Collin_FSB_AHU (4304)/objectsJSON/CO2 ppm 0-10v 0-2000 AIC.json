@@ -1,5 +1,5 @@
 {
-  "displayName": "CO2 ppm 0-10v 0-2000 AIC",
+  "displayName": "CO2 ppm 0-10v 0-2000 AIC (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,2"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CO2 ppm 0-10v 0-2000 AIC"
+    "value": "CO2 ppm 0-10v 0-2000 AIC (2)"
   },
   "description": {
     "$base": "String",

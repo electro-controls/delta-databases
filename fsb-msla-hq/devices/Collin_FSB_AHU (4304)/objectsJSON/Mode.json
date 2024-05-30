@@ -1,5 +1,5 @@
 {
-  "displayName": "Mode",
+  "displayName": "Mode (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "multi-state-value,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Mode"
+    "value": "Mode (2)"
   },
   "description": {
     "$base": "String",
@@ -85,7 +85,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:00:00.600000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",

@@ -1,5 +1,5 @@
 {
-  "displayName": "RFCurrent AIC",
+  "displayName": "RFCurrent AIC (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,36"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RFCurrent AIC"
+    "value": "RFCurrent AIC (2)"
   },
   "description": {
     "$base": "String",

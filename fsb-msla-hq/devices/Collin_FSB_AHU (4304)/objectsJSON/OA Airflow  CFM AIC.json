@@ -1,5 +1,5 @@
 {
-  "displayName": "OA Airflow  CFM AIC",
+  "displayName": "OA Airflow  CFM AIC (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,43"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "OA Airflow  CFM AIC"
+    "value": "OA Airflow  CFM AIC (2)"
   },
   "description": {
     "$base": "String",

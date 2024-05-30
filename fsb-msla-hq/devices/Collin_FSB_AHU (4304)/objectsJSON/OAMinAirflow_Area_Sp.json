@@ -1,5 +1,5 @@
 {
-  "displayName": "OAMinAirflow_Area_Sp",
+  "displayName": "OAMinAirflow_Area_Sp (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,52"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "OAMinAirflow_Area_Sp"
+    "value": "OAMinAirflow_Area_Sp (2)"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "4.5"
+    "value": 0
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "1"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -58,7 +58,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2019-11-21T11:17:11.800000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "cov-increment": {
     "$base": "Real",

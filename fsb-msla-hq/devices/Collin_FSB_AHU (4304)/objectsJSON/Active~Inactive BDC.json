@@ -1,5 +1,5 @@
 {
-  "displayName": "Active/Inactive BDC",
+  "displayName": "Active/Inactive BDC (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "bdc,3"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Active/Inactive BDC"
+    "value": "Active/Inactive BDC (2)"
   },
   "description": {
     "$base": "String",

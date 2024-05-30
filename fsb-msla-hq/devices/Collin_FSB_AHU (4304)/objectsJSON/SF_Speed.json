@@ -1,5 +1,5 @@
 {
-  "displayName": "SF_Speed",
+  "displayName": "SF_Speed (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-output,3"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SF_Speed"
+    "value": "SF_Speed (2)"
   },
   "description": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "SF VFD 0-10VDC to 0-100% AOC"
+    "value": "SF VFD 0-10VDC to 0-100% AOC (2)"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "17"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,7 +104,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -137,7 +140,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -192,7 +198,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,9"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -216,7 +222,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,3"
+      "unspecifiedValue": "true"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -247,67 +253,67 @@
   "time-of-last-write": {
     "1": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "3": {
       "$base": "DateTime",
-      "value": "2019-07-09T12:17:07.20"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-02T11:20:57.80"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2019-11-13T15:22:14.10"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "7": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "8": {
       "$base": "DateTime",
-      "value": "2019-12-17T16:21:51.60"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "9": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-02T11:20:58.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "12": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "13": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "14": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "15": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "16": {
       "$base": "DateTime",
-      "value": "2024-05-24T16:00:11.60"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },

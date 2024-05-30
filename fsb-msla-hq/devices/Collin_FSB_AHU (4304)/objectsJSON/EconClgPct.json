@@ -1,5 +1,5 @@
 {
-  "displayName": "EconClgPct",
+  "displayName": "EconClgPct (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,22"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "EconClgPct"
+    "value": "EconClgPct (2)"
   },
   "description": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:08:58.700000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "cov-increment": {
     "$base": "Real",

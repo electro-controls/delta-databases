@@ -1,5 +1,5 @@
 {
-  "displayName": "ReturnDamper",
+  "displayName": "ReturnDamper (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-output,9"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReturnDamper"
+    "value": "ReturnDamper (2)"
   },
   "description": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Damper 0-10V 0-100 % AOC"
+    "value": "Damper 0-10V 0-100 % AOC (2)"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "17"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,7 +104,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -137,7 +140,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -192,7 +198,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,9"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -216,7 +222,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,4"
+      "unspecifiedValue": "true"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -259,11 +265,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-02T11:18:46.50"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2019-11-13T15:15:33.20"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -283,7 +289,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-02T11:18:46.40"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -307,7 +313,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2024-05-24T15:59:20.70"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },

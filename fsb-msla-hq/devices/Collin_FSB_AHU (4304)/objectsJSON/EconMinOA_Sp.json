@@ -1,5 +1,5 @@
 {
-  "displayName": "EconMinOA_Sp",
+  "displayName": "EconMinOA_Sp (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,24"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "EconMinOA_Sp"
+    "value": "EconMinOA_Sp (2)"
   },
   "description": {
     "$base": "String",
@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "3150"
+    "value": 0
   },
   "gcl-value": {
     "$base": "Real",
@@ -58,7 +58,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-05-24T15:59:44.000000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "cov-increment": {
     "$base": "Real",

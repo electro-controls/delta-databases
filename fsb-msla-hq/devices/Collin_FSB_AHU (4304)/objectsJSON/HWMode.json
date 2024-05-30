@@ -1,5 +1,5 @@
 {
-  "displayName": "HWMode",
+  "displayName": "HWMode (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,7"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HWMode"
+    "value": "HWMode (2)"
   },
   "description": {
     "$base": "String",
@@ -66,7 +66,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-05-24T08:18:53.600000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",

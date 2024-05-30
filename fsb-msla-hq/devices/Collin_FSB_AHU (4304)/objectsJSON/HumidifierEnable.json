@@ -1,5 +1,5 @@
 {
-  "displayName": "HumidifierEnable",
+  "displayName": "HumidifierEnable (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-output,11"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HumidifierEnable"
+    "value": "HumidifierEnable (2)"
   },
   "description": {
     "$base": "String",
@@ -42,7 +42,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive BDC"
+    "value": "Active/Inactive BDC (2)"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -70,7 +70,7 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:00:00.800000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -78,12 +78,12 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-01T12:07:14.200000-07:00"
   },
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:00:00.800000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "17"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -134,7 +134,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -167,7 +170,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -226,7 +232,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,9"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -250,7 +256,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,70"
+      "unspecifiedValue": "true"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -293,11 +299,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-02T11:17:12.70"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2019-12-02T14:38:57.70"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -309,7 +315,7 @@
     },
     "8": {
       "$base": "DateTime",
-      "value": "2021-07-02T09:16:05.40"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "9": {
       "$base": "DateTime",
@@ -317,7 +323,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-02T11:17:13.10"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -341,13 +347,13 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2024-05-24T15:59:59.10"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
   "port-status": {
     "$base": "Enumerated",
-    "value": "not-available"
+    "value": "active"
   },
   "da-value": {
     "$base": "Unsigned",
@@ -470,8 +476,9 @@
   },
   "flick-warn-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "flick-warn-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "flick-warn-active": {
@@ -509,8 +516,9 @@
   },
   "override-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "override-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "reliability-timer": {

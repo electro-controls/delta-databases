@@ -1,6 +1,5 @@
 {
-  "$base": "Object",
-  "displayName": "Outdoor_Airflow",
+  "displayName": "Outdoor_Airflow (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-input,12"
@@ -11,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Outdoor_Airflow"
+    "value": "Outdoor_Airflow (2)"
   },
   "description": {
     "$base": "String",
@@ -39,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "CFM"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -63,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "OA Airflow  CFM AIC (2)"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "263"
+    "value": "59"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -75,11 +74,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "20000"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.02442"
+    "value": "4.88401"
   },
   "cov-increment": {
     "$base": "Real",
@@ -93,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "838988"
+      "value": "131872"
     }
   },
   "ad-value": {

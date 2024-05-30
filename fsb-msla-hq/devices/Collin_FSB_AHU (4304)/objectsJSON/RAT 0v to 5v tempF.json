@@ -1,5 +1,5 @@
 {
-  "displayName": "RAT 0v to 5v tempF",
+  "displayName": "RAT 0v to 5v tempF (2)",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,40"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "RAT 0v to 5v tempF"
+    "value": "RAT 0v to 5v tempF (2)"
   },
   "description": {
     "$base": "String",
