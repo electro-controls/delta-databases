@@ -63,11 +63,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Pressure inH20 4-20mA 0_5 AIC"
+    "value": "Building_Pressure_inH20_4-20mA_0-0.25_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "270"
+    "value": "299"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -93,7 +93,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "220673"
+      "value": "827098"
     }
   },
   "ad-value": {

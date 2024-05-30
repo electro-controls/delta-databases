@@ -94,7 +94,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "263"
+    "value": "266"
   },
   "time-delay": {
     "$base": "Unsigned",

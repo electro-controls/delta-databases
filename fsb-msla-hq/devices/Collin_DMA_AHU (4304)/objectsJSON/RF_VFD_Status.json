@@ -27,7 +27,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -55,7 +55,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "Active/Inactive BDC"
   },
   "polarity": {
     "$base": "Enumerated",
@@ -63,11 +63,11 @@
   },
   "active-text": {
     "$base": "String",
-    "value": "ON"
+    "value": "Active"
   },
   "inactive-text": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Inactive"
   },
   "prev-change-of-state-times": {
     "1": {
@@ -94,7 +94,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "277"
+    "value": "270"
   },
   "time-delay": {
     "$base": "Unsigned",
