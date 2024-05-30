@@ -1,5 +1,5 @@
 {
-  "displayName": "SF Airflow  CFM AIC",
+  "displayName": "SF_Airflow_CFM_AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,9"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SF Airflow  CFM AIC"
+    "value": "SF_Airflow_CFM_AIC"
   },
   "description": {
     "$base": "String",
@@ -26,7 +26,7 @@
   },
   "max-value": {
     "$base": "Real",
-    "value": "19500"
+    "value": "20000"
   },
   "min-value": {
     "$base": "Real",
@@ -71,7 +71,7 @@
       },
       "value": {
         "$base": "Real",
-        "value": "19500"
+        "value": "20000"
       },
       "adValue": {
         "$base": "Unsigned",

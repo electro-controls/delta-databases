@@ -1,5 +1,5 @@
 {
-  "displayName": "Pressure inH20 4-20mA 0_5 AIC",
+  "displayName": "Building_Pressure_inH20_4-20mA_0-0.25_AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aic,5"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Pressure inH20 4-20mA 0_5 AIC"
+    "value": "Building_Pressure_inH20_4-20mA_0-0.25_AIC"
   },
   "description": {
     "$base": "String",
@@ -26,7 +26,7 @@
   },
   "max-value": {
     "$base": "Real",
-    "value": "5"
+    "value": "0.25"
   },
   "min-value": {
     "$base": "Real",
@@ -71,7 +71,7 @@
       },
       "value": {
         "$base": "Real",
-        "value": "5"
+        "value": "0.25"
       },
       "adValue": {
         "$base": "Unsigned",

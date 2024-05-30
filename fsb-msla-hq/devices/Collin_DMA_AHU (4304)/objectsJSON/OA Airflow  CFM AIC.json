@@ -26,7 +26,7 @@
   },
   "max-value": {
     "$base": "Real",
-    "value": "19500"
+    "value": "20000"
   },
   "min-value": {
     "$base": "Real",
@@ -56,7 +56,7 @@
       },
       "value": {
         "$base": "Real",
-        "value": "19500"
+        "value": "20000"
       },
       "adValue": {
         "$base": "Unsigned",
