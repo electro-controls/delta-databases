@@ -1,0 +1,206 @@
+{
+  "displayName": "SavZeroCalWarning",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "event-enrollment,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "event-enrollment"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "SavZeroCalWarning"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "pending-event-state": {
+    "$base": "Enumerated",
+    "value": "unknown"
+  },
+  "enable-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "all",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "event-type": {
+    "$base": "Enumerated",
+    "value": "out-of-range"
+  },
+  "notify-type": {
+    "$base": "Enumerated",
+    "value": "alarm"
+  },
+  "event-parameters": {
+    "$base": "Choice",
+    "out-of-range": {
+      "$base": "Sequence",
+      "time-delay": {
+        "$base": "Unsigned",
+        "value": "65534"
+      },
+      "low-limit": {
+        "$base": "Real",
+        "value": "1"
+      },
+      "high-limit": {
+        "$base": "Real",
+        "value": "1000"
+      },
+      "deadband": {
+        "$base": "Real",
+        "value": "1"
+      }
+    }
+  },
+  "context": {
+    "$base": "Choice",
+    "out-of-range": {
+      "$base": "Choice",
+      "out-of-range": {
+        "$base": "Real",
+        "value": "412"
+      }
+    }
+  },
+  "object-property-reference": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "device,4001"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,11161"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "present-value",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "event-enable": {
+    "$base": "BitString",
+    "value": "to-offnormal;to-fault;to-normal"
+  },
+  "acked-transitions": {
+    "$base": "BitString",
+    "value": "to-offnormal;to-fault;to-normal"
+  },
+  "notification-class": {
+    "$base": "Unsigned",
+    "value": "4194303"
+  },
+  "event-class-ref": {
+    "$base": "ObjectIdentifier",
+    "value": "notification-class,*"
+  },
+  "time-delay-timer": {
+    "$base": "Choice",
+    "time-delay-timer": {
+      "$base": "Unsigned",
+      "value": "6321644"
+    }
+  },
+  "event-time-stamps": {
+    "1": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "2000-01-02T06:12:15.70"
+      }
+    },
+    "2": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "3": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "2000-01-08T19:36:04.40"
+      }
+    },
+    "$base": "Array"
+  },
+  "event-count": {
+    "1": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "2": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "3": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "$base": "Array"
+  },
+  "event-message-texts-config": {
+    "1": {
+      "$base": "String",
+      "value": "Zero Cal alert...Perform ZeroCal with AHU off prior to TAB"
+    },
+    "2": {
+      "$base": "String",
+      "value": ""
+    },
+    "3": {
+      "$base": "String",
+      "value": ""
+    },
+    "$base": "Array"
+  },
+  "last-off-normal-state": {
+    "$base": "Enumerated",
+    "value": "low-limit"
+  },
+  "enable-auto-text": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

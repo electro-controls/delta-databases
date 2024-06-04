@@ -1,0 +1,79 @@
+{
+  "displayName": "SavTimeLastRecalc",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,11157"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "SavTimeLastRecalc"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Time since last Pv Damper recalc"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "10.4"
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": "10.4"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "h"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,11141"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2024-06-04T13:21:22.100000-06:00"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

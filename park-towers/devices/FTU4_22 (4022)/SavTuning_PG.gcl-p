@@ -1,0 +1,6 @@
+If PowerUp Or ('SavTuningSensitivity_Sp' Changed) Then
+    'Sav_CO.Proportional_Constant' = Scale ('SavTuningSensitivity_Sp', 0, 1, 'SavKFactor' * 5, 100, 'SavKFactor' * 0.5) //Proportional Band
+    'Sav_CO.Reset_Band' = 'Sav_CO.Proportional_Constant' * 0.3
+    'Sav_CO.Deadband' = Scale ('SavTuningSensitivity_Sp', 0, 1, 'SavMaxCl_Sp' * 0.1, 100, 'SavMaxCl_Sp' * 0.02)
+End If
+     

@@ -1,0 +1,71 @@
+{
+  "displayName": "DER2__2000_AV10100_85_R",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "der,2"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "data-exchange-remote-data"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "DER2__2000_AV10100_85_R"
+  },
+  "exchange-flags": {
+    "$base": "BitString",
+    "value": "subscribed"
+  },
+  "exchange-type": {
+    "$base": "Enumerated",
+    "value": "default-exchange-type"
+  },
+  "last-error": {
+    "$base": "Signed",
+    "value": 0
+  },
+  "remote-reference": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "device,2000"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10100"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "present-value",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "remote-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "remote-value": {
+    "$base": "Choice",
+    "real": {
+      "$base": "Real",
+      "value": "950"
+    }
+  },
+  "subscriber-count": {
+    "$base": "Unsigned",
+    "value": "2"
+  },
+  "last-received": {
+    "$base": "Unsigned",
+    "value": "35565317"
+  },
+  "update-frequency": {
+    "$base": "Unsigned",
+    "value": "5"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": 0
+  }
+}

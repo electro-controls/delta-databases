@@ -1,0 +1,18 @@
+{
+  "displayName": "Slave Device List 2019",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "sdl,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "slave-device-list"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Slave Device List 2019"
+  },
+  "device-list": {
+    "$base": "Array"
+  }
+}

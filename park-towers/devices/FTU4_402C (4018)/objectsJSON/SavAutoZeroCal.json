@@ -1,0 +1,79 @@
+{
+  "displayName": "SavAutoZeroCal",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "binary-value,11161"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "SavAutoZeroCal"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Used to Zero Calibrate the flow sensor.  Set to manual Active with air handler off.  After Calibration it will turn back to Auto and Inactive automatically."
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "gcl-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,1"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Active"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Inactive"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,11143"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-08T15:06:36.800000-07:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Inactive"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

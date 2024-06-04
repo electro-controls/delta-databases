@@ -1,0 +1,80 @@
+{
+  "1025": {
+    "$base": "Choice"
+  },
+  "1033": {
+    "$base": "Choice"
+  },
+  "1035": {
+    "$base": "Choice"
+  },
+  "1037": {
+    "$base": "Choice"
+  },
+  "1038": {
+    "$base": "Choice"
+  },
+  "1055": {
+    "$base": "Choice"
+  },
+  "1058": {
+    "$base": "Choice"
+  },
+  "1070": {
+    "$base": "Choice"
+  },
+  "1072": {
+    "1072": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1073": {
+    "$base": "Choice"
+  },
+  "displayName": "HWVLock",
+  "active-text": {
+    "$base": "String",
+    "value": "Active"
+  },
+  "description": {
+    "$base": "String",
+    "value": "HWV lockout"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Inactive"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "binary-value,11075"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "HWVLock"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-value"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "present-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": "out-of-service"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "1025": {
+    "$base": "Choice",
+    "error": "0",
+    "errorText": "Unspecified Error"
+  },
+  "1033": {
+    "$base": "Choice",
+    "error": "0",
+    "errorText": "Unspecified Error"
+  },
+  "1035": {
+    "$base": "Choice",
+    "error": "0",
+    "errorText": "Unspecified Error"
+  },
+  "1037": {
+    "$base": "Choice",
+    "error": "0",
+    "errorText": "Unspecified Error"
+  },
+  "1038": {
+    "$base": "Choice",
+    "error": "0",
+    "errorText": "Unspecified Error"
+  },
+  "1055": {
+    "$base": "Choice",
+    "error": "0",
+    "errorText": "Unspecified Error"
+  },
+  "1058": {
+    "$base": "Choice",
+    "error": "0",
+    "errorText": "Unspecified Error"
+  },
+  "1070": {
+    "$base": "Choice",
+    "error": "0",
+    "errorText": "Unspecified Error"
+  },
+  "1072": {
+    "1072": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1073": {
+    "$base": "Choice",
+    "error": "0",
+    "errorText": "Unspecified Error"
+  },
+  "displayName": "ZoneClDemand",
+  "active-text": {
+    "$base": "String",
+    "value": "Active"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Inactive"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "binary-value,11031"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "ZoneClDemand"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-value"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "present-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "value": ""
+  },
+  "relinquish-default": {
+    "$base": "Enumerated",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "value": ""
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "value": ""
+  },
+  "time-delay": {
+    "$base": "Unsigned",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "value": ""
+  },
+  "time-of-active-time-reset": {
+    "$base": "DateTime",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "value": ""
+  },
+  "time-of-state-count-reset": {
+    "$base": "DateTime",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "value": ""
+  },
+  "event-time-stamps": {
+    "$base": "Array",
+    "error": "0",
+    "errorText": "Unspecified Error"
+  },
+  "profile-name": {
+    "$base": "String",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "value": ""
+  }
+}

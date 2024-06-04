@@ -1,0 +1,79 @@
+{
+  "displayName": "HWVRuntimeDir",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "binary-value,11072"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "HWVRuntimeDir"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "gcl-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,3"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Open"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Close"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,11070"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-04-13T16:41:26.100000-06:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Close"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

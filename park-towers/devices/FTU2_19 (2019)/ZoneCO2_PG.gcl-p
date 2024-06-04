@@ -1,0 +1,18 @@
+//CO2 Demand
+
+If 'ZoneCO2_RemDemand' >= 0 Then
+    'ZoneCO2_EffDemand' = 'ZoneCO2_RemDemand'
+  Else
+    'ZoneCO2_EffDemand' = 'ZoneCO2_LocDemand'
+End If
+
+
+If ('ZoneOccMode' = 3) Or ('ZoneOccMode' = 4) Then
+  'ZoneCO2_LocDemand' = 'ZoneCO2_CO' * 'ZoneCO2_Limit_Sp' * 0.01
+  Else
+  'ZoneCO2_LocDemand' = 0
+End If
+
+
+//If CO2 is not present change Zone_EffCO2 reference to 0 on ZoneGeneral_PG  
+'ZoneCO2_Airflow' = Scale ('ZoneCO2_EffDemand', 0, 0, Min ('SavMinHt_Sp', 'SavMinCl_Sp'), 50, 'SavMaxCl_Sp') //increase zone air flow 1st, followed by AHU increase OA pct

@@ -1,0 +1,166 @@
+{
+  "displayName": "EVC1",
+  "ack-required": {
+    "$base": "BitString",
+    "value": "to-offnormal;to-fault"
+  },
+  "notification-class": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "notification-class,1"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "EVC1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "notification-class"
+  },
+  "priority": {
+    "1": {
+      "$base": "Unsigned",
+      "value": "90"
+    },
+    "2": {
+      "$base": "Unsigned",
+      "value": "100"
+    },
+    "3": {
+      "$base": "Unsigned",
+      "value": "170"
+    },
+    "$base": "Array"
+  },
+  "recipient-list": {
+    "1": {
+      "$base": "Sequence",
+      "validDays": {
+        "$base": "BitString",
+        "value": "monday;tuesday;wednesday;thursday;friday;saturday;sunday"
+      },
+      "fromTime": {
+        "$base": "Time",
+        "value": "00:00:00.00"
+      },
+      "toTime": {
+        "$base": "Time",
+        "value": "23:59:59.99"
+      },
+      "recipient": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "65535"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x"
+          }
+        }
+      },
+      "processIdentifier": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "issueConfirmedNotifications": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "transitions": {
+        "$base": "BitString",
+        "value": "to-offnormal;to-fault;to-normal"
+      }
+    },
+    "$base": "List"
+  },
+  "object-size": {
+    "$base": "Unsigned",
+    "value": "72"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "value": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "destination-list": {
+    "1": {
+      "$base": "Sequence",
+      "validDays": {
+        "$base": "BitString",
+        "value": "monday;tuesday;wednesday;thursday;friday;saturday;sunday"
+      },
+      "fromTime": {
+        "$base": "Time",
+        "value": "00:00:00.00"
+      },
+      "toTime": {
+        "$base": "Time",
+        "value": "23:59:59.99"
+      },
+      "recipient": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "65535"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x"
+          }
+        }
+      },
+      "processIdentifier": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "issueConfirmedNotifications": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "transitions": {
+        "$base": "BitString",
+        "value": "to-offnormal;to-fault;to-normal"
+      },
+      "retry": {
+        "$base": "Boolean",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "always-send": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  },
+  "notify-type": {
+    "$base": "Enumerated",
+    "value": "alarm"
+  }
+}

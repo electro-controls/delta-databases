@@ -1,0 +1,335 @@
+{
+  "displayName": "Database Information 2052",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "dbi,2052"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "database"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Database Information 2052"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Incomplete 01 60 0a b0 a0 c2 88 83 43 40 0e 18 60 60"
+  },
+  "present-value": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "total-db-size": {
+    "$base": "Unsigned",
+    "value": "130964"
+  },
+  "free-memory": {
+    "$base": "Unsigned",
+    "value": "116988"
+  },
+  "object-count": {
+    "$base": "Unsigned",
+    "value": "63"
+  },
+  "object-list": {
+    "1": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-input,1"
+    },
+    "2": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-output,3"
+    },
+    "3": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-output,4"
+    },
+    "4": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,1"
+    },
+    "5": {
+      "$base": "ObjectIdentifier",
+      "value": "device,2052"
+    },
+    "6": {
+      "$base": "ObjectIdentifier",
+      "value": "file,1"
+    },
+    "7": {
+      "$base": "ObjectIdentifier",
+      "value": "loop,1"
+    },
+    "8": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,1"
+    },
+    "9": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,2"
+    },
+    "10": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,3"
+    },
+    "11": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,4"
+    },
+    "12": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,5"
+    },
+    "13": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,6"
+    },
+    "14": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,7"
+    },
+    "15": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,8"
+    },
+    "16": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,9"
+    },
+    "17": {
+      "$base": "ObjectIdentifier",
+      "value": "program,1"
+    },
+    "18": {
+      "$base": "ObjectIdentifier",
+      "value": "program,2"
+    },
+    "19": {
+      "$base": "ObjectIdentifier",
+      "value": "program,98"
+    },
+    "20": {
+      "$base": "ObjectIdentifier",
+      "value": "program,11051"
+    },
+    "21": {
+      "$base": "ObjectIdentifier",
+      "value": "multi-state-value,11001"
+    },
+    "22": {
+      "$base": "ObjectIdentifier",
+      "value": "del,1"
+    },
+    "23": {
+      "$base": "ObjectIdentifier",
+      "value": "des,1"
+    },
+    "24": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,49"
+    },
+    "25": {
+      "$base": "ObjectIdentifier",
+      "value": "aoc,14"
+    },
+    "26": {
+      "$base": "ObjectIdentifier",
+      "value": "dbi,2052"
+    },
+    "27": {
+      "$base": "ObjectIdentifier",
+      "value": "mic,1"
+    },
+    "28": {
+      "$base": "ObjectIdentifier",
+      "value": "sua,1"
+    },
+    "29": {
+      "$base": "ObjectIdentifier",
+      "value": "net,1"
+    },
+    "30": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,1"
+    },
+    "31": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,2"
+    },
+    "32": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,3"
+    },
+    "33": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,4"
+    },
+    "34": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,5"
+    },
+    "35": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,6"
+    },
+    "36": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,7"
+    },
+    "37": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,8"
+    },
+    "38": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,9"
+    },
+    "39": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,10"
+    },
+    "40": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,1"
+    },
+    "41": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,2"
+    },
+    "42": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,3"
+    },
+    "43": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,4"
+    },
+    "44": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,5"
+    },
+    "45": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,6"
+    },
+    "46": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,7"
+    },
+    "47": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,8"
+    },
+    "48": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,9"
+    },
+    "49": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,10"
+    },
+    "50": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,11"
+    },
+    "51": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,12"
+    },
+    "52": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,13"
+    },
+    "53": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,14"
+    },
+    "54": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,15"
+    },
+    "55": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,16"
+    },
+    "56": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,17"
+    },
+    "57": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,18"
+    },
+    "58": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,19"
+    },
+    "59": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,20"
+    },
+    "60": {
+      "$base": "ObjectIdentifier",
+      "value": "evs,1"
+    },
+    "61": {
+      "$base": "ObjectIdentifier",
+      "value": "pan,1"
+    },
+    "62": {
+      "$base": "ObjectIdentifier",
+      "value": "sdl,1"
+    },
+    "63": {
+      "$base": "ObjectIdentifier",
+      "value": "sug,1"
+    },
+    "$base": "Array"
+  },
+  "dictionary-version": {
+    "$base": "String",
+    "value": "2010-9-28(2) 13:35: 8"
+  },
+  "time-of-last-chg": {
+    "$base": "DateTime",
+    "value": "2024-04-16T10:41:23.100000-06:00"
+  },
+  "src-user-of-last-chg": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "all",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "src-device-of-last-chg": {
+    "$base": "ObjectIdentifier",
+    "unspecifiedValue": "true"
+  },
+  "database-revision": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "total-graphic-memory": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  },
+  "free-graphic-memory": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  }
+}

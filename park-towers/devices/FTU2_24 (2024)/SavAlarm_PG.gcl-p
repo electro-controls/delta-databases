@@ -1,0 +1,26 @@
+//The below Calculates Pv Alarm status
+//2Sep20 Phil added interlock to SF Ontime AV95
+//07Mar22 Phil revised TAB procedure and this page was modified (line15, 24)
+Variable Starve
+Variable Excess
+
+Starve = Switch ( Starve, 'Sav_EffAirflow', 'Sav_EffSp' * 0.8, 'Sav_EffSp' * 0.9)
+Excess = Switch ( Excess, 'Sav_EffAirflow', 'Sav_EffSp' * 1.5, 'Sav_EffSp' * 1.2)
+
+If 'SavZeroCountCal' < 1 Then
+    'SavAlarm' = 7 //Zero Cal Problem
+  ElseIf  (('SFOntimeRef' > 60) And ('Sav_EffDemand' > 1) And ('Sav_EffAirflow' < ('Sav_EffSp' * 0.05))) OnFor 3M Then
+    'SavAlarm' = 6 //No Air Flow
+  ElseIf  ('SavAlarm' = 8) Then
+      //defering to Balance page while in calibration
+  ElseIf  (('Sav_EffDemand' <= 1) And Excess) OnFor 3M Then
+    'SavAlarm' = 5 //5 is Problem Closing
+  ElseIf  (('SFOntimeRef' > 60) And ('Sav_EffDemand' > 99) And 'Sav_EffAirflow' < ('Sav_EffSp' * 0.25)) OnFor 3M Then
+    'SavAlarm' = 4 //4 is Problem Opening
+  ElseIf  (Not 'FanEnable') And (('Sav_EffDemand' = 0) And ('Sav_EffAirflow' > (0.1 * Max ('SavMaxCl_Sp', 'SavMaxHt_Sp')))) OnFor 3M Then
+    'SavAlarm' = 3 //3 is Leakage
+  ElseIf  (('SFOntimeRef' > 60) And ('Sav_EffDemand' >= 99) And Starve) OnFor 3M Then
+    'SavAlarm' = 2 //2 is Starving
+  ElseIf  ('Sav_TABMeasurment' < 0) OnFor 120S Then
+    'SavAlarm' = 1
+End If

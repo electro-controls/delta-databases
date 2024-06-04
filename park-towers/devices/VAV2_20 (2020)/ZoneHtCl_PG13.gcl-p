@@ -1,0 +1,113 @@
+'ZoneHtCl_PG13.Write_Priority' = 13
+//The following sequnce detrmines the current mode of
+//operation (Heating, Cooling, or Deadband)
+Variable HtCall
+Variable ClCall
+Variable LastState
+
+// Effective SP
+If ('ZoneOccMode' = 3) Or ('ZoneOccMode' = 4) Or ('ZoneOccMode' = 5) Then //Occ, Bypass, Warmup 
+    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - ('ZoneDb_Sp' * 0.5)), 'ZoneOcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('Zone_EffSp' + ('ZoneDb_Sp' * 0.5)), 'ZoneOcClgMin_Sp')
+  ElseIf  'ZoneOccMode' = 2 Then //Standby
+    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - 'ZoneStandbyOffset_Sp' - ('ZoneDb_Sp' * 0.5)), 'ZoneOcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('Zone_EffSp' + 'ZoneStandbyOffset_Sp' + ('ZoneDb_Sp' * 0.5)), 'ZoneOcClgMin_Sp')
+  ElseIf  'ZoneOccMode' = 6 Then //Purge
+    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - 'ZoneStandbyOffset_Sp' - ('ZoneDb_Sp' * 0.5)), 'ZoneOcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('Zone_EffSp' + ('ZoneDb_Sp' * 0.5)), 'ZoneOcClgMin_Sp')
+  Else //Unocc
+    'ZoneHeat_EffSp' = Min ('ZoneUnocHt_Sp', 'ZoneOcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max ('ZoneUnocCl_Sp', 'ZoneOcClgMin_Sp')
+End If
+
+//Links remote setpoint to effective
+If 'Zone_RemSp' > 0 Then
+ 'Zone_EffSp' = 'Zone_RemSp'
+ If ('ZoneDNSLocSpFallback' = 1) Then
+    'Zone_LocSp' = 'Zone_RemSp'
+ End If
+Else
+ 'Zone_EffSp' = 'Zone_LocSp'
+End If
+
+//This just display the value of the CO for display at the NM level
+'Zone_LocHtg' = 'ZoneHtg_CO' * 'ZoneHtgRamp' * 0.01
+'Zone_LocClg' = 'ZoneClg_CO' * 'ZoneClgRamp' * 0.01
+
+//This determines the actual heating/cooling/deadband mode
+//This also does the previous mode latching. Previous mode could then be used
+//by other routines (like DAT control).
+If (('ZoneHtg_CO' > 'Zone_EffClg' + 5) And 'ZoneControlMode' = 3) OnFor 'ZoneDbDelay_Sp':S Then
+    HtCall = On
+    'ZonePrevControlMode' = 3
+  ElseIf  (('ZoneClg_CO' > 'Zone_EffHtg' + 5) And 'ZoneControlMode' = 3) OnFor 'ZoneDbDelay_Sp':S Then
+    ClCall = On
+    'ZonePrevControlMode' = 3
+  ElseIf  (('ZoneControlMode' = 1) And ('Zone_EffHtg' <= 0)) OnFor 'ZoneDbDelay_Sp':S Then
+    HtCall = Off
+    'ZonePrevControlMode' = 1
+  ElseIf  (('ZoneControlMode' = 2) And ('Zone_EffClg' <= 0)) OnFor 'ZoneDbDelay_Sp':S Then
+    ClCall = Off
+    'ZonePrevControlMode' = 2
+End If
+
+//Set current control mode
+//This takes into account a manual override of the space heating/cooling %
+//from the NM
+If 'Zone_RemHtg' >= 0 Then
+    'Zone_EffHtg' = 'Zone_RemHtg'
+    'Zone_EffClg' = 0
+    'ZoneControlMode' = 1
+  ElseIf  'Zone_RemClg' >= 0 Then
+    'Zone_EffClg' = 'Zone_RemClg'
+    'Zone_EffHtg' = 0
+    'ZoneControlMode' = 2
+  ElseIf  ClCall Then
+    'ZoneControlMode' = 2
+    'Zone_EffHtg' = 'Zone_LocHtg'
+    'Zone_EffClg' = 'Zone_LocClg'
+  ElseIf  HtCall Then
+    'ZoneControlMode' = 1
+    'Zone_EffHtg' = 'Zone_LocHtg'
+    'Zone_EffClg' = 'Zone_LocClg'
+  Else
+    'ZoneControlMode' = 3
+    'Zone_EffHtg' = 'Zone_LocHtg'
+    'Zone_EffClg' = 'Zone_LocClg'
+End If
+
+//This provides ramp delay to sequence in mode %. Intended
+//to minimize overshoot of cooresponding cascade control loops when
+//major swings are seen as setpoints and/or zone temps. Also, allows for
+//smoother sequenceing of staged outputs (when applicable).
+If 'ZoneControlMode' = 1 Then
+    DoEvery 10S
+    'ZoneHtgRamp' = Min (100, 'ZoneHtgRamp' + (1000 / 'ZoneHtRamp_Sp'))
+    End Do
+  Else
+    'ZoneHtgRamp' = 0
+End If
+If 'ZoneControlMode' = 2 Then
+    DoEvery 10S
+    'ZoneClgRamp' = Min (100, 'ZoneClgRamp' + (1000 / 'ZoneClRamp_Sp'))
+    End Do
+  Else
+    'ZoneClgRamp' = 0
+End If
+
+//Unoc Demand
+If ('ZoneOccMode' = 1) Then
+  'ZoneUnocHtCall' = Switch ( 'ZoneHtDemand', 'Zone_EffHtg', 99, 50)
+  'ZoneUnocClCall' = Switch ( 'ZoneClDemand', 'Zone_EffClg', 99, 50)
+Else
+  'ZoneUnocHtCall' = Off
+  'ZoneUnocClCall' = Off
+End If
+
+//Standby Demand
+'ZoneHtDemand' = Switch ( 'ZoneHtDemand', 'Zone_EffHtg', 99, 50)
+'ZoneClDemand' = Switch ( 'ZoneClDemand', 'Zone_EffClg', 99, 50)
+IfOnce ('ZoneOccMode' = 2) Then //2 = Standby
+    'ZoneClg_CO.Bias' = 1
+    'ZoneHtg_CO.Bias' = 1
+End If
