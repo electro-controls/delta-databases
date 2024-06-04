@@ -1651,6 +1651,21 @@
       },
       "date": "5/30/2024, 2:44:53 PM",
       "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,9",
+      "objectName": "Critical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/Critical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "6/4/2024, 2:04:34 PM",
+      "templateTriggered": false
     }
   ],
   "devices": [
