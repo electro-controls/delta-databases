@@ -1,8 +1,8 @@
 {
-  "displayName": "HumidifierEnable",
+  "displayName": "SF_VFD_Enable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-output,11"
+    "value": "binary-output,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,15 +10,15 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HumidifierEnable"
+    "value": "SF_VFD_Enable"
   },
   "description": {
     "$base": "String",
-    "value": "2/5/2020 dmp: confirmed to enable unit"
+    "value": "DM 10_30_19  visually verifed both fans come on with enable and same speed with speed signal \n \nfan are set 20 hz for min speed with an enable"
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;private2"
+    "value": "private2"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -50,7 +50,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "not-available"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -78,7 +78,7 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2000-01-10T15:43:42.300000-07:00"
+    "value": "2000-01-10T15:44:42.600000-07:00"
   },
   "prev-change-of-state-times": {
     "1": {
@@ -93,7 +93,7 @@
   },
   "minimum-off-time": {
     "$base": "Unsigned",
-    "value": "60"
+    "value": "300"
   },
   "minimum-on-time": {
     "$base": "Unsigned",
@@ -369,7 +369,7 @@
   },
   "hoa-status": {
     "$base": "Enumerated",
-    "value": "none"
+    "value": "auto"
   },
   "delay-status": {
     "$base": "Enumerated",

@@ -552,9 +552,6 @@
       "159": {
         "$base": "Choice"
       },
-      "160": {
-        "$base": "Choice"
-      },
       "$base": "Array"
     }
   },
@@ -580,11 +577,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "16:04:27.00"
+    "value": "10:06:48.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2000-01-10"
+    "value": "2024-06-04"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -702,7 +699,7 @@
   },
   "last-reset-time": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-05-21T13:00:42.000000-06:00"
   },
   "reset-count": {
     "$base": "Unsigned",
@@ -733,7 +730,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "16.5909"
+    "value": "18.8636"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -841,7 +838,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "7922672"
+      "value": "11991756"
     }
   },
   "logical-base-address": {
@@ -950,7 +947,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "192"
+    "value": "198"
   },
   "active-cov-subscriptions": {
     "$base": "List"

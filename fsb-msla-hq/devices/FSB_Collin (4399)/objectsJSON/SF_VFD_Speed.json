@@ -1,8 +1,8 @@
 {
-  "displayName": "ReliefDamper",
+  "displayName": "SF_VFD_Speed",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output,6"
+    "value": "analog-output,3"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ReliefDamper"
+    "value": "SF_VFD_Speed"
   },
   "description": {
     "$base": "String",
-    "value": "DM 10_30_19  visually verifed the action of damper at 25_50_100 and back to 0 percent"
+    "value": "DM 10_30_19  visually verifed both fans come on with enable and same speed with speed signal \n \nfan are set 20 hz for min speed with an enable"
   },
   "flags": {
     "$base": "BitString",
@@ -42,7 +42,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aoc,2"
+    "value": "aoc,7"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Damper 0-10V 0-100 % AOC"
+    "value": "SF VFD 0-10VDC to 0-100% AOC"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -319,7 +319,7 @@
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "1"
+    "value": "5"
   },
   "polarity": {
     "$base": "Enumerated",
