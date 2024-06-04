@@ -1,7 +1,0 @@
-If ('Mode' = 1) Or ('Mode' = 4) Then // AHU 4 occ or unocc cooling
-  '5thFloorOSA_ISO_Dmprs' = On
-ElseIf  ('2000.Mode' = 1) Or ('2000.Mode' = 1) Then // AHU 2 occ or unocc cooling
-  '5thFloorOSA_ISO_Dmprs' = On
-Else
-  '5thFloorOSA_ISO_Dmprs' = Off
-End If

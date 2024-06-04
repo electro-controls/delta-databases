@@ -1,0 +1,59 @@
+'Economizer_PG13.Write_Priority' = 13
+
+//Economizer sequence
+//Economizer ramp dalay is automatically longer during
+//cold weather.
+'EconRampDelay' = Scale ('OAT_Eff', 0, 20, 2000, 60, 60)
+'EconMATLimit' = 'EconMATLimit_CO'
+
+//Determines if free cooling can be achived by comparing
+// OAT and RAT
+'EconFreeCooling' = Switch ( 'EconFreeCooling', 'OAT_Eff', 'RAT_Local' - 1, 'RAT_Local' + 1)
+
+
+'EconAuthority' = Scale ('OAT_Eff', 0, 35, 80, 55, 50) //Gives economizer more authority as it gets colder out
+
+If 'EconFreeCooling' And ('Mode' = 1 Or 'Mode' = 4 Or 'Mode' = 6) And (Not 'HeatCoolMode') Then //Occ/UnOcc Cooling
+    'Econ_LocClg' = Scale ('DATClg_CO', 0, 0, 0, 'EconAuthority', 100)
+  Else
+    'Econ_LocClg' = 0
+End If
+
+If 'Econ_RemClg' >= 0 Then
+    'Econ_EffClg' = 'Econ_LocClg'
+  Else
+    'Econ_EffClg' = 'Econ_RemClg'
+End If
+
+If ('Econ_RemMinOAPct' >= 0) Then
+    'Econ_EffMinOAPct' = 'Econ_RemMinOAPct'
+  Else
+    'Econ_EffMinOAPct' = 'Econ_LocMinOAPct'
+End If
+
+If ('Mode' = 1) Then
+    'Econ_LocMinOAPct' = Scale ('CO2_EffDemand', 0, 0, 'EconMinOAPct_Sp', 100, 'EconMATLimit')
+  Else
+    'Econ_LocMinOAPct' = 0
+End If
+
+If ('SFUptime' > 2) And (('Mode' = 1) Or ('Mode' = 4) Or ('Mode' = 5)) Then //Occ/UnOcc Cooling/purge
+    'EconDamper' = (Scale ('Econ_LocClg', 0, 0, 'Econ_LocMinOAPct', 100, 'EconRamp')) * ('EconMATLimit' * 0.01) //(Max (MinOAPct, EconClgPct)) * (EconRampPct * 0.01) * (MATLimit_CO * 0.01)
+Else
+    'EconDamper' = 0
+End If
+
+If ('MAT' < ('EconMATLimit_Sp' - 5)) OnFor 30S Then
+    'EconMATWarn' = On
+End If
+If ('MAT' >= 'EconMATLimit_Sp') OnFor 30S Then
+    'EconMATWarn' = Off
+End If
+
+If ('SFUptime' > 2) And (Not 'EconMATWarn') And (('Mode' = 1) Or ('Mode' = 4) Or ('Mode' = 5)) Then //Occ/UnOcc Cooling/purge
+   DoEvery 10S
+   'EconRamp' = Min (100, 'EconRamp' + (1000 / 'EconRampDelay'))
+   End Do
+  Else
+   'EconRamp' = 0
+End If

@@ -1,0 +1,21 @@
+'CO2_PG13.Write_Priority' = 13
+//CO2 Demand
+
+'CO2_Eff' = 'RA_CO2'
+
+If 'CO2_RemDemand' >= 0 Then
+    'CO2_EffDemand' = 'CO2_RemDemand'
+  Else
+    'CO2_EffDemand' = 'CO2_LocDemand'
+End If
+
+
+If ('Mode' = 1) Then
+  'CO2_LocDemand' = 'CO2_CO' * 'CO2_Limit_Sp' * 0.01
+  Else
+  'CO2_LocDemand' = 0
+End If
+
+
+//If CO2 is not present change Zone_EffCO2 reference to 0 on ZoneGeneral_PG  
+'CO2_Airflow' = 0 //Reserved for future

@@ -1,0 +1,21 @@
+'AHU_General_PG13.Write_Priority' = 13
+
+//Power up defaults  These will be written to after power up from Jace.
+
+IfOnce PowerUp Then
+    'DATClg_Sp' = 60
+    'DATHtg_Sp' = 55
+    'EconMATLimit_Sp' = 50
+    'Mode' = 1 //Occupied
+End If
+IfOnce 'JaceCfail' Then
+  'Mode' = 1 //Occupied  
+  'DATClg_Sp' = Scale ('OAT_Eff', 0, 10, 65, 40, 55)
+  'DATHtg_Sp' = 'DATClg_Sp' - 5
+End If
+
+///Input references
+'DAT' = 'DAT_Local' //Reference DAT AI#
+'MAT' = 'MAT_Local' //302  //If NO MAT put in value 302
+'RAT' = 'RAT_Local' //If NO RAT remove this line and write avg zone temp from Tridium
+'DuctStatic' = 'SDuctStatic_Local' //Reference Duct Static AI#
