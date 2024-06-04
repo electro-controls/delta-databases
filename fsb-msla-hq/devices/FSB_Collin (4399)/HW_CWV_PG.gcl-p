@@ -1,0 +1,49 @@
+//HWV Sequence
+
+IfOnce 'RunStatusInt' Then //This helps jump start DAT loop during start-up
+    'DATHtg_CO.Bias' = Scale ('Eff_OAT', 0, 0, 30, 50, 1)
+    'DATClg_CO.Bias' = Scale ('Eff_OAT', 0, 50, 1, 100, 50)
+End If
+
+
+//This prevents the valve from going open after
+//cooling has been running.
+
+If 'DATHtg_CO' > ('DATClg_CO' + 5) And ('HWV' = 0) And ('HWMode' OffFor 120S) Then
+    'HWMode' = On
+End If
+If 'DATClg_CO' > ('DATHtg_CO' + 5) And ('HWMode' OnFor 300S) And ('DATHtg_CO' < 1) Then
+    'HWMode' = Off
+End If
+IfOnce 'HWMode' Then
+    'DATHtg_CO.Bias' = 'DATHtg_CO.Bias' * 0.5
+    'DATClg_CO.Bias' = 1
+End If
+IfOnce (Not 'HWMode') Then
+    'DATHtg_CO.Bias' = 1
+    'DATClg_CO.Bias' = 'DATClg_CO.Bias' * 0.5
+End If
+
+
+If 'RunStatusInt' And 'HWMode' Then
+    'EADamper' = Scale ('DATHtg_CO', 0, 0, 0, 100, 100)
+  ElseIf  'RunStatusInt' Then
+    'EADamper' = 0
+  Else
+    'EADamper' = Scale ('MATLimit_CO', 0, 0, 100, 100, 'DATHtg_CO') //Standby
+End If
+
+
+//CWV
+
+If 'RunStatusInt' And (Not 'HWMode') And 'FreeCooling' Then
+    'HWV' = Scale ('DATClg_CO', 0, 50, 0, 100, 100) //allows for econ to be 1st stage
+  ElseIf  'RunStatusInt' And (Not 'HWMode') Then
+    'HWV' = Scale ('DATClg_CO', 0, 0, 0, 100, 100)
+  Else
+    'HWV' = Scale ('MATLimit_CO', 0, 0, 100, 10, 0) //Standby
+End If
+
+
+
+//End of Program

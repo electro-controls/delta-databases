@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "83.0666"
+    "value": "50"
   },
   "status-flags": {
     "$base": "BitString",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "53"
+    "value": "235"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -212,7 +212,7 @@
   },
   "bias": {
     "$base": "Real",
-    "value": "83.0666"
+    "value": "50"
   },
   "derivative": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "11991748"
+      "value": "12005408"
     }
   },
   "self-adj-enable": {

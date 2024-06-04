@@ -1,0 +1,45 @@
+//General PG
+
+//Power up defaults will be written to after power up from JACE.
+IfOnce PowerUp Then
+    'DATClg_Sp' = 60
+    'DATHtg_Sp' = 55
+    'Mode' = 1 //Occupied
+    'Eff_OAT' = 35
+    'DAH_RemSp' = - 1
+    'Uptime' = 0
+End If
+
+
+DoEvery 1M
+  'Uptime' = 'Uptime' + 1
+End Do
+
+//ItsCold variable used in Economizer_PG,
+'ItsCold' = Switch ( 'ItsCold', 'Eff_OAT', 35, 40)
+
+//Intercontroller Links
+'Eff_OAT' = '4000.AV91'
+
+
+//Controller will save to flash every 24 hours.  Below code initiates save
+//based on controller address so saves are staggered rather than all at once.
+ Variable T //Time
+ Variable A1 //Address 1 to 59
+ Variable A2 //Address 60 to 99
+
+ T = Time
+ A1 = 'FSB_Collin.DIP_Setting'
+
+ If A1 > 59 Then
+   A2 = (A1 - 59) + 99
+  Else
+   A2 = A1
+ End If
+
+ IfOnce T = A2 Then
+  SaveToFlash
+ End If
+
+
+ //End of Program
