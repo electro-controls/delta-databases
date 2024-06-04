@@ -1,0 +1,149 @@
+'SavDamper_PG13.Write_Priority' = 13
+If 'SavAutoZeroCal' Then
+    'Sav_EffDemand' = 0
+   ElseIf  'Sav_RemDemand' >= 0 Then
+    'Sav_EffDemand' = 'Sav_RemDemand'
+  Else
+    'Sav_EffDemand' = 'Sav_LocDemand'
+End If
+
+If ('Sav_EffSp' < 1) Then
+    'Sav_LocDemand' = 0
+    'Sav_CO.Bias' = 0.1
+  Else
+    'Sav_LocDemand' = 'Sav_CO'
+End If
+
+
+If PowerUp Then
+  'SavDmpRecalc' = On
+End If
+
+//Auto recalc routine
+//This ensures that damper position is recalculated every so often (168 hrs in a week)
+
+DoEvery 3M
+  'SavTimeLastRecalc' = 'SavTimeLastRecalc' + 0.05
+End Do
+
+If 'SavDmpRecalc' Then
+    'SavTimeLastRecalc' = 0
+End If
+
+If ('Sav_EffDemand' >= 100) OnFor 10M Then
+    'SavTimeLastRecalc' = 0
+End If
+If ('Sav_EffDemand' <= 0) OnFor 10M Then
+    'SavTimeLastRecalc' = 0
+End If
+
+IfOnce (Time >= Starttime) And (Time < (1 + Starttime)) And ('SavTimeLastRecalc' > 504) Then //Random recal after midnight plus address * 2
+   'SavDmpRecalc' = On //After X days since last cal                                         //After 3 weeks since last recal.
+End If
+
+Variable Starttime As Integer
+Starttime = ((('DIPSetting' * 2) / 60) * 100) + 100
+
+
+Variable CurrentTm
+CurrentTm = Time
+
+If 'SavDmpRecalc' OnFor ('SavDmpRuntime_Sp' * 2):S Then
+  'SavDmpRecalc' = Off
+End If
+
+If 'SavDmpAction' Then
+    If 'SavAutoZeroCal' Or 'SavDmpRecalc' Then
+      'SavDmp_D1' = Off
+      'SavDmp_D2' = On
+      Else
+      'SavDmp_D1' = Driveopen
+      'SavDmp_D2' = Driveclose
+    End If
+    If 'SavDmp_D1' Then
+      'SavDmpRuntimeDir' = On //Open
+    ElseIf  'SavDmp_D2' Then
+      'SavDmpRuntimeDir' = Off //Close
+    End If
+Else
+    If 'SavAutoZeroCal' Or 'SavDmpRecalc' Then
+      'SavDmp_D1' = On
+      'SavDmp_D2' = Off
+      Else
+      'SavDmp_D1' = Driveclose
+      'SavDmp_D2' = Driveopen
+    End If
+     If 'SavDmp_D1' Then
+      'SavDmpRuntimeDir' = Off //Close
+    ElseIf  'SavDmp_D2' Then
+      'SavDmpRuntimeDir' = On //Open
+    End If
+End If
+
+//PvDmp is 3 point floating
+Variable Driveopen
+Variable Driveclose
+Variable Min_Step As Real // Holds the minimum step for valve runtime
+
+// Calculate the Minimum Step for the Valve Runtime
+Min_Step = Truncate ((100 / 'SavDmpRuntime_Sp') + 1)
+
+ If 'SavDmpAction' Then
+      If 'SavDmp_D1' Then
+        DoEvery 1S
+        'SavDmpRuntime' = Min ('SavDmpRuntime' + 1, 'SavDmpRuntime_Sp')
+        End Do
+      End If
+      If 'SavDmp_D2' Then
+        DoEvery 1S
+        'SavDmpRuntime' = Max ('SavDmpRuntime' - 1, 0)
+        End Do
+      End If
+  Else
+      If 'SavDmp_D2' Then
+        DoEvery 1S
+        'SavDmpRuntime' = Min ('SavDmpRuntime' + 1, 'SavDmpRuntime_Sp')
+        End Do
+      End If
+      If 'SavDmp_D1' Then
+        DoEvery 1S
+        'SavDmpRuntime' = Max ('SavDmpRuntime' - 1, 0)
+        End Do
+      End If
+End If
+
+//Actual Valve Operation
+DoEvery 1S
+'SavCalcPct' = Scale ('SavDmpRuntime', 0, 0, 0, 'SavDmpRuntime_Sp', 100)
+If ('SavCalcPct' > ('Sav_EffDemand' + Min_Step)) Then
+      Driveclose = On
+      Driveopen = Off
+     Else If ('SavCalcPct' < ('Sav_EffDemand' - Min_Step)) Then
+      Driveopen = On
+      Driveclose = Off
+     Else If 'Sav_EffDemand' = 0 Then
+      DoEvery 30S
+      Driveclose = On
+      Driveopen = Off
+      End Do
+      If Driveclose OnFor 2S Then
+        Driveclose = Off
+        Driveopen = Off
+      End If
+     Else If 'Sav_EffDemand' = 100 Then
+      DoEvery 30S
+      Driveclose = Off
+      Driveopen = On
+      End Do
+      If Driveopen OnFor 2S Then
+        Driveclose = Off
+        Driveopen = Off
+      End If
+    Else
+      Driveclose = Off
+      Driveopen = Off
+    End If
+    End If
+    End If
+End If
+End Do
