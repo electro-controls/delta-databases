@@ -30,7 +30,7 @@
   },
   "file-size": {
     "$base": "Unsigned",
-    "value": "21261"
+    "value": "37126"
   },
   "modification-date": {
     "$base": "DateTime",
