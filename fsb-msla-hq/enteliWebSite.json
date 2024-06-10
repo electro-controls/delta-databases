@@ -3,37 +3,7 @@
   "ipAddress": "http://localhost",
   "uploadQueue": [
     {
-      "action": "create",
-      "device": 4399,
-      "objectId": "av,10110",
-      "objectName": "OAMinAirflowDp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/objectsJSON/OAMinAirflowDp.json",
-        "scheme": "file"
-      },
-      "date": "6/10/2024, 11:51:00 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,101",
-      "objectName": "OAMinAirflowDp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/objectsJSON/OAMinAirflowDp.json",
-        "scheme": "file"
-      },
-      "date": "6/10/2024, 11:57:08 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
+      "action": "delete",
       "device": 4399,
       "objectId": "av,100",
       "objectName": "Rem_ZoneTemp",
@@ -44,7 +14,22 @@
         "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/objectsJSON/Rem_ZoneTemp.json",
         "scheme": "file"
       },
-      "date": "6/10/2024, 11:57:18 AM",
+      "date": "6/10/2024, 12:02:26 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,101",
+      "objectName": "OAMinAirflowDp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/objectsJSON/OAMinAirflowDp.json",
+        "scheme": "file"
+      },
+      "date": "6/10/2024, 12:02:41 PM",
       "templateTriggered": false
     }
   ],
@@ -879,6 +864,18 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-06-06T16:58:39.719Z"
+        },
+        {
+          "id": "av,100",
+          "name": "Rem_ZoneTemp",
+          "fileName": "Rem_ZoneTemp",
+          "lastUpdate": "2024-06-10T17:59:47.575Z"
+        },
+        {
+          "id": "av,101",
+          "name": "OAMinAirflowDp",
+          "fileName": "OAMinAirflowDp",
+          "lastUpdate": "2024-06-10T17:59:54.906Z"
         }
       ]
     }
