@@ -1,7 +1,53 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [],
+  "uploadQueue": [
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,11",
+      "objectName": "Space_Static_Low_SP",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/objectsJSON/Space_Static_Low_SP.json",
+        "scheme": "file"
+      },
+      "date": "6/10/2024, 3:54:18 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,4",
+      "objectName": "Economizer_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/Economizer_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "6/10/2024, 3:54:48 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "av,12",
+      "objectName": "Space_Static_Min_SP",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/objectsJSON/Space_Static_Min_SP.json",
+        "scheme": "file"
+      },
+      "date": "6/10/2024, 3:55:29 PM",
+      "templateTriggered": false
+    }
+  ],
   "devices": [
     {
       "number": 4399,
@@ -839,6 +885,18 @@
           "name": "Rem_ZoneTemp",
           "fileName": "Rem_ZoneTemp",
           "lastUpdate": "2024-06-10T21:31:17.216Z"
+        },
+        {
+          "id": "av,11",
+          "name": "Space_Static_Low_SP",
+          "fileName": "Space_Static_Low_SP",
+          "lastUpdate": "2024-06-10T21:53:23.244Z"
+        },
+        {
+          "id": "av,12",
+          "name": "Space_Static_Min_SP",
+          "fileName": "Space_Static_Min_SP",
+          "lastUpdate": "2024-06-10T21:55:13.627Z"
         }
       ]
     }
