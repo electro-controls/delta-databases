@@ -3,33 +3,33 @@
   "ipAddress": "http://localhost",
   "uploadQueue": [
     {
-      "action": "delete",
+      "action": "update",
       "device": 4399,
-      "objectId": "av,100",
-      "objectName": "Rem_ZoneTemp",
+      "objectId": "pg,9",
+      "objectName": "Critical_PG",
       "siteName": "Bench",
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/objectsJSON/Rem_ZoneTemp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/Critical_PG.gcl-p",
         "scheme": "file"
       },
-      "date": "6/10/2024, 12:02:26 PM",
+      "date": "6/10/2024, 2:49:44 PM",
       "templateTriggered": false
     },
     {
-      "action": "delete",
+      "action": "update",
       "device": 4399,
-      "objectId": "av,101",
-      "objectName": "OAMinAirflowDp",
+      "objectId": "pg,4",
+      "objectName": "Economizer_PG",
       "siteName": "Bench",
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/objectsJSON/OAMinAirflowDp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/Economizer_PG.gcl-p",
         "scheme": "file"
       },
-      "date": "6/10/2024, 12:02:41 PM",
+      "date": "6/10/2024, 2:50:02 PM",
       "templateTriggered": false
     }
   ],
@@ -864,18 +864,6 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-06-06T16:58:39.719Z"
-        },
-        {
-          "id": "av,100",
-          "name": "Rem_ZoneTemp",
-          "fileName": "Rem_ZoneTemp",
-          "lastUpdate": "2024-06-10T17:59:47.575Z"
-        },
-        {
-          "id": "av,101",
-          "name": "OAMinAirflowDp",
-          "fileName": "OAMinAirflowDp",
-          "lastUpdate": "2024-06-10T17:59:54.906Z"
         }
       ]
     }

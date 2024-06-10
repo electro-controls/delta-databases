@@ -19,7 +19,7 @@ End Do
 'ItsCold' = Switch ( 'ItsCold', 'Eff_OAT', 35, 40)
 
 //Intercontroller Links
-'Eff_OAT' = '4000.AV91'
+'Eff_OAT' = '1000.AI3'
 
 
 //Controller will save to flash every 24 hours.  Below code initiates save

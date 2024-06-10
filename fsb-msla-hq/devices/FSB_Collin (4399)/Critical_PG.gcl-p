@@ -35,7 +35,4 @@ End If
       Relinquish 'MADamper'
 End If
 
-If 'OADamper' < 50 Then
-    'CWV' = Scale ('OADamper', 0, 0, 100, 100, 0)
-End If
 // Done
