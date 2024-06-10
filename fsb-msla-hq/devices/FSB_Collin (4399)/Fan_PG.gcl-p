@@ -1,10 +1,18 @@
 //Fan Program
 //supply fan start/stop sequence
 
-'SF_VFD_Enable' = ('Mode' <> 5)
+If ('Mode' <> 5) Then
+  'SF_VFD_Enable' = On
+Else
+  'SF_VFD_Enable' = Off
+End If
 
 //Run status interlock allows RF to be enabled and interlock used by other routines
-'RF_VFD_Enable' = ('SF_VFD_Enable' And 'SF_VFD_Status')
+If ('SF_VFD_Enable' And 'SF_VFD_Status') Then
+  'RF_VFD_Enable' = On
+Else
+  'RF_VFD_Enable' = Off
+End If
 
 
 //If either fan set has status we will let it roll. If there are not back draft dampers then change the "or" to an "and"

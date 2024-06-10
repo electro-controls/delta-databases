@@ -1655,6 +1655,36 @@
     {
       "action": "update",
       "device": 4399,
+      "objectId": "bdc,3",
+      "objectName": "Active~Inactive BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/objectsJSON/Active~Inactive BDC.json",
+        "scheme": "file"
+      },
+      "date": "6/10/2024, 11:42:47 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,98",
+      "objectName": "FaultDetection_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/FaultDetection_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "6/10/2024, 11:47:35 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
       "objectId": "av,10110",
       "objectName": "OAMinAirflowDp",
       "siteName": "Bench",
@@ -1664,7 +1694,22 @@
         "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/objectsJSON/OAMinAirflowDp.json",
         "scheme": "file"
       },
-      "date": "6/10/2024, 11:27:11 AM",
+      "date": "6/10/2024, 11:48:46 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "av,10010",
+      "objectName": "Rem_ZoneTemp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/objectsJSON/Rem_ZoneTemp.json",
+        "scheme": "file"
+      },
+      "date": "6/10/2024, 11:49:07 AM",
       "templateTriggered": false
     }
   ],
@@ -3319,7 +3364,7 @@
           "id": "av,10110",
           "name": "OAMinAirflowDp",
           "fileName": "OAMinAirflowDp",
-          "lastUpdate": "2024-06-06T23:06:36.292Z"
+          "lastUpdate": "2024-06-10T17:28:32.677Z"
         }
       ]
     }

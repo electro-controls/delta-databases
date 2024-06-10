@@ -3,7 +3,7 @@
   "displayName": "OAMinAirflowDp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10111"
+    "value": "analog-value,10110"
   },
   "object-type": {
     "$base": "Enumerated",
