@@ -19,8 +19,8 @@ If 'RunStatusInt' And MATInt And (('Mode' = 1) Or ('Mode' = 4)) Then //Occ Mode 
    'EconRampPct' = 0
 End If
 
-//Determine if free cooling is possible by comparing OAT and RAT. sequence says to compare RAT, so don't use Rem_Zt
-'4399.BV4' = Switch ( '4399.BV4', '4399.AV91', 'RAT' - 1, 'RAT' + 1)
+//Determine if free cooling is possible by comparing OAT and rem_zt.
+'FreeCooling' = Switch ( 'FreeCooling', 'Eff_OAT', 'Rem_ZoneTemp' - 1, 'Rem_ZoneTemp' + 1)
 
 //Allow free cooling in Occ mode or UnOcc Cooling
 If (Not 'HWMode') And 'FreeCooling' And ('Mode' = 1 Or 'Mode' = 4) Then
@@ -44,23 +44,7 @@ Else
   'OADamper' = 0
 End If
 
-
-
-
 'CWV' = Scale ('OADamper', 0, 0, 100, 100, 0) //Inverse of OA damper
-
-
-//Do not open relief damper unless we have positive pressure in relief plenum
-Variable ReliefTrackMin
-Variable ReliefTrackMax
-ReliefTrackMin = Scale ('OADamper', 0, 50, 0, 100, 50)
-ReliefTrackMax = Scale ('OADamper', 0, 0, 0, 80, 100)
-If 'RFLeft_Status' Or 'RFRight_Status' Then
-    '4399.AO6' = Scale ('ReliefDuctStatic_CO', 0, 0, ReliefTrackMin, 100, ReliefTrackMax) //limit max relief damper by plenum pressure
- Else
-    'MADamper' = 0
-End If
-
 
 //calculate RF cfm Sp.  //offset only when ventilating
 Variable MinOAScale
@@ -68,9 +52,9 @@ Variable MinOAScale
 MinOAScale = Scale ('MinOAAirflow_CO', 0, 0, 75, 100, 100)
 
 If ('Mode' = 1) And 'RunStatusInt' Then
-    'AO10' = Scale ('MinOA_EffSp', 0, 0, 0, 'EconMinOA_Sp', MinOAScale)
+    'MinOADemand' = Scale ('MinOA_EffSp', 0, 0, 0, 'EconMinOA_Sp', MinOAScale)
   Else
-    'AO10' = 0
+    'MinOADemand' = 0
     'MinOAAirflow_CO.Bias' = 50
 End If
 
@@ -79,9 +63,8 @@ End If
 'MinOA_EffSp' = 'EconMinOA_Sp' * ('MATLimit_CO' * 0.01) * ('EconRampPct' * 0.01)
 
 If 'RunStatusInt' Then
-    '4399.AV51' = (Sqrt ('OAMinAirflowDp')) * 'OAMinAirflow_Area_Sp' * 'OAMinAirflow_Kv_Sp' * 'OAMinAirflow_Cf_Sp'
+    'OAMinAirflow' = (Sqrt ('OAMinAirflowDp')) * 'OAMinAirflow_Area_Sp' * 'OAMinAirflow_Kv_Sp' * 'OAMinAirflow_Cf_Sp'
   Else
     'OAMinAirflow' = 0
 End If
-
-//End of Program
+//done

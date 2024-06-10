@@ -21,7 +21,6 @@ End If
       'EADamper' = 100
       'HWV' = 100
       'OADamper' = 0
-      'AO10' = 0
       'CWV' = 100
       'MADamper' = 0
    Else
@@ -32,19 +31,11 @@ End If
       Relinquish 'EADamper'
       Relinquish 'HWV'
       Relinquish 'OADamper'
-      Relinquish 'AO10'
       Relinquish 'CWV'
       Relinquish 'MADamper'
-End If
-
-If (Not 'SF_VFD_Enable') Or (Not 'SFLeft_Status') Or (Not 'SFRight_Status') Or 'RAHLowFault' Or 'RAHHighFault' Or 'DAHLowFault' Or 'DAHHighFault' Then
-    'BO11' = Off
-    'AO12' = 0
-  Else
-    Relinquish 'BO11'
-    Relinquish 'AO12'
 End If
 
 If 'OADamper' < 50 Then
     'CWV' = Scale ('OADamper', 0, 0, 100, 100, 0)
 End If
+// Done
