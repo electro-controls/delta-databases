@@ -1,8 +1,9 @@
 {
-  "displayName": "DATClg_Sp",
+  "$base": "Object",
+  "displayName": "Rem_ZoneTemp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,1"
+    "value": "analog-value,21"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +11,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DATClg_Sp"
+    "value": "Rem_ZoneTemp"
   },
   "description": {
     "$base": "String",
@@ -22,7 +23,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 55
+    "value": 0
   },
   "gcl-value": {
     "$base": "Real",
@@ -38,7 +39,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "°F"
+    "value": "%"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,7 +55,7 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,2"
+    "unspecifiedValue": "true"
   },
   "time-of-last-write": {
     "$base": "DateTime",

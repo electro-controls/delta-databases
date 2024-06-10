@@ -1,38 +1,7 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,9",
-      "objectName": "Critical_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/Critical_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/10/2024, 2:49:44 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,4",
-      "objectName": "Economizer_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB-msla-hq/devices/FSB_Collin (4399)/Economizer_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/10/2024, 2:50:02 PM",
-      "templateTriggered": false
-    }
-  ],
+  "uploadQueue": [],
   "devices": [
     {
       "number": 4399,
@@ -864,6 +833,12 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-06-06T16:58:39.719Z"
+        },
+        {
+          "id": "av,21",
+          "name": "Rem_ZoneTemp",
+          "fileName": "Rem_ZoneTemp",
+          "lastUpdate": "2024-06-10T21:31:17.216Z"
         }
       ]
     }

@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "gcl-value": {
     "$base": "Enumerated",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -70,7 +70,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Alarm"
+    "value": "Normal"
   },
   "hal-flags": {
     "$base": "BitString",

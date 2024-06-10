@@ -51,7 +51,7 @@ Variable ReliefTrackMin
 Variable ReliefTrackMax
 ReliefTrackMin = Scale ('OADamper', 0, 50, 0, 100, 50)
 ReliefTrackMax = Scale ('OADamper', 0, 0, 0, 80, 100)
-If 'RF_VFD_Status' Then
+If 'RF_VFD_Status' and ('Building_Pressure' > 0.005) Then
     'EADamper' = Scale ('OADamper', 0, 0, ReliefTrackMin, 100, ReliefTrackMax) //limit max relief damper by plenum pressure 
  Else
     'EADamper' = 0
@@ -78,4 +78,4 @@ If 'RunStatusInt' Then
   Else
     'OAMinAirflow' = 0
 End If
-//done
+//done 
