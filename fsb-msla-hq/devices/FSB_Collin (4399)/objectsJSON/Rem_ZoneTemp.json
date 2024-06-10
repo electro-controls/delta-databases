@@ -3,7 +3,7 @@
   "displayName": "Rem_ZoneTemp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10010"
+    "value": "analog-value,100"
   },
   "object-type": {
     "$base": "Enumerated",
