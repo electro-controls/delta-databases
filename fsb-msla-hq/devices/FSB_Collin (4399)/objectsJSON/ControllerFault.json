@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "5"
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "5"
   },
   "status-flags": {
     "$base": "BitString",
@@ -85,11 +85,11 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-06-04T10:18:44.100000-06:00"
+    "value": "2024-06-11T15:59:14.900000-06:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "Page Fault"
+    "value": "CO Fault"
   },
   "hal-flags": {
     "$base": "BitString",

@@ -31,17 +31,17 @@ End If
 
 //Scales economizer
 
-
 //Allow CO2 demand to increase min OA demand
-'MinOADemand' = Max ('EconCalcMinOA', 'Rem_CO2Demand')
+'EconCalcMinOA' = Max ('MinOA_EffSp', 'Rem_CO2Demand')
 
 //OA Damper modulates in Occ Mode or UnOcc Cooling
 If 'RunStatusInt' And ('Mode' = 1 Or 'Mode' = 4) Then
-  'EconCalcMinOA' = 0 //handled by Min OA Damper
-  'OADamper' = Scale ('EconClgPct', 0, 0, 0, 100, 'EconRampPct') * ('MATLimit_CO' * 0.01)
+  'OADamper' = Max (
+    Scale ('EconClgPct', 0, 0, 0, 100, 'EconRampPct'),
+    Scale ('MinOAAirflow_CO', 0, 0, 0, 100, 'EconRampPct')
+    ) * ('MATLimit_CO' * 0.01)
 Else
-  'EconCalcMinOA' = 0 //handled by Min OA Damper
-  'OADamper' = 0
+  'OADamper' = Scale ('EconClgPct', 0, 0, 0, 100, 'EconRampPct') * ('MATLimit_CO' * 0.01)
 End If
 
 'MADamper' = Scale ('OADamper', 0, 0, 100, 100, 0) //Inverse of OA damper
@@ -51,8 +51,8 @@ Variable ReliefTrackMin
 Variable ReliefTrackMax
 ReliefTrackMin = Scale ('OADamper', 0, 50, 0, 100, 50)
 ReliefTrackMax = Scale ('OADamper', 0, 0, 0, 80, 100)
-If 'RF_VFD_Status' and ('Building_Pressure' > 'Space_Static_Min_SP') Then
-    'EADamper' = Scale ('OADamper', 0, 0, ReliefTrackMin, 100, ReliefTrackMax) //limit max relief damper by plenum pressure 
+If 'RF_VFD_Status' And ('Building_Pressure' > 'Space_Static_Min_SP') Then
+    'EADamper' = Scale ('OADamper', 0, 0, ReliefTrackMin, 100, ReliefTrackMax) //limit max relief damper by plenum pressure
  Else
     'EADamper' = 0
 End If
@@ -72,10 +72,4 @@ End If
 'RFairflow_EffSp' = ('SF_Airflow' - 'MinOA_EffSp')
 
 'MinOA_EffSp' = 'EconMinOA_Sp' * ('MATLimit_CO' * 0.01) * ('EconRampPct' * 0.01)
-
-If 'RunStatusInt' Then
-    'OAMinAirflow' = (Sqrt ('OAMinAirflowDp')) * 'OAMinAirflow_Area_Sp' * 'OAMinAirflow_Kv_Sp' * 'OAMinAirflow_Cf_Sp'
-  Else
-    'OAMinAirflow' = 0
-End If
-//done 
+//done

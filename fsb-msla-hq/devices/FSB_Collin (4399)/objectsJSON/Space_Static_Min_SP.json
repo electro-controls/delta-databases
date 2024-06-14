@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Space_Static_Min_SP",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0.005
+    "value": "0.005"
   },
   "gcl-value": {
     "$base": "Real",
@@ -55,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "device,65984"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-06-14T11:06:37.800000-06:00"
   },
   "cov-increment": {
     "$base": "Real",

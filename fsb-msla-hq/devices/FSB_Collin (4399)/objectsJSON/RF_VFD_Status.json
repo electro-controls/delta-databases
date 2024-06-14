@@ -75,17 +75,17 @@
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-06-10T15:08:37.900000-06:00"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-06-10T15:08:37.900000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "1"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -93,7 +93,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "224"
+    "value": "288"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -145,7 +145,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "Active"
   },
   "hal-flags": {
     "$base": "BitString",

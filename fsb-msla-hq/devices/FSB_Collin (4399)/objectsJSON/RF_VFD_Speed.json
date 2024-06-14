@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "0.6"
   },
   "status-flags": {
     "$base": "BitString",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "10"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,7 +104,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -259,7 +262,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-06-06T10:56:14.80"
+      "value": "2024-06-14T16:11:30.40"
     },
     "5": {
       "$base": "DateTime",
@@ -283,7 +286,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-06-06T10:56:14.90"
+      "value": "2024-06-14T16:11:30.40"
     },
     "11": {
       "$base": "DateTime",
@@ -321,11 +324,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "1"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "0.06"
   },
   "port-1-status": {
     "$base": "Enumerated",

@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "10"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,7 +104,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -259,7 +262,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-06-06T10:56:16.80"
+      "value": "2024-06-14T16:51:39.00"
     },
     "5": {
       "$base": "DateTime",
@@ -283,7 +286,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-06-06T10:56:17.30"
+      "value": "2024-06-14T16:51:39.50"
     },
     "11": {
       "$base": "DateTime",
