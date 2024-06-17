@@ -1,0 +1,19 @@
+If PowerUp Then
+ 'UH5_Zone_RemSp' = - 1
+ 'UH5_RemZoneHtg' = - 1
+ 'UH5_Rem_Schedule' = On
+ 'UH5_PrevControlMode' = 3
+End If
+
+'UH5_Eff_OAT' = '1100.Eff_OAT'
+//temp - remove once Andrew rewires
+'UH5_Eff_ZoneTemp' = 'UH5_ZoneTemp'
+
+
+If 'UH5_Rem_Schedule' Then
+   'UH5_OccMode' = 3
+Else
+   'UH5_OccMode' = 1
+End If
+
+ //End of Program

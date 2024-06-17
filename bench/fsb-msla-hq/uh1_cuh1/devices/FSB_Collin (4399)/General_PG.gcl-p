@@ -1,0 +1,30 @@
+//power up defaults
+IfOnce PowerUp Then
+    'CUH1_OccMode' = 3
+    'CUH1_Zone_RemSp' = - 1
+    'CUH1_RemZoneClg' = - 1
+    'CUH1_RemZoneHtg' = - 1
+    'CUH1_DAT_RemSp' = - 1
+    'CUH1_Rem_Schedule' = On
+    'CUH1_Rem_WarmupCall' = Off
+    'CUH1_Rem_PurgeCall' = Off
+
+    'Eff_OAT' = 32
+    'Uptime' = 0
+End If
+
+//uptime
+DoEvery 1M
+    'Uptime' = 'Uptime' + 1
+End Do
+
+//Intercontroller Links
+'Eff_OAT' = '1100.Eff_OAT'
+
+//Link Zone Temp here
+'CUH1_Eff_ZoneTemp' = 'CUH1_RoomTemp'
+
+// Room Variance
+'CUH1_ZoneVariance' = 'CUH1_Eff_ZoneTemp' - 'CUH1_Zone_EffSp'
+
+ //end of general page
