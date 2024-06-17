@@ -1,0 +1,770 @@
+{
+  "displayName": "ParkTowers_999",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "device,999"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "ParkTowers_999"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "device"
+  },
+  "system-status": {
+    "$base": "Enumerated",
+    "value": "operational"
+  },
+  "vendor-name": {
+    "$base": "String",
+    "value": "Tridium"
+  },
+  "vendor-identifier": {
+    "$base": "Unsigned",
+    "value": "36"
+  },
+  "model-name": {
+    "$base": "String",
+    "value": "Niagara4 Station"
+  },
+  "firmware-revision": {
+    "$base": "String",
+    "value": "4.10.5.14"
+  },
+  "application-software-version": {
+    "$base": "String",
+    "value": "Tridium 4.10.5.14"
+  },
+  "protocol-version": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "protocol-revision": {
+    "$base": "Unsigned",
+    "value": "14"
+  },
+  "protocol-services-supported": {
+    "$base": "BitString",
+    "value": "acknowledgeAlarm;confirmedCOVNotification;confirmedEventNotification;getAlarmSummary;getEnrollmentSummary;subscribeCOV;atomicReadFile;atomicWriteFile;addListElement;removeListElement;createObject;deleteObject;readProperty;readPropertyMultiple;writeProperty;writePropertyMultiple;deviceCommunicationControl;confirmedPrivateTransfer;reinitializeDevice;i-Am;i-Have;unconfirmedCOVNotification;unconfirmedEventNotification;unconfirmedPrivateTransfer;timeSynchronization;who-Has;who-Is;readRange;utcTimeSynchronization;subscribeCOVProperty;getEventInformation"
+  },
+  "protocol-object-types-supported": {
+    "$base": "BitString",
+    "value": "analog-input;analog-output;analog-value;binary-input;binary-output;binary-value;calendar;device;event-enrollment;file;loop;multi-state-input;multi-state-output;notification-class;schedule;multi-state-value;trend-log;structured-view;characterstring-value;integer-value;large-analog-value;positive-integer-value"
+  },
+  "object-list": {
+    "1": {
+      "$base": "ObjectIdentifier",
+      "value": "device,999"
+    },
+    "$base": "Array"
+  },
+  "max-apdu-length-accepted": {
+    "$base": "Unsigned",
+    "value": "1476"
+  },
+  "segmentation-supported": {
+    "$base": "Enumerated",
+    "value": "segmented-both"
+  },
+  "apdu-timeout": {
+    "$base": "Unsigned",
+    "value": "7000"
+  },
+  "number-of-apdu-retries": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "device-address-binding": {
+    "1": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2000"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x0040ae09442d"
+        }
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2001"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x01"
+        }
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2002"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x02"
+        }
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2003"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x03"
+        }
+      }
+    },
+    "5": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2004"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x04"
+        }
+      }
+    },
+    "6": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2005"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x05"
+        }
+      }
+    },
+    "7": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2006"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x06"
+        }
+      }
+    },
+    "8": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2007"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x07"
+        }
+      }
+    },
+    "9": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2008"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x08"
+        }
+      }
+    },
+    "10": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2009"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x09"
+        }
+      }
+    },
+    "11": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2010"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x0a"
+        }
+      }
+    },
+    "12": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2011"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x0b"
+        }
+      }
+    },
+    "13": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2012"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x0c"
+        }
+      }
+    },
+    "14": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2013"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x0d"
+        }
+      }
+    },
+    "15": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2014"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x0e"
+        }
+      }
+    },
+    "16": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2015"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x0f"
+        }
+      }
+    },
+    "17": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2016"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x10"
+        }
+      }
+    },
+    "18": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2017"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x11"
+        }
+      }
+    },
+    "19": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2018"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x12"
+        }
+      }
+    },
+    "20": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2020"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x14"
+        }
+      }
+    },
+    "21": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2021"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x15"
+        }
+      }
+    },
+    "22": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2022"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x16"
+        }
+      }
+    },
+    "23": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2028"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x1c"
+        }
+      }
+    },
+    "24": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2027"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x1b"
+        }
+      }
+    },
+    "25": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2053"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x35"
+        }
+      }
+    },
+    "26": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2054"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x36"
+        }
+      }
+    },
+    "27": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2055"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x37"
+        }
+      }
+    },
+    "28": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "2052"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50020"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x64"
+        }
+      }
+    },
+    "29": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "4000"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "10001"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x0040ae094427"
+        }
+      }
+    },
+    "30": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "4001"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50040"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x01"
+        }
+      }
+    },
+    "31": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "4002"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50040"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x02"
+        }
+      }
+    },
+    "32": {
+      "$base": "Sequence",
+      "deviceObjectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "4032"
+      },
+      "deviceAddress": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": "50040"
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x20"
+        }
+      }
+    },
+    "$base": "List"
+  },
+  "database-revision": {
+    "$base": "Unsigned",
+    "value": "2036"
+  },
+  "location": {
+    "$base": "String",
+    "value": "Mechanical Room"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Tridium Jace Controller"
+  },
+  "max-segments-accepted": {
+    "$base": "Unsigned",
+    "value": "255"
+  },
+  "local-time": {
+    "$base": "Time",
+    "value": "14:37:04.22"
+  },
+  "local-date": {
+    "$base": "Date",
+    "value": "2024-06-04"
+  },
+  "utc-offset": {
+    "$base": "Signed",
+    "value": "420"
+  },
+  "serial-number": {
+    "$base": "String",
+    "value": "Win-66EC-B9A2-E62D-3F45"
+  },
+  "daylight-savings-status": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "apdu-segment-timeout": {
+    "$base": "Unsigned",
+    "value": "5000"
+  },
+  "time-synchronization-recipients": {
+    "$base": "List"
+  },
+  "max-master": {
+    "$base": "Unsigned",
+    "value": "127"
+  },
+  "max-info-frames": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "utc-time-synchronization-recipients": {
+    "$base": "List"
+  },
+  "time-synchronization-interval": {
+    "$base": "Unsigned",
+    "value": "1440"
+  },
+  "align-intervals": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "interval-offset": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "last-restart-reason": {
+    "$base": "Enumerated",
+    "value": "unknown"
+  },
+  "time-of-device-restart": {
+    "$base": "Choice",
+    "dateTime": {
+      "$base": "DateTime",
+      "value": "2024-05-15T17:43:00.20"
+    }
+  },
+  "active-cov-subscriptions": {
+    "$base": "List"
+  },
+  "restart-notification-recipients": {
+    "$base": "List"
+  },
+  "configuration-files": {
+    "$base": "Array"
+  },
+  "last-restore-time": {
+    "$base": "Choice",
+    "dateTime": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    }
+  },
+  "backup-failure-timeout": {
+    "$base": "Unsigned",
+    "value": "180"
+  },
+  "backup-preparation-time": {
+    "$base": "Unsigned",
+    "value": "60"
+  },
+  "restore-preparation-time": {
+    "$base": "Unsigned",
+    "value": "60"
+  },
+  "restore-completion-time": {
+    "$base": "Unsigned",
+    "value": "180"
+  },
+  "backup-and-restore-state": {
+    "$base": "Enumerated",
+    "value": "idle"
+  }
+}

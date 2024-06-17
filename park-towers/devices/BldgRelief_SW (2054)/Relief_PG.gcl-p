@@ -1,0 +1,7 @@
+ DoEvery 10S
+    'ReliefDamper3' = 'Relief_CO'
+    'AO4' = 'Relief_CO'
+ End Do
+
+ //Intercontroller Links
+ 'BLDG_Pressure_EFF' = '2052.BLDG_Pressure'

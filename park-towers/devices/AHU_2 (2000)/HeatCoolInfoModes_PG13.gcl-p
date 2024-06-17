@@ -1,0 +1,45 @@
+'HeatCoolInfoModes_PG13.Write_Priority' = 13
+
+//CWV Info Mode 
+If 'FreezeMode' Or ('SFUptime' = 0) Then
+    'CWVInfoMode' = 4 //Fail safe position
+  ElseIf  'HeatCoolMode' Then //
+    'CWVInfoMode' = 3 //Waiting for demand
+  ElseIf  (Not 'HeatCoolMode') And 'EconFreeCooling' Then
+    'CWVInfoMode' = 2 //DAT Cooling assisting economizer
+  Else
+    'CWVInfoMode' = 1 //DAT Cooling
+End If
+
+
+//ECON info
+If 'FreezeMode' Or ('SFUptime' = 0) Then
+    'EconInfoMode' = 4 //Fail safe position
+  ElseIf  ('HeatCoolMode' Or (Not 'EconFreeCooling')) And ('Mode' = 1) Then
+    'EconInfoMode' = 3 //Min OA Position
+  ElseIf  (Not 'HeatCoolMode') And ('Econ_EffMinOAPct' > 'Econ_EffClg') And ('Mode' = 1) Then
+    'EconInfoMode' = 3 //Min OA Position
+  ElseIf  (Not 'HeatCoolMode') And 'EconFreeCooling' Then
+    'EconInfoMode' = 2 //DAT Cooling leading CWV
+  ElseIf  (Not 'HeatCoolMode') And 'EconFreeCooling' And ('Econ_EffClg' < 'EconAuthority') Then
+    'EconInfoMode' = 1 //DAT Cooling
+  ElseIf  ('Mode' = 2) Or ('Mode' = 3) Then
+    'EconInfoMode' = 5 //Return Air
+  Else
+    'EconInfoMode' = 5
+End If
+
+
+//The following keep the current mode times
+DoEvery 15S
+  'AV10931' = 'AV10931' + 0.25
+  'CWVInfoModeTm' = 'CWVInfoModeTm' + 0.25
+  'EconInfoModeTm' = 'EconInfoModeTm' + 0.25
+End Do
+
+IfOnce 'CWVInfoMode' Changed Then
+    'CWVInfoModeTm' = 0
+End If
+IfOnce 'EconInfoMode' Changed Then
+    'EconInfoModeTm' = 0
+End If

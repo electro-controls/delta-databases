@@ -1,0 +1,35 @@
+{
+  "displayName": "TerminalUnitType",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,41"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-device-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "TerminalUnitType"
+  },
+  "description": {
+    "$base": "String",
+    "value": "On for FTU, Off for VAV"
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "FTU"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "VAV"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

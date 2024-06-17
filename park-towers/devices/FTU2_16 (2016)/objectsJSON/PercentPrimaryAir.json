@@ -1,0 +1,80 @@
+{
+  "1025": {
+    "$base": "Choice"
+  },
+  "1033": {
+    "$base": "Choice"
+  },
+  "1035": {
+    "$base": "Choice"
+  },
+  "1037": {
+    "$base": "Choice"
+  },
+  "1044": {
+    "$base": "Choice"
+  },
+  "1047": {
+    "$base": "Choice"
+  },
+  "1049": {
+    "$base": "Choice"
+  },
+  "1050": {
+    "$base": "Choice"
+  },
+  "1066": {
+    "1066": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1067": {
+    "$base": "Choice"
+  },
+  "displayName": "PercentPrimaryAir",
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "description": {
+    "$base": "String",
+    "value": "For FTUs without CAV devices, this is the minimum percentage (of max primary airflow) that should be delivery to zone to ensure adequate ventilation"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,11959"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "PercentPrimaryAir"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "0.0415028"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "%"
+  }
+}

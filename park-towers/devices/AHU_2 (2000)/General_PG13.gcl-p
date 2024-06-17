@@ -1,0 +1,41 @@
+'General_PG13.Write_Priority' = 13
+
+//Power up defaults  These will be written to after power up from Jace.
+
+IfOnce PowerUp Then
+    'OAT_Eff' = 32
+    'OAT_Rem' = 180
+    'Uptime' = 0
+End If
+
+ DoEvery 1M
+  'Uptime' = 'Uptime' + 1
+End Do
+
+//Jace communication monitoring
+Variable JaceChanged As Integer
+If 'JaceUptime' Changed Then
+    JaceChanged = On
+End If
+If JaceChanged OnFor 10S Then
+    JaceChanged = Off
+End If
+
+If JaceChanged OffFor 20M Then
+    'JaceCfail' = On
+  Else
+    'JaceCfail' = Off
+End If
+
+
+//Intercontroller Links
+//Eff_OAT = xxxx.AV91
+'OAT_Loc' = 'OAT'
+
+If ('OAT_Rem' < 130) And (Not 'JaceCfail') Then
+  'OAT_Eff' = 'OAT_Rem'
+ Else
+  'OAT_Eff' = 'OAT_Loc'
+ End If
+
+'OATFreezing' = Switch ( 'OATFreezing', 'OAT_Eff', 35, 38)

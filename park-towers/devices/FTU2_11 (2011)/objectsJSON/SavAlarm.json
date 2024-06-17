@@ -1,0 +1,111 @@
+{
+  "1025": {
+    "$base": "Choice"
+  },
+  "1033": {
+    "$base": "Choice"
+  },
+  "1035": {
+    "$base": "Choice"
+  },
+  "1037": {
+    "$base": "Choice"
+  },
+  "1038": {
+    "$base": "Choice"
+  },
+  "1049": {
+    "$base": "Choice"
+  },
+  "1052": {
+    "$base": "Choice"
+  },
+  "1067": {
+    "$base": "Choice"
+  },
+  "1069": {
+    "1069": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1070": {
+    "$base": "Choice"
+  },
+  "displayName": "SavAlarm",
+  "description": {
+    "$base": "String",
+    "value": "Status to operator on the current Status of Airflow."
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "8"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "multi-state-value,11110"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "SavAlarm"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-value"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "present-value": {
+    "$base": "Unsigned",
+    "value": "2"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Normal"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Starving"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Leakage"
+    },
+    "4": {
+      "$base": "String",
+      "value": "Open Problem"
+    },
+    "5": {
+      "$base": "String",
+      "value": "Close Problem"
+    },
+    "6": {
+      "$base": "String",
+      "value": "No Air Flow"
+    },
+    "7": {
+      "$base": "String",
+      "value": "Zero Cal Problem"
+    },
+    "8": {
+      "$base": "String",
+      "value": "Value Received"
+    },
+    "$base": "Array"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

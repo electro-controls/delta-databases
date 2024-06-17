@@ -1,0 +1,15 @@
+{
+  "displayName": "Internet Protocol Settings",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "311_1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "311"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Internet Protocol Settings"
+  }
+}

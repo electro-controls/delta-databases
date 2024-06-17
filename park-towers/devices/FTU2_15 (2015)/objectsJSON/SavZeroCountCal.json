@@ -1,0 +1,80 @@
+{
+  "1025": {
+    "$base": "Choice"
+  },
+  "1033": {
+    "$base": "Choice"
+  },
+  "1035": {
+    "$base": "Choice"
+  },
+  "1037": {
+    "$base": "Choice"
+  },
+  "1044": {
+    "$base": "Choice"
+  },
+  "1047": {
+    "$base": "Choice"
+  },
+  "1049": {
+    "$base": "Choice"
+  },
+  "1050": {
+    "$base": "Choice"
+  },
+  "1066": {
+    "1066": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1067": {
+    "$base": "Choice"
+  },
+  "displayName": "SavZeroCountCal",
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Used to hold the offset for Zero calibration.  This value represents the A to D count of the airflow transducer at 0 cfm.  The damper should be closed and the fan off.  This should not be overriden once the Auto Zero has been used. \nThe default on a new job should be set to -1. This will invoke alerts to ensure zero cal is complete. TAB will not be allowed to calibrate box until azero cal is performed."
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,11161"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "SavZeroCountCal"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "412"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": ""
+  }
+}

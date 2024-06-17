@@ -1,0 +1,15 @@
+{
+  "displayName": "BBMD List1 4003",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bmd,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "bbmd-list"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "BBMD List1 4003"
+  }
+}

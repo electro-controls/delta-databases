@@ -1,0 +1,79 @@
+{
+  "displayName": "HWVRuntime_Sp",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,11074"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "HWVRuntime_Sp"
+  },
+  "description": {
+    "$base": "String",
+    "value": "30May2024 AV- this is a 3way valve 45sec stroke. It is reverse action because i believe it to have the common port piped to opposite main line of the other 3 ways. visually confirmed operation."
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "45"
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "s"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "device,4000053"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2024-05-30T08:55:10.200000-06:00"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

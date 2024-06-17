@@ -1,0 +1,30 @@
+//Fan Program
+
+//Fan Call
+If ('ZoneOccMode' <> 1 And 'TerminalUnitFan') Or //1 = Unoccupied, so if occupied and unit has fan   
+   'GlobalSFStatus' = On Then
+   'FanEnable' = On
+  Else
+   'FanEnable' = Off
+End If
+
+//Fan Status Proof
+Variable FanRunning
+If 'FanCurrent' > 'FanRunThreshold' Then //Set threshold between powered off amps and running amps
+     FanRunning = On
+   Else FanRunning = Off
+End If
+
+//Status Time Delay
+If FanRunning OnFor 2S Then
+     'FanStatus' = On
+   Else If FanRunning OffFor 2S Then
+     'FanStatus' = Off
+   End If
+End If
+
+//FTU Fan Alarm
+If ('FanEnable' OnFor 2M) And ('FanStatus' = Off) Then
+  'FTU_FanAlarm' = On
+ Else 'FTU_FanAlarm' = Off
+End If

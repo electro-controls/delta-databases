@@ -1,0 +1,80 @@
+{
+  "1025": {
+    "$base": "Choice"
+  },
+  "1033": {
+    "$base": "Choice"
+  },
+  "1035": {
+    "$base": "Choice"
+  },
+  "1037": {
+    "$base": "Choice"
+  },
+  "1044": {
+    "$base": "Choice"
+  },
+  "1047": {
+    "$base": "Choice"
+  },
+  "1049": {
+    "$base": "Choice"
+  },
+  "1050": {
+    "$base": "Choice"
+  },
+  "1066": {
+    "1066": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1067": {
+    "$base": "Choice"
+  },
+  "displayName": "ZoneCO2CalValue",
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "description": {
+    "$base": "String",
+    "value": "The normal position is 0.With AV111 at 1, then place CO2 value in this object. Once you see the value, then place this object to 0 and release to auto. The CO2 should update to a new calibrated value. You must complete the process within 20 seconds.If a value is returned -1 then the Cal was not applied."
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,112"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "ZoneCO2CalValue"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "-1"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "ppm"
+  }
+}

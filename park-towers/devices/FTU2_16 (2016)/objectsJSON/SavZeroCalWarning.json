@@ -1,0 +1,160 @@
+{
+  "1025": {
+    "$base": "Choice"
+  },
+  "1033": {
+    "$base": "Choice"
+  },
+  "1035": {
+    "$base": "Choice"
+  },
+  "1036": {
+    "$base": "Choice"
+  },
+  "1037": {
+    "$base": "Choice"
+  },
+  "1038": {
+    "$base": "Choice"
+  },
+  "1045": {
+    "$base": "Choice"
+  },
+  "1140": {
+    "$base": "Choice"
+  },
+  "1189": {
+    "$base": "Choice"
+  },
+  "1192": {
+    "1192": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1198": {
+    "$base": "Choice"
+  },
+  "1199": {
+    "$base": "Choice"
+  },
+  "1200": {
+    "$base": "Choice"
+  },
+  "1213": {
+    "$base": "Choice"
+  },
+  "1215": {
+    "1215": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1216": {
+    "$base": "Choice"
+  },
+  "displayName": "SavZeroCalWarning",
+  "acked-transitions": {
+    "$base": "BitString",
+    "value": "to-offnormal;to-fault;to-normal"
+  },
+  "notification-class": {
+    "$base": "Unsigned",
+    "value": "4194303"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "event-enable": {
+    "$base": "BitString",
+    "value": "to-offnormal;to-fault;to-normal"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "event-type": {
+    "$base": "Enumerated",
+    "value": "out-of-range"
+  },
+  "notify-type": {
+    "$base": "Enumerated",
+    "value": "alarm"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "event-enrollment,1"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "SavZeroCalWarning"
+  },
+  "object-property-reference": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "device,2016"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,11161"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "present-value",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "event-enrollment"
+  },
+  "event-parameters": {
+    "$base": "Choice",
+    "out-of-range": {
+      "$base": "Sequence",
+      "time-delay": {
+        "$base": "Unsigned",
+        "value": "65534"
+      },
+      "low-limit": {
+        "$base": "Real",
+        "value": "1"
+      },
+      "high-limit": {
+        "$base": "Real",
+        "value": "1000"
+      },
+      "deadband": {
+        "$base": "Real",
+        "value": "1"
+      }
+    }
+  },
+  "event-time-stamps": {
+    "1": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "2024-04-09T06:12:54.90"
+      }
+    },
+    "2": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "3": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "2024-05-15T13:18:46.70"
+      }
+    },
+    "$base": "Array"
+  }
+}

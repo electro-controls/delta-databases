@@ -1,0 +1,125 @@
+//Below sequence is for Bypass time/Bypass Mode
+
+Variable BPDis //Bypass display mode
+
+If ('ZoneOccMode' <> 2) Then
+ IfOnce ('LinkLCD1.Key_Press' = 2) And ('ZoneBypassTmLeft' < 0.5) Then //2 is on button
+    'ZoneAlgMode' = 1
+    'ZoneBypassTmLeft' = 'ZoneBypassTm_Sp'
+    BPDis = On
+ End If
+
+ If ('LinkLCD1.Key_Press' = 2) Then
+    BPDis = On
+ End If
+Else
+ BPDis = Off
+End If
+
+//Allow someone to press ON again to revert back to Temp display
+If ('LinkLCD1.Key_Press' = 2) And (BPDis OnFor 2S) Then
+    BPDis = Off
+End If
+
+IfOnce BPDis Then
+    'LinkLCD1.Line_2' = 'ZoneBypassTmLeft'
+    'LinkLCD1.Line_2_Units' = 0
+    'LinkLCD1.Line_3' = "Hr"
+    'LinkLCD1.Line_3_Units' = 0
+End If
+IfOnce Not BPDis Then
+    'LinkLCD1.Line_2' = 'Zone_EffTemp'
+    'LinkLCD1.Line_2_Units' = 3
+    'LinkLCD1.Line_3' = 'Zone_EffSp'
+    'LinkLCD1.Line_3_Units' = 1
+End If
+
+If BPDis Then
+    If ('LinkLCD1.Key_Press' = 4) Then
+    'ZoneBypassTmLeft' = Limit ('ZoneBypassTmLeft', 'ZoneBypassTmLeft' + 0.5, 9)
+    'LinkLCD1.Line_2' = 'ZoneBypassTmLeft'
+    End If
+    If ('LinkLCD1.Key_Press' = 3) Then
+    'ZoneBypassTmLeft' = Limit ('ZoneBypassTmLeft', 0.5, 'ZoneBypassTmLeft' - 0.5)
+    'LinkLCD1.Line_2' = 'ZoneBypassTmLeft'
+    End If
+End If
+
+Variable line2mode
+If ('LinkLCD1.Key_Press' = 0) OnFor 8S Then
+    If 'ZoneBypassCall' And (Not 'Zone_RemSchedule') Then
+      If line2mode OnFor 7S Then
+        line2mode = Off
+      End If
+      If line2mode OffFor 3S Then
+        line2mode = On
+      End If
+      IfOnce line2mode Then
+            'LinkLCD1.Line_2' = 'Zone_EffTemp'
+            'LinkLCD1.Line_2_Units' = 1
+            'LinkLCD1.Line_3' = 'Zone_EffSp'
+            'LinkLCD1.Line_3_Units' = 1
+            line2mode = 1
+            BPDis = Off
+      End If
+      IfOnce Not line2mode Then
+            BPDis = On
+      End If
+    Else
+      IfOnce ('LinkLCD1.Key_Press' = 0) Then
+      'LinkLCD1.Line_2' = 'Zone_EffTemp'
+      'LinkLCD1.Line_2_Units' = 1
+      'LinkLCD1.Line_3' = 'Zone_EffSp'
+      'LinkLCD1.Line_3_Units' = 1
+      End If
+      line2mode = 1
+      BPDis = Off
+    End If
+End If
+ 
+//If someone presses the off button, unit goes off and resets bypass time left
+//to zero.
+IfOnce ('LinkLCD1.Key_Press' = 1) And 'ZoneEnableDNS' And 'ZoneBypassCall' Then
+    'ZoneAlgMode' = 0
+    'ZoneBypassTmLeft' = 0
+    BPDis = Off
+End If
+//Put unit into standby mode
+IfOnce ('LinkLCD1.Key_Press' = 1) And 'ZoneEnableDNS' And 'Zone_RemSchedule' Then
+    'ZoneAlgMode' = 0
+    'ZoneBypassTmLeft' = 0
+End If
+
+//Put unit into occ mode from standby mode
+IfOnce ('LinkLCD1.Key_Press' = 2) And 'Zone_RemSchedule' Then
+    'ZoneAlgMode' = 1
+End If
+
+//Bypass time increments down every 30 minutes.
+If 'ZoneBypassTmLeft' > 0 Then
+    'ZoneBypassCall' = On
+    DoEvery 6M
+    'ZoneBypassTmLeft' = Max (0, 'ZoneBypassTmLeft' - 0.1)
+    End Do
+  Else
+    'ZoneBypassCall' = Off
+End If
+
+//Allow for changing space setpoint.
+Variable Update
+If ('LinkLCD1.Key_Press' = 3) And (Not BPDis) And 'ZoneEnableDNS' Then
+  'Zone_LocSp' = Limit ('Zone_LocSp' - 'ZoneSpIncrement_Sp', 'ZoneOcHtgMin_Sp', 'ZoneOcClgMax_Sp')
+  Update = On
+End If
+If ('LinkLCD1.Key_Press' = 4) And (Not BPDis) And 'ZoneEnableDNS' Then
+  'Zone_LocSp' = Limit ('Zone_LocSp' + 'ZoneSpIncrement_Sp', 'ZoneOcHtgMin_Sp', 'ZoneOcClgMax_Sp')
+  Update = On
+End If
+
+If Update Then
+  'LinkLCD1.Line_3' = 'Zone_EffSp'
+  'LinkLCD1.Line_3_Units' = 1
+End If
+If Update OnFor 5S Then
+  Update = Off
+End If

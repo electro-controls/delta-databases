@@ -1,0 +1,56 @@
+'ZoneOccMode_PG.Write_Priority' = 13
+//Set the occ mode. 
+If 'AV11051' = 1 And ('BV11021' Or 'BV11055') Then
+    'ZoneOccMode' = 3 //Occupied
+  ElseIf  'BV11052' Then
+    'ZoneOccMode' = 4 //Bypass
+  ElseIf  'BV11026' Then
+    'ZoneOccMode' = 6 //Purge
+  ElseIf  'BV11025' Then
+    'ZoneOccMode' = 5 //Warmup
+  ElseIf  'AV11051' = 0 And (Not 'BV11021') And (Not 'BV11055') And (Not 'BV11022') Then
+    'ZoneOccMode' = 1 //Unocc
+  Else
+    'ZoneOccMode' = 2 //Standby
+End If
+
+IfOnce 'BV11021' Or 'BV11055' Then
+    'AV11051' = 1
+End If
+
+IfOnce (Not 'BV11021') And (Not 'BV11052') And (Not 'BV11055') Then
+    'AV11051' = 0
+End If
+
+
+If 'BI105' OnFor 10S Then
+    'AV11056' = 'AV11055'
+  Else
+    DoEvery 1M
+    'AV11056' = Max (0, 'AV11056' - 1)
+    End Do
+End If
+
+If 'AV11056' > 0 Then
+    'BV11055' = On
+  Else
+    'BV11055' = Off
+End If
+
+
+//The following sequence allows the Stanbyby mode to revert back to occupied after
+//a time delay. This is good for building where the ventilation should revert back without someone pressing the 
+//on (1) buttom. Example would be class room, where teach can turn unit off (standby) but it could revert back to occupied
+//after a time period (like 30-60Minutes). Another example would be an office enviroment where you dont not want standby at all
+//in which you could put the standby time to 0.
+IfOnce ('ZoneOccMode' = 2) Then
+    'AV11058' = 'AV11057'
+End If
+
+DoEvery 30S
+  'AV11058' = Max (0, 'AV11058' - 0.5)
+End Do
+
+If ('ZoneOccMode' = 2) And ('AV11058' = 0) And ('BV11021' Or 'BV11055') Then
+    'AV11051' = 1
+End If

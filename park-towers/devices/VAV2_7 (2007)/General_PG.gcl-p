@@ -1,0 +1,66 @@
+//Power up defaults will be written to after power up or reset
+IfOnce PowerUp Then
+    'Uptime' = 0
+    'ControllerFault' = 1
+    'SavetoFlashRequest_DONOTINTEGRATE' = Off
+    'OAT_Eff' = 32
+//The following releases output manual overrides on power up Based on MV90
+  If ('PowerUpScheme' = 1) Then
+    ForAll BOPoints1 In "BO*:*"
+        Reset 'BOPoints1'
+    End For
+    ForAll AOPoints1 In "AO*:*"
+        Reset 'AOPoints1'
+    End For
+   ElseIf  ('PowerUpScheme' = 2) Then
+    ForAll BOPoints2 In "BO*:*"
+      If (BOPoints2.Current_Priority = 8) Then
+        Reset 'BOPoints2'
+      End If
+    End For
+    ForAll AOPoints2 In "AO*:*"
+      If (AOPoints2.Current_Priority = 8) Then
+        Reset 'AOPoints2'
+      End If
+    End For
+  End If
+//End of reset of outputs
+End If
+
+
+//Upime is for troubleshooting
+DoEvery 1M
+  'Uptime' = 'Uptime' + 1 //Counts controller uptime for troubleshooting and alarming
+  'LastAutoSavetoFlash' = 'LastAutoSavetoFlash' + 1 //Counts up from last save to flash
+End Do
+
+IfOnce 'SavetoFlashRequest_DONOTINTEGRATE' OnFor 10M Then
+    SaveToFlash
+    'LastAutoSavetoFlash' = - 1 //-1 to trigger the save to flash
+End If
+
+IfOnce ('LastAutoSavetoFlash' < 0) OnFor 1S Then //Turns off save to flash request
+ 'SavetoFlashRequest_DONOTINTEGRATE' = Off
+End If
+
+'DIPSetting' = 'VAV2_7.DIP_Setting' //reference current controller DIP setting
+
+//Jace communication monitoring
+Variable JaceChanged As Integer
+If 'JaceUptime' Changed Then
+    JaceChanged = On
+End If
+If JaceChanged OnFor 10S Then
+    JaceChanged = Off
+End If
+
+If JaceChanged OffFor 10M Then
+    'JaceCfail' = On
+  Else
+    'JaceCfail' = Off
+End If
+
+
+//Intercontroller Links
+'OAT_Eff' = '2000.OAT_Eff' //Reference to parent DSC eff OAT
+'SFOntimeRef' = '2000.SFUptime' //reference to associated AHU Ontime (note used to inhibit alarms)

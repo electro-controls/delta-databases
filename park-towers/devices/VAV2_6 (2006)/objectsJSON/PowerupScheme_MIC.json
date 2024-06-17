@@ -1,0 +1,78 @@
+{
+  "displayName": "PowerupScheme_MIC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,90"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-input-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "PowerupScheme_MIC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "ResetAll"
+    },
+    "2": {
+      "$base": "String",
+      "value": "ResetPri8"
+    },
+    "3": {
+      "$base": "String",
+      "value": "NoResets"
+    },
+    "$base": "Array"
+  },
+  "voltage-range": {
+    "1": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

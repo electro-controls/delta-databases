@@ -1,0 +1,12 @@
+//CW CP Operation 
+
+
+If 'FreeCooling' And 'RunStatusInt' And (Not 'DATMode') And ('Eff_OAT' > 50) Then
+  'CWV' = Scale ('DATClg_CO', 0, 80, 0, 100, 100)
+ElseIf  'RunStatusInt' And (Not 'DATMode') And ('Eff_OAT' > 50) Then
+  'CWV' = 'DATClg_CO'
+Else
+  'CWV' = 0
+End If
+
+//End of Program

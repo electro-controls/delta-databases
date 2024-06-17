@@ -1,0 +1,108 @@
+{
+  "displayName": "ControllerFault",
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "5"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "multi-state-value,98"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "ControllerFault"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-value"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "present-value": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Normal"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Page Fault"
+    },
+    "3": {
+      "$base": "String",
+      "value": "AI Fault"
+    },
+    "4": {
+      "$base": "String",
+      "value": "AV Fault"
+    },
+    "5": {
+      "$base": "String",
+      "value": "CO Fault"
+    },
+    "$base": "Array"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "object-size": {
+    "$base": "Unsigned",
+    "value": "54"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "gcl-value": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,10"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,98"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2024-06-04T12:50:35.000000-06:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Normal"
+  },
+  "manual-override": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

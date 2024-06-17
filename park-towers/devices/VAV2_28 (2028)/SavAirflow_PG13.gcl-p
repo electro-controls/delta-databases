@@ -1,0 +1,80 @@
+'SavAirflow_PG13.Write_Priority' = 13
+//Determines local or remote control of Pv setpoint
+If 'Sav_RemSp' >= 0 Then
+    'Sav_EffSp' = 'Sav_RemSp'
+  Else
+    'Sav_EffSp' = 'Sav_LocSp'
+End If
+
+If 'SavAutoZeroCal' Then
+    'SavFanRequest' = Off
+  Else
+    'SavFanRequest' = Switch ( 'SavFanRequest', 'Sav_EffSp', 100, 10)
+End If
+
+//This prevents the box from going to max heating if the DAT is not warm.
+//Comment out the following line and set PvHtgLimit to 100% if no DAT sensor is used.
+Variable EffPvMaxHt
+Variable EffPvMaxCl
+
+'SavHtgLimit' = 'SavHtgLimit_CO'
+
+
+EffPvMaxHt = Scale ('SavHtgLimit', 0, 0, 'SavMinHt_Sp', 100, 'SavMaxHt_Sp') //Limits max heating if DAT is NOT warm
+EffPvMaxCl = Scale ('SavClgLimit_Sp', 0, 0, 'SavMinCl_Sp', 100, 'SavMaxCl_Sp')
+
+// Calculates Airflow by converting the pressure transmitters raw
+//A/D count (velocity pressure) converting it, then displaying as CFM
+Variable Last_Value As Real // Used to track last value
+Variable New_Value As Real // New Calc Value 
+Variable MaxSensorCount
+MaxSensorCount = ('SavSensorMaxV' / 5) * 'ControllerADRange' //Example: 4.5v = 3685
+
+DoEvery 1S
+  Last_Value = 'Sav_EffAirflow' //Note sensor is .5 to 4.5v. So counts need to change for other sensor types                                            
+  New_Value = ('SavKFactor' + 'SavCalOffset') * Sqrt (Scale ('SavCurrentCount', 0, 'SavZeroCountCal', 0, MaxSensorCount, 1)) / 1
+  'Sav_EffAirflow' = Last_Value + (((0.1 * (100 - (Min ('SavFilter_Sp', 99))) / 0.1) / 100) * (New_Value - Last_Value))
+End Do
+
+
+
+// Air Flow Setpoint
+Variable TempAirflow
+
+If 'ZoneOccMode' = 5 Then //5=WarmUp
+    TempAirflow = Scale ('Zone_EffHtg', 0, 10, 0, 100, EffPvMaxHt)
+  ElseIf  'ZoneOccMode' = 6 Then //6=Purge
+    If 'Zone_EffTemp' > ('ZoneHeat_EffSp' - 2) Then
+      TempAirflow = EffPvMaxCl
+     Else
+      TempAirflow = 'SavMinCl_Sp' * 'SavUnocRate_Sp' * 0.01
+    End If
+  ElseIf  'ZoneOccMode' = 2 Then //2=Standby
+    If 'ZoneControlMode' = 1 Then //Heating
+      TempAirflow = Scale ('Zone_EffHtg', 0, 50, 'SavMinHt_Sp' * 'SavStandbyRate_Sp' * 0.01, 100, EffPvMaxHt)
+     ElseIf  'ZoneControlMode' = 2 Then //Cooling
+      TempAirflow = Scale ('Zone_EffClg', 0, 0, 'SavMinCl_Sp' * 'SavStandbyRate_Sp' * 0.01, 100, EffPvMaxCl)
+     Else
+      TempAirflow = 'SavMinCl_Sp' * 'SavStandbyRate_Sp' * 0.01
+     End If
+  ElseIf  ('ZoneOccMode' <> 1) Then //1=Unoc ...aka occupied
+      // Heating Airflow SP
+    If 'ZoneControlMode' = 1 Then //Heating
+      TempAirflow = Max (Scale ('Zone_EffHtg', 0, 50, 'SavMinHt_Sp', 100, EffPvMaxHt), 'ZoneIAQ_Airflow')
+      // Cooling Airflow
+    ElseIf  ('ZoneControlMode' = 2) Then //2 = Cooling
+      TempAirflow = Max (Scale ('Zone_EffClg', 0, 0, 'SavMinCl_Sp', 100, EffPvMaxCl), 'ZoneIAQ_Airflow')
+    Else
+      TempAirflow = Max ('SavMinCl_Sp', 'ZoneIAQ_Airflow')
+    End If
+Else
+  If 'ZoneUnocHtCall' Then
+    TempAirflow = EffPvMaxHt
+  ElseIf  'ZoneUnocClCall' Then
+    TempAirflow = EffPvMaxCl
+  Else
+    TempAirflow = 'SavMinCl_Sp' * 'SavUnocRate_Sp' * 0.01 //Unoc ventilation rate
+  End If
+End If
+
+'Sav_LocSp' = Max (TempAirflow) //(VolumetricHavTotal + VolumetricDavTotal + VolumetricOffset_Sp))

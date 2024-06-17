@@ -1,0 +1,98 @@
+{
+  "displayName": "Mode",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "multi-state-value,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Mode"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Occupancy mode"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "gcl-value": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,1"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "5"
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Occupied"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Warmup"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Unoc Heating"
+    },
+    "4": {
+      "$base": "String",
+      "value": "Unoc Cooling"
+    },
+    "5": {
+      "$base": "String",
+      "value": "Off"
+    },
+    "$base": "Array"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "device,999"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2024-06-04T13:55:32.900000-06:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Occupied"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

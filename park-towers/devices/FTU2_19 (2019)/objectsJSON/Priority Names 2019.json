@@ -1,0 +1,82 @@
+{
+  "displayName": "Priority Names 2019",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "pan,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "priority-array-names"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Priority Names 2019"
+  },
+  "priority-names": {
+    "1": {
+      "$base": "String",
+      "value": "Manual Life-Safety"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Automatic Life-Safety"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Priority 3"
+    },
+    "4": {
+      "$base": "String",
+      "value": "Priority 4"
+    },
+    "5": {
+      "$base": "String",
+      "value": "Critical Equipment Control"
+    },
+    "6": {
+      "$base": "String",
+      "value": "Minimum On/Off"
+    },
+    "7": {
+      "$base": "String",
+      "value": "Priority 7"
+    },
+    "8": {
+      "$base": "String",
+      "value": "Manual Operator"
+    },
+    "9": {
+      "$base": "String",
+      "value": "Priority 9"
+    },
+    "10": {
+      "$base": "String",
+      "value": "GCL +"
+    },
+    "11": {
+      "$base": "String",
+      "value": "Priority 11"
+    },
+    "12": {
+      "$base": "String",
+      "value": "Priority 12"
+    },
+    "13": {
+      "$base": "String",
+      "value": "Priority 13"
+    },
+    "14": {
+      "$base": "String",
+      "value": "Priority 14"
+    },
+    "15": {
+      "$base": "String",
+      "value": "Priority 15"
+    },
+    "16": {
+      "$base": "String",
+      "value": "Priority 16"
+    },
+    "$base": "Array"
+  }
+}

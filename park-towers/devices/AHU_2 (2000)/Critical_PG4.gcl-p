@@ -1,0 +1,29 @@
+'Critical_PG4.Write_Priority' = 4
+
+If (('DAT' < 43) OnFor 2M) Or 'FreezeStat_MR' Then
+    'FreezeMode' = On
+End If
+
+IfOnce PowerUp Then
+    'FreezeMode' = Off
+End If
+
+IfOnce 'Mode' Changed Then
+    'FreezeMode' = Off
+End If
+
+IfOnce (Not 'FreezeStat_MR') Then
+    'FreezeMode' = Off //Comment out this line if _AR freeze stat is used.
+End If
+
+
+
+If 'HiStatic' Or 'Smoke' Or 'FreezeStat_MR' Or 'FreezeMode' Then
+    'SFEnable' = Off
+    'SFSpeed' = 0
+    'EconDamper' = 0
+  Else
+    Relinquish 'SFEnable'
+    Relinquish 'SFSpeed'
+    Relinquish 'EconDamper'
+End If

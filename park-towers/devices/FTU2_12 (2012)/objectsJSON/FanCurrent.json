@@ -1,0 +1,190 @@
+{
+  "1025": {
+    "$base": "Choice"
+  },
+  "1033": {
+    "$base": "Choice"
+  },
+  "1035": {
+    "$base": "Choice"
+  },
+  "1037": {
+    "$base": "Choice"
+  },
+  "1039": {
+    "$base": "Choice"
+  },
+  "1040": {
+    "$base": "Choice"
+  },
+  "1052": {
+    "$base": "Choice"
+  },
+  "1053": {
+    "1053": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1054": {
+    "$base": "Choice"
+  },
+  "1055": {
+    "$base": "Choice"
+  },
+  "1056": {
+    "$base": "Choice"
+  },
+  "1057": {
+    "$base": "Choice"
+  },
+  "1058": {
+    "$base": "Choice"
+  },
+  "1073": {
+    "$base": "Choice"
+  },
+  "1075": {
+    "1075": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1076": {
+    "$base": "Choice"
+  },
+  "1077": {
+    "$base": "Choice"
+  },
+  "1079": {
+    "$base": "Choice"
+  },
+  "1080": {
+    "$base": "Choice"
+  },
+  "displayName": "FanCurrent",
+  "acked-transitions": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "notification-class": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "deadband": {
+    "$base": "Real",
+    "value": 0
+  },
+  "description": {
+    "$base": "String",
+    "value": "15May2024_MIkhail_Checked via FanEnable."
+  },
+  "device-type": {
+    "$base": "String",
+    "value": "FTU_FanStatus"
+  },
+  "event-enable": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "high-limit": {
+    "$base": "Real",
+    "value": 0
+  },
+  "limit-enable": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "low-limit": {
+    "$base": "Real",
+    "value": 0
+  },
+  "max-pres-value": {
+    "$base": "Real",
+    "value": "5"
+  },
+  "min-pres-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "notify-type": {
+    "$base": "Enumerated",
+    "value": "alarm"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-input,2"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "FanCurrent"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-input"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "1.45177"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "resolution": {
+    "$base": "Real",
+    "value": "0.001221"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "time-delay": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "A"
+  },
+  "update-interval": {
+    "$base": "Unsigned",
+    "value": "549"
+  },
+  "event-time-stamps": {
+    "1": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "2": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "3": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "$base": "Array"
+  }
+}

@@ -1,0 +1,11 @@
+//Main PG Calls all other Programs to run
+
+Call 'Critical_PG'
+Call 'Economizer_PG'
+Call 'Fan_PG'
+Call 'FaultDetection_PG'
+Call 'General_PG'
+Call 'Humidity_PG'
+Call 'HW_CWV_PG'
+
+//End of Program

@@ -1,0 +1,89 @@
+{
+  "displayName": "DIPSetting",
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "description": {
+    "$base": "String",
+    "value": "This is the DIP setting for controller address"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,99"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "DIPSetting"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "3"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": ""
+  },
+  "object-size": {
+    "$base": "Unsigned",
+    "value": "107"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": "3"
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,2"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2024-06-04T12:45:53.900000-06:00"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "manual-override": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

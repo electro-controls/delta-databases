@@ -1,0 +1,73 @@
+'FaultDetection_PG13.Write_Priority' = 13
+//Look for faults then triggers a BV for alarm purposes
+Variable PageFault As Integer
+Variable AIFault As Integer
+Variable AVFault As Integer
+Variable COFault As Integer
+Variable AnyFault As Integer
+
+DoEvery 1M
+  PageFault = Off
+  ForAll Pages In "PG*:*"
+    If (Pages.Reliability <> 0) Then
+      PageFault = On
+      AnyFault = On
+    End If
+  End For
+End Do
+
+DoEvery 1M
+  AIFault = Off
+  ForAll AIs In "AI*:*"
+    If (AIs.Reliability <> 0) Then
+      AIFault = On
+      AnyFault = On
+    End If
+  End For
+End Do
+
+DoEvery 1M
+  AVFault = Off
+  ForAll AVs In "AV*:*"
+    If (AVs.Reliability <> 0) Then
+      AVFault = On
+      AnyFault = On
+    End If
+  End For
+End Do
+
+DoEvery 1M
+  COFault = Off
+  ForAll Loops In "CO*:*"
+    If (Loops.Reliability <> 0) Then
+      COFault = On
+      AnyFault = On
+    End If
+  End For
+End Do
+
+//Set MV
+If (PageFault) And ('MV98' <> 2) Then
+  'MV98' = 2
+End If
+
+If (AIFault) And ('MV98' <> 3) Then
+  'MV98' = 3
+End If
+
+If (AVFault) And ('MV98' <> 4) Then
+  'MV98' = 4
+End If
+
+If (COFault) And ('MV98' <> 5) Then
+  'MV98' = 5
+End If
+
+//Clear Alarm
+If (Not PageFault) And (Not AIFault) And (Not AVFault) And (Not COFault) Then
+  AnyFault = Off
+End If
+
+If PowerUp Or (AnyFault OffFor 24:H) Then
+  'MV98' = 1
+End If

@@ -1,0 +1,35 @@
+{
+  "displayName": "LocalRemote_BDC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,4"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-device-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "LocalRemote_BDC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Local"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Remote"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "displayName": "EconInfoMode",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "multi-state-value,10933"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "EconInfoMode"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "gcl-value": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,10933"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "5"
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "DAT Cooling"
+    },
+    "2": {
+      "$base": "String",
+      "value": "DAT Clg CWV Assist"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Min OA Position"
+    },
+    "4": {
+      "$base": "String",
+      "value": "FailSafe"
+    },
+    "5": {
+      "$base": "String",
+      "value": "Return Air"
+    },
+    "$base": "Array"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,10901"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2024-06-04T12:36:34.800000-06:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Min OA Position"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

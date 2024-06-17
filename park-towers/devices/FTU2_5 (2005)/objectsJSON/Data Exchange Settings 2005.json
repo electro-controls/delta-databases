@@ -1,0 +1,145 @@
+{
+  "displayName": "Data Exchange Settings 2005",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "des,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "data-exchange-settings"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Data Exchange Settings 2005"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "default-exchange-type": {
+    "$base": "Enumerated",
+    "value": "cov-confirmed"
+  },
+  "poll-startup-delay": {
+    "$base": "Unsigned",
+    "value": "11"
+  },
+  "poll-interval": {
+    "$base": "Unsigned",
+    "value": "30"
+  },
+  "poll-timer": {
+    "$base": "Choice",
+    "poll-timer": {
+      "$base": "Unsigned",
+      "value": "35531520"
+    }
+  },
+  "actual-poll-time": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "broadcast-startup-delay": {
+    "$base": "Unsigned",
+    "value": "10"
+  },
+  "broadcast-interval": {
+    "$base": "Unsigned",
+    "value": "30"
+  },
+  "broadcast-timer": {
+    "$base": "Choice",
+    "broadcast-timer": {
+      "$base": "Unsigned",
+      "value": "35531510"
+    }
+  },
+  "actual-broadcast-time": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "broadcast-addresses": {
+    "1": {
+      "$base": "Choice",
+      "address": {
+        "$base": "Sequence",
+        "network-number": {
+          "$base": "Unsigned",
+          "value": 0
+        },
+        "mac-address": {
+          "$base": "Octet",
+          "value": "0x"
+        }
+      }
+    },
+    "$base": "Array"
+  },
+  "subscription-startup-delay": {
+    "$base": "Unsigned",
+    "value": "225"
+  },
+  "subscription-interval": {
+    "$base": "Unsigned",
+    "value": "1800"
+  },
+  "subscription-timer": {
+    "$base": "Choice",
+    "subscription-timer": {
+      "$base": "Unsigned",
+      "value": "35534260"
+    }
+  },
+  "actual-subscription-time": {
+    "$base": "Unsigned",
+    "value": "2"
+  },
+  "subscription-check-interval": {
+    "$base": "Unsigned",
+    "value": "90"
+  },
+  "subscription-check-timer": {
+    "$base": "Choice",
+    "subscription-check-timer": {
+      "$base": "Unsigned",
+      "value": "35531820"
+    }
+  },
+  "subscription-extra-lifetime": {
+    "$base": "Unsigned",
+    "value": "15"
+  },
+  "max-items-per-request": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "statistics": {
+    "$base": "Array"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "auto-connect-devices": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "der-summary": {
+    "$base": "Array"
+  },
+  "del-summary": {
+    "$base": "Array"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "1025": {
+    "$base": "Choice"
+  },
+  "1033": {
+    "$base": "Choice"
+  },
+  "1035": {
+    "$base": "Choice"
+  },
+  "1037": {
+    "$base": "Choice"
+  },
+  "1044": {
+    "$base": "Choice"
+  },
+  "1047": {
+    "$base": "Choice"
+  },
+  "1049": {
+    "$base": "Choice"
+  },
+  "1050": {
+    "$base": "Choice"
+  },
+  "1066": {
+    "1066": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1067": {
+    "$base": "Choice"
+  },
+  "displayName": "ControllerADRange",
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "description": {
+    "$base": "String",
+    "value": "This is the AD count max of the controller. It could be used to scale other variables when referencing raw counts. It should be manual set to match the controller ADbit. \n4095 for DAC and DSC, 65535 for Entelibus, 65535 for OS3"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,97"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "ControllerADRange"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "4095"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": ""
+  }
+}

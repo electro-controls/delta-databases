@@ -1,0 +1,43 @@
+//General PG
+
+//Power up defaults
+//These will be written to after power up from Jace.
+IfOnce PowerUp Then
+    'DATClg_Sp' = 60
+    'DATHtg_Sp' = 55
+    'MATLimit_Sp' = 50
+    'Mode' = 1 //Occupied
+    'DuctStatic_Sp' = 1.35
+    'Eff_OAT' = 62
+    'Uptime' = 0
+End If
+
+//Uptime
+DoEvery 1M
+  'Uptime' = 'Uptime' + 1
+End Do
+
+//Intercontroller Links
+'Eff_OAT' = '2000.OAT_Eff'
+
+
+//Controller will save to flash every 24 hours.  Below code initiates save
+//based on controller address so saves are staggered rather than all at once.  
+ Variable T //Time
+ Variable A1 //Address 1 to 59
+ Variable A2 //Address 60 to 99
+
+ T = Time
+ A1 = 'AHU_4.DIP_Setting'
+
+ IfOnce A1 > 59 And Weekday = 3 Then
+   A2 = (A1 - 59) + 99
+  Else
+   A2 = A1
+ End If
+
+ IfOnce T = A2 Then
+  SaveToFlash
+ End If
+
+ //End of Program
