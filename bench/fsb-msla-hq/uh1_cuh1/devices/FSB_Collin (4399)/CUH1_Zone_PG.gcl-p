@@ -4,13 +4,13 @@
 If ('CUH1_OccMode' = 3) Or ('CUH1_OccMode' = 4) Or ('CUH1_OccMode' = 5) Then //occ, bypass, or warmup
     'CUH1_ZoneHeat_EffSp' = Min (('CUH1_Zone_EffSp' - ('CUH1_ZoneDb_Sp' * 0.5)), 'CUH1_OcHtgMax_Sp')
     'CUH1_ZoneCool_EffSp' = Max (('CUH1_Zone_EffSp' + ('CUH1_ZoneDb_Sp' * 0.5)), 'CUH1_OcClgMin_Sp')
-  ElseIf  ('CUH1_OccMode' = 2) Then //Standby                              
+  ElseIf  ('CUH1_OccMode' = 2) Then //Standby
     'CUH1_ZoneHeat_EffSp' = Min (('CUH1_Zone_EffSp' - 'CUH1_StandbyOffset_Sp' - ('CUH1_ZoneDb_Sp' * 0.5)), 'CUH1_OcHtgMax_Sp')
     'CUH1_ZoneCool_EffSp' = Max (('CUH1_Zone_EffSp' + 'CUH1_StandbyOffset_Sp' + ('CUH1_ZoneDb_Sp' * 0.5)), 'CUH1_OcClgMin_Sp')
-  ElseIf  ('CUH1_OccMode' = 6) Then //Purge                            
+  ElseIf  ('CUH1_OccMode' = 6) Then //Purge
     'CUH1_ZoneHeat_EffSp' = Min (('CUH1_Zone_EffSp' - 'CUH1_StandbyOffset_Sp' - ('CUH1_ZoneDb_Sp' * 0.5)), 'CUH1_OcHtgMax_Sp')
     'CUH1_ZoneCool_EffSp' = Max (('CUH1_Zone_EffSp' + ('CUH1_ZoneDb_Sp' * 0.5)), 'CUH1_OcClgMin_Sp')
-  Else //unocc                                                  
+  Else //unocc
     'CUH1_ZoneHeat_EffSp' = Min ('CUH1_UnocHt_Sp', 'CUH1_OcHtgMax_Sp')
     'CUH1_ZoneCool_EffSp' = Max ('CUH1_UnocCl_Sp', 'CUH1_OcClgMin_Sp')
 End If

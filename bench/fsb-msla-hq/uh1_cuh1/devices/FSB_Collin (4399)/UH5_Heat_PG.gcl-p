@@ -1,7 +1,7 @@
 //  HWV
 
 'UH5_FanStatus' = Switch ( 'UH5_FanStatus', 'UH5_FanCurrent', 0.7, 0.5)
- 
+
 If 'UH5_OccMode' = 6 Then
     'UH5_PurgeHold' = On
     'UH5_PurgeHoldTmLeft' = 'UH5_PurgeHold_Sp'

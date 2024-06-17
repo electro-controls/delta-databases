@@ -5,216 +5,6 @@
     {
       "action": "update",
       "device": 4399,
-      "objectId": "ai,2",
-      "objectName": "CUH1_ZoneTemp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/CUH1_ZoneTemp.json",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:54:22 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,2",
-      "objectName": "CUH1_Critical_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/CUH1_Critical_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:55:53 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,3",
-      "objectName": "CUH1_DAT_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/CUH1_DAT_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:56:12 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,4",
-      "objectName": "CUH1_Fan_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/CUH1_Fan_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:56:15 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,5",
-      "objectName": "CUH1_HWV_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/CUH1_HWV_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:56:18 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,6",
-      "objectName": "CUH1_OccMode_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/CUH1_OccMode_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:56:20 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,7",
-      "objectName": "CUH1_Zone_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/CUH1_Zone_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:56:23 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,8",
-      "objectName": "FaultDetection_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/FaultDetection_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:56:25 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,11",
-      "objectName": "UH5_Critical_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/UH5_Critical_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:56:32 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,1",
-      "objectName": "UH5_General_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/UH5_General_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:56:33 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,12",
-      "objectName": "UH5_Heat_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/UH5_Heat_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:56:36 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,13",
-      "objectName": "UH5_Zone_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/UH5_Zone_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:56:39 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,9",
-      "objectName": "General_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/General_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 1:58:12 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,10",
-      "objectName": "Main_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/Main_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 2:00:59 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
       "objectId": "bo,2",
       "objectName": "CUH1_FanEnable",
       "siteName": "Bench",
@@ -240,6 +30,21 @@
         "scheme": "file"
       },
       "date": "6/17/2024, 2:04:25 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "av,10120",
+      "objectName": "UH5_ZoneHtRamp_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneHtRamp_Sp.json",
+        "scheme": "file"
+      },
+      "date": "6/17/2024, 2:06:24 PM",
       "templateTriggered": false
     }
   ],
@@ -368,12 +173,6 @@
           "lastUpdate": "2024-06-17T19:54:22.838Z"
         },
         {
-          "id": "pg,1",
-          "name": "UH5_General_PG",
-          "fileName": "UH5_General_PG",
-          "lastUpdate": "2024-06-17T19:55:41.879Z"
-        },
-        {
           "id": "pg,2",
           "name": "CUH1_Critical_PG",
           "fileName": "CUH1_Critical_PG",
@@ -422,12 +221,6 @@
           "lastUpdate": "2024-06-17T19:56:27.657Z"
         },
         {
-          "id": "pg,10",
-          "name": "Main_PG",
-          "fileName": "Main_PG",
-          "lastUpdate": "2024-06-17T19:56:30.142Z"
-        },
-        {
           "id": "pg,11",
           "name": "UH5_Critical_PG",
           "fileName": "UH5_Critical_PG",
@@ -456,6 +249,30 @@
           "name": "UH5_HWV",
           "fileName": "UH5_HWV",
           "lastUpdate": "2024-06-17T20:04:25.067Z"
+        },
+        {
+          "id": "av,10120",
+          "name": "UH5_ZoneHtRamp_Sp",
+          "fileName": "UH5_ZoneHtRamp_Sp",
+          "lastUpdate": "2024-06-17T20:06:24.831Z"
+        },
+        {
+          "id": "bdc,11",
+          "name": "Active~Inactive",
+          "fileName": "Active~Inactive",
+          "lastUpdate": "2024-06-17T20:12:22.723Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-06-17T20:45:43.871Z"
+        },
+        {
+          "id": "pg,10",
+          "name": "UH5_General_PG",
+          "fileName": "UH5_General_PG",
+          "lastUpdate": "2024-06-17T20:46:07.174Z"
         }
       ]
     }

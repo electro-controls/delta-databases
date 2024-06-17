@@ -54,23 +54,23 @@
   },
   "active-text": {
     "$base": "String",
-    "value": "ON"
+    "value": "Active"
   },
   "inactive-text": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Inactive"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,*"
+    "value": "device,0"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-06-02T14:11:23.400000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",
-    "value": ""
+    "value": "Inactive"
   },
   "hal-flags": {
     "$base": "BitString",

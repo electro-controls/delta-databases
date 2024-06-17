@@ -18,19 +18,19 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "2"
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "2"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -46,7 +46,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "missing-cfg-object"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -81,15 +81,15 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,98"
+    "value": "program,8"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-08-06T09:46:43.100000-06:00"
+    "value": "2000-01-01T14:55:54.800000-07:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "Normal"
+    "value": "Page Fault"
   },
   "hal-flags": {
     "$base": "BitString",

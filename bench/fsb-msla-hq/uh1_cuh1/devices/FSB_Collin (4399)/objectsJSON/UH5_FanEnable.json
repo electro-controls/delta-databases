@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "private2;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -42,7 +42,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive BDC"
+    "value": ""
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,19 +62,19 @@
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "OFF"
   },
   "active-text": {
     "$base": "String",
-    "value": "Active"
+    "value": "ON"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-02T12:24:46.700000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:00:00.50"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-02T12:24:46.700000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "17"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -170,7 +170,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -253,7 +256,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,10105"
+      "unspecifiedValue": "true"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -300,7 +303,7 @@
     },
     "5": {
       "$base": "DateTime",
-      "value": "2021-03-23T14:11:31.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -312,7 +315,7 @@
     },
     "8": {
       "$base": "DateTime",
-      "value": "2021-03-23T14:06:17.10"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "9": {
       "$base": "DateTime",
@@ -320,7 +323,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-02T12:29:15.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -344,7 +347,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2024-03-20T14:55:42.60"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
@@ -354,11 +357,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "255"
+    "value": 0
   },
   "output-volt": {
     "$base": "Real",
-    "value": "10"
+    "value": 0
   },
   "module-type": {
     "$base": "Enumerated",
@@ -406,7 +409,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Active"
+    "value": ""
   },
   "time-delay": {
     "$base": "Unsigned",
