@@ -14,15 +14,15 @@
   },
   "description": {
     "$base": "String",
-    "value": "11/15/2019 dmp:  adjusted AIC to match supply fans at min and max VAV box airflow settings, and when relief damper is wide open and return damper closed \n \n11-22-2019 dmp cal notes: \nw/ supply serving max VAV cfms, relief damper open, return shut, OA open: \n   TAB read::  11560cfm  \n   Electro read:  12170cfm \n     cal offset = -610 (offset) entered into AIC at 3.1V  \n \n18Nov19 Phil I put a temporary calibration point on the AIC because we were surging through the return fan during unoc simulation. This will need to be removed when we are ready to calibrate for reals"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;out-of-service;not-commissioned"
+    "value": "fault;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "100"
+    "value": 0
   },
   "last-value": {
     "$base": "Real",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault;out-of-service"
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -58,7 +58,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": "1"
+    "value": 0
   },
   "device-type": {
     "$base": "String",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "214"
+    "value": "274"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "7910681"
+      "value": "23251673"
     }
   },
   "ad-value": {

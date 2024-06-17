@@ -14,15 +14,15 @@
   },
   "description": {
     "$base": "String",
-    "value": "DM 10_30_19 visually verifed the action of valve actuator    it is a 3 way valve and at 0 percent water was flowing thru coil  and 100 percent is bypass"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;polarity"
+    "value": "fault;polarity;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "95.8456"
+    "value": "100"
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "4"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,10 +104,7 @@
       }
     },
     "4": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "5": {
       "$base": "Choice",
@@ -262,7 +259,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-06-17T08:55:59.80"
+      "value": "2024-06-17T10:57:51.90"
     },
     "5": {
       "$base": "DateTime",
@@ -286,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-06-17T08:56:00.80"
+      "value": "2024-06-17T10:57:52.10"
     },
     "11": {
       "$base": "DateTime",
@@ -324,11 +321,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": 0
   },
   "output-volt": {
     "$base": "Real",
-    "value": "0.415439"
+    "value": 0
   },
   "port-1-status": {
     "$base": "Enumerated",

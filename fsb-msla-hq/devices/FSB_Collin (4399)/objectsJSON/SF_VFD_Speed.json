@@ -14,15 +14,15 @@
   },
   "description": {
     "$base": "String",
-    "value": "DM 10_30_19  visually verifed both fans come on with enable and same speed with speed signal \n \nfan are set 20 hz for min speed with an enable"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "1"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "4"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,10 +104,7 @@
       }
     },
     "4": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "5": {
       "$base": "Choice",
@@ -262,7 +259,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-06-17T08:56:01.20"
+      "value": "2024-06-17T10:54:36.70"
     },
     "5": {
       "$base": "DateTime",
@@ -286,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-06-17T08:56:01.10"
+      "value": "2024-06-17T10:54:36.70"
     },
     "11": {
       "$base": "DateTime",
@@ -324,11 +321,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": 0
   },
   "output-volt": {
     "$base": "Real",
-    "value": "0.1"
+    "value": 0
   },
   "port-1-status": {
     "$base": "Enumerated",

@@ -14,23 +14,23 @@
   },
   "description": {
     "$base": "String",
-    "value": "DM 10_30_19"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;out-of-service;not-commissioned"
+    "value": "not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "75"
+    "value": "-58"
   },
   "last-value": {
     "$base": "Real",
-    "value": "70"
+    "value": "-58"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault;out-of-service"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -54,11 +54,11 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "missing-cfg-object"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": "1"
+    "value": 0
   },
   "device-type": {
     "$base": "String",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "371"
+    "value": "235"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "7910035"
+      "value": "23250938"
     }
   },
   "ad-value": {

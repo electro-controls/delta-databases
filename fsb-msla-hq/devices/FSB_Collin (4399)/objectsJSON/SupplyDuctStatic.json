@@ -14,23 +14,23 @@
   },
   "description": {
     "$base": "String",
-    "value": "DM 10_24_19  verifed by blowing into high tube port and watching the value on sensor lcd match our input value    \n \nthese are 0_10 volt devices set at 3 inches"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "out-of-service"
+    "value": "not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "1.5"
+    "value": "5"
   },
   "last-value": {
     "$base": "Real",
-    "value": "20"
+    "value": "5"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "out-of-service"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -42,7 +42,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -58,7 +58,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": "1"
+    "value": 0
   },
   "device-type": {
     "$base": "String",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "224"
+    "value": "276"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "7910900"
+      "value": "23251392"
     }
   },
   "ad-value": {

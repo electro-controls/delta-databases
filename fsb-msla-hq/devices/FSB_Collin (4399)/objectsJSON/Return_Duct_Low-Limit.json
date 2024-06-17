@@ -14,11 +14,11 @@
   },
   "description": {
     "$base": "String",
-    "value": "DM 11_12_19  tested by sucking in low port and watching the vfds go into alarm and our status changed"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;out-of-service"
+    "value": "fault;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault;out-of-service"
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -50,7 +50,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": "1"
+    "value": 0
   },
   "device-type": {
     "$base": "String",
@@ -93,7 +93,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "224"
+    "value": "245"
   },
   "time-delay": {
     "$base": "Unsigned",

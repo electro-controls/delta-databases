@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "DM 10_30_19  visually verifed both fans come on with enable and same speed with speed signal \n \nfan are set 20 hz for min speed with an enable"
+    "value": "asdf"
   },
   "flags": {
     "$base": "BitString",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
