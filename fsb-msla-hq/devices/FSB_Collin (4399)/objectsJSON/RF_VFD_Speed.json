@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "0.6"
+    "value": "1.4"
   },
   "status-flags": {
     "$base": "BitString",
@@ -262,7 +262,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-06-14T16:11:30.40"
+      "value": "2024-06-17T08:56:01.30"
     },
     "5": {
       "$base": "DateTime",
@@ -286,7 +286,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-06-14T16:11:30.40"
+      "value": "2024-06-17T08:56:01.10"
     },
     "11": {
       "$base": "DateTime",
@@ -324,11 +324,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "3"
   },
   "output-volt": {
     "$base": "Real",
-    "value": "0.06"
+    "value": "0.14"
   },
   "port-1-status": {
     "$base": "Enumerated",

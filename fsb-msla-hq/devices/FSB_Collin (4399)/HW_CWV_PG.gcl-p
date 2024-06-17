@@ -24,7 +24,7 @@ IfOnce (Not 'HWMode') Then
     'DATClg_CO.Bias' = 'DATClg_CO.Bias' * 0.5
 End If
 
-
+//hwv - 2 or 3?
 If 'RunStatusInt' And 'HWMode' Then
     'HWV' = Scale ('DATHtg_CO', 0, 0, 0, 100, 100)
   ElseIf  'RunStatusInt' Then
@@ -34,8 +34,7 @@ If 'RunStatusInt' And 'HWMode' Then
 End If
 
 
-//CWV
-
+//CWV is this a two or three way valve?
 If 'RunStatusInt' And (Not 'HWMode') And 'FreeCooling' Then
     'CWV' = Scale ('DATClg_CO', 0, 50, 0, 100, 100) //allows for econ to be 1st stage
   ElseIf  'RunStatusInt' And (Not 'HWMode') Then

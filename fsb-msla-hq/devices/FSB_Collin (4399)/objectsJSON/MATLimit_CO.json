@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "287"
+    "value": "252"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "70"
+    "value": "64"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -259,7 +259,7 @@
   },
   "average-error": {
     "$base": "Real",
-    "value": "25"
+    "value": "19"
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "20874921"
+      "value": "23178681"
     }
   },
   "self-adj-enable": {
@@ -300,7 +300,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "20879342"
+      "value": "23183342"
     }
   },
   "setpoint-crossings": {
