@@ -1,713 +1,7 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "bo,2",
-      "objectName": "CUH1_FanEnable",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/CUH1_FanEnable.json",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 2:03:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "ao,3",
-      "objectName": "UH5_HWV",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_HWV.json",
-        "scheme": "file"
-      },
-      "date": "6/17/2024, 2:04:25 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "bv,10122",
-      "objectName": "CUH1_BypassCall",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/CUH1_BypassCall.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 12:13:19 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "bv,10132",
-      "objectName": "UH5_BypassCall",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_BypassCall.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 1:50:13 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "bv,10136",
-      "objectName": "UH5_Rem_PurgeCall",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_Rem_PurgeCall.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 1:51:39 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "bv,10131",
-      "objectName": "UH5_Rem_Schedule",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_Rem_Schedule.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 1:52:10 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "bv,10135",
-      "objectName": "UH5_Rem_WarmCall",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_Rem_WarmCall.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 1:52:31 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "bv,10134",
-      "objectName": "UH5_UnocClCall",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_UnocClCall.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 1:53:00 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "bv,10133",
-      "objectName": "UH5_UnocHtCall",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_UnocHtCall.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 1:53:15 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "bv,10137",
-      "objectName": "UH5_ZoneClDemand",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneClDemand.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 1:53:59 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "bv,10138",
-      "objectName": "UH5_ZoneHtDemand",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneHtDemand.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 1:54:19 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10130",
-      "objectName": "UH5_EffZoneClg",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_EffZoneClg.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:37:27 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10118",
-      "objectName": "UH5_BypassTm_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_BypassTm_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:37:48 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10119",
-      "objectName": "UH5_BypassTmLeft",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_BypassTmLeft.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:38:15 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10103",
-      "objectName": "UH5_Zone_RemSp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_Zone_RemSp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:41:38 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10111",
-      "objectName": "UH5_DNSAlgMode",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_DNSAlgMode.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:42:25 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10190",
-      "objectName": "UH5_Eff_ZoneTemp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_Eff_ZoneTemp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:43:55 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10131",
-      "objectName": "UH5_LocZoneClg",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_LocZoneClg.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:47:58 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10134",
-      "objectName": "UH5_LocZoneHtg",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_LocZoneHtg.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:48:57 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10117",
-      "objectName": "UH5_StandbyOffset_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_StandbyOffset_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:49:30 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10113",
-      "objectName": "UH5_OcClgMax_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_OcClgMax_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:50:12 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10112",
-      "objectName": "UH5_OcClgMin_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_OcClgMin_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:50:51 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10110",
-      "objectName": "UH5_ZoneVariance",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneVariance.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10102",
-      "objectName": "UH5_Zone_LocSp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_Zone_LocSp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10101",
-      "objectName": "UH5_Zone_EffSp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_Zone_EffSp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10120",
-      "objectName": "UH5_ZoneHtRamp_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneHtRamp_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10104",
-      "objectName": "UH5_ZoneHeat_EffSp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneHeat_EffSp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10122",
-      "objectName": "UH5_ZoneDbDelay_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneDbDelay_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10106",
-      "objectName": "UH5_ZoneDb_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneDb_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10121",
-      "objectName": "UH5_ZoneClRamp_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneClRamp_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10105",
-      "objectName": "UH5_ZoneCool_EffSp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneCool_EffSp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10108",
-      "objectName": "UH5_UnocCl_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_UnocCl_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10107",
-      "objectName": "UH5_UnocHt_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_UnocHt_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10109",
-      "objectName": "UH5_UnocDb_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_UnocDb_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10135",
-      "objectName": "UH5_RemZoneHtg",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_RemZoneHtg.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10132",
-      "objectName": "UH5_RemZoneClg",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_RemZoneClg.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10138",
-      "objectName": "UH5_PurgeHold_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_PurgeHold_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10139",
-      "objectName": "UH5_PurgeHoldTmLeft",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_PurgeHoldTmLeft.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10115",
-      "objectName": "UH5_OcHtgMax_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_OcHtgMax_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:21 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10133",
-      "objectName": "UH5_EffZoneHtg",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_EffZoneHtg.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:22 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "av,10114",
-      "objectName": "UH5_OcHtgMin_Sp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_OcHtgMin_Sp.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:52:22 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "co,10102",
-      "objectName": "UH5_ZoneHtg_CO",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneHtg_CO.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:55:06 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "co,10101",
-      "objectName": "UH5_ZoneClg_CO",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_ZoneClg_CO.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 2:55:06 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "delete",
-      "device": 4399,
-      "objectId": "mic,5",
-      "objectName": "UH5_DNSMode_MIC",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_DNSMode_MIC.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 3:32:59 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "delete",
-      "device": 4399,
-      "objectId": "av,91",
-      "objectName": "UH5_Eff_OAT",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_Eff_OAT.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 3:34:07 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "aic,30",
-      "objectName": "Flow Sensor",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/Flow Sensor.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 3:35:56 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "bv,10148",
-      "objectName": "UH5_HWVLock",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_HWVLock.json",
-        "scheme": "file"
-      },
-      "date": "6/18/2024, 3:38:40 PM",
-      "templateTriggered": false
-    }
-  ],
+  "uploadQueue": [],
   "devices": [
     {
       "number": 4399,
@@ -716,835 +10,985 @@
           "id": "ai,1",
           "name": "UH5_ZoneTemp",
           "fileName": "UH5_ZoneTemp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
           "id": "ai,2",
           "name": "CUH1_ZoneTemp",
           "fileName": "CUH1_ZoneTemp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
           "id": "ai,5",
           "name": "CUH1_RoomTemp",
           "fileName": "CUH1_RoomTemp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
           "id": "aic,1",
           "name": "UH5_Temperature DegF 10k Thermistor AIC",
           "fileName": "UH5_Temperature DegF 10k Thermistor AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
           "id": "aic,2",
           "name": "Temperature F",
           "fileName": "Temperature F",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
           "id": "aic,3",
           "name": "UH5_Pressure inH20 4-20mA 0-5.0 AIC",
           "fileName": "UH5_Pressure inH20 4-20mA 0-5.0 AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
           "id": "aic,4",
           "name": "UH5_0_10vdc_0_100",
           "fileName": "UH5_0_10vdc_0_100",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
           "id": "aic,7",
           "name": "UH5_Temp 32_122 DegF_0_10AIC",
           "fileName": "UH5_Temp 32_122 DegF_0_10AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
           "id": "aic,13",
           "name": "Feedback%0-10v 0-100 AIC",
           "fileName": "Feedback%0-10v 0-100 AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aic,33",
-          "name": "VOC_0_10_0_2000",
-          "fileName": "VOC_0_10_0_2000",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aic,34",
-          "name": "CO2_0_10_0_2000",
-          "fileName": "CO2_0_10_0_2000",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aic,35",
-          "name": "Pressure inH20 AIC",
-          "fileName": "Pressure inH20 AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aic,36",
-          "name": "UH5_Current 0-5V 0-5 A AIC",
-          "fileName": "UH5_Current 0-5V 0-5 A AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aic,38",
-          "name": "UH5_SFCurrent 0-5V 0-20A AIC",
-          "fileName": "UH5_SFCurrent 0-5V 0-20A AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aic,39",
-          "name": "Temp 32_122 DegF_0_10AIC",
-          "fileName": "Temp 32_122 DegF_0_10AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aic,40",
-          "name": "Feedback%0-10v 100-0 AIC",
-          "fileName": "Feedback%0-10v 100-0 AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aic,41",
-          "name": "CUH1_Current 0-5V AIC",
-          "fileName": "CUH1_Current 0-5V AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aic,42",
-          "name": "UH5_DNS-24H Humidity Sensor",
-          "fileName": "UH5_DNS-24H Humidity Sensor",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aic,43",
-          "name": "UH5_Pressure inH20 0-5v 0-5.0 AIC",
-          "fileName": "UH5_Pressure inH20 0-5v 0-5.0 AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aic,45",
-          "name": "WirelessSp_AIC",
-          "fileName": "WirelessSp_AIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "ao,3",
-          "name": "UH5_HWV",
-          "fileName": "UH5_HWV",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "ao,4",
-          "name": "CUH1_HWV",
-          "fileName": "CUH1_HWV",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aoc,1",
-          "name": "UH5_Valve 0-10V 0-100 % AOC",
-          "fileName": "UH5_Valve 0-10V 0-100 % AOC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aoc,2",
-          "name": "UH5_Damper 0-10V 0-100 % AOC",
-          "fileName": "UH5_Damper 0-10V 0-100 % AOC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aoc,4",
-          "name": "UH5_VSD 0-10V 0-100 % AOC",
-          "fileName": "UH5_VSD 0-10V 0-100 % AOC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "aoc,7",
-          "name": "CUH1_HWV AOC",
-          "fileName": "CUH1_HWV AOC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,91",
-          "name": "UH5_Eff_OAT",
-          "fileName": "UH5_Eff_OAT",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,98",
-          "name": "Uptime",
-          "fileName": "Uptime",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10101",
-          "name": "UH5_Zone_EffSp",
-          "fileName": "UH5_Zone_EffSp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10102",
-          "name": "UH5_Zone_LocSp",
-          "fileName": "UH5_Zone_LocSp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10103",
-          "name": "UH5_Zone_RemSp",
-          "fileName": "UH5_Zone_RemSp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10104",
-          "name": "UH5_ZoneHeat_EffSp",
-          "fileName": "UH5_ZoneHeat_EffSp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10105",
-          "name": "UH5_ZoneCool_EffSp",
-          "fileName": "UH5_ZoneCool_EffSp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10106",
-          "name": "UH5_ZoneDb_Sp",
-          "fileName": "UH5_ZoneDb_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10107",
-          "name": "UH5_UnocHt_Sp",
-          "fileName": "UH5_UnocHt_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10108",
-          "name": "UH5_UnocCl_Sp",
-          "fileName": "UH5_UnocCl_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10109",
-          "name": "UH5_UnocDb_Sp",
-          "fileName": "UH5_UnocDb_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10110",
-          "name": "UH5_ZoneVariance",
-          "fileName": "UH5_ZoneVariance",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10111",
-          "name": "UH5_DNSAlgMode",
-          "fileName": "UH5_DNSAlgMode",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10112",
-          "name": "UH5_OcClgMin_Sp",
-          "fileName": "UH5_OcClgMin_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10113",
-          "name": "UH5_OcClgMax_Sp",
-          "fileName": "UH5_OcClgMax_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10114",
-          "name": "UH5_OcHtgMin_Sp",
-          "fileName": "UH5_OcHtgMin_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10115",
-          "name": "UH5_OcHtgMax_Sp",
-          "fileName": "UH5_OcHtgMax_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10117",
-          "name": "UH5_StandbyOffset_Sp",
-          "fileName": "UH5_StandbyOffset_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10118",
-          "name": "UH5_BypassTm_Sp",
-          "fileName": "UH5_BypassTm_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10119",
-          "name": "UH5_BypassTmLeft",
-          "fileName": "UH5_BypassTmLeft",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10120",
-          "name": "UH5_ZoneHtRamp_Sp",
-          "fileName": "UH5_ZoneHtRamp_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10121",
-          "name": "UH5_ZoneClRamp_Sp",
-          "fileName": "UH5_ZoneClRamp_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10122",
-          "name": "UH5_ZoneDbDelay_Sp",
-          "fileName": "UH5_ZoneDbDelay_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10130",
-          "name": "UH5_EffZoneClg",
-          "fileName": "UH5_EffZoneClg",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10131",
-          "name": "UH5_LocZoneClg",
-          "fileName": "UH5_LocZoneClg",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10132",
-          "name": "UH5_RemZoneClg",
-          "fileName": "UH5_RemZoneClg",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10133",
-          "name": "UH5_EffZoneHtg",
-          "fileName": "UH5_EffZoneHtg",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10134",
-          "name": "UH5_LocZoneHtg",
-          "fileName": "UH5_LocZoneHtg",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10135",
-          "name": "UH5_RemZoneHtg",
-          "fileName": "UH5_RemZoneHtg",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10136",
-          "name": "CUH1_ClgRamp",
-          "fileName": "CUH1_ClgRamp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10137",
-          "name": "CUH1_HtgRamp",
-          "fileName": "CUH1_HtgRamp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10138",
-          "name": "UH5_PurgeHold_Sp",
-          "fileName": "UH5_PurgeHold_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10139",
-          "name": "UH5_PurgeHoldTmLeft",
-          "fileName": "UH5_PurgeHoldTmLeft",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10143",
-          "name": "CUH1_NightPurgeZone_Sp",
-          "fileName": "CUH1_NightPurgeZone_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10144",
-          "name": "CUH1_PurgeHoldDly_Sp",
-          "fileName": "CUH1_PurgeHoldDly_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10160",
-          "name": "CUH1_DAT_EffSp",
-          "fileName": "CUH1_DAT_EffSp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10161",
-          "name": "CUH1_DAT_LocSp",
-          "fileName": "CUH1_DAT_LocSp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10162",
-          "name": "CUH1_DAT_RemSp",
-          "fileName": "CUH1_DAT_RemSp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10163",
-          "name": "CUH1_DATResetLow_Sp",
-          "fileName": "CUH1_DATResetLow_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10164",
-          "name": "CUH1_DATResetHigh_Sp",
-          "fileName": "CUH1_DATResetHigh_Sp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,10190",
-          "name": "UH5_Eff_ZoneTemp",
-          "fileName": "UH5_Eff_ZoneTemp",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "av,11051",
-          "name": "UH5_ZoneAlgMode",
-          "fileName": "UH5_ZoneAlgMode",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bdc,1",
-          "name": "On~Off",
-          "fileName": "On~Off",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bdc,2",
-          "name": "UH5_Alarm~Normal BDC",
-          "fileName": "UH5_Alarm~Normal BDC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bdc,5",
-          "name": "Direct~Reverse",
-          "fileName": "Direct~Reverse",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bdc,7",
-          "name": "Alarm~Normal",
-          "fileName": "Alarm~Normal",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bdc,11",
-          "name": "Active~Inactive",
-          "fileName": "Active~Inactive",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bdc,12",
-          "name": "Cont~Int BDC",
-          "fileName": "Cont~Int BDC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bo,1",
-          "name": "UH5_FanEnable",
-          "fileName": "UH5_FanEnable",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bo,2",
-          "name": "CUH1_FanEnable",
-          "fileName": "CUH1_FanEnable",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10102",
-          "name": "CUH1_RunStatusInt",
-          "fileName": "CUH1_RunStatusInt",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10105",
-          "name": "CUH1_HWMode",
-          "fileName": "CUH1_HWMode",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10106",
-          "name": "CUH1_PurgeHold",
-          "fileName": "CUH1_PurgeHold",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10107",
-          "name": "CUH1_FanMode",
-          "fileName": "CUH1_FanMode",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10108",
-          "name": "UH5_FanMode",
-          "fileName": "UH5_FanMode",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10111",
-          "name": "CUH1_FanStatus",
-          "fileName": "CUH1_FanStatus",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10121",
-          "name": "CUH1_Rem_Schedule",
-          "fileName": "CUH1_Rem_Schedule",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10122",
-          "name": "CUH1_BypassCall",
-          "fileName": "CUH1_BypassCall",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10123",
-          "name": "CUH1_UnocHtCall",
-          "fileName": "CUH1_UnocHtCall",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10124",
-          "name": "CUH1_UnocClCall",
-          "fileName": "CUH1_UnocClCall",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10125",
-          "name": "CUH1_Rem_WarmupCall",
-          "fileName": "CUH1_Rem_WarmupCall",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10126",
-          "name": "CUH1_Rem_PurgeCall",
-          "fileName": "CUH1_Rem_PurgeCall",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10127",
-          "name": "CUH1_ZoneClDemand",
-          "fileName": "CUH1_ZoneClDemand",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10128",
-          "name": "CUH1_ZoneHtDemand",
-          "fileName": "CUH1_ZoneHtDemand",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10129",
-          "name": "UH5_FanStatus",
-          "fileName": "UH5_FanStatus",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10131",
-          "name": "UH5_Rem_Schedule",
-          "fileName": "UH5_Rem_Schedule",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10132",
-          "name": "UH5_BypassCall",
-          "fileName": "UH5_BypassCall",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10133",
-          "name": "UH5_UnocHtCall",
-          "fileName": "UH5_UnocHtCall",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10134",
-          "name": "UH5_UnocClCall",
-          "fileName": "UH5_UnocClCall",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10135",
-          "name": "UH5_Rem_WarmCall",
-          "fileName": "UH5_Rem_WarmCall",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10136",
-          "name": "UH5_Rem_PurgeCall",
-          "fileName": "UH5_Rem_PurgeCall",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10137",
-          "name": "UH5_ZoneClDemand",
-          "fileName": "UH5_ZoneClDemand",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10138",
-          "name": "UH5_ZoneHtDemand",
-          "fileName": "UH5_ZoneHtDemand",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10139",
-          "name": "UH5_PurgeHold",
-          "fileName": "UH5_PurgeHold",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10190",
-          "name": "CUH1_EnableDNS",
-          "fileName": "CUH1_EnableDNS",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10191",
-          "name": "CUH1_BlinkDNS",
-          "fileName": "CUH1_BlinkDNS",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,10195",
-          "name": "CUH1_FreezeMode",
-          "fileName": "CUH1_FreezeMode",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "bv,11022",
-          "name": "UH5_Zone_SchedueFunction",
-          "fileName": "UH5_Zone_SchedueFunction",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "co,10101",
-          "name": "UH5_ZoneClg_CO",
-          "fileName": "UH5_ZoneClg_CO",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "co,10102",
-          "name": "UH5_ZoneHtg_CO",
-          "fileName": "UH5_ZoneHtg_CO",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "co,10103",
-          "name": "CUH1_DATHtg_CO",
-          "fileName": "CUH1_DATHtg_CO",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "co,10104",
-          "name": "CUH1_DATClg_CO",
-          "fileName": "CUH1_DATClg_CO",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "dbi,4399",
-          "name": "Database Information 4399",
-          "fileName": "Database Information 4399",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "des,1",
-          "name": "Data Exchange Settings 4399",
-          "fileName": "Data Exchange Settings 4399",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "device,4399",
-          "name": "FSB_Collin",
-          "fileName": "FSB_Collin",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "evc,1",
-          "name": "Maintenance",
-          "fileName": "Maintenance",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "evc,2",
-          "name": "Network",
-          "fileName": "Network",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "evc,3",
-          "name": "Security",
-          "fileName": "Security",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "evc,5",
-          "name": "Notification",
-          "fileName": "Notification",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "evc,6",
-          "name": "Fire",
-          "fileName": "Fire",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "evc,7",
-          "name": "Access Control Event",
-          "fileName": "Access Control Event",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "evc,8",
-          "name": "Access Control Alarm",
-          "fileName": "Access Control Alarm",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "evc,9",
-          "name": "Archival",
-          "fileName": "Archival",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "evs,1",
-          "name": "Event and Alarm Settings 4399",
-          "fileName": "Event and Alarm Settings 4399",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "file,1",
-          "name": "Database Transfer File",
-          "fileName": "Database Transfer File",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "mic,1",
-          "name": "UH5_ControlMode MIC",
-          "fileName": "UH5_ControlMode MIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "mic,3",
-          "name": "Controller Status",
-          "fileName": "Controller Status",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "mic,5",
-          "name": "UH5_DNSMode_MIC",
-          "fileName": "UH5_DNSMode_MIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "mic,6",
-          "name": "UH5_DNSLocSpFallback_MIC",
-          "fileName": "UH5_DNSLocSpFallback_MIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "mic,19",
-          "name": "FaultDetection_MIC",
-          "fileName": "FaultDetection_MIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "mic,80",
-          "name": "FanSpeedSelect MIC",
-          "fileName": "FanSpeedSelect MIC",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "mv,98",
-          "name": "ControllerFault",
-          "fileName": "ControllerFault",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "mv,10101",
-          "name": "UH5_OccMode",
-          "fileName": "UH5_OccMode",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "mv,10103",
-          "name": "UH5_ControlMode",
-          "fileName": "UH5_ControlMode",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "mv,10104",
-          "name": "UH5_PrevControlMode",
-          "fileName": "UH5_PrevControlMode",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "mv,10190",
-          "name": "CUH1_DNSMode",
-          "fileName": "CUH1_DNSMode",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "net,1",
-          "name": "BACnet Settings 4399",
-          "fileName": "BACnet Settings 4399",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "pan,1",
-          "name": "Priority Names 4399",
-          "fileName": "Priority Names 4399",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "sdl,1",
-          "name": "Slave Device List 4399",
-          "fileName": "Slave Device List 4399",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "sua,1",
-          "name": "DELTA",
-          "fileName": "DELTA",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
-        },
-        {
-          "id": "sug,1",
-          "name": "Administrator",
-          "fileName": "Administrator",
-          "lastUpdate": "2024-06-18T19:58:51.551Z"
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
           "id": "aic,30",
           "name": "Flow Sensor",
           "fileName": "Flow Sensor",
-          "lastUpdate": "2024-06-18T21:35:56.523Z"
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aic,33",
+          "name": "VOC_0_10_0_2000",
+          "fileName": "VOC_0_10_0_2000",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aic,34",
+          "name": "CO2_0_10_0_2000",
+          "fileName": "CO2_0_10_0_2000",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aic,35",
+          "name": "Pressure inH20 AIC",
+          "fileName": "Pressure inH20 AIC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aic,36",
+          "name": "UH5_Current 0-5V 0-5 A AIC",
+          "fileName": "UH5_Current 0-5V 0-5 A AIC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aic,38",
+          "name": "UH5_SFCurrent 0-5V 0-20A AIC",
+          "fileName": "UH5_SFCurrent 0-5V 0-20A AIC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aic,39",
+          "name": "Temp 32_122 DegF_0_10AIC",
+          "fileName": "Temp 32_122 DegF_0_10AIC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aic,40",
+          "name": "Feedback%0-10v 100-0 AIC",
+          "fileName": "Feedback%0-10v 100-0 AIC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aic,42",
+          "name": "UH5_DNS-24H Humidity Sensor",
+          "fileName": "UH5_DNS-24H Humidity Sensor",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aic,43",
+          "name": "UH5_Pressure inH20 0-5v 0-5.0 AIC",
+          "fileName": "UH5_Pressure inH20 0-5v 0-5.0 AIC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aic,45",
+          "name": "WirelessSp_AIC",
+          "fileName": "WirelessSp_AIC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "ao,3",
+          "name": "UH5_HWV",
+          "fileName": "UH5_HWV",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "ao,4",
+          "name": "CUH1_HWV",
+          "fileName": "CUH1_HWV",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aoc,2",
+          "name": "UH5_Damper 0-10V 0-100 % AOC",
+          "fileName": "UH5_Damper 0-10V 0-100 % AOC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aoc,4",
+          "name": "UH5_VSD 0-10V 0-100 % AOC",
+          "fileName": "UH5_VSD 0-10V 0-100 % AOC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "aoc,7",
+          "name": "CUH1_HWV AOC",
+          "fileName": "CUH1_HWV AOC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,91",
+          "name": "Eff_OAT",
+          "fileName": "Eff_OAT",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,98",
+          "name": "Uptime",
+          "fileName": "Uptime",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10101",
+          "name": "CUH1_Zone_EffSp",
+          "fileName": "CUH1_Zone_EffSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10102",
+          "name": "CUH1_Zone_LocSp",
+          "fileName": "CUH1_Zone_LocSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10103",
+          "name": "CUH1_Zone_RemSp",
+          "fileName": "CUH1_Zone_RemSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10104",
+          "name": "CUH1_ZoneHeat_EffSp",
+          "fileName": "CUH1_ZoneHeat_EffSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10105",
+          "name": "CUH1_ZoneCool_EffSp",
+          "fileName": "CUH1_ZoneCool_EffSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10106",
+          "name": "CUH1_ZoneDb_Sp",
+          "fileName": "CUH1_ZoneDb_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10107",
+          "name": "CUH1_UnocHt_Sp",
+          "fileName": "CUH1_UnocHt_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10109",
+          "name": "CUH1_UnocDb_Sp",
+          "fileName": "CUH1_UnocDb_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10110",
+          "name": "CUH1_ZoneVariance",
+          "fileName": "CUH1_ZoneVariance",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10111",
+          "name": "CUH1_DNSAlgMode",
+          "fileName": "CUH1_DNSAlgMode",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10112",
+          "name": "CUH1_OcClgMin_Sp",
+          "fileName": "CUH1_OcClgMin_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10113",
+          "name": "CUH1_OcClgMax_Sp",
+          "fileName": "CUH1_OcClgMax_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10114",
+          "name": "CUH1_OcHtgMin_Sp",
+          "fileName": "CUH1_OcHtgMin_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10115",
+          "name": "CUH1_OcHtgMax_Sp",
+          "fileName": "CUH1_OcHtgMax_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10117",
+          "name": "CUH1_StandbyOffset_Sp",
+          "fileName": "CUH1_StandbyOffset_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10118",
+          "name": "CUH1_BypassTm_Sp",
+          "fileName": "CUH1_BypassTm_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10119",
+          "name": "CUH1_BypassTmLeft",
+          "fileName": "CUH1_BypassTmLeft",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10120",
+          "name": "CUH1_ZoneHtRamp_Sp",
+          "fileName": "CUH1_ZoneHtRamp_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10121",
+          "name": "CUH1_ZoneClRamp_Sp",
+          "fileName": "CUH1_ZoneClRamp_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10122",
+          "name": "CUH1_ZoneDbDelay_Sp",
+          "fileName": "CUH1_ZoneDbDelay_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10130",
+          "name": "CUH1_EffZoneClg",
+          "fileName": "CUH1_EffZoneClg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10131",
+          "name": "CUH1_LocZoneClg",
+          "fileName": "CUH1_LocZoneClg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10132",
+          "name": "CUH1_RemZoneClg",
+          "fileName": "CUH1_RemZoneClg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10133",
+          "name": "CUH1_EffZoneHtg",
+          "fileName": "CUH1_EffZoneHtg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10134",
+          "name": "CUH1_LocZoneHtg",
+          "fileName": "CUH1_LocZoneHtg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10135",
+          "name": "CUH1_RemZoneHtg",
+          "fileName": "CUH1_RemZoneHtg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10136",
+          "name": "CUH1_ClgRamp",
+          "fileName": "CUH1_ClgRamp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10137",
+          "name": "CUH1_HtgRamp",
+          "fileName": "CUH1_HtgRamp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10138",
+          "name": "UH5_PurgeHold_Sp",
+          "fileName": "UH5_PurgeHold_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10139",
+          "name": "UH5_PurgeHoldTmLeft",
+          "fileName": "UH5_PurgeHoldTmLeft",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10143",
+          "name": "CUH1_NightPurgeZone_Sp",
+          "fileName": "CUH1_NightPurgeZone_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10144",
+          "name": "CUH1_PurgeHoldDly_Sp",
+          "fileName": "CUH1_PurgeHoldDly_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10160",
+          "name": "CUH1_DAT_EffSp",
+          "fileName": "CUH1_DAT_EffSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10161",
+          "name": "CUH1_DAT_LocSp",
+          "fileName": "CUH1_DAT_LocSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10162",
+          "name": "CUH1_DAT_RemSp",
+          "fileName": "CUH1_DAT_RemSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10163",
+          "name": "CUH1_DATResetLow_Sp",
+          "fileName": "CUH1_DATResetLow_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10164",
+          "name": "CUH1_DATResetHigh_Sp",
+          "fileName": "CUH1_DATResetHigh_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10190",
+          "name": "CUH1_Eff_ZoneTemp",
+          "fileName": "CUH1_Eff_ZoneTemp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10201",
+          "name": "UH5_Zone_EffSp",
+          "fileName": "UH5_Zone_EffSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10202",
+          "name": "UH5_Zone_LocSp",
+          "fileName": "UH5_Zone_LocSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10203",
+          "name": "UH5_Zone_RemSp",
+          "fileName": "UH5_Zone_RemSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10204",
+          "name": "UH5_ZoneHeat_EffSp",
+          "fileName": "UH5_ZoneHeat_EffSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10205",
+          "name": "UH5_ZoneCool_EffSp",
+          "fileName": "UH5_ZoneCool_EffSp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10206",
+          "name": "UH5_ZoneDb_Sp",
+          "fileName": "UH5_ZoneDb_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10207",
+          "name": "UH5_UnocHt_Sp",
+          "fileName": "UH5_UnocHt_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10208",
+          "name": "UH5_UnocCl_Sp",
+          "fileName": "UH5_UnocCl_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10209",
+          "name": "UH5_UnocDb_Sp",
+          "fileName": "UH5_UnocDb_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10210",
+          "name": "UH5_ZoneVariance",
+          "fileName": "UH5_ZoneVariance",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10211",
+          "name": "UH5_DNSAlgMode",
+          "fileName": "UH5_DNSAlgMode",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10212",
+          "name": "UH5_OcClgMin_Sp",
+          "fileName": "UH5_OcClgMin_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10213",
+          "name": "UH5_OcClgMax_Sp",
+          "fileName": "UH5_OcClgMax_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10214",
+          "name": "UH5_OcHtgMin_Sp",
+          "fileName": "UH5_OcHtgMin_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10215",
+          "name": "UH5_OcHtgMax_Sp",
+          "fileName": "UH5_OcHtgMax_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10217",
+          "name": "UH5_StandbyOffset_Sp",
+          "fileName": "UH5_StandbyOffset_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10218",
+          "name": "UH5_BypassTm_Sp",
+          "fileName": "UH5_BypassTm_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10219",
+          "name": "UH5_BypassTmLeft",
+          "fileName": "UH5_BypassTmLeft",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10220",
+          "name": "UH5_ZoneHtRamp_Sp",
+          "fileName": "UH5_ZoneHtRamp_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10221",
+          "name": "UH5_ZoneClRamp_Sp",
+          "fileName": "UH5_ZoneClRamp_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10222",
+          "name": "UH5_ZoneDbDelay_Sp",
+          "fileName": "UH5_ZoneDbDelay_Sp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10230",
+          "name": "UH5_EffZoneClg",
+          "fileName": "UH5_EffZoneClg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10231",
+          "name": "UH5_LocZoneClg",
+          "fileName": "UH5_LocZoneClg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10232",
+          "name": "UH5_RemZoneClg",
+          "fileName": "UH5_RemZoneClg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10233",
+          "name": "UH5_EffZoneHtg",
+          "fileName": "UH5_EffZoneHtg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10234",
+          "name": "UH5_LocZoneHtg",
+          "fileName": "UH5_LocZoneHtg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10235",
+          "name": "UH5_RemZoneHtg",
+          "fileName": "UH5_RemZoneHtg",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10238",
+          "name": "_AV10238",
+          "fileName": "_AV10238",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10239",
+          "name": "_AV10239",
+          "fileName": "_AV10239",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,10290",
+          "name": "UH5_Eff_ZoneTemp",
+          "fileName": "UH5_Eff_ZoneTemp",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "av,11051",
+          "name": "UH5_ZoneAlgMode",
+          "fileName": "UH5_ZoneAlgMode",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bdc,1",
+          "name": "On~Off",
+          "fileName": "On~Off",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bdc,5",
+          "name": "Direct~Reverse",
+          "fileName": "Direct~Reverse",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bdc,7",
+          "name": "Alarm~Normal",
+          "fileName": "Alarm~Normal",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bdc,11",
+          "name": "Active~Inactive",
+          "fileName": "Active~Inactive",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bdc,12",
+          "name": "Cont~Int BDC",
+          "fileName": "Cont~Int BDC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "UH5_FanEnable",
+          "fileName": "UH5_FanEnable",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bo,2",
+          "name": "CUH1_FanEnable",
+          "fileName": "CUH1_FanEnable",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10102",
+          "name": "CUH1_RunStatusInt",
+          "fileName": "CUH1_RunStatusInt",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10105",
+          "name": "CUH1_HWMode",
+          "fileName": "CUH1_HWMode",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10106",
+          "name": "CUH1_PurgeHold",
+          "fileName": "CUH1_PurgeHold",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10107",
+          "name": "CUH1_FanMode",
+          "fileName": "CUH1_FanMode",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10108",
+          "name": "UH5_FanMode",
+          "fileName": "UH5_FanMode",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10111",
+          "name": "CUH1_FanStatus",
+          "fileName": "CUH1_FanStatus",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10121",
+          "name": "CUH1_Rem_Schedule",
+          "fileName": "CUH1_Rem_Schedule",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10122",
+          "name": "CUH1_BypassCall",
+          "fileName": "CUH1_BypassCall",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10123",
+          "name": "CUH1_UnocHtCall",
+          "fileName": "CUH1_UnocHtCall",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10124",
+          "name": "CUH1_UnocClCall",
+          "fileName": "CUH1_UnocClCall",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10125",
+          "name": "CUH1_Rem_WarmupCall",
+          "fileName": "CUH1_Rem_WarmupCall",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10126",
+          "name": "CUH1_Rem_PurgeCall",
+          "fileName": "CUH1_Rem_PurgeCall",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10127",
+          "name": "CUH1_ZoneClDemand",
+          "fileName": "CUH1_ZoneClDemand",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10128",
+          "name": "CUH1_ZoneHtDemand",
+          "fileName": "CUH1_ZoneHtDemand",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10129",
+          "name": "UH5_FanStatus",
+          "fileName": "UH5_FanStatus",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10131",
+          "name": "UH5_Rem_Schedule",
+          "fileName": "UH5_Rem_Schedule",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10132",
+          "name": "UH5_BypassCall",
+          "fileName": "UH5_BypassCall",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10133",
+          "name": "UH5_UnocHtCall",
+          "fileName": "UH5_UnocHtCall",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10134",
+          "name": "UH5_UnocClCall",
+          "fileName": "UH5_UnocClCall",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10135",
+          "name": "UH5_Rem_WarmCall",
+          "fileName": "UH5_Rem_WarmCall",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10136",
+          "name": "UH5_Rem_PurgeCall",
+          "fileName": "UH5_Rem_PurgeCall",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10137",
+          "name": "UH5_ZoneClDemand",
+          "fileName": "UH5_ZoneClDemand",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10138",
+          "name": "UH5_ZoneHtDemand",
+          "fileName": "UH5_ZoneHtDemand",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10139",
+          "name": "UH5_PurgeHold",
+          "fileName": "UH5_PurgeHold",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
           "id": "bv,10148",
           "name": "UH5_HWVLock",
           "fileName": "UH5_HWVLock",
-          "lastUpdate": "2024-06-18T21:38:40.043Z"
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10190",
+          "name": "CUH1_EnableDNS",
+          "fileName": "CUH1_EnableDNS",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10191",
+          "name": "CUH1_BlinkDNS",
+          "fileName": "CUH1_BlinkDNS",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,10195",
+          "name": "CUH1_FreezeMode",
+          "fileName": "CUH1_FreezeMode",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "bv,11022",
+          "name": "UH5_Zone_SchedueFunction",
+          "fileName": "UH5_Zone_SchedueFunction",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "co,10101",
+          "name": "CUH1_ZoneClg_CO",
+          "fileName": "CUH1_ZoneClg_CO",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "co,10102",
+          "name": "CUH1_ZoneHtg_CO",
+          "fileName": "CUH1_ZoneHtg_CO",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "co,10103",
+          "name": "CUH1_DATHtg_CO",
+          "fileName": "CUH1_DATHtg_CO",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "co,10104",
+          "name": "CUH1_DATClg_CO",
+          "fileName": "CUH1_DATClg_CO",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "co,10201",
+          "name": "UH5_ZoneClg_CO",
+          "fileName": "UH5_ZoneClg_CO",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "co,10202",
+          "name": "UH5_ZoneHtg_CO",
+          "fileName": "UH5_ZoneHtg_CO",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "dbi,4399",
+          "name": "Database Information 4399",
+          "fileName": "Database Information 4399",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 4399",
+          "fileName": "Data Exchange Settings 4399",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "device,4399",
+          "name": "FSB_Collin",
+          "fileName": "FSB_Collin",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "evc,3",
+          "name": "Security",
+          "fileName": "Security",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 4399",
+          "fileName": "Event and Alarm Settings 4399",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "mic,3",
+          "name": "Controller Status",
+          "fileName": "Controller Status",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "mic,4",
+          "name": "OccMode MIC",
+          "fileName": "OccMode MIC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "mic,5",
+          "name": "DNSMode_MIC",
+          "fileName": "DNSMode_MIC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "mic,19",
+          "name": "FaultDetection_MIC",
+          "fileName": "FaultDetection_MIC",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "mv,98",
+          "name": "ControllerFault",
+          "fileName": "ControllerFault",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "mv,10101",
+          "name": "UH5_OccMode",
+          "fileName": "UH5_OccMode",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "mv,10103",
+          "name": "UH5_ControlMode",
+          "fileName": "UH5_ControlMode",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "mv,10104",
+          "name": "UH5_PrevControlMode",
+          "fileName": "UH5_PrevControlMode",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "mv,10190",
+          "name": "CUH1_DNSMode",
+          "fileName": "CUH1_DNSMode",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 4399",
+          "fileName": "BACnet Settings 4399",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 4399",
+          "fileName": "Priority Names 4399",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 4399",
+          "fileName": "Slave Device List 4399",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-06-18T21:42:59.410Z"
         }
       ]
     }

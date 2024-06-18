@@ -2,7 +2,7 @@
   "displayName": "UH5_PurgeHoldTmLeft",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10239"
+    "value": "analog-value,10139"
   },
   "object-type": {
     "$base": "Enumerated",

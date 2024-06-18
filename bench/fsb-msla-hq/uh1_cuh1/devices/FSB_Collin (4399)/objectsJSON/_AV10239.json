@@ -1,8 +1,8 @@
 {
-  "displayName": "CUH1_UnocCl_Sp",
+  "displayName": "_AV10239",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10108"
+    "value": "analog-value,10239"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,19 +10,19 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_UnocCl_Sp"
+    "value": "_AV10239"
   },
   "description": {
     "$base": "String",
-    "value": "The setpoint at which the controller will start to unoc cool."
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "out-of-service"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": "80"
+    "value": 0
   },
   "gcl-value": {
     "$base": "Real",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "out-of-service"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "°F"
+    "value": "min"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -50,19 +50,19 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": "1"
+    "value": 0
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,999"
+    "value": "program,10105"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-08-06T09:18:43.100000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "0.5"
+    "value": "1"
   },
   "fixed-point": {
     "$base": "Boolean",
@@ -70,7 +70,7 @@
   },
   "decimal-places": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "hal-flags": {
     "$base": "BitString",
