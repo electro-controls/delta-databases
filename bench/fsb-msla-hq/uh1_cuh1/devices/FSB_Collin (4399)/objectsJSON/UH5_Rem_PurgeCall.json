@@ -2,7 +2,7 @@
   "displayName": "UH5_Rem_PurgeCall",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-value,10126"
+    "value": "binary-value,10136"
   },
   "object-type": {
     "$base": "Enumerated",

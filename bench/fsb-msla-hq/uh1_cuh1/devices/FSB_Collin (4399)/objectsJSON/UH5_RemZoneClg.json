@@ -2,7 +2,7 @@
   "displayName": "UH5_RemZoneClg",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10132"
+    "value": "analog-value,10232"
   },
   "object-type": {
     "$base": "Enumerated",

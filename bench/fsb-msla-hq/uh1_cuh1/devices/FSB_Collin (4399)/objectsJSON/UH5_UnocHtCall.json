@@ -2,7 +2,7 @@
   "displayName": "UH5_UnocHtCall",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-value,10123"
+    "value": "binary-value,10133"
   },
   "object-type": {
     "$base": "Enumerated",

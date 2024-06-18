@@ -2,7 +2,7 @@
   "displayName": "UH5_Zone_RemSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10103"
+    "value": "analog-value,10203"
   },
   "object-type": {
     "$base": "Enumerated",

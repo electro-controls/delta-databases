@@ -2,7 +2,7 @@
   "displayName": "UH5_ZoneHtg_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "loop,10102"
+    "value": "loop,10202"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "50"
   },
   "status-flags": {
     "$base": "BitString",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "100"
+    "value": "41"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -78,7 +78,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10190"
+      "value": "analog-value,10290"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "-58"
+    "value": 0
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -103,7 +103,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10104"
+      "value": "analog-value,10204"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -126,7 +126,7 @@
       "type": "0-BACnetObjectPropertyReference",
       "objectIdentifier": {
         "$base": "ObjectIdentifier",
-        "value": "analog-value,10104"
+        "value": "analog-value,10204"
       },
       "propertyIdentifier": {
         "$base": "Enumerated",
@@ -255,11 +255,11 @@
   },
   "average-crossings": {
     "$base": "Real",
-    "value": "0.2"
+    "value": 0
   },
   "average-error": {
     "$base": "Real",
-    "value": "11.6"
+    "value": 0
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "108044"
+      "value": "67443"
     }
   },
   "self-adj-enable": {
@@ -300,7 +300,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "126000"
+      "value": "72000"
     }
   },
   "setpoint-crossings": {
@@ -313,7 +313,7 @@
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "63.5"
+    "value": 0
   },
   "hal-flags": {
     "$base": "BitString",

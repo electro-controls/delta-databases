@@ -2,7 +2,7 @@
   "displayName": "UH5_ZoneHeat_EffSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10104"
+    "value": "analog-value,10204"
   },
   "object-type": {
     "$base": "Enumerated",

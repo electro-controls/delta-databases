@@ -2,7 +2,7 @@
   "displayName": "UH5_OcHtgMin_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10114"
+    "value": "analog-value,10214"
   },
   "object-type": {
     "$base": "Enumerated",

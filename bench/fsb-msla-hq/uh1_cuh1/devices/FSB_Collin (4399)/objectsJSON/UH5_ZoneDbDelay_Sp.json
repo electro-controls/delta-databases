@@ -2,7 +2,7 @@
   "displayName": "UH5_ZoneDbDelay_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10122"
+    "value": "analog-value,10222"
   },
   "object-type": {
     "$base": "Enumerated",

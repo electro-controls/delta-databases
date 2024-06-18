@@ -198,7 +198,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,2"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -265,7 +265,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-01T14:59:49.10"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
@@ -289,7 +289,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-01T14:58:56.60"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",

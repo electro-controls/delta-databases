@@ -2,7 +2,7 @@
   "displayName": "UH5_BypassTmLeft",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10119"
+    "value": "analog-value,10219"
   },
   "object-type": {
     "$base": "Enumerated",

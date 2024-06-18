@@ -2,7 +2,7 @@
   "displayName": "UH5_StandbyOffset_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10117"
+    "value": "analog-value,10217"
   },
   "object-type": {
     "$base": "Enumerated",

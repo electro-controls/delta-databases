@@ -2,7 +2,7 @@
   "displayName": "UH5_ZoneHtRamp_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10120"
+    "value": "analog-value,10220"
   },
   "object-type": {
     "$base": "Enumerated",

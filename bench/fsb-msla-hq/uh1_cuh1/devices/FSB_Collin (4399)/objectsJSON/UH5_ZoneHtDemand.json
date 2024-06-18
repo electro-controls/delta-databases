@@ -2,7 +2,7 @@
   "displayName": "UH5_ZoneHtDemand",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-value,10128"
+    "value": "binary-value,10138"
   },
   "object-type": {
     "$base": "Enumerated",

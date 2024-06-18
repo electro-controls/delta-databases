@@ -2,7 +2,7 @@
   "displayName": "UH5_ZoneDb_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10106"
+    "value": "analog-value,10206"
   },
   "object-type": {
     "$base": "Enumerated",

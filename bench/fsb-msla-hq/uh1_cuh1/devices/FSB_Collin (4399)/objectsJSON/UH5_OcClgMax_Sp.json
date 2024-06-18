@@ -2,7 +2,7 @@
   "displayName": "UH5_OcClgMax_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10113"
+    "value": "analog-value,10213"
   },
   "object-type": {
     "$base": "Enumerated",

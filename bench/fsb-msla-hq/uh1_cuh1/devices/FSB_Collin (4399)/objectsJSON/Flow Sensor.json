@@ -2,7 +2,7 @@
   "displayName": "Flow Sensor",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "aic,3"
+    "value": "aic,30"
   },
   "object-type": {
     "$base": "Enumerated",

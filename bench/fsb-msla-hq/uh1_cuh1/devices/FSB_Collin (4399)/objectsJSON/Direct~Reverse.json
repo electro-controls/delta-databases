@@ -1,5 +1,5 @@
 {
-  "displayName": "Direct/Reverse",
+  "displayName": "Direct~Reverse",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "bdc,5"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Direct/Reverse"
+    "value": "Direct~Reverse"
   },
   "description": {
     "$base": "String",

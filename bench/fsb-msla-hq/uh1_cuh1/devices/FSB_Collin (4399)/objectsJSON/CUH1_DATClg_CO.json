@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "102"
+    "value": "41"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -212,7 +212,7 @@
   },
   "bias": {
     "$base": "Real",
-    "value": "13.9264"
+    "value": "14.6456"
   },
   "derivative": {
     "$base": "Real",
@@ -255,11 +255,11 @@
   },
   "average-crossings": {
     "$base": "Real",
-    "value": "0.56"
+    "value": "0.2"
   },
   "average-error": {
     "$base": "Real",
-    "value": "25.4525"
+    "value": "4"
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "108055"
+      "value": "67453"
     }
   },
   "self-adj-enable": {
@@ -300,12 +300,12 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "126000"
+      "value": "72000"
     }
   },
   "setpoint-crossings": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "3"
   },
   "setpoint-crossing-flag": {
     "$base": "Boolean",

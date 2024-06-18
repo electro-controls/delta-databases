@@ -2,7 +2,7 @@
   "displayName": "UH5_LocZoneClg",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10131"
+    "value": "analog-value,10231"
   },
   "object-type": {
     "$base": "Enumerated",

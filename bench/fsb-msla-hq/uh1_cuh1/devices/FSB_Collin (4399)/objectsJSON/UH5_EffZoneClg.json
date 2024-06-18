@@ -2,7 +2,7 @@
   "displayName": "UH5_EffZoneClg",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10130"
+    "value": "analog-value,10230"
   },
   "object-type": {
     "$base": "Enumerated",

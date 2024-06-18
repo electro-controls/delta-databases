@@ -2,7 +2,7 @@
   "displayName": "UH5_Zone_LocSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10102"
+    "value": "analog-value,10202"
   },
   "object-type": {
     "$base": "Enumerated",

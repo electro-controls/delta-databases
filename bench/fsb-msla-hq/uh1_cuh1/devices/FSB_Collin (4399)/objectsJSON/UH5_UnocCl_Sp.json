@@ -2,7 +2,7 @@
   "displayName": "UH5_UnocCl_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10108"
+    "value": "analog-value,10208"
   },
   "object-type": {
     "$base": "Enumerated",
