@@ -691,6 +691,21 @@
       },
       "date": "6/18/2024, 3:35:56 PM",
       "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bv,10148",
+      "objectName": "UH5_HWVLock",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/objectsJSON/UH5_HWVLock.json",
+        "scheme": "file"
+      },
+      "date": "6/18/2024, 3:38:40 PM",
+      "templateTriggered": false
     }
   ],
   "devices": [
@@ -1524,6 +1539,12 @@
           "name": "Flow Sensor",
           "fileName": "Flow Sensor",
           "lastUpdate": "2024-06-18T21:35:56.523Z"
+        },
+        {
+          "id": "bv,10148",
+          "name": "UH5_HWVLock",
+          "fileName": "UH5_HWVLock",
+          "lastUpdate": "2024-06-18T21:38:40.043Z"
         }
       ]
     }
