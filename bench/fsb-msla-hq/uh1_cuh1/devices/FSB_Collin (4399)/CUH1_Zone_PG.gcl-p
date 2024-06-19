@@ -101,4 +101,4 @@ End If
 'CUH1_ZoneHtDemand' = Switch ( 'CUH1_ZoneHtDemand', 'CUH1_EffZoneHtg', 60, 5)
 'CUH1_ZoneClDemand' = Switch ( 'CUH1_ZoneClDemand', 'CUH1_EffZoneClg', 60, 5)
 
-//end of fan coil zone page
+//end of fan coil zone page 

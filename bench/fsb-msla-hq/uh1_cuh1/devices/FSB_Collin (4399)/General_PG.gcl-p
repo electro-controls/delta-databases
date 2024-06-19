@@ -18,9 +18,6 @@ DoEvery 1M
     'Uptime' = 'Uptime' + 1
 End Do
 
-//Intercontroller Links
-'Eff_OAT' = '1100.Eff_OAT'
-
 //Link Zone Temp here
 'CUH1_Eff_ZoneTemp' = 'CUH1_RoomTemp'
 

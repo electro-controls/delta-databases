@@ -1,16 +1,17 @@
 {
-  "displayName": "CUH1_DAT_LocSp",
+  "$base": "Object",
+  "displayName": "CUH1_ControlMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10161"
+    "value": "multi-state-value,10113"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "analog-value"
+    "value": "multi-state-value"
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_DAT_LocSp"
+    "value": "CUH1_ControlMode"
   },
   "description": {
     "$base": "String",
@@ -18,27 +19,27 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "present-value": {
-    "$base": "Real",
-    "value": 0
+    "$base": "Unsigned",
+    "value": "1"
   },
   "gcl-value": {
-    "$base": "Real",
-    "value": 0
+    "$base": "Unsigned",
+    "value": "1"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
     "value": 0
   },
-  "units": {
-    "$base": "Enumerated",
-    "value": "°F"
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,3"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -46,31 +47,38 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "missing-cfg-object"
   },
   "out-of-service": {
     "$base": "Boolean",
     "value": 0
   },
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "2"
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "OFF"
+    },
+    "2": {
+      "$base": "String",
+      "value": "ON"
+    },
+    "$base": "Array"
+  },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": ""
+    "value": "program,10150"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-08-06T09:46:40.900000-06:00"
   },
-  "cov-increment": {
-    "$base": "Real",
-    "value": "0.5"
-  },
-  "fixed-point": {
-    "$base": "Boolean",
-    "value": "1"
-  },
-  "decimal-places": {
-    "$base": "Unsigned",
-    "value": "1"
+  "text-value": {
+    "$base": "String",
+    "value": "OFF"
   },
   "hal-flags": {
     "$base": "BitString",
