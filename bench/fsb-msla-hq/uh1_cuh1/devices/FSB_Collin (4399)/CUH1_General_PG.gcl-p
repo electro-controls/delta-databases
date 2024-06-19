@@ -19,7 +19,7 @@ DoEvery 1M
 End Do
 
 //Link Zone Temp here
-'CUH1_Eff_ZoneTemp' = 'CUH1_RoomTemp'
+'CUH1_Eff_ZoneTemp' = 'CUH1_ZoneTemp'
 
 // Room Variance
 'CUH1_ZoneVariance' = 'CUH1_Eff_ZoneTemp' - 'CUH1_Zone_EffSp'
