@@ -12,8 +12,8 @@ Call 'CUH1_Zone_PG'
 Call 'CUH1_OccMode_PG'
 Call 'CUH1_DAT_PG'
 
-Call 'UH1_General_Pg'
-Call 'UH1_Heat_Pg'
-Call 'UH1_Zone_Pg'
+Call 'UH1_General_PG'
+Call 'UH1_Heat_PG'
+Call 'UH1_Zone_PG'
 
 //end of main page

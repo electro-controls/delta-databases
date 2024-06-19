@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": "out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -54,7 +54,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "polarity": {
     "$base": "Enumerated",
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -134,7 +134,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -200,10 +203,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -274,7 +274,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,65984"
     },
     "$base": "Array"
   },
@@ -293,7 +293,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-02T08:59:34.70"
+      "value": "2000-01-02T10:27:40.50"
     },
     "5": {
       "$base": "DateTime",
@@ -317,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-02T08:59:34.70"
+      "value": "2000-01-02T10:27:40.50"
     },
     "11": {
       "$base": "DateTime",
@@ -341,7 +341,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T09:09:01.20"
     },
     "$base": "Array"
   },

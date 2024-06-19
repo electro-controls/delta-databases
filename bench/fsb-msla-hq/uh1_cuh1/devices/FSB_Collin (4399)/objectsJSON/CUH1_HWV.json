@@ -14,11 +14,11 @@
   },
   "description": {
     "$base": "String",
-    "value": "26 Oct2023 AV- vs DAT"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "polarity"
+    "value": "polarity;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
@@ -38,7 +38,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "10"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,7 +104,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -256,7 +259,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-02T08:59:20.00"
+      "value": "2000-01-02T17:28:20.50"
     },
     "5": {
       "$base": "DateTime",
@@ -280,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-02T08:59:20.00"
+      "value": "2000-01-02T17:28:20.60"
     },
     "11": {
       "$base": "DateTime",

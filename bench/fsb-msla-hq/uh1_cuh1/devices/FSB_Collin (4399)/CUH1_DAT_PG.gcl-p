@@ -4,6 +4,7 @@
 If ('CUH1_DAT_RemSp' > 0) Then
     'CUH1_DAT_EffSp' = 'CUH1_DAT_RemSp'
   Else
+  //done
     'CUH1_DAT_EffSp' = 'CUH1_DAT_LocSp'
 End If
 

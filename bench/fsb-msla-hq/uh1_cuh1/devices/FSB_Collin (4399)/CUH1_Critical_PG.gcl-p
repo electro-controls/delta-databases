@@ -1,14 +1,14 @@
 'CUH1_Critical_PG.Write_Priority' = 4
 
-
 //software freeze mode
-
 If ('CUH1_Eff_ZoneTemp' < 42) OnFor 60S Then
     'CUH1_FreezeMode' = On
+    //done
 End If
 
 If ('CUH1_Eff_ZoneTemp' > 45) OnFor 60S Then
     'CUH1_FreezeMode' = Off
+    // done
 End If
 
 If PowerUp Then

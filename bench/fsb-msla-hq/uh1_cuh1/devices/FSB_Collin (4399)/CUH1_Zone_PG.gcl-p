@@ -11,8 +11,9 @@ If ('CUH1_OccMode' = 3) Or ('CUH1_OccMode' = 4) Or ('CUH1_OccMode' = 5) Then //o
     'CUH1_ZoneHeat_EffSp' = Min (('CUH1_Zone_EffSp' - 'CUH1_StandbyOffset_Sp' - ('CUH1_ZoneDb_Sp' * 0.5)), 'CUH1_OcHtgMax_Sp')
     'CUH1_ZoneCool_EffSp' = Max (('CUH1_Zone_EffSp' + ('CUH1_ZoneDb_Sp' * 0.5)), 'CUH1_OcClgMin_Sp')
   Else //unocc
-    'CUH1_ZoneHeat_EffSp' = Min ('CUH1_UnocHt_Sp', 'CUH1_OcHtgMax_Sp')
-    'CUH1_ZoneCool_EffSp' = Max ('CUH1_UnocCl_Sp', 'CUH1_OcClgMin_Sp')
+    'CUH1_ZoneHeat_EffSp' = Min ('CUH1_UnocHt_Sp', 'CUH1_OcHtgMin_Sp')
+    'CUH1_ZoneCool_EffSp' = Max ('CUH1_UnocCl_Sp', 'CUH1_OcClgMax_Sp')
+    // done
 End If
 
 //Links remote setpoint to effective
@@ -22,6 +23,7 @@ If ('CUH1_OccMode' = 6) Then //purge
     'CUH1_Zone_EffSp' = 'CUH1_Zone_RemSp'
   Else
     'CUH1_Zone_EffSp' = 'CUH1_Zone_LocSp'
+    //done
 End If
 
 //calculate local demand after ramp
@@ -41,6 +43,7 @@ If (('CUH1_ZoneHtg_CO' > ('CUH1_EffZoneClg' + 5)) And 'CUH1_ControlMode' = 3) On
   ElseIf  (('CUH1_ControlMode' = 1) And ('CUH1_EffZoneHtg' <= 0)) OnFor 'CUH1_ZoneDbDelay_Sp':S Then
     HtCall = Off
     'CUH1_PrevControlMode' = 1
+    //done
   ElseIf  (('CUH1_ControlMode' = 2) And ('CUH1_EffZoneClg' <= 0)) OnFor 'CUH1_ZoneDbDelay_Sp':S Then
     ClCall = Off
     'CUH1_PrevControlMode' = 2
