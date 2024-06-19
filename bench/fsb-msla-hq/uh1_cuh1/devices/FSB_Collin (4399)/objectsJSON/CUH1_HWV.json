@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "100"
   },
   "status-flags": {
     "$base": "BitString",
@@ -137,10 +137,7 @@
       }
     },
     "10": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "11": {
       "$base": "Choice",
@@ -173,10 +170,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -195,7 +189,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,2"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -219,7 +213,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,11"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -243,7 +237,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,*"
     },
     "$base": "Array"
   },
@@ -262,7 +256,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-01T15:47:22.70"
+      "value": "2000-01-02T08:59:20.00"
     },
     "5": {
       "$base": "DateTime",
@@ -286,7 +280,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-01T15:44:48.30"
+      "value": "2000-01-02T08:59:20.00"
     },
     "11": {
       "$base": "DateTime",
@@ -310,7 +304,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-01T15:47:24.10"
     },
     "$base": "Array"
   },

@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CUH1_UnocCl_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -19,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "present-value": {
     "$base": "Real",
@@ -31,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -55,7 +54,7 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,999"
+    "value": "device,65984"
   },
   "time-of-last-write": {
     "$base": "DateTime",

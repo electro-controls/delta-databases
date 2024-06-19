@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CUH1_ControlMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -19,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "present-value": {
     "$base": "Unsigned",
@@ -31,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -47,7 +46,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "missing-cfg-object"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -55,30 +54,34 @@
   },
   "number-of-states": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "3"
   },
   "state-text": {
     "1": {
       "$base": "String",
-      "value": "OFF"
+      "value": "Heating"
     },
     "2": {
       "$base": "String",
-      "value": "ON"
+      "value": "Cooling"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Deadband"
     },
     "$base": "Array"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,10150"
+    "value": "program,9"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-08-06T09:46:40.900000-06:00"
+    "value": "2000-01-02T08:59:48.700000-07:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Heating"
   },
   "hal-flags": {
     "$base": "BitString",

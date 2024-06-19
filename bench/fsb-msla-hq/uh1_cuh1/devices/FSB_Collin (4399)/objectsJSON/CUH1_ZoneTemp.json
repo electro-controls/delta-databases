@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "UH5_Temperature DegF 10k Thermistor AIC"
+    "value": "UH1_Temperature DegF 10k Thermistor AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "48"
+    "value": "164"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "129713"
+      "value": "755511"
     }
   },
   "ad-value": {

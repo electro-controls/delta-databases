@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "status-flags": {
     "$base": "BitString",
@@ -73,11 +73,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,10150"
+    "value": "program,9"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-08-06T08:38:10.300000-06:00"
+    "value": "2000-01-02T08:59:48.000000-07:00"
   },
   "text-value": {
     "$base": "String",

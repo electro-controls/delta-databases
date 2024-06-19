@@ -30,11 +30,11 @@
   },
   "file-size": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "42073"
   },
   "modification-date": {
     "$base": "DateTime",
-    "value": "2000-01-01T15:36:08.200000-07:00"
+    "value": "2000-01-02T08:58:22.900000-07:00"
   },
   "archive": {
     "$base": "Boolean",

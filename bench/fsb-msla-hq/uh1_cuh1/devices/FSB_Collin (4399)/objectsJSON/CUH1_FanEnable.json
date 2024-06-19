@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "4"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -134,10 +134,7 @@
       }
     },
     "4": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "5": {
       "$base": "Choice",
@@ -170,10 +167,7 @@
       }
     },
     "10": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "11": {
       "$base": "Choice",
@@ -232,7 +226,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,2"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -256,7 +250,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,12"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -299,7 +293,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T08:59:34.70"
     },
     "5": {
       "$base": "DateTime",
@@ -323,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T08:59:34.70"
     },
     "11": {
       "$base": "DateTime",

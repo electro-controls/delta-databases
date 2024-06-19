@@ -1,24 +1,24 @@
 //  HWV
 
-If 'UH5_OccMode' = 6 Then
-    'UH5_PurgeHold' = On
-    'UH5_PurgeHoldTmLeft' = 'UH5_PurgeHold_Sp'
+If 'UH1_OccMode' = 6 Then
+    'UH1_PurgeHold' = On
+    'UH1_PurgeHoldTmLeft' = 'UH1_PurgeHold_Sp'
   Else
     DoEvery 1M
-    'UH5_PurgeHoldTmLeft' = Max (0, 'UH5_PurgeHoldTmLeft' - 1)
+    'UH1_PurgeHoldTmLeft' = Max (0, 'UH1_PurgeHoldTmLeft' - 1)
     End Do
 End If
 
-If 'Eff_OAT' < 40 Or ('UH5_PurgeHoldTmLeft' = 0) Then
-    'UH5_PurgeHold' = Off
+If 'Eff_OAT' < 40 Or ('UH1_PurgeHoldTmLeft' = 0) Then
+    'UH1_PurgeHold' = Off
 End If
 
-'UH5_HWVLock' = Switch ( 'UH5_HWVLock', 'UH5_EffZoneClg', 99, 90)
+'UH1_HWVLock' = Switch ( 'UH1_HWVLock', 'UH1_EffZoneClg', 99, 90)
 
-If 'UH5_HWVLock' Or 'UH5_PurgeHold' Then
-  'UH5_FanEnable' = 0
+If 'UH1_HWVLock' Or 'UH1_PurgeHold' Then
+  'UH1_FanEnable' = 0
  Else
-  'UH5_FanEnable' = Switch ( 'UH5_FanEnable', 'UH5_EffZoneHtg', 50, 1)
+  'UH1_FanEnable' = Switch ( 'UH1_FanEnable', 'UH1_EffZoneHtg', 50, 1)
 End If
 
 //End of Program
