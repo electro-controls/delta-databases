@@ -19,12 +19,6 @@
           "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
-          "id": "ai,5",
-          "name": "CUH1_RoomTemp",
-          "fileName": "CUH1_RoomTemp",
-          "lastUpdate": "2024-06-18T21:42:59.410Z"
-        },
-        {
           "id": "aic,1",
           "name": "UH5_Temperature DegF 10k Thermistor AIC",
           "fileName": "UH5_Temperature DegF 10k Thermistor AIC",
@@ -556,18 +550,6 @@
           "id": "av,10235",
           "name": "UH5_RemZoneHtg",
           "fileName": "UH5_RemZoneHtg",
-          "lastUpdate": "2024-06-18T21:42:59.410Z"
-        },
-        {
-          "id": "av,10238",
-          "name": "_AV10238",
-          "fileName": "_AV10238",
-          "lastUpdate": "2024-06-18T21:42:59.410Z"
-        },
-        {
-          "id": "av,10239",
-          "name": "_AV10239",
-          "fileName": "_AV10239",
           "lastUpdate": "2024-06-18T21:42:59.410Z"
         },
         {
