@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "26 Oct2023 AV- vs weather app"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -42,7 +42,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -58,7 +58,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": 1
   },
   "device-type": {
     "$base": "String",

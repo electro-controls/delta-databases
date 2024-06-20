@@ -1,8 +1,8 @@
 {
-  "displayName": "BP1_Current",
+  "displayName": "P1_Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,8"
+    "value": "analog-input,4"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "BP1_Current"
+    "value": "P1_Status"
   },
   "description": {
     "$base": "String",
-    "value": "26 Oct2023 AV- amp probe"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -42,7 +42,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",

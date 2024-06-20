@@ -1,8 +1,8 @@
 {
-  "displayName": "HWR_beforeBypass",
+  "displayName": "HWST",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,101"
+    "value": "analog-input,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,23 +10,23 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HWR_beforeBypass"
+    "value": "HWST"
   },
   "description": {
     "$base": "String",
-    "value": "this is a strap on to try to see a system difference sense the actual HWR is after the DP bypass vlv on the boiler loop"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": "92.5175"
+    "value": "115"
   },
   "last-value": {
     "$base": "Real",
-    "value": "92.0443"
+    "value": "-52.4409"
   },
   "status-flags": {
     "$base": "BitString",
@@ -58,7 +58,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": 1
   },
   "device-type": {
     "$base": "String",
@@ -82,7 +82,7 @@
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "1"
+    "value": "0.1"
   },
   "ad-filter": {
     "$base": "Unsigned",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "2543624"
+      "value": "2543626"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1663"
+    "value": "4095"
   },
   "calibration": {
     "$base": "Real",

@@ -1,8 +1,8 @@
 {
-  "displayName": "HW_BypassValve",
+  "displayName": "P1_Pump_Enable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output,9"
+    "value": "analog-output,4"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HW_BypassValve"
+    "value": "P1_Pump_Enable"
   },
   "description": {
     "$base": "String",
-    "value": "25Jan2023 AV- vlv believed to have leak by issue \ndave wrote code so that 100% is open to the bypass \nconfirmed reverse action w/ andrew in the field \n \nconfirm AOC signal range in the field"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -42,7 +42,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aoc,1"
+    "value": "aoc,6"
   },
   "event-state": {
     "$base": "Enumerated",
