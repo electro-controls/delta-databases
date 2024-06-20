@@ -2,33 +2,16 @@
 
 //equipment safeties
 
-
 //software high limit. set to trip before local hardware limits 
-'MaxHWTemp' = Max ('HWS', 'HWR')
+'MaxHWTemp' = Max ('HWST', 'HWRT')
 'HWHighLimit' = Switch ( 'HWHighLimit', 'MaxHWTemp', 195, 185)
  
-
-If 'HWHighLimit' Or (Not 'SystemFlow') Or ((Not 'CombDamper1_Status') And (Not 'CombDamper2_Status')) Then
-    'B1_Stg1' = Off
-    'B1_Stg2' = Off
-    'B1_Stg3' = Off
-    'B1_Stg4' = Off
-    'B2_Stg1' = Off
-    'B2_Stg2' = Off
-    'B2_Stg3' = Off
-    'B2_Stg4' = Off
-    'HW_BypassValve' = 100
+If 'HWHighLimit' Or (Not 'SystemFlow') Then
+    'B1_Enable' = Off
+    'P1_Pump_Enable' = 0
   Else
-    Relinquish 'B1_Stg1'
-    Relinquish 'B1_Stg2'
-    Relinquish 'B1_Stg3'
-    Relinquish 'B1_Stg4'
-    Relinquish 'B2_Stg1'
-    Relinquish 'B2_Stg2'
-    Relinquish 'B2_Stg3'
-    Relinquish 'B2_Stg4'
-    Relinquish 'HW_BypassValve'
+    Relinquish 'B1_Enable'
+    Relinquish 'P1_Pump_Enable'
 End If
-
 
 //end of critical page
