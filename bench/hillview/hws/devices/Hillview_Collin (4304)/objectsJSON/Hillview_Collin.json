@@ -1,5 +1,5 @@
 {
-  "displayName": "Hillview_Collin",
+  "displayName": "3x4 Controller 4304",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "device,4304"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Hillview_Collin"
+    "value": "3x4 Controller 4304"
   },
   "description": {
     "$base": "String",
@@ -456,66 +456,6 @@
       "127": {
         "$base": "Choice"
       },
-      "128": {
-        "$base": "Choice"
-      },
-      "129": {
-        "$base": "Choice"
-      },
-      "130": {
-        "$base": "Choice"
-      },
-      "131": {
-        "$base": "Choice"
-      },
-      "132": {
-        "$base": "Choice"
-      },
-      "133": {
-        "$base": "Choice"
-      },
-      "134": {
-        "$base": "Choice"
-      },
-      "135": {
-        "$base": "Choice"
-      },
-      "136": {
-        "$base": "Choice"
-      },
-      "137": {
-        "$base": "Choice"
-      },
-      "138": {
-        "$base": "Choice"
-      },
-      "139": {
-        "$base": "Choice"
-      },
-      "140": {
-        "$base": "Choice"
-      },
-      "141": {
-        "$base": "Choice"
-      },
-      "142": {
-        "$base": "Choice"
-      },
-      "143": {
-        "$base": "Choice"
-      },
-      "144": {
-        "$base": "Choice"
-      },
-      "145": {
-        "$base": "Choice"
-      },
-      "146": {
-        "$base": "Choice"
-      },
-      "147": {
-        "$base": "Choice"
-      },
       "$base": "Array"
     }
   },
@@ -541,11 +481,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "10:39:44.00"
+    "value": "12:20:11.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2000-01-04"
+    "value": "2000-01-01"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -694,7 +634,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "7.72727"
+    "value": "37.5"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -706,7 +646,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "104"
+    "value": "111"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -802,7 +742,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "2543843"
+      "value": "12119"
     }
   },
   "logical-base-address": {
@@ -911,7 +851,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "169"
+    "value": "148"
   },
   "active-cov-subscriptions": {
     "$base": "List"

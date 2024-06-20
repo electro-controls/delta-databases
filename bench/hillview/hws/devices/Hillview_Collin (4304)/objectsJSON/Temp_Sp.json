@@ -34,7 +34,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": ""
+    "value": "%"
   },
   "commission-flag": {
     "$base": "Enumerated",

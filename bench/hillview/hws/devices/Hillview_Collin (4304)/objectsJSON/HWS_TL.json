@@ -69,7 +69,7 @@
     "$base": "Choice",
     "log-timer": {
       "$base": "Unsigned",
-      "value": "2543330"
+      "value": "11616"
     }
   },
   "cov-resubscription-interval": {
@@ -98,15 +98,15 @@
   "timestamp-buffer": {
     "1": {
       "$base": "Unsigned",
-      "value": "60480030"
+      "value": "60480010"
     },
     "2": {
       "$base": "Unsigned",
-      "value": "60480010"
+      "value": "60480080"
     },
     "3": {
       "$base": "Unsigned",
-      "value": "60480030"
+      "value": "60480110"
     },
     "4": {
       "$base": "Unsigned",
@@ -1434,7 +1434,7 @@
   },
   "time-reference": {
     "$base": "DateTime",
-    "value": "1999-12-28T10:38:52.000000-07:00"
+    "value": "1999-12-25T12:19:21.000000-07:00"
   },
   "time-reference-count": {
     "$base": "Unsigned",
@@ -1478,7 +1478,7 @@
   },
   "notification-class": {
     "$base": "Unsigned",
-    "value": "9"
+    "value": "4194303"
   },
   "event-enable": {
     "$base": "BitString",
@@ -1524,7 +1524,7 @@
     "$base": "Choice",
     "start-timer": {
       "$base": "Unsigned",
-      "value": "205531629"
+      "value": "205531625"
     }
   },
   "stop-timer": {

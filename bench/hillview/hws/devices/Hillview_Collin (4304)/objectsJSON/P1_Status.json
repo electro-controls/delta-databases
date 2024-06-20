@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": "fault;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "BP1_Current AIC"
+    "value": "P1_Status AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "146"
+    "value": "26"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,11 +74,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "10"
+    "value": "5"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.002442"
+    "value": "0.001221"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "2543616"
+      "value": "12000"
     }
   },
   "ad-value": {
