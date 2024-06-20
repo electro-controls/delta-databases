@@ -1,23 +1,7 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,3",
-      "objectName": "UH1_Zone_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh1_cuh1/devices/FSB_Collin (4399)/UH1_Zone_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "6/20/2024, 11:54:48 AM",
-      "templateTriggered": false
-    }
-  ],
+  "uploadQueue": [],
   "devices": [
     {
       "number": 4399,
