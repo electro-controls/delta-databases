@@ -1,5 +1,5 @@
 {
-  "displayName": "BACnet Settings 4304",
+  "displayName": "BACnet Settings 4305",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "net,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "BACnet Settings 4304"
+    "value": "BACnet Settings 4305"
   },
   "description": {
     "$base": "String",
@@ -42,11 +42,11 @@
       },
       "typesSupported": {
         "$base": "BitString",
-        "value": "analog-input;analog-output;analog-value;binary-input;binary-output;binary-value;calendar;device;event-enrollment;file;loop;multi-state-input;notification-class;program;schedule;multi-state-value;trend-log;structured-view"
+        "value": "analog-input;analog-output;analog-value;binary-input;binary-output;binary-value;calendar;device;event-enrollment;file;loop;multi-state-input;notification-class;program;schedule;multi-state-value;trend-log"
       },
       "servicesSupported": {
         "$base": "BitString",
-        "value": "acknowledgeAlarm;confirmedCOVNotification;getAlarmSummary;getEnrollmentSummary;subscribeCOV;atomicReadFile;atomicWriteFile;createObject;deleteObject;readProperty;readPropertyMultiple;writeProperty;writePropertyMultiple;deviceCommunicationControl;confirmedPrivateTransfer;reinitializeDevice;i-Am;i-Have;unconfirmedCOVNotification;unconfirmedPrivateTransfer;timeSynchronization;who-Has;who-Is;readRange;subscribeCOVProperty;getEventInformation"
+        "value": "acknowledgeAlarm;confirmedCOVNotification;getAlarmSummary;getEnrollmentSummary;subscribeCOV;atomicReadFile;atomicWriteFile;createObject;deleteObject;readProperty;readPropertyMultiple;writeProperty;writePropertyMultiple;deviceCommunicationControl;confirmedPrivateTransfer;reinitializeDevice;i-Am;i-Have;unconfirmedCOVNotification;unconfirmedPrivateTransfer;timeSynchronization;who-Has;who-Is;readRange;getEventInformation"
       },
       "localNetworkNumber": {
         "$base": "Unsigned",
@@ -106,7 +106,7 @@
     "$base": "Sequence",
     "totalSent": {
       "$base": "Unsigned",
-      "value": "1918"
+      "value": "249407"
     },
     "sentByApp": {
       "$base": "Unsigned",
@@ -122,7 +122,7 @@
     },
     "totalRcvd": {
       "$base": "Unsigned",
-      "value": "1009"
+      "value": "29560"
     },
     "rcvdByApp": {
       "$base": "Unsigned",
@@ -161,7 +161,7 @@
     },
     "first": {
       "$base": "Unsigned",
-      "value": "4"
+      "value": "5"
     },
     "middle": {
       "$base": "Unsigned",
@@ -211,7 +211,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "8578"
+          "value": "2912745"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -219,15 +219,15 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "84810"
+          "value": "30462007"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
-          "value": 0
+          "value": "8"
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": 0
+          "value": "4"
         }
       },
       "filterFlags": {
@@ -273,7 +273,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "28150"
+          "value": "7179673"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -281,7 +281,7 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "46255"
+          "value": 0
         },
         "invalidRcvd": {
           "$base": "Unsigned",
@@ -289,7 +289,7 @@
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": 0
+          "value": "5"
         }
       },
       "filterFlags": {
@@ -316,7 +316,7 @@
           "$base": "Choice",
           "address": {
             "$base": "Unsigned",
-            "value": "4"
+            "value": "5"
           }
         },
         "speed": {

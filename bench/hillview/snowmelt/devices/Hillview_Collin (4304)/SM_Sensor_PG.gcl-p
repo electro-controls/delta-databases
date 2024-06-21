@@ -1,0 +1,33 @@
+//snowmelt sensor page
+
+//sets the pulse frequency of the core heater. Typically,
+//the core heater is maintained at around 50-55F).
+'SMS_CorePulseTm' = Scale ('SMS_CoreHtrCO', 0, 0, 0, 100, 'SMS_CorePulseTm_Sp')
+
+
+If ('SMS_CoreHeater' OffFor ('SMS_CorePulseTm_Sp' - 'SMS_CorePulseTm'):S) And 'SMS_CoreHtrCO' > 1 Then
+    'SMS_CoreHeater' = On
+End If
+
+If 'SMS_CoreHeater' OnFor 'SMS_CorePulseTm':S Then
+    'SMS_CoreHeater' = Off
+End If
+
+//Snow melt sensor moisture present
+'SMS_MoistureCall' = Switch ( 'SMS_MoistureCall', 'SMS_Moist', 'SMS_Moist_Sp', ('SMS_Moist_Sp' * 0.5)) //
+
+//Snow melt slab temp demand
+'SMS_SlabTempCall' = Switch ( 'SMS_SlabTempCall', 'SMS_Slab', 'SMS_SlabTempEnable_Sp', 'SMS_SlabTempEnable_Sp' + 2)
+
+//OAT call
+'SM_OATCall' = Switch ( 'SM_OATCall', 'Eff_OAT', 'SM_OATEnable_Sp', 'SM_OATEnable_Sp' + 2)
+
+//Sensor Queries. forward call to boiler card
+If ('SMS_MoistureCall' OnFor 120S) And 'SMS_SlabTempCall' And 'SM_OATCall' Then
+    'SensorCall' = On
+  Else
+    'SensorCall' = Off
+End If
+
+
+//end of snowmelt sensor page

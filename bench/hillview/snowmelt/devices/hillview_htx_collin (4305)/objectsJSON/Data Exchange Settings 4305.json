@@ -1,5 +1,5 @@
 {
-  "displayName": "Data Exchange Settings 4304",
+  "displayName": "Data Exchange Settings 4305",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "des,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Data Exchange Settings 4304"
+    "value": "Data Exchange Settings 4305"
   },
   "flags": {
     "$base": "BitString",
@@ -30,11 +30,11 @@
   },
   "default-exchange-type": {
     "$base": "Enumerated",
-    "value": "cov-confirmed"
+    "value": "optimized-broadcast"
   },
   "poll-startup-delay": {
     "$base": "Unsigned",
-    "value": "22"
+    "value": "23"
   },
   "poll-interval": {
     "$base": "Unsigned",
@@ -44,16 +44,16 @@
     "$base": "Choice",
     "poll-timer": {
       "$base": "Unsigned",
-      "value": "5322"
+      "value": "1532333"
     }
   },
   "actual-poll-time": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "broadcast-startup-delay": {
     "$base": "Unsigned",
-    "value": "9"
+    "value": "10"
   },
   "broadcast-interval": {
     "$base": "Unsigned",
@@ -63,7 +63,7 @@
     "$base": "Choice",
     "broadcast-timer": {
       "$base": "Unsigned",
-      "value": "5192"
+      "value": "1532203"
     }
   },
   "actual-broadcast-time": {
@@ -89,7 +89,7 @@
   },
   "subscription-startup-delay": {
     "$base": "Unsigned",
-    "value": "734"
+    "value": "735"
   },
   "subscription-interval": {
     "$base": "Unsigned",
@@ -99,12 +99,12 @@
     "$base": "Choice",
     "subscription-timer": {
       "$base": "Unsigned",
-      "value": "7342"
+      "value": "1537353"
     }
   },
   "actual-subscription-time": {
     "$base": "Unsigned",
-    "value": "52"
+    "value": 0
   },
   "subscription-check-interval": {
     "$base": "Unsigned",
@@ -114,7 +114,7 @@
     "$base": "Choice",
     "subscription-check-timer": {
       "$base": "Unsigned",
-      "value": "5202"
+      "value": "1532513"
     }
   },
   "subscription-extra-lifetime": {

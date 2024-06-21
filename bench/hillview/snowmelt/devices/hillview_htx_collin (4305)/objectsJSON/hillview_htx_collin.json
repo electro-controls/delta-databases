@@ -1,8 +1,8 @@
 {
-  "displayName": "3x4 Controller 4304",
+  "displayName": "hillview_htx_collin",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "device,4304"
+    "value": "device,4305"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "3x4 Controller 4304"
+    "value": "hillview_htx_collin"
   },
   "description": {
     "$base": "String",
@@ -38,7 +38,7 @@
   },
   "model-name": {
     "$base": "String",
-    "value": "DAC_304"
+    "value": "DAC-322"
   },
   "firmware-revision": {
     "$base": "String",
@@ -46,7 +46,7 @@
   },
   "hardware-revision": {
     "$base": "String",
-    "value": "r3.6 [DCE r3]"
+    "value": "r3.1"
   },
   "application-software-version": {
     "$base": "String",
@@ -66,11 +66,11 @@
   },
   "protocol-services-supported": {
     "$base": "BitString",
-    "value": "acknowledgeAlarm;confirmedCOVNotification;getAlarmSummary;getEnrollmentSummary;subscribeCOV;atomicReadFile;atomicWriteFile;createObject;deleteObject;readProperty;readPropertyMultiple;writeProperty;writePropertyMultiple;deviceCommunicationControl;confirmedPrivateTransfer;reinitializeDevice;i-Am;i-Have;unconfirmedCOVNotification;unconfirmedPrivateTransfer;timeSynchronization;who-Has;who-Is;readRange;subscribeCOVProperty;getEventInformation"
+    "value": "acknowledgeAlarm;confirmedCOVNotification;getAlarmSummary;getEnrollmentSummary;subscribeCOV;atomicReadFile;atomicWriteFile;createObject;deleteObject;readProperty;readPropertyMultiple;writeProperty;writePropertyMultiple;deviceCommunicationControl;confirmedPrivateTransfer;reinitializeDevice;i-Am;i-Have;unconfirmedCOVNotification;unconfirmedPrivateTransfer;timeSynchronization;who-Has;who-Is;readRange;getEventInformation"
   },
   "protocol-object-types-supported": {
     "$base": "BitString",
-    "value": "analog-input;analog-output;analog-value;binary-input;binary-output;binary-value;calendar;device;event-enrollment;file;loop;multi-state-input;notification-class;program;schedule;multi-state-value;trend-log;structured-view"
+    "value": "analog-input;analog-output;analog-value;binary-input;binary-output;binary-value;calendar;device;event-enrollment;file;loop;multi-state-input;notification-class;program;schedule;multi-state-value;trend-log"
   },
   "object-list": {
     "$base": "Choice",
@@ -216,18 +216,6 @@
       "47": {
         "$base": "Choice"
       },
-      "48": {
-        "$base": "Choice"
-      },
-      "49": {
-        "$base": "Choice"
-      },
-      "50": {
-        "$base": "Choice"
-      },
-      "51": {
-        "$base": "Choice"
-      },
       "$base": "Array"
     }
   },
@@ -253,11 +241,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "12:01:46.00"
+    "value": "06:33:38.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2000-01-01"
+    "value": "2000-01-03"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -406,7 +394,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "315.455"
+    "value": "502.955"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -418,15 +406,15 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "120"
+    "value": "121"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
-    "value": "163"
+    "value": "102"
   },
   "dynamic-ram-free": {
     "$base": "Unsigned",
-    "value": "100"
+    "value": "41"
   },
   "flash-type": {
     "$base": "Enumerated",
@@ -514,7 +502,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "1063"
+      "value": "1532186"
     }
   },
   "logical-base-address": {
@@ -537,7 +525,7 @@
   },
   "dip-setting": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "5"
   },
   "jumper-setting": {
     "$base": "Unsigned",
@@ -545,11 +533,11 @@
   },
   "dip-address": {
     "$base": "Unsigned",
-    "value": "4304"
+    "value": "4305"
   },
   "device-instance": {
     "$base": "Unsigned",
-    "value": "4304"
+    "value": "4305"
   },
   "debug-enable": {
     "$base": "Boolean",
@@ -623,14 +611,14 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "1"
   },
   "active-cov-subscriptions": {
     "$base": "List"
   },
   "max-segments-accepted": {
     "$base": "Unsigned",
-    "value": "21"
+    "value": "12"
   },
   "hal-flags": {
     "$base": "BitString",
@@ -658,7 +646,7 @@
   },
   "output-startup-delay": {
     "$base": "Unsigned",
-    "value": "31"
+    "value": "32"
   },
   "gcl-print-buffer": {
     "$base": "Unsigned",
@@ -682,7 +670,7 @@
   },
   "features-supported": {
     "$base": "BitString",
-    "value": "bde-supported;ors-supported"
+    "value": ""
   },
   "suppress-ds-update": {
     "$base": "Boolean",
@@ -705,7 +693,7 @@
   },
   "firmware-image-name": {
     "$base": "String",
-    "value": "Boot:DAC8:---"
+    "value": "Boot:DAC4:---"
   },
   "structured-object-list": {
     "$base": "Array"

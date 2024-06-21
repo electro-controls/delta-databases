@@ -1,0 +1,79 @@
+{
+  "displayName": "SM_PipeFrzProtect_Sp",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,61"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "SM_PipeFrzProtect_Sp"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Setpoint needs to corresponds to slush point of the glycol mix. This will trigger the pump to idle to keep radiant underground piping from slushing. \n \nMSO will have 50% PG by design:  freeze point = -31F, burst point = -60F \n \nuse 0°F as freeze sp"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "°F"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "device,888"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2002-05-20T17:12:01.300000-06:00"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "0.1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

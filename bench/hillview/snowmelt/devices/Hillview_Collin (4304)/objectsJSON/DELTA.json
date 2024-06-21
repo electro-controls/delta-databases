@@ -62,11 +62,11 @@
   },
   "password-start-date": {
     "$base": "DateTime",
-    "value": "2000-01-01T13:18:24.800000-07:00"
+    "value": "2000-01-02T05:06:54.200000-07:00"
   },
   "password-expiry-date": {
     "$base": "DateTime",
-    "value": "2000-07-01T13:18:24.000000-06:00"
+    "value": "2000-07-02T05:06:54.000000-06:00"
   },
   "login-last-date": {
     "$base": "DateTime",
@@ -909,7 +909,7 @@
   },
   "normal-group-ref": {
     "$base": "ObjectIdentifier",
-    "value": "sug,1"
+    "unspecifiedValue": "true"
   },
   "group-obj-override": {
     "$base": "Array"
