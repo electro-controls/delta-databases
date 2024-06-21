@@ -411,36 +411,6 @@
       "112": {
         "$base": "Choice"
       },
-      "113": {
-        "$base": "Choice"
-      },
-      "114": {
-        "$base": "Choice"
-      },
-      "115": {
-        "$base": "Choice"
-      },
-      "116": {
-        "$base": "Choice"
-      },
-      "117": {
-        "$base": "Choice"
-      },
-      "118": {
-        "$base": "Choice"
-      },
-      "119": {
-        "$base": "Choice"
-      },
-      "120": {
-        "$base": "Choice"
-      },
-      "121": {
-        "$base": "Choice"
-      },
-      "122": {
-        "$base": "Choice"
-      },
       "$base": "Array"
     }
   },
@@ -466,7 +436,7 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "12:12:49.00"
+    "value": "12:34:27.00"
   },
   "local-date": {
     "$base": "Date",
@@ -619,7 +589,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "5.31915"
+    "value": "6.36364"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -631,7 +601,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "100"
+    "value": "103"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -727,7 +697,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "7695"
+      "value": "20670"
     }
   },
   "logical-base-address": {
@@ -806,7 +776,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "platform": {
     "$base": "Enumerated",
@@ -836,7 +806,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "7"
+    "value": "17"
   },
   "active-cov-subscriptions": {
     "1": {
@@ -881,7 +851,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2830"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",
@@ -930,7 +900,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2830"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",
@@ -979,7 +949,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2830"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",
@@ -1028,7 +998,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2830"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",
@@ -1077,7 +1047,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2830"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",
@@ -1126,7 +1096,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2830"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",
@@ -1175,7 +1145,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2830"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",
@@ -1224,7 +1194,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2830"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",
@@ -1273,7 +1243,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2830"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",
@@ -1322,7 +1292,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2830"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",
@@ -1371,7 +1341,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2830"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",
@@ -1420,7 +1390,7 @@
       },
       "timeRemaining": {
         "$base": "Unsigned",
-        "value": "2829"
+        "value": "1532"
       },
       "covIncrement": {
         "$base": "Real",

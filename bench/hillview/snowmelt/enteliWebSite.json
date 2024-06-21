@@ -25,18 +25,6 @@
           "lastUpdate": "2024-06-21T16:35:19.466Z"
         },
         {
-          "id": "ai,5",
-          "name": "SW1_LWT",
-          "fileName": "SW1_LWT",
-          "lastUpdate": "2024-06-21T16:35:19.466Z"
-        },
-        {
-          "id": "ai,6",
-          "name": "SW1_EWT",
-          "fileName": "SW1_EWT",
-          "lastUpdate": "2024-06-21T16:35:19.466Z"
-        },
-        {
           "id": "aic,1",
           "name": "Temperature DegF 10k Thermistor AIC",
           "fileName": "Temperature DegF 10k Thermistor AIC",
@@ -551,6 +539,18 @@
           "name": "DELTA",
           "fileName": "DELTA",
           "lastUpdate": "2024-06-21T16:35:19.466Z"
+        },
+        {
+          "id": "ai,6",
+          "name": "SW1_LWT",
+          "fileName": "SW1_LWT",
+          "lastUpdate": "2024-06-21T16:53:30.709Z"
+        },
+        {
+          "id": "ai,5",
+          "name": "SW1_EWT",
+          "fileName": "SW1_EWT",
+          "lastUpdate": "2024-06-21T16:53:51.230Z"
         }
       ]
     },

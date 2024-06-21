@@ -14,11 +14,11 @@
   },
   "description": {
     "$base": "String",
-    "value": "DM 4_6_22   hard to test this point so Im going to say at this time of year and compared to other Core sensor that this temp reading is correct"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "not-commissioned"
   },
   "present-value": {
     "$base": "Real",
@@ -42,7 +42,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "180"
+    "value": "145"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "5005"
+      "value": "21212"
     }
   },
   "ad-value": {

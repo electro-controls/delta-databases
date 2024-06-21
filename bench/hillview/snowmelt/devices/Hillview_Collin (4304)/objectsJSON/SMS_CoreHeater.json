@@ -14,11 +14,11 @@
   },
   "description": {
     "$base": "String",
-    "value": "DM 4_20_22  hard to test this as it is an pulse output but i did test that 24vlts is going threw the pulse relays mounted in the panel"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2"
+    "value": "private2;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:20:22.600000-07:00"
+    "value": "2000-01-01T12:35:02.700000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "79"
+    "value": "137"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:20:22.50"
+      "value": "2000-01-01T12:35:02.50"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:20:22.600000-07:00"
+      "value": "2000-01-01T12:35:02.700000-07:00"
     },
     "$base": "Array"
   },
@@ -320,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:20:22.600000-07:00"
+      "value": "2000-01-01T12:35:02.60"
     },
     "11": {
       "$base": "DateTime",

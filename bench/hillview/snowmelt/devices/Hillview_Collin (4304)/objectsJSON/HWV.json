@@ -14,15 +14,15 @@
   },
   "description": {
     "$base": "String",
-    "value": "DM 4_6_22  confirmed in person the aciton of the actuator is reverse acting  tested at 0_25_75_100 \n \n100pct means full heat \n0pct means circulate the loop only"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;polarity"
+    "value": "fault;polarity;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "41.4599"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "4"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,10 +104,7 @@
       }
     },
     "4": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "5": {
       "$base": "Choice",
@@ -262,7 +259,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:16:48.20"
+      "value": "2000-01-01T12:34:42.00"
     },
     "5": {
       "$base": "DateTime",
@@ -286,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:16:48.40"
+      "value": "2000-01-01T12:34:42.00"
     },
     "11": {
       "$base": "DateTime",
@@ -324,11 +321,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "149"
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": "5.85401"
+    "value": "10"
   },
   "port-1-status": {
     "$base": "Enumerated",
