@@ -676,6 +676,42 @@
           "name": "Critical_PG",
           "fileName": "Critical_PG",
           "lastUpdate": "2024-06-21T16:38:47.249Z"
+        },
+        {
+          "id": "aic,1",
+          "name": "Temperature DegF 10k Thermistor AIC",
+          "fileName": "Temperature DegF 10k Thermistor AIC",
+          "lastUpdate": "2024-06-21T17:13:52.107Z"
+        },
+        {
+          "id": "aic,42",
+          "name": "SM_PumpCurrent 0-5V AIC",
+          "fileName": "SM_PumpCurrent 0-5V AIC",
+          "lastUpdate": "2024-06-21T17:15:40.246Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "Active~Inactive BDC",
+          "fileName": "Active~Inactive BDC",
+          "lastUpdate": "2024-06-21T17:16:49.693Z"
+        },
+        {
+          "id": "bi,3",
+          "name": "HighTempLimit",
+          "fileName": "HighTempLimit",
+          "lastUpdate": "2024-06-21T17:17:31.716Z"
+        },
+        {
+          "id": "ao,1",
+          "name": "HXFeedValve",
+          "fileName": "HXFeedValve",
+          "lastUpdate": "2024-06-21T17:19:55.796Z"
+        },
+        {
+          "id": "bo,2",
+          "name": "HXPumpEnable",
+          "fileName": "HXPumpEnable",
+          "lastUpdate": "2024-06-21T17:20:15.161Z"
         }
       ]
     }
