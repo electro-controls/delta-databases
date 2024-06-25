@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "4"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,10 +104,7 @@
       }
     },
     "4": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "5": {
       "$base": "Choice",
@@ -173,7 +170,10 @@
       }
     },
     "16": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "$base": "Array"
   },
@@ -240,7 +240,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "value": "device,*"
+      "unspecifiedValue": "true"
     },
     "$base": "Array"
   },
@@ -259,7 +259,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-02T17:28:20.50"
+      "value": "2000-01-02T10:49:49.40"
     },
     "5": {
       "$base": "DateTime",
@@ -283,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-02T17:28:20.60"
+      "value": "2000-01-02T10:49:49.50"
     },
     "11": {
       "$base": "DateTime",
@@ -307,7 +307,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-01-01T15:47:24.10"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },

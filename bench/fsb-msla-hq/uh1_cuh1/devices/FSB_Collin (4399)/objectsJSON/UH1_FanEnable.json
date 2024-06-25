@@ -78,7 +78,7 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2000-01-01T15:35:15.800000-07:00"
+    "value": "2000-01-02T10:46:23.400000-07:00"
   },
   "prev-change-of-state-times": {
     "1": {
@@ -320,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-03T10:06:38.80"
+      "value": "2000-01-02T10:50:06.00"
     },
     "11": {
       "$base": "DateTime",
