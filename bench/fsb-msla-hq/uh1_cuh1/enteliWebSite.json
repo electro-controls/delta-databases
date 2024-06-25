@@ -1027,12 +1027,6 @@
           "lastUpdate": "2024-06-25T19:05:55.206Z"
         },
         {
-          "id": "pg,13",
-          "name": "CUH1_DAT_PG",
-          "fileName": "CUH1_DAT_PG",
-          "lastUpdate": "2024-06-25T19:05:55.206Z"
-        },
-        {
           "id": "sdl,1",
           "name": "Slave Device List 4399",
           "fileName": "Slave Device List 4399",
@@ -1109,6 +1103,12 @@
           "name": "UH1_OcHtgMax_Sp",
           "fileName": "UH1_OcHtgMax_Sp",
           "lastUpdate": "2024-06-25T19:11:36.457Z"
+        },
+        {
+          "id": "pg,6",
+          "name": "CUH1_DAT_PG",
+          "fileName": "CUH1_DAT_PG",
+          "lastUpdate": "2024-06-25T20:41:12.475Z"
         }
       ]
     }

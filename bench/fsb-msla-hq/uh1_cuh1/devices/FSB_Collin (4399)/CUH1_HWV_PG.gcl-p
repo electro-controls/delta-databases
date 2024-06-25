@@ -18,7 +18,6 @@ If ('CUH1_OccMode' <> 6) OnFor 'CUH1_PurgeHoldDly_Sp':H Then
     'CUH1_PurgeHold' = Off
 End If
 
-
 //HWV
 If 'CUH1_RunStatusInt' And 'CUH1_HWMode' Then
     'CUH1_HWV' = 'CUH1_DATHtg_CO' * 'CUH1_HtgRamp' * 0.01 //DAT control when fan is running

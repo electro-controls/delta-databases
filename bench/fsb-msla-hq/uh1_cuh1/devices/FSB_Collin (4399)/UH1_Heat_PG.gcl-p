@@ -17,8 +17,10 @@ End If
 
 If 'UH1_HWVLock' Or 'UH1_PurgeHold' Then
   'UH1_FanEnable' = 0
+  'UH1_HWV' = 0
  Else
   'UH1_FanEnable' = Switch ( 'UH1_FanEnable', 'UH1_EffZoneHtg', 50, 1)
+  'UH1_HWV' = 'UH1_EffZoneHtg'
 End If
 
 //End of Program

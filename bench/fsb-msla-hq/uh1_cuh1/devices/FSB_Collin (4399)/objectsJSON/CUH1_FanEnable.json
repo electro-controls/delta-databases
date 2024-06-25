@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -134,7 +134,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -293,7 +296,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-02T10:50:05.30"
+      "value": "2000-01-02T12:46:08.50"
     },
     "5": {
       "$base": "DateTime",
@@ -317,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-02T10:50:05.40"
+      "value": "2000-01-02T12:46:08.50"
     },
     "11": {
       "$base": "DateTime",
