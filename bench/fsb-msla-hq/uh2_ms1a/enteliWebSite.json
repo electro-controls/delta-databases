@@ -1,7 +1,23 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [],
+  "uploadQueue": [
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "net,1",
+      "objectName": "BACnet Settings 4399",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh2_ms1a/devices/FSB_Collin_UH2_MS1A (4399)/objectsJSON/BACnet Settings 4399.json",
+        "scheme": "file"
+      },
+      "date": "6/27/2024, 11:01:23 AM",
+      "templateTriggered": false
+    }
+  ],
   "devices": [
     {
       "number": 4399,
@@ -94,7 +110,7 @@
           "id": "net,1",
           "name": "BACnet Settings 4399",
           "fileName": "BACnet Settings 4399",
-          "lastUpdate": "2024-06-27T16:57:00.485Z"
+          "lastUpdate": "2024-06-27T17:01:23.152Z"
         },
         {
           "id": "pan,1",

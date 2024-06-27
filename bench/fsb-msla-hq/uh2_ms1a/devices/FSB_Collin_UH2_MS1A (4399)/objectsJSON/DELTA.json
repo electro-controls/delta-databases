@@ -62,11 +62,11 @@
   },
   "password-start-date": {
     "$base": "DateTime",
-    "value": "2000-01-04T08:38:54.800000-07:00"
+    "value": "2000-01-02T10:45:54.600000-07:00"
   },
   "password-expiry-date": {
     "$base": "DateTime",
-    "value": "2000-07-04T08:38:54.000000-06:00"
+    "value": "2000-07-02T10:45:54.000000-06:00"
   },
   "login-last-date": {
     "$base": "DateTime",
@@ -86,8 +86,9 @@
   },
   "login-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "login-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "login-failed-date": {
@@ -909,7 +910,7 @@
   },
   "normal-group-ref": {
     "$base": "ObjectIdentifier",
-    "value": "sug,1"
+    "unspecifiedValue": "true"
   },
   "group-obj-override": {
     "$base": "Array"
