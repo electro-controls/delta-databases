@@ -1,0 +1,102 @@
+//The following sequnce detrmines the current mode of
+//operation (Heating, Cooling, or Deadband)
+Variable HtCall
+Variable ClCall
+Variable HtRamp
+Variable ClRamp
+Variable LastState
+
+// Effective SP
+If ('UH1_OccMode' = 3) Or ('UH1_OccMode' = 4) Or ('UH1_OccMode' = 5) Then
+    'UH1_ZoneHeat_EffSp' = Min (('UH1_Zone_EffSp' - ('UH1_ZoneDb_Sp' * 0.5)), 'UH1_OcHtgMax_Sp')
+    'UH1_ZoneCool_EffSp' = Max (('UH1_Zone_EffSp' + ('UH1_ZoneDb_Sp' * 0.5)), 'UH1_OcClgMin_Sp')
+  ElseIf  'UH1_OccMode' = 2 Then //Standby
+    'UH1_ZoneHeat_EffSp' = Min (('UH1_Zone_EffSp' - 'UH1_StandbyOffset_Sp' - ('UH1_ZoneDb_Sp' * 0.5)), 'UH1_OcHtgMax_Sp')
+    'UH1_ZoneCool_EffSp' = Max (('UH1_Zone_EffSp' + 'UH1_StandbyOffset_Sp' + ('UH1_ZoneDb_Sp' * 0.5)), 'UH1_OcClgMin_Sp')
+  ElseIf  'UH1_OccMode' = 6 Then //Purge
+    'UH1_ZoneHeat_EffSp' = Min (('UH1_Zone_EffSp' - 'UH1_StandbyOffset_Sp' - ('UH1_ZoneDb_Sp' * 0.5)), 'UH1_OcHtgMax_Sp')
+    'UH1_ZoneCool_EffSp' = Max (('UH1_Zone_EffSp' + ('UH1_ZoneDb_Sp' * 0.5)), 'UH1_OcClgMin_Sp')
+  Else
+    'UH1_ZoneHeat_EffSp' = Min ('UH1_UnocHt_Sp', 'UH1_OcHtgMax_Sp')
+    'UH1_ZoneCool_EffSp' = Max ('UH1_UnocCl_Sp', 'UH1_OcClgMin_Sp')
+End If
+
+//Links remote setpoint to effective
+If 'UH1_Zone_RemSp' > 0 Then
+ 'UH1_Zone_EffSp' = 'UH1_Zone_RemSp'
+Else
+ 'UH1_Zone_EffSp' = 'UH1_Zone_LocSp'
+End If
+
+//This just display the value of the CO for display at the NM level
+'UH1_LocZoneHtg' = 'UH1_ZoneHtg_CO' * HtRamp * 0.01
+'UH1_LocZoneClg' = 'UH1_ZoneClg_CO' * ClRamp * 0.01
+
+//This determines the actual heating/cooling/deadband mode
+//This also does the previous mode latching. Previous mode could then be used
+//by other routines (like DAT control).
+If (('UH1_ZoneHtg_CO' > 'UH1_EffZoneClg' + 5) And 'UH1_ControlMode' = 3) OnFor 'UH1_ZoneDbDelay_Sp':S Then
+    HtCall = On
+    'UH1_PrevControlMode' = 3
+  ElseIf  (('UH1_ZoneClg_CO' > 'UH1_EffZoneHtg' + 5) And 'UH1_ControlMode' = 3) OnFor 'UH1_ZoneDbDelay_Sp':S Then
+    ClCall = On
+    'UH1_PrevControlMode' = 3
+  ElseIf  (('UH1_ControlMode' = 1) And ('UH1_EffZoneHtg' <= 0)) OnFor 'UH1_ZoneDbDelay_Sp':S Then
+    HtCall = Off
+    'UH1_PrevControlMode' = 1
+  ElseIf  (('UH1_ControlMode' = 2) And ('UH1_EffZoneClg' <= 0)) OnFor 'UH1_ZoneDbDelay_Sp':S Then
+    ClCall = Off
+    'UH1_PrevControlMode' = 2
+End If
+
+//Set current control mode
+//This takes into account a manual override of the space heating/cooling %
+//from the NM
+If 'UH1_RemZoneHtg' >= 0 Then
+    'UH1_EffZoneHtg' = 'UH1_RemZoneHtg'
+    'UH1_EffZoneClg' = 0
+    'UH1_ControlMode' = 1
+  ElseIf  'UH1_RemZoneClg' >= 0 Then
+    'UH1_EffZoneClg' = 'UH1_RemZoneClg'
+    'UH1_EffZoneHtg' = 0
+    'UH1_ControlMode' = 2
+  ElseIf  ClCall Then
+    'UH1_ControlMode' = 2
+    'UH1_EffZoneHtg' = 'UH1_LocZoneHtg'
+    'UH1_EffZoneClg' = 'UH1_LocZoneClg'
+  ElseIf  HtCall Then
+    'UH1_ControlMode' = 1
+    'UH1_EffZoneHtg' = 'UH1_LocZoneHtg'
+    'UH1_EffZoneClg' = 'UH1_LocZoneClg'
+  Else
+    'UH1_ControlMode' = 3
+    'UH1_EffZoneHtg' = 'UH1_LocZoneHtg'
+    'UH1_EffZoneClg' = 'UH1_LocZoneClg'
+End If
+
+//This provides ramp delay to sequence in mode %. Intended
+//to minimize overshoot of cooresponding cascade control loops when
+//major swings are seen as setpoints and/or zone temps. Also, allows for
+//smoother sequenceing of staged outputs (when applicable).
+If 'UH1_ControlMode' = 1 Then
+    DoEvery 10S
+    HtRamp = Min (100, HtRamp + (1000 / 'UH1_ZoneHtRamp_Sp'))
+    End Do
+  Else
+    HtRamp = 0
+End If
+If 'UH1_ControlMode' = 2 Then
+    DoEvery 10S
+    ClRamp = Min (100, ClRamp + (1000 / 'UH1_ZoneClRamp_Sp'))
+    End Do
+  Else
+    ClRamp = 0
+End If
+
+//Unoc Demand
+'UH1_UnocHtCall' = Switch ( 'UH1_UnocHtCall', 'UH1_Eff_ZoneTemp', 'UH1_UnocHt_Sp', 'UH1_UnocHt_Sp' + 'UH1_UnocDb_Sp')
+'UH1_UnocClCall' = Switch ( 'UH1_UnocClCall', 'UH1_Eff_ZoneTemp', 'UH1_UnocCl_Sp', 'UH1_UnocCl_Sp' - 'UH1_UnocDb_Sp')
+
+//Standby Demand
+'UH1_ZoneClDemand' = Switch ( 'UH1_ZoneClDemand', 'UH1_EffZoneClg', 99, 50)
+'UH1_ZoneHtDemand' = Switch ( 'UH1_ZoneHtDemand', 'UH1_EffZoneHtg', 99, 50)
