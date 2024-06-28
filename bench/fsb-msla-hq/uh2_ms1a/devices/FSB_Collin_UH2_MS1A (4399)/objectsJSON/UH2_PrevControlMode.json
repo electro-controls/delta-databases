@@ -81,7 +81,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Deadband"
+    "value": "Heating"
   },
   "hal-flags": {
     "$base": "BitString",

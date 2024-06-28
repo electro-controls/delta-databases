@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "present-value": {
     "$base": "Unsigned",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -46,7 +46,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "missing-cfg-object"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -89,7 +89,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "AI Fault"
+    "value": "Page Fault"
   },
   "hal-flags": {
     "$base": "BitString",

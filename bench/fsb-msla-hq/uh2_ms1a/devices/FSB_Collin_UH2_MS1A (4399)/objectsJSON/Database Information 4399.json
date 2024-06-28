@@ -26,7 +26,7 @@
   },
   "free-memory": {
     "$base": "Unsigned",
-    "value": "104840"
+    "value": "104976"
   },
   "object-count": {
     "$base": "Unsigned",
@@ -609,7 +609,7 @@
   },
   "time-of-last-chg": {
     "$base": "DateTime",
-    "value": "2000-01-02T12:21:34.600000-07:00"
+    "value": "2000-01-01T14:03:01.700000-07:00"
   },
   "src-user-of-last-chg": {
     "$base": "Sequence",
@@ -634,7 +634,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "240"
+    "value": "400"
   },
   "total-graphic-memory": {
     "$base": "Choice",
