@@ -16,6 +16,36 @@
       },
       "date": "6/27/2024, 11:01:23 AM",
       "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ai,2",
+      "objectName": "MS1A_RoomTemp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh2_ms1a/devices/FSB_Collin_UH2_MS1A (4399)/objectsJSON/MS1A_RoomTemp.json",
+        "scheme": "file"
+      },
+      "date": "6/28/2024, 11:11:01 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ai,1",
+      "objectName": "UH1_ZoneTemp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh2_ms1a/devices/FSB_Collin_UH2_MS1A (4399)/objectsJSON/UH1_ZoneTemp.json",
+        "scheme": "file"
+      },
+      "date": "6/28/2024, 11:11:10 AM",
+      "templateTriggered": false
     }
   ],
   "devices": [
@@ -165,6 +195,18 @@
           "name": "UH1_Zone_PG",
           "fileName": "UH1_Zone_PG",
           "lastUpdate": "2024-06-28T16:08:28.694Z"
+        },
+        {
+          "id": "ai,2",
+          "name": "MS1A_RoomTemp",
+          "fileName": "MS1A_RoomTemp",
+          "lastUpdate": "2024-06-28T17:10:50.536Z"
+        },
+        {
+          "id": "ai,1",
+          "name": "UH1_ZoneTemp",
+          "fileName": "UH1_ZoneTemp",
+          "lastUpdate": "2024-06-28T17:11:10.207Z"
         }
       ]
     }
