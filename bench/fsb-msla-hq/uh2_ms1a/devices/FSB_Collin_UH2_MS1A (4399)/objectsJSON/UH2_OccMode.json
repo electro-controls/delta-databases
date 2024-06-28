@@ -1,8 +1,8 @@
 {
-  "displayName": "ControllerFault",
+  "displayName": "UH2_OccMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "multi-state-value,98"
+    "value": "multi-state-value,10101"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ControllerFault"
+    "value": "UH2_OccMode"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "mic,19"
+    "value": "mic,2"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,45 +54,33 @@
   },
   "number-of-states": {
     "$base": "Unsigned",
-    "value": "5"
+    "value": "2"
   },
   "state-text": {
     "1": {
       "$base": "String",
-      "value": "Normal"
+      "value": "OFF"
     },
     "2": {
       "$base": "String",
-      "value": "Page Fault"
-    },
-    "3": {
-      "$base": "String",
-      "value": "AI Fault"
-    },
-    "4": {
-      "$base": "String",
-      "value": "AV Fault"
-    },
-    "5": {
-      "$base": "String",
-      "value": "CO Fault"
+      "value": "ON"
     },
     "$base": "Array"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,2"
+    "value": "program,3"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-02T12:19:55.900000-07:00"
+    "value": "2000-01-02T12:22:35.600000-07:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "AI Fault"
+    "value": ""
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "hvac"
+    "value": ""
   }
 }

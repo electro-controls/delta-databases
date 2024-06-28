@@ -4,8 +4,8 @@
 
 Call 'FaultDetection_PG'
 
-Call 'UH1_General_PG'
-Call 'UH1_Heat_PG'
-Call 'UH1_Zone_PG'
+Call 'UH2_General_PG'
+Call 'UH2_Heat_PG'
+Call 'UH2_Zone_PG'
 
 //end of main page

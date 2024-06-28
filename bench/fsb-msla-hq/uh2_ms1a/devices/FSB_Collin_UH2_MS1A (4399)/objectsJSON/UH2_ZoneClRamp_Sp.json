@@ -1,8 +1,8 @@
 {
-  "displayName": "Uptime",
+  "displayName": "UH2_ZoneClRamp_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,98"
+    "value": "analog-value,10221"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,15 +10,15 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Uptime"
+    "value": "UH2_ZoneClRamp_Sp"
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "This is delay function that effects deadband transition times and a slow ramp when enetering the cooling mode. This allows for smooth transitions from deadband to cooling mode. This also minimizes the change of economizer overshoot when drastic setpoint changes are made. It also assists in a gradual sequencing of DX cooling stages. Typival setting would be 120 - 300 seconds."
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "present-value": {
     "$base": "Real",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "min"
+    "value": "s"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -50,11 +50,11 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,7"
+    "value": "device,65984"
   },
   "time-of-last-write": {
     "$base": "DateTime",

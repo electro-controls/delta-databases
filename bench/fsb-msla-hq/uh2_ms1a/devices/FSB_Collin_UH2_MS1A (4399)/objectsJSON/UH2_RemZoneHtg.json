@@ -1,8 +1,8 @@
 {
-  "displayName": "Uptime",
+  "displayName": "UH2_RemZoneHtg",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,98"
+    "value": "analog-value,10235"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Uptime"
+    "value": "UH2_RemZoneHtg"
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "This should be set to -1 unless a manual override is taking place."
   },
   "flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "min"
+    "value": "%"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,7 +54,7 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,7"
+    "value": "device,65984"
   },
   "time-of-last-write": {
     "$base": "DateTime",
@@ -70,10 +70,10 @@
   },
   "decimal-places": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "hvac"
+    "value": ""
   }
 }

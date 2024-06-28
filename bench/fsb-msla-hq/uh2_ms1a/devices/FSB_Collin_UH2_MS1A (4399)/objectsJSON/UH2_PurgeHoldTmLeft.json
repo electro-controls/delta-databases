@@ -1,8 +1,8 @@
 {
-  "displayName": "Uptime",
+  "displayName": "UH2_PurgeHoldTmLeft",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,98"
+    "value": "analog-value,10139"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Uptime"
+    "value": "UH2_PurgeHoldTmLeft"
   },
   "description": {
     "$base": "String",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,7"
+    "value": "program,4"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-02T12:21:27.200000-07:00"
   },
   "cov-increment": {
     "$base": "Real",
@@ -70,10 +70,10 @@
   },
   "decimal-places": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "hvac"
+    "value": ""
   }
 }

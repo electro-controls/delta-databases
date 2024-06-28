@@ -1,16 +1,16 @@
 {
-  "displayName": "ControllerFault",
+  "displayName": "UH2_PurgeHold",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "multi-state-value,98"
+    "value": "binary-value,10139"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "multi-state-value"
+    "value": "binary-value"
   },
   "object-name": {
     "$base": "String",
-    "value": "ControllerFault"
+    "value": "UH2_PurgeHold"
   },
   "description": {
     "$base": "String",
@@ -18,19 +18,19 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "present-value": {
-    "$base": "Unsigned",
-    "value": "3"
+    "$base": "Enumerated",
+    "value": "inactive"
   },
   "gcl-value": {
-    "$base": "Unsigned",
-    "value": "3"
+    "$base": "Enumerated",
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "mic,19"
+    "value": "bdc,11"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -46,50 +46,31 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "missing-cfg-object"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
     "value": 0
   },
-  "number-of-states": {
-    "$base": "Unsigned",
-    "value": "5"
+  "active-text": {
+    "$base": "String",
+    "value": "Active"
   },
-  "state-text": {
-    "1": {
-      "$base": "String",
-      "value": "Normal"
-    },
-    "2": {
-      "$base": "String",
-      "value": "Page Fault"
-    },
-    "3": {
-      "$base": "String",
-      "value": "AI Fault"
-    },
-    "4": {
-      "$base": "String",
-      "value": "AV Fault"
-    },
-    "5": {
-      "$base": "String",
-      "value": "CO Fault"
-    },
-    "$base": "Array"
+  "inactive-text": {
+    "$base": "String",
+    "value": "Inactive"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,2"
+    "value": "program,4"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-02T12:19:55.900000-07:00"
+    "value": "2000-01-02T12:22:29.900000-07:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "AI Fault"
+    "value": "Inactive"
   },
   "hal-flags": {
     "$base": "BitString",

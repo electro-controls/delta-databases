@@ -1,8 +1,8 @@
 {
-  "displayName": "Uptime",
+  "displayName": "UH2_Zone_EffSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,98"
+    "value": "analog-value,10201"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Uptime"
+    "value": "UH2_Zone_EffSp"
   },
   "description": {
     "$base": "String",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "min"
+    "value": "°F"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,15 +54,15 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,7"
+    "value": "program,5"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-02T12:22:19.500000-07:00"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "1"
+    "value": "0.1"
   },
   "fixed-point": {
     "$base": "Boolean",
@@ -74,6 +74,6 @@
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "hvac"
+    "value": ""
   }
 }

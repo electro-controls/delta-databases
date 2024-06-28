@@ -1,8 +1,8 @@
 {
-  "displayName": "ControllerFault",
+  "displayName": "UH2_PrevControlMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "multi-state-value,98"
+    "value": "multi-state-value,10104"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ControllerFault"
+    "value": "UH2_PrevControlMode"
   },
   "description": {
     "$base": "String",
@@ -18,19 +18,19 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "mic,19"
+    "value": "mic,1"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -46,7 +46,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "missing-cfg-object"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -54,45 +54,37 @@
   },
   "number-of-states": {
     "$base": "Unsigned",
-    "value": "5"
+    "value": "3"
   },
   "state-text": {
     "1": {
       "$base": "String",
-      "value": "Normal"
+      "value": "Heating"
     },
     "2": {
       "$base": "String",
-      "value": "Page Fault"
+      "value": "Cooling"
     },
     "3": {
       "$base": "String",
-      "value": "AI Fault"
-    },
-    "4": {
-      "$base": "String",
-      "value": "AV Fault"
-    },
-    "5": {
-      "$base": "String",
-      "value": "CO Fault"
+      "value": "Deadband"
     },
     "$base": "Array"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,2"
+    "value": "program,5"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-02T12:19:55.900000-07:00"
+    "value": "2000-01-02T12:22:36.600000-07:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "AI Fault"
+    "value": "Heating"
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "hvac"
+    "value": ""
   }
 }

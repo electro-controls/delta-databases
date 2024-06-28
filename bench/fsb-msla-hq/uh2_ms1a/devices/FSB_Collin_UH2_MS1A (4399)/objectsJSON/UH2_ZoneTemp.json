@@ -1,8 +1,8 @@
 {
-  "displayName": "MS1A_ZoneTemp",
+  "displayName": "UH2_ZoneTemp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,2"
+    "value": "analog-input,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "MS1A_ZoneTemp"
+    "value": "UH2_ZoneTemp"
   },
   "description": {
     "$base": "String",
@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;out-of-service;not-commissioned"
+    "value": "out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "36"
+    "value": "4.4"
   },
   "last-value": {
     "$base": "Real",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault;out-of-service"
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -54,7 +54,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "missing-cfg-object"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "874999"
+      "value": "875567"
     }
   },
   "ad-value": {
