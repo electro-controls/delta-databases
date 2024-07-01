@@ -16,6 +16,21 @@
       },
       "date": "6/28/2024, 11:11:01 AM",
       "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,1",
+      "objectName": "Main_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/uh2_ms1a/devices/FSB_Collin_UH2_MS1A (4399)/Main_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:02:33 PM",
+      "templateTriggered": false
     }
   ],
   "devices": [
