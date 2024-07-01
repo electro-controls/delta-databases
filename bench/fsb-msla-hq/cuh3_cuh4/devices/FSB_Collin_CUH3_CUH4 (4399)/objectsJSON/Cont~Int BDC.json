@@ -1,5 +1,5 @@
 {
-  "displayName": "Cont/Int BDC",
+  "displayName": "Cont~Int BDC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "bdc,12"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Cont/Int BDC"
+    "value": "Cont~Int BDC"
   },
   "description": {
     "$base": "String",

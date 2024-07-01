@@ -1,5 +1,5 @@
 {
-  "displayName": "On/Off",
+  "displayName": "On~Off",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "bdc,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "On/Off"
+    "value": "On~Off"
   },
   "description": {
     "$base": "String",

@@ -42,7 +42,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive"
+    "value": "Active~Inactive"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-02-19T14:42:31.900000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "6"
+    "value": 0
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-02-19T14:42:31.900000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-02-19T14:24:59.30"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "5"
+    "value": "17"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -140,7 +140,10 @@
       }
     },
     "5": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "6": {
       "$base": "Choice",
@@ -167,7 +170,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -226,11 +232,11 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,10209"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "value": "device,4000053"
+      "unspecifiedValue": "true"
     },
     "6": {
       "$base": "ObjectIdentifier",
@@ -250,7 +256,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,10203"
+      "unspecifiedValue": "true"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -293,11 +299,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-08-27T07:19:44.10"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-02-19T14:42:31.900000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -317,7 +323,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-08-27T07:19:40.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -341,7 +347,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-08-27T07:19:24.20"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },

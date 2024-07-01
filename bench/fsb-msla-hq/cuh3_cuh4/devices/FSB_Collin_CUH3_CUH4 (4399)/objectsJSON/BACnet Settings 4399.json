@@ -1,5 +1,5 @@
 {
-  "displayName": "BACnet Settings 1103",
+  "displayName": "BACnet Settings 4399",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "net,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "BACnet Settings 1103"
+    "value": "BACnet Settings 4399"
   },
   "description": {
     "$base": "String",
@@ -50,7 +50,7 @@
       },
       "localNetworkNumber": {
         "$base": "Unsigned",
-        "value": "50001"
+        "value": "50043"
       },
       "maxBroadcastSize": {
         "$base": "Unsigned",
@@ -66,7 +66,7 @@
       },
       "maxPackets": {
         "$base": "Unsigned",
-        "value": "42"
+        "value": "40"
       },
       "timerInterval": {
         "$base": "Unsigned",
@@ -106,7 +106,7 @@
     "$base": "Sequence",
     "totalSent": {
       "$base": "Unsigned",
-      "value": "40438008"
+      "value": "3412"
     },
     "sentByApp": {
       "$base": "Unsigned",
@@ -122,7 +122,7 @@
     },
     "totalRcvd": {
       "$base": "Unsigned",
-      "value": "26079054"
+      "value": "2425"
     },
     "rcvdByApp": {
       "$base": "Unsigned",
@@ -151,7 +151,7 @@
   },
   "main-network": {
     "$base": "Unsigned",
-    "value": "50001"
+    "value": "50043"
   },
   "main-mac": {
     "$base": "Sequence",
@@ -161,15 +161,15 @@
     },
     "first": {
       "$base": "Unsigned",
-      "value": "3"
+      "value": "99"
     },
     "middle": {
       "$base": "Unsigned",
-      "value": "1073786432"
+      "value": 0
     },
     "last": {
       "$base": "Unsigned",
-      "value": "67"
+      "value": 0
     }
   },
   "basic-adapter": {
@@ -201,7 +201,7 @@
       },
       "driverVersion": {
         "$base": "Unsigned",
-        "value": "6"
+        "value": 0
       },
       "hardwarePort": {
         "$base": "Unsigned",
@@ -211,7 +211,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "412988379"
+          "value": "25380"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -219,15 +219,15 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "4034992839"
+          "value": "155246"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
-          "value": "4514"
+          "value": 0
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": "52"
+          "value": 0
         }
       },
       "filterFlags": {
@@ -263,7 +263,7 @@
       },
       "driverVersion": {
         "$base": "Unsigned",
-        "value": "6"
+        "value": 0
       },
       "hardwarePort": {
         "$base": "Unsigned",
@@ -273,7 +273,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "857034710"
+          "value": "39916"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -281,11 +281,11 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "1437258596"
+          "value": 0
         },
         "invalidRcvd": {
           "$base": "Unsigned",
-          "value": "147"
+          "value": 0
         },
         "protocolErrors": {
           "$base": "Unsigned",
@@ -306,7 +306,7 @@
         "$base": "Sequence",
         "network": {
           "$base": "Unsigned",
-          "value": "50011"
+          "value": "50043"
         },
         "port": {
           "$base": "Enumerated",
@@ -316,7 +316,7 @@
           "$base": "Choice",
           "address": {
             "$base": "Unsigned",
-            "value": "3"
+            "value": "99"
           }
         },
         "speed": {
@@ -382,7 +382,7 @@
   },
   "free-que": {
     "$base": "Unsigned",
-    "value": "34"
+    "value": "29"
   },
   "short-free-que": {
     "$base": "Unsigned",
@@ -390,7 +390,7 @@
   },
   "transmit-1-que": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "1"
   },
   "transmit-2-que": {
     "$base": "Unsigned",

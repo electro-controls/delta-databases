@@ -1,5 +1,5 @@
 {
-  "displayName": "Alarm/Normal",
+  "displayName": "Alarm~Normal",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "bdc,7"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Alarm/Normal"
+    "value": "Alarm~Normal"
   },
   "description": {
     "$base": "String",
