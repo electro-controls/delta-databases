@@ -618,7 +618,97 @@
       "templateTriggered": false
     },
     {
-      "action": "create",
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,15",
+      "objectName": "CUH5_Zone_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH5_Zone_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:26:54 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,14",
+      "objectName": "CUH5_OccMode_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH5_OccMode_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:26:54 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,13",
+      "objectName": "CUH5_HWV_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH5_HWV_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:26:54 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,10",
+      "objectName": "CUH5_Critical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH5_Critical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:26:54 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,11",
+      "objectName": "CUH5_DAT_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH5_DAT_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:26:54 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,12",
+      "objectName": "CUH5_Fan_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH5_Fan_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:26:54 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
       "device": 4399,
       "objectId": "pg,9",
       "objectName": "Main_PG",
@@ -629,7 +719,112 @@
         "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/Main_PG.gcl-p",
         "scheme": "file"
       },
-      "date": "7/1/2024, 4:21:55 PM",
+      "date": "7/1/2024, 4:27:14 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,22",
+      "objectName": "General_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/General_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:27:14 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,21",
+      "objectName": "CUH6_Zone_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH6_Zone_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:27:14 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,20",
+      "objectName": "CUH6_OccMode_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH6_OccMode_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:27:14 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,19",
+      "objectName": "CUH6_HWV_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH6_HWV_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:27:14 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,17",
+      "objectName": "CUH6_DAT_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH6_DAT_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:27:14 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,18",
+      "objectName": "CUH6_Fan_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH6_Fan_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:27:14 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,16",
+      "objectName": "CUH6_Critical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH6_Critical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/1/2024, 4:27:14 PM",
       "templateTriggered": false
     }
   ],
@@ -1758,6 +1953,84 @@
           "name": "Main_PG",
           "fileName": "Main_PG",
           "lastUpdate": "2024-07-01T22:21:55.678Z"
+        },
+        {
+          "id": "pg,10",
+          "name": "CUH5_Critical_PG",
+          "fileName": "CUH5_Critical_PG",
+          "lastUpdate": "2024-07-01T22:26:19.695Z"
+        },
+        {
+          "id": "pg,11",
+          "name": "CUH5_DAT_PG",
+          "fileName": "CUH5_DAT_PG",
+          "lastUpdate": "2024-07-01T22:26:19.737Z"
+        },
+        {
+          "id": "pg,12",
+          "name": "CUH5_Fan_PG",
+          "fileName": "CUH5_Fan_PG",
+          "lastUpdate": "2024-07-01T22:26:19.744Z"
+        },
+        {
+          "id": "pg,13",
+          "name": "CUH5_HWV_PG",
+          "fileName": "CUH5_HWV_PG",
+          "lastUpdate": "2024-07-01T22:26:19.768Z"
+        },
+        {
+          "id": "pg,14",
+          "name": "CUH5_OccMode_PG",
+          "fileName": "CUH5_OccMode_PG",
+          "lastUpdate": "2024-07-01T22:26:19.780Z"
+        },
+        {
+          "id": "pg,15",
+          "name": "CUH5_Zone_PG",
+          "fileName": "CUH5_Zone_PG",
+          "lastUpdate": "2024-07-01T22:26:19.804Z"
+        },
+        {
+          "id": "pg,16",
+          "name": "CUH6_Critical_PG",
+          "fileName": "CUH6_Critical_PG",
+          "lastUpdate": "2024-07-01T22:26:19.812Z"
+        },
+        {
+          "id": "pg,17",
+          "name": "CUH6_DAT_PG",
+          "fileName": "CUH6_DAT_PG",
+          "lastUpdate": "2024-07-01T22:26:19.825Z"
+        },
+        {
+          "id": "pg,18",
+          "name": "CUH6_Fan_PG",
+          "fileName": "CUH6_Fan_PG",
+          "lastUpdate": "2024-07-01T22:26:19.834Z"
+        },
+        {
+          "id": "pg,19",
+          "name": "CUH6_HWV_PG",
+          "fileName": "CUH6_HWV_PG",
+          "lastUpdate": "2024-07-01T22:26:19.854Z"
+        },
+        {
+          "id": "pg,20",
+          "name": "CUH6_OccMode_PG",
+          "fileName": "CUH6_OccMode_PG",
+          "lastUpdate": "2024-07-01T22:26:19.861Z"
+        },
+        {
+          "id": "pg,21",
+          "name": "CUH6_Zone_PG",
+          "fileName": "CUH6_Zone_PG",
+          "lastUpdate": "2024-07-01T22:26:19.880Z"
+        },
+        {
+          "id": "pg,22",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-07-01T22:26:58.890Z"
         }
       ]
     }
