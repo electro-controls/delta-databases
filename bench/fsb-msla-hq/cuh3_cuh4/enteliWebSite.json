@@ -1145,18 +1145,6 @@
           "lastUpdate": "2024-07-02T14:38:23.443Z"
         },
         {
-          "id": "pg,3",
-          "name": "CUH3_eZNSDisplay1_PG",
-          "fileName": "CUH3_eZNSDisplay1_PG",
-          "lastUpdate": "2024-07-02T14:38:23.443Z"
-        },
-        {
-          "id": "pg,4",
-          "name": "CUH3_eZNSDisplay2_PG",
-          "fileName": "CUH3_eZNSDisplay2_PG",
-          "lastUpdate": "2024-07-02T14:38:23.443Z"
-        },
-        {
           "id": "pg,5",
           "name": "CUH3_Fan_PG",
           "fileName": "CUH3_Fan_PG",
