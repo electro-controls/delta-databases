@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-07-02T10:29:37.400000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "2"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-07-02T10:29:37.400000-06:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-07-02T10:29:37.00"
     },
     "$base": "Array"
   },
@@ -103,12 +103,12 @@
     "$base": "Choice",
     "minimum-delay-timer": {
       "$base": "Unsigned",
-      "value": 0
+      "value": "667980"
     }
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "6"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -146,10 +146,7 @@
       }
     },
     "6": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "7": {
       "$base": "Choice",
@@ -170,10 +167,7 @@
       }
     },
     "10": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "11": {
       "$base": "Choice",
@@ -232,7 +226,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,9"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -256,7 +250,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,5"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -299,7 +293,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-07-02T10:29:54.80"
     },
     "5": {
       "$base": "DateTime",
@@ -323,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-07-01T16:25:51.10"
+      "value": "2024-07-02T10:29:55.20"
     },
     "11": {
       "$base": "DateTime",
@@ -405,7 +399,7 @@
   },
   "delay-count-down": {
     "$base": "Time",
-    "value": "00:00:00.00"
+    "value": "00:00:41.00"
   },
   "text-value": {
     "$base": "String",

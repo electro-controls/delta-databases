@@ -85,7 +85,7 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,10151"
+    "unspecifiedValue": "true"
   },
   "time-of-last-write": {
     "$base": "DateTime",
