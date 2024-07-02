@@ -27,6 +27,13 @@ DoEvery 1M
     'Uptime' = 'Uptime' + 1
 End Do
 
+//Intercontroller links
+// EF-Enable to run off of AHU occupied mode
+If ('2000.Mode' == 1) Then
+    'EF1_StartStop' = On
+End If
+
+
 //Link Zone Temp here
 'CUH3_Eff_ZoneTemp' = 'CUH3_ZoneTemp'
 'CUH4_Eff_ZoneTemp' = 'CUH4_ZoneTemp'
@@ -35,4 +42,4 @@ End Do
 'CUH3_ZoneVariance' = 'CUH3_Eff_ZoneTemp' - 'CUH3_Zone_EffSp'
 'CUH4_ZoneVariance' = 'CUH4_Eff_ZoneTemp' - 'CUH4_Zone_EffSp'
 
- //end of general page 
+ //end of general page
