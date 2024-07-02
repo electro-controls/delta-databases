@@ -1,16 +1,17 @@
 {
-  "displayName": "CUH4_RunStatusInt",
+  "$base": "Object",
+  "displayName": "CUH4_Zone_RemSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-value,10202"
+    "value": "analog-value,10000"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "binary-value"
+    "value": "analog-value"
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH4_RunStatusInt"
+    "value": "CUH4_Zone_RemSp"
   },
   "description": {
     "$base": "String",
@@ -21,12 +22,12 @@
     "value": ""
   },
   "present-value": {
-    "$base": "Enumerated",
-    "value": "inactive"
+    "$base": "Real",
+    "value": 0
   },
   "gcl-value": {
-    "$base": "Enumerated",
-    "value": "inactive"
+    "$base": "Real",
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -36,9 +37,9 @@
     "$base": "Boolean",
     "value": 0
   },
-  "type-reference": {
-    "$base": "ObjectIdentifier",
-    "value": "bdc,11"
+  "units": {
+    "$base": "Enumerated",
+    "value": "%"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -52,25 +53,25 @@
     "$base": "Boolean",
     "value": 0
   },
-  "active-text": {
-    "$base": "String",
-    "value": "Active"
-  },
-  "inactive-text": {
-    "$base": "String",
-    "value": "Inactive"
-  },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,10203"
+    "unspecifiedValue": "true"
   },
   "time-of-last-write": {
     "$base": "DateTime",
     "value": "*-*-*-*T*:*:*.*"
   },
-  "text-value": {
-    "$base": "String",
-    "value": "Inactive"
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": "1"
   },
   "hal-flags": {
     "$base": "BitString",

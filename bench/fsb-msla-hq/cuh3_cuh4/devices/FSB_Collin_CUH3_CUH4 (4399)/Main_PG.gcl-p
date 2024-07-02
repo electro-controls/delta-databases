@@ -23,7 +23,6 @@ If Counter = 1 Then
     Call 'CUH3_HWV_PG'
     Call 'CUH3_Zone_PG'
     Call 'CUH3_OccMode_PG'
-    Call 'CUH3_DAT_PG'
 End If
 
 
@@ -32,7 +31,6 @@ If Counter = 2 Then
     Call 'CUH4_HWV_PG'
     Call 'CUH4_Zone_PG'
     Call 'CUH4_OccMode_PG'
-    Call 'CUH4_DAT_PG'
 End If
 
 //end of main page

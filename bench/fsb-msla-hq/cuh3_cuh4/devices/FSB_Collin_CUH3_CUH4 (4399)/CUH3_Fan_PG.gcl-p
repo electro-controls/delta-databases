@@ -1,28 +1,9 @@
-'PG9.Write_Priority' = 4
+//fan program 
 
-
-//software freeze mode
-
-If ('CUH4_Eff_ZoneTemp' < 42) OnFor 60S Then
-    'CUH4_FreezeMode' = On
-End If
-
-If ('CUH4_Eff_ZoneTemp' > 45) OnFor 60S Then
-    'CUH4_FreezeMode' = Off
-End If
-
-If PowerUp Then
-    'CUH4_FreezeMode' = Off
-End If
-
-
-If 'CUH4_FreezeMode' Then
-    'CUH4_Enable' = Off
-    'CUH4_HWV' = 100
+If ('CUH3_FanMode' = On) And (('CUH3_OccMode' = 3) Or ('CUH3_OccMode' = 4)) Then
+    'CUH3_Enable' = On //in continuous mode, fan shall run during occupied or bypass mode. 
   Else
-    Relinquish 'CUH4_Enable'
-    Relinquish 'CUH4_HWV'
-End If
+    'CUH3_Enable' = Switch ( 'CUH3_Enable', 'CUH3_EffZoneHtg', 90, 10) //otherwise fan shall cycle w/ heating load
+End If 
 
-
-//end of critical page
+//end of fan program

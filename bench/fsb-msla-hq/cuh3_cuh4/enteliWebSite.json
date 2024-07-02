@@ -743,12 +743,6 @@
           "lastUpdate": "2024-07-02T14:38:23.443Z"
         },
         {
-          "id": "bv,10102",
-          "name": "CUH3_RunStatusInt",
-          "fileName": "CUH3_RunStatusInt",
-          "lastUpdate": "2024-07-02T14:38:23.443Z"
-        },
-        {
           "id": "bv,10105",
           "name": "CUH3_HWMode",
           "fileName": "CUH3_HWMode",
@@ -836,12 +830,6 @@
           "id": "bv,10195",
           "name": "CUH3_FreezeMode",
           "fileName": "CUH3_FreezeMode",
-          "lastUpdate": "2024-07-02T14:38:23.443Z"
-        },
-        {
-          "id": "bv,10202",
-          "name": "CUH4_RunStatusInt",
-          "fileName": "CUH4_RunStatusInt",
           "lastUpdate": "2024-07-02T14:38:23.443Z"
         },
         {
@@ -1193,12 +1181,6 @@
           "lastUpdate": "2024-07-02T14:38:23.443Z"
         },
         {
-          "id": "pg,10",
-          "name": "CUH4_DAT_PG",
-          "fileName": "CUH4_DAT_PG",
-          "lastUpdate": "2024-07-02T14:38:23.443Z"
-        },
-        {
           "id": "pg,11",
           "name": "CUH4_Fan_PG",
           "fileName": "CUH4_Fan_PG",
@@ -1269,6 +1251,30 @@
           "name": "CUH4_Critical_PG",
           "fileName": "CUH4_Critical_PG",
           "lastUpdate": "2024-07-02T14:41:05.319Z"
+        },
+        {
+          "id": "av,10000",
+          "name": "CUH4_Zone_RemSp",
+          "fileName": "CUH4_Zone_RemSp",
+          "lastUpdate": "2024-07-02T14:44:15.961Z"
+        },
+        {
+          "id": "ai,1",
+          "name": "CUH3_ZoneTemp",
+          "fileName": "CUH3_ZoneTemp",
+          "lastUpdate": "2024-07-02T14:57:57.604Z"
+        },
+        {
+          "id": "ai,2",
+          "name": "CUH4_ZoneTemp",
+          "fileName": "CUH4_ZoneTemp",
+          "lastUpdate": "2024-07-02T14:58:08.159Z"
+        },
+        {
+          "id": "aic,4",
+          "name": "Temperature DegF 10k Thermistor AIC",
+          "fileName": "Temperature DegF 10k Thermistor AIC",
+          "lastUpdate": "2024-07-02T15:02:14.169Z"
         }
       ]
     }
