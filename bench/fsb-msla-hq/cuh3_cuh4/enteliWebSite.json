@@ -1253,16 +1253,16 @@
           "lastUpdate": "2024-07-02T14:57:57.604Z"
         },
         {
-          "id": "ai,2",
-          "name": "CUH4_ZoneTemp",
-          "fileName": "CUH4_ZoneTemp",
-          "lastUpdate": "2024-07-02T14:58:08.159Z"
-        },
-        {
           "id": "aic,4",
           "name": "Temperature DegF 10k Thermistor AIC",
           "fileName": "Temperature DegF 10k Thermistor AIC",
           "lastUpdate": "2024-07-02T15:02:14.169Z"
+        },
+        {
+          "id": "ai,2",
+          "name": "CUH4_ZoneTemp",
+          "fileName": "CUH4_ZoneTemp",
+          "lastUpdate": "2024-07-02T15:13:02.603Z"
         }
       ]
     }

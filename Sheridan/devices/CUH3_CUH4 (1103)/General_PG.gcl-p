@@ -1,0 +1,60 @@
+//power up defaults
+IfOnce PowerUp Then
+    'CUH3_OccMode' = 3
+    'CUH3_Zone_RemSp' = - 1
+    'CUH3_RemZoneClg' = - 1
+    'CUH3_RemZoneHtg' = - 1
+    'CUH3_DAT_RemSp' = - 1
+    'CUH3_Rem_Schedule' = On
+    'CUH3_Rem_WarmupCall' = Off
+    'CUH3_Rem_PurgeCall' = Off
+
+    'CUH4_OccMode' = 3
+    'CUH4_Zone_RemSp' = - 1
+    'CUH4_RemZoneClg' = - 1
+    'CUH4_RemZoneHtg' = - 1
+    'CUH4_DAT_RemSp' = - 1
+    'CUH4_Rem_Schedule' = On
+    'CUH4_Rem_WarmupCall' = Off
+    'CUH4_Rem_PurgeCall' = Off
+
+    'Eff_OAT' = 32
+    'Uptime' = 0
+End If
+
+//uptime
+DoEvery 1M
+    'Uptime' = 'Uptime' + 1
+End Do
+
+//Intercontroller Links
+'Eff_OAT' = '1100.Eff_OAT'
+
+//Link Zone Temp here
+'CUH3_Eff_ZoneTemp' = 'CUH3_ZoneTemp'
+'CUH4_Eff_ZoneTemp' = 'CUH4_RoomTemp'
+
+// Room Variance
+'CUH3_ZoneVariance' = 'CUH3_Eff_ZoneTemp' - 'CUH3_Zone_EffSp'
+'CUH4_ZoneVariance' = 'CUH4_Eff_ZoneTemp' - 'CUH4_Zone_EffSp'
+
+//Controller will save to flash every 24 hours.  Below code initiates save
+//based on controller address so saves are staggered rather than all at once.  
+ Variable T //Time
+ Variable A1 //Address 1 to 59
+ Variable A2 //Address 60 to 99
+
+ T = Time
+ A1 = 'CUH3_CUH4.DIP_Setting'
+
+ If A1 > 59 Then
+   A2 = (A1 - 59) + 99
+  Else
+   A2 = A1
+ End If
+
+ IfOnce T = A2 And (Weekday = 3) Then
+  SaveToFlash
+ End If
+
+ //end of general page

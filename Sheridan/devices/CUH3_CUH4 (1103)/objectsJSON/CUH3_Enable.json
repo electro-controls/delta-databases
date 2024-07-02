@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-08-09T07:26:16.600000-06:00"
+    "value": "2000-10-26T03:38:32.000000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "532"
+    "value": "915"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-08-09T07:26:16.600000-06:00"
+      "value": "2000-10-25T14:38:32.60"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-08-09T07:16:16.40"
+      "value": "2000-10-26T03:38:32.000000-06:00"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "5"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -140,7 +140,10 @@
       }
     },
     "5": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "6": {
       "$base": "Choice",
@@ -293,11 +296,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-08-09T11:36:52.60"
+      "value": "2000-10-26T07:06:15.30"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-08-09T08:20:39.30"
+      "value": "2000-08-12T11:23:27.60"
     },
     "6": {
       "$base": "DateTime",
@@ -317,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-08-09T11:36:50.80"
+      "value": "2000-10-26T07:06:16.20"
     },
     "11": {
       "$base": "DateTime",
@@ -341,7 +344,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-08-09T11:36:50.30"
+      "value": "2000-10-26T07:06:08.90"
     },
     "$base": "Array"
   },
@@ -351,11 +354,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "10"
   },
   "module-type": {
     "$base": "Enumerated",
@@ -403,7 +406,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "Active"
   },
   "time-delay": {
     "$base": "Unsigned",

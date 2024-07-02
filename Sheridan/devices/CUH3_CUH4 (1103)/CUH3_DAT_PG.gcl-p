@@ -1,0 +1,26 @@
+//DAT page
+
+//allow remote override of sp
+If ('CUH3_DAT_RemSp' > 0) Then
+    'CUH3_DAT_EffSp' = 'CUH3_DAT_RemSp'
+  Else
+    'CUH3_DAT_EffSp' = 'CUH3_DAT_LocSp'
+End If
+
+
+//determine local sp
+If ('CUH3_ControlMode' = 1) Then //heating
+    'CUH3_DAT_LocSp' = Scale ('CUH3_EffZoneHtg', 0, 0, 'CUH3_ZoneHeat_EffSp', 75, 'CUH3_DATResetHigh_Sp')
+  Else //cooling or deadband
+    'CUH3_DAT_LocSp' = Scale ('CUH3_EffZoneClg', 0, 0, 'CUH3_ZoneHeat_EffSp' - 0, 75, 'CUH3_DATResetLow_Sp')
+End If
+
+IfOnce ('CUH3_PrevControlMode' = 2) And ('CUH3_ControlMode' = 3) Then //prev cooling and now deadband
+    'CUH3_DATHtg_CO.Bias' = 1
+End If
+
+IfOnce ('CUH3_ControlMode' = 2) Then //cooling
+    'CUH3_DATClg_CO.Bias' = 1
+End If
+
+//end of DAT page
