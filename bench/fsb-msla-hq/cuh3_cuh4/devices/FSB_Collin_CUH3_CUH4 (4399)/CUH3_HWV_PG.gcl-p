@@ -1,31 +1,25 @@
-  //control valve sequence
+//occ mode page
 
-If 'CUH3_PurgeHold' Then
-    'CUH3_HWMode' = Off
-  ElseIf  ('CUH3_ControlMode' = 2) Then //cooling
-    'CUH3_HWMode' = Off
-  ElseIf  ('CUH3_ControlMode' = 3) And ('CUH3_PrevControlMode' = 2) Then //deadband and previous cooling
-    'CUH3_HWMode' = Off
+If 'CUH4_DNSAlgMode' = 1 And 'CUH4_Rem_Schedule' Then
+    'CUH4_OccMode' = 3 //Occupied
+  ElseIf  'CUH4_BypassCall' Then
+    'CUH4_OccMode' = 4 //Bypass
+  ElseIf  'CUH4_Rem_PurgeCall' Then
+    'CUH4_OccMode' = 6 //Purge
+  ElseIf  'CUH4_Rem_WarmupCall' Then
+    'CUH4_OccMode' = 5 //Warmup
+  ElseIf  'CUH4_DNSAlgMode' = 0 And (Not 'CUH4_Rem_Schedule') Then
+    'CUH4_OccMode' = 1 //Unocc
   Else
-    'CUH3_HWMode' = On
+    'CUH4_OccMode' = 2 //Standby
 End If
 
-If ('CUH3_OccMode' = 6) Then //Purge
-    'CUH3_PurgeHold' = On
+IfOnce 'CUH4_Rem_Schedule' Then
+    'CUH4_DNSAlgMode' = 1
 End If
 
-If ('CUH3_OccMode' <> 6) OnFor 'CUH3_PurgeHoldDly_Sp':H Then
-    'CUH3_PurgeHold' = Off
+IfOnce (Not 'CUH4_Rem_Schedule') And (Not 'CUH4_BypassCall') Then
+    'CUH4_DNSAlgMode' = 0
 End If
 
-
-//HWV                  
-If 'CUH3_RunStatusInt' And 'CUH3_HWMode' Then
-    'CUH3_HWV' = 'CUH3_DATHtg_CO' * 'CUH3_HtgRamp' * 0.01 //DAT control when fan is running
-  ElseIf  'CUH3_HWMode' Then
-    'CUH3_HWV' = 'CUH3_EffZoneHtg' * 'CUH3_HtgRamp' * 0.01 //treat as fanless convector when fan switch is off
-  Else
-    'CUH3_HWV' = 0
-End If
-
-//end of HWV  page
+//end of occmode pg

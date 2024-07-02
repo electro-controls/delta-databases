@@ -19,7 +19,7 @@ If ('CUH4_OccMode' <> 6) OnFor 'CUH4_PurgeHoldDly_Sp':H Then
 End If
 
 
-//HWV                  
+//HWV
 If 'CUH4_RunStatusInt' And 'CUH4_HWMode' Then
     'CUH4_HWV' = 'CUH4_DATHtg_CO' * 'CUH4_HtgRamp' * 0.01 //DAT control when fan is running
   ElseIf  'CUH4_HWMode' Then

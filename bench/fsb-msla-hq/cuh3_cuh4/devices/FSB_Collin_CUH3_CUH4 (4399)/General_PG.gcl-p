@@ -32,14 +32,14 @@ End Do
 
 //Link Zone Temp here
 'CUH3_Eff_ZoneTemp' = 'CUH3_RoomTemp'
-'CUH4_Eff_ZoneTemp' = 'CUH4_RoomTemp'
+'CUH4_Eff_ZoneTemp' = 'AI6'
 
 // Room Variance
 'CUH3_ZoneVariance' = 'CUH3_Eff_ZoneTemp' - 'CUH3_Zone_EffSp'
 'CUH4_ZoneVariance' = 'CUH4_Eff_ZoneTemp' - 'CUH4_Zone_EffSp'
 
 //Controller will save to flash every 24 hours.  Below code initiates save
-//based on controller address so saves are staggered rather than all at once.  
+//based on controller address so saves are staggered rather than all at once.
  Variable T //Time
  Variable A1 //Address 1 to 59
  Variable A2 //Address 60 to 99
