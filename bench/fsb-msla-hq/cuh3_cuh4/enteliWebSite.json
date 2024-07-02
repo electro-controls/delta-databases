@@ -128,39 +128,9 @@
       "number": 4399,
       "objects": [
         {
-          "id": "ai,1",
-          "name": "CUH3_Current",
-          "fileName": "CUH3_Current",
-          "lastUpdate": "2024-07-01T22:14:53.594Z"
-        },
-        {
-          "id": "ai,2",
-          "name": "CUH3_DAT",
-          "fileName": "CUH3_DAT",
-          "lastUpdate": "2024-07-01T22:14:53.594Z"
-        },
-        {
-          "id": "ai,3",
-          "name": "CUH4_Current",
-          "fileName": "CUH4_Current",
-          "lastUpdate": "2024-07-01T22:14:53.594Z"
-        },
-        {
           "id": "ai,4",
           "name": "CUH4_DAT",
           "fileName": "CUH4_DAT",
-          "lastUpdate": "2024-07-01T22:14:53.594Z"
-        },
-        {
-          "id": "ai,6",
-          "name": "CUH4_RoomTemp",
-          "fileName": "CUH4_RoomTemp",
-          "lastUpdate": "2024-07-01T22:14:53.594Z"
-        },
-        {
-          "id": "ai,101",
-          "name": "CUH3_ZoneTemp",
-          "fileName": "CUH3_ZoneTemp",
           "lastUpdate": "2024-07-01T22:14:53.594Z"
         },
         {
