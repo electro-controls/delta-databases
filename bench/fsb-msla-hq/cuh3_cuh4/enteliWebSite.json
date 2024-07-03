@@ -136,6 +136,21 @@
       },
       "date": "7/2/2024, 8:34:04 AM",
       "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,9",
+      "objectName": "CUH3_Critical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cuh3_cuh4/devices/FSB_Collin_CUH3_CUH4 (4399)/CUH3_Critical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 11:17:28 AM",
+      "templateTriggered": false
     }
   ],
   "devices": [
@@ -1257,6 +1272,36 @@
           "name": "CUH4_ZoneTemp",
           "fileName": "CUH4_ZoneTemp",
           "lastUpdate": "2024-07-02T15:13:02.603Z"
+        },
+        {
+          "id": "bo,3",
+          "name": "EF1_StartStop",
+          "fileName": "EF1_StartStop",
+          "lastUpdate": "2024-07-02T17:21:29.279Z"
+        },
+        {
+          "id": "ai,3",
+          "name": "EF1_Status",
+          "fileName": "EF1_Status",
+          "lastUpdate": "2024-07-03T17:05:45.672Z"
+        },
+        {
+          "id": "aic,5",
+          "name": "4-20mA_Gallons_Per_Minute",
+          "fileName": "4-20mA_Gallons_Per_Minute",
+          "lastUpdate": "2024-07-03T17:17:19.106Z"
+        },
+        {
+          "id": "ai,4",
+          "name": "DCW_Flow",
+          "fileName": "DCW_Flow",
+          "lastUpdate": "2024-07-03T17:19:58.805Z"
+        },
+        {
+          "id": "ai,5",
+          "name": "Irrigation_Flow",
+          "fileName": "Irrigation_Flow",
+          "lastUpdate": "2024-07-03T17:20:07.975Z"
         }
       ]
     }
