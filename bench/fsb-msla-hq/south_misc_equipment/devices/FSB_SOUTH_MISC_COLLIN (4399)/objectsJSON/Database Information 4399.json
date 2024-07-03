@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "Incomplete 50 00 e9 18 41 94 a0 08 20 01 91 00 b0 86"
+    "value": "Incomplete c0 09 e3 da c5 d4 a2 08 21 53 90 41 90 86"
   },
   "present-value": {
     "$base": "Boolean",
@@ -26,206 +26,858 @@
   },
   "free-memory": {
     "$base": "Unsigned",
-    "value": "123852"
+    "value": "86876"
   },
   "object-count": {
     "$base": "Unsigned",
-    "value": "49"
+    "value": "212"
   },
   "object-list": {
     "1": {
       "$base": "ObjectIdentifier",
-      "value": "device,4399"
+      "value": "analog-input,1"
     },
     "2": {
       "$base": "ObjectIdentifier",
-      "value": "file,1"
+      "value": "analog-input,2"
     },
     "3": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,1"
+      "value": "analog-output,3"
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,2"
+      "value": "analog-output,4"
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,3"
+      "value": "analog-value,91"
     },
     "6": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,4"
+      "value": "analog-value,98"
     },
     "7": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,5"
+      "value": "analog-value,10101"
     },
     "8": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,6"
+      "value": "analog-value,10102"
     },
     "9": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,7"
+      "value": "analog-value,10103"
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,8"
+      "value": "analog-value,10104"
     },
     "11": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,9"
+      "value": "analog-value,10105"
     },
     "12": {
       "$base": "ObjectIdentifier",
-      "value": "des,1"
+      "value": "analog-value,10106"
     },
     "13": {
       "$base": "ObjectIdentifier",
-      "value": "dbi,4399"
+      "value": "analog-value,10107"
     },
     "14": {
       "$base": "ObjectIdentifier",
-      "value": "sua,1"
+      "value": "analog-value,10108"
     },
     "15": {
       "$base": "ObjectIdentifier",
-      "value": "net,1"
+      "value": "analog-value,10109"
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "value": "evn,1"
+      "value": "analog-value,10110"
     },
     "17": {
       "$base": "ObjectIdentifier",
-      "value": "evn,2"
+      "value": "analog-value,10111"
     },
     "18": {
       "$base": "ObjectIdentifier",
-      "value": "evn,3"
+      "value": "analog-value,10112"
     },
     "19": {
       "$base": "ObjectIdentifier",
-      "value": "evn,4"
+      "value": "analog-value,10113"
     },
     "20": {
       "$base": "ObjectIdentifier",
-      "value": "evn,5"
+      "value": "analog-value,10114"
     },
     "21": {
       "$base": "ObjectIdentifier",
-      "value": "evn,6"
+      "value": "analog-value,10115"
     },
     "22": {
       "$base": "ObjectIdentifier",
-      "value": "evn,7"
+      "value": "analog-value,10117"
     },
     "23": {
       "$base": "ObjectIdentifier",
-      "value": "evn,8"
+      "value": "analog-value,10118"
     },
     "24": {
       "$base": "ObjectIdentifier",
-      "value": "evn,9"
+      "value": "analog-value,10119"
     },
     "25": {
       "$base": "ObjectIdentifier",
-      "value": "evn,10"
+      "value": "analog-value,10120"
     },
     "26": {
       "$base": "ObjectIdentifier",
-      "value": "eva,1"
+      "value": "analog-value,10121"
     },
     "27": {
       "$base": "ObjectIdentifier",
-      "value": "eva,2"
+      "value": "analog-value,10122"
     },
     "28": {
       "$base": "ObjectIdentifier",
-      "value": "eva,3"
+      "value": "analog-value,10130"
     },
     "29": {
       "$base": "ObjectIdentifier",
-      "value": "eva,4"
+      "value": "analog-value,10131"
     },
     "30": {
       "$base": "ObjectIdentifier",
-      "value": "eva,5"
+      "value": "analog-value,10132"
     },
     "31": {
       "$base": "ObjectIdentifier",
-      "value": "eva,6"
+      "value": "analog-value,10133"
     },
     "32": {
       "$base": "ObjectIdentifier",
-      "value": "eva,7"
+      "value": "analog-value,10134"
     },
     "33": {
       "$base": "ObjectIdentifier",
-      "value": "eva,8"
+      "value": "analog-value,10135"
     },
     "34": {
       "$base": "ObjectIdentifier",
-      "value": "eva,9"
+      "value": "analog-value,10136"
     },
     "35": {
       "$base": "ObjectIdentifier",
-      "value": "eva,10"
+      "value": "analog-value,10137"
     },
     "36": {
       "$base": "ObjectIdentifier",
-      "value": "eva,11"
+      "value": "analog-value,10138"
     },
     "37": {
       "$base": "ObjectIdentifier",
-      "value": "eva,12"
+      "value": "analog-value,10139"
     },
     "38": {
       "$base": "ObjectIdentifier",
-      "value": "eva,13"
+      "value": "analog-value,10143"
     },
     "39": {
       "$base": "ObjectIdentifier",
-      "value": "eva,14"
+      "value": "analog-value,10144"
     },
     "40": {
       "$base": "ObjectIdentifier",
-      "value": "eva,15"
+      "value": "analog-value,10160"
     },
     "41": {
       "$base": "ObjectIdentifier",
-      "value": "eva,16"
+      "value": "analog-value,10161"
     },
     "42": {
       "$base": "ObjectIdentifier",
-      "value": "eva,17"
+      "value": "analog-value,10163"
     },
     "43": {
       "$base": "ObjectIdentifier",
-      "value": "eva,18"
+      "value": "analog-value,10164"
     },
     "44": {
       "$base": "ObjectIdentifier",
-      "value": "eva,19"
+      "value": "analog-value,10190"
     },
     "45": {
       "$base": "ObjectIdentifier",
-      "value": "eva,20"
+      "value": "analog-value,10201"
     },
     "46": {
       "$base": "ObjectIdentifier",
-      "value": "evs,1"
+      "value": "analog-value,10202"
     },
     "47": {
       "$base": "ObjectIdentifier",
-      "value": "pan,1"
+      "value": "analog-value,10203"
     },
     "48": {
       "$base": "ObjectIdentifier",
-      "value": "sdl,1"
+      "value": "analog-value,10204"
     },
     "49": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10205"
+    },
+    "50": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10206"
+    },
+    "51": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10207"
+    },
+    "52": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10208"
+    },
+    "53": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10209"
+    },
+    "54": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10210"
+    },
+    "55": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10211"
+    },
+    "56": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10212"
+    },
+    "57": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10213"
+    },
+    "58": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10214"
+    },
+    "59": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10215"
+    },
+    "60": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10217"
+    },
+    "61": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10218"
+    },
+    "62": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10219"
+    },
+    "63": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10220"
+    },
+    "64": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10221"
+    },
+    "65": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10222"
+    },
+    "66": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10230"
+    },
+    "67": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10231"
+    },
+    "68": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10232"
+    },
+    "69": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10233"
+    },
+    "70": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10234"
+    },
+    "71": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10235"
+    },
+    "72": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,10290"
+    },
+    "73": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,11051"
+    },
+    "74": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-output,1"
+    },
+    "75": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-output,2"
+    },
+    "76": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10102"
+    },
+    "77": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10105"
+    },
+    "78": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10106"
+    },
+    "79": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10107"
+    },
+    "80": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10108"
+    },
+    "81": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10111"
+    },
+    "82": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10121"
+    },
+    "83": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10122"
+    },
+    "84": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10123"
+    },
+    "85": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10124"
+    },
+    "86": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10125"
+    },
+    "87": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10127"
+    },
+    "88": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10128"
+    },
+    "89": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10129"
+    },
+    "90": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10131"
+    },
+    "91": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10132"
+    },
+    "92": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10133"
+    },
+    "93": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10134"
+    },
+    "94": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10135"
+    },
+    "95": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10136"
+    },
+    "96": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10137"
+    },
+    "97": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10138"
+    },
+    "98": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10139"
+    },
+    "99": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10148"
+    },
+    "100": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10190"
+    },
+    "101": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10191"
+    },
+    "102": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,10195"
+    },
+    "103": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-value,11022"
+    },
+    "104": {
+      "$base": "ObjectIdentifier",
+      "value": "device,4399"
+    },
+    "105": {
+      "$base": "ObjectIdentifier",
+      "value": "file,1"
+    },
+    "106": {
+      "$base": "ObjectIdentifier",
+      "value": "loop,10101"
+    },
+    "107": {
+      "$base": "ObjectIdentifier",
+      "value": "loop,10102"
+    },
+    "108": {
+      "$base": "ObjectIdentifier",
+      "value": "loop,10103"
+    },
+    "109": {
+      "$base": "ObjectIdentifier",
+      "value": "loop,10104"
+    },
+    "110": {
+      "$base": "ObjectIdentifier",
+      "value": "loop,10201"
+    },
+    "111": {
+      "$base": "ObjectIdentifier",
+      "value": "loop,10202"
+    },
+    "112": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,1"
+    },
+    "113": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,2"
+    },
+    "114": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,3"
+    },
+    "115": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,4"
+    },
+    "116": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,5"
+    },
+    "117": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,6"
+    },
+    "118": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,7"
+    },
+    "119": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,8"
+    },
+    "120": {
+      "$base": "ObjectIdentifier",
+      "value": "notification-class,9"
+    },
+    "121": {
+      "$base": "ObjectIdentifier",
+      "value": "program,1"
+    },
+    "122": {
+      "$base": "ObjectIdentifier",
+      "value": "program,2"
+    },
+    "123": {
+      "$base": "ObjectIdentifier",
+      "value": "program,3"
+    },
+    "124": {
+      "$base": "ObjectIdentifier",
+      "value": "program,4"
+    },
+    "125": {
+      "$base": "ObjectIdentifier",
+      "value": "program,5"
+    },
+    "126": {
+      "$base": "ObjectIdentifier",
+      "value": "program,7"
+    },
+    "127": {
+      "$base": "ObjectIdentifier",
+      "value": "program,8"
+    },
+    "128": {
+      "$base": "ObjectIdentifier",
+      "value": "program,9"
+    },
+    "129": {
+      "$base": "ObjectIdentifier",
+      "value": "program,10"
+    },
+    "130": {
+      "$base": "ObjectIdentifier",
+      "value": "program,11"
+    },
+    "131": {
+      "$base": "ObjectIdentifier",
+      "value": "program,12"
+    },
+    "132": {
+      "$base": "ObjectIdentifier",
+      "value": "program,13"
+    },
+    "133": {
+      "$base": "ObjectIdentifier",
+      "value": "multi-state-value,98"
+    },
+    "134": {
+      "$base": "ObjectIdentifier",
+      "value": "multi-state-value,10101"
+    },
+    "135": {
+      "$base": "ObjectIdentifier",
+      "value": "multi-state-value,10103"
+    },
+    "136": {
+      "$base": "ObjectIdentifier",
+      "value": "multi-state-value,10104"
+    },
+    "137": {
+      "$base": "ObjectIdentifier",
+      "value": "multi-state-value,10113"
+    },
+    "138": {
+      "$base": "ObjectIdentifier",
+      "value": "multi-state-value,10190"
+    },
+    "139": {
+      "$base": "ObjectIdentifier",
+      "value": "multi-state-value,10201"
+    },
+    "140": {
+      "$base": "ObjectIdentifier",
+      "value": "multi-state-value,10204"
+    },
+    "141": {
+      "$base": "ObjectIdentifier",
+      "value": "des,1"
+    },
+    "142": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,1"
+    },
+    "143": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,2"
+    },
+    "144": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,3"
+    },
+    "145": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,4"
+    },
+    "146": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,7"
+    },
+    "147": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,13"
+    },
+    "148": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,30"
+    },
+    "149": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,33"
+    },
+    "150": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,34"
+    },
+    "151": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,35"
+    },
+    "152": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,36"
+    },
+    "153": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,38"
+    },
+    "154": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,39"
+    },
+    "155": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,40"
+    },
+    "156": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,41"
+    },
+    "157": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,42"
+    },
+    "158": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,43"
+    },
+    "159": {
+      "$base": "ObjectIdentifier",
+      "value": "aic,45"
+    },
+    "160": {
+      "$base": "ObjectIdentifier",
+      "value": "aoc,1"
+    },
+    "161": {
+      "$base": "ObjectIdentifier",
+      "value": "aoc,2"
+    },
+    "162": {
+      "$base": "ObjectIdentifier",
+      "value": "aoc,4"
+    },
+    "163": {
+      "$base": "ObjectIdentifier",
+      "value": "aoc,7"
+    },
+    "164": {
+      "$base": "ObjectIdentifier",
+      "value": "bdc,1"
+    },
+    "165": {
+      "$base": "ObjectIdentifier",
+      "value": "bdc,5"
+    },
+    "166": {
+      "$base": "ObjectIdentifier",
+      "value": "bdc,7"
+    },
+    "167": {
+      "$base": "ObjectIdentifier",
+      "value": "bdc,11"
+    },
+    "168": {
+      "$base": "ObjectIdentifier",
+      "value": "bdc,12"
+    },
+    "169": {
+      "$base": "ObjectIdentifier",
+      "value": "dbi,4399"
+    },
+    "170": {
+      "$base": "ObjectIdentifier",
+      "value": "mic,1"
+    },
+    "171": {
+      "$base": "ObjectIdentifier",
+      "value": "mic,3"
+    },
+    "172": {
+      "$base": "ObjectIdentifier",
+      "value": "mic,4"
+    },
+    "173": {
+      "$base": "ObjectIdentifier",
+      "value": "mic,5"
+    },
+    "174": {
+      "$base": "ObjectIdentifier",
+      "value": "mic,6"
+    },
+    "175": {
+      "$base": "ObjectIdentifier",
+      "value": "mic,19"
+    },
+    "176": {
+      "$base": "ObjectIdentifier",
+      "value": "mic,80"
+    },
+    "177": {
+      "$base": "ObjectIdentifier",
+      "value": "sua,1"
+    },
+    "178": {
+      "$base": "ObjectIdentifier",
+      "value": "net,1"
+    },
+    "179": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,1"
+    },
+    "180": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,2"
+    },
+    "181": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,3"
+    },
+    "182": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,4"
+    },
+    "183": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,5"
+    },
+    "184": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,6"
+    },
+    "185": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,7"
+    },
+    "186": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,8"
+    },
+    "187": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,9"
+    },
+    "188": {
+      "$base": "ObjectIdentifier",
+      "value": "evn,10"
+    },
+    "189": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,1"
+    },
+    "190": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,2"
+    },
+    "191": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,3"
+    },
+    "192": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,4"
+    },
+    "193": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,5"
+    },
+    "194": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,6"
+    },
+    "195": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,7"
+    },
+    "196": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,8"
+    },
+    "197": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,9"
+    },
+    "198": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,10"
+    },
+    "199": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,11"
+    },
+    "200": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,12"
+    },
+    "201": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,13"
+    },
+    "202": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,14"
+    },
+    "203": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,15"
+    },
+    "204": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,16"
+    },
+    "205": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,17"
+    },
+    "206": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,18"
+    },
+    "207": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,19"
+    },
+    "208": {
+      "$base": "ObjectIdentifier",
+      "value": "eva,20"
+    },
+    "209": {
+      "$base": "ObjectIdentifier",
+      "value": "evs,1"
+    },
+    "210": {
+      "$base": "ObjectIdentifier",
+      "value": "pan,1"
+    },
+    "211": {
+      "$base": "ObjectIdentifier",
+      "value": "sdl,1"
+    },
+    "212": {
       "$base": "ObjectIdentifier",
       "value": "sug,1"
     },
@@ -237,7 +889,7 @@
   },
   "time-of-last-chg": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:34:09.600000-07:00"
+    "value": "2000-01-02T10:49:56.900000-07:00"
   },
   "src-user-of-last-chg": {
     "$base": "Sequence",
@@ -262,7 +914,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "2178"
   },
   "total-graphic-memory": {
     "$base": "Choice",

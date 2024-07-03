@@ -5,16 +5,31 @@
     {
       "action": "create",
       "device": 4399,
+      "objectId": "aoc,4",
+      "objectName": "UH2_VSD 0-10V 0-100 % AOC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_VSD 0-10V 0-100 % AOC.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:22:55 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
       "objectId": "av,10201",
       "objectName": "UH2_Zone_EffSp",
       "siteName": "Bench",
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_Zone_EffSp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_Zone_EffSp.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:44 PM",
+      "date": "7/3/2024, 3:22:55 PM",
       "templateTriggered": false
     },
     {
@@ -26,10 +41,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_Zone_LocSp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_Zone_LocSp.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:44 PM",
+      "date": "7/3/2024, 3:22:55 PM",
       "templateTriggered": false
     },
     {
@@ -41,10 +56,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_Zone_RemSp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_Zone_RemSp.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:44 PM",
+      "date": "7/3/2024, 3:22:55 PM",
       "templateTriggered": false
     },
     {
@@ -56,10 +71,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_Zone_SchedueFunction.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_Zone_SchedueFunction.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:55 PM",
       "templateTriggered": false
     },
     {
@@ -71,10 +86,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneAlgMode.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneAlgMode.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:55 PM",
       "templateTriggered": false
     },
     {
@@ -86,10 +101,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneClDemand.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneClDemand.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:55 PM",
       "templateTriggered": false
     },
     {
@@ -101,10 +116,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneClg_CO.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneClg_CO.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:55 PM",
       "templateTriggered": false
     },
     {
@@ -116,10 +131,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneClRamp_Sp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneClRamp_Sp.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:55 PM",
       "templateTriggered": false
     },
     {
@@ -131,10 +146,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneCool_EffSp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneCool_EffSp.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:55 PM",
       "templateTriggered": false
     },
     {
@@ -146,10 +161,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneDb_Sp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneDb_Sp.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:56 PM",
       "templateTriggered": false
     },
     {
@@ -161,10 +176,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneDbDelay_Sp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneDbDelay_Sp.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:56 PM",
       "templateTriggered": false
     },
     {
@@ -176,10 +191,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneHeat_EffSp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneHeat_EffSp.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:56 PM",
       "templateTriggered": false
     },
     {
@@ -191,10 +206,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneHtDemand.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneHtDemand.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:56 PM",
       "templateTriggered": false
     },
     {
@@ -206,10 +221,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneHtg_CO.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneHtg_CO.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:56 PM",
       "templateTriggered": false
     },
     {
@@ -221,10 +236,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneHtRamp_Sp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneHtRamp_Sp.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:56 PM",
       "templateTriggered": false
     },
     {
@@ -236,10 +251,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneTemp.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneTemp.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:56 PM",
       "templateTriggered": false
     },
     {
@@ -251,10 +266,235 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/UH2_ZoneVariance.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH2_ZoneVariance.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:22:56 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,1",
+      "objectName": "UH1_Zone_RemSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_Zone_RemSp.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,1",
+      "objectName": "UH1_Zone_SchedueFunction",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_Zone_SchedueFunction.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,2",
+      "objectName": "UH1_ZoneAlgMode",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneAlgMode.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,2",
+      "objectName": "UH1_ZoneClDemand",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneClDemand.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "co,1",
+      "objectName": "UH1_ZoneClg_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneClg_CO.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,3",
+      "objectName": "UH1_ZoneClRamp_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneClRamp_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,4",
+      "objectName": "UH1_ZoneCool_EffSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneCool_EffSp.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,5",
+      "objectName": "UH1_ZoneDb_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneDb_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,6",
+      "objectName": "UH1_ZoneDbDelay_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneDbDelay_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,7",
+      "objectName": "UH1_ZoneHeat_EffSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneHeat_EffSp.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,3",
+      "objectName": "UH1_ZoneHtDemand",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneHtDemand.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "co,2",
+      "objectName": "UH1_ZoneHtg_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneHtg_CO.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,8",
+      "objectName": "UH1_ZoneHtRamp_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneHtRamp_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "ai,2",
+      "objectName": "UH1_ZoneTemp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneTemp.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,9",
+      "objectName": "UH1_ZoneVariance",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/UH1_ZoneVariance.json",
+        "scheme": "file"
+      },
+      "date": "7/3/2024, 3:24:20 PM",
       "templateTriggered": false
     },
     {
@@ -266,10 +506,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/Uptime.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/Uptime.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:24:20 PM",
       "templateTriggered": false
     },
     {
@@ -281,10 +521,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/VOC_0_10_0_2000.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/VOC_0_10_0_2000.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:24:20 PM",
       "templateTriggered": false
     },
     {
@@ -296,10 +536,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/WirelessSp_AIC.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/WirelessSp_AIC.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:24:20 PM",
       "templateTriggered": false
     },
     {
@@ -311,10 +551,10 @@
       "ipAddress": "http://localhost",
       "uri": {
         "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_Collin_CUH3_CUH4 (4399)/objectsJSON/Access Control Alarm.json",
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/objectsJSON/Access Control Alarm.json",
         "scheme": "file"
       },
-      "date": "7/3/2024, 2:51:45 PM",
+      "date": "7/3/2024, 3:24:20 PM",
       "templateTriggered": false
     }
   ],
@@ -493,7 +733,7 @@
           "id": "evc,8",
           "name": "Access Control Alarm",
           "fileName": "Access Control Alarm",
-          "lastUpdate": "2024-07-03T21:20:29.744Z"
+          "lastUpdate": "2024-07-03T21:24:20.903Z"
         },
         {
           "id": "evc,9",
@@ -542,6 +782,222 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-07-03T21:20:29.744Z"
+        },
+        {
+          "id": "aoc,4",
+          "name": "UH2_VSD 0-10V 0-100 % AOC",
+          "fileName": "UH2_VSD 0-10V 0-100 % AOC",
+          "lastUpdate": "2024-07-03T21:22:55.607Z"
+        },
+        {
+          "id": "av,10201",
+          "name": "UH2_Zone_EffSp",
+          "fileName": "UH2_Zone_EffSp",
+          "lastUpdate": "2024-07-03T21:22:55.618Z"
+        },
+        {
+          "id": "av,10202",
+          "name": "UH2_Zone_LocSp",
+          "fileName": "UH2_Zone_LocSp",
+          "lastUpdate": "2024-07-03T21:22:55.628Z"
+        },
+        {
+          "id": "av,10203",
+          "name": "UH2_Zone_RemSp",
+          "fileName": "UH2_Zone_RemSp",
+          "lastUpdate": "2024-07-03T21:22:55.676Z"
+        },
+        {
+          "id": "bv,11022",
+          "name": "UH2_Zone_SchedueFunction",
+          "fileName": "UH2_Zone_SchedueFunction",
+          "lastUpdate": "2024-07-03T21:22:55.702Z"
+        },
+        {
+          "id": "av,11051",
+          "name": "UH2_ZoneAlgMode",
+          "fileName": "UH2_ZoneAlgMode",
+          "lastUpdate": "2024-07-03T21:22:55.728Z"
+        },
+        {
+          "id": "bv,10137",
+          "name": "UH2_ZoneClDemand",
+          "fileName": "UH2_ZoneClDemand",
+          "lastUpdate": "2024-07-03T21:22:55.739Z"
+        },
+        {
+          "id": "co,10201",
+          "name": "UH2_ZoneClg_CO",
+          "fileName": "UH2_ZoneClg_CO",
+          "lastUpdate": "2024-07-03T21:22:55.755Z"
+        },
+        {
+          "id": "av,10221",
+          "name": "UH2_ZoneClRamp_Sp",
+          "fileName": "UH2_ZoneClRamp_Sp",
+          "lastUpdate": "2024-07-03T21:22:55.832Z"
+        },
+        {
+          "id": "av,10205",
+          "name": "UH2_ZoneCool_EffSp",
+          "fileName": "UH2_ZoneCool_EffSp",
+          "lastUpdate": "2024-07-03T21:22:55.921Z"
+        },
+        {
+          "id": "av,10206",
+          "name": "UH2_ZoneDb_Sp",
+          "fileName": "UH2_ZoneDb_Sp",
+          "lastUpdate": "2024-07-03T21:22:55.966Z"
+        },
+        {
+          "id": "av,10222",
+          "name": "UH2_ZoneDbDelay_Sp",
+          "fileName": "UH2_ZoneDbDelay_Sp",
+          "lastUpdate": "2024-07-03T21:22:56.017Z"
+        },
+        {
+          "id": "av,10204",
+          "name": "UH2_ZoneHeat_EffSp",
+          "fileName": "UH2_ZoneHeat_EffSp",
+          "lastUpdate": "2024-07-03T21:22:56.034Z"
+        },
+        {
+          "id": "bv,10138",
+          "name": "UH2_ZoneHtDemand",
+          "fileName": "UH2_ZoneHtDemand",
+          "lastUpdate": "2024-07-03T21:22:56.053Z"
+        },
+        {
+          "id": "co,10202",
+          "name": "UH2_ZoneHtg_CO",
+          "fileName": "UH2_ZoneHtg_CO",
+          "lastUpdate": "2024-07-03T21:22:56.070Z"
+        },
+        {
+          "id": "av,10220",
+          "name": "UH2_ZoneHtRamp_Sp",
+          "fileName": "UH2_ZoneHtRamp_Sp",
+          "lastUpdate": "2024-07-03T21:22:56.087Z"
+        },
+        {
+          "id": "ai,1",
+          "name": "UH2_ZoneTemp",
+          "fileName": "UH2_ZoneTemp",
+          "lastUpdate": "2024-07-03T21:22:56.102Z"
+        },
+        {
+          "id": "av,10210",
+          "name": "UH2_ZoneVariance",
+          "fileName": "UH2_ZoneVariance",
+          "lastUpdate": "2024-07-03T21:22:56.114Z"
+        },
+        {
+          "id": "av,98",
+          "name": "Uptime",
+          "fileName": "Uptime",
+          "lastUpdate": "2024-07-03T21:24:20.854Z"
+        },
+        {
+          "id": "aic,33",
+          "name": "VOC_0_10_0_2000",
+          "fileName": "VOC_0_10_0_2000",
+          "lastUpdate": "2024-07-03T21:24:20.870Z"
+        },
+        {
+          "id": "aic,45",
+          "name": "WirelessSp_AIC",
+          "fileName": "WirelessSp_AIC",
+          "lastUpdate": "2024-07-03T21:24:20.888Z"
+        },
+        {
+          "id": "av,1",
+          "name": "UH1_Zone_RemSp",
+          "fileName": "UH1_Zone_RemSp",
+          "lastUpdate": "2024-07-03T21:24:20.496Z"
+        },
+        {
+          "id": "bv,1",
+          "name": "UH1_Zone_SchedueFunction",
+          "fileName": "UH1_Zone_SchedueFunction",
+          "lastUpdate": "2024-07-03T21:24:20.508Z"
+        },
+        {
+          "id": "av,2",
+          "name": "UH1_ZoneAlgMode",
+          "fileName": "UH1_ZoneAlgMode",
+          "lastUpdate": "2024-07-03T21:24:20.534Z"
+        },
+        {
+          "id": "bv,2",
+          "name": "UH1_ZoneClDemand",
+          "fileName": "UH1_ZoneClDemand",
+          "lastUpdate": "2024-07-03T21:24:20.550Z"
+        },
+        {
+          "id": "co,1",
+          "name": "UH1_ZoneClg_CO",
+          "fileName": "UH1_ZoneClg_CO",
+          "lastUpdate": "2024-07-03T21:24:20.579Z"
+        },
+        {
+          "id": "av,3",
+          "name": "UH1_ZoneClRamp_Sp",
+          "fileName": "UH1_ZoneClRamp_Sp",
+          "lastUpdate": "2024-07-03T21:24:20.599Z"
+        },
+        {
+          "id": "av,4",
+          "name": "UH1_ZoneCool_EffSp",
+          "fileName": "UH1_ZoneCool_EffSp",
+          "lastUpdate": "2024-07-03T21:24:20.614Z"
+        },
+        {
+          "id": "av,5",
+          "name": "UH1_ZoneDb_Sp",
+          "fileName": "UH1_ZoneDb_Sp",
+          "lastUpdate": "2024-07-03T21:24:20.630Z"
+        },
+        {
+          "id": "av,6",
+          "name": "UH1_ZoneDbDelay_Sp",
+          "fileName": "UH1_ZoneDbDelay_Sp",
+          "lastUpdate": "2024-07-03T21:24:20.651Z"
+        },
+        {
+          "id": "av,7",
+          "name": "UH1_ZoneHeat_EffSp",
+          "fileName": "UH1_ZoneHeat_EffSp",
+          "lastUpdate": "2024-07-03T21:24:20.669Z"
+        },
+        {
+          "id": "bv,3",
+          "name": "UH1_ZoneHtDemand",
+          "fileName": "UH1_ZoneHtDemand",
+          "lastUpdate": "2024-07-03T21:24:20.689Z"
+        },
+        {
+          "id": "co,2",
+          "name": "UH1_ZoneHtg_CO",
+          "fileName": "UH1_ZoneHtg_CO",
+          "lastUpdate": "2024-07-03T21:24:20.749Z"
+        },
+        {
+          "id": "av,8",
+          "name": "UH1_ZoneHtRamp_Sp",
+          "fileName": "UH1_ZoneHtRamp_Sp",
+          "lastUpdate": "2024-07-03T21:24:20.796Z"
+        },
+        {
+          "id": "ai,2",
+          "name": "UH1_ZoneTemp",
+          "fileName": "UH1_ZoneTemp",
+          "lastUpdate": "2024-07-03T21:24:20.824Z"
+        },
+        {
+          "id": "av,9",
+          "name": "UH1_ZoneVariance",
+          "fileName": "UH1_ZoneVariance",
+          "lastUpdate": "2024-07-03T21:24:20.842Z"
         }
       ]
     }
