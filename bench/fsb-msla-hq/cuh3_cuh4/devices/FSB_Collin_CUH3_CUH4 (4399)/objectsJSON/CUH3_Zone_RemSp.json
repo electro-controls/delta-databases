@@ -1,79 +1,80 @@
 {
+  "1025": {
+    "$base": "Choice"
+  },
+  "1033": {
+    "$base": "Choice"
+  },
+  "1035": {
+    "$base": "Choice"
+  },
+  "1037": {
+    "$base": "Choice"
+  },
+  "1044": {
+    "$base": "Choice"
+  },
+  "1047": {
+    "$base": "Choice"
+  },
+  "1049": {
+    "$base": "Choice"
+  },
+  "1050": {
+    "$base": "Choice"
+  },
+  "1066": {
+    "1066": {
+      "$base": "Choice"
+    },
+    "$base": "Choice"
+  },
+  "1067": {
+    "$base": "Choice"
+  },
   "displayName": "CUH3_Zone_RemSp",
-  "object-identifier": {
-    "$base": "ObjectIdentifier",
-    "value": "analog-value,10103"
-  },
-  "object-type": {
-    "$base": "Enumerated",
-    "value": "analog-value"
-  },
-  "object-name": {
-    "$base": "String",
-    "value": "CUH3_Zone_RemSp"
+  "cov-increment": {
+    "$base": "Real",
+    "value": "0.5"
   },
   "description": {
     "$base": "String",
     "value": "This should be set to -1 unless a manual override is taking place."
   },
-  "flags": {
-    "$base": "BitString",
-    "value": ""
-  },
-  "present-value": {
-    "$base": "Real",
-    "value": "-1"
-  },
-  "gcl-value": {
-    "$base": "Real",
-    "value": 0
-  },
-  "status-flags": {
-    "$base": "BitString",
-    "value": ""
-  },
-  "reset": {
-    "$base": "Boolean",
-    "value": 0
-  },
-  "units": {
-    "$base": "Enumerated",
-    "value": "°F"
-  },
   "event-state": {
     "$base": "Enumerated",
     "value": "normal"
   },
-  "reliability": {
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,10103"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "CUH3_Zone_RemSp"
+  },
+  "object-type": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "analog-value"
   },
   "out-of-service": {
     "$base": "Boolean",
     "value": 0
   },
-  "last-writer": {
-    "$base": "ObjectIdentifier",
-    "value": "device,999"
-  },
-  "time-of-last-write": {
-    "$base": "DateTime",
-    "value": "2024-07-02T10:02:16.100000-06:00"
-  },
-  "cov-increment": {
+  "present-value": {
     "$base": "Real",
-    "value": "0.5"
+    "value": "-1"
   },
-  "fixed-point": {
-    "$base": "Boolean",
-    "value": "1"
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
   },
-  "decimal-places": {
-    "$base": "Unsigned",
-    "value": "1"
-  },
-  "hal-flags": {
+  "status-flags": {
     "$base": "BitString",
     "value": ""
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "°F"
   }
 }

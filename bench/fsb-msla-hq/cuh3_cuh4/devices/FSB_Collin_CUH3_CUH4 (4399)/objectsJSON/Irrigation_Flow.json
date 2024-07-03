@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Irrigation_Flow",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "97.7482"
   },
   "last-value": {
     "$base": "Real",
-    "value": 0
+    "value": "97.1853"
   },
   "status-flags": {
     "$base": "BitString",
@@ -39,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "GPM (US)"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -63,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "4-20mA_Gallons_Per_Minute"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "200"
+    "value": "312"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -79,7 +78,7 @@
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.02442"
+    "value": "0.030525"
   },
   "cov-increment": {
     "$base": "Real",
@@ -93,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "15375"
+      "value": "1560545"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "4095"
   },
   "calibration": {
     "$base": "Real",

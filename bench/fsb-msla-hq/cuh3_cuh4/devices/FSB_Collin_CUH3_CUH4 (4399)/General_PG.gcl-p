@@ -41,4 +41,4 @@ End If
 'CUH3_ZoneVariance' = 'CUH3_Eff_ZoneTemp' - 'CUH3_Zone_EffSp'
 'CUH4_ZoneVariance' = 'CUH4_Eff_ZoneTemp' - 'CUH4_Zone_EffSp'
 
- //end of general page 
+ //end of general page
