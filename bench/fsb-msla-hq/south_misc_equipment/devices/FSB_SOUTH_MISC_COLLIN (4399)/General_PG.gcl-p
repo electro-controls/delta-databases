@@ -1,0 +1,43 @@
+If PowerUp Then
+ 'UH1_Zone_RemSp' = - 1
+ 'UH1_RemZoneHtg' = - 1
+ 'UH1_Rem_Schedule' = On
+ 'UH1_PrevControlMode' = 3
+End If
+
+'UH1_Eff_ZoneTemp' = 'UH1_ZoneTemp'
+
+If 'UH1_Rem_Schedule' Then
+   'UH1_OccMode' = 3
+Else
+   'UH1_OccMode' = 1
+End If
+
+// inputs ai 1-10
+CUH2_ZoneTemp = 58
+EF2_Status = 3
+MS3A_ZoneTemp = 58
+MS3A_ZoneTemp = 58
+EH1_ZoneTemp = 58
+EH2_ZoneTemp = 58
+EH1_Status = 3
+EH2_Status = 3
+RH1_TubeHeatStatus = 3
+
+//outputs bo 1, 3, 4
+CUH2_Enable = On
+EH1_Enable = On
+EH2_Enable = On
+
+
+
+//Intercontroller links
+// EF-Enable enabled if AHU in occupied mode
+If ('3000.Mode' == 1) Then
+    'EF2_Enable' = On
+End If
+
+
+
+
+ //End of Program 
