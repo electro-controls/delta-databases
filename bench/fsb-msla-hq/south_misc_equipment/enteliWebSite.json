@@ -693,36 +693,6 @@
       "templateTriggered": false
     },
     {
-      "action": "create",
-      "device": 4399,
-      "objectId": "pg,11",
-      "objectName": "UH1_Heat_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/UH1_Heat_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/3/2024, 3:25:18 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4399,
-      "objectId": "pg,12",
-      "objectName": "UH1_Zone_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/south_misc_equipment/devices/FSB_SOUTH_MISC_COLLIN (4399)/UH1_Zone_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/3/2024, 3:25:18 PM",
-      "templateTriggered": false
-    },
-    {
       "action": "update",
       "device": 4399,
       "objectId": "pg,9",
@@ -1298,18 +1268,6 @@
           "name": "UH1_General_PG",
           "fileName": "UH1_General_PG",
           "lastUpdate": "2024-07-03T21:25:18.916Z"
-        },
-        {
-          "id": "pg,11",
-          "name": "UH1_Heat_PG",
-          "fileName": "UH1_Heat_PG",
-          "lastUpdate": "2024-07-03T21:25:18.924Z"
-        },
-        {
-          "id": "pg,12",
-          "name": "UH1_Zone_PG",
-          "fileName": "UH1_Zone_PG",
-          "lastUpdate": "2024-07-03T21:25:18.933Z"
         },
         {
           "id": "ai,3",
