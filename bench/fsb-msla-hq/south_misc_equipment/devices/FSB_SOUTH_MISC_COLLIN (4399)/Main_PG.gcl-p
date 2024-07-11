@@ -12,4 +12,7 @@ Call 'CUH1_Zone_PG'
 Call 'CUH1_OccMode_PG'
 Call 'CUH1_DAT_PG'
 
+Call 'EF2_General_PG'
+Call 'EH1_General_PG'
+Call 'EH2_General_PG'
 //end of main page
