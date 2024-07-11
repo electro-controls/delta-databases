@@ -1,16 +1,16 @@
 {
-  "displayName": "UH1_VSD 0-10V 0-100 % AOC",
+  "displayName": "Current 0-5V AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "aoc,4"
+    "value": "aic,41"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "analog-output-configuration"
+    "value": "analog-input-configuration"
   },
   "object-name": {
     "$base": "String",
-    "value": "UH1_VSD 0-10V 0-100 % AOC"
+    "value": "Current 0-5V AIC"
   },
   "description": {
     "$base": "String",
@@ -22,15 +22,11 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
-  },
-  "algorithm": {
-    "$base": "Enumerated",
-    "value": "analog-output"
+    "value": "A"
   },
   "max-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "5"
   },
   "min-value": {
     "$base": "Real",
@@ -56,11 +52,11 @@
       "$base": "Sequence",
       "voltage": {
         "$base": "Real",
-        "value": "10"
+        "value": "5"
       },
       "value": {
         "$base": "Real",
-        "value": "100"
+        "value": "5"
       },
       "adValue": {
         "$base": "Unsigned",
@@ -68,26 +64,6 @@
       }
     },
     "$base": "Array"
-  },
-  "run-time": {
-    "$base": "Unsigned",
-    "value": 0
-  },
-  "min-pulse": {
-    "$base": "Unsigned",
-    "value": 0
-  },
-  "max-pulse": {
-    "$base": "Unsigned",
-    "value": 0
-  },
-  "deadband": {
-    "$base": "Unsigned",
-    "value": 0
-  },
-  "control-band": {
-    "$base": "Unsigned",
-    "value": 0
   },
   "sort-required": {
     "$base": "Boolean",

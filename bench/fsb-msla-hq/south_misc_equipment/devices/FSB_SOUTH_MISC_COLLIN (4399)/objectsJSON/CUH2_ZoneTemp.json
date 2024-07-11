@@ -1,8 +1,8 @@
 {
-  "displayName": "CUH1_ZoneTemp",
+  "displayName": "CUH2_ZoneTemp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,2"
+    "value": "analog-input,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_ZoneTemp"
+    "value": "CUH2_ZoneTemp"
   },
   "description": {
     "$base": "String",
