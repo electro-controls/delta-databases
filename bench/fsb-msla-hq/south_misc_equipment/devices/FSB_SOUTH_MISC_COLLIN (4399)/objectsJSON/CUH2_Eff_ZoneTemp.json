@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_Eff_ZoneTemp",
+  "displayName": "CUH2_Eff_ZoneTemp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,10190"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_Eff_ZoneTemp"
+    "value": "CUH2_Eff_ZoneTemp"
   },
   "description": {
     "$base": "String",

@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_DATResetHigh_Sp",
+  "displayName": "CUH2_DATResetHigh_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,10164"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_DATResetHigh_Sp"
+    "value": "CUH2_DATResetHigh_Sp"
   },
   "description": {
     "$base": "String",

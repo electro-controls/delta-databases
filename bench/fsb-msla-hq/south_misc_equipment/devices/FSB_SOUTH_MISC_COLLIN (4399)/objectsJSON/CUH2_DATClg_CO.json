@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_DATClg_CO",
+  "displayName": "CUH2_DATClg_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "loop,10104"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_DATClg_CO"
+    "value": "CUH2_DATClg_CO"
   },
   "description": {
     "$base": "String",
@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "89.7115"
+    "value": "100"
   },
   "status-flags": {
     "$base": "BitString",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "37"
+    "value": "46"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -212,7 +212,7 @@
   },
   "bias": {
     "$base": "Real",
-    "value": "81.4615"
+    "value": "91.7819"
   },
   "derivative": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "6996079"
+      "value": "7041558"
     }
   },
   "self-adj-enable": {
@@ -300,7 +300,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "7002000"
+      "value": "7056000"
     }
   },
   "setpoint-crossings": {
@@ -313,7 +313,7 @@
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "85"
+    "value": "20"
   },
   "hal-flags": {
     "$base": "BitString",

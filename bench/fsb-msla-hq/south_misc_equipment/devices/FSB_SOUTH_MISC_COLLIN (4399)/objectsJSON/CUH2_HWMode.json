@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_HWMode",
+  "displayName": "CUH2_HWMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,10105"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_HWMode"
+    "value": "CUH2_HWMode"
   },
   "description": {
     "$base": "String",
@@ -62,11 +62,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,11"
+    "value": "program,7"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-07-11T18:14:50.700000-06:00"
   },
   "text-value": {
     "$base": "String",

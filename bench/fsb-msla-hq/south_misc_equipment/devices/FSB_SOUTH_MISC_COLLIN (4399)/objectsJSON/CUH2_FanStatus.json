@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_FanStatus",
+  "displayName": "CUH2_FanStatus",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,10111"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_FanStatus"
+    "value": "CUH2_FanStatus"
   },
   "description": {
     "$base": "String",

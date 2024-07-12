@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_ZoneVariance",
+  "displayName": "CUH2_ZoneVariance",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,10110"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_ZoneVariance"
+    "value": "CUH2_ZoneVariance"
   },
   "description": {
     "$base": "String",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,7"
+    "value": "program,6"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-07-11T18:14:41.800000-06:00"
   },
   "cov-increment": {
     "$base": "Real",

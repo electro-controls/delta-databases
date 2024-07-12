@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_EnableDNS",
+  "displayName": "CUH2_EnableDNS",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,10190"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_EnableDNS"
+    "value": "CUH2_EnableDNS"
   },
   "description": {
     "$base": "String",

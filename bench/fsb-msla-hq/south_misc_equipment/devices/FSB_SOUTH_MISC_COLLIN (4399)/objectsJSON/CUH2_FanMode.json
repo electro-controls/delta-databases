@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_FanMode",
+  "displayName": "CUH2_FanMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,10107"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_FanMode"
+    "value": "CUH2_FanMode"
   },
   "description": {
     "$base": "String",

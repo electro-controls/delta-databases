@@ -559,7 +559,7 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "16:59:07.00"
+    "value": "18:14:55.00"
   },
   "local-date": {
     "$base": "Date",
@@ -712,7 +712,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "23.8636"
+    "value": "4.54545"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -820,7 +820,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "6996112"
+      "value": "7041591"
     }
   },
   "logical-base-address": {
@@ -929,7 +929,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "496"
+    "value": "889"
   },
   "active-cov-subscriptions": {
     "$base": "List"

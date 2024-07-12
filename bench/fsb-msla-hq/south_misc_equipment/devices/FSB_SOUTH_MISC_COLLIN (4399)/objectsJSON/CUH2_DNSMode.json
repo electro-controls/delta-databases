@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_DNSMode",
+  "displayName": "CUH2_DNSMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "multi-state-value,10190"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_DNSMode"
+    "value": "CUH2_DNSMode"
   },
   "description": {
     "$base": "String",

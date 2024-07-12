@@ -78,7 +78,7 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2024-07-11T16:57:52.700000-06:00"
+    "value": "2024-07-11T18:13:07.800000-06:00"
   },
   "prev-change-of-state-times": {
     "1": {

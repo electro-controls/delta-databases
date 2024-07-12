@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_Rem_PurgeCall",
+  "displayName": "CUH2_Rem_PurgeCall",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,10126"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_Rem_PurgeCall"
+    "value": "CUH2_Rem_PurgeCall"
   },
   "description": {
     "$base": "String",

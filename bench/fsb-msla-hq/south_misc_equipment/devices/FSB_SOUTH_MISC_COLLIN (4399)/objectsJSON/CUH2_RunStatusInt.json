@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_RunStatusInt",
+  "displayName": "CUH2_RunStatusInt",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,10102"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_RunStatusInt"
+    "value": "CUH2_RunStatusInt"
   },
   "description": {
     "$base": "String",

@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_PurgeHold",
+  "displayName": "CUH2_PurgeHold",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,10106"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_PurgeHold"
+    "value": "CUH2_PurgeHold"
   },
   "description": {
     "$base": "String",
@@ -62,11 +62,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,11"
+    "value": "program,7"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-07-11T18:14:50.100000-06:00"
   },
   "text-value": {
     "$base": "String",

@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "204"
+    "value": "220"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "7025254"
+      "value": "7041558"
     }
   },
   "self-adj-enable": {
@@ -300,7 +300,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "7038000"
+      "value": "7056000"
     }
   },
   "setpoint-crossings": {
@@ -313,7 +313,7 @@
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "75"
+    "value": 0
   },
   "hal-flags": {
     "$base": "BitString",

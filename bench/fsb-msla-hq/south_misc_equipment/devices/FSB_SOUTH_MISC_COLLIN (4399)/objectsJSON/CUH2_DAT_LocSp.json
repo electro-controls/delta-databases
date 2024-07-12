@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_DAT_LocSp",
+  "displayName": "CUH2_DAT_LocSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,10161"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_DAT_LocSp"
+    "value": "CUH2_DAT_LocSp"
   },
   "description": {
     "$base": "String",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,6"
+    "value": "program,4"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-07-11T18:14:45.300000-06:00"
   },
   "cov-increment": {
     "$base": "Real",

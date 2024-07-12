@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_HWV AOC",
+  "displayName": "CUH2_HWV AOC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "aoc,7"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_HWV AOC"
+    "value": "CUH2_HWV AOC"
   },
   "description": {
     "$base": "String",

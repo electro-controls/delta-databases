@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_Rem_Schedule",
+  "displayName": "CUH2_Rem_Schedule",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,10121"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_Rem_Schedule"
+    "value": "CUH2_Rem_Schedule"
   },
   "description": {
     "$base": "String",

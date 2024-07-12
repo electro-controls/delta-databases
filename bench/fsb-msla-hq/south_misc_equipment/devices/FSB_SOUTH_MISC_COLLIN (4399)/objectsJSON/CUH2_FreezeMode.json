@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_FreezeMode",
+  "displayName": "CUH2_FreezeMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-value,10195"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_FreezeMode"
+    "value": "CUH2_FreezeMode"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "gcl-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -62,15 +62,15 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,2"
+    "value": "program,3"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-07-11T18:14:51.700000-06:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "Active"
   },
   "hal-flags": {
     "$base": "BitString",
