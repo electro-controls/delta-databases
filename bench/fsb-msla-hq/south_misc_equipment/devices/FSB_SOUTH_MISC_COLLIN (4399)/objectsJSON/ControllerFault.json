@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "3"
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "3"
   },
   "status-flags": {
     "$base": "BitString",
@@ -81,15 +81,15 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,8"
+    "value": "program,12"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-02T10:45:55.200000-07:00"
+    "value": "2024-07-11T17:35:37.900000-06:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "Page Fault"
+    "value": "AI Fault"
   },
   "hal-flags": {
     "$base": "BitString",

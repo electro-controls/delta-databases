@@ -2,15 +2,15 @@
 
 //call all other pages
 
-Call 'CUH1_Critical_PG'
+Call 'CUH2_Critical_PG'
 Call 'FaultDetection_PG'
 
-Call 'CUH1_General_PG'
-Call 'CUH1_Fan_PG'
-Call 'CUH1_HWV_PG'
-Call 'CUH1_Zone_PG'
-Call 'CUH1_OccMode_PG'
-Call 'CUH1_DAT_PG'
+Call 'CUH2_General_PG'
+Call 'CUH2_Fan_PG'
+Call 'CUH2_HWV_PG'
+Call 'CUH2_Zone_PG'
+Call 'CUH2_OccMode_PG'
+Call 'CUH2_DAT_PG'
 
 Call 'EF2_General_PG'
 Call 'EH1_General_PG'

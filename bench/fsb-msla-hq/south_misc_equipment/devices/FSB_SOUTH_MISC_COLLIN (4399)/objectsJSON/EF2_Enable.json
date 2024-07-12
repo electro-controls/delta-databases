@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "EF2_Enable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -43,7 +42,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "Active~Inactive"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -63,11 +62,11 @@
   },
   "inactive-text": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Inactive"
   },
   "active-text": {
     "$base": "String",
-    "value": "ON"
+    "value": "Active"
   },
   "change-of-state-time": {
     "$base": "DateTime",
@@ -79,7 +78,7 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-07-11T16:57:59.900000-06:00"
   },
   "prev-change-of-state-times": {
     "1": {
@@ -410,7 +409,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Inactive"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -477,8 +476,9 @@
   },
   "flick-warn-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "flick-warn-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "flick-warn-active": {
@@ -516,8 +516,9 @@
   },
   "override-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "override-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "reliability-timer": {

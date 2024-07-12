@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "out-of-service;not-commissioned"
+    "value": "fault;out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "out-of-service"
+    "value": "fault;out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,1"
+    "value": "aic,2"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,7 +54,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "missing-cfg-object"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "UH1_Temperature DegF 10k Thermistor AIC"
+    "value": "Temperature F"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "247"
+    "value": "167"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,11 +74,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "302"
+    "value": "300"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.0879121"
+    "value": "0.0874237"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "819521"
+      "value": "6995385"
     }
   },
   "ad-value": {

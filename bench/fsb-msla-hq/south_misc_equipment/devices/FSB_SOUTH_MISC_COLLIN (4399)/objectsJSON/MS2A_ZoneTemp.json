@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "36"
+    "value": "58"
   },
   "last-value": {
     "$base": "Real",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,1"
+    "value": "aic,2"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,11 +62,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "UH2_Temperature DegF 10k Thermistor AIC"
+    "value": "Temperature F"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "102"
+    "value": "167"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,11 +74,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "302"
+    "value": "300"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.0879121"
+    "value": "0.0874237"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "874999"
+      "value": "6995640"
     }
   },
   "ad-value": {
