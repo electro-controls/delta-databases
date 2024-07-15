@@ -2,7 +2,6 @@
 IfOnce PowerUp Then
     'CUH2_OccMode' = 3
     'CUH2_Zone_RemSp' = - 1
-    'CUH2_RemZoneClg' = - 1
     'CUH2_RemZoneHtg' = - 1
     'CUH2_DAT_RemSp' = - 1
     'CUH2_Rem_Schedule' = On
@@ -23,5 +22,4 @@ End Do
 
 // Room Variance
 'CUH2_ZoneVariance' = 'CUH2_Eff_ZoneTemp' - 'CUH2_Zone_EffSp'
-
  //end of general page

@@ -17,11 +17,9 @@ End If
 
 
 If 'CUH2_FreezeMode' Then
-    'CUH2_FanEnable' = Off
-    'CUH2_HWV' = 100
+    'CUH2_Enable' = On
   Else
-    Relinquish 'CUH2_FanEnable'
-    Relinquish 'CUH2_HWV'
+    Relinquish 'CUH2_Enable'
 End If
 
 

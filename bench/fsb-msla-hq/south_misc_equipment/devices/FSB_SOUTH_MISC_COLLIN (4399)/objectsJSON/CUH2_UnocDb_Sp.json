@@ -1,5 +1,5 @@
 {
-  "displayName": "CUH1_UnocDb_Sp",
+  "displayName": "CUH2_UnocDb_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-value,10109"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_UnocDb_Sp"
+    "value": "CUH2_UnocDb_Sp"
   },
   "description": {
     "$base": "String",
@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": 5
   },
   "gcl-value": {
     "$base": "Real",

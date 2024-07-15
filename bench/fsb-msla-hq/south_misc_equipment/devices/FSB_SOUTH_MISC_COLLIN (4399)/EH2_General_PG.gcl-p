@@ -1,5 +1,5 @@
-If (EH2_ZoneTemp < 60) Then
-    EH2_Enable = On
+If ('EH2_ZoneTemp' < 60) Then
+    'EH2_Enable' = On
 Else
-    EH2_Enable = Off
+    'EH2_Enable' = Off
 End If

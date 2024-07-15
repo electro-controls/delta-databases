@@ -1,4 +1,3 @@
-
 If ('EH1_ZoneTemp' < 60) Then
     'EH1_Enable' = On
 Else

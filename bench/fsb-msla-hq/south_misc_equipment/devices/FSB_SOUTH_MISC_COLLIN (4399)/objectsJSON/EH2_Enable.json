@@ -103,12 +103,12 @@
     "$base": "Choice",
     "minimum-delay-timer": {
       "$base": "Unsigned",
-      "value": "7041690"
+      "value": 0
     }
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "6"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -146,7 +146,10 @@
       }
     },
     "6": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "7": {
       "$base": "Choice",
@@ -317,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-07-11T18:14:47.30"
+      "value": "2024-07-11T18:16:16.70"
     },
     "11": {
       "$base": "DateTime",
@@ -399,7 +402,7 @@
   },
   "delay-count-down": {
     "$base": "Time",
-    "value": "00:00:17.00"
+    "value": "00:00:00.00"
   },
   "text-value": {
     "$base": "String",
