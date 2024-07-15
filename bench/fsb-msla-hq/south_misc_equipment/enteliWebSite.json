@@ -928,709 +928,751 @@
           "id": "ai,1",
           "name": "CUH2_ZoneTemp",
           "fileName": "CUH2_ZoneTemp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "ai,2",
           "name": "EF2_Status",
           "fileName": "EF2_Status",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "ai,3",
           "name": "MS2A_ZoneTemp",
           "fileName": "MS2A_ZoneTemp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "ai,4",
           "name": "MS3A_ZoneTemp",
           "fileName": "MS3A_ZoneTemp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "ai,5",
           "name": "MS4A_ZoneTemp",
           "fileName": "MS4A_ZoneTemp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "ai,6",
           "name": "EH1_ZoneTemp",
           "fileName": "EH1_ZoneTemp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "ai,7",
           "name": "EH1_Status",
           "fileName": "EH1_Status",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "ai,8",
           "name": "EH2_ZoneTemp",
           "fileName": "EH2_ZoneTemp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "ai,9",
           "name": "EH2_Status",
           "fileName": "EH2_Status",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "ai,10",
           "name": "RH1_Status",
           "fileName": "RH1_Status",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "aic,2",
+          "name": "Temperature F",
+          "fileName": "Temperature F",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "aic,13",
           "name": "Feedback%0-10v 0-100 AIC",
           "fileName": "Feedback%0-10v 0-100 AIC",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "aic,30",
           "name": "Flow Sensor",
           "fileName": "Flow Sensor",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "aic,34",
+          "name": "CO2_0_10_0_2000",
+          "fileName": "CO2_0_10_0_2000",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "aic,39",
           "name": "Temp 32_122 DegF_0_10AIC",
           "fileName": "Temp 32_122 DegF_0_10AIC",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "aic,40",
           "name": "Feedback%0-10v 100-0 AIC",
           "fileName": "Feedback%0-10v 100-0 AIC",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "aic,41",
           "name": "Current 0-5V AIC",
           "fileName": "Current 0-5V AIC",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "aoc,7",
-          "name": "CUH2_HWV AOC",
-          "fileName": "CUH2_HWV AOC",
-          "lastUpdate": "2024-07-12T00:23:37.771Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "av,91",
           "name": "Eff_OAT",
           "fileName": "Eff_OAT",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10102",
-          "name": "CUH2_Zone_LocSp",
-          "fileName": "CUH2_Zone_LocSp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10103",
-          "name": "CUH2_Zone_RemSp",
-          "fileName": "CUH2_Zone_RemSp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10104",
-          "name": "CUH2_ZoneHeat_EffSp",
-          "fileName": "CUH2_ZoneHeat_EffSp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10105",
-          "name": "CUH2_ZoneCool_EffSp",
-          "fileName": "CUH2_ZoneCool_EffSp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10106",
-          "name": "CUH2_ZoneDb_Sp",
-          "fileName": "CUH2_ZoneDb_Sp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10107",
-          "name": "CUH2_UnocHt_Sp",
-          "fileName": "CUH2_UnocHt_Sp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10108",
-          "name": "CUH2_UnocCl_Sp",
-          "fileName": "CUH2_UnocCl_Sp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10110",
-          "name": "CUH2_ZoneVariance",
-          "fileName": "CUH2_ZoneVariance",
-          "lastUpdate": "2024-07-12T00:23:37.705Z"
-        },
-        {
-          "id": "av,10111",
-          "name": "CUH2_DNSAlgMode",
-          "fileName": "CUH2_DNSAlgMode",
-          "lastUpdate": "2024-07-12T00:23:37.811Z"
-        },
-        {
-          "id": "av,10112",
-          "name": "CUH2_OcClgMin_Sp",
-          "fileName": "CUH2_OcClgMin_Sp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10113",
-          "name": "CUH2_OcClgMax_Sp",
-          "fileName": "CUH2_OcClgMax_Sp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10114",
-          "name": "CUH2_OcHtgMin_Sp",
-          "fileName": "CUH2_OcHtgMin_Sp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10115",
-          "name": "CUH2_OcHtgMax_Sp",
-          "fileName": "CUH2_OcHtgMax_Sp",
-          "lastUpdate": "2024-07-12T00:23:37.724Z"
-        },
-        {
-          "id": "av,10117",
-          "name": "CUH2_StandbyOffset_Sp",
-          "fileName": "CUH2_StandbyOffset_Sp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10118",
-          "name": "CUH2_BypassTm_Sp",
-          "fileName": "CUH2_BypassTm_Sp",
-          "lastUpdate": "2024-07-12T00:23:37.847Z"
-        },
-        {
-          "id": "av,10120",
-          "name": "CUH2_ZoneHtRamp_Sp",
-          "fileName": "CUH2_ZoneHtRamp_Sp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10121",
-          "name": "CUH2_ZoneClRamp_Sp",
-          "fileName": "CUH2_ZoneClRamp_Sp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10122",
-          "name": "CUH2_ZoneDbDelay_Sp",
-          "fileName": "CUH2_ZoneDbDelay_Sp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10130",
-          "name": "CUH2_EffZoneClg",
-          "fileName": "CUH2_EffZoneClg",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10131",
-          "name": "CUH2_LocZoneClg",
-          "fileName": "CUH2_LocZoneClg",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10133",
-          "name": "CUH2_EffZoneHtg",
-          "fileName": "CUH2_EffZoneHtg",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10134",
-          "name": "CUH2_LocZoneHtg",
-          "fileName": "CUH2_LocZoneHtg",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10135",
-          "name": "CUH2_RemZoneHtg",
-          "fileName": "CUH2_RemZoneHtg",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10136",
-          "name": "CUH2_ClgRamp",
-          "fileName": "CUH2_ClgRamp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10137",
-          "name": "CUH2_HtgRamp",
-          "fileName": "CUH2_HtgRamp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10143",
-          "name": "CUH2_NightPurgeZone_Sp",
-          "fileName": "CUH2_NightPurgeZone_Sp",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "av,10144",
-          "name": "CUH2_PurgeHoldDly_Sp",
-          "fileName": "CUH2_PurgeHoldDly_Sp",
-          "lastUpdate": "2024-07-12T00:23:37.765Z"
-        },
-        {
-          "id": "av,10160",
-          "name": "CUH2_DAT_EffSp",
-          "fileName": "CUH2_DAT_EffSp",
-          "lastUpdate": "2024-07-12T00:23:37.816Z"
-        },
-        {
-          "id": "av,10161",
-          "name": "CUH2_DAT_LocSp",
-          "fileName": "CUH2_DAT_LocSp",
-          "lastUpdate": "2024-07-12T00:23:37.817Z"
-        },
-        {
-          "id": "av,10162",
-          "name": "CUH2_DAT_RemSp",
-          "fileName": "CUH2_DAT_RemSp",
-          "lastUpdate": "2024-07-12T00:23:37.835Z"
-        },
-        {
-          "id": "av,10163",
-          "name": "CUH2_DATResetLow_Sp",
-          "fileName": "CUH2_DATResetLow_Sp",
-          "lastUpdate": "2024-07-12T00:23:37.818Z"
-        },
-        {
-          "id": "av,10164",
-          "name": "CUH2_DATResetHigh_Sp",
-          "fileName": "CUH2_DATResetHigh_Sp",
-          "lastUpdate": "2024-07-12T00:23:37.837Z"
-        },
-        {
-          "id": "av,10190",
-          "name": "CUH2_Eff_ZoneTemp",
-          "fileName": "CUH2_Eff_ZoneTemp",
-          "lastUpdate": "2024-07-12T00:23:37.812Z"
-        },
-        {
-          "id": "bdc,1",
-          "name": "On~Off",
-          "fileName": "On~Off",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bdc,5",
-          "name": "Direct~Reverse",
-          "fileName": "Direct~Reverse",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bdc,11",
-          "name": "Active~Inactive",
-          "fileName": "Active~Inactive",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bdc,12",
-          "name": "Cont~Int BDC",
-          "fileName": "Cont~Int BDC",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bo,1",
-          "name": "CUH2_Enable",
-          "fileName": "CUH2_Enable",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bo,2",
-          "name": "EF2_Enable",
-          "fileName": "EF2_Enable",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bo,3",
-          "name": "EH1_Enable",
-          "fileName": "EH1_Enable",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bo,4",
-          "name": "EH2_Enable",
-          "fileName": "EH2_Enable",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bv,10102",
-          "name": "CUH2_RunStatusInt",
-          "fileName": "CUH2_RunStatusInt",
-          "lastUpdate": "2024-07-12T00:23:37.713Z"
-        },
-        {
-          "id": "bv,10105",
-          "name": "CUH2_HWMode",
-          "fileName": "CUH2_HWMode",
-          "lastUpdate": "2024-07-12T00:23:37.775Z"
-        },
-        {
-          "id": "bv,10106",
-          "name": "CUH2_PurgeHold",
-          "fileName": "CUH2_PurgeHold",
-          "lastUpdate": "2024-07-12T00:23:37.769Z"
-        },
-        {
-          "id": "bv,10107",
-          "name": "CUH2_FanMode",
-          "fileName": "CUH2_FanMode",
-          "lastUpdate": "2024-07-12T00:23:37.778Z"
-        },
-        {
-          "id": "bv,10111",
-          "name": "CUH2_FanStatus",
-          "fileName": "CUH2_FanStatus",
-          "lastUpdate": "2024-07-12T00:23:37.776Z"
-        },
-        {
-          "id": "bv,10121",
-          "name": "CUH2_Rem_Schedule",
-          "fileName": "CUH2_Rem_Schedule",
-          "lastUpdate": "2024-07-12T00:23:37.718Z"
-        },
-        {
-          "id": "bv,10123",
-          "name": "CUH2_UnocHtCall",
-          "fileName": "CUH2_UnocHtCall",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bv,10124",
-          "name": "CUH2_UnocClCall",
-          "fileName": "CUH2_UnocClCall",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bv,10125",
-          "name": "CUH2_Rem_WarmupCall",
-          "fileName": "CUH2_Rem_WarmupCall",
-          "lastUpdate": "2024-07-12T00:23:37.715Z"
-        },
-        {
-          "id": "bv,10126",
-          "name": "CUH2_Rem_PurgeCall",
-          "fileName": "CUH2_Rem_PurgeCall",
-          "lastUpdate": "2024-07-12T00:23:37.723Z"
-        },
-        {
-          "id": "bv,10127",
-          "name": "CUH2_ZoneClDemand",
-          "fileName": "CUH2_ZoneClDemand",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bv,10128",
-          "name": "CUH2_ZoneHtDemand",
-          "fileName": "CUH2_ZoneHtDemand",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bv,10190",
-          "name": "CUH2_EnableDNS",
-          "fileName": "CUH2_EnableDNS",
-          "lastUpdate": "2024-07-12T00:23:37.808Z"
-        },
-        {
-          "id": "bv,10191",
-          "name": "CUH2_BlinkDNS",
-          "fileName": "CUH2_BlinkDNS",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "bv,10195",
-          "name": "CUH2_FreezeMode",
-          "fileName": "CUH2_FreezeMode",
-          "lastUpdate": "2024-07-12T00:23:37.773Z"
-        },
-        {
-          "id": "co,10101",
-          "name": "CUH2_ZoneClg_CO",
-          "fileName": "CUH2_ZoneClg_CO",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "co,10102",
-          "name": "CUH2_ZoneHtg_CO",
-          "fileName": "CUH2_ZoneHtg_CO",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "dbi,4399",
-          "name": "Database Information 4399",
-          "fileName": "Database Information 4399",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "des,1",
-          "name": "Data Exchange Settings 4399",
-          "fileName": "Data Exchange Settings 4399",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "device,4399",
-          "name": "FSB_SOUTH_MISC_COLLIN",
-          "fileName": "FSB_SOUTH_MISC_COLLIN",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "evc,1",
-          "name": "Maintenance",
-          "fileName": "Maintenance",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "evc,3",
-          "name": "Security",
-          "fileName": "Security",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "evc,5",
-          "name": "Notification",
-          "fileName": "Notification",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "evc,6",
-          "name": "Fire",
-          "fileName": "Fire",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "evc,8",
-          "name": "Access Control Alarm",
-          "fileName": "Access Control Alarm",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "evc,9",
-          "name": "Archival",
-          "fileName": "Archival",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "evs,1",
-          "name": "Event and Alarm Settings 4399",
-          "fileName": "Event and Alarm Settings 4399",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "file,1",
-          "name": "Database Transfer File",
-          "fileName": "Database Transfer File",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "mic,3",
-          "name": "Controller Status",
-          "fileName": "Controller Status",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "mic,4",
-          "name": "OccMode MIC",
-          "fileName": "OccMode MIC",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "mic,5",
-          "name": "DNSMode_MIC",
-          "fileName": "DNSMode_MIC",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "mic,19",
-          "name": "FaultDetection_MIC",
-          "fileName": "FaultDetection_MIC",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "mv,98",
-          "name": "ControllerFault",
-          "fileName": "ControllerFault",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "mv,10113",
-          "name": "CUH2_ControlMode",
-          "fileName": "CUH2_ControlMode",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "mv,10190",
-          "name": "CUH2_DNSMode",
-          "fileName": "CUH2_DNSMode",
-          "lastUpdate": "2024-07-12T00:23:37.814Z"
-        },
-        {
-          "id": "mv,10201",
-          "name": "CUH2_OccMode",
-          "fileName": "CUH2_OccMode",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "mv,10204",
-          "name": "CUH2_PrevControlMode",
-          "fileName": "CUH2_PrevControlMode",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "net,1",
-          "name": "BACnet Settings 4399",
-          "fileName": "BACnet Settings 4399",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "pan,1",
-          "name": "Priority Names 4399",
-          "fileName": "Priority Names 4399",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "pg,2",
-          "name": "EH2_General_PG",
-          "fileName": "EH2_General_PG",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "pg,3",
-          "name": "CUH2_Critical_PG",
-          "fileName": "CUH2_Critical_PG",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "pg,4",
-          "name": "CUH2_DAT_PG",
-          "fileName": "CUH2_DAT_PG",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "pg,6",
-          "name": "CUH2_General_PG",
-          "fileName": "CUH2_General_PG",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "pg,8",
-          "name": "CUH2_OccMode_PG",
-          "fileName": "CUH2_OccMode_PG",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "pg,9",
-          "name": "CUH2_Zone_PG",
-          "fileName": "CUH2_Zone_PG",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "pg,10",
-          "name": "EF2_General_PG",
-          "fileName": "EF2_General_PG",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "pg,11",
-          "name": "EH1_General_PG",
-          "fileName": "EH1_General_PG",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "pg,12",
-          "name": "FaultDetection_PG",
-          "fileName": "FaultDetection_PG",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "sdl,1",
-          "name": "Slave Device List 4399",
-          "fileName": "Slave Device List 4399",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "sua,1",
-          "name": "DELTA",
-          "fileName": "DELTA",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
-        },
-        {
-          "id": "sug,1",
-          "name": "Administrator",
-          "fileName": "Administrator",
-          "lastUpdate": "2024-07-12T00:20:24.623Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "av,98",
           "name": "Uptime",
           "fileName": "Uptime",
-          "lastUpdate": "2024-07-12T15:29:17.224Z"
-        },
-        {
-          "id": "bv,10122",
-          "name": "CUH2_BypassCall",
-          "fileName": "CUH2_BypassCall",
-          "lastUpdate": "2024-07-12T16:45:55.492Z"
-        },
-        {
-          "id": "pg,1",
-          "name": "Main_PG",
-          "fileName": "Main_PG",
-          "lastUpdate": "2024-07-12T17:10:30.615Z"
-        },
-        {
-          "id": "pg,5",
-          "name": "CUH2_Heat_PG",
-          "fileName": "CUH2_Heat_PG",
-          "lastUpdate": "2024-07-12T17:29:40.504Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "av,10101",
           "name": "CUH2_Zone_EffSp",
           "fileName": "CUH2_Zone_EffSp",
-          "lastUpdate": "2024-07-12T17:33:30.784Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
-          "id": "co,10103",
-          "name": "CUH2_DATHtg_CO",
-          "fileName": "CUH2_DATHtg_CO",
-          "lastUpdate": "2024-07-15T18:15:05.747Z"
+          "id": "av,10102",
+          "name": "CUH2_Zone_LocSp",
+          "fileName": "CUH2_Zone_LocSp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
-          "id": "av,10138",
-          "name": "CUH2_RemZoneClg",
-          "fileName": "CUH2_RemZoneClg",
-          "lastUpdate": "2024-07-15T18:15:53.866Z"
+          "id": "av,10103",
+          "name": "CUH2_Zone_RemSp",
+          "fileName": "CUH2_Zone_RemSp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10104",
+          "name": "CUH2_ZoneHeat_EffSp",
+          "fileName": "CUH2_ZoneHeat_EffSp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10105",
+          "name": "CUH2_ZoneCool_EffSp",
+          "fileName": "CUH2_ZoneCool_EffSp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10106",
+          "name": "CUH2_ZoneDb_Sp",
+          "fileName": "CUH2_ZoneDb_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10107",
+          "name": "CUH2_UnocHt_Sp",
+          "fileName": "CUH2_UnocHt_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10108",
+          "name": "CUH2_UnocCl_Sp",
+          "fileName": "CUH2_UnocCl_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "av,10109",
           "name": "CUH2_UnocDb_Sp",
           "fileName": "CUH2_UnocDb_Sp",
-          "lastUpdate": "2024-07-15T18:16:49.510Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10110",
+          "name": "CUH2_ZoneVariance",
+          "fileName": "CUH2_ZoneVariance",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10111",
+          "name": "CUH2_DNSAlgMode",
+          "fileName": "CUH2_DNSAlgMode",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10112",
+          "name": "CUH2_OcClgMin_Sp",
+          "fileName": "CUH2_OcClgMin_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10113",
+          "name": "CUH2_OcClgMax_Sp",
+          "fileName": "CUH2_OcClgMax_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10114",
+          "name": "CUH2_OcHtgMin_Sp",
+          "fileName": "CUH2_OcHtgMin_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10115",
+          "name": "CUH2_OcHtgMax_Sp",
+          "fileName": "CUH2_OcHtgMax_Sp",
+          "lastUpdate": "2024-07-15T18:34:03.451Z"
+        },
+        {
+          "id": "av,10117",
+          "name": "CUH2_StandbyOffset_Sp",
+          "fileName": "CUH2_StandbyOffset_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10118",
+          "name": "CUH2_BypassTm_Sp",
+          "fileName": "CUH2_BypassTm_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10120",
+          "name": "CUH2_ZoneHtRamp_Sp",
+          "fileName": "CUH2_ZoneHtRamp_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10121",
+          "name": "CUH2_ZoneClRamp_Sp",
+          "fileName": "CUH2_ZoneClRamp_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10122",
+          "name": "CUH2_ZoneDbDelay_Sp",
+          "fileName": "CUH2_ZoneDbDelay_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10130",
+          "name": "CUH2_EffZoneClg",
+          "fileName": "CUH2_EffZoneClg",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10131",
+          "name": "CUH2_LocZoneClg",
+          "fileName": "CUH2_LocZoneClg",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10133",
+          "name": "CUH2_EffZoneHtg",
+          "fileName": "CUH2_EffZoneHtg",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10134",
+          "name": "CUH2_LocZoneHtg",
+          "fileName": "CUH2_LocZoneHtg",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10135",
+          "name": "CUH2_RemZoneHtg",
+          "fileName": "CUH2_RemZoneHtg",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10136",
+          "name": "CUH2_ClgRamp",
+          "fileName": "CUH2_ClgRamp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10137",
+          "name": "CUH2_HtgRamp",
+          "fileName": "CUH2_HtgRamp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10138",
+          "name": "CUH2_RemZoneClg",
+          "fileName": "CUH2_RemZoneClg",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10143",
+          "name": "CUH2_NightPurgeZone_Sp",
+          "fileName": "CUH2_NightPurgeZone_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10144",
+          "name": "CUH2_PurgeHoldDly_Sp",
+          "fileName": "CUH2_PurgeHoldDly_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10160",
+          "name": "CUH2_DAT_EffSp",
+          "fileName": "CUH2_DAT_EffSp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10161",
+          "name": "CUH2_DAT_LocSp",
+          "fileName": "CUH2_DAT_LocSp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10162",
+          "name": "CUH2_DAT_RemSp",
+          "fileName": "CUH2_DAT_RemSp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10163",
+          "name": "CUH2_DATResetLow_Sp",
+          "fileName": "CUH2_DATResetLow_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10164",
+          "name": "CUH2_DATResetHigh_Sp",
+          "fileName": "CUH2_DATResetHigh_Sp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10190",
+          "name": "CUH2_Eff_ZoneTemp",
+          "fileName": "CUH2_Eff_ZoneTemp",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bdc,1",
+          "name": "On~Off",
+          "fileName": "On~Off",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bdc,5",
+          "name": "Direct~Reverse",
+          "fileName": "Direct~Reverse",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bdc,7",
+          "name": "Alarm~Normal",
+          "fileName": "Alarm~Normal",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bdc,11",
+          "name": "Active~Inactive",
+          "fileName": "Active~Inactive",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bdc,12",
+          "name": "Cont~Int BDC",
+          "fileName": "Cont~Int BDC",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "CUH2_Enable",
+          "fileName": "CUH2_Enable",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bo,2",
+          "name": "EF2_Enable",
+          "fileName": "EF2_Enable",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bo,3",
+          "name": "EH1_Enable",
+          "fileName": "EH1_Enable",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bo,4",
+          "name": "EH2_Enable",
+          "fileName": "EH2_Enable",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10102",
+          "name": "CUH2_RunStatusInt",
+          "fileName": "CUH2_RunStatusInt",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10105",
+          "name": "CUH2_HWMode",
+          "fileName": "CUH2_HWMode",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10106",
+          "name": "CUH2_PurgeHold",
+          "fileName": "CUH2_PurgeHold",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10107",
+          "name": "CUH2_FanMode",
+          "fileName": "CUH2_FanMode",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10111",
+          "name": "CUH2_FanStatus",
+          "fileName": "CUH2_FanStatus",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10121",
+          "name": "CUH2_Rem_Schedule",
+          "fileName": "CUH2_Rem_Schedule",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10122",
+          "name": "CUH2_BypassCall",
+          "fileName": "CUH2_BypassCall",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10123",
+          "name": "CUH2_UnocHtCall",
+          "fileName": "CUH2_UnocHtCall",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10124",
+          "name": "CUH2_UnocClCall",
+          "fileName": "CUH2_UnocClCall",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10125",
+          "name": "CUH2_Rem_WarmupCall",
+          "fileName": "CUH2_Rem_WarmupCall",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10126",
+          "name": "CUH2_Rem_PurgeCall",
+          "fileName": "CUH2_Rem_PurgeCall",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10127",
+          "name": "CUH2_ZoneClDemand",
+          "fileName": "CUH2_ZoneClDemand",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10128",
+          "name": "CUH2_ZoneHtDemand",
+          "fileName": "CUH2_ZoneHtDemand",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10190",
+          "name": "CUH2_EnableDNS",
+          "fileName": "CUH2_EnableDNS",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10191",
+          "name": "CUH2_BlinkDNS",
+          "fileName": "CUH2_BlinkDNS",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "bv,10195",
+          "name": "CUH2_FreezeMode",
+          "fileName": "CUH2_FreezeMode",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "co,10101",
+          "name": "CUH2_ZoneClg_CO",
+          "fileName": "CUH2_ZoneClg_CO",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "co,10102",
+          "name": "CUH2_ZoneHtg_CO",
+          "fileName": "CUH2_ZoneHtg_CO",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "co,10103",
+          "name": "CUH2_DATHtg_CO",
+          "fileName": "CUH2_DATHtg_CO",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
         },
         {
           "id": "co,10104",
           "name": "CUH2_DATClg_CO",
           "fileName": "CUH2_DATClg_CO",
-          "lastUpdate": "2024-07-15T18:17:48.002Z"
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "dbi,4399",
+          "name": "Database Information 4399",
+          "fileName": "Database Information 4399",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 4399",
+          "fileName": "Data Exchange Settings 4399",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "device,4399",
+          "name": "FSB_SOUTH_MISC_COLLIN",
+          "fileName": "FSB_SOUTH_MISC_COLLIN",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "evc,3",
+          "name": "Security",
+          "fileName": "Security",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "evc,4",
+          "name": "Critical",
+          "fileName": "Critical",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 4399",
+          "fileName": "Event and Alarm Settings 4399",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "mic,3",
+          "name": "Controller Status",
+          "fileName": "Controller Status",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "mic,4",
+          "name": "OccMode MIC",
+          "fileName": "OccMode MIC",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "mic,5",
+          "name": "DNSMode_MIC",
+          "fileName": "DNSMode_MIC",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "mic,19",
+          "name": "FaultDetection_MIC",
+          "fileName": "FaultDetection_MIC",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "mic,80",
+          "name": "FanSpeedSelect MIC",
+          "fileName": "FanSpeedSelect MIC",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "mv,98",
+          "name": "ControllerFault",
+          "fileName": "ControllerFault",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "mv,10113",
+          "name": "CUH2_ControlMode",
+          "fileName": "CUH2_ControlMode",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "mv,10190",
+          "name": "CUH2_DNSMode",
+          "fileName": "CUH2_DNSMode",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "mv,10201",
+          "name": "CUH2_OccMode",
+          "fileName": "CUH2_OccMode",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "mv,10204",
+          "name": "CUH2_PrevControlMode",
+          "fileName": "CUH2_PrevControlMode",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 4399",
+          "fileName": "BACnet Settings 4399",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 4399",
+          "fileName": "Priority Names 4399",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "EH2_General_PG",
+          "fileName": "EH2_General_PG",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "CUH2_Critical_PG",
+          "fileName": "CUH2_Critical_PG",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "CUH2_DAT_PG",
+          "fileName": "CUH2_DAT_PG",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pg,5",
+          "name": "CUH2_Heat_PG",
+          "fileName": "CUH2_Heat_PG",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pg,6",
+          "name": "CUH2_General_PG",
+          "fileName": "CUH2_General_PG",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pg,8",
+          "name": "CUH2_OccMode_PG",
+          "fileName": "CUH2_OccMode_PG",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pg,9",
+          "name": "CUH2_Zone_PG",
+          "fileName": "CUH2_Zone_PG",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pg,10",
+          "name": "EF2_General_PG",
+          "fileName": "EF2_General_PG",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pg,11",
+          "name": "EH1_General_PG",
+          "fileName": "EH1_General_PG",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "pg,12",
+          "name": "FaultDetection_PG",
+          "fileName": "FaultDetection_PG",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 4399",
+          "fileName": "Slave Device List 4399",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "sug,1",
+          "name": "Administrator",
+          "fileName": "Administrator",
+          "lastUpdate": "2024-07-15T18:28:57.498Z"
+        },
+        {
+          "id": "av,10119",
+          "name": "CUH2_BypassTmLeft",
+          "fileName": "CUH2_BypassTmLeft",
+          "lastUpdate": "2024-07-15T18:30:23.910Z"
         }
       ]
     }

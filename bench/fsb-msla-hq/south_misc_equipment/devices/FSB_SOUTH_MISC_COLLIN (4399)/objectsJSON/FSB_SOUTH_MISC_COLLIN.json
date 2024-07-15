@@ -534,6 +534,12 @@
       "153": {
         "$base": "Choice"
       },
+      "154": {
+        "$base": "Choice"
+      },
+      "155": {
+        "$base": "Choice"
+      },
       "$base": "Array"
     }
   },
@@ -559,11 +565,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "18:14:55.00"
+    "value": "12:23:44.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2024-07-11"
+    "value": "2024-07-15"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -712,7 +718,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "4.54545"
+    "value": "5.53191"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -724,7 +730,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "97"
+    "value": "98"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -820,7 +826,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "7041591"
+      "value": "10286885"
     }
   },
   "logical-base-address": {
@@ -929,7 +935,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "889"
+    "value": "1019"
   },
   "active-cov-subscriptions": {
     "$base": "List"
