@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "164"
+    "value": "160"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "10286677"
+      "value": "10316974"
     }
   },
   "ad-value": {

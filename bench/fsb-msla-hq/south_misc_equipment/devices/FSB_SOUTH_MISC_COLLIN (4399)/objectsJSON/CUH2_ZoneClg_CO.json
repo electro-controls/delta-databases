@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "100"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "184"
+    "value": "158"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -58,7 +58,7 @@
   },
   "action": {
     "$base": "Enumerated",
-    "value": "direct"
+    "value": "reverse"
   },
   "manipulated-variable-reference": {
     "$base": "Sequence",
@@ -96,24 +96,24 @@
   },
   "enable-ref-flags": {
     "$base": "BitString",
-    "value": "setpoint-reference"
+    "value": ""
   },
   "setpoint-ref": {
     "$base": "Sequence",
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,10105"
+      "unspecifiedValue": "true"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
-      "value": "present-value",
+      "value": "all",
       "type": "0-BACnetPropertyIdentifier"
     }
   },
   "setpoint-ref-enable": {
     "$base": "Boolean",
-    "value": "1"
+    "value": 0
   },
   "setpoint": {
     "$base": "Real",
@@ -123,16 +123,7 @@
     "$base": "Sequence",
     "setpointReference": {
       "$base": "Sequence",
-      "type": "0-BACnetObjectPropertyReference",
-      "objectIdentifier": {
-        "$base": "ObjectIdentifier",
-        "value": "analog-value,10105"
-      },
-      "propertyIdentifier": {
-        "$base": "Enumerated",
-        "value": "present-value",
-        "type": "0-BACnetPropertyIdentifier"
-      }
+      "type": "0-BACnetObjectPropertyReference"
     }
   },
   "proportional-ref": {
@@ -255,7 +246,7 @@
   },
   "average-crossings": {
     "$base": "Real",
-    "value": "5.81471e-16"
+    "value": "2.97713e-16"
   },
   "average-error": {
     "$base": "Real",
@@ -285,7 +276,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "10286878"
+      "value": "10332268"
     }
   },
   "self-adj-enable": {
@@ -300,7 +291,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "10296000"
+      "value": "10350000"
     }
   },
   "setpoint-crossings": {

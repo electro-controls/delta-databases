@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "1"
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "1"
   },
   "status-flags": {
     "$base": "BitString",
@@ -77,11 +77,11 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-07-15T12:23:49.700000-06:00"
+    "value": "2024-07-15T13:40:30.400000-06:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "Cooling"
+    "value": "Heating"
   },
   "hal-flags": {
     "$base": "BitString",

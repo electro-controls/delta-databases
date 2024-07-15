@@ -23,7 +23,6 @@ If ('CUH2_OccMode' = 6) Then //purge
     'CUH2_Zone_EffSp' = 'CUH2_Zone_RemSp'
   Else
     'CUH2_Zone_EffSp' = 'CUH2_Zone_LocSp'
-    //done
 End If
 
 //calculate local demand after ramp
