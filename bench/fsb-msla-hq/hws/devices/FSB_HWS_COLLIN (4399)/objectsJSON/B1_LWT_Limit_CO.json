@@ -78,7 +78,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-input,4"
+      "value": "analog-input,11"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",

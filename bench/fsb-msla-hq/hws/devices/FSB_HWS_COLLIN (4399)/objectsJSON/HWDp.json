@@ -2,7 +2,7 @@
   "displayName": "HWDp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,7"
+    "value": "analog-input,8"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -58,7 +58,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": 1
   },
   "device-type": {
     "$base": "String",

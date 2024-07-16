@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "26 Oct2023 AV- Boiler 2 Isolated for leaking head pressure valve"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -58,7 +58,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": 1
   },
   "device-type": {
     "$base": "String",

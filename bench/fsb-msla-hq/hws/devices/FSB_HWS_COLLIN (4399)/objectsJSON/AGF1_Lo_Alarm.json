@@ -1,16 +1,16 @@
 {
-    "displayName": "B1_LWT",
+    "displayName": "AGF1_Lo_Alarm",
     "object-identifier": {
         "$base": "ObjectIdentifier",
-        "value": "analog-input,11"
+        "value": "binary-input,13"
     },
     "object-type": {
         "$base": "Enumerated",
-        "value": "analog-input"
+        "value": "binary-input"
     },
     "object-name": {
         "$base": "String",
-        "value": "B1_LWT"
+        "value": "AGF1_Lo_Alarm"
     },
     "description": {
         "$base": "String",
@@ -18,15 +18,11 @@
     },
     "flags": {
         "$base": "BitString",
-        "value": "not-commissioned"
+        "value": ""
     },
     "present-value": {
-        "$base": "Real",
-        "value": "79.2854"
-    },
-    "last-value": {
-        "$base": "Real",
-        "value": "79.2973"
+        "$base": "Enumerated",
+        "value": "active"
     },
     "status-flags": {
         "$base": "BitString",
@@ -36,17 +32,13 @@
         "$base": "Boolean",
         "value": 0
     },
-    "units": {
-        "$base": "Enumerated",
-        "value": "°F"
-    },
     "commission-flag": {
         "$base": "Enumerated",
-        "value": "not-commissioned"
+        "value": "commissioned"
     },
     "type-reference": {
         "$base": "ObjectIdentifier",
-        "value": "aic,1"
+        "value": "bdc,3"
     },
     "event-state": {
         "$base": "Enumerated",
@@ -58,62 +50,50 @@
     },
     "out-of-service": {
         "$base": "Boolean",
-        "value": 1
+        "value": 0
     },
     "device-type": {
         "$base": "String",
-        "value": "Temperature DegF 10k Thermistor AIC"
+        "value": "Active/Inactive BDC"
+    },
+    "polarity": {
+        "$base": "Enumerated",
+        "value": "normal"
+    },
+    "active-text": {
+        "$base": "String",
+        "value": "Active"
+    },
+    "inactive-text": {
+        "$base": "String",
+        "value": "Inactive"
+    },
+    "prev-change-of-state-times": {
+        "1": {
+            "$base": "DateTime",
+            "value": "2023-10-14T00:31:34.30"
+        },
+        "2": {
+            "$base": "DateTime",
+            "value": "2023-10-14T00:34:11.500000-06:00"
+        },
+        "$base": "Array"
+    },
+    "change-of-state-time": {
+        "$base": "DateTime",
+        "value": "2023-10-14T00:34:11.500000-06:00"
+    },
+    "change-of-state-count": {
+        "$base": "Unsigned",
+        "value": "17"
+    },
+    "time-of-state-count-reset": {
+        "$base": "DateTime",
+        "value": "2000-01-01T12:05:27.900000-07:00"
     },
     "update-interval": {
         "$base": "Unsigned",
-        "value": "328"
-    },
-    "min-pres-value": {
-        "$base": "Real",
-        "value": "-58"
-    },
-    "max-pres-value": {
-        "$base": "Real",
-        "value": "302"
-    },
-    "resolution": {
-        "$base": "Real",
-        "value": "0.0879121"
-    },
-    "cov-increment": {
-        "$base": "Real",
-        "value": "0.1"
-    },
-    "ad-filter": {
-        "$base": "Unsigned",
-        "value": "80"
-    },
-    "filter-delay-timer": {
-        "$base": "Choice",
-        "filter-delay-timer": {
-            "$base": "Unsigned",
-            "value": "68230433"
-        }
-    },
-    "ad-value": {
-        "$base": "Unsigned",
-        "value": "1997"
-    },
-    "calibration": {
-        "$base": "Real",
-        "value": 0
-    },
-    "fixed-point": {
-        "$base": "Boolean",
-        "value": "1"
-    },
-    "decimal-places": {
-        "$base": "Unsigned",
-        "value": "1"
-    },
-    "external-control": {
-        "$base": "Boolean",
-        "value": 0
+        "value": "339"
     },
     "time-delay": {
         "$base": "Unsigned",
@@ -123,21 +103,9 @@
         "$base": "Unsigned",
         "value": 0
     },
-    "high-limit": {
-        "$base": "Real",
-        "value": 0
-    },
-    "low-limit": {
-        "$base": "Real",
-        "value": 0
-    },
-    "deadband": {
-        "$base": "Real",
-        "value": 0
-    },
-    "limit-enable": {
-        "$base": "BitString",
-        "value": ""
+    "alarm-value": {
+        "$base": "Enumerated",
+        "value": "inactive"
     },
     "event-enable": {
         "$base": "BitString",
@@ -154,13 +122,17 @@
     "event-time-stamps": {
         "$base": "Array"
     },
-    "previous-reliability": {
-        "$base": "Enumerated",
-        "value": "no-fault-detected"
+    "text-value": {
+        "$base": "String",
+        "value": "Active"
     },
     "hal-flags": {
         "$base": "BitString",
         "value": "hvac"
+    },
+    "value-source": {
+        "$base": "Enumerated",
+        "value": "configuration-(bdc)"
     },
     "event-detection-enable": {
         "$base": "Boolean",

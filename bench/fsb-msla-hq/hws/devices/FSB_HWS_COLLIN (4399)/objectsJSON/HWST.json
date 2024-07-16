@@ -1,5 +1,5 @@
 {
-  "displayName": "HWS",
+  "displayName": "HWST",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-input,1"
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HWS"
+    "value": "HWST"
   },
   "description": {
     "$base": "String",
-    "value": "26 Oct2023 AV- vs HWR when look is just circing"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -58,7 +58,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": 1
   },
   "device-type": {
     "$base": "String",

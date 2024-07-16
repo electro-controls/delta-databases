@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "4-20mA later"
   },
   "flag": {
     "$base": "Unsigned",

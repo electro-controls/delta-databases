@@ -1,8 +1,8 @@
 {
-  "displayName": "HWP1_Current",
+  "displayName": "HWP2_Run_Current",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,10"
+    "value": "analog-input,5"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HWP1_Current"
+    "value": "HWP2_Run_Current"
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "check aic"
   },
   "flags": {
     "$base": "BitString",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "14.862"
+    "value": "0.02442"
   },
   "last-value": {
     "$base": "Real",
-    "value": "14.8571"
+    "value": "0.0175824"
   },
   "status-flags": {
     "$base": "BitString",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,10"
+    "value": "aic,11"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,7 +62,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "HWP1_Current AIC"
+    "value": "HWP2_Current AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
@@ -97,7 +97,7 @@
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "3047"
+    "value": "5"
   },
   "calibration": {
     "$base": "Real",

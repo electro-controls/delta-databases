@@ -1,8 +1,8 @@
 {
-    "displayName": "B1_LWT",
+    "displayName": "HWRT",
     "object-identifier": {
         "$base": "ObjectIdentifier",
-        "value": "analog-input,11"
+        "value": "analog-input,2"
     },
     "object-type": {
         "$base": "Enumerated",
@@ -10,7 +10,7 @@
     },
     "object-name": {
         "$base": "String",
-        "value": "B1_LWT"
+        "value": "HWRT"
     },
     "description": {
         "$base": "String",
@@ -18,15 +18,15 @@
     },
     "flags": {
         "$base": "BitString",
-        "value": "not-commissioned"
+        "value": ""
     },
     "present-value": {
         "$base": "Real",
-        "value": "79.2854"
+        "value": "144.222"
     },
     "last-value": {
         "$base": "Real",
-        "value": "79.2973"
+        "value": "144.23"
     },
     "status-flags": {
         "$base": "BitString",
@@ -42,7 +42,7 @@
     },
     "commission-flag": {
         "$base": "Enumerated",
-        "value": "not-commissioned"
+        "value": "commissioned"
     },
     "type-reference": {
         "$base": "ObjectIdentifier",
@@ -66,7 +66,7 @@
     },
     "update-interval": {
         "$base": "Unsigned",
-        "value": "328"
+        "value": "313"
     },
     "min-pres-value": {
         "$base": "Real",
@@ -92,12 +92,12 @@
         "$base": "Choice",
         "filter-delay-timer": {
             "$base": "Unsigned",
-            "value": "68230433"
+            "value": "68230420"
         }
     },
     "ad-value": {
         "$base": "Unsigned",
-        "value": "1997"
+        "value": "835"
     },
     "calibration": {
         "$base": "Real",
