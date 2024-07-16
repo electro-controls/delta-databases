@@ -1,0 +1,76 @@
+{
+  "displayName": "HWP1_Current AIC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "aic,10"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-input-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "HWP1_Current AIC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "A"
+  },
+  "max-value": {
+    "$base": "Real",
+    "value": "20"
+  },
+  "min-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "scale-range": {
+    "1": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": 0
+      },
+      "value": {
+        "$base": "Real",
+        "value": 0
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "5"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "20"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "sort-required": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

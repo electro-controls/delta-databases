@@ -1,0 +1,487 @@
+{
+  "name": "Bench",
+  "ipAddress": "http://localhost",
+  "uploadQueue": [
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "pg,1",
+      "objectName": "General_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/General_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 9:26:08 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "pg,2",
+      "objectName": "Main_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Main_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 9:26:20 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "pg,3",
+      "objectName": "Main_PG (pg3)",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Main_PG (pg3).gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 9:26:54 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,3",
+      "objectName": "Boiler_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Boiler_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 9:28:21 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,4",
+      "objectName": "Critical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Critical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 9:28:21 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,5",
+      "objectName": "FaultDetection_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/FaultDetection_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 9:28:21 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,6",
+      "objectName": "HWSystem_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/HWSystem_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 9:28:21 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,7",
+      "objectName": "Pumps_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Pumps_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 9:28:21 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,8",
+      "objectName": "Pumps2_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Pumps2_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 9:28:21 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,1",
+      "objectName": "Main_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Main_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 9:28:30 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,93",
+      "objectName": "Rem_OAT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/Rem_OAT.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 11:16:04 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,1",
+      "objectName": "HWS_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/HWS_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 11:16:08 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,91",
+      "objectName": "Eff_OAT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/Eff_OAT.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 11:16:12 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bdc,2",
+      "objectName": "Active~Inactive BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/Active~Inactive BDC.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 11:16:24 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bdc,3",
+      "objectName": "Alarm~Normal BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/Alarm~Normal BDC.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 11:16:24 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "co,31",
+      "objectName": "B1_LWT_Limit_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/B1_LWT_Limit_CO.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 11:16:24 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,17",
+      "objectName": "B1_LWT_Limit_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/B1_LWT_Limit_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 11:16:24 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,2",
+      "objectName": "General_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/General_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 11:16:39 AM",
+      "templateTriggered": false
+    }
+  ],
+  "devices": [
+    {
+      "number": 4399,
+      "objects": [
+        {
+          "id": "dbi,4399",
+          "name": "Database Information 4399",
+          "fileName": "Database Information 4399",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 4399",
+          "fileName": "Data Exchange Settings 4399",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "device,4399",
+          "name": "FSB_HWS_COLLIN",
+          "fileName": "FSB_HWS_COLLIN",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "evc,3",
+          "name": "Security",
+          "fileName": "Security",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "evc,4",
+          "name": "Critical",
+          "fileName": "Critical",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 4399",
+          "fileName": "Event and Alarm Settings 4399",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 4399",
+          "fileName": "BACnet Settings 4399",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 4399",
+          "fileName": "Priority Names 4399",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 4399",
+          "fileName": "Slave Device List 4399",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "sug,1",
+          "name": "Administrator",
+          "fileName": "Administrator",
+          "lastUpdate": "2024-07-16T15:27:30.060Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-07-16T15:27:42.573Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-07-16T15:28:03.711Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "Boiler_PG",
+          "fileName": "Boiler_PG",
+          "lastUpdate": "2024-07-16T15:28:21.220Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "Critical_PG",
+          "fileName": "Critical_PG",
+          "lastUpdate": "2024-07-16T15:28:21.247Z"
+        },
+        {
+          "id": "pg,5",
+          "name": "FaultDetection_PG",
+          "fileName": "FaultDetection_PG",
+          "lastUpdate": "2024-07-16T15:28:21.263Z"
+        },
+        {
+          "id": "pg,6",
+          "name": "HWSystem_PG",
+          "fileName": "HWSystem_PG",
+          "lastUpdate": "2024-07-16T15:28:21.269Z"
+        },
+        {
+          "id": "pg,7",
+          "name": "Pumps_PG",
+          "fileName": "Pumps_PG",
+          "lastUpdate": "2024-07-16T15:28:21.288Z"
+        },
+        {
+          "id": "pg,8",
+          "name": "Pumps2_PG",
+          "fileName": "Pumps2_PG",
+          "lastUpdate": "2024-07-16T15:28:21.303Z"
+        },
+        {
+          "id": "av,1",
+          "name": "HWS_Sp",
+          "fileName": "HWS_Sp",
+          "lastUpdate": "2024-07-16T17:13:21.267Z"
+        },
+        {
+          "id": "av,91",
+          "name": "Eff_OAT",
+          "fileName": "Eff_OAT",
+          "lastUpdate": "2024-07-16T17:15:11.240Z"
+        },
+        {
+          "id": "av,93",
+          "name": "Rem_OAT",
+          "fileName": "Rem_OAT",
+          "lastUpdate": "2024-07-16T17:15:25.246Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "Active~Inactive BDC",
+          "fileName": "Active~Inactive BDC",
+          "lastUpdate": "2024-07-16T17:16:24.683Z"
+        },
+        {
+          "id": "bdc,3",
+          "name": "Alarm~Normal BDC",
+          "fileName": "Alarm~Normal BDC",
+          "lastUpdate": "2024-07-16T17:16:24.691Z"
+        },
+        {
+          "id": "co,31",
+          "name": "B1_LWT_Limit_CO",
+          "fileName": "B1_LWT_Limit_CO",
+          "lastUpdate": "2024-07-16T17:16:24.706Z"
+        },
+        {
+          "id": "av,17",
+          "name": "B1_LWT_Limit_Sp",
+          "fileName": "B1_LWT_Limit_Sp",
+          "lastUpdate": "2024-07-16T17:16:24.720Z"
+        }
+      ]
+    }
+  ]
+}

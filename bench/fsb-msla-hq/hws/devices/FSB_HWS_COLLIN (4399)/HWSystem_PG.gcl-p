@@ -1,0 +1,69 @@
+//HW system page
+
+//system enable logic including 2 OAT interlocks, system ramp, and effective demand
+
+//System enable
+If ('HWSystemMode' = 1) Then //auto
+    If 'Rem_HWHeatCall' Or ('OATInt1' And 'Rem_BuildingOcc') Or 'OATInt2' Then
+      'SystemEnable' = On
+    Else
+      'SystemEnable' = Off
+    End If
+  ElseIf  ('HWSystemMode' = 2) Then //man on
+      'SystemEnable' = On
+  Else
+      'SystemEnable' = Off
+End If
+
+//interlock if OAT is below sp for a duration
+If ('Eff_OAT' < 'OATInt1_Sp') Then
+  DoEvery 1.5M
+    'OATInt1TimeLeft' = Max (0, 'OATInt1TimeLeft' - 0.025)
+  End Do
+End If
+
+If ('Eff_OAT' > 'OATInt1_Sp') Then
+    'OATInt1TimeLeft' = 'OATDelayInt1_Sp'
+End If
+
+If 'OATInt1TimeLeft' > 0 Then
+    'OATInt1' = Off
+  Else
+    'OATInt1' = On
+End If
+
+//instantaneous interlock if OAT is below sp
+'OATInt2' = Switch ( 'OATInt2', 'Eff_OAT', 'OATInt2_Sp' - 1, 'OATInt2_Sp' + 1)
+
+
+//determine effective HW demand
+Variable RampMult
+Variable Loopramp
+
+//longer ramp time if system is cold
+RampMult = Scale ('HWS', 0, 70, 1, 140, 0.1)
+
+If 'SystemEnable' Then
+    DoEvery 10S
+      Loopramp = Min (100, Loopramp + (100 / ('SystemRamp_Sp' * RampMult * 6)))
+    End Do
+  Else
+    Loopramp = 0
+End If
+
+//local calculated demand
+'Loc_Demand' = Loopramp * 0.01 * 'HWS_CO'
+
+//Allow remote manual override of system loop demand
+If 'Rem_Demand' >= 0 Then
+    'Eff_Demand' = 'Rem_Demand'
+  Else
+    'Eff_Demand' = 'Loc_Demand'
+End If
+
+//prevent loop wind-up
+If 'SystemEnable' OffFor 60S Then
+    'HWS_CO.Bias' = 1
+End If
+
+//end of HW system page

@@ -1,0 +1,3960 @@
+{
+  "displayName": "HWS_TL",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "trend-log,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "trend-log"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "HWS_TL"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Enumerated",
+    "value": "trending"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "start-time": {
+    "$base": "DateTime",
+    "value": "2008-10-26T00:00:00.000000-06:00"
+  },
+  "stop-time": {
+    "$base": "DateTime",
+    "value": "*-*-*-*T*:*:*.*"
+  },
+  "input-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "device,1100"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-input,1"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "present-value",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "log-interval": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "log-timer": {
+    "$base": "Choice",
+    "log-timer": {
+      "$base": "Unsigned",
+      "value": "26"
+    }
+  },
+  "cov-resubscription-interval": {
+    "$base": "Unsigned",
+    "value": "1800"
+  },
+  "client-cov-increment": {
+    "$base": "Choice",
+    "client-cov-increment": {
+      "$base": "Real",
+      "value": 0
+    }
+  },
+  "stop-when-full": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "stop-when-error-full": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "restrict-data-range": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "timestamp-buffer": {
+    "1": {
+      "$base": "Unsigned",
+      "value": "3527911550"
+    },
+    "2": {
+      "$base": "Unsigned",
+      "value": "3527911670"
+    },
+    "3": {
+      "$base": "Unsigned",
+      "value": "3527911940"
+    },
+    "4": {
+      "$base": "Unsigned",
+      "value": "3527912460"
+    },
+    "5": {
+      "$base": "Unsigned",
+      "value": "3527912670"
+    },
+    "6": {
+      "$base": "Unsigned",
+      "value": "3527912920"
+    },
+    "7": {
+      "$base": "Unsigned",
+      "value": "3527913100"
+    },
+    "8": {
+      "$base": "Unsigned",
+      "value": "3527913190"
+    },
+    "9": {
+      "$base": "Unsigned",
+      "value": "3527913590"
+    },
+    "10": {
+      "$base": "Unsigned",
+      "value": "3527913860"
+    },
+    "11": {
+      "$base": "Unsigned",
+      "value": "3527914460"
+    },
+    "12": {
+      "$base": "Unsigned",
+      "value": "3527914700"
+    },
+    "13": {
+      "$base": "Unsigned",
+      "value": "3527915060"
+    },
+    "14": {
+      "$base": "Unsigned",
+      "value": "3527915380"
+    },
+    "15": {
+      "$base": "Unsigned",
+      "value": "3527915740"
+    },
+    "16": {
+      "$base": "Unsigned",
+      "value": "3527915800"
+    },
+    "17": {
+      "$base": "Unsigned",
+      "value": "3527916460"
+    },
+    "18": {
+      "$base": "Unsigned",
+      "value": "3527916680"
+    },
+    "19": {
+      "$base": "Unsigned",
+      "value": "3527916950"
+    },
+    "20": {
+      "$base": "Unsigned",
+      "value": "3527917370"
+    },
+    "21": {
+      "$base": "Unsigned",
+      "value": "3527917470"
+    },
+    "22": {
+      "$base": "Unsigned",
+      "value": "3527917760"
+    },
+    "23": {
+      "$base": "Unsigned",
+      "value": "3527918550"
+    },
+    "24": {
+      "$base": "Unsigned",
+      "value": "3527919060"
+    },
+    "25": {
+      "$base": "Unsigned",
+      "value": "3527919780"
+    },
+    "26": {
+      "$base": "Unsigned",
+      "value": "3527920470"
+    },
+    "27": {
+      "$base": "Unsigned",
+      "value": "3527920620"
+    },
+    "28": {
+      "$base": "Unsigned",
+      "value": "3527920800"
+    },
+    "29": {
+      "$base": "Unsigned",
+      "value": "3527920980"
+    },
+    "30": {
+      "$base": "Unsigned",
+      "value": "3527921210"
+    },
+    "31": {
+      "$base": "Unsigned",
+      "value": "3527921890"
+    },
+    "32": {
+      "$base": "Unsigned",
+      "value": "3527922180"
+    },
+    "33": {
+      "$base": "Unsigned",
+      "value": "3527922300"
+    },
+    "34": {
+      "$base": "Unsigned",
+      "value": "3527922350"
+    },
+    "35": {
+      "$base": "Unsigned",
+      "value": "3527922440"
+    },
+    "36": {
+      "$base": "Unsigned",
+      "value": "3527922560"
+    },
+    "37": {
+      "$base": "Unsigned",
+      "value": "3527922620"
+    },
+    "38": {
+      "$base": "Unsigned",
+      "value": "3527922830"
+    },
+    "39": {
+      "$base": "Unsigned",
+      "value": "3527923040"
+    },
+    "40": {
+      "$base": "Unsigned",
+      "value": "3527923400"
+    },
+    "41": {
+      "$base": "Unsigned",
+      "value": "3527923580"
+    },
+    "42": {
+      "$base": "Unsigned",
+      "value": "3527923830"
+    },
+    "43": {
+      "$base": "Unsigned",
+      "value": "3527924990"
+    },
+    "44": {
+      "$base": "Unsigned",
+      "value": "3527925410"
+    },
+    "45": {
+      "$base": "Unsigned",
+      "value": "3527925980"
+    },
+    "46": {
+      "$base": "Unsigned",
+      "value": "3527926100"
+    },
+    "47": {
+      "$base": "Unsigned",
+      "value": "3527926700"
+    },
+    "48": {
+      "$base": "Unsigned",
+      "value": "3527926980"
+    },
+    "49": {
+      "$base": "Unsigned",
+      "value": "3527927190"
+    },
+    "50": {
+      "$base": "Unsigned",
+      "value": "3527927570"
+    },
+    "51": {
+      "$base": "Unsigned",
+      "value": "3527928550"
+    },
+    "52": {
+      "$base": "Unsigned",
+      "value": "3527928720"
+    },
+    "53": {
+      "$base": "Unsigned",
+      "value": "3527929040"
+    },
+    "54": {
+      "$base": "Unsigned",
+      "value": "3527929110"
+    },
+    "55": {
+      "$base": "Unsigned",
+      "value": "3527929400"
+    },
+    "56": {
+      "$base": "Unsigned",
+      "value": "3527929470"
+    },
+    "57": {
+      "$base": "Unsigned",
+      "value": "3527929660"
+    },
+    "58": {
+      "$base": "Unsigned",
+      "value": "3527929820"
+    },
+    "59": {
+      "$base": "Unsigned",
+      "value": "3527929920"
+    },
+    "60": {
+      "$base": "Unsigned",
+      "value": "3527930020"
+    },
+    "61": {
+      "$base": "Unsigned",
+      "value": "3527930610"
+    },
+    "62": {
+      "$base": "Unsigned",
+      "value": "3527930930"
+    },
+    "63": {
+      "$base": "Unsigned",
+      "value": "3527931190"
+    },
+    "64": {
+      "$base": "Unsigned",
+      "value": "3527931720"
+    },
+    "65": {
+      "$base": "Unsigned",
+      "value": "3527933080"
+    },
+    "66": {
+      "$base": "Unsigned",
+      "value": "3527933270"
+    },
+    "67": {
+      "$base": "Unsigned",
+      "value": "3527933470"
+    },
+    "68": {
+      "$base": "Unsigned",
+      "value": "3527934120"
+    },
+    "69": {
+      "$base": "Unsigned",
+      "value": "3527935360"
+    },
+    "70": {
+      "$base": "Unsigned",
+      "value": "3527935930"
+    },
+    "71": {
+      "$base": "Unsigned",
+      "value": "3527936390"
+    },
+    "72": {
+      "$base": "Unsigned",
+      "value": "3527936990"
+    },
+    "73": {
+      "$base": "Unsigned",
+      "value": "3527937310"
+    },
+    "74": {
+      "$base": "Unsigned",
+      "value": "3527937930"
+    },
+    "75": {
+      "$base": "Unsigned",
+      "value": "3527938100"
+    },
+    "76": {
+      "$base": "Unsigned",
+      "value": "3527938630"
+    },
+    "77": {
+      "$base": "Unsigned",
+      "value": "3527938830"
+    },
+    "78": {
+      "$base": "Unsigned",
+      "value": "3527939010"
+    },
+    "79": {
+      "$base": "Unsigned",
+      "value": "3527940670"
+    },
+    "80": {
+      "$base": "Unsigned",
+      "value": "3527941360"
+    },
+    "81": {
+      "$base": "Unsigned",
+      "value": "3527942330"
+    },
+    "82": {
+      "$base": "Unsigned",
+      "value": "3527943360"
+    },
+    "83": {
+      "$base": "Unsigned",
+      "value": "3527945060"
+    },
+    "84": {
+      "$base": "Unsigned",
+      "value": "3527945730"
+    },
+    "85": {
+      "$base": "Unsigned",
+      "value": "3527946460"
+    },
+    "86": {
+      "$base": "Unsigned",
+      "value": "3527947370"
+    },
+    "87": {
+      "$base": "Unsigned",
+      "value": "3527948370"
+    },
+    "88": {
+      "$base": "Unsigned",
+      "value": "3527948460"
+    },
+    "89": {
+      "$base": "Unsigned",
+      "value": "3527853480"
+    },
+    "90": {
+      "$base": "Unsigned",
+      "value": "3527853810"
+    },
+    "91": {
+      "$base": "Unsigned",
+      "value": "3527854680"
+    },
+    "92": {
+      "$base": "Unsigned",
+      "value": "3527855010"
+    },
+    "93": {
+      "$base": "Unsigned",
+      "value": "3527855140"
+    },
+    "94": {
+      "$base": "Unsigned",
+      "value": "3527855260"
+    },
+    "95": {
+      "$base": "Unsigned",
+      "value": "3527855320"
+    },
+    "96": {
+      "$base": "Unsigned",
+      "value": "3527855410"
+    },
+    "97": {
+      "$base": "Unsigned",
+      "value": "3527855600"
+    },
+    "98": {
+      "$base": "Unsigned",
+      "value": "3527856220"
+    },
+    "99": {
+      "$base": "Unsigned",
+      "value": "3527856300"
+    },
+    "100": {
+      "$base": "Unsigned",
+      "value": "3527856570"
+    },
+    "101": {
+      "$base": "Unsigned",
+      "value": "3527856890"
+    },
+    "102": {
+      "$base": "Unsigned",
+      "value": "3527857170"
+    },
+    "103": {
+      "$base": "Unsigned",
+      "value": "3527857470"
+    },
+    "104": {
+      "$base": "Unsigned",
+      "value": "3527857590"
+    },
+    "105": {
+      "$base": "Unsigned",
+      "value": "3527857650"
+    },
+    "106": {
+      "$base": "Unsigned",
+      "value": "3527858600"
+    },
+    "107": {
+      "$base": "Unsigned",
+      "value": "3527858690"
+    },
+    "108": {
+      "$base": "Unsigned",
+      "value": "3527858820"
+    },
+    "109": {
+      "$base": "Unsigned",
+      "value": "3527859020"
+    },
+    "110": {
+      "$base": "Unsigned",
+      "value": "3527859760"
+    },
+    "111": {
+      "$base": "Unsigned",
+      "value": "3527859880"
+    },
+    "112": {
+      "$base": "Unsigned",
+      "value": "3527860570"
+    },
+    "113": {
+      "$base": "Unsigned",
+      "value": "3527860990"
+    },
+    "114": {
+      "$base": "Unsigned",
+      "value": "3527861290"
+    },
+    "115": {
+      "$base": "Unsigned",
+      "value": "3527861320"
+    },
+    "116": {
+      "$base": "Unsigned",
+      "value": "3527861750"
+    },
+    "117": {
+      "$base": "Unsigned",
+      "value": "3527861890"
+    },
+    "118": {
+      "$base": "Unsigned",
+      "value": "3527862330"
+    },
+    "119": {
+      "$base": "Unsigned",
+      "value": "3527863160"
+    },
+    "120": {
+      "$base": "Unsigned",
+      "value": "3527863250"
+    },
+    "121": {
+      "$base": "Unsigned",
+      "value": "3527863820"
+    },
+    "122": {
+      "$base": "Unsigned",
+      "value": "3527863970"
+    },
+    "123": {
+      "$base": "Unsigned",
+      "value": "3527864360"
+    },
+    "124": {
+      "$base": "Unsigned",
+      "value": "3527865060"
+    },
+    "125": {
+      "$base": "Unsigned",
+      "value": "3527865730"
+    },
+    "126": {
+      "$base": "Unsigned",
+      "value": "3527866240"
+    },
+    "127": {
+      "$base": "Unsigned",
+      "value": "3527866720"
+    },
+    "128": {
+      "$base": "Unsigned",
+      "value": "3527867020"
+    },
+    "129": {
+      "$base": "Unsigned",
+      "value": "3527867380"
+    },
+    "130": {
+      "$base": "Unsigned",
+      "value": "3527867930"
+    },
+    "131": {
+      "$base": "Unsigned",
+      "value": "3527868560"
+    },
+    "132": {
+      "$base": "Unsigned",
+      "value": "3527868650"
+    },
+    "133": {
+      "$base": "Unsigned",
+      "value": "3527869290"
+    },
+    "134": {
+      "$base": "Unsigned",
+      "value": "3527869540"
+    },
+    "135": {
+      "$base": "Unsigned",
+      "value": "3527869660"
+    },
+    "136": {
+      "$base": "Unsigned",
+      "value": "3527869750"
+    },
+    "137": {
+      "$base": "Unsigned",
+      "value": "3527870140"
+    },
+    "138": {
+      "$base": "Unsigned",
+      "value": "3527870290"
+    },
+    "139": {
+      "$base": "Unsigned",
+      "value": "3527870860"
+    },
+    "140": {
+      "$base": "Unsigned",
+      "value": "3527870950"
+    },
+    "141": {
+      "$base": "Unsigned",
+      "value": "3527871350"
+    },
+    "142": {
+      "$base": "Unsigned",
+      "value": "3527871740"
+    },
+    "143": {
+      "$base": "Unsigned",
+      "value": "3527871800"
+    },
+    "144": {
+      "$base": "Unsigned",
+      "value": "3527871890"
+    },
+    "145": {
+      "$base": "Unsigned",
+      "value": "3527871990"
+    },
+    "146": {
+      "$base": "Unsigned",
+      "value": "3527872050"
+    },
+    "147": {
+      "$base": "Unsigned",
+      "value": "3527872150"
+    },
+    "148": {
+      "$base": "Unsigned",
+      "value": "3527872720"
+    },
+    "149": {
+      "$base": "Unsigned",
+      "value": "3527873050"
+    },
+    "150": {
+      "$base": "Unsigned",
+      "value": "3527873170"
+    },
+    "151": {
+      "$base": "Unsigned",
+      "value": "3527873490"
+    },
+    "152": {
+      "$base": "Unsigned",
+      "value": "3527873580"
+    },
+    "153": {
+      "$base": "Unsigned",
+      "value": "3527873700"
+    },
+    "154": {
+      "$base": "Unsigned",
+      "value": "3527874790"
+    },
+    "155": {
+      "$base": "Unsigned",
+      "value": "3527875100"
+    },
+    "156": {
+      "$base": "Unsigned",
+      "value": "3527875310"
+    },
+    "157": {
+      "$base": "Unsigned",
+      "value": "3527875910"
+    },
+    "158": {
+      "$base": "Unsigned",
+      "value": "3527876560"
+    },
+    "159": {
+      "$base": "Unsigned",
+      "value": "3527876770"
+    },
+    "160": {
+      "$base": "Unsigned",
+      "value": "3527877610"
+    },
+    "161": {
+      "$base": "Unsigned",
+      "value": "3527877700"
+    },
+    "162": {
+      "$base": "Unsigned",
+      "value": "3527877760"
+    },
+    "163": {
+      "$base": "Unsigned",
+      "value": "3527878130"
+    },
+    "164": {
+      "$base": "Unsigned",
+      "value": "3527878630"
+    },
+    "165": {
+      "$base": "Unsigned",
+      "value": "3527878720"
+    },
+    "166": {
+      "$base": "Unsigned",
+      "value": "3527879020"
+    },
+    "167": {
+      "$base": "Unsigned",
+      "value": "3527879110"
+    },
+    "168": {
+      "$base": "Unsigned",
+      "value": "3527879520"
+    },
+    "169": {
+      "$base": "Unsigned",
+      "value": "3527880130"
+    },
+    "170": {
+      "$base": "Unsigned",
+      "value": "3527880270"
+    },
+    "171": {
+      "$base": "Unsigned",
+      "value": "3527880450"
+    },
+    "172": {
+      "$base": "Unsigned",
+      "value": "3527880700"
+    },
+    "173": {
+      "$base": "Unsigned",
+      "value": "3527880940"
+    },
+    "174": {
+      "$base": "Unsigned",
+      "value": "3527881310"
+    },
+    "175": {
+      "$base": "Unsigned",
+      "value": "3527881400"
+    },
+    "176": {
+      "$base": "Unsigned",
+      "value": "3527881550"
+    },
+    "177": {
+      "$base": "Unsigned",
+      "value": "3527882070"
+    },
+    "178": {
+      "$base": "Unsigned",
+      "value": "3527882440"
+    },
+    "179": {
+      "$base": "Unsigned",
+      "value": "3527883240"
+    },
+    "180": {
+      "$base": "Unsigned",
+      "value": "3527883470"
+    },
+    "181": {
+      "$base": "Unsigned",
+      "value": "3527884020"
+    },
+    "182": {
+      "$base": "Unsigned",
+      "value": "3527884110"
+    },
+    "183": {
+      "$base": "Unsigned",
+      "value": "3527884180"
+    },
+    "184": {
+      "$base": "Unsigned",
+      "value": "3527884240"
+    },
+    "185": {
+      "$base": "Unsigned",
+      "value": "3527884430"
+    },
+    "186": {
+      "$base": "Unsigned",
+      "value": "3527884490"
+    },
+    "187": {
+      "$base": "Unsigned",
+      "value": "3527884680"
+    },
+    "188": {
+      "$base": "Unsigned",
+      "value": "3527885000"
+    },
+    "189": {
+      "$base": "Unsigned",
+      "value": "3527885520"
+    },
+    "190": {
+      "$base": "Unsigned",
+      "value": "3527885750"
+    },
+    "191": {
+      "$base": "Unsigned",
+      "value": "3527886790"
+    },
+    "192": {
+      "$base": "Unsigned",
+      "value": "3527887310"
+    },
+    "193": {
+      "$base": "Unsigned",
+      "value": "3527887950"
+    },
+    "194": {
+      "$base": "Unsigned",
+      "value": "3527888010"
+    },
+    "195": {
+      "$base": "Unsigned",
+      "value": "3527888070"
+    },
+    "196": {
+      "$base": "Unsigned",
+      "value": "3527888280"
+    },
+    "197": {
+      "$base": "Unsigned",
+      "value": "3527888410"
+    },
+    "198": {
+      "$base": "Unsigned",
+      "value": "3527888500"
+    },
+    "199": {
+      "$base": "Unsigned",
+      "value": "3527889000"
+    },
+    "200": {
+      "$base": "Unsigned",
+      "value": "3527889270"
+    },
+    "201": {
+      "$base": "Unsigned",
+      "value": "3527889480"
+    },
+    "202": {
+      "$base": "Unsigned",
+      "value": "3527889800"
+    },
+    "203": {
+      "$base": "Unsigned",
+      "value": "3527890410"
+    },
+    "204": {
+      "$base": "Unsigned",
+      "value": "3527890660"
+    },
+    "205": {
+      "$base": "Unsigned",
+      "value": "3527891020"
+    },
+    "206": {
+      "$base": "Unsigned",
+      "value": "3527891480"
+    },
+    "207": {
+      "$base": "Unsigned",
+      "value": "3527891570"
+    },
+    "208": {
+      "$base": "Unsigned",
+      "value": "3527891690"
+    },
+    "209": {
+      "$base": "Unsigned",
+      "value": "3527891810"
+    },
+    "210": {
+      "$base": "Unsigned",
+      "value": "3527892360"
+    },
+    "211": {
+      "$base": "Unsigned",
+      "value": "3527892440"
+    },
+    "212": {
+      "$base": "Unsigned",
+      "value": "3527892620"
+    },
+    "213": {
+      "$base": "Unsigned",
+      "value": "3527892830"
+    },
+    "214": {
+      "$base": "Unsigned",
+      "value": "3527892920"
+    },
+    "215": {
+      "$base": "Unsigned",
+      "value": "3527893340"
+    },
+    "216": {
+      "$base": "Unsigned",
+      "value": "3527893400"
+    },
+    "217": {
+      "$base": "Unsigned",
+      "value": "3527893670"
+    },
+    "218": {
+      "$base": "Unsigned",
+      "value": "3527893970"
+    },
+    "219": {
+      "$base": "Unsigned",
+      "value": "3527894100"
+    },
+    "220": {
+      "$base": "Unsigned",
+      "value": "3527894710"
+    },
+    "221": {
+      "$base": "Unsigned",
+      "value": "3527894800"
+    },
+    "222": {
+      "$base": "Unsigned",
+      "value": "3527894920"
+    },
+    "223": {
+      "$base": "Unsigned",
+      "value": "3527895650"
+    },
+    "224": {
+      "$base": "Unsigned",
+      "value": "3527895770"
+    },
+    "225": {
+      "$base": "Unsigned",
+      "value": "3527895850"
+    },
+    "226": {
+      "$base": "Unsigned",
+      "value": "3527896000"
+    },
+    "227": {
+      "$base": "Unsigned",
+      "value": "3527896090"
+    },
+    "228": {
+      "$base": "Unsigned",
+      "value": "3527896150"
+    },
+    "229": {
+      "$base": "Unsigned",
+      "value": "3527896210"
+    },
+    "230": {
+      "$base": "Unsigned",
+      "value": "3527896300"
+    },
+    "231": {
+      "$base": "Unsigned",
+      "value": "3527896390"
+    },
+    "232": {
+      "$base": "Unsigned",
+      "value": "3527896490"
+    },
+    "233": {
+      "$base": "Unsigned",
+      "value": "3527896580"
+    },
+    "234": {
+      "$base": "Unsigned",
+      "value": "3527896640"
+    },
+    "235": {
+      "$base": "Unsigned",
+      "value": "3527896730"
+    },
+    "236": {
+      "$base": "Unsigned",
+      "value": "3527896790"
+    },
+    "237": {
+      "$base": "Unsigned",
+      "value": "3527896820"
+    },
+    "238": {
+      "$base": "Unsigned",
+      "value": "3527896880"
+    },
+    "239": {
+      "$base": "Unsigned",
+      "value": "3527896910"
+    },
+    "240": {
+      "$base": "Unsigned",
+      "value": "3527896970"
+    },
+    "241": {
+      "$base": "Unsigned",
+      "value": "3527897030"
+    },
+    "242": {
+      "$base": "Unsigned",
+      "value": "3527897120"
+    },
+    "243": {
+      "$base": "Unsigned",
+      "value": "3527897190"
+    },
+    "244": {
+      "$base": "Unsigned",
+      "value": "3527897240"
+    },
+    "245": {
+      "$base": "Unsigned",
+      "value": "3527897300"
+    },
+    "246": {
+      "$base": "Unsigned",
+      "value": "3527897420"
+    },
+    "247": {
+      "$base": "Unsigned",
+      "value": "3527897480"
+    },
+    "248": {
+      "$base": "Unsigned",
+      "value": "3527897510"
+    },
+    "249": {
+      "$base": "Unsigned",
+      "value": "3527897600"
+    },
+    "250": {
+      "$base": "Unsigned",
+      "value": "3527897660"
+    },
+    "251": {
+      "$base": "Unsigned",
+      "value": "3527897720"
+    },
+    "252": {
+      "$base": "Unsigned",
+      "value": "3527897810"
+    },
+    "253": {
+      "$base": "Unsigned",
+      "value": "3527897900"
+    },
+    "254": {
+      "$base": "Unsigned",
+      "value": "3527897960"
+    },
+    "255": {
+      "$base": "Unsigned",
+      "value": "3527898020"
+    },
+    "256": {
+      "$base": "Unsigned",
+      "value": "3527898140"
+    },
+    "257": {
+      "$base": "Unsigned",
+      "value": "3527898230"
+    },
+    "258": {
+      "$base": "Unsigned",
+      "value": "3527898280"
+    },
+    "259": {
+      "$base": "Unsigned",
+      "value": "3527898370"
+    },
+    "260": {
+      "$base": "Unsigned",
+      "value": "3527898440"
+    },
+    "261": {
+      "$base": "Unsigned",
+      "value": "3527898510"
+    },
+    "262": {
+      "$base": "Unsigned",
+      "value": "3527898580"
+    },
+    "263": {
+      "$base": "Unsigned",
+      "value": "3527898680"
+    },
+    "264": {
+      "$base": "Unsigned",
+      "value": "3527898760"
+    },
+    "265": {
+      "$base": "Unsigned",
+      "value": "3527898940"
+    },
+    "266": {
+      "$base": "Unsigned",
+      "value": "3527899000"
+    },
+    "267": {
+      "$base": "Unsigned",
+      "value": "3527899200"
+    },
+    "268": {
+      "$base": "Unsigned",
+      "value": "3527899350"
+    },
+    "269": {
+      "$base": "Unsigned",
+      "value": "3527899500"
+    },
+    "270": {
+      "$base": "Unsigned",
+      "value": "3527899580"
+    },
+    "271": {
+      "$base": "Unsigned",
+      "value": "3527899990"
+    },
+    "272": {
+      "$base": "Unsigned",
+      "value": "3527900210"
+    },
+    "273": {
+      "$base": "Unsigned",
+      "value": "3527900330"
+    },
+    "274": {
+      "$base": "Unsigned",
+      "value": "3527900540"
+    },
+    "275": {
+      "$base": "Unsigned",
+      "value": "3527900690"
+    },
+    "276": {
+      "$base": "Unsigned",
+      "value": "3527901440"
+    },
+    "277": {
+      "$base": "Unsigned",
+      "value": "3527901610"
+    },
+    "278": {
+      "$base": "Unsigned",
+      "value": "3527901890"
+    },
+    "279": {
+      "$base": "Unsigned",
+      "value": "3527902030"
+    },
+    "280": {
+      "$base": "Unsigned",
+      "value": "3527902980"
+    },
+    "281": {
+      "$base": "Unsigned",
+      "value": "3527903620"
+    },
+    "282": {
+      "$base": "Unsigned",
+      "value": "3527905510"
+    },
+    "283": {
+      "$base": "Unsigned",
+      "value": "3527906310"
+    },
+    "284": {
+      "$base": "Unsigned",
+      "value": "3527906620"
+    },
+    "285": {
+      "$base": "Unsigned",
+      "value": "3527906960"
+    },
+    "286": {
+      "$base": "Unsigned",
+      "value": "3527907130"
+    },
+    "287": {
+      "$base": "Unsigned",
+      "value": "3527907290"
+    },
+    "288": {
+      "$base": "Unsigned",
+      "value": "3527907830"
+    },
+    "289": {
+      "$base": "Unsigned",
+      "value": "3527908370"
+    },
+    "290": {
+      "$base": "Unsigned",
+      "value": "3527908790"
+    },
+    "291": {
+      "$base": "Unsigned",
+      "value": "3527909480"
+    },
+    "292": {
+      "$base": "Unsigned",
+      "value": "3527909780"
+    },
+    "293": {
+      "$base": "Unsigned",
+      "value": "3527910170"
+    },
+    "294": {
+      "$base": "Unsigned",
+      "value": "3527910290"
+    },
+    "295": {
+      "$base": "Unsigned",
+      "value": "3527910350"
+    },
+    "296": {
+      "$base": "Unsigned",
+      "value": "3527910540"
+    },
+    "297": {
+      "$base": "Unsigned",
+      "value": "3527910870"
+    },
+    "298": {
+      "$base": "Unsigned",
+      "value": "3527911050"
+    },
+    "299": {
+      "$base": "Unsigned",
+      "value": "3527911140"
+    },
+    "300": {
+      "$base": "Unsigned",
+      "value": "3527911490"
+    },
+    "$base": "Array"
+  },
+  "flags-buffer": {
+    "1": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "2": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "3": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "4": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "5": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "6": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "7": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "8": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "9": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "10": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "11": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "12": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "13": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "14": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "15": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "16": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "17": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "18": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "19": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "20": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "21": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "22": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "23": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "24": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "25": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "26": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "27": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "28": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "29": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "30": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "31": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "32": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "33": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "34": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "35": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "36": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "37": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "38": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "39": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "40": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "41": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "42": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "43": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "44": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "45": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "46": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "47": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "48": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "49": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "50": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "51": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "52": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "53": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "54": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "55": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "56": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "57": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "58": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "59": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "60": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "61": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "62": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "63": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "64": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "65": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "66": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "67": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "68": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "69": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "70": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "71": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "72": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "73": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "74": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "75": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "76": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "77": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "78": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "79": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "80": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "81": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "82": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "83": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "84": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "85": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "86": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "87": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "88": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "89": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "90": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "91": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "92": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "93": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "94": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "95": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "96": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "97": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "98": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "99": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "100": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "101": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "102": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "103": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "104": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "105": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "106": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "107": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "108": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "109": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "110": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "111": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "112": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "113": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "114": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "115": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "116": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "117": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "118": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "119": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "120": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "121": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "122": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "123": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "124": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "125": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "126": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "127": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "128": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "129": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "130": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "131": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "132": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "133": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "134": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "135": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "136": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "137": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "138": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "139": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "140": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "141": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "142": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "143": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "144": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "145": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "146": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "147": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "148": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "149": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "150": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "151": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "152": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "153": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "154": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "155": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "156": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "157": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "158": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "159": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "160": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "161": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "162": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "163": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "164": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "165": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "166": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "167": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "168": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "169": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "170": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "171": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "172": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "173": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "174": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "175": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "176": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "177": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "178": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "179": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "180": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "181": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "182": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "183": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "184": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "185": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "186": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "187": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "188": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "189": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "190": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "191": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "192": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "193": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "194": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "195": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "196": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "197": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "198": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "199": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "200": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "201": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "202": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "203": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "204": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "205": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "206": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "207": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "208": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "209": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "210": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "211": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "212": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "213": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "214": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "215": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "216": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "217": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "218": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "219": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "220": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "221": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "222": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "223": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "224": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "225": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "226": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "227": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "228": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "229": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "230": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "231": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "232": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "233": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "234": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "235": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "236": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "237": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "238": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "239": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "240": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "241": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "242": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "243": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "244": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "245": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "246": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "247": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "248": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "249": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "250": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "251": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "252": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "253": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "254": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "255": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "256": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "257": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "258": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "259": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "260": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "261": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "262": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "263": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "264": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "265": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "266": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "267": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "268": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "269": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "270": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "271": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "272": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "273": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "274": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "275": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "276": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "277": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "278": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "279": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "280": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "281": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "282": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "283": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "284": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "285": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "286": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "287": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "288": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "289": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "290": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "291": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "292": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "293": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "294": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "295": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "296": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "297": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "298": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "299": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "300": {
+      "$base": "BitString",
+      "value": ""
+    },
+    "$base": "Array"
+  },
+  "data-buffer": {
+    "$base": "Choice",
+    "real": {
+      "1": {
+        "$base": "Real",
+        "value": "147.921"
+      },
+      "2": {
+        "$base": "Real",
+        "value": "147.808"
+      },
+      "3": {
+        "$base": "Real",
+        "value": "147.69"
+      },
+      "4": {
+        "$base": "Real",
+        "value": "147.552"
+      },
+      "5": {
+        "$base": "Real",
+        "value": "147.687"
+      },
+      "6": {
+        "$base": "Real",
+        "value": "147.813"
+      },
+      "7": {
+        "$base": "Real",
+        "value": "147.685"
+      },
+      "8": {
+        "$base": "Real",
+        "value": "147.806"
+      },
+      "9": {
+        "$base": "Real",
+        "value": "147.697"
+      },
+      "10": {
+        "$base": "Real",
+        "value": "147.811"
+      },
+      "11": {
+        "$base": "Real",
+        "value": "147.694"
+      },
+      "12": {
+        "$base": "Real",
+        "value": "147.553"
+      },
+      "13": {
+        "$base": "Real",
+        "value": "147.698"
+      },
+      "14": {
+        "$base": "Real",
+        "value": "147.586"
+      },
+      "15": {
+        "$base": "Real",
+        "value": "147.476"
+      },
+      "16": {
+        "$base": "Real",
+        "value": "147.61"
+      },
+      "17": {
+        "$base": "Real",
+        "value": "147.493"
+      },
+      "18": {
+        "$base": "Real",
+        "value": "147.61"
+      },
+      "19": {
+        "$base": "Real",
+        "value": "147.481"
+      },
+      "20": {
+        "$base": "Real",
+        "value": "147.584"
+      },
+      "21": {
+        "$base": "Real",
+        "value": "147.475"
+      },
+      "22": {
+        "$base": "Real",
+        "value": "147.366"
+      },
+      "23": {
+        "$base": "Real",
+        "value": "147.259"
+      },
+      "24": {
+        "$base": "Real",
+        "value": "147.147"
+      },
+      "25": {
+        "$base": "Real",
+        "value": "147.029"
+      },
+      "26": {
+        "$base": "Real",
+        "value": "146.896"
+      },
+      "27": {
+        "$base": "Real",
+        "value": "147.027"
+      },
+      "28": {
+        "$base": "Real",
+        "value": "146.91"
+      },
+      "29": {
+        "$base": "Real",
+        "value": "146.802"
+      },
+      "30": {
+        "$base": "Real",
+        "value": "146.695"
+      },
+      "31": {
+        "$base": "Real",
+        "value": "146.592"
+      },
+      "32": {
+        "$base": "Real",
+        "value": "146.411"
+      },
+      "33": {
+        "$base": "Real",
+        "value": "146.522"
+      },
+      "34": {
+        "$base": "Real",
+        "value": "146.622"
+      },
+      "35": {
+        "$base": "Real",
+        "value": "146.467"
+      },
+      "36": {
+        "$base": "Real",
+        "value": "146.575"
+      },
+      "37": {
+        "$base": "Real",
+        "value": "146.466"
+      },
+      "38": {
+        "$base": "Real",
+        "value": "146.346"
+      },
+      "39": {
+        "$base": "Real",
+        "value": "146.244"
+      },
+      "40": {
+        "$base": "Real",
+        "value": "146.349"
+      },
+      "41": {
+        "$base": "Real",
+        "value": "146.228"
+      },
+      "42": {
+        "$base": "Real",
+        "value": "146.119"
+      },
+      "43": {
+        "$base": "Real",
+        "value": "145.987"
+      },
+      "44": {
+        "$base": "Real",
+        "value": "145.861"
+      },
+      "45": {
+        "$base": "Real",
+        "value": "145.979"
+      },
+      "46": {
+        "$base": "Real",
+        "value": "145.852"
+      },
+      "47": {
+        "$base": "Real",
+        "value": "145.747"
+      },
+      "48": {
+        "$base": "Real",
+        "value": "145.62"
+      },
+      "49": {
+        "$base": "Real",
+        "value": "145.73"
+      },
+      "50": {
+        "$base": "Real",
+        "value": "145.617"
+      },
+      "51": {
+        "$base": "Real",
+        "value": "145.462"
+      },
+      "52": {
+        "$base": "Real",
+        "value": "145.582"
+      },
+      "53": {
+        "$base": "Real",
+        "value": "145.45"
+      },
+      "54": {
+        "$base": "Real",
+        "value": "145.35"
+      },
+      "55": {
+        "$base": "Real",
+        "value": "145.457"
+      },
+      "56": {
+        "$base": "Real",
+        "value": "145.593"
+      },
+      "57": {
+        "$base": "Real",
+        "value": "145.436"
+      },
+      "58": {
+        "$base": "Real",
+        "value": "145.323"
+      },
+      "59": {
+        "$base": "Real",
+        "value": "145.203"
+      },
+      "60": {
+        "$base": "Real",
+        "value": "145.065"
+      },
+      "61": {
+        "$base": "Real",
+        "value": "144.957"
+      },
+      "62": {
+        "$base": "Real",
+        "value": "144.849"
+      },
+      "63": {
+        "$base": "Real",
+        "value": "144.722"
+      },
+      "64": {
+        "$base": "Real",
+        "value": "144.588"
+      },
+      "65": {
+        "$base": "Real",
+        "value": "144.478"
+      },
+      "66": {
+        "$base": "Real",
+        "value": "144.604"
+      },
+      "67": {
+        "$base": "Real",
+        "value": "144.497"
+      },
+      "68": {
+        "$base": "Real",
+        "value": "144.608"
+      },
+      "69": {
+        "$base": "Real",
+        "value": "144.711"
+      },
+      "70": {
+        "$base": "Real",
+        "value": "144.595"
+      },
+      "71": {
+        "$base": "Real",
+        "value": "144.705"
+      },
+      "72": {
+        "$base": "Real",
+        "value": "144.601"
+      },
+      "73": {
+        "$base": "Real",
+        "value": "144.712"
+      },
+      "74": {
+        "$base": "Real",
+        "value": "144.829"
+      },
+      "75": {
+        "$base": "Real",
+        "value": "144.705"
+      },
+      "76": {
+        "$base": "Real",
+        "value": "144.875"
+      },
+      "77": {
+        "$base": "Real",
+        "value": "144.75"
+      },
+      "78": {
+        "$base": "Real",
+        "value": "144.648"
+      },
+      "79": {
+        "$base": "Real",
+        "value": "144.54"
+      },
+      "80": {
+        "$base": "Real",
+        "value": "144.642"
+      },
+      "81": {
+        "$base": "Real",
+        "value": "144.53"
+      },
+      "82": {
+        "$base": "Real",
+        "value": "144.411"
+      },
+      "83": {
+        "$base": "Real",
+        "value": "144.264"
+      },
+      "84": {
+        "$base": "Real",
+        "value": "144.144"
+      },
+      "85": {
+        "$base": "Real",
+        "value": "144.272"
+      },
+      "86": {
+        "$base": "Real",
+        "value": "144.165"
+      },
+      "87": {
+        "$base": "Real",
+        "value": "144.281"
+      },
+      "88": {
+        "$base": "Real",
+        "value": "144.176"
+      },
+      "89": {
+        "$base": "Real",
+        "value": "144.074"
+      },
+      "90": {
+        "$base": "Real",
+        "value": "144.178"
+      },
+      "91": {
+        "$base": "Real",
+        "value": "144.638"
+      },
+      "92": {
+        "$base": "Real",
+        "value": "144.762"
+      },
+      "93": {
+        "$base": "Real",
+        "value": "144.865"
+      },
+      "94": {
+        "$base": "Real",
+        "value": "144.968"
+      },
+      "95": {
+        "$base": "Real",
+        "value": "144.832"
+      },
+      "96": {
+        "$base": "Real",
+        "value": "144.993"
+      },
+      "97": {
+        "$base": "Real",
+        "value": "145.137"
+      },
+      "98": {
+        "$base": "Real",
+        "value": "145.026"
+      },
+      "99": {
+        "$base": "Real",
+        "value": "145.143"
+      },
+      "100": {
+        "$base": "Real",
+        "value": "145.289"
+      },
+      "101": {
+        "$base": "Real",
+        "value": "145.401"
+      },
+      "102": {
+        "$base": "Real",
+        "value": "145.56"
+      },
+      "103": {
+        "$base": "Real",
+        "value": "145.439"
+      },
+      "104": {
+        "$base": "Real",
+        "value": "145.566"
+      },
+      "105": {
+        "$base": "Real",
+        "value": "145.673"
+      },
+      "106": {
+        "$base": "Real",
+        "value": "145.808"
+      },
+      "107": {
+        "$base": "Real",
+        "value": "145.934"
+      },
+      "108": {
+        "$base": "Real",
+        "value": "145.831"
+      },
+      "109": {
+        "$base": "Real",
+        "value": "145.967"
+      },
+      "110": {
+        "$base": "Real",
+        "value": "146.081"
+      },
+      "111": {
+        "$base": "Real",
+        "value": "146.19"
+      },
+      "112": {
+        "$base": "Real",
+        "value": "146.293"
+      },
+      "113": {
+        "$base": "Real",
+        "value": "146.424"
+      },
+      "114": {
+        "$base": "Real",
+        "value": "146.555"
+      },
+      "115": {
+        "$base": "Real",
+        "value": "146.671"
+      },
+      "116": {
+        "$base": "Real",
+        "value": "146.558"
+      },
+      "117": {
+        "$base": "Real",
+        "value": "146.691"
+      },
+      "118": {
+        "$base": "Real",
+        "value": "146.834"
+      },
+      "119": {
+        "$base": "Real",
+        "value": "146.949"
+      },
+      "120": {
+        "$base": "Real",
+        "value": "147.054"
+      },
+      "121": {
+        "$base": "Real",
+        "value": "146.949"
+      },
+      "122": {
+        "$base": "Real",
+        "value": "147.078"
+      },
+      "123": {
+        "$base": "Real",
+        "value": "147.182"
+      },
+      "124": {
+        "$base": "Real",
+        "value": "147.305"
+      },
+      "125": {
+        "$base": "Real",
+        "value": "147.461"
+      },
+      "126": {
+        "$base": "Real",
+        "value": "147.59"
+      },
+      "127": {
+        "$base": "Real",
+        "value": "147.71"
+      },
+      "128": {
+        "$base": "Real",
+        "value": "147.825"
+      },
+      "129": {
+        "$base": "Real",
+        "value": "147.978"
+      },
+      "130": {
+        "$base": "Real",
+        "value": "148.14"
+      },
+      "131": {
+        "$base": "Real",
+        "value": "148.243"
+      },
+      "132": {
+        "$base": "Real",
+        "value": "148.139"
+      },
+      "133": {
+        "$base": "Real",
+        "value": "148.277"
+      },
+      "134": {
+        "$base": "Real",
+        "value": "148.381"
+      },
+      "135": {
+        "$base": "Real",
+        "value": "148.242"
+      },
+      "136": {
+        "$base": "Real",
+        "value": "148.342"
+      },
+      "137": {
+        "$base": "Real",
+        "value": "148.449"
+      },
+      "138": {
+        "$base": "Real",
+        "value": "148.549"
+      },
+      "139": {
+        "$base": "Real",
+        "value": "148.657"
+      },
+      "140": {
+        "$base": "Real",
+        "value": "148.546"
+      },
+      "141": {
+        "$base": "Real",
+        "value": "148.654"
+      },
+      "142": {
+        "$base": "Real",
+        "value": "148.759"
+      },
+      "143": {
+        "$base": "Real",
+        "value": "148.902"
+      },
+      "144": {
+        "$base": "Real",
+        "value": "148.799"
+      },
+      "145": {
+        "$base": "Real",
+        "value": "148.929"
+      },
+      "146": {
+        "$base": "Real",
+        "value": "149.045"
+      },
+      "147": {
+        "$base": "Real",
+        "value": "148.897"
+      },
+      "148": {
+        "$base": "Real",
+        "value": "149.013"
+      },
+      "149": {
+        "$base": "Real",
+        "value": "148.91"
+      },
+      "150": {
+        "$base": "Real",
+        "value": "149.016"
+      },
+      "151": {
+        "$base": "Real",
+        "value": "149.146"
+      },
+      "152": {
+        "$base": "Real",
+        "value": "149.294"
+      },
+      "153": {
+        "$base": "Real",
+        "value": "149.417"
+      },
+      "154": {
+        "$base": "Real",
+        "value": "149.55"
+      },
+      "155": {
+        "$base": "Real",
+        "value": "149.652"
+      },
+      "156": {
+        "$base": "Real",
+        "value": "149.765"
+      },
+      "157": {
+        "$base": "Real",
+        "value": "149.872"
+      },
+      "158": {
+        "$base": "Real",
+        "value": "149.977"
+      },
+      "159": {
+        "$base": "Real",
+        "value": "150.082"
+      },
+      "160": {
+        "$base": "Real",
+        "value": "150.187"
+      },
+      "161": {
+        "$base": "Real",
+        "value": "150.304"
+      },
+      "162": {
+        "$base": "Real",
+        "value": "150.193"
+      },
+      "163": {
+        "$base": "Real",
+        "value": "150.306"
+      },
+      "164": {
+        "$base": "Real",
+        "value": "150.436"
+      },
+      "165": {
+        "$base": "Real",
+        "value": "150.568"
+      },
+      "166": {
+        "$base": "Real",
+        "value": "150.466"
+      },
+      "167": {
+        "$base": "Real",
+        "value": "150.584"
+      },
+      "168": {
+        "$base": "Real",
+        "value": "150.708"
+      },
+      "169": {
+        "$base": "Real",
+        "value": "150.818"
+      },
+      "170": {
+        "$base": "Real",
+        "value": "150.975"
+      },
+      "171": {
+        "$base": "Real",
+        "value": "150.862"
+      },
+      "172": {
+        "$base": "Real",
+        "value": "150.984"
+      },
+      "173": {
+        "$base": "Real",
+        "value": "151.093"
+      },
+      "174": {
+        "$base": "Real",
+        "value": "151.204"
+      },
+      "175": {
+        "$base": "Real",
+        "value": "151.307"
+      },
+      "176": {
+        "$base": "Real",
+        "value": "151.201"
+      },
+      "177": {
+        "$base": "Real",
+        "value": "151.332"
+      },
+      "178": {
+        "$base": "Real",
+        "value": "151.492"
+      },
+      "179": {
+        "$base": "Real",
+        "value": "151.601"
+      },
+      "180": {
+        "$base": "Real",
+        "value": "151.704"
+      },
+      "181": {
+        "$base": "Real",
+        "value": "151.599"
+      },
+      "182": {
+        "$base": "Real",
+        "value": "151.71"
+      },
+      "183": {
+        "$base": "Real",
+        "value": "151.824"
+      },
+      "184": {
+        "$base": "Real",
+        "value": "151.975"
+      },
+      "185": {
+        "$base": "Real",
+        "value": "151.868"
+      },
+      "186": {
+        "$base": "Real",
+        "value": "151.985"
+      },
+      "187": {
+        "$base": "Real",
+        "value": "151.863"
+      },
+      "188": {
+        "$base": "Real",
+        "value": "152.054"
+      },
+      "189": {
+        "$base": "Real",
+        "value": "152.191"
+      },
+      "190": {
+        "$base": "Real",
+        "value": "152.311"
+      },
+      "191": {
+        "$base": "Real",
+        "value": "152.45"
+      },
+      "192": {
+        "$base": "Real",
+        "value": "152.585"
+      },
+      "193": {
+        "$base": "Real",
+        "value": "152.698"
+      },
+      "194": {
+        "$base": "Real",
+        "value": "152.799"
+      },
+      "195": {
+        "$base": "Real",
+        "value": "152.696"
+      },
+      "196": {
+        "$base": "Real",
+        "value": "152.804"
+      },
+      "197": {
+        "$base": "Real",
+        "value": "152.683"
+      },
+      "198": {
+        "$base": "Real",
+        "value": "152.802"
+      },
+      "199": {
+        "$base": "Real",
+        "value": "152.934"
+      },
+      "200": {
+        "$base": "Real",
+        "value": "152.815"
+      },
+      "201": {
+        "$base": "Real",
+        "value": "152.927"
+      },
+      "202": {
+        "$base": "Real",
+        "value": "153.043"
+      },
+      "203": {
+        "$base": "Real",
+        "value": "152.929"
+      },
+      "204": {
+        "$base": "Real",
+        "value": "153.063"
+      },
+      "205": {
+        "$base": "Real",
+        "value": "153.193"
+      },
+      "206": {
+        "$base": "Real",
+        "value": "153.077"
+      },
+      "207": {
+        "$base": "Real",
+        "value": "153.226"
+      },
+      "208": {
+        "$base": "Real",
+        "value": "153.33"
+      },
+      "209": {
+        "$base": "Real",
+        "value": "153.468"
+      },
+      "210": {
+        "$base": "Real",
+        "value": "153.339"
+      },
+      "211": {
+        "$base": "Real",
+        "value": "153.47"
+      },
+      "212": {
+        "$base": "Real",
+        "value": "153.575"
+      },
+      "213": {
+        "$base": "Real",
+        "value": "153.694"
+      },
+      "214": {
+        "$base": "Real",
+        "value": "153.835"
+      },
+      "215": {
+        "$base": "Real",
+        "value": "153.712"
+      },
+      "216": {
+        "$base": "Real",
+        "value": "153.825"
+      },
+      "217": {
+        "$base": "Real",
+        "value": "153.961"
+      },
+      "218": {
+        "$base": "Real",
+        "value": "153.859"
+      },
+      "219": {
+        "$base": "Real",
+        "value": "154.019"
+      },
+      "220": {
+        "$base": "Real",
+        "value": "154.175"
+      },
+      "221": {
+        "$base": "Real",
+        "value": "154.279"
+      },
+      "222": {
+        "$base": "Real",
+        "value": "154.153"
+      },
+      "223": {
+        "$base": "Real",
+        "value": "154.038"
+      },
+      "224": {
+        "$base": "Real",
+        "value": "153.898"
+      },
+      "225": {
+        "$base": "Real",
+        "value": "153.772"
+      },
+      "226": {
+        "$base": "Real",
+        "value": "153.655"
+      },
+      "227": {
+        "$base": "Real",
+        "value": "153.507"
+      },
+      "228": {
+        "$base": "Real",
+        "value": "153.354"
+      },
+      "229": {
+        "$base": "Real",
+        "value": "153.234"
+      },
+      "230": {
+        "$base": "Real",
+        "value": "153.123"
+      },
+      "231": {
+        "$base": "Real",
+        "value": "153.022"
+      },
+      "232": {
+        "$base": "Real",
+        "value": "152.89"
+      },
+      "233": {
+        "$base": "Real",
+        "value": "152.758"
+      },
+      "234": {
+        "$base": "Real",
+        "value": "152.64"
+      },
+      "235": {
+        "$base": "Real",
+        "value": "152.474"
+      },
+      "236": {
+        "$base": "Real",
+        "value": "152.32"
+      },
+      "237": {
+        "$base": "Real",
+        "value": "152.22"
+      },
+      "238": {
+        "$base": "Real",
+        "value": "152.057"
+      },
+      "239": {
+        "$base": "Real",
+        "value": "151.935"
+      },
+      "240": {
+        "$base": "Real",
+        "value": "151.808"
+      },
+      "241": {
+        "$base": "Real",
+        "value": "151.693"
+      },
+      "242": {
+        "$base": "Real",
+        "value": "151.514"
+      },
+      "243": {
+        "$base": "Real",
+        "value": "151.385"
+      },
+      "244": {
+        "$base": "Real",
+        "value": "151.254"
+      },
+      "245": {
+        "$base": "Real",
+        "value": "151.137"
+      },
+      "246": {
+        "$base": "Real",
+        "value": "151.008"
+      },
+      "247": {
+        "$base": "Real",
+        "value": "150.826"
+      },
+      "248": {
+        "$base": "Real",
+        "value": "150.689"
+      },
+      "249": {
+        "$base": "Real",
+        "value": "150.523"
+      },
+      "250": {
+        "$base": "Real",
+        "value": "150.352"
+      },
+      "251": {
+        "$base": "Real",
+        "value": "150.224"
+      },
+      "252": {
+        "$base": "Real",
+        "value": "150.111"
+      },
+      "253": {
+        "$base": "Real",
+        "value": "149.983"
+      },
+      "254": {
+        "$base": "Real",
+        "value": "149.854"
+      },
+      "255": {
+        "$base": "Real",
+        "value": "149.722"
+      },
+      "256": {
+        "$base": "Real",
+        "value": "149.562"
+      },
+      "257": {
+        "$base": "Real",
+        "value": "149.452"
+      },
+      "258": {
+        "$base": "Real",
+        "value": "149.342"
+      },
+      "259": {
+        "$base": "Real",
+        "value": "149.194"
+      },
+      "260": {
+        "$base": "Real",
+        "value": "149.086"
+      },
+      "261": {
+        "$base": "Real",
+        "value": "148.974"
+      },
+      "262": {
+        "$base": "Real",
+        "value": "148.846"
+      },
+      "263": {
+        "$base": "Real",
+        "value": "148.705"
+      },
+      "264": {
+        "$base": "Real",
+        "value": "148.599"
+      },
+      "265": {
+        "$base": "Real",
+        "value": "148.48"
+      },
+      "266": {
+        "$base": "Real",
+        "value": "148.367"
+      },
+      "267": {
+        "$base": "Real",
+        "value": "148.215"
+      },
+      "268": {
+        "$base": "Real",
+        "value": "148.097"
+      },
+      "269": {
+        "$base": "Real",
+        "value": "147.929"
+      },
+      "270": {
+        "$base": "Real",
+        "value": "147.827"
+      },
+      "271": {
+        "$base": "Real",
+        "value": "147.681"
+      },
+      "272": {
+        "$base": "Real",
+        "value": "147.534"
+      },
+      "273": {
+        "$base": "Real",
+        "value": "147.415"
+      },
+      "274": {
+        "$base": "Real",
+        "value": "147.305"
+      },
+      "275": {
+        "$base": "Real",
+        "value": "147.195"
+      },
+      "276": {
+        "$base": "Real",
+        "value": "147.086"
+      },
+      "277": {
+        "$base": "Real",
+        "value": "147.186"
+      },
+      "278": {
+        "$base": "Real",
+        "value": "147.071"
+      },
+      "279": {
+        "$base": "Real",
+        "value": "147.174"
+      },
+      "280": {
+        "$base": "Real",
+        "value": "147.072"
+      },
+      "281": {
+        "$base": "Real",
+        "value": "147.179"
+      },
+      "282": {
+        "$base": "Real",
+        "value": "147.287"
+      },
+      "283": {
+        "$base": "Real",
+        "value": "147.403"
+      },
+      "284": {
+        "$base": "Real",
+        "value": "147.277"
+      },
+      "285": {
+        "$base": "Real",
+        "value": "147.403"
+      },
+      "286": {
+        "$base": "Real",
+        "value": "147.528"
+      },
+      "287": {
+        "$base": "Real",
+        "value": "147.408"
+      },
+      "288": {
+        "$base": "Real",
+        "value": "147.563"
+      },
+      "289": {
+        "$base": "Real",
+        "value": "147.457"
+      },
+      "290": {
+        "$base": "Real",
+        "value": "147.602"
+      },
+      "291": {
+        "$base": "Real",
+        "value": "147.704"
+      },
+      "292": {
+        "$base": "Real",
+        "value": "147.808"
+      },
+      "293": {
+        "$base": "Real",
+        "value": "147.671"
+      },
+      "294": {
+        "$base": "Real",
+        "value": "147.79"
+      },
+      "295": {
+        "$base": "Real",
+        "value": "147.68"
+      },
+      "296": {
+        "$base": "Real",
+        "value": "147.789"
+      },
+      "297": {
+        "$base": "Real",
+        "value": "147.657"
+      },
+      "298": {
+        "$base": "Real",
+        "value": "147.804"
+      },
+      "299": {
+        "$base": "Real",
+        "value": "147.684"
+      },
+      "300": {
+        "$base": "Real",
+        "value": "147.8"
+      },
+      "$base": "List"
+    }
+  },
+  "error-buffer": {
+    "1": {
+      "$base": "Choice",
+      "eventData": {
+        "$base": "BitString",
+        "value": "log-enabled"
+      }
+    },
+    "2": {
+      "$base": "Choice",
+      "eventData": {
+        "$base": "BitString",
+        "value": "log-disabled"
+      }
+    },
+    "3": {
+      "$base": "Choice",
+      "eventData": {
+        "$base": "BitString",
+        "value": "log-enabled"
+      }
+    },
+    "4": {
+      "$base": "Choice",
+      "eventData": {
+        "$base": "BitString",
+        "value": "log-disabled"
+      }
+    },
+    "5": {
+      "$base": "Choice",
+      "eventData": {
+        "$base": "BitString",
+        "value": "log-enabled"
+      }
+    },
+    "6": {
+      "$base": "Choice",
+      "eventData": {
+        "$base": "BitString",
+        "value": "log-disabled"
+      }
+    },
+    "7": {
+      "$base": "Choice",
+      "eventData": {
+        "$base": "BitString",
+        "value": "log-enabled"
+      }
+    },
+    "8": {
+      "$base": "Choice",
+      "eventData": {
+        "$base": "BitString",
+        "value": "log-disabled"
+      }
+    },
+    "9": {
+      "$base": "Choice",
+      "eventData": {
+        "$base": "BitString",
+        "value": "log-enabled"
+      }
+    },
+    "10": {
+      "$base": "Choice",
+      "eventData": {
+        "$base": "BitString",
+        "value": "log-disabled"
+      }
+    },
+    "$base": "Array"
+  },
+  "err-buf-2-data-buf-idx": {
+    "1": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "2": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "3": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "4": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "5": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "6": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "7": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "8": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "9": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "10": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "$base": "Array"
+  },
+  "time-reference": {
+    "$base": "DateTime",
+    "value": "2023-03-01T08:40:21.000000-07:00"
+  },
+  "time-reference-count": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "next-error-index": {
+    "$base": "Unsigned",
+    "value": "2"
+  },
+  "error-count": {
+    "$base": "Unsigned",
+    "value": "31"
+  },
+  "error-buffer-size": {
+    "$base": "Unsigned",
+    "value": "10"
+  },
+  "buffer-size": {
+    "$base": "Unsigned",
+    "value": "300"
+  },
+  "next-index": {
+    "$base": "Unsigned",
+    "value": "91"
+  },
+  "record-count": {
+    "$base": "Unsigned",
+    "value": "300"
+  },
+  "total-record-count": {
+    "$base": "Unsigned",
+    "value": "9125726"
+  },
+  "notification-threshold": {
+    "$base": "Unsigned",
+    "value": "50"
+  },
+  "records-since-notification": {
+    "$base": "Unsigned",
+    "value": "9125726"
+  },
+  "notification-class": {
+    "$base": "Unsigned",
+    "value": "9"
+  },
+  "event-enable": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "acked-transitions": {
+    "$base": "BitString",
+    "value": "to-offnormal;to-fault;to-normal"
+  },
+  "notify-type": {
+    "$base": "Enumerated",
+    "value": "event"
+  },
+  "event-time-stamps": {
+    "1": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.00"
+      }
+    },
+    "2": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.00"
+      }
+    },
+    "3": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.00"
+      }
+    },
+    "$base": "Array"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "start-timer": {
+    "$base": "Choice",
+    "start-timer": {
+      "$base": "Unsigned",
+      "value": "21"
+    }
+  },
+  "stop-timer": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  },
+  "last-notify-record": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "enable": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "is-historical": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  },
+  "log-deviceobjectproperty": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "device,1100"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-input,1"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "present-value",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  }
+}

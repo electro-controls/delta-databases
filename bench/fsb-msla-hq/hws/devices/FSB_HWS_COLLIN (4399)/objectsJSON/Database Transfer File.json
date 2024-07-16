@@ -1,0 +1,86 @@
+{
+  "displayName": "Database Transfer File",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "file,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "file"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Database Transfer File"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "file-type": {
+    "$base": "String",
+    "value": ""
+  },
+  "file-size": {
+    "$base": "Unsigned",
+    "value": "6554"
+  },
+  "modification-date": {
+    "$base": "DateTime",
+    "value": "2000-01-02T07:01:27.800000-07:00"
+  },
+  "archive": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "read-only": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "file-access-method": {
+    "$base": "Enumerated",
+    "value": "stream-access"
+  },
+  "file-flags-internal": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "file-size-internal": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "modification-date-internal": {
+    "$base": "DateTime",
+    "value": "*-*-*-*T*:*:*.*"
+  },
+  "max-file-size": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "fixed-size": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "file-data": {
+    "$base": "Choice",
+    "virtual": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  ".contents": {
+    "$base": "OctetString",
+    "truncated": "true"
+  }
+}
