@@ -1,8 +1,8 @@
 {
-  "displayName": "B2_Stg3",
+  "displayName": "HWP2_SpeedRef",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-output,7"
+    "value": "analog-output,8"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "B2_Stg3"
+    "value": "HWP2_SpeedRef"
   },
   "description": {
     "$base": "String",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,2"
+    "value": "aoc,7"
   },
   "device-type": {
     "$base": "String",

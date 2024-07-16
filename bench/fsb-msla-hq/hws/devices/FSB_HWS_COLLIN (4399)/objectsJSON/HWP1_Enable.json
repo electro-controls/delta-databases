@@ -2,7 +2,7 @@
   "displayName": "HWP1_Enable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-output,10"
+    "value": "binary-output,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "4/18/2024:  andrew confirmed pump has been replaced and is operating at ~15A on our enable signal.  no VFD.   \n \n26 Oct2023 AV- sounds like it is binded. told ameresco"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",

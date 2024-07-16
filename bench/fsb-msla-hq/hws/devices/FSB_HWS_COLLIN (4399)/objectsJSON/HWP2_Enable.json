@@ -2,7 +2,7 @@
   "displayName": "HWP2_Enable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-output,11"
+    "value": "binary-output,2"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "26 Oct2023 AV- visual and amps"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",

@@ -2,7 +2,6 @@
 
 //enable, status, speed, ramps, failure, & flow interlock
 
-
 //enable pumps 
 
 If 'HWP1_Call' Then
@@ -21,24 +20,21 @@ If ('HWP2_Ramp' < 1) And (Not 'HWP2_Call') Then
     'HWP2_Enable' = Off
 End If
 
-If 'SystemEnable' OffFor 2S Then //this is kind of redundant.  calls should be off from PG6,=then 5m;to ramp down 
-    'HWP1_Enable' = Off
-    'HWP2_Enable' = Off
-End If
-
 //pump status using CTs. confirm amp thresholds
-'HWP1_Status' = Switch ( 'HWP1_Status', 'HWP1_Current', 2, 1)
-'HWP2_Status' = Switch ( 'HWP2_Status', 'HWP2_Current', 2, 1)
+'HWP1_Status' = Switch ( 'HWP1_Status', 'HWP1_Run_Current', 2, 1)
+'HWP2_Status' = Switch ( 'HWP2_Status', 'HWP2_Run_Current', 2, 1)
 
-//no pump speed control
-//modulate bypass valve
-If 'HWP1_Enable' Or 'HWP2_Enable' Or 'SystemFlow' Then
-    'HW_BypassValve' = Max ('HWDp_CO', Scale (MaxRamp, 0, 0, 100, 100, 0))
-  Else
-    'HW_BypassValve' = 100 //open
-    'HWDp_CO.Bias' = 100
+If ('HWP1_Enable') Then
+  'HWP1_SpeedRef' = Max ('HWDp_CO', Scale (MaxRamp, 0, 0, 100, 100, 0))
+Else
+  'HWP1_SpeedRef' = 0
 End If
 
+If ('HWP2_Enable') Then
+  'HWP2_SpeedRef' = Max ('HWDp_CO', Scale (MaxRamp, 0, 0, 100, 100, 0))
+Else
+  'HWP2_SpeedRef' = 0
+End If
 
 //ramps
 Variable MaxRamp
@@ -64,7 +60,6 @@ If 'HWP2_Call' And 'HWP2_Status' Then
     End Do
 End If
 
-
 //pump failure
 If ('HWP1_Enable' And (Not 'HWP1_Status')) OnFor 'PumpFailDly_Sp':S Then
     'HWP1_Fail' = On
@@ -78,7 +73,6 @@ If ('HWP2_Enable' And (Not 'HWP2_Status')) OnFor 'PumpFailDly_Sp':S Then
     'HWP2_Fail' = Off
 End If
 
-
 //flow interlock
 Variable DpFlow
 DpFlow = Switch ( DpFlow, 'HWDp', ('HWDp_Sp' * 0.15), ('HWDp_Sp' * 0.1))
@@ -89,8 +83,8 @@ If ('HWP1_Status' Or 'HWP2_Status') And DpFlow Then
     'SystemFlow' = Off
 End If
 
-//If Not SystemFlow Then //not used because this would be for controlling pump speed
-//  HWDp_CO.Bias = 1
-//End If
+If Not 'SystemFlow' Then
+    'HWDp_CO.Bias' = 1
+End If
 
 //end of pump sequence

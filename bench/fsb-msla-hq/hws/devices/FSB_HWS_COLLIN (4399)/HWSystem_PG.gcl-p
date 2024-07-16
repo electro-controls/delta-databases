@@ -41,7 +41,7 @@ Variable RampMult
 Variable Loopramp
 
 //longer ramp time if system is cold
-RampMult = Scale ('HWS', 0, 70, 1, 140, 0.1)
+RampMult = Scale ('HWST', 0, 70, 1, 140, 0.1)
 
 If 'SystemEnable' Then
     DoEvery 10S

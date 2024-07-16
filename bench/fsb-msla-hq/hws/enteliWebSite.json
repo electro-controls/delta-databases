@@ -5,156 +5,6 @@
     {
       "action": "delete",
       "device": 4399,
-      "objectId": "pg,1",
-      "objectName": "General_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/General_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/16/2024, 9:26:08 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "delete",
-      "device": 4399,
-      "objectId": "pg,2",
-      "objectName": "Main_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Main_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/16/2024, 9:26:20 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "delete",
-      "device": 4399,
-      "objectId": "pg,3",
-      "objectName": "Main_PG (pg3)",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Main_PG (pg3).gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/16/2024, 9:26:54 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4399,
-      "objectId": "pg,3",
-      "objectName": "Boiler_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Boiler_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/16/2024, 9:28:21 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4399,
-      "objectId": "pg,4",
-      "objectName": "Critical_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Critical_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/16/2024, 9:28:21 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4399,
-      "objectId": "pg,5",
-      "objectName": "FaultDetection_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/FaultDetection_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/16/2024, 9:28:21 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4399,
-      "objectId": "pg,6",
-      "objectName": "HWSystem_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/HWSystem_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/16/2024, 9:28:21 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4399,
-      "objectId": "pg,7",
-      "objectName": "Pumps_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Pumps_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/16/2024, 9:28:21 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4399,
-      "objectId": "pg,8",
-      "objectName": "Pumps2_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Pumps2_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/16/2024, 9:28:21 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,1",
-      "objectName": "Main_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/Main_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/16/2024, 9:28:30 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "delete",
-      "device": 4399,
       "objectId": "av,93",
       "objectName": "Rem_OAT",
       "siteName": "Bench",
@@ -240,21 +90,6 @@
         "scheme": "file"
       },
       "date": "7/16/2024, 11:16:24 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,2",
-      "objectName": "General_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/General_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/16/2024, 11:16:39 AM",
       "templateTriggered": false
     },
     {
@@ -571,6 +406,276 @@
       },
       "date": "7/16/2024, 11:54:47 AM",
       "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ao,7",
+      "objectName": "B2_Stg3",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/B2_Stg3.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 12:03:38 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ao,8",
+      "objectName": "HWP2_SpeedRef",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/HWP2_SpeedRef.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 12:04:52 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,101",
+      "objectName": "BP1_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/BP1_Enable.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 12:11:25 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ao,6",
+      "objectName": "B2_FireRate",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/B2_FireRate.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 12:15:43 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ao,5",
+      "objectName": "B1_FireRate",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/B1_FireRate.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 12:15:53 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "aoc,1",
+      "objectName": "B1_FireRate_AOC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/B1_FireRate_AOC.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 2:15:50 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "aoc,2",
+      "objectName": "B2_FireRate_AOC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/B2_FireRate_AOC.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 2:16:01 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,2",
+      "objectName": "CIF1_FanStatus (av2)",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/CIF1_FanStatus (av2).json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 3:09:02 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,3",
+      "objectName": "CIF2_FanStatus (av3)",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/CIF2_FanStatus (av3).json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 3:09:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,4",
+      "objectName": "CEF1_FanStatus (av4)",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/CEF1_FanStatus (av4).json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 3:09:17 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,5",
+      "objectName": "CEF2_FanStatus",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/CEF2_FanStatus.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 3:09:31 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "aoc,5",
+      "objectName": "CEF1_FanStatus",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/CEF1_FanStatus.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 3:11:22 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "aoc,3",
+      "objectName": "CIF1_FanStatus",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/CIF1_FanStatus.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 3:11:32 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "aoc,4",
+      "objectName": "CIF2_FanStatus",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/CIF2_FanStatus.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 3:11:41 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,2",
+      "objectName": "HWP2_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/HWP2_Enable.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 3:50:25 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,1",
+      "objectName": "HWP1_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/HWP1_Enable.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 3:50:30 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,4",
+      "objectName": "B2_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/B2_Enable.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 3:50:38 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,3",
+      "objectName": "B1_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/hws/devices/FSB_HWS_COLLIN (4399)/objectsJSON/B1_Enable.json",
+        "scheme": "file"
+      },
+      "date": "7/16/2024, 3:50:46 PM",
+      "templateTriggered": false
     }
   ],
   "devices": [
@@ -876,6 +981,114 @@
           "name": "HWDp_CO",
           "fileName": "HWDp_CO",
           "lastUpdate": "2024-07-16T17:54:35.758Z"
+        },
+        {
+          "id": "ao,7",
+          "name": "B2_Stg3",
+          "fileName": "B2_Stg3",
+          "lastUpdate": "2024-07-16T18:03:38.918Z"
+        },
+        {
+          "id": "ao,8",
+          "name": "HWP2_SpeedRef",
+          "fileName": "HWP2_SpeedRef",
+          "lastUpdate": "2024-07-16T18:04:52.335Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "HWP1_Enable",
+          "fileName": "HWP1_Enable",
+          "lastUpdate": "2024-07-16T18:09:19.656Z"
+        },
+        {
+          "id": "bo,2",
+          "name": "HWP2_Enable",
+          "fileName": "HWP2_Enable",
+          "lastUpdate": "2024-07-16T18:09:38.608Z"
+        },
+        {
+          "id": "bo,101",
+          "name": "BP1_Enable",
+          "fileName": "BP1_Enable",
+          "lastUpdate": "2024-07-16T18:11:25.738Z"
+        },
+        {
+          "id": "bo,3",
+          "name": "B1_Enable",
+          "fileName": "B1_Enable",
+          "lastUpdate": "2024-07-16T18:12:01.591Z"
+        },
+        {
+          "id": "bo,4",
+          "name": "B2_Enable",
+          "fileName": "B2_Enable",
+          "lastUpdate": "2024-07-16T18:12:39.425Z"
+        },
+        {
+          "id": "ao,5",
+          "name": "B1_FireRate",
+          "fileName": "B1_FireRate",
+          "lastUpdate": "2024-07-16T18:15:02.742Z"
+        },
+        {
+          "id": "ao,6",
+          "name": "B2_FireRate",
+          "fileName": "B2_FireRate",
+          "lastUpdate": "2024-07-16T18:15:43.421Z"
+        },
+        {
+          "id": "aoc,1",
+          "name": "B1_FireRate_AOC",
+          "fileName": "B1_FireRate_AOC",
+          "lastUpdate": "2024-07-16T20:15:50.546Z"
+        },
+        {
+          "id": "aoc,2",
+          "name": "B2_FireRate_AOC",
+          "fileName": "B2_FireRate_AOC",
+          "lastUpdate": "2024-07-16T20:16:01.513Z"
+        },
+        {
+          "id": "aoc,3",
+          "name": "CIF1_FanStatus",
+          "fileName": "CIF1_FanStatus",
+          "lastUpdate": "2024-07-16T21:04:53.637Z"
+        },
+        {
+          "id": "aoc,4",
+          "name": "CIF2_FanStatus",
+          "fileName": "CIF2_FanStatus",
+          "lastUpdate": "2024-07-16T21:05:03.180Z"
+        },
+        {
+          "id": "aoc,5",
+          "name": "CEF1_FanStatus",
+          "fileName": "CEF1_FanStatus",
+          "lastUpdate": "2024-07-16T21:05:10.482Z"
+        },
+        {
+          "id": "av,2",
+          "name": "CIF1_FanStatus (av2)",
+          "fileName": "CIF1_FanStatus (av2)",
+          "lastUpdate": "2024-07-16T21:09:02.375Z"
+        },
+        {
+          "id": "av,3",
+          "name": "CIF2_FanStatus (av3)",
+          "fileName": "CIF2_FanStatus (av3)",
+          "lastUpdate": "2024-07-16T21:09:10.390Z"
+        },
+        {
+          "id": "av,4",
+          "name": "CEF1_FanStatus (av4)",
+          "fileName": "CEF1_FanStatus (av4)",
+          "lastUpdate": "2024-07-16T21:09:17.272Z"
+        },
+        {
+          "id": "av,5",
+          "name": "CEF2_FanStatus",
+          "fileName": "CEF2_FanStatus",
+          "lastUpdate": "2024-07-16T21:09:31.892Z"
         }
       ]
     }
