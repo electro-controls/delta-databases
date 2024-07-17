@@ -2,7 +2,7 @@
 
 //enable, status, speed, ramps, failure, & flow interlock
 
-//enable pumps 
+//enable pumps
 
 If 'HWP1_Call' Then
     'HWP1_Enable' = On

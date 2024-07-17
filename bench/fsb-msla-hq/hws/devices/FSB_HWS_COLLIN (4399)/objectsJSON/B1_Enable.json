@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2"
+    "value": "private2;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -42,7 +42,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive BDC"
+    "value": "Active~Inactive BDC"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-04-12T16:27:32.600000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "2046"
+    "value": 0
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-04-12T16:27:32.600000-06:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2024-04-12T16:05:51.70"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
@@ -229,7 +229,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,4"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -253,7 +253,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,4"
+      "value": "program,3"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -296,11 +296,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-03T08:43:20.00"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2023-10-26T21:09:02.60"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -320,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-04-12T16:31:33.50"
+      "value": "2000-01-03T08:43:19.80"
     },
     "11": {
       "$base": "DateTime",
@@ -344,13 +344,13 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2024-04-12T16:31:28.30"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
   "port-status": {
     "$base": "Enumerated",
-    "value": "not-available"
+    "value": "active"
   },
   "da-value": {
     "$base": "Unsigned",
@@ -366,7 +366,7 @@
   },
   "hoa-status": {
     "$base": "Enumerated",
-    "value": "none"
+    "value": "auto"
   },
   "delay-status": {
     "$base": "Enumerated",
@@ -433,6 +433,27 @@
     "value": "alarm"
   },
   "event-time-stamps": {
+    "1": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "2": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "3": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
     "$base": "Array"
   },
   "hal-flags": {
@@ -447,7 +468,7 @@
     "$base": "Choice",
     "flick-warn-time": {
       "$base": "Unsigned",
-      "value": "5"
+      "value": 0
     }
   },
   "flick-warn-timer": {
@@ -484,11 +505,11 @@
   },
   "override-prev-val": {
     "$base": "Boolean",
-    "value": ""
+    "value": 0
   },
   "override-time": {
     "$base": "Unsigned",
-    "value": "120"
+    "value": 0
   },
   "override-timer": {
     "$base": "Choice",
@@ -506,7 +527,7 @@
   },
   "event-list": {
     "$base": "BitString",
-    "value": ""
+    "value": "status-on;status-off;command-failure;invalid-status"
   },
   "prev-reliability": {
     "$base": "Enumerated",

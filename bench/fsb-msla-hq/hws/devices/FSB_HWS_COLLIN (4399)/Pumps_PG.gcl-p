@@ -1,6 +1,6 @@
-//Pump sequence 
+//Pump sequence
 
-//manual off, lag assist, & pump calls:              
+//manual off, lag assist, & pump calls:
 
 //determine if pumps are manually off in delta or tridium
 Variable HWP1ManualOff

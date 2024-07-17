@@ -1,569 +1,481 @@
 {
-    "displayName": "B2_FireRate",
-    "object-identifier": {
-        "$base": "ObjectIdentifier",
-        "value": "analog-output,6"
+  "displayName": "B2_FireRate",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-output,6"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-output"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "B2_FireRate"
+  },
+  "description": {
+    "$base": "String",
+    "value": "check aoc"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": "not-commissioned"
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "%"
+  },
+  "commission-flag": {
+    "$base": "Enumerated",
+    "value": "not-commissioned"
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "aoc,6"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "device-type": {
+    "$base": "String",
+    "value": "HWP1_PumpSpeed_AOC"
+  },
+  "min-pres-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "max-pres-value": {
+    "$base": "Real",
+    "value": "100"
+  },
+  "resolution": {
+    "$base": "Real",
+    "value": "0.392157"
+  },
+  "critical-control": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "current-priority": {
+    "$base": "Unsigned",
+    "value": "17"
+  },
+  "relinquish-default": {
+    "$base": "Real",
+    "value": 0
+  },
+  "priority-array": {
+    "1": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "object-type": {
-        "$base": "Enumerated",
-        "value": "binary-output"
+    "2": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "object-name": {
-        "$base": "String",
-        "value": "B2_FireRate"
+    "3": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "description": {
-        "$base": "String",
-        "value": "check aoc"
+    "4": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "flags": {
-        "$base": "BitString",
-        "value": "private2;not-commissioned"
+    "5": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "present-value": {
-        "$base": "Enumerated",
-        "value": "inactive"
+    "6": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "status-flags": {
-        "$base": "BitString",
-        "value": ""
+    "7": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "reset": {
-        "$base": "Boolean",
-        "value": 0
+    "8": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "commission-flag": {
-        "$base": "Enumerated",
-        "value": "not-commissioned"
+    "9": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "type-reference": {
-        "$base": "ObjectIdentifier",
-        "value": "aoc,6"
+    "10": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "device-type": {
-        "$base": "String",
-        "value": "Active/Inactive BDC"
+    "11": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "event-state": {
-        "$base": "Enumerated",
-        "value": "normal"
+    "12": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "reliability": {
-        "$base": "Enumerated",
-        "value": "no-fault-detected"
+    "13": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "out-of-service": {
-        "$base": "Boolean",
-        "value": 0
+    "14": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "polarity": {
-        "$base": "Enumerated",
-        "value": "normal"
+    "15": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "inactive-text": {
-        "$base": "String",
-        "value": "Inactive"
+    "16": {
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
-    "active-text": {
-        "$base": "String",
-        "value": "Active"
+    "$base": "Array"
+  },
+  "last-writer": {
+    "1": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
     },
-    "change-of-state-time": {
-        "$base": "DateTime",
-        "value": "2024-01-24T17:07:08.000000-07:00"
+    "2": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
     },
-    "change-of-state-count": {
-        "$base": "Unsigned",
-        "value": 0
+    "3": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
     },
-    "time-of-state-count-reset": {
+    "4": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "5": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "6": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "7": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "8": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "9": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "10": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "11": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "12": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "13": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "14": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "15": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "16": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "$base": "Array"
+  },
+  "time-of-last-write": {
+    "1": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "2": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "3": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "4": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "5": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "6": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "7": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "8": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "9": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "10": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "11": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "12": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "13": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "14": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "15": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "16": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    },
+    "$base": "Array"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "polarity": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "da-value": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "output-volt": {
+    "$base": "Real",
+    "value": 0
+  },
+  "port-1-status": {
+    "$base": "Enumerated",
+    "value": "not-available"
+  },
+  "port-2-status": {
+    "$base": "Enumerated",
+    "value": "not-available"
+  },
+  "module-type": {
+    "$base": "Enumerated",
+    "value": "none"
+  },
+  "hoa-status": {
+    "$base": "Enumerated",
+    "value": "auto"
+  },
+  "fback-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "fback-enable": {
+    "$base": "Enumerated",
+    "value": "disable"
+  },
+  "fback-input": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "fback-status": {
+    "$base": "Enumerated",
+    "value": "not-available"
+  },
+  "fback-high": {
+    "$base": "Real",
+    "value": 0
+  },
+  "fback-low": {
+    "$base": "Real",
+    "value": 0
+  },
+  "analog-3-pt-timer": {
+    "$base": "Choice",
+    "analog-3-pt-timer": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "analog-3-pt-output-1": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "analog-3-pt-output-2": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "analog-3-pt-output-action": {
+    "$base": "Enumerated",
+    "value": "close"
+  },
+  "time-delay": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "notification-class": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "high-limit": {
+    "$base": "Real",
+    "value": 0
+  },
+  "low-limit": {
+    "$base": "Real",
+    "value": 0
+  },
+  "deadband": {
+    "$base": "Real",
+    "value": 0
+  },
+  "limit-enable": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "event-enable": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "acked-transitions": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "notify-type": {
+    "$base": "Enumerated",
+    "value": "alarm"
+  },
+  "event-time-stamps": {
+    "1": {
+      "$base": "Choice",
+      "dateTime": {
         "$base": "DateTime",
         "value": "*-*-*-*T*:*:*.*"
+      }
     },
-    "prev-change-of-state-times": {
-        "1": {
-            "$base": "DateTime",
-            "value": "2024-01-24T17:07:08.000000-07:00"
-        },
-        "2": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "$base": "Array"
+    "2": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
     },
-    "minimum-off-time": {
-        "$base": "Unsigned",
-        "value": "120"
+    "3": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
     },
-    "minimum-on-time": {
-        "$base": "Unsigned",
-        "value": 0
+    "$base": "Array"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  },
+  "event-detection-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "intrinsic-info": {
+    "$base": "Array"
+  },
+  "event-message-texts-config": {
+    "1": {
+      "$base": "String",
+      "value": ""
     },
-    "minimum-delay-timer": {
-        "$base": "Choice",
-        "minimum-delay-timer": {
-            "$base": "Unsigned",
-            "value": 0
-        }
+    "2": {
+      "$base": "String",
+      "value": ""
     },
-    "current-priority": {
-        "$base": "Unsigned",
-        "value": "5"
+    "3": {
+      "$base": "String",
+      "value": ""
     },
-    "critical-control": {
-        "$base": "Boolean",
-        "value": "1"
-    },
-    "priority-array": {
-        "1": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "2": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "3": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "4": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "5": {
-            "$base": "Choice"
-        },
-        "6": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "7": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "8": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "9": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "10": {
-            "$base": "Choice"
-        },
-        "11": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "12": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "13": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "14": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "15": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "16": {
-            "$base": "Choice",
-            "null": {
-                "$base": "Null"
-            }
-        },
-        "$base": "Array"
-    },
-    "relinquish-default": {
-        "$base": "Enumerated",
-        "value": "inactive"
-    },
-    "last-writer": {
-        "1": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "2": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "3": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "4": {
-            "$base": "ObjectIdentifier",
-            "value": "program,9"
-        },
-        "5": {
-            "$base": "ObjectIdentifier",
-            "value": "device,4000748"
-        },
-        "6": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "7": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "8": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "9": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "10": {
-            "$base": "ObjectIdentifier",
-            "value": "program,4"
-        },
-        "11": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "12": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "13": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "14": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "15": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "16": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "$base": "Array"
-    },
-    "time-of-last-write": {
-        "1": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "2": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "3": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "4": {
-            "$base": "DateTime",
-            "value": "2024-04-12T16:31:32.50"
-        },
-        "5": {
-            "$base": "DateTime",
-            "value": "2000-01-01T15:16:54.00"
-        },
-        "6": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "7": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "8": {
-            "$base": "DateTime",
-            "value": "2024-01-24T20:48:20.50"
-        },
-        "9": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "10": {
-            "$base": "DateTime",
-            "value": "2024-04-12T16:31:32.50"
-        },
-        "11": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "12": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "13": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "14": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "15": {
-            "$base": "DateTime",
-            "value": "*-*-*-*T*:*:*.*"
-        },
-        "16": {
-            "$base": "DateTime",
-            "value": "2024-04-12T16:31:29.70"
-        },
-        "$base": "Array"
-    },
-    "port-status": {
-        "$base": "Enumerated",
-        "value": "active"
-    },
-    "da-value": {
-        "$base": "Unsigned",
-        "value": 0
-    },
-    "output-volt": {
-        "$base": "Real",
-        "value": 0
-    },
-    "module-type": {
-        "$base": "Enumerated",
-        "value": "none"
-    },
-    "hoa-status": {
-        "$base": "Enumerated",
-        "value": "auto"
-    },
-    "delay-status": {
-        "$base": "Enumerated",
-        "value": "timer-inactive"
-    },
-    "start-delay-time": {
-        "$base": "Unsigned",
-        "value": "5"
-    },
-    "start-delay-flags": {
-        "$base": "BitString",
-        "value": ""
-    },
-    "fback-value": {
-        "$base": "Enumerated",
-        "value": "inactive"
-    },
-    "fback-reversed": {
-        "$base": "Boolean",
-        "value": 0
-    },
-    "fback-enable": {
-        "$base": "Enumerated",
-        "value": "disable"
-    },
-    "fback-input": {
-        "$base": "Unsigned",
-        "value": 0
-    },
-    "fback-status": {
-        "$base": "Enumerated",
-        "value": "not-available"
-    },
-    "delay-count-down": {
-        "$base": "Time",
-        "value": "00:00:00.00"
-    },
-    "text-value": {
-        "$base": "String",
-        "value": "Inactive"
-    },
-    "time-delay": {
-        "$base": "Unsigned",
-        "value": 0
-    },
-    "notification-class": {
-        "$base": "Unsigned",
-        "value": 0
-    },
-    "feedback-value": {
-        "$base": "Enumerated",
-        "value": "inactive"
-    },
-    "event-enable": {
-        "$base": "BitString",
-        "value": ""
-    },
-    "acked-transitions": {
-        "$base": "BitString",
-        "value": ""
-    },
-    "notify-type": {
-        "$base": "Enumerated",
-        "value": "alarm"
-    },
-    "event-time-stamps": {
-        "$base": "Array"
-    },
-    "hal-flags": {
-        "$base": "BitString",
-        "value": "hvac"
-    },
-    "flick-warn-enable": {
-        "$base": "Boolean",
-        "value": 0
-    },
-    "flick-warn-time": {
-        "$base": "Choice",
-        "flick-warn-time": {
-            "$base": "Unsigned",
-            "value": "5"
-        }
-    },
-    "flick-warn-timer": {
-        "$base": "Choice",
-        "flick-warn-timer": {
-            "$base": "Unsigned",
-            "value": 0
-        }
-    },
-    "flick-warn-active": {
-        "$base": "Unsigned",
-        "value": 0
-    },
-    "flick-warn-paenable": {
-        "$base": "Unsigned",
-        "value": 0
-    },
-    "override-ref": {
-        "$base": "Sequence",
-        "type": "0-BACnetDeviceObjectPropertyReference",
-        "deviceIdentifier": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "objectIdentifier": {
-            "$base": "ObjectIdentifier",
-            "unspecifiedValue": "true"
-        },
-        "propertyIdentifier": {
-            "$base": "Enumerated",
-            "value": "all",
-            "type": "0-BACnetPropertyIdentifier"
-        }
-    },
-    "override-prev-val": {
-        "$base": "Boolean",
-        "value": ""
-    },
-    "override-time": {
-        "$base": "Unsigned",
-        "value": "120"
-    },
-    "override-timer": {
-        "$base": "Choice",
-        "override-timer": {
-            "$base": "Unsigned",
-            "value": 0
-        }
-    },
-    "reliability-timer": {
-        "$base": "Choice",
-        "reliability-timer": {
-            "$base": "Unsigned",
-            "value": 0
-        }
-    },
-    "event-list": {
-        "$base": "BitString",
-        "value": ""
-    },
-    "prev-reliability": {
-        "$base": "Enumerated",
-        "value": "no-fault-detected"
-    },
-    "event-detection-enable": {
-        "$base": "Boolean",
-        "value": 0
-    },
-    "intrinsic-info": {
-        "$base": "Array"
-    },
-    "event-message-texts-config": {
-        "1": {
-            "$base": "String",
-            "value": ""
-        },
-        "2": {
-            "$base": "String",
-            "value": ""
-        },
-        "3": {
-            "$base": "String",
-            "value": ""
-        },
-        "$base": "Array"
-    },
-    "lc-command": {
-        "$base": "Sequence",
-        "value": {
-            "$base": "Enumerated",
-            "value": "no-action"
-        },
-        "priority": {
-            "$base": "Unsigned",
-            "value": 0
-        },
-        "flickWarnEnable": {
-            "$base": "Enumerated",
-            "value": "off"
-        },
-        "flickWarnOnTime": {
-            "$base": "Unsigned",
-            "value": 0
-        },
-        "flickWarnOffTime": {
-            "$base": "Unsigned",
-            "value": 0
-        }
-    },
-    "lc-user-properties": {
-        "$base": "Array"
-    },
-    "lc-internal-properties": {
-        "$base": "Array"
-    },
-    "lc-priority-array": {
-        "$base": "Choice",
-        "lc-priority-array": {
-            "$base": "Array"
-        }
-    }
+    "$base": "Array"
+  }
 }

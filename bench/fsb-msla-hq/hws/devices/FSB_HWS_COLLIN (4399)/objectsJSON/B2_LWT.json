@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "fault;out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
@@ -26,11 +26,11 @@
   },
   "last-value": {
     "$base": "Real",
-    "value": "79.2973"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault;out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -54,11 +54,11 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "not-available"
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 1
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "328"
+    "value": "230"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "68230433"
+      "value": "1608793"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1997"
+    "value": 0
   },
   "calibration": {
     "$base": "Real",
@@ -152,6 +152,27 @@
     "value": "alarm"
   },
   "event-time-stamps": {
+    "1": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "2": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "3": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
     "$base": "Array"
   },
   "previous-reliability": {

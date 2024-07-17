@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CEF1_FanStatus",
   "object-identifier": {
     "$base": "ObjectIdentifier",

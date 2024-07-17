@@ -2,7 +2,7 @@
 
 //equipment safeties
 
-//software high limit. set to trip before local hardware limits 
+//software high limit. set to trip before local hardware limits
 'MaxHWTemp' = Max ('HWST', 'HWRT')
 'HWHighLimit' = Switch ( 'HWHighLimit', 'MaxHWTemp', 195, 185)
 

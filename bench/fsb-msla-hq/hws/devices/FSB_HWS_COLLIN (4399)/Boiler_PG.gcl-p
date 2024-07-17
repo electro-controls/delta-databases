@@ -24,7 +24,7 @@ If (BoilerDemand < 'BoilerLagStop_Sp') Then
   Lag2Latch = Off
 End If
 
-//boiler fire rates           
+//boiler fire rates
 Variable B1Rate
 Variable B2Rate
 
