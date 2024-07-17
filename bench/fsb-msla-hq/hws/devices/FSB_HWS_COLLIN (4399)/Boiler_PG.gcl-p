@@ -82,15 +82,15 @@ End If
 Variable B2_Ready
 If 'SystemFlow' And B2Call And 'BP2_Run_Status' Then
     B2_Ready = On
-    'B2_FireRate' = B2Rate
   Else
     B2_Ready = Off
-    'B2_FireRate' = 0
 End If
 
 If B2_Ready OnFor 1M Then
     'B2_Enable' = Switch ( 'B2_Enable', B2Rate, 25, 1)
+    'B2_FireRate' = B2Rate
   Else
     'B2_Enable' = Off
+    'B2_FireRate' = 0
 End If
 //end of boiler page
