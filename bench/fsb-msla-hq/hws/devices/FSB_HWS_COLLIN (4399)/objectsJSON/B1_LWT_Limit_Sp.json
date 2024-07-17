@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "dmp 10/25/2023:  temporary value of 180 for high limit on B1 because we are using a temporary raw temp sensor that appears to be reading lower than actual value."
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
