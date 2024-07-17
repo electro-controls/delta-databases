@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "aic,2"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "12093232"
+      "value": "12094783"
     }
   },
   "ad-value": {

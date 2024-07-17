@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "aic,3"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "5"
+    "value": "6"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "12093247"
+      "value": "12094801"
     }
   },
   "ad-value": {
