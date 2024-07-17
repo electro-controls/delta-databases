@@ -57,13 +57,14 @@ If B2Call OffFor 5M Then
     'HWP2_Enable' = Off
 End If
 
+
 //boiler pump status
-'BP1_Status' = Switch ( 'BP1_Status', 'BP1_Current', 1, 0.5) //confirm threshold in field
-'BP2_Status' = Switch ( 'BP2_Status', 'BP2_Current', 1, 0.5) //confirm threshold in field
+'BP1_Run_Status' = Switch ('BP1_Run_Status' , 'BP1_Status', 1, 0.5) //confirm threshold in field
+'BP2_Run_Status' = Switch ('BP2_Run_Status' , 'BP2_Status', 1, 0.5) //confirm threshold in field
 
 //b1 enable
 Variable B1_Ready
-If 'SystemFlow' And B1Call And 'BP1_Status' Then
+If 'SystemFlow' And B1Call And 'BP1_Run_Status' Then
     B1_Ready = On
   Else
     B1_Ready = Off
@@ -79,7 +80,7 @@ End If
 
 //b2 enable
 Variable B2_Ready
-If 'SystemFlow' And B2Call And 'BP2_Status' Then
+If 'SystemFlow' And B2Call And 'BP2_Run_Status' Then
     B2_Ready = On
     'B2_FireRate' = B2Rate
   Else
