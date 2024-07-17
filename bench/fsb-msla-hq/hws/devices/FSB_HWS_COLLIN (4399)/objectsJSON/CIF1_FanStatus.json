@@ -9,7 +9,10 @@
     "$base": "Enumerated",
     "value": "analog-value"
   },
-  "object-name": "CIF1_FanStatus",
+  "object-name": {
+    "$base": "String",
+    "value": "CIF1_FanStatus"
+  },
   "description": {
     "$base": "String",
     "value": ""
