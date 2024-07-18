@@ -1,0 +1,728 @@
+{
+  "displayName": "FSB_CWS_COLLIN",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "device,4399"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "device"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "FSB_CWS_COLLIN"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "system-status": {
+    "$base": "Enumerated",
+    "value": "operational"
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "vendor-name": {
+    "$base": "String",
+    "value": "Delta Controls"
+  },
+  "vendor-identifier": {
+    "$base": "Unsigned",
+    "value": "8"
+  },
+  "model-name": {
+    "$base": "String",
+    "value": "DAC_606"
+  },
+  "firmware-revision": {
+    "$base": "String",
+    "value": "189697"
+  },
+  "hardware-revision": {
+    "$base": "String",
+    "value": "r3.6 [DCE r3]"
+  },
+  "application-software-version": {
+    "$base": "String",
+    "value": "V3.40"
+  },
+  "location": {
+    "$base": "String",
+    "value": ""
+  },
+  "protocol-version": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "protocol-revision": {
+    "$base": "Unsigned",
+    "value": "6"
+  },
+  "protocol-services-supported": {
+    "$base": "BitString",
+    "value": "acknowledgeAlarm;confirmedCOVNotification;getAlarmSummary;getEnrollmentSummary;subscribeCOV;atomicReadFile;atomicWriteFile;createObject;deleteObject;readProperty;readPropertyMultiple;writeProperty;writePropertyMultiple;deviceCommunicationControl;confirmedPrivateTransfer;reinitializeDevice;i-Am;i-Have;unconfirmedCOVNotification;unconfirmedPrivateTransfer;timeSynchronization;who-Has;who-Is;readRange;subscribeCOVProperty;getEventInformation"
+  },
+  "protocol-object-types-supported": {
+    "$base": "BitString",
+    "value": "analog-input;analog-output;analog-value;binary-input;binary-output;binary-value;calendar;device;event-enrollment;file;loop;multi-state-input;notification-class;program;schedule;multi-state-value;trend-log;structured-view"
+  },
+  "object-list": {
+    "$base": "Choice",
+    "object-list": {
+      "1": {
+        "$base": "Choice"
+      },
+      "2": {
+        "$base": "Choice"
+      },
+      "3": {
+        "$base": "Choice"
+      },
+      "4": {
+        "$base": "Choice"
+      },
+      "5": {
+        "$base": "Choice"
+      },
+      "6": {
+        "$base": "Choice"
+      },
+      "7": {
+        "$base": "Choice"
+      },
+      "8": {
+        "$base": "Choice"
+      },
+      "9": {
+        "$base": "Choice"
+      },
+      "10": {
+        "$base": "Choice"
+      },
+      "11": {
+        "$base": "Choice"
+      },
+      "12": {
+        "$base": "Choice"
+      },
+      "13": {
+        "$base": "Choice"
+      },
+      "14": {
+        "$base": "Choice"
+      },
+      "15": {
+        "$base": "Choice"
+      },
+      "16": {
+        "$base": "Choice"
+      },
+      "17": {
+        "$base": "Choice"
+      },
+      "18": {
+        "$base": "Choice"
+      },
+      "19": {
+        "$base": "Choice"
+      },
+      "20": {
+        "$base": "Choice"
+      },
+      "21": {
+        "$base": "Choice"
+      },
+      "22": {
+        "$base": "Choice"
+      },
+      "23": {
+        "$base": "Choice"
+      },
+      "24": {
+        "$base": "Choice"
+      },
+      "25": {
+        "$base": "Choice"
+      },
+      "26": {
+        "$base": "Choice"
+      },
+      "27": {
+        "$base": "Choice"
+      },
+      "28": {
+        "$base": "Choice"
+      },
+      "29": {
+        "$base": "Choice"
+      },
+      "30": {
+        "$base": "Choice"
+      },
+      "31": {
+        "$base": "Choice"
+      },
+      "32": {
+        "$base": "Choice"
+      },
+      "33": {
+        "$base": "Choice"
+      },
+      "34": {
+        "$base": "Choice"
+      },
+      "35": {
+        "$base": "Choice"
+      },
+      "36": {
+        "$base": "Choice"
+      },
+      "37": {
+        "$base": "Choice"
+      },
+      "38": {
+        "$base": "Choice"
+      },
+      "39": {
+        "$base": "Choice"
+      },
+      "40": {
+        "$base": "Choice"
+      },
+      "41": {
+        "$base": "Choice"
+      },
+      "42": {
+        "$base": "Choice"
+      },
+      "43": {
+        "$base": "Choice"
+      },
+      "44": {
+        "$base": "Choice"
+      },
+      "45": {
+        "$base": "Choice"
+      },
+      "46": {
+        "$base": "Choice"
+      },
+      "47": {
+        "$base": "Choice"
+      },
+      "48": {
+        "$base": "Choice"
+      },
+      "49": {
+        "$base": "Choice"
+      },
+      "50": {
+        "$base": "Choice"
+      },
+      "51": {
+        "$base": "Choice"
+      },
+      "52": {
+        "$base": "Choice"
+      },
+      "53": {
+        "$base": "Choice"
+      },
+      "54": {
+        "$base": "Choice"
+      },
+      "55": {
+        "$base": "Choice"
+      },
+      "56": {
+        "$base": "Choice"
+      },
+      "$base": "Array"
+    }
+  },
+  "max-apdu-length-accepted": {
+    "$base": "Unsigned",
+    "value": "480"
+  },
+  "segmentation-supported": {
+    "$base": "Enumerated",
+    "value": "segmented-both"
+  },
+  "apdu-segment-timeout": {
+    "$base": "Unsigned",
+    "value": "5000"
+  },
+  "apdu-timeout": {
+    "$base": "Unsigned",
+    "value": "7000"
+  },
+  "number-of-apdu-retries": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "local-time": {
+    "$base": "Time",
+    "value": "13:52:05.00"
+  },
+  "local-date": {
+    "$base": "Date",
+    "value": "2000-01-01"
+  },
+  "time-zone-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "utc-offset": {
+    "$base": "Signed",
+    "value": 0
+  },
+  "daylight-savings-status": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "daylight-savings-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "daylight-savings-standard": {
+    "$base": "Enumerated",
+    "value": "north-america"
+  },
+  "daylight-savings-start": {
+    "$base": "Choice",
+    "weekNDay": {
+      "$base": "Sequence",
+      "month": {
+        "$base": "Enumerated",
+        "value": 0
+      },
+      "weekOfMonth": {
+        "$base": "Enumerated",
+        "value": 0
+      },
+      "dayOfWeek": {
+        "$base": "Enumerated",
+        "value": 0
+      }
+    }
+  },
+  "daylight-savings-start-on-after": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "daylight-savings-end": {
+    "$base": "Choice",
+    "weekNDay": {
+      "$base": "Sequence",
+      "month": {
+        "$base": "Enumerated",
+        "value": 0
+      },
+      "weekOfMonth": {
+        "$base": "Enumerated",
+        "value": 0
+      },
+      "dayOfWeek": {
+        "$base": "Enumerated",
+        "value": 0
+      }
+    }
+  },
+  "daylight-savings-end-on-after": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "daylight-savings-offset": {
+    "$base": "Unsigned",
+    "value": "60"
+  },
+  "daylight-savings-transition": {
+    "$base": "Time",
+    "unspecifiedValue": "true"
+  },
+  "daylight-saving-start-day": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  },
+  "daylight-saving-end-day": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  },
+  "time-synchronization-recipients": {
+    "$base": "List"
+  },
+  "time-sync-interval": {
+    "$base": "Unsigned",
+    "value": "3600"
+  },
+  "time-sync-timer": {
+    "$base": "Choice",
+    "time-sync-timer": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "latitude": {
+    "$base": "Real",
+    "value": 0
+  },
+  "longitude": {
+    "$base": "Real",
+    "value": 0
+  },
+  "site-elevation": {
+    "$base": "Signed",
+    "value": 0
+  },
+  "site-elevation-units": {
+    "$base": "Enumerated",
+    "value": "m"
+  },
+  "last-reset-time": {
+    "$base": "DateTime",
+    "value": "*-*-*-*T*:*:*.*"
+  },
+  "reset-count": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "reason-for-reset": {
+    "$base": "Enumerated",
+    "value": 0
+  },
+  "power-down-time": {
+    "$base": "DateTime",
+    "value": "*-*-*-*T*:*:*.*"
+  },
+  "flash-load-time": {
+    "$base": "DateTime",
+    "value": "*-*-*-*T*:*:*.*"
+  },
+  "max-master": {
+    "$base": "Unsigned",
+    "value": "127"
+  },
+  "max-info-frames": {
+    "$base": "Unsigned",
+    "value": "8"
+  },
+  "device-address-binding": {
+    "$base": "List"
+  },
+  "scan-rate": {
+    "$base": "Real",
+    "value": "177.955"
+  },
+  "io-scan-rate": {
+    "$base": "Real",
+    "value": "16.6667"
+  },
+  "static-ram-total": {
+    "$base": "Unsigned",
+    "value": "127"
+  },
+  "static-ram-free": {
+    "$base": "Unsigned",
+    "value": "112"
+  },
+  "dynamic-ram-total": {
+    "$base": "Unsigned",
+    "value": "163"
+  },
+  "dynamic-ram-free": {
+    "$base": "Unsigned",
+    "value": "100"
+  },
+  "flash-type": {
+    "$base": "Enumerated",
+    "value": "1mb-29f800"
+  },
+  "expansion-cards": {
+    "1": {
+      "$base": "String",
+      "value": ""
+    },
+    "2": {
+      "$base": "String",
+      "value": ""
+    },
+    "3": {
+      "$base": "String",
+      "value": ""
+    },
+    "4": {
+      "$base": "String",
+      "value": ""
+    },
+    "$base": "Array"
+  },
+  "expansion-boards": {
+    "1": {
+      "$base": "String",
+      "value": ""
+    },
+    "2": {
+      "$base": "String",
+      "value": ""
+    },
+    "3": {
+      "$base": "String",
+      "value": ""
+    },
+    "4": {
+      "$base": "String",
+      "value": ""
+    },
+    "5": {
+      "$base": "String",
+      "value": ""
+    },
+    "6": {
+      "$base": "String",
+      "value": ""
+    },
+    "7": {
+      "$base": "String",
+      "value": ""
+    },
+    "8": {
+      "$base": "String",
+      "value": ""
+    },
+    "9": {
+      "$base": "String",
+      "value": ""
+    },
+    "10": {
+      "$base": "String",
+      "value": ""
+    },
+    "11": {
+      "$base": "String",
+      "value": ""
+    },
+    "12": {
+      "$base": "String",
+      "value": ""
+    },
+    "$base": "Array"
+  },
+  "cpu-speed": {
+    "$base": "Unsigned",
+    "value": "25"
+  },
+  "gcl-timeout": {
+    "$base": "Unsigned",
+    "value": "20"
+  },
+  "object-execution-timer": {
+    "$base": "Choice",
+    "object-execution-timer": {
+      "$base": "Unsigned",
+      "value": "67252"
+    }
+  },
+  "logical-base-address": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "command": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  },
+  "address-source": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "dip-setting": {
+    "$base": "Unsigned",
+    "value": "99"
+  },
+  "jumper-setting": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "dip-address": {
+    "$base": "Unsigned",
+    "value": "4399"
+  },
+  "device-instance": {
+    "$base": "Unsigned",
+    "value": "4399"
+  },
+  "debug-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "area-overridden": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "area": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "system-overridden": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "system": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "reset-password": {
+    "$base": "Octet",
+    "value": "0x"
+  },
+  "dcc-password": {
+    "$base": "Octet",
+    "value": "0x64f311dca93e9cf370d6ea22df3fd639"
+  },
+  "config-password": {
+    "$base": "Octet",
+    "value": "0x"
+  },
+  "security-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "link-net-enable": {
+    "$base": "Enumerated",
+    "value": "lnk-net2"
+  },
+  "commission-flag": {
+    "$base": "Enumerated",
+    "value": "commissioned"
+  },
+  "platform": {
+    "$base": "Enumerated",
+    "value": "universal"
+  },
+  "hardware-status": {
+    "$base": "BitString",
+    "value": "database-ok;ee-ok;rtc-not-present;lcd-not-present;uart-not-present;ethernet-not-present"
+  },
+  "configuration-files": {
+    "1": {
+      "$base": "ObjectIdentifier",
+      "value": "file,1"
+    },
+    "$base": "Array"
+  },
+  "last-restore-time": {
+    "$base": "Choice",
+    "dateTime": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T*:*:*.*"
+    }
+  },
+  "backup-failure-timeout": {
+    "$base": "Unsigned",
+    "value": "60"
+  },
+  "database-revision": {
+    "$base": "Unsigned",
+    "value": "23"
+  },
+  "active-cov-subscriptions": {
+    "$base": "List"
+  },
+  "max-segments-accepted": {
+    "$base": "Unsigned",
+    "value": "21"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  },
+  "panel-email": {
+    "$base": "String",
+    "value": ""
+  },
+  "email-server": {
+    "$base": "String",
+    "value": ""
+  },
+  "dns-server": {
+    "$base": "String",
+    "value": ""
+  },
+  "smtp-timeout": {
+    "$base": "Unsigned",
+    "value": "60"
+  },
+  "enable-auto-startup-delay": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "output-startup-delay": {
+    "$base": "Unsigned",
+    "value": "33"
+  },
+  "gcl-print-buffer": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "ip-address": {
+    "$base": "String",
+    "value": ""
+  },
+  "subnet-mask": {
+    "$base": "String",
+    "value": ""
+  },
+  "gateway": {
+    "$base": "String",
+    "value": ""
+  },
+  "use-dhcp": {
+    "$base": "Boolean",
+    "value": ""
+  },
+  "features-supported": {
+    "$base": "BitString",
+    "value": "bde-supported;ors-supported"
+  },
+  "suppress-ds-update": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "ds-update-timer": {
+    "$base": "Choice",
+    "ds-update-timer": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "controller-graphic": {
+    "$base": "String",
+    "value": ""
+  },
+  "prev-CW-status": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "firmware-image-name": {
+    "$base": "String",
+    "value": "Boot:DAC8:---"
+  },
+  "structured-object-list": {
+    "$base": "Array"
+  }
+}

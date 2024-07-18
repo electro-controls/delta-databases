@@ -1,0 +1,87 @@
+{
+  "$base": "Object",
+  "displayName": "ChillerMode",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "multi-state-value,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "ChillerMode"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": "fault"
+  },
+  "present-value": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "gcl-value": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": "fault"
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "unspecifiedValue": "true"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "missing-cfg-object"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "2"
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "OFF"
+    },
+    "2": {
+      "$base": "String",
+      "value": "ON"
+    },
+    "$base": "Array"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,5"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2022-04-25T16:59:34.380000-07:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "OFF"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

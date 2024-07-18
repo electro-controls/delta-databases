@@ -1,0 +1,360 @@
+{
+  "name": "Bench",
+  "ipAddress": "http://localhost",
+  "uploadQueue": [],
+  "devices": [
+    {
+      "number": 4399,
+      "objects": [
+        {
+          "id": "dbi,4399",
+          "name": "Database Information 4399",
+          "fileName": "Database Information 4399",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 4399",
+          "fileName": "Data Exchange Settings 4399",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "device,4399",
+          "name": "FSB_CWS_COLLIN",
+          "fileName": "FSB_CWS_COLLIN",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "evc,3",
+          "name": "Security",
+          "fileName": "Security",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "evc,4",
+          "name": "Critical",
+          "fileName": "Critical",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 4399",
+          "fileName": "Event and Alarm Settings 4399",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 4399",
+          "fileName": "BACnet Settings 4399",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 4399",
+          "fileName": "Priority Names 4399",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 4399",
+          "fileName": "Slave Device List 4399",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "sug,1",
+          "name": "Administrator",
+          "fileName": "Administrator",
+          "lastUpdate": "2024-07-18T20:01:08.439Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-07-18T20:04:57.251Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-07-18T20:37:13.391Z"
+        },
+        {
+          "id": "av,1",
+          "name": "Eff_OAT",
+          "fileName": "Eff_OAT",
+          "lastUpdate": "2024-07-18T20:39:38.043Z"
+        },
+        {
+          "id": "aic,1",
+          "name": "Temperature DegF 10k Thermistor AIC",
+          "fileName": "Temperature DegF 10k Thermistor AIC",
+          "lastUpdate": "2024-07-18T20:40:43.635Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "CWS_Demand_PG",
+          "fileName": "CWS_Demand_PG",
+          "lastUpdate": "2024-07-18T21:10:37.967Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "Pumps_PG",
+          "fileName": "Pumps_PG",
+          "lastUpdate": "2024-07-18T21:31:12.969Z"
+        },
+        {
+          "id": "pg,5",
+          "name": "Pumps2_PG",
+          "fileName": "Pumps2_PG",
+          "lastUpdate": "2024-07-18T21:31:16.365Z"
+        },
+        {
+          "id": "av,2",
+          "name": "OATInterlock_Sp",
+          "fileName": "OATInterlock_Sp",
+          "lastUpdate": "2024-07-18T21:50:37.456Z"
+        },
+        {
+          "id": "bv,1",
+          "name": "OATInterlock",
+          "fileName": "OATInterlock",
+          "lastUpdate": "2024-07-18T21:52:22.408Z"
+        },
+        {
+          "id": "av,3",
+          "name": "Rem_CWDemand",
+          "fileName": "Rem_CWDemand",
+          "lastUpdate": "2024-07-18T21:52:36.009Z"
+        },
+        {
+          "id": "av,4",
+          "name": "Eff_CWDemand",
+          "fileName": "Eff_CWDemand",
+          "lastUpdate": "2024-07-18T21:53:32.163Z"
+        },
+        {
+          "id": "av,5",
+          "name": "Loc_CWDemand",
+          "fileName": "Loc_CWDemand",
+          "lastUpdate": "2024-07-18T21:53:42.937Z"
+        },
+        {
+          "id": "av,6",
+          "name": "ChillerCallUptime",
+          "fileName": "ChillerCallUptime",
+          "lastUpdate": "2024-07-18T21:54:28.324Z"
+        },
+        {
+          "id": "av,7",
+          "name": "CWS_RemSp",
+          "fileName": "CWS_RemSp",
+          "lastUpdate": "2024-07-18T21:59:23.505Z"
+        },
+        {
+          "id": "av,8",
+          "name": "CWS_Sp",
+          "fileName": "CWS_Sp",
+          "lastUpdate": "2024-07-18T21:59:45.418Z"
+        },
+        {
+          "id": "av,9",
+          "name": "CWS_LocSp",
+          "fileName": "CWS_LocSp",
+          "lastUpdate": "2024-07-18T21:59:53.048Z"
+        },
+        {
+          "id": "bv,2",
+          "name": "ChillerCall",
+          "fileName": "ChillerCall",
+          "lastUpdate": "2024-07-18T22:01:01.019Z"
+        },
+        {
+          "id": "av,10",
+          "name": "CWStartRamp_Sp",
+          "fileName": "CWStartRamp_Sp",
+          "lastUpdate": "2024-07-18T22:01:51.447Z"
+        },
+        {
+          "id": "co,1",
+          "name": "CWS_CO",
+          "fileName": "CWS_CO",
+          "lastUpdate": "2024-07-18T22:03:07.148Z"
+        },
+        {
+          "id": "av,11",
+          "name": "CWStartRamp",
+          "fileName": "CWStartRamp",
+          "lastUpdate": "2024-07-18T22:05:44.922Z"
+        },
+        {
+          "id": "av,12",
+          "name": "CWStopRamp",
+          "fileName": "CWStopRamp",
+          "lastUpdate": "2024-07-18T22:05:59.139Z"
+        },
+        {
+          "id": "av,13",
+          "name": "CWDemandLimit_Sp",
+          "fileName": "CWDemandLimit_Sp",
+          "lastUpdate": "2024-07-18T22:11:43.669Z"
+        },
+        {
+          "id": "mv,1",
+          "name": "ChillerMode",
+          "fileName": "ChillerMode",
+          "lastUpdate": "2024-07-18T22:13:05.351Z"
+        },
+        {
+          "id": "pg,6",
+          "name": "Mode_PG",
+          "fileName": "Mode_PG",
+          "lastUpdate": "2024-07-18T22:14:19.154Z"
+        },
+        {
+          "id": "av,14",
+          "name": "Rem_OAT",
+          "fileName": "Rem_OAT",
+          "lastUpdate": "2024-07-18T22:27:34.022Z"
+        },
+        {
+          "id": "av,15",
+          "name": "Uptime",
+          "fileName": "Uptime",
+          "lastUpdate": "2024-07-18T22:27:43.004Z"
+        },
+        {
+          "id": "av,16",
+          "name": "Loc_OAT",
+          "fileName": "Loc_OAT",
+          "lastUpdate": "2024-07-18T22:27:52.484Z"
+        },
+        {
+          "id": "av,17",
+          "name": "OAT",
+          "fileName": "OAT",
+          "lastUpdate": "2024-07-18T22:28:05.954Z"
+        },
+        {
+          "id": "bv,3",
+          "name": "Rem_ChillerCall",
+          "fileName": "Rem_ChillerCall",
+          "lastUpdate": "2024-07-18T22:28:58.146Z"
+        },
+        {
+          "id": "av,18",
+          "name": "ChillerCallOfftime",
+          "fileName": "ChillerCallOfftime",
+          "lastUpdate": "2024-07-18T22:30:04.885Z"
+        },
+        {
+          "id": "bv,4",
+          "name": "CWPLagAssist",
+          "fileName": "CWPLagAssist",
+          "lastUpdate": "2024-07-18T22:32:08.052Z"
+        },
+        {
+          "id": "av,19",
+          "name": "CWP1_Ramp",
+          "fileName": "CWP1_Ramp",
+          "lastUpdate": "2024-07-18T22:32:24.784Z"
+        },
+        {
+          "id": "av,20",
+          "name": "CWP2_Ramp",
+          "fileName": "CWP2_Ramp",
+          "lastUpdate": "2024-07-18T22:32:31.095Z"
+        },
+        {
+          "id": "av,21",
+          "name": "CWDp",
+          "fileName": "CWDp",
+          "lastUpdate": "2024-07-18T22:32:59.016Z"
+        },
+        {
+          "id": "av,22",
+          "name": "CWDp_Sp",
+          "fileName": "CWDp_Sp",
+          "lastUpdate": "2024-07-18T22:33:56.371Z"
+        },
+        {
+          "id": "co,2",
+          "name": "CWDp_CO",
+          "fileName": "CWDp_CO",
+          "lastUpdate": "2024-07-18T22:34:17.864Z"
+        },
+        {
+          "id": "av,23",
+          "name": "CWDp_RemSp",
+          "fileName": "CWDp_RemSp",
+          "lastUpdate": "2024-07-18T22:36:30.715Z"
+        },
+        {
+          "id": "av,24",
+          "name": "CWDp_LocSp",
+          "fileName": "CWDp_LocSp",
+          "lastUpdate": "2024-07-18T22:36:39.025Z"
+        },
+        {
+          "id": "av,25",
+          "name": "PLagStop_Sp",
+          "fileName": "PLagStop_Sp",
+          "lastUpdate": "2024-07-18T22:39:41.694Z"
+        }
+      ]
+    }
+  ]
+}

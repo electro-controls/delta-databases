@@ -1,0 +1,44 @@
+//Power up defaults  These will be written to after power up from Jace.
+
+If PowerUp Then
+  'Rem_OAT' = 140
+  'Rem_CWDemand' = - 1
+  'Uptime' = 0
+End If
+
+'OAT' = '1000.Eff_OAT'
+
+//outside air temp
+'Loc_OAT' = 'OAT'
+
+If 'Rem_OAT' < 140 Then
+    'Eff_OAT' = 'Rem_OAT'
+  Else
+    'Eff_OAT' = 'Loc_OAT'
+End If
+
+If Rem_Flow Then
+    Eff_CWFlow = 220
+  Else
+    Eff_CWFlow = 0
+End If
+
+CWDeltaT = CWR - CWS
+CalculatedTons = (CWDeltaT * Eff_CWFlow * 500) / 12000
+
+If 'CWS_RemSp' >= 0 Then
+    'CWS_Sp' = 'CWS_RemSp'
+Else
+    'CWS_Sp' = 'CWS_LocSp'
+End If
+
+If 'CWDp_RemSp' >= 0 Then
+    'CWDp_Sp' = 'CWDp_RemSp'
+Else
+    'CWDp_Sp' = 'CWDp_LocSp'
+End If
+
+
+DoEvery 1M
+    Uptime = Uptime + 1
+End Do
