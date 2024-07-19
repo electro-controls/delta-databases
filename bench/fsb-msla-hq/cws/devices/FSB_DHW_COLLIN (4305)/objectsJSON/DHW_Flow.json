@@ -1,8 +1,9 @@
 {
-  "displayName": "DomTemp",
+  "$base": "Object",
+  "displayName": "DHW_Flow",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,3"
+    "value": "analog-input,4"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,27 +11,27 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DomTemp"
+    "value": "DHW_Flow"
   },
   "description": {
     "$base": "String",
-    "value": "25Jan2023 AV- strap on sensor. close to temp WH is set at this time 130deg"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "99.7582"
+    "value": 0
   },
   "last-value": {
     "$base": "Real",
-    "value": "114.969"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,15 +39,15 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "A"
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,24"
+    "value": "aic,1"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,7 +55,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "not-available"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -62,11 +63,11 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Dom_TempF10KType3_AIC"
+    "value": "Dom_Current 0-5V 0-5 A AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "15"
+    "value": "19"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -74,11 +75,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "5"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.02442"
+    "value": "0.001221"
   },
   "cov-increment": {
     "$base": "Real",
@@ -92,12 +93,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "971353"
+      "value": "979694"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "4095"
+    "value": 0
   },
   "calibration": {
     "$base": "Real",

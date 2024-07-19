@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "present-value": {
     "$base": "Real",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "unreliable-other"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "15"
+    "value": "8"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "99.2621"
+    "value": 0
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -305,15 +305,15 @@
   },
   "setpoint-crossings": {
     "$base": "Unsigned",
-    "value": "5314"
+    "value": "5315"
   },
   "setpoint-crossing-flag": {
     "$base": "Boolean",
-    "value": "1"
+    "value": 0
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "13.897"
+    "value": "173"
   },
   "hal-flags": {
     "$base": "BitString",
