@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWDp_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -51,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "200"
+    "value": "195"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -204,7 +203,7 @@
   },
   "bias": {
     "$base": "Real",
-    "value": "50"
+    "value": "1"
   },
   "derivative": {
     "$base": "Real",
@@ -277,7 +276,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "141884"
+      "value": "935580"
     }
   },
   "self-adj-enable": {

@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "PumpFailDly_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",

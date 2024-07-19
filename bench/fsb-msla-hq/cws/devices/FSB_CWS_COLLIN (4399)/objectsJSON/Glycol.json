@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Glycol",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -19,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;not-commissioned"
+    "value": "not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -27,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -47,7 +46,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "not-available"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -86,15 +85,15 @@
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2000-01-02T10:35:47.300000-07:00"
+    "value": "2000-01-02T14:00:20.300000-07:00"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "171"
+    "value": "195"
   },
   "time-delay": {
     "$base": "Unsigned",

@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWDp_RemSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",

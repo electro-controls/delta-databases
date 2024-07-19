@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWS_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -51,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "8"
+    "value": "195"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -204,7 +203,7 @@
   },
   "bias": {
     "$base": "Real",
-    "value": "50"
+    "value": "0.25"
   },
   "derivative": {
     "$base": "Real",
@@ -277,7 +276,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "141884"
+      "value": "935996"
     }
   },
   "self-adj-enable": {

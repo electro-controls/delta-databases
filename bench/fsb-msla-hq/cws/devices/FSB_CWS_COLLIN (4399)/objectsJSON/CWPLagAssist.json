@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWPLagAssist",
   "object-identifier": {
     "$base": "ObjectIdentifier",

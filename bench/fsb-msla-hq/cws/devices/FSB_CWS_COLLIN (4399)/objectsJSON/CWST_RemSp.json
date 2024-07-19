@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWST_RemSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",

@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWStartRamp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -55,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "program,3"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-02T14:00:57.600000-07:00"
   },
   "cov-increment": {
     "$base": "Real",

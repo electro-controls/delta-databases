@@ -1,9 +1,8 @@
 {
-  "$base": "Object",
   "displayName": "CWP2_PumpSpeed_AOC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output-configuration,2"
+    "value": "aoc,2"
   },
   "object-type": {
     "$base": "Enumerated",

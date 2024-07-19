@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWP2_Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -19,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "20"
   },
   "last-value": {
     "$base": "Real",
@@ -31,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -59,7 +58,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 1
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
@@ -67,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "24"
+    "value": "200"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -93,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "720852"
+      "value": "935885"
     }
   },
   "ad-value": {

@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Chiller_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -79,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "10"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -141,10 +140,7 @@
       }
     },
     "10": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "11": {
       "$base": "Choice",
@@ -223,7 +219,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,7"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -290,7 +286,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T14:00:54.30"
     },
     "11": {
       "$base": "DateTime",

@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWS_RemSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": -1
+    "value": "-1"
   },
   "gcl-value": {
     "$base": "Real",

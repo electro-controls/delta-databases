@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWStopRamp",
   "object-identifier": {
     "$base": "ObjectIdentifier",

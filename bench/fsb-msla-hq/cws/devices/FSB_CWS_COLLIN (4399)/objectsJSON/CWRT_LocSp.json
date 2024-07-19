@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWRT_LocSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",

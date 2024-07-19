@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Rem_CWDemand",
   "object-identifier": {
     "$base": "ObjectIdentifier",

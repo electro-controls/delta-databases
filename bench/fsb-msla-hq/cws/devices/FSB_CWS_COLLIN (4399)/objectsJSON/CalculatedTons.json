@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CalculatedTons",
   "object-identifier": {
     "$base": "ObjectIdentifier",

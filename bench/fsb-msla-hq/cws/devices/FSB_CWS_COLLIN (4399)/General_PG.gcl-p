@@ -33,5 +33,5 @@ End If
 
 
 DoEvery 1M
-    Uptime = Uptime + 1
+    'Uptime' = 'Uptime' + 1
 End Do

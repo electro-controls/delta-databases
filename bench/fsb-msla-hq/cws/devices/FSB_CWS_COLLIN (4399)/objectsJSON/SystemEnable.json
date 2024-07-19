@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "SystemEnable",
   "object-identifier": {
     "$base": "ObjectIdentifier",

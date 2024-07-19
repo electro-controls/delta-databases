@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Pump_Speed_Min_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",

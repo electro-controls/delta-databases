@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "OATInterlock_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 60
+    "value": "60"
   },
   "gcl-value": {
     "$base": "Real",

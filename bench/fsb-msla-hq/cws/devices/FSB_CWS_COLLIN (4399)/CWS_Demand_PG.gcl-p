@@ -1,9 +1,9 @@
 
 If 'Eff_OAT' < ('OATInterlock_Sp' - 1) And ('OATInterlock' OnFor 300S) Then
-    OATInterlock = Off
+    'OATInterlock' = Off
 End If
 If 'Eff_OAT' > ('OATInterlock_Sp' + 1) And ('OATInterlock' OffFor 300S) Then
-    OATInterlock = On
+    'OATInterlock' = On
 End If
 
 
@@ -62,7 +62,7 @@ If (Not 'ChillerCall') Then
     'ChillerCallOfftime' = 0
 End If
 
-'CWStartRamp' = Scale (ChillerCallUptime, 0, 0, 0, CWStartRamp_Sp, 100)
+'CWStartRamp' = Scale ('ChillerCallUptime', 0, 0, 0, 'CWStartRamp_Sp', 100)
 
 Variable StartRampStore //Store start ramp % incase a stop is initiated before the start ramp reached 100%
 If 'ChillerCall' Then
@@ -70,21 +70,21 @@ If 'ChillerCall' Then
 End If
 
 
-'CWStopRamp' = Scale (ChillerCallOfftime, 0, 0, StartRampStore, CWStopRamp_Sp, 0)
+'CWStopRamp' = Scale ('ChillerCallOfftime', 0, 0, StartRampStore, CWStopRamp_Sp, 0)
 
 //below sequnce to prevent overshoot when load changes suddenly
 Variable BiasWait As Integer
 
 IfOnce (CWS < (CWS_Sp - 3)) And (Not BiasWait) Then
-    CWS_CO.Bias = CWS_CO.Bias * 0.5
+    'CWS_CO.Bias' = 'CWS_CO.Bias' * 0.5
     BiasWait = On
 End If
 
 IfOnce (CWS < 40) And (Not BiasWait) Then
-    CWS_CO.Bias = CWS_CO.Bias * 0.5
+    'CWS_CO.Bias' = 'CWS_CO.Bias' * 0.5
     BiasWait = On
 End If
 
 If BiasWait OnFor 60S Then
     BiasWait = Off
-End If 
+End If

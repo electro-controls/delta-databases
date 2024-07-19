@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "OATInterlock",
   "object-identifier": {
     "$base": "ObjectIdentifier",

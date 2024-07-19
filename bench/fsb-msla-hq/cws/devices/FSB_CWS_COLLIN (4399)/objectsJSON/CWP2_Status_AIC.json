@@ -1,9 +1,8 @@
 {
-  "$base": "Object",
   "displayName": "CWP2_Status_AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input-configuration,3"
+    "value": "aic,3"
   },
   "object-type": {
     "$base": "Enumerated",

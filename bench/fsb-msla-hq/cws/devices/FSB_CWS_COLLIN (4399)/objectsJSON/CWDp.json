@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWDp",
   "object-identifier": {
     "$base": "ObjectIdentifier",

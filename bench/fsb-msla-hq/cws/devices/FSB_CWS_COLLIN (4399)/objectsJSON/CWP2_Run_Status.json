@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWP2_Run_Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,11 +22,11 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "gcl-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -63,15 +62,15 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "program,5"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-02T14:01:07.500000-07:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "OFF"
+    "value": "ON"
   },
   "hal-flags": {
     "$base": "BitString",

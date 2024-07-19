@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWStartRamp_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",

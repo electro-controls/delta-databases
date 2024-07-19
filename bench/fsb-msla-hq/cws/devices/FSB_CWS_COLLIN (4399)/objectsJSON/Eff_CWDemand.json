@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Eff_CWDemand",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -55,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "program,3"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-02T14:00:56.000000-07:00"
   },
   "cov-increment": {
     "$base": "Real",

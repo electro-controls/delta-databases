@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "OAT",
   "object-identifier": {
     "$base": "ObjectIdentifier",

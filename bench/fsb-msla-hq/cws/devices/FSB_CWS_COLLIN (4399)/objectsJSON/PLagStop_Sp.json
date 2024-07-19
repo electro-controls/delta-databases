@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "PLagStop_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "95"
   },
   "gcl-value": {
     "$base": "Real",
@@ -39,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "s"
   },
   "event-state": {
     "$base": "Enumerated",

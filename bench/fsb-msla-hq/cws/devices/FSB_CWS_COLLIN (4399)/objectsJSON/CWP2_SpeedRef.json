@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "CWP2_SpeedRef",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -59,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "CWP2_PumpSpeed_AOC"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -79,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "16"
+    "value": "10"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -141,10 +140,7 @@
       }
     },
     "10": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "11": {
       "$base": "Choice",
@@ -177,7 +173,10 @@
       }
     },
     "16": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "$base": "Array"
   },
@@ -220,7 +219,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,5"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -287,7 +286,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T14:00:54.50"
     },
     "11": {
       "$base": "DateTime",
@@ -311,7 +310,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-01-02T08:08:51.20"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },

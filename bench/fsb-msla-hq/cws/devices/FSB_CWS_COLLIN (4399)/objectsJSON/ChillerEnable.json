@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "ChillerEnable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -79,7 +78,7 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-02T13:59:04.100000-07:00"
   },
   "prev-change-of-state-times": {
     "1": {
@@ -109,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -171,10 +170,7 @@
       }
     },
     "10": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "11": {
       "$base": "Choice",
@@ -257,7 +253,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,3"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -324,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T14:01:04.90"
     },
     "11": {
       "$base": "DateTime",
@@ -477,8 +473,9 @@
   },
   "flick-warn-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "flick-warn-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "flick-warn-active": {
@@ -516,8 +513,9 @@
   },
   "override-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "override-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "reliability-timer": {
