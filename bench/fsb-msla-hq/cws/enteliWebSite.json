@@ -589,18 +589,6 @@
           "lastUpdate": "2024-07-19T18:24:28.976Z"
         },
         {
-          "id": "ai,3",
-          "name": "CWBT_Temp",
-          "fileName": "CWBT_Temp",
-          "lastUpdate": "2024-07-19T18:28:28.902Z"
-        },
-        {
-          "id": "bi,113",
-          "name": "Glycol",
-          "fileName": "Glycol",
-          "lastUpdate": "2024-07-19T18:30:44.501Z"
-        },
-        {
           "id": "ai,6",
           "name": "DiffPressure",
           "fileName": "DiffPressure",
@@ -617,6 +605,18 @@
           "name": "Chiller_Sp",
           "fileName": "Chiller_Sp",
           "lastUpdate": "2024-07-19T18:39:24.245Z"
+        },
+        {
+          "id": "ai,7",
+          "name": "CWBT_Temp",
+          "fileName": "CWBT_Temp",
+          "lastUpdate": "2024-07-19T18:40:37.141Z"
+        },
+        {
+          "id": "bi,3",
+          "name": "Glycol",
+          "fileName": "Glycol",
+          "lastUpdate": "2024-07-19T18:41:18.072Z"
         }
       ]
     }

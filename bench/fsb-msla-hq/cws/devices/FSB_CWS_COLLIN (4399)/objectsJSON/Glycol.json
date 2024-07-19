@@ -3,7 +3,7 @@
   "displayName": "Glycol",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-input,113"
+    "value": "binary-input,3"
   },
   "object-type": {
     "$base": "Enumerated",

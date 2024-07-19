@@ -3,7 +3,7 @@
   "displayName": "CWBT_Temp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,3"
+    "value": "analog-input,7"
   },
   "object-type": {
     "$base": "Enumerated",
