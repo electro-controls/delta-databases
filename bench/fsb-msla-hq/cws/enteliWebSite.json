@@ -517,12 +517,6 @@
           "lastUpdate": "2024-07-19T21:55:46.582Z"
         },
         {
-          "id": "mv,1",
-          "name": "ChillerMode",
-          "fileName": "ChillerMode",
-          "lastUpdate": "2024-07-19T21:55:46.582Z"
-        },
-        {
           "id": "mv,60",
           "name": "LeadPump",
           "fileName": "LeadPump",
@@ -568,12 +562,6 @@
           "id": "pg,5",
           "name": "Pumps2_PG",
           "fileName": "Pumps2_PG",
-          "lastUpdate": "2024-07-19T21:55:46.582Z"
-        },
-        {
-          "id": "pg,6",
-          "name": "Mode_PG",
-          "fileName": "Mode_PG",
           "lastUpdate": "2024-07-19T21:55:46.582Z"
         },
         {
