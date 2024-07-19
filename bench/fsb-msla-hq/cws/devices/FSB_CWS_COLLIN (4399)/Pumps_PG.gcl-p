@@ -6,7 +6,6 @@
 Variable CWP1ManualOff
 Variable CWP2ManualOff
 
-
 If Not 'CWP1_Enable.Priority_Array[5]' Then
     CWP1ManualOff = On
   ElseIf  Not 'CWP1_Enable.Priority_Array[8]' Then
@@ -23,7 +22,6 @@ If Not 'CWP2_Enable.Priority_Array[5]' Then
     CWP2ManualOff = Off
 End If
 
-
 //turn on lag assist latch if lead pump has fully ramped and is pegged for 10min
 If (Not 'CWPLagAssist') And (('CWP1_Ramp' >= 100) Or ('CWP2_Ramp' >= 100)) And ('CWDp_CO' > 'PLagStart_Sp') And ('CWDp' < 0.9 * 'CWDp_Sp') OnFor 10M Then
     'CWPLagAssist' = On
@@ -32,7 +30,6 @@ End If
 If 'CWPLagAssist' And ('CWDp_CO' < 'PLagStop_Sp') OnFor 10M Then
     'CWPLagAssist' = Off
 End If
-
 
 //CWP1 call
 If 'SystemEnable' And (('LeadPump' = 1) Or CWP2ManualOff Or 'CWP2_Fail' Or (('LeadPump' = 2) And 'CWPLagAssist')) Then
@@ -58,7 +55,4 @@ End If
 
 If 'SystemEnable' OffFor 15M Then
     'CWP2_Call' = Off
-End If
-
-
-//pump sequence continued on PG7... 
+End If 

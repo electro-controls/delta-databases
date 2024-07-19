@@ -1,0 +1,20 @@
+
+If ('CWST_RemSp' >= 0) Then
+    'CWST_Sp' = 'CWST_RemSp'
+Else
+    'CWST_Sp' = 'CWST_LocSp'
+End If
+
+If ('CWRT_RemSp' >= 0) Then
+    'CWRT_Sp' = 'CWRT_RemSp'
+Else
+    'CWRT_Sp' = 'CWRT_LocSp'
+End If
+
+If ('CWBT_RemSp' >= 0) Then
+    'CWBT_Sp' = 'CWBT_RemSp'
+Else
+    'CWBT_Sp' = 'CWBT_LocSp'
+End If
+
+'Chiller_Sp' = 'CWST_Sp'

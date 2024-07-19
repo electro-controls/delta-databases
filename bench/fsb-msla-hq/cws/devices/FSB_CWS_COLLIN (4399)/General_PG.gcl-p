@@ -17,14 +17,7 @@ If 'Rem_OAT' < 140 Then
     'Eff_OAT' = 'Loc_OAT'
 End If
 
-If Rem_Flow Then
-    Eff_CWFlow = 220
-  Else
-    Eff_CWFlow = 0
-End If
-
-CWDeltaT = CWR - CWS
-CalculatedTons = (CWDeltaT * Eff_CWFlow * 500) / 12000
+'CWDeltaT' = 'CWRT' - 'CWST'
 
 If 'CWS_RemSp' >= 0 Then
     'CWS_Sp' = 'CWS_RemSp'
