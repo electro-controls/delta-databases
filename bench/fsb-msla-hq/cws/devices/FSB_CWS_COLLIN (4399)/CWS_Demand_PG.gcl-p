@@ -45,10 +45,12 @@ If 'ChillerCall' Then
       'ChillerCallUptime' = 'ChillerCallUptime' + 0.1
     End Do
     'ChillerEnable' = On
+    'SystemEnable' = On
   Else
     'ChillerCallUptime' = 0
     'CWS_CO.Bias' = 1
     'ChillerEnable' = Off
+    'SystemEnable' = Off
 End If
 If (Not 'ChillerCall') Then
     DoEvery 6S

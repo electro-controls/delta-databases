@@ -1,8 +1,8 @@
 {
-  "displayName": "FSB_CWS_COLLIN",
+  "displayName": "FSB_DHW_COLLIN",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "device,4399"
+    "value": "device,4305"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "FSB_CWS_COLLIN"
+    "value": "FSB_DHW_COLLIN"
   },
   "description": {
     "$base": "String",
@@ -38,15 +38,15 @@
   },
   "model-name": {
     "$base": "String",
-    "value": "DAC_606"
+    "value": "DAC-322"
   },
   "firmware-revision": {
     "$base": "String",
-    "value": "189697"
+    "value": "232760"
   },
   "hardware-revision": {
     "$base": "String",
-    "value": "r3.6 [DCE r3]"
+    "value": "r3.1"
   },
   "application-software-version": {
     "$base": "String",
@@ -66,11 +66,11 @@
   },
   "protocol-services-supported": {
     "$base": "BitString",
-    "value": "acknowledgeAlarm;confirmedCOVNotification;getAlarmSummary;getEnrollmentSummary;subscribeCOV;atomicReadFile;atomicWriteFile;createObject;deleteObject;readProperty;readPropertyMultiple;writeProperty;writePropertyMultiple;deviceCommunicationControl;confirmedPrivateTransfer;reinitializeDevice;i-Am;i-Have;unconfirmedCOVNotification;unconfirmedPrivateTransfer;timeSynchronization;who-Has;who-Is;readRange;subscribeCOVProperty;getEventInformation"
+    "value": "acknowledgeAlarm;confirmedCOVNotification;getAlarmSummary;getEnrollmentSummary;subscribeCOV;atomicReadFile;atomicWriteFile;createObject;deleteObject;readProperty;readPropertyMultiple;writeProperty;writePropertyMultiple;deviceCommunicationControl;confirmedPrivateTransfer;reinitializeDevice;i-Am;i-Have;unconfirmedCOVNotification;unconfirmedPrivateTransfer;timeSynchronization;who-Has;who-Is;readRange;getEventInformation"
   },
   "protocol-object-types-supported": {
     "$base": "BitString",
-    "value": "analog-input;analog-output;analog-value;binary-input;binary-output;binary-value;calendar;device;event-enrollment;file;loop;multi-state-input;notification-class;program;schedule;multi-state-value;trend-log;structured-view"
+    "value": "analog-input;analog-output;analog-value;binary-input;binary-output;binary-value;calendar;device;event-enrollment;file;loop;multi-state-input;notification-class;program;schedule;multi-state-value;trend-log"
   },
   "object-list": {
     "$base": "Choice",
@@ -246,225 +246,6 @@
       "57": {
         "$base": "Choice"
       },
-      "58": {
-        "$base": "Choice"
-      },
-      "59": {
-        "$base": "Choice"
-      },
-      "60": {
-        "$base": "Choice"
-      },
-      "61": {
-        "$base": "Choice"
-      },
-      "62": {
-        "$base": "Choice"
-      },
-      "63": {
-        "$base": "Choice"
-      },
-      "64": {
-        "$base": "Choice"
-      },
-      "65": {
-        "$base": "Choice"
-      },
-      "66": {
-        "$base": "Choice"
-      },
-      "67": {
-        "$base": "Choice"
-      },
-      "68": {
-        "$base": "Choice"
-      },
-      "69": {
-        "$base": "Choice"
-      },
-      "70": {
-        "$base": "Choice"
-      },
-      "71": {
-        "$base": "Choice"
-      },
-      "72": {
-        "$base": "Choice"
-      },
-      "73": {
-        "$base": "Choice"
-      },
-      "74": {
-        "$base": "Choice"
-      },
-      "75": {
-        "$base": "Choice"
-      },
-      "76": {
-        "$base": "Choice"
-      },
-      "77": {
-        "$base": "Choice"
-      },
-      "78": {
-        "$base": "Choice"
-      },
-      "79": {
-        "$base": "Choice"
-      },
-      "80": {
-        "$base": "Choice"
-      },
-      "81": {
-        "$base": "Choice"
-      },
-      "82": {
-        "$base": "Choice"
-      },
-      "83": {
-        "$base": "Choice"
-      },
-      "84": {
-        "$base": "Choice"
-      },
-      "85": {
-        "$base": "Choice"
-      },
-      "86": {
-        "$base": "Choice"
-      },
-      "87": {
-        "$base": "Choice"
-      },
-      "88": {
-        "$base": "Choice"
-      },
-      "89": {
-        "$base": "Choice"
-      },
-      "90": {
-        "$base": "Choice"
-      },
-      "91": {
-        "$base": "Choice"
-      },
-      "92": {
-        "$base": "Choice"
-      },
-      "93": {
-        "$base": "Choice"
-      },
-      "94": {
-        "$base": "Choice"
-      },
-      "95": {
-        "$base": "Choice"
-      },
-      "96": {
-        "$base": "Choice"
-      },
-      "97": {
-        "$base": "Choice"
-      },
-      "98": {
-        "$base": "Choice"
-      },
-      "99": {
-        "$base": "Choice"
-      },
-      "100": {
-        "$base": "Choice"
-      },
-      "101": {
-        "$base": "Choice"
-      },
-      "102": {
-        "$base": "Choice"
-      },
-      "103": {
-        "$base": "Choice"
-      },
-      "104": {
-        "$base": "Choice"
-      },
-      "105": {
-        "$base": "Choice"
-      },
-      "106": {
-        "$base": "Choice"
-      },
-      "107": {
-        "$base": "Choice"
-      },
-      "108": {
-        "$base": "Choice"
-      },
-      "109": {
-        "$base": "Choice"
-      },
-      "110": {
-        "$base": "Choice"
-      },
-      "111": {
-        "$base": "Choice"
-      },
-      "112": {
-        "$base": "Choice"
-      },
-      "113": {
-        "$base": "Choice"
-      },
-      "114": {
-        "$base": "Choice"
-      },
-      "115": {
-        "$base": "Choice"
-      },
-      "116": {
-        "$base": "Choice"
-      },
-      "117": {
-        "$base": "Choice"
-      },
-      "118": {
-        "$base": "Choice"
-      },
-      "119": {
-        "$base": "Choice"
-      },
-      "120": {
-        "$base": "Choice"
-      },
-      "121": {
-        "$base": "Choice"
-      },
-      "122": {
-        "$base": "Choice"
-      },
-      "123": {
-        "$base": "Choice"
-      },
-      "124": {
-        "$base": "Choice"
-      },
-      "125": {
-        "$base": "Choice"
-      },
-      "126": {
-        "$base": "Choice"
-      },
-      "127": {
-        "$base": "Choice"
-      },
-      "128": {
-        "$base": "Choice"
-      },
-      "129": {
-        "$base": "Choice"
-      },
-      "130": {
-        "$base": "Choice"
-      },
       "$base": "Array"
     }
   },
@@ -490,7 +271,7 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "14:54:24.00"
+    "value": "14:58:57.00"
   },
   "local-date": {
     "$base": "Date",
@@ -643,11 +424,11 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "6.22222"
+    "value": "56.8182"
   },
   "io-scan-rate": {
     "$base": "Real",
-    "value": "16.6667"
+    "value": "25"
   },
   "static-ram-total": {
     "$base": "Unsigned",
@@ -655,15 +436,15 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "102"
+    "value": "119"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
-    "value": "163"
+    "value": "102"
   },
   "dynamic-ram-free": {
     "$base": "Unsigned",
-    "value": "99"
+    "value": "41"
   },
   "flash-type": {
     "$base": "Enumerated",
@@ -751,7 +532,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "968652"
+      "value": "971379"
     }
   },
   "logical-base-address": {
@@ -774,7 +555,7 @@
   },
   "dip-setting": {
     "$base": "Unsigned",
-    "value": "99"
+    "value": "5"
   },
   "jumper-setting": {
     "$base": "Unsigned",
@@ -782,11 +563,11 @@
   },
   "dip-address": {
     "$base": "Unsigned",
-    "value": "4399"
+    "value": "4305"
   },
   "device-instance": {
     "$base": "Unsigned",
-    "value": "4399"
+    "value": "4305"
   },
   "debug-enable": {
     "$base": "Boolean",
@@ -860,14 +641,14 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "545"
+    "value": "22"
   },
   "active-cov-subscriptions": {
     "$base": "List"
   },
   "max-segments-accepted": {
     "$base": "Unsigned",
-    "value": "21"
+    "value": "12"
   },
   "hal-flags": {
     "$base": "BitString",
@@ -895,7 +676,7 @@
   },
   "output-startup-delay": {
     "$base": "Unsigned",
-    "value": "33"
+    "value": "32"
   },
   "gcl-print-buffer": {
     "$base": "Unsigned",
@@ -919,7 +700,7 @@
   },
   "features-supported": {
     "$base": "BitString",
-    "value": "bde-supported;ors-supported"
+    "value": ""
   },
   "suppress-ds-update": {
     "$base": "Boolean",
@@ -942,7 +723,7 @@
   },
   "firmware-image-name": {
     "$base": "String",
-    "value": "Boot:DAC8:---"
+    "value": "Boot:DAC4:---"
   },
   "structured-object-list": {
     "$base": "Array"
