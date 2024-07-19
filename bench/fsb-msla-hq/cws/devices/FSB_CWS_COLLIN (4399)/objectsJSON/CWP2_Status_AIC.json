@@ -22,7 +22,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "A"
   },
   "max-value": {
     "$base": "Real",
@@ -56,7 +56,7 @@
       },
       "value": {
         "$base": "Real",
-        "value": "100"
+        "value": "50"
       },
       "adValue": {
         "$base": "Unsigned",

@@ -18,15 +18,15 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "fault;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "0"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -50,7 +50,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "missing-cfg-object"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -173,10 +173,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -286,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-02T14:00:54.30"
+      "value": "2000-01-02T14:39:07.00"
     },
     "11": {
       "$base": "DateTime",
@@ -310,7 +307,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T14:38:48.30"
     },
     "$base": "Array"
   },
@@ -324,11 +321,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "114"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "4.5"
   },
   "port-1-status": {
     "$base": "Enumerated",
