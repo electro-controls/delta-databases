@@ -34,7 +34,7 @@ If 'ChillerCall' OffFor 1S Then
   'Loc_CWDemand' = 'CWS_CO' * 'CWStopRamp' * 'CWDemandLimit_Sp' * 0.0001 //Ensures a smooth step down of compressors
 End If
 
-If  'Rem_ChillerCall' And 'OATInterlock' Then
+If  'Rem_ChillerCall' Or (Not 'OATInterlock') Then // todo switch to And once front end is integrated
     'ChillerCall' = On
   Else
     'ChillerCall' = Off
