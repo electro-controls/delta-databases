@@ -27,25 +27,6 @@
     "$base": "Array"
   },
   "v3-obj-restriction": {
-    "1": {
-      "$base": "Sequence",
-      "objRef": {
-        "$base": "Sequence",
-        "type": "0-BACnetDeviceObjectReference",
-        "deviceIdentifier": {
-          "$base": "ObjectIdentifier",
-          "unspecifiedValue": "true"
-        },
-        "objectIdentifier": {
-          "$base": "ObjectIdentifier",
-          "unspecifiedValue": "true"
-        }
-      },
-      "access": {
-        "$base": "Enumerated",
-        "value": "delete"
-      }
-    },
     "$base": "Array"
   }
 }

@@ -19,7 +19,7 @@ End If
 
 If 'OATIsFreezing' Then
   DoEvery 15S
-  'HWV' = Min (100, 'HWV' + 0.25) //Slow walk open to avoid overshoot 
+  'HWV' = Min (100, 'HWV' + 0.25) //Slow walk open to avoid overshoot
   End Do
   'FB_Damper' = 'DATHtg_CO' //FB controlling
 ElseIf  'HWVLock' Or 'ZonePurgeHold' Then

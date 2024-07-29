@@ -21,8 +21,8 @@ End If
 
 'FanStatus' = Switch ( 'FanStatus', 'SF_Status', 0.45, 0.3)
 
-If 'FanStatus' Then //Note: add addition airflow interlocks when avaialable 
+If 'FanStatus' Then //Note: add addition airflow interlocks when avaialable
     'RunStatusInt' = On
   Else
     'RunStatusInt' = Off
-End If 
+End If

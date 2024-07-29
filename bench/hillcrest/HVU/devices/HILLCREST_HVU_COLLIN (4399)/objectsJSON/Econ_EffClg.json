@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,11201"
+    "value": "program,7"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-04T03:30:45.800000-07:00"
+    "value": "2000-01-01T19:08:31.500000-07:00"
   },
   "cov-increment": {
     "$base": "Real",

@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Freeze_Stat",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -55,7 +54,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "AlarmNormal_BDC"
   },
   "polarity": {
     "$base": "Enumerated",
@@ -63,11 +62,11 @@
   },
   "active-text": {
     "$base": "String",
-    "value": "ON"
+    "value": "Alarm"
   },
   "inactive-text": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Normal"
   },
   "prev-change-of-state-times": {
     "1": {
@@ -76,25 +75,25 @@
     },
     "2": {
       "$base": "DateTime",
-      "value": "2022-04-21T21:47:32.320000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2022-04-21T21:47:32.320000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2022-04-21T21:47:32.300000-07:00"
+    "value": "2000-01-01T19:06:05.800000-07:00"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "204"
+    "value": "261"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -146,7 +145,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "ON"
+    "value": "Normal"
   },
   "hal-flags": {
     "$base": "BitString",

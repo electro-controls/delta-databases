@@ -26,7 +26,7 @@
   },
   "gcl-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -66,11 +66,11 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2022-04-14T12:01:45.900000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",
-    "value": "Off_Standby"
+    "value": "Off_Unoccupied"
   },
   "hal-flags": {
     "$base": "BitString",

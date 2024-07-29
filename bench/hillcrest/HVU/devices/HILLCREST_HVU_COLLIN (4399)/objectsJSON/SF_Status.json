@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "SF_Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -27,7 +26,7 @@
   },
   "last-value": {
     "$base": "Real",
-    "value": 0
+    "value": "20"
   },
   "status-flags": {
     "$base": "BitString",
@@ -67,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "183"
+    "value": "240"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -93,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "246782"
+      "value": "255999"
     }
   },
   "ad-value": {

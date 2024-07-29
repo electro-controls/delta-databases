@@ -26,4 +26,4 @@ End If
 
 
 // Room Variance
-'ZoneVariance' = 'Zone_EffTemp' - 'Zone_EffSp' 
+'ZoneVariance' = 'Zone_EffTemp' - 'Zone_EffSp'

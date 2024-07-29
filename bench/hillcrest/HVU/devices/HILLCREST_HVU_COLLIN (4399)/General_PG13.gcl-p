@@ -27,7 +27,7 @@ IfOnce PowerUp Then
 End If
 
 
-//Upime is for troubleshooting 
+//Upime is for troubleshooting
 DoEvery 1M
   'Uptime' = 'Uptime' + 1 //Counts controller uptime for troubleshooting and alarming
 End Do
@@ -52,7 +52,7 @@ End If
 
 //Intercontroller Links
 'OAT_Eff' = '1000.OAT_Eff' //Reference AV91 of parent DSC (OAT_Eff)
-// 'SFOntimeRef' = xxx.AVxx //reference to associated AHU Ontime (note used to inhibit alarms) 
+// 'SFOntimeRef' = xxx.AVxx //reference to associated AHU Ontime (note used to inhibit alarms)
 
 
 'OATIsFreezing' = Switch ( 'OATIsFreezing', 'OAT_Eff', 34, 36)

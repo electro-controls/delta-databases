@@ -1,9 +1,8 @@
 {
-  "$base": "Object",
   "displayName": "SFCurrent_AIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input-configuration,21"
+    "value": "aic,21"
   },
   "object-type": {
     "$base": "Enumerated",

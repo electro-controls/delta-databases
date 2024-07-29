@@ -26,11 +26,11 @@
   },
   "max-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "300"
   },
   "min-value": {
     "$base": "Real",
-    "value": 0
+    "value": "-58"
   },
   "scale-range": {
     "1": {
