@@ -59,7 +59,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "Damper_Pct_AOC"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -79,7 +79,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "16"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -177,10 +177,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -314,7 +311,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-01T16:42:23.90"
     },
     "$base": "Array"
   },

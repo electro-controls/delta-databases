@@ -59,7 +59,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Economizerr_Pct_AOC"
+    "value": "HWV_Pct_AOC"
   },
   "min-pres-value": {
     "$base": "Real",

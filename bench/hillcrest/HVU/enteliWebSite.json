@@ -302,18 +302,6 @@
           "lastUpdate": "2024-07-29T15:04:39.447Z"
         },
         {
-          "id": "ai,2",
-          "name": "DAT_Local",
-          "fileName": "DAT_Local",
-          "lastUpdate": "2024-07-29T15:04:39.457Z"
-        },
-        {
-          "id": "av,11062",
-          "name": "DAT_LocSp",
-          "fileName": "DAT_LocSp",
-          "lastUpdate": "2024-07-29T15:04:39.467Z"
-        },
-        {
           "id": "av,11063",
           "name": "DAT_RemSp",
           "fileName": "DAT_RemSp",
@@ -450,18 +438,6 @@
           "name": "ZoneHtg_CO",
           "fileName": "ZoneHtg_CO",
           "lastUpdate": "2024-07-29T15:31:30.204Z"
-        },
-        {
-          "id": "av,11046",
-          "name": "ZoneHtgRamp",
-          "fileName": "ZoneHtgRamp",
-          "lastUpdate": "2024-07-29T15:31:30.213Z"
-        },
-        {
-          "id": "av,11045",
-          "name": "ZoneHtRamp_Sp",
-          "fileName": "ZoneHtRamp_Sp",
-          "lastUpdate": "2024-07-29T15:31:30.220Z"
         },
         {
           "id": "av,11004",
@@ -626,12 +602,6 @@
           "lastUpdate": "2024-07-29T15:50:37.872Z"
         },
         {
-          "id": "av,11064",
-          "name": "DATResetLow_Sp",
-          "fileName": "DATResetLow_Sp",
-          "lastUpdate": "2024-07-29T15:50:37.875Z"
-        },
-        {
           "id": "av,11210",
           "name": "EconRampDelay",
           "fileName": "EconRampDelay",
@@ -648,12 +618,6 @@
           "name": "EconMATWarn",
           "fileName": "EconMATWarn",
           "lastUpdate": "2024-07-29T15:52:56.616Z"
-        },
-        {
-          "id": "ao,4",
-          "name": "Economizer",
-          "fileName": "Economizer",
-          "lastUpdate": "2024-07-29T15:53:49.696Z"
         },
         {
           "id": "aoc,11",
@@ -716,12 +680,6 @@
           "lastUpdate": "2024-07-29T19:10:48.951Z"
         },
         {
-          "id": "bo,1",
-          "name": "SF_Enable",
-          "fileName": "SF_Enable",
-          "lastUpdate": "2024-07-29T19:16:00.679Z"
-        },
-        {
           "id": "bi,5",
           "name": "Freeze_Stat",
           "fileName": "Freeze_Stat",
@@ -758,12 +716,6 @@
           "lastUpdate": "2024-07-29T19:31:45.514Z"
         },
         {
-          "id": "ai,3",
-          "name": "MAT",
-          "fileName": "MAT",
-          "lastUpdate": "2024-07-29T19:32:46.258Z"
-        },
-        {
           "id": "aic,6",
           "name": "eZNSOnBoardTemperature_DegF_AIC",
           "fileName": "eZNSOnBoardTemperature_DegF_AIC",
@@ -773,7 +725,31 @@
           "id": "ai,1",
           "name": "ZoneTemp_Local",
           "fileName": "ZoneTemp_Local",
-          "lastUpdate": "2024-07-29T19:35:35.916Z"
+          "lastUpdate": "2024-07-29T19:57:06.893Z"
+        },
+        {
+          "id": "ai,2",
+          "name": "DAT_Local",
+          "fileName": "DAT_Local",
+          "lastUpdate": "2024-07-29T19:57:24.020Z"
+        },
+        {
+          "id": "ai,3",
+          "name": "MAT",
+          "fileName": "MAT",
+          "lastUpdate": "2024-07-29T19:57:33.180Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "SF_Enable",
+          "fileName": "SF_Enable",
+          "lastUpdate": "2024-07-29T19:58:32.343Z"
+        },
+        {
+          "id": "ao,4",
+          "name": "Economizer",
+          "fileName": "Economizer",
+          "lastUpdate": "2024-07-29T19:58:40.425Z"
         }
       ]
     },
