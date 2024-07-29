@@ -590,12 +590,6 @@
           "lastUpdate": "2024-07-29T15:49:06.969Z"
         },
         {
-          "id": "av,11065",
-          "name": "DATResetHigh_Sp",
-          "fileName": "DATResetHigh_Sp",
-          "lastUpdate": "2024-07-29T15:50:15.376Z"
-        },
-        {
           "id": "av,11066",
           "name": "DATOffset_Sp",
           "fileName": "DATOffset_Sp",
@@ -750,6 +744,48 @@
           "name": "Economizer",
           "fileName": "Economizer",
           "lastUpdate": "2024-07-29T19:58:40.425Z"
+        },
+        {
+          "id": "av,11064",
+          "name": "DATResetLow_Sp",
+          "fileName": "DATResetLow_Sp",
+          "lastUpdate": "2024-07-29T20:14:15.548Z"
+        },
+        {
+          "id": "av,11062",
+          "name": "DAT_LocSp",
+          "fileName": "DAT_LocSp",
+          "lastUpdate": "2024-07-29T20:14:25.061Z"
+        },
+        {
+          "id": "av,11045",
+          "name": "ZoneHtRamp_Sp",
+          "fileName": "ZoneHtRamp_Sp",
+          "lastUpdate": "2024-07-29T20:15:25.113Z"
+        },
+        {
+          "id": "av,11046",
+          "name": "ZoneHtgRamp",
+          "fileName": "ZoneHtgRamp",
+          "lastUpdate": "2024-07-29T20:15:31.195Z"
+        },
+        {
+          "id": "av,11065",
+          "name": "DATResetHigh_Sp",
+          "fileName": "DATResetHigh_Sp",
+          "lastUpdate": "2024-07-29T20:16:57.667Z"
+        },
+        {
+          "id": "co,11001",
+          "name": "ZoneClg_CO",
+          "fileName": "ZoneClg_CO",
+          "lastUpdate": "2024-07-29T20:29:20.164Z"
+        },
+        {
+          "id": "co,11004",
+          "name": "DATClg_CO",
+          "fileName": "DATClg_CO",
+          "lastUpdate": "2024-07-29T20:29:23.852Z"
         }
       ]
     },
