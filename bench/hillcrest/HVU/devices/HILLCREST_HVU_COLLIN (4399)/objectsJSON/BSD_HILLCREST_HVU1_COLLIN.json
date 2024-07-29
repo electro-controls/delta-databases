@@ -607,7 +607,7 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "19:08:40.00"
+    "value": "19:52:57.00"
   },
   "local-date": {
     "$base": "Date",
@@ -760,7 +760,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "3.46939"
+    "value": "3.2"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -868,7 +868,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "257207"
+      "value": "283782"
     }
   },
   "logical-base-address": {

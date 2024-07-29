@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "100"
   },
   "status-flags": {
     "$base": "BitString",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "288"
+    "value": "328"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "20"
+    "value": "60"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -117,7 +117,7 @@
   },
   "setpoint": {
     "$base": "Real",
-    "value": 0
+    "value": "69"
   },
   "setpoint-reference": {
     "$base": "Sequence",
@@ -212,7 +212,7 @@
   },
   "bias": {
     "$base": "Real",
-    "value": "50"
+    "value": "75.0662"
   },
   "derivative": {
     "$base": "Real",
@@ -255,11 +255,11 @@
   },
   "average-crossings": {
     "$base": "Real",
-    "value": 0
+    "value": "1.2"
   },
   "average-error": {
     "$base": "Real",
-    "value": "13.6"
+    "value": "11.08"
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "257196"
+      "value": "281616"
     }
   },
   "self-adj-enable": {
@@ -300,20 +300,20 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "270000"
+      "value": "288000"
     }
   },
   "setpoint-crossings": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "setpoint-crossing-flag": {
     "$base": "Boolean",
-    "value": "1"
+    "value": 0
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "68"
+    "value": "69.5"
   },
   "hal-flags": {
     "$base": "BitString",

@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "85"
+    "value": "70"
   },
   "last-value": {
     "$base": "Real",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "240"
+    "value": "312"
   },
   "min-pres-value": {
     "$base": "Real",
