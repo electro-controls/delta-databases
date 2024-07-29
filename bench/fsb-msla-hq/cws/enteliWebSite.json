@@ -16,6 +16,36 @@
       },
       "date": "7/19/2024, 5:28:37 PM",
       "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,3",
+      "objectName": "CWS_Demand_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cws/devices/FSB_CWS_COLLIN (4399)/CWS_Demand_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/24/2024, 5:36:30 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "co,3",
+      "objectName": "CWS_Imaginary_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/fsb-msla-hq/cws/devices/FSB_CWS_COLLIN (4399)/objectsJSON/CWS_Imaginary_CO.json",
+        "scheme": "file"
+      },
+      "date": "7/24/2024, 5:36:49 PM",
+      "templateTriggered": false
     }
   ],
   "devices": [
@@ -603,6 +633,12 @@
           "name": "DP_AIC",
           "fileName": "DP_AIC",
           "lastUpdate": "2024-07-19T22:08:59.867Z"
+        },
+        {
+          "id": "co,3",
+          "name": "CWS_Imaginary_CO",
+          "fileName": "CWS_Imaginary_CO",
+          "lastUpdate": "2024-07-24T23:35:18.077Z"
         }
       ]
     },
