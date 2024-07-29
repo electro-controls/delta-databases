@@ -1,98 +1,7 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,7",
-      "objectName": "FaultDetection_PG13",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU/devices/HILLCREST_HVU_COLLIN (4399)/FaultDetection_PG13.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/29/2024, 8:55:15 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,9",
-      "objectName": "ZoneHtCl_PG13",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU/devices/HILLCREST_HVU_COLLIN (4399)/ZoneHtCl_PG13.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/29/2024, 8:55:27 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,6",
-      "objectName": "General_PG13",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU/devices/HILLCREST_HVU_COLLIN (4399)/General_PG13.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/29/2024, 9:41:34 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,5",
-      "objectName": "Main_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU/devices/HILLCREST_HVU_COLLIN (4399)/Main_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/29/2024, 9:42:47 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,4",
-      "objectName": "ZoneCritical_PG4",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU/devices/HILLCREST_HVU_COLLIN (4399)/ZoneCritical_PG4.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/29/2024, 1:25:19 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,8",
-      "objectName": "ZoneGeneral_PG13",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU/devices/HILLCREST_HVU_COLLIN (4399)/ZoneGeneral_PG13.gcl-p",
-        "scheme": "file"
-      },
-      "date": "7/29/2024, 1:36:03 PM",
-      "templateTriggered": false
-    }
-  ],
+  "uploadQueue": [],
   "devices": [
     {
       "number": 4399,
@@ -194,12 +103,6 @@
           "lastUpdate": "2024-07-29T14:49:20.475Z"
         },
         {
-          "id": "pg,11072",
-          "name": "ZoneHWVwFB_PG13_Option",
-          "fileName": "ZoneHWVwFB_PG13_Option",
-          "lastUpdate": "2024-07-29T14:49:20.475Z"
-        },
-        {
           "id": "sdl,1",
           "name": "Slave Device List 4399",
           "fileName": "Slave Device List 4399",
@@ -216,66 +119,6 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-07-29T14:49:20.475Z"
-        },
-        {
-          "id": "pg,1",
-          "name": "ZoneOccMode_PG13",
-          "fileName": "ZoneOccMode_PG13",
-          "lastUpdate": "2024-07-29T14:52:26.037Z"
-        },
-        {
-          "id": "pg,2",
-          "name": "ZoneEconomizer_PG",
-          "fileName": "ZoneEconomizer_PG",
-          "lastUpdate": "2024-07-29T14:53:40.698Z"
-        },
-        {
-          "id": "pg,3",
-          "name": "ZoneDAT_PG13",
-          "fileName": "ZoneDAT_PG13",
-          "lastUpdate": "2024-07-29T14:54:48.527Z"
-        },
-        {
-          "id": "pg,4",
-          "name": "ZoneCritical_PG4",
-          "fileName": "ZoneCritical_PG4",
-          "lastUpdate": "2024-07-29T14:54:48.530Z"
-        },
-        {
-          "id": "pg,5",
-          "name": "Main_PG",
-          "fileName": "Main_PG",
-          "lastUpdate": "2024-07-29T14:54:48.546Z"
-        },
-        {
-          "id": "pg,6",
-          "name": "General_PG13",
-          "fileName": "General_PG13",
-          "lastUpdate": "2024-07-29T14:54:48.570Z"
-        },
-        {
-          "id": "pg,7",
-          "name": "FaultDetection_PG13",
-          "fileName": "FaultDetection_PG13",
-          "lastUpdate": "2024-07-29T14:54:48.584Z"
-        },
-        {
-          "id": "pg,8",
-          "name": "ZoneGeneral_PG13",
-          "fileName": "ZoneGeneral_PG13",
-          "lastUpdate": "2024-07-29T14:54:48.596Z"
-        },
-        {
-          "id": "pg,9",
-          "name": "ZoneHtCl_PG13",
-          "fileName": "ZoneHtCl_PG13",
-          "lastUpdate": "2024-07-29T14:54:48.610Z"
-        },
-        {
-          "id": "pg,10",
-          "name": "Fan_PG13",
-          "fileName": "Fan_PG13",
-          "lastUpdate": "2024-07-29T14:56:32.003Z"
         },
         {
           "id": "bv,11241",
@@ -786,6 +629,210 @@
           "name": "DATClg_CO",
           "fileName": "DATClg_CO",
           "lastUpdate": "2024-07-29T20:29:23.852Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-07-29T20:37:26.144Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "Fan_PG13",
+          "fileName": "Fan_PG13",
+          "lastUpdate": "2024-07-29T20:37:56.329Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "FaultDetection_PG13",
+          "fileName": "FaultDetection_PG13",
+          "lastUpdate": "2024-07-29T20:37:59.863Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "General_PG13",
+          "fileName": "General_PG13",
+          "lastUpdate": "2024-07-29T20:38:02.830Z"
+        },
+        {
+          "id": "pg,5",
+          "name": "ZoneCritical_PG4",
+          "fileName": "ZoneCritical_PG4",
+          "lastUpdate": "2024-07-29T20:38:05.952Z"
+        },
+        {
+          "id": "pg,6",
+          "name": "ZoneDAT_PG13",
+          "fileName": "ZoneDAT_PG13",
+          "lastUpdate": "2024-07-29T20:38:09.059Z"
+        },
+        {
+          "id": "pg,7",
+          "name": "ZoneEconomizer_PG",
+          "fileName": "ZoneEconomizer_PG",
+          "lastUpdate": "2024-07-29T20:38:11.957Z"
+        },
+        {
+          "id": "pg,8",
+          "name": "ZoneGeneral_PG13",
+          "fileName": "ZoneGeneral_PG13",
+          "lastUpdate": "2024-07-29T20:38:14.762Z"
+        },
+        {
+          "id": "pg,9",
+          "name": "ZoneHtCl_PG13",
+          "fileName": "ZoneHtCl_PG13",
+          "lastUpdate": "2024-07-29T20:38:17.973Z"
+        },
+        {
+          "id": "pg,10",
+          "name": "ZoneHWVwFB_PG13_Option",
+          "fileName": "ZoneHWVwFB_PG13_Option",
+          "lastUpdate": "2024-07-29T20:38:20.711Z"
+        },
+        {
+          "id": "pg,11",
+          "name": "ZoneOccMode_PG13",
+          "fileName": "ZoneOccMode_PG13",
+          "lastUpdate": "2024-07-29T20:38:24.104Z"
+        },
+        {
+          "id": "pg,12",
+          "name": "ZoneHWVwFB_PG13",
+          "fileName": "ZoneHWVwFB_PG13",
+          "lastUpdate": "2024-07-29T20:43:06.211Z"
+        },
+        {
+          "id": "av,11232",
+          "name": "Econ_RemMinOAPct",
+          "fileName": "Econ_RemMinOAPct",
+          "lastUpdate": "2024-07-29T21:22:05.549Z"
+        },
+        {
+          "id": "av,11230",
+          "name": "Econ_EffMinOAPct",
+          "fileName": "Econ_EffMinOAPct",
+          "lastUpdate": "2024-07-29T21:22:37.020Z"
+        },
+        {
+          "id": "av,11231",
+          "name": "Econ_LocMinOAPct",
+          "fileName": "Econ_LocMinOAPct",
+          "lastUpdate": "2024-07-29T21:22:42.404Z"
+        },
+        {
+          "id": "av,11003",
+          "name": "Zone_RemSp",
+          "fileName": "Zone_RemSp",
+          "lastUpdate": "2024-07-29T21:23:47.757Z"
+        },
+        {
+          "id": "av,11072",
+          "name": "HWV_RemDemand",
+          "fileName": "HWV_RemDemand",
+          "lastUpdate": "2024-07-29T21:24:08.011Z"
+        },
+        {
+          "id": "av,11006",
+          "name": "ZoneDb_Sp",
+          "fileName": "ZoneDb_Sp",
+          "lastUpdate": "2024-07-29T21:25:06.699Z"
+        },
+        {
+          "id": "av,11015",
+          "name": "ZoneOcHtgMax_Sp",
+          "fileName": "ZoneOcHtgMax_Sp",
+          "lastUpdate": "2024-07-29T21:25:16.745Z"
+        },
+        {
+          "id": "av,11012",
+          "name": "ZoneOcClgMin_Sp",
+          "fileName": "ZoneOcClgMin_Sp",
+          "lastUpdate": "2024-07-29T21:25:26.441Z"
+        },
+        {
+          "id": "av,11005",
+          "name": "ZoneCool_EffSp",
+          "fileName": "ZoneCool_EffSp",
+          "lastUpdate": "2024-07-29T21:25:38.314Z"
+        },
+        {
+          "id": "av,11017",
+          "name": "ZoneStandbyOffset_Sp",
+          "fileName": "ZoneStandbyOffset_Sp",
+          "lastUpdate": "2024-07-29T21:25:54.940Z"
+        },
+        {
+          "id": "av,11008",
+          "name": "ZoneUnocCl_Sp",
+          "fileName": "ZoneUnocCl_Sp",
+          "lastUpdate": "2024-07-29T21:26:16.088Z"
+        },
+        {
+          "id": "mv,11052",
+          "name": "ZoneDNSLocSpFallback",
+          "fileName": "ZoneDNSLocSpFallback",
+          "lastUpdate": "2024-07-29T21:27:11.492Z"
+        },
+        {
+          "id": "av,11036",
+          "name": "ZoneClgRamp",
+          "fileName": "ZoneClgRamp",
+          "lastUpdate": "2024-07-29T21:27:35.043Z"
+        },
+        {
+          "id": "av,11022",
+          "name": "ZoneDbDelay_Sp",
+          "fileName": "ZoneDbDelay_Sp",
+          "lastUpdate": "2024-07-29T21:27:42.891Z"
+        },
+        {
+          "id": "mv,11004",
+          "name": "ZonePrevControlMode",
+          "fileName": "ZonePrevControlMode",
+          "lastUpdate": "2024-07-29T21:27:52.908Z"
+        },
+        {
+          "id": "av,11035",
+          "name": "ZoneClRamp_Sp",
+          "fileName": "ZoneClRamp_Sp",
+          "lastUpdate": "2024-07-29T21:28:26.605Z"
+        },
+        {
+          "id": "bv,11032",
+          "name": "ZoneUnocClCall",
+          "fileName": "ZoneUnocClCall",
+          "lastUpdate": "2024-07-29T21:28:36.519Z"
+        },
+        {
+          "id": "bv,11031",
+          "name": "ZoneClDemand",
+          "fileName": "ZoneClDemand",
+          "lastUpdate": "2024-07-29T21:28:42.396Z"
+        },
+        {
+          "id": "av,11200",
+          "name": "RAT_Eff",
+          "fileName": "RAT_Eff",
+          "lastUpdate": "2024-07-29T21:29:04.973Z"
+        },
+        {
+          "id": "av,11250",
+          "name": "ZoneIAQ_Eff",
+          "fileName": "ZoneIAQ_Eff",
+          "lastUpdate": "2024-07-29T21:29:11.327Z"
+        },
+        {
+          "id": "bv,11075",
+          "name": "HWVLock",
+          "fileName": "HWVLock",
+          "lastUpdate": "2024-07-29T21:29:56.355Z"
+        },
+        {
+          "id": "aic,21",
+          "name": "SFCurrent_AIC",
+          "fileName": "SFCurrent_AIC",
+          "lastUpdate": "2024-07-29T21:44:06.641Z"
         }
       ]
     },

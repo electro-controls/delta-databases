@@ -1,4 +1,4 @@
-'ZoneHWVwFB_PG13_Option.Write_Priority' = 13
+'ZoneHWVwFB_PG13.Write_Priority' = 13
 ////This page is for analog HWV with Face and Bypass damper. Delete other HWV pages not used and confirm this page is called.
 
 //Disables hot water valve after a building purge sequence.

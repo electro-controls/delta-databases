@@ -19,11 +19,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "0"
   },
   "last-value": {
     "$base": "Real",
@@ -31,7 +31,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -39,7 +39,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "A"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -47,7 +47,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "aic,21"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -59,15 +59,15 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "SFCurrent_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "200"
+    "value": "183"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -75,11 +75,11 @@
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "20"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.02442"
+    "value": "0.00488401"
   },
   "cov-increment": {
     "$base": "Real",
@@ -93,12 +93,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "15375"
+      "value": "246782"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "4095"
   },
   "calibration": {
     "$base": "Real",
