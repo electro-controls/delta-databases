@@ -1,0 +1,73 @@
+'AHx_HeatCoolInfoModes_PG13.Write_Priority' = 13
+//HWV Info
+If 'AHx_FreezeMode' Or ('AHx_SFUptime' = 0) Then
+    'AHx_HWVInfoMode' = 4 //Fail safe position
+//  ElseIf  bv91 Then
+//    HWVMode = 2 //Face and Bypass Position
+  ElseIf  'AHx_HeatCoolMode' Then //Transition to DAT heating mode
+    'AHx_HWVInfoMode' = 1 //DAT Heating
+  Else
+    'AHx_HWVInfoMode' = 3 // Waiting for demand
+End If
+ 
+//FBDamper Info
+If 'AHx_FreezeMode' Or ('AHx_SFUptime' = 0) Then
+    'AHx_FBInfoMode' = 4 //Fail safe position
+  ElseIf  ('AHx_HWVInfoMode' = 2) Then //Then 
+    'AHx_FBInfoMode' = 1 //DAT Heating
+  ElseIf  (Not 'AHx_HeatCoolMode') Then
+    'AHx_FBInfoMode' = 2 //Valve mode full face
+  Else
+    'AHx_FBInfoMode' = 3 // Waiting for demand...full mid position
+End If
+
+
+//CWV Info Mode 
+If 'AHx_FreezeMode' Or ('AHx_SFUptime' = 0) Then
+    'AHx_CWVInfoMode' = 4 //Fail safe position
+  ElseIf  'AHx_HeatCoolMode' Then //
+    'AHx_CWVInfoMode' = 3 //Waiting for demand
+  ElseIf  (Not 'AHx_HeatCoolMode') And 'AHx_EconFreeCooling' Then
+    'AHx_CWVInfoMode' = 2 //DAT Cooling assisting economizer
+  Else
+    'AHx_CWVInfoMode' = 1 //DAT Cooling
+End If
+
+
+//ECON info
+If 'AHx_FreezeMode' Or ('AHx_SFUptime' = 0) Then
+    'AHx_EconInfoMode' = 4 //Fail safe position
+  ElseIf  ('AHx_HeatCoolMode' Or (Not 'AHx_EconFreeCooling')) And ('AHx_Mode' = 1) Then
+    'AHx_EconInfoMode' = 3 //Min OA Position
+  ElseIf  (Not 'AHx_HeatCoolMode') And ('AHx_Econ_EffMinOAPct' > 'AHx_Econ_EffClg') And ('AHx_Mode' = 1) Then
+    'AHx_EconInfoMode' = 3 //Min OA Position
+  ElseIf  (Not 'AHx_HeatCoolMode') And 'AHx_EconFreeCooling' Then
+    'AHx_EconInfoMode' = 2 //DAT Cooling leading CWV
+  ElseIf  (Not 'AHx_HeatCoolMode') And 'AHx_EconFreeCooling' And ('AHx_Econ_EffClg' < 'AHx_EconAuthority') Then
+    'AHx_EconInfoMode' = 1 //DAT Cooling
+  ElseIf  ('AHx_Mode' = 2) Or ('AHx_Mode' = 3) Then
+    'AHx_EconInfoMode' = 5 //Return Air
+  Else
+    'AHx_EconInfoMode' = 5
+End If
+
+
+//The following keep the current mode times
+DoEvery 15S
+  'AHx_HWVInfoModeTm' = 'AHx_HWVInfoModeTm' + 0.25
+  'AHx_CWVInfoModeTm' = 'AHx_CWVInfoModeTm' + 0.25
+  'AHx_EconInfoModeTm' = 'AHx_EconInfoModeTm' + 0.25
+  'AHx_FBInfoModeTm' = 'AHx_FBInfoModeTm' + 0.25
+End Do
+IfOnce 'AHx_HWVInfoMode' Changed Then
+    'AHx_HWVInfoModeTm' = 0
+End If
+IfOnce 'AHx_CWVInfoMode' Changed Then
+    'AHx_CWVInfoModeTm' = 0
+End If
+IfOnce 'AHx_EconInfoMode' Changed Then
+    'AHx_EconInfoModeTm' = 0
+End If
+IfOnce 'AHx_FBInfoMode' Changed Then
+    'AHx_FBInfoModeTm' = 0
+End If

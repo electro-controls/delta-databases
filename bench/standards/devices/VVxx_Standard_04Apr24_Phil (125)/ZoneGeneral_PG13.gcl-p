@@ -1,0 +1,43 @@
+'ZoneGeneral_PG13.Write_Priority' = 13
+//Power up defaults
+If PowerUp Then
+    'Zone_RemSchedule' = On
+    'ZoneAlgMode' = 1
+    'Zone_RemSp' = - 1
+    'Zone_RemClg' = - 1
+    'Zone_RemHtg' = - 1
+    'Sav_RemSp' = - 1
+    'Sav_RemDemand' = - 1
+    'DAT_RemSp' = - 1
+    'HWV_RemDemand' = - 1 //Only needed with 3pt floating
+    'Zone_RemWarmCall' = Off
+    'Zone_RemPurgeCall' = Off
+    'Sav_TABMeasurment' = - 1
+    'ZoneCO2CalMode' = 1
+End If
+IfOnce 'JaceCfail' Then
+    'Zone_RemSchedule' = On
+    'ZoneAlgMode' = 1
+    'Zone_RemWarmCall' = Off
+    'Zone_RemPurgeCall' = Off
+End If
+
+//Effective values
+'DAT_Eff' = 'DAT_Local'
+'ZoneIAQ_Eff' = 'ZoneIAQ_Local' //Make this 0 if no CO2
+'SavCurrentCount' = 'SavAirflowDp.AD_Value' //This is normally AI5, but could be referenced to any applicable input
+//Zone_EffTemp = AI2 //Uncomment when using VP sensor
+
+//The below code is to compensate for a known issue with ..ZNS sensors wigging out on low space temps.
+If 'ZoneTemp_Local' < 'Zone_EffTemp' Then
+  DoEvery 10S
+  'Zone_EffTemp' = Max ('ZoneTemp_Local', 'Zone_EffTemp' - 0.5)
+  End Do
+  Else
+  DoEvery 10S
+  'Zone_EffTemp' = Min ('ZoneTemp_Local', 'Zone_EffTemp' + 0.5)
+  End Do
+End If
+
+// Room Variance
+'ZoneVariance' = 'Zone_EffTemp' - 'Zone_EffSp'

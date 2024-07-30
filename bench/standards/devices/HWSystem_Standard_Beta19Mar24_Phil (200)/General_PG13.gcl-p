@@ -1,0 +1,23 @@
+'General_PG13.Write_Priority' = 13
+If PowerUp Then
+  'OAT_Eff' = 35
+  'Uptime' = 0
+End If
+
+//Jace communication monitoring
+Variable JaceChanged As Integer
+If 'JaceUptime' Changed Then
+    JaceChanged = On
+End If
+If JaceChanged OnFor 10S Then
+    JaceChanged = Off
+End If
+
+If JaceChanged OffFor 10M Then
+    'JaceCfail' = On
+  Else
+    'JaceCfail' = Off
+End If
+
+
+//AV91 = xxx.av91 //OAT reference

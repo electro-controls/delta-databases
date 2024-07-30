@@ -1,0 +1,7 @@
+'Fan_PG.Write_Priority' = 13
+
+If ('ZoneOccMode' > 2) Then
+    'FanSpeed' = 'FanSpeed_Sp'
+  Else
+    'FanSpeed' = 0
+End If

@@ -1,0 +1,19 @@
+'AHx_IAQ_PG13.Write_Priority' = 13
+//CO2 Demand
+
+If 'AHx_IAQ_RemDemand' >= 0 Then
+    'AHx_IAQ_EffDemand' = 'AHx_IAQ_RemDemand'
+  Else
+    'AHx_IAQ_EffDemand' = 'AHx_IAQ_LocDemand'
+End If
+
+
+If ('AHx_Mode' = 1) Then
+  'AHx_IAQ_LocDemand' = 'AHx_IAQ_CO' * 'AHx_IAQ_Limit_Sp' * 0.01
+  Else
+  'AHx_IAQ_LocDemand' = 0
+End If
+
+
+//If CO2 is not present change Zone_EffCO2 reference to 0 on ZoneGeneral_PG  
+'AHx_IAQ_Airflow' = 0 //Reserved for future

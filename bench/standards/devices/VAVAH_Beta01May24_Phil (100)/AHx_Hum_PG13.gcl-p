@@ -1,0 +1,38 @@
+'AHx_Hum_PG13.Write_Priority' = 13
+//VARIABLES: Search and replace variables with the actual I/O of your application
+Variable Humidifier_XXX
+//Delete this note and the above references after the search and replace is performed
+
+If 'AHx_RAH_RemDemand' >= 0 Then
+    'AHx_RAH_EffDemand' = 'AHx_RAH_RemDemand'
+  Else
+    'AHx_RAH_EffDemand' = 'AHx_RAH_LocDemand'
+End If
+
+'AHx_RAH_LocDemand' = 'AHx_RAH_CO'
+
+If 'AHx_DAH_RemDemand' >= 0 Then
+    'AHx_DAH_EffDemand' = 'AHx_DAH_RemDemand'
+  Else
+    'AHx_DAH_EffDemand' = 'AHx_DAH_LocDemand'
+End If
+
+'AHx_DAH_LocDemand' = Scale ('AHx_SFUptime', 0, 5, 0, 30, 'AHx_DAH_CO')
+IfOnce 'AHx_SFUptime' > 0 Then
+    'AHx_DAH_CO.Bias' = 1
+End If
+
+If 'AHx_DAH_RemSp' >= 0 Then
+    'AHx_DAH_EffSp' = 'AHx_DAH_RemSp'
+  Else
+    'AHx_DAH_EffSp' = 'AHx_DAH_LocSp'
+End If
+
+'AHx_DAH_LocSp' = (Scale ('AHx_RAH_EffDemand', 0, 0, 'AHx_DAH_MinSp', 100, 'AHx_DAH_MaxSp')) * ('AHx_DADewLimit_CO' * 0.01)
+
+
+
+'AHx_RADewpoint' = DewPoint ('AHx_RAH', 'AHx_RAT', °F)
+'AHx_DADewpoint' = DewPoint ('AHx_DAH', 'AHx_DAT', °F)
+
+'AHx_DADewEffSp' = 'AHx_RAT' + 'AHx_DADewOffsetSp'

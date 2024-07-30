@@ -1,0 +1,82 @@
+'ZoneeZNSDisplay1_PG13.Write_Priority' = 13
+If PowerUp Then
+  'LinkLCD1.Line_2' = 'Zone_EffTemp'
+  'LinkLCD1.Line_2_Units' = 1
+  'LinkLCD1.Line_3' = 'Zone_EffSp'
+  'LinkLCD1.Line_3_Units' = 1
+  'LinkLCD1.Occupancy' = 2
+  'ZoneAlgMode' = 1
+End If
+
+'LinkLCD1.On' = 0
+
+
+//Local setpoint adjust enable
+//Change mode requires that button 2 be pressed 4 times (or as programmed) 
+//prior to being able to change stat setting. This eleviates unauthorized tampering.
+IfOnce 'ZoneDNSMode' = 1 Then
+    'ZoneEnableDNS' = On
+    'LinkLCD1.Set' = 0
+End If
+
+IfOnce 'ZoneDNSMode' = 2 Then
+    'ZoneEnableDNS' = Off
+    'LinkLCD1.Set' = 0
+End If
+
+If 'ZoneDNSMode' = 3 Then
+  Variable KeyCount
+  IfOnce ('LinkLCD1.Key_Press' = 2) Then
+    KeyCount = KeyCount + 1
+  End If
+  If KeyCount >= 4 Then
+      'ZoneEnableDNS' = On
+  End If
+  If ('LinkLCD1.Key_Press' = 0) OnFor 60S Then
+      'ZoneEnableDNS' = Off
+      KeyCount = 0
+  End If
+  IfOnce 'ZoneEnableDNS' Then
+    'LinkLCD1.Set' = 1
+  End If
+  IfOnce Not 'ZoneEnableDNS' Then
+    'LinkLCD1.Set' = 0
+  End If
+End If
+IfOnce 'ZoneDNSMode' = 2 Then
+    'ZoneEnableDNS' = Off
+    'LinkLCD1.Set' = 0
+End If
+
+//This updates the display temps on a periodic basis
+DoEvery 1M
+  'LinkLCD1.Line_2' = 'Zone_EffTemp'
+  'LinkLCD1.Line_2_Units' = 1
+  'LinkLCD1.Line_3' = 'Zone_EffSp'
+  'LinkLCD1.Line_3_Units' = 1
+End Do
+
+//Occupancy Icons
+IfOnce 'ZoneOccMode' > 2 Then
+    'LinkLCD1.Occupancy' = 2
+    'LinkLCD1.On' = 1
+    'LinkLCD1.Off' = 0
+End If
+
+IfOnce 'ZoneOccMode' < 3 Then
+    'LinkLCD1.Occupancy' = 1
+    'LinkLCD1.On' = 0
+    'LinkLCD1.Off' = 1
+End If
+
+'LinkLCD1.On' = 0
+'LinkLCD1.Off' = 0
+
+//Heat Icon
+'LinkLCD1.Heating' = Switch ( 'LinkLCD1.Heating', 'Zone_EffHtg', 5, 1)
+
+//Cool Icon
+'LinkLCD1.Cooling' = Switch ( 'LinkLCD1.Cooling', 'Zone_EffClg', 5, 1)
+
+//If unit is in alarm the stat will blink
+'LinkLCD1.Blink' = 'ZoneBlinkDNS'

@@ -1,0 +1,28 @@
+'HDavAlarm_PG13.Write_Priority' = 13
+
+//The below Calculates Pv Alarm status
+//2Sep20 Phil added interlock to SF Ontime AV95
+//07Mar22 Phil revised TAB procedure and this page was modified (line15, 24)
+Variable Starve
+Variable Excess
+
+Starve = Switch ( Starve, 'HDav_EffAirflow', 'HDav_EffSp' * 0.8, 'HDav_EffSp' * 0.9)
+Excess = Switch ( Excess, 'HDav_EffAirflow', 'HDav_EffSp' * 1.5, 'HDav_EffSp' * 1.2)
+
+If 'HDavZeroCountCal' < 1 Then
+    'HDavAlarm' = 7 //Zero Cal Problem
+  ElseIf  (('SFOntimeRef' > 60) And ('HDav_EffDemand' > 1) And ('HDav_EffAirflow' < ('HDav_EffSp' * 0.05))) OnFor 3M Then
+    'HDavAlarm' = 6 //No Air Flow
+  ElseIf  ('HDavAlarm' = 8) Then
+      //defering to Balance page while in calibration
+  ElseIf  (('HDav_EffDemand' <= 1) And Excess) OnFor 3M Then
+    'HDavAlarm' = 5 //5 is Problem Closing
+  ElseIf  (('SFOntimeRef' > 60) And ('HDav_EffDemand' > 99) And 'HDav_EffAirflow' < ('HDav_EffSp' * 0.25)) OnFor 3M Then
+    'HDavAlarm' = 4 //4 is Problem Opening
+  ElseIf  (('HDav_EffDemand' = 0) And ('HDav_EffAirflow' > (0.1 * Max ('HDavMaxCl_Sp', 'HDavMaxHt_Sp')))) OnFor 3M Then
+    'HDavAlarm' = 3 //3 is Leakage
+  ElseIf  (('SFOntimeRef' > 60) And ('HDav_EffDemand' >= 99) And Starve) OnFor 3M Then
+    'HDavAlarm' = 2 //2 is Starving
+  ElseIf  ('HDav_TABMeasurment' < 0) OnFor 120S Then
+    'HDavAlarm' = 1
+End If

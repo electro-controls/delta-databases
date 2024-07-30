@@ -1,0 +1,199 @@
+{
+  "displayName": "BBMD List1 300",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bmd,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "bbmd-list"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "BBMD List1 300"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "bbmd-list": {
+    "1": {
+      "$base": "Sequence",
+      "ipAddress": {
+        "$base": "Unsigned",
+        "value": "2886739198"
+      },
+      "distMask": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "ipPort": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "ipAddress": {
+        "$base": "Unsigned",
+        "value": "2886739454"
+      },
+      "distMask": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "ipPort": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "ipAddress": {
+        "$base": "Unsigned",
+        "value": "2886739705"
+      },
+      "distMask": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "ipPort": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "ipAddress": {
+        "$base": "Unsigned",
+        "value": "2886738243"
+      },
+      "distMask": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "ipPort": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "5": {
+      "$base": "Sequence",
+      "ipAddress": {
+        "$base": "Unsigned",
+        "value": "2886740981"
+      },
+      "distMask": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "ipPort": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "6": {
+      "$base": "Sequence",
+      "ipAddress": {
+        "$base": "Unsigned",
+        "value": "2886742252"
+      },
+      "distMask": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "ipPort": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "7": {
+      "$base": "Sequence",
+      "ipAddress": {
+        "$base": "Unsigned",
+        "value": "2886742559"
+      },
+      "distMask": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "ipPort": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "8": {
+      "$base": "Sequence",
+      "ipAddress": {
+        "$base": "Unsigned",
+        "value": "2886741244"
+      },
+      "distMask": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "ipPort": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "9": {
+      "$base": "Sequence",
+      "ipAddress": {
+        "$base": "Unsigned",
+        "value": "2886741282"
+      },
+      "distMask": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "ipPort": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "10": {
+      "$base": "Sequence",
+      "ipAddress": {
+        "$base": "Unsigned",
+        "value": "2886740732"
+      },
+      "distMask": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "ipPort": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "11": {
+      "$base": "Sequence",
+      "ipAddress": {
+        "$base": "Unsigned",
+        "value": "2886742012"
+      },
+      "distMask": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "ipPort": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "max-foreign-devices": {
+    "$base": "Unsigned",
+    "value": "20"
+  },
+  "filter-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "filter-options": {
+    "$base": "Octet",
+    "value": "0x"
+  }
+}

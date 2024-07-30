@@ -1,0 +1,110 @@
+{
+  "displayName": "SavAlarm",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "multi-state-value,11110"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "SavAlarm"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Status to operator on the current Status of Airflow."
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Unsigned",
+    "value": "7"
+  },
+  "gcl-value": {
+    "$base": "Unsigned",
+    "value": "7"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,11"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "8"
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Normal"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Starving"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Leakage"
+    },
+    "4": {
+      "$base": "String",
+      "value": "Open Problem"
+    },
+    "5": {
+      "$base": "String",
+      "value": "Close Problem"
+    },
+    "6": {
+      "$base": "String",
+      "value": "No Air Flow"
+    },
+    "7": {
+      "$base": "String",
+      "value": "Zero Cal Problem"
+    },
+    "8": {
+      "$base": "String",
+      "value": "Value Received"
+    },
+    "$base": "Array"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,11142"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-06T18:08:40.700000-07:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Zero Cal Problem"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

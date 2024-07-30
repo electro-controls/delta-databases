@@ -1,0 +1,417 @@
+{
+  "displayName": "Modbus Gateway",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "gw,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "gateway-object"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Modbus Gateway"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "simple-gateway": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "gateway-id": {
+    "$base": "Enumerated",
+    "value": "no-gateway"
+  },
+  "status": {
+    "$base": "Enumerated",
+    "value": "stopped"
+  },
+  "enable": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "password-1": {
+    "$base": "String",
+    "value": ""
+  },
+  "password-2": {
+    "$base": "String",
+    "value": ""
+  },
+  "port": {
+    "$base": "Enumerated",
+    "value": "rs232-1"
+  },
+  "basic-adapter": {
+    "$base": "Sequence",
+    "registryPath": {
+      "$base": "String",
+      "value": ""
+    },
+    "deviceDescr": {
+      "$base": "String",
+      "value": ""
+    },
+    "enabled": {
+      "$base": "Boolean",
+      "value": "1"
+    },
+    "status": {
+      "$base": "Enumerated",
+      "value": "active"
+    },
+    "statusRef": {
+      "$base": "ObjectIdentifier",
+      "value": "gw,1"
+    },
+    "statusIndex": {
+      "$base": "Unsigned",
+      "value": "1"
+    },
+    "driverVersion": {
+      "$base": "Unsigned",
+      "value": "1"
+    },
+    "hardwarePort": {
+      "$base": "Unsigned",
+      "value": "3"
+    },
+    "statistics": {
+      "$base": "Sequence",
+      "totalSent": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "sendFailures": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "totalRcvd": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "invalidRcvd": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "protocolErrors": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "filterFlags": {
+      "$base": "BitString",
+      "value": ""
+    }
+  },
+  "advanced": {
+    "$base": "Sequence",
+    "port": {
+      "$base": "Enumerated",
+      "value": 0
+    },
+    "serial": {
+      "$base": "Sequence",
+      "speed": {
+        "$base": "Enumerated",
+        "value": "9600"
+      },
+      "fixedSpeed": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "parity": {
+        "$base": "Enumerated",
+        "value": "none"
+      },
+      "stopBits": {
+        "$base": "Enumerated",
+        "value": "1"
+      },
+      "dataBits": {
+        "$base": "Enumerated",
+        "value": "eight"
+      },
+      "flowControl": {
+        "$base": "Enumerated",
+        "value": "no-flow-control"
+      },
+      "errorControl": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "commandTimeout": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "autoAnswer": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "usageType": {
+        "$base": "Enumerated",
+        "value": 0
+      },
+      "modemInitString": {
+        "$base": "String",
+        "value": ""
+      },
+      "modemEnabled": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "modemResetString": {
+        "$base": "String",
+        "value": ""
+      },
+      "dialingMethod": {
+        "$base": "Enumerated",
+        "value": "tone"
+      },
+      "callTimeout": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "retryDelay": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "modemHangupString": {
+        "$base": "String",
+        "value": ""
+      },
+      "modemAutoAnswerString": {
+        "$base": "String",
+        "value": ""
+      },
+      "remainConnectDuration": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "dropDTRtoHangup": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "modemDialPrefix": {
+        "$base": "String",
+        "value": ""
+      },
+      "numberOfRetries": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "enforcePassword": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "directOutSUA": {
+        "$base": "ObjectIdentifier",
+        "unspecifiedValue": "true"
+      }
+    }
+  },
+  "properties": {
+    "1": {
+      "$base": "Sequence",
+      "name": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "Sequence",
+        "type": "0-BACnetDeviceObjectPropertyReference",
+        "deviceIdentifier": {
+          "$base": "ObjectIdentifier",
+          "unspecifiedValue": "true"
+        },
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "unspecifiedValue": "true"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "all",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "nodeAddress": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "subnetAddress": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "bacnetDevice": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "macAddress": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "timeout": {
+        "$base": "Unsigned",
+        "value": "80"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "forceUpdate": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "scanPriorityA": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "scanPriorityB": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "secondaryAddress": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "base-instance": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "last-error-entry": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "last-error-state": {
+    "$base": "Enumerated",
+    "value": "object-not-found"
+  },
+  "last-error-value": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "current-entry": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "current-state": {
+    "$base": "Enumerated",
+    "value": "object-not-found"
+  },
+  "current-value": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "gateway-version": {
+    "$base": "String",
+    "value": "-----"
+  },
+  "program": {
+    "$base": "Enumerated",
+    "value": "none"
+  },
+  "set-flag-1": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "set-flag-2": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "set-flag-3": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "set-flag-4": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "set-text-1": {
+    "$base": "String",
+    "value": ""
+  },
+  "set-text-2": {
+    "$base": "String",
+    "value": ""
+  },
+  "set-text-3": {
+    "$base": "String",
+    "value": ""
+  },
+  "set-text-4": {
+    "$base": "String",
+    "value": ""
+  },
+  "set-word-1": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "set-word-2": {
+    "$base": "Unsigned",
+    "value": "10"
+  },
+  "set-word-3": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "set-word-4": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "set-word-5": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "set-word-6": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "physical-input-limit": {
+    "$base": "Unsigned",
+    "value": "13"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  },
+  "tcpadapter": {
+    "$base": "Sequence",
+    "network": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "port": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "tcpPort": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "connectionTimeout": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "maxNumConnections": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "transactionTimeout": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "maxNumTransactions": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  }
+}

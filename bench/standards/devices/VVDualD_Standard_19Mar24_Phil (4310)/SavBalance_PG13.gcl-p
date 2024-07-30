@@ -1,0 +1,60 @@
+'SavBalance_PG13.Write_Priority' = 13
+//If actual airflow entered into TABMeasurment (AV..181) calibrate K-Factor. 
+IfOnce ('Sav_TABMeasurment' > 0) And (('SavAlarm' < 3) OnFor 2S) Then
+    'SavAlarm' = 8 //Calibration in Progress
+End If
+IfOnce ('Sav_TABMeasurment' > 0) And ('SavAlarm' = 7) Then
+    'Sav_TABMeasurment.Out_Of_Service' = FALSE //Releases hand to disallow calibration if zero cal has not been done first
+End If
+
+
+
+Variable KFacAtt
+IfOnce ('SavAlarm' = 8) Then
+   'SavCalOffset.Out_Of_Service' = FALSE //Clears override if point is in manual
+   KFacAtt = ('Sav_TABMeasurment' / 'Sav_EffAirflow') * ('SavKFactor' + 'SavCalOffset')
+End If
+
+If KFacAtt Changed Then
+ 'SavCalOffset' = KFacAtt - 'SavKFactor' //adjusts value of cal offset
+End If
+
+//If calibrating from Orcaview the hand flag is thrown so we know we need to write a fallback to TABMeasurement
+If ('SavAlarm' > 2) And ('Sav_TABMeasurment.Out_Of_Service' = TRUE) And ('Sav_TABMeasurment' > 10) Then //Done calibrating from Orcaview
+  'Sav_TABMeasurment.Out_Of_Service' = FALSE //Releases hand condition 
+  'SavAlarm' = 1 //Returns to normal
+End If
+IfOnce ('Sav_TABMeasurment.Out_Of_Service' = FALSE) OnFor 2S Then
+  'Sav_TABMeasurment' = - 2 //Places default value
+End If
+
+//If TAB Measurement is coming from Tridium, then we wait for tridium to write a -1
+IfOnce 'Sav_TABMeasurment' = - 1 Then //Done calibrating from Tridium
+  'Sav_TABMeasurment.Out_Of_Service' = FALSE //Releases hand condition if applicable
+  'SavAlarm' = 1 //Returns to normal
+End If
+
+
+// Airflow Error & Error Pct
+'SavError' = 'Sav_EffAirflow' - 'Sav_EffSp'
+'SavErrorPct' = Min (('Sav_EffAirflow' / 'Sav_EffSp') * 100, 500)
+
+
+
+IfOnce 'SavAutoZeroCal' Then
+    'SavZeroCountCal.Out_Of_Service' = FALSE //Clears manual hand flag
+    'SavAutoZeroCal.Out_Of_Service' = FALSE //Clears manual hand flag   
+End If
+
+IfOnce 'SavAutoZeroCal' OnFor ('SavDmpRuntime_Sp' * 2):S Then //Allows time for damper to close
+    'SavZeroCountCal' = 'SavCurrentCount' //Capture the zero count value
+    'SavAutoZeroCal' = Off
+End If
+
+//The following saves the controller to flash so that TAB and Zero Cal values are saved.
+IfOnce ('SavCalOffset' Changed) Then
+  'SavetoFlashRequest_DONOTINTEGRATE' = On
+End If
+IfOnce ('SavZeroCountCal' Changed) Then //Save zero count value to flash memory
+  'SavetoFlashRequest_DONOTINTEGRATE' = On
+End If

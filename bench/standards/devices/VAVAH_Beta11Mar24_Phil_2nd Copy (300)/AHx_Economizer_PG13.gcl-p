@@ -1,0 +1,68 @@
+'AHx_Economizer_PG13.Write_Priority' = 13
+//VARIABLES: Search and replace variables with the actual I/O of your application
+Variable Econ_XXX
+Variable Relief_XXX
+Variable CWV_XXX
+//Delete this note and the above references after the search and replace is performed
+
+
+
+//Economizer sequence
+//Economizer ramp dalay is automatically longer during
+//cold weather.
+'AHx_EconRampDelay' = Scale ('OAT_Eff', 0, 20, 2000, 60, 60)
+'AHx_EconMATLimit' = 'AHx_EconMATLimit_CO'
+
+//Determines if free cooling can be achived by comparing
+// OAT and RAT
+'AHx_EconFreeCooling' = Switch ( 'AHx_EconFreeCooling', 'OAT_Eff', 'AHx_RAT_Local' - 1, 'AHx_RAT_Local' + 1)
+
+
+'AHx_EconAuthority' = Scale ('OAT_Eff', 0, 35, 80, 55, 50) //Gives economizer more authority as it gets colder out
+
+If 'AHx_EconFreeCooling' And ('AHx_Mode' = 1 Or 'AHx_Mode' = 4 Or 'AHx_Mode' = 6) And (Not 'AHx_HeatCoolMode') Then //Occ/UnOcc Cooling
+    'AHx_Econ_LocClg' = Scale ('AHx_DATClg_CO', 0, 0, 0, 'AHx_EconAuthority', 100)
+  Else
+    'AHx_Econ_LocClg' = 0
+End If
+
+If 'AHx_Econ_RemClg' >= 0 Then
+    'AHx_Econ_EffClg' = 'AHx_Econ_LocClg'
+  Else
+    'AHx_Econ_EffClg' = 'AHx_Econ_RemClg'
+End If
+
+If ('AHx_Econ_RemMinOAPct' >= 0) Then
+    'AHx_Econ_EffMinOAPct' = 'AHx_Econ_RemMinOAPct'
+  Else
+    'AHx_Econ_EffMinOAPct' = 'AHx_Econ_LocMinOAPct'
+End If
+
+If ('AHx_Mode' = 1) Then
+    'AHx_Econ_LocMinOAPct' = Scale ('AHx_IAQ_EffDemand', 0, 0, 'AHx_EconMinOAPct_Sp', 100, 'AHx_EconMATLimit')
+  Else
+    'AHx_Econ_LocMinOAPct' = 0
+End If
+
+If ('AHx_SFUptime' > 2) And (('AHx_Mode' = 1) Or ('AHx_Mode' = 4) Or ('AHx_Mode' = 5)) Then //Occ/UnOcc Cooling/purge
+    Econ_XXX = (Scale ('AHx_Econ_LocClg', 0, 0, 'AHx_Econ_LocMinOAPct', 100, 'AHx_EconRamp')) * ('AHx_EconMATLimit' * 0.01) //(Max (MinOAPct, EconClgPct)) * (EconRampPct * 0.01) * (MATLimit_CO * 0.01)
+Else
+    Econ_XXX = 0
+End If
+
+Relief_XXX = Scale (Econ_XXX, 0, 30, 0, 100, 100)
+
+If ('AHx_MAT' < ('AHx_EconMATLimit_Sp' - 5)) OnFor 30S Then
+    'AHx_EconMATWarn' = On
+End If
+If ('AHx_MAT' >= 'AHx_EconMATLimit_Sp') OnFor 30S Then
+    'AHx_EconMATWarn' = Off
+End If
+
+If ('AHx_SFUptime' > 2) And (Not 'AHx_EconMATWarn') And (('AHx_Mode' = 1) Or ('AHx_Mode' = 4) Or ('AHx_Mode' = 5)) Then //Occ/UnOcc Cooling/purge
+   DoEvery 10S
+   'AHx_EconRamp' = Min (100, 'AHx_EconRamp' + (1000 / 'AHx_EconRampDelay'))
+   End Do
+  Else
+   'AHx_EconRamp' = 0
+End If

@@ -1,0 +1,79 @@
+{
+  "displayName": "AHx_EconMATWarn",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "binary-value,10240"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "AHx_EconMATWarn"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Low MAT invoking pre-emptive action to limit economizer to avoid freeze trip"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Enumerated",
+    "value": "active"
+  },
+  "gcl-value": {
+    "$base": "Enumerated",
+    "value": "active"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,2"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Alarm"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Normal"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,10201"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2024-07-30T04:01:31.800000-06:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Alarm"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

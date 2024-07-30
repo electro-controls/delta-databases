@@ -1,0 +1,37 @@
+'ZoneHWVwFB_PG13_Option.Write_Priority' = 13
+////This page is for analog HWV with Face and Bypass damper. Delete other HWV pages not used and confirm this page is called.
+
+////Variables is for refernce only. Do a search and replace to the actual AO HWV and AO for FB Damper
+Variable HWV_AO
+Variable FB_AO
+
+//Disables hot water valve after a building purge sequence.
+If 'ZoneOccMode' = 6 Then
+    'ZonePurgeHold' = On
+    'ZonePurgeHoldTmLeft' = 'ZonePurgeHold_Sp'
+  Else
+    DoEvery 1M
+    'ZonePurgeHoldTmLeft' = Max (0, 'ZonePurgeHoldTmLeft' - 1)
+    End Do
+End If
+
+If 'OAT_Eff' < 40 Or ('ZonePurgeHoldTmLeft' = 0) Then
+    'ZonePurgeHold' = Off
+End If
+
+'HWVLock' = Switch ( 'HWVLock', 'Zone_EffClg', 99, 90)
+
+If 'OATIsFreezing' Then
+  DoEvery 15S
+  HWV_AO = Min (100, HWV_AO + 0.25) //Slow walk open to avoid overshoot 
+  End Do
+  FB_AO = 'DATHtg_CO' //FB controlling
+ElseIf  'HWVLock' Or 'ZonePurgeHold' Then
+  HWV_AO = 0
+  FB_AO = 0
+Else
+  HWV_AO = 'DATHtg_CO' //HWV controlling
+  DoEvery 15S
+  FB_AO = Min (100, FB_AO + 0.25) // FB damper slow walking open to face position
+  End Do
+End If

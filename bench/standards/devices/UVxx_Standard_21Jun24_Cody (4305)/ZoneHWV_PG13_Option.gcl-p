@@ -1,0 +1,30 @@
+'ZoneHWV_PG13_Option.Write_Priority' = 13
+////This page is for analog actuator. Delete other HWV pages not used and confirm this page is called
+
+
+////Variable is for refernce only. Do a search and replace to the actual AO HWV
+Variable HWV_AO
+
+//Disables hot water valve after a building purge sequence.
+If 'ZoneOccMode' = 6 Then
+    'ZonePurgeHold' = On
+    'ZonePurgeHoldTmLeft' = 'ZonePurgeHold_Sp'
+  Else
+    DoEvery 1M
+    'ZonePurgeHoldTmLeft' = Max (0, 'ZonePurgeHoldTmLeft' - 1)
+    End Do
+End If
+
+If 'OAT_Eff' < 40 Or ('ZonePurgeHoldTmLeft' = 0) Then
+    'ZonePurgeHold' = Off
+End If
+
+'HWVLock' = Switch ( 'HWVLock', 'Zone_EffClg', 99, 90)
+
+If (Not 'RunStatusInt') Then
+  HWV_AO = Scale ('OAT_Eff', 0, 0, 50, 32, 'DATHtg_CO') //frost prevention
+ElseIf  'HWVLock' Or 'ZonePurgeHold' Then
+ HWV_AO = 0
+Else
+ HWV_AO = 'DATHtg_CO'
+End If

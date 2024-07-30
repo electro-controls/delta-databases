@@ -1,0 +1,47 @@
+'AHx_Critical_PG4.Write_Priority' = 4
+
+If (('AHx_DAT' < 43) OnFor 2M) Or 'AHx_FreezeStat_MR' Then
+    'AHx_FreezeMode' = On
+End If
+
+IfOnce PowerUp Then
+    'AHx_FreezeMode' = Off
+End If
+
+IfOnce 'AHx_Mode' Changed Then
+    'AHx_FreezeMode' = Off
+End If
+
+IfOnce (Not 'AHx_FreezeStat_MR') Then
+    'AHx_FreezeMode' = Off //Comment out this line if _AR freeze stat is used.
+End If
+
+
+
+If 'AHx_HiStatic' Or 'AHx_Smoke' Or 'AHx_FreezeStat_MR' Or 'AHx_FreezeMode' Then
+    'AHx_HWV' = 100
+    'AHx_SFEnable' = Off
+    'AHx_RFEnable' = Off
+    'AHx_SFSpeed' = 0
+    'AHx_RFSpeed' = 0
+    'AHx_EconDamper' = 0
+    'AHx_ReliefDamper' = 0
+  Else
+    Relinquish 'AHx_HWV'
+    Relinquish 'AHx_SFEnable'
+    Relinquish 'AHx_RFEnable'
+    Relinquish 'AHx_SFSpeed'
+    Relinquish 'AHx_RFSpeed'
+    Relinquish 'AHx_EconDamper'
+    Relinquish 'AHx_ReliefDamper'
+End If
+
+
+//Coil pumps
+If 'BV10221' Or 'AHx_FreezeMode' Or 'AHx_FreezeStat_MR' Then
+  'AHx_HCP1Enable' = On
+  'AHx_CCP1Enable' = On
+Else
+  Relinquish 'AHx_HCP1Enable'
+  Relinquish 'AHx_CCP1Enable'
+End If

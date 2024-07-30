@@ -1,0 +1,58 @@
+'AHx_Fan_NoAFS_AltPG.Write_Priority' = 13
+//VARIABLES: Search and replace variables with the actual I/O of your application
+Variable SFxEnable_XXX
+Variable RFxEnable_XXX
+Variable SFSpeed_XXX
+Variable RFSpeed_XXX
+//Delete this note and the above references after the search and replace is performed
+
+
+//Fan start/stop sequence
+If 'AHx_Mode' <> 5 Then //5 = Off
+    SFxEnable_XXX = On
+    RFxEnable_XXX = On
+  Else
+    SFxEnable_XXX = Off
+    RFxEnable_XXX = Off
+End If
+
+SFSpeed_XXX = 'AHx_SFDuctStatic_CO' * ('AHx_SFSpeedRamp' * 0.01)
+RFSpeed_XXX = Scale (SFSpeed_XXX, 0, 10, 0, 100, 100) //field establish speed relations with all boxes at min, then all boxes at max with 
+                                                      //mixing box equal to mixing box at 100% OA
+//Running status interlock sequence. Used by
+//other routines (economizer, VFD speed, etc..)
+If ('AHx_SF1Status' Or 'AHx_SF2Status') Then
+    'AHx_RunStatusInt' = On
+  Else
+    'AHx_RunStatusInt' = Off
+End If
+
+If 'AHx_RunStatusInt' Then
+  DoEvery 1M
+  'AHx_SFUptime' = 'AHx_SFUptime' + 1
+  End Do
+Else
+  'AHx_SFUptime' = 0
+End If
+
+'AHx_SF1Status' = Switch ( 'AHx_SF1Status', 'AHx_SF1Amps', 0.25, 0.1)
+'AHx_SF2Status' = Switch ( 'AHx_SF2Status', 'AHx_SF2Amps', 0.25, 0.1)
+'AHx_RF1Status' = Switch ( 'AHx_RF1Status', 'AHx_RF1Amps', 0.25, 0.1)
+'AHx_RF2Status' = Switch ( 'AHx_RF2Status', 'AHx_RF2Amps', 0.25, 0.1)
+
+
+//VFD speed sequence. Insures smooth start up via
+//the ramp routine.
+//Fan speed reset on zone heat and cooling demand
+
+If 'AHx_RunStatusInt' Then
+  DoEvery 10S
+  'AHx_SFSpeedRamp' = Min (100, 'AHx_SFSpeedRamp' + (1000 / 'AHx_SFSpeedRamp_Sp'))
+  End Do
+Else
+  'AHx_SFSpeedRamp' = 0
+End If
+
+If PowerUp Then
+'AHx_SFSpeedRamp' = 0
+End If
