@@ -1,7 +1,1748 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [],
+  "uploadQueue": [
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,1",
+      "objectName": "Fan2Speed_PG_Option",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/Fan2Speed_PG_Option.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,2",
+      "objectName": "FanAOSpeed_PG_Option",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/FanAOSpeed_PG_Option.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,3",
+      "objectName": "FaultDetection_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/FaultDetection_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,7",
+      "objectName": "ZoneDAT_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneDAT_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,9",
+      "objectName": "ZoneeZNSDisplay1_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneeZNSDisplay1_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,10",
+      "objectName": "ZoneeZNSDisplay2_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneeZNSDisplay2_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,12",
+      "objectName": "ZoneHtCl_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneHtCl_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,13",
+      "objectName": "ZoneHWV_PG13_Option",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneHWV_PG13_Option.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,14",
+      "objectName": "ZoneHWV3P_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneHWV3P_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,15",
+      "objectName": "ZoneHWVwFB_PG13_Option",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneHWVwFB_PG13_Option.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,16",
+      "objectName": "ZoneIAQ_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneIAQ_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,18",
+      "objectName": "Dx_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/Dx_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,19",
+      "objectName": "Fan_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/Fan_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 9:56:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "pg,20",
+      "objectName": "ZoneHtCl_PG13 (pg20)",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneHtCl_PG13 (pg20).gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:01:09 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,98",
+      "objectName": "Uptime",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Uptime.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:03:40 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "mv,98",
+      "objectName": "ControllerFault",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ControllerFault.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:04:29 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "mic,10",
+      "objectName": "FaultDetection_MIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/FaultDetection_MIC.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:04:57 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "mic,90",
+      "objectName": "PowerupScheme_MIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/PowerupScheme_MIC.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:05:28 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "mv,90",
+      "objectName": "PowerUpScheme",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/PowerUpScheme.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:05:35 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,90",
+      "objectName": "JaceUptime",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/JaceUptime.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:06:43 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,91",
+      "objectName": "OAT_Eff",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/OAT_Eff.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:07:08 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,91",
+      "objectName": "OATIsFreezing",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/OATIsFreezing.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:07:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bdc,1",
+      "objectName": "ActiveInactive_BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ActiveInactive_BDC.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:07:31 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,90",
+      "objectName": "JaceCfail",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/JaceCfail.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:07:47 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bdc,2",
+      "objectName": "AlarmNormal_BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/AlarmNormal_BDC.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:08:01 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,4",
+      "objectName": "General_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/General_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:43:34 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,11010",
+      "objectName": "ZoneVariance",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneVariance.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:43:45 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11021",
+      "objectName": "Zone_RemSchedule",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_RemSchedule.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:44:40 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11026",
+      "objectName": "Zone_RemPurgeCall",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_RemPurgeCall.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:46:49 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11042",
+      "objectName": "Zone_RemHtg",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_RemHtg.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:46:49 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11032",
+      "objectName": "Zone_RemClg",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_RemClg.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:46:49 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11003",
+      "objectName": "Zone_RemSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_RemSp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:46:49 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11025",
+      "objectName": "Zone_RemWarmCall",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_RemWarmCall.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:46:49 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11063",
+      "objectName": "DAT_RemSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/DAT_RemSp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:47:03 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11060",
+      "objectName": "DAT_Eff",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/DAT_Eff.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:48:35 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11061",
+      "objectName": "DAT_EffSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/DAT_EffSp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:48:38 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11240",
+      "objectName": "MAT_Eff",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/MAT_Eff.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:48:48 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11250",
+      "objectName": "ZoneIAQ_Eff",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneIAQ_Eff.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:49:25 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "aic,5",
+      "objectName": "Temperature_DegF_AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Temperature_DegF_AIC.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:50:33 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ai,3",
+      "objectName": "MAT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/MAT.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:51:12 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "pg,6",
+      "objectName": "ZoneCritical_PG4",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneCritical_PG4.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:52:21 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11013",
+      "objectName": "ZoneOcClgMax_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneOcClgMax_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:54:48 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11015",
+      "objectName": "ZoneOcHtgMax_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneOcHtgMax_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:54:48 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11012",
+      "objectName": "ZoneOcClgMin_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneOcClgMin_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:54:48 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11014",
+      "objectName": "ZoneOcHtgMin_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneOcHtgMin_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:54:48 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "mic,3",
+      "objectName": "MultiZoneOccMode_MIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/MultiZoneOccMode_MIC.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:55:44 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "mv,11001",
+      "objectName": "ZoneOccMode",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneOccMode.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:55:47 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11051",
+      "objectName": "ZoneAlgMode",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneAlgMode.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:57:46 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11052",
+      "objectName": "ZoneBypassCall",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneBypassCall.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:58:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,17",
+      "objectName": "ZoneOccMode_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneOccMode_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:58:35 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11022",
+      "objectName": "Zone_SchedueFunction",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_SchedueFunction.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:59:05 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bdc,12",
+      "objectName": "SchedFunction_BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/SchedFunction_BDC.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:59:19 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11058",
+      "objectName": "ZoneStandbyTmLeft",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneStandbyTmLeft.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:59:53 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11057",
+      "objectName": "ZoneStandbyDelay_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneStandbyDelay_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 10:59:53 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,5",
+      "objectName": "Main_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/Main_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:00:08 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11004",
+      "objectName": "ZoneHeat_EffSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneHeat_EffSp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:01:11 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11005",
+      "objectName": "ZoneCool_EffSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneCool_EffSp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:01:23 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11001",
+      "objectName": "Zone_EffSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_EffSp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:01:37 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11017",
+      "objectName": "ZoneStandbyOffset_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneStandbyOffset_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:01:50 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11006",
+      "objectName": "ZoneDb_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneDb_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:02:07 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11007",
+      "objectName": "ZoneUnocHt_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneUnocHt_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:02:27 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11008",
+      "objectName": "ZoneUnocCl_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneUnocCl_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:02:44 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11002",
+      "objectName": "Zone_LocSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_LocSp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:03:16 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "mv,11052",
+      "objectName": "ZoneDNSLocSpFallback",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneDNSLocSpFallback.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:03:24 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "co,11004",
+      "objectName": "DATClg_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/DATClg_CO.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:04:07 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "co,11201",
+      "objectName": "MATLimit_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/MATLimit_CO.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:04:07 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "co,11003",
+      "objectName": "DATHtg_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/DATHtg_CO.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:04:07 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "co,11001",
+      "objectName": "ZoneClg_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneClg_CO.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:04:07 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "co,11002",
+      "objectName": "ZoneHtg_CO",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneHtg_CO.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:04:07 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11041",
+      "objectName": "Zone_LocHtg",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_LocHtg.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:06:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11031",
+      "objectName": "Zone_LocClg",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_LocClg.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:06:10 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11036",
+      "objectName": "ZoneClgRamp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneClgRamp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:06:35 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11046",
+      "objectName": "ZoneHtgRamp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneHtgRamp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:06:42 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11030",
+      "objectName": "Zone_EffClg",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_EffClg.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:07:05 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11040",
+      "objectName": "Zone_EffHtg",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_EffHtg.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:07:05 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11035",
+      "objectName": "ZoneClRamp_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneClRamp_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:07:21 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11031",
+      "objectName": "ZoneClDemand",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneClDemand.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:07:28 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "mv,11003",
+      "objectName": "ZoneControlMode",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneControlMode.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:07:43 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11022",
+      "objectName": "ZoneDbDelay_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneDbDelay_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:08:45 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "mv,11004",
+      "objectName": "ZonePrevControlMode",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZonePrevControlMode.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:08:45 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11045",
+      "objectName": "ZoneHtRamp_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneHtRamp_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:08:45 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11041",
+      "objectName": "ZoneHtDemand",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneHtDemand.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:08:45 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11032",
+      "objectName": "ZoneUnocClCall",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneUnocClCall.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:08:45 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11009",
+      "objectName": "ZoneUnocDb_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneUnocDb_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:08:45 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11042",
+      "objectName": "ZoneUnocHtCall",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneUnocHtCall.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:08:45 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11065",
+      "objectName": "DATResetHigh_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/DATResetHigh_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:09:44 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11064",
+      "objectName": "DATResetLow_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/DATResetLow_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:09:44 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11062",
+      "objectName": "DAT_LocSp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/DAT_LocSp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:09:44 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11066",
+      "objectName": "DATOffset_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/DATOffset_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:09:44 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "ai,2",
+      "objectName": "DAT_Local",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/DAT_Local.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:09:44 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11233",
+      "objectName": "EconMinOAPct_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/EconMinOAPct_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11232",
+      "objectName": "Econ_RemMinOAPct",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Econ_RemMinOAPct.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11210",
+      "objectName": "EconRampDelay",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/EconRampDelay.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "ao,4",
+      "objectName": "Economizer",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Economizer.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "aoc,11",
+      "objectName": "Economizerr_Pct_AOC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Economizerr_Pct_AOC.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11240",
+      "objectName": "EconMATWarn",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/EconMATWarn.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11220",
+      "objectName": "EconFreeClg",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/EconFreeClg.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11242",
+      "objectName": "EconMATLimit_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/EconMATLimit_Sp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11221",
+      "objectName": "Econ_LocClg",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Econ_LocClg.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11222",
+      "objectName": "Econ_RemClg",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Econ_RemClg.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11211",
+      "objectName": "EconRamp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/EconRamp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11241",
+      "objectName": "EconMATLimit",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/EconMATLimit.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11230",
+      "objectName": "Econ_EffMinOAPct",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Econ_EffMinOAPct.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11231",
+      "objectName": "Econ_LocMinOAPct",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Econ_LocMinOAPct.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11220",
+      "objectName": "Econ_EffClg",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Econ_EffClg.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:10:15 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11102",
+      "objectName": "RunStatusInt",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/RunStatusInt.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:11:35 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,8",
+      "objectName": "ZoneEconomizer_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneEconomizer_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:11:48 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11200",
+      "objectName": "RAT_Eff",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/RAT_Eff.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:13:29 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11111",
+      "objectName": "FanStatus",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/FanStatus.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:14:42 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bv,11107",
+      "objectName": "FanMode",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/FanMode.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:15:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bdc,10",
+      "objectName": "FanMode_BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/FanMode_BDC.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:15:00 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "av,11090",
+      "objectName": "Zone_EffTemp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/Zone_EffTemp.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:20:54 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,11",
+      "objectName": "ZoneGeneral_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/ZoneGeneral_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:21:28 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "mic,2",
+      "objectName": "SingleZoneControlMode_MIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/SingleZoneControlMode_MIC.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:23:04 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "mic,6",
+      "objectName": "DNSLocSpFallback_MIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/DNSLocSpFallback_MIC.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:23:48 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "av,1",
+      "objectName": "ZoneTemp_RemAverage",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HVU_2_4/devices/BSD_HILLCREST_HVU2_4_COLLIN (4399)/objectsJSON/ZoneTemp_RemAverage.json",
+        "scheme": "file"
+      },
+      "date": "7/30/2024, 11:26:40 AM",
+      "templateTriggered": false
+    }
+  ],
   "devices": [
     {
       "number": 4399,
@@ -119,6 +1860,702 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-07-30T15:51:29.668Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Fan2Speed_PG_Option",
+          "fileName": "Fan2Speed_PG_Option",
+          "lastUpdate": "2024-07-30T15:56:00.033Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "FanAOSpeed_PG_Option",
+          "fileName": "FanAOSpeed_PG_Option",
+          "lastUpdate": "2024-07-30T15:56:00.062Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "FaultDetection_PG13",
+          "fileName": "FaultDetection_PG13",
+          "lastUpdate": "2024-07-30T15:56:00.132Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "General_PG13",
+          "fileName": "General_PG13",
+          "lastUpdate": "2024-07-30T15:56:00.182Z"
+        },
+        {
+          "id": "pg,5",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-07-30T15:56:00.198Z"
+        },
+        {
+          "id": "pg,6",
+          "name": "ZoneCritical_PG4",
+          "fileName": "ZoneCritical_PG4",
+          "lastUpdate": "2024-07-30T15:56:00.226Z"
+        },
+        {
+          "id": "pg,7",
+          "name": "ZoneDAT_PG13",
+          "fileName": "ZoneDAT_PG13",
+          "lastUpdate": "2024-07-30T15:56:00.238Z"
+        },
+        {
+          "id": "pg,8",
+          "name": "ZoneEconomizer_PG",
+          "fileName": "ZoneEconomizer_PG",
+          "lastUpdate": "2024-07-30T15:56:00.253Z"
+        },
+        {
+          "id": "pg,9",
+          "name": "ZoneeZNSDisplay1_PG13",
+          "fileName": "ZoneeZNSDisplay1_PG13",
+          "lastUpdate": "2024-07-30T15:56:00.267Z"
+        },
+        {
+          "id": "pg,10",
+          "name": "ZoneeZNSDisplay2_PG13",
+          "fileName": "ZoneeZNSDisplay2_PG13",
+          "lastUpdate": "2024-07-30T15:56:00.280Z"
+        },
+        {
+          "id": "pg,11",
+          "name": "ZoneGeneral_PG13",
+          "fileName": "ZoneGeneral_PG13",
+          "lastUpdate": "2024-07-30T15:56:00.290Z"
+        },
+        {
+          "id": "pg,12",
+          "name": "ZoneHtCl_PG13",
+          "fileName": "ZoneHtCl_PG13",
+          "lastUpdate": "2024-07-30T15:56:00.302Z"
+        },
+        {
+          "id": "pg,13",
+          "name": "ZoneHWV_PG13_Option",
+          "fileName": "ZoneHWV_PG13_Option",
+          "lastUpdate": "2024-07-30T15:56:00.313Z"
+        },
+        {
+          "id": "pg,14",
+          "name": "ZoneHWV3P_PG13",
+          "fileName": "ZoneHWV3P_PG13",
+          "lastUpdate": "2024-07-30T15:56:00.330Z"
+        },
+        {
+          "id": "pg,15",
+          "name": "ZoneHWVwFB_PG13_Option",
+          "fileName": "ZoneHWVwFB_PG13_Option",
+          "lastUpdate": "2024-07-30T15:56:00.344Z"
+        },
+        {
+          "id": "pg,16",
+          "name": "ZoneIAQ_PG",
+          "fileName": "ZoneIAQ_PG",
+          "lastUpdate": "2024-07-30T15:56:00.351Z"
+        },
+        {
+          "id": "pg,17",
+          "name": "ZoneOccMode_PG13",
+          "fileName": "ZoneOccMode_PG13",
+          "lastUpdate": "2024-07-30T15:56:00.366Z"
+        },
+        {
+          "id": "pg,18",
+          "name": "Dx_PG",
+          "fileName": "Dx_PG",
+          "lastUpdate": "2024-07-30T15:56:00.380Z"
+        },
+        {
+          "id": "pg,19",
+          "name": "Fan_PG13",
+          "fileName": "Fan_PG13",
+          "lastUpdate": "2024-07-30T15:56:00.389Z"
+        },
+        {
+          "id": "pg,20",
+          "name": "ZoneHtCl_PG13 (pg20)",
+          "fileName": "ZoneHtCl_PG13 (pg20)",
+          "lastUpdate": "2024-07-30T16:01:09.986Z"
+        },
+        {
+          "id": "av,98",
+          "name": "Uptime",
+          "fileName": "Uptime",
+          "lastUpdate": "2024-07-30T16:03:39.998Z"
+        },
+        {
+          "id": "mv,98",
+          "name": "ControllerFault",
+          "fileName": "ControllerFault",
+          "lastUpdate": "2024-07-30T16:04:29.558Z"
+        },
+        {
+          "id": "mic,10",
+          "name": "FaultDetection_MIC",
+          "fileName": "FaultDetection_MIC",
+          "lastUpdate": "2024-07-30T16:04:57.508Z"
+        },
+        {
+          "id": "mic,90",
+          "name": "PowerupScheme_MIC",
+          "fileName": "PowerupScheme_MIC",
+          "lastUpdate": "2024-07-30T16:05:28.809Z"
+        },
+        {
+          "id": "mv,90",
+          "name": "PowerUpScheme",
+          "fileName": "PowerUpScheme",
+          "lastUpdate": "2024-07-30T16:05:35.541Z"
+        },
+        {
+          "id": "av,90",
+          "name": "JaceUptime",
+          "fileName": "JaceUptime",
+          "lastUpdate": "2024-07-30T16:06:43.035Z"
+        },
+        {
+          "id": "av,91",
+          "name": "OAT_Eff",
+          "fileName": "OAT_Eff",
+          "lastUpdate": "2024-07-30T16:07:08.471Z"
+        },
+        {
+          "id": "bv,91",
+          "name": "OATIsFreezing",
+          "fileName": "OATIsFreezing",
+          "lastUpdate": "2024-07-30T16:07:14.178Z"
+        },
+        {
+          "id": "bdc,1",
+          "name": "ActiveInactive_BDC",
+          "fileName": "ActiveInactive_BDC",
+          "lastUpdate": "2024-07-30T16:07:31.893Z"
+        },
+        {
+          "id": "bv,90",
+          "name": "JaceCfail",
+          "fileName": "JaceCfail",
+          "lastUpdate": "2024-07-30T16:07:47.453Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "AlarmNormal_BDC",
+          "fileName": "AlarmNormal_BDC",
+          "lastUpdate": "2024-07-30T16:08:01.237Z"
+        },
+        {
+          "id": "av,11010",
+          "name": "ZoneVariance",
+          "fileName": "ZoneVariance",
+          "lastUpdate": "2024-07-30T16:32:38.945Z"
+        },
+        {
+          "id": "bv,11021",
+          "name": "Zone_RemSchedule",
+          "fileName": "Zone_RemSchedule",
+          "lastUpdate": "2024-07-30T16:44:40.099Z"
+        },
+        {
+          "id": "bv,11026",
+          "name": "Zone_RemPurgeCall",
+          "fileName": "Zone_RemPurgeCall",
+          "lastUpdate": "2024-07-30T16:46:49.162Z"
+        },
+        {
+          "id": "av,11042",
+          "name": "Zone_RemHtg",
+          "fileName": "Zone_RemHtg",
+          "lastUpdate": "2024-07-30T16:46:49.183Z"
+        },
+        {
+          "id": "av,11032",
+          "name": "Zone_RemClg",
+          "fileName": "Zone_RemClg",
+          "lastUpdate": "2024-07-30T16:46:49.204Z"
+        },
+        {
+          "id": "av,11003",
+          "name": "Zone_RemSp",
+          "fileName": "Zone_RemSp",
+          "lastUpdate": "2024-07-30T16:46:49.211Z"
+        },
+        {
+          "id": "bv,11025",
+          "name": "Zone_RemWarmCall",
+          "fileName": "Zone_RemWarmCall",
+          "lastUpdate": "2024-07-30T16:46:49.235Z"
+        },
+        {
+          "id": "av,11063",
+          "name": "DAT_RemSp",
+          "fileName": "DAT_RemSp",
+          "lastUpdate": "2024-07-30T16:47:03.666Z"
+        },
+        {
+          "id": "av,11060",
+          "name": "DAT_Eff",
+          "fileName": "DAT_Eff",
+          "lastUpdate": "2024-07-30T16:48:35.224Z"
+        },
+        {
+          "id": "av,11061",
+          "name": "DAT_EffSp",
+          "fileName": "DAT_EffSp",
+          "lastUpdate": "2024-07-30T16:48:38.371Z"
+        },
+        {
+          "id": "av,11240",
+          "name": "MAT_Eff",
+          "fileName": "MAT_Eff",
+          "lastUpdate": "2024-07-30T16:48:47.987Z"
+        },
+        {
+          "id": "ai,3",
+          "name": "MAT",
+          "fileName": "MAT",
+          "lastUpdate": "2024-07-30T16:49:10.397Z"
+        },
+        {
+          "id": "av,11250",
+          "name": "ZoneIAQ_Eff",
+          "fileName": "ZoneIAQ_Eff",
+          "lastUpdate": "2024-07-30T16:49:25.529Z"
+        },
+        {
+          "id": "aic,5",
+          "name": "Temperature_DegF_AIC",
+          "fileName": "Temperature_DegF_AIC",
+          "lastUpdate": "2024-07-30T16:50:33.861Z"
+        },
+        {
+          "id": "mv,11001",
+          "name": "ZoneOccMode",
+          "fileName": "ZoneOccMode",
+          "lastUpdate": "2024-07-30T16:54:48.464Z"
+        },
+        {
+          "id": "av,11013",
+          "name": "ZoneOcClgMax_Sp",
+          "fileName": "ZoneOcClgMax_Sp",
+          "lastUpdate": "2024-07-30T16:54:48.483Z"
+        },
+        {
+          "id": "av,11015",
+          "name": "ZoneOcHtgMax_Sp",
+          "fileName": "ZoneOcHtgMax_Sp",
+          "lastUpdate": "2024-07-30T16:54:48.500Z"
+        },
+        {
+          "id": "av,11012",
+          "name": "ZoneOcClgMin_Sp",
+          "fileName": "ZoneOcClgMin_Sp",
+          "lastUpdate": "2024-07-30T16:54:48.545Z"
+        },
+        {
+          "id": "av,11014",
+          "name": "ZoneOcHtgMin_Sp",
+          "fileName": "ZoneOcHtgMin_Sp",
+          "lastUpdate": "2024-07-30T16:54:48.562Z"
+        },
+        {
+          "id": "mic,3",
+          "name": "MultiZoneOccMode_MIC",
+          "fileName": "MultiZoneOccMode_MIC",
+          "lastUpdate": "2024-07-30T16:55:44.934Z"
+        },
+        {
+          "id": "av,11051",
+          "name": "ZoneAlgMode",
+          "fileName": "ZoneAlgMode",
+          "lastUpdate": "2024-07-30T16:57:46.035Z"
+        },
+        {
+          "id": "bv,11052",
+          "name": "ZoneBypassCall",
+          "fileName": "ZoneBypassCall",
+          "lastUpdate": "2024-07-30T16:58:11.231Z"
+        },
+        {
+          "id": "bv,11022",
+          "name": "Zone_SchedueFunction",
+          "fileName": "Zone_SchedueFunction",
+          "lastUpdate": "2024-07-30T16:59:05.142Z"
+        },
+        {
+          "id": "bdc,12",
+          "name": "SchedFunction_BDC",
+          "fileName": "SchedFunction_BDC",
+          "lastUpdate": "2024-07-30T16:59:19.306Z"
+        },
+        {
+          "id": "av,11058",
+          "name": "ZoneStandbyTmLeft",
+          "fileName": "ZoneStandbyTmLeft",
+          "lastUpdate": "2024-07-30T16:59:52.997Z"
+        },
+        {
+          "id": "av,11057",
+          "name": "ZoneStandbyDelay_Sp",
+          "fileName": "ZoneStandbyDelay_Sp",
+          "lastUpdate": "2024-07-30T16:59:53.006Z"
+        },
+        {
+          "id": "av,11004",
+          "name": "ZoneHeat_EffSp",
+          "fileName": "ZoneHeat_EffSp",
+          "lastUpdate": "2024-07-30T17:01:11.859Z"
+        },
+        {
+          "id": "av,11005",
+          "name": "ZoneCool_EffSp",
+          "fileName": "ZoneCool_EffSp",
+          "lastUpdate": "2024-07-30T17:01:23.625Z"
+        },
+        {
+          "id": "av,11001",
+          "name": "Zone_EffSp",
+          "fileName": "Zone_EffSp",
+          "lastUpdate": "2024-07-30T17:01:37.690Z"
+        },
+        {
+          "id": "av,11017",
+          "name": "ZoneStandbyOffset_Sp",
+          "fileName": "ZoneStandbyOffset_Sp",
+          "lastUpdate": "2024-07-30T17:01:50.571Z"
+        },
+        {
+          "id": "av,11006",
+          "name": "ZoneDb_Sp",
+          "fileName": "ZoneDb_Sp",
+          "lastUpdate": "2024-07-30T17:02:07.570Z"
+        },
+        {
+          "id": "av,11007",
+          "name": "ZoneUnocHt_Sp",
+          "fileName": "ZoneUnocHt_Sp",
+          "lastUpdate": "2024-07-30T17:02:27.643Z"
+        },
+        {
+          "id": "av,11008",
+          "name": "ZoneUnocCl_Sp",
+          "fileName": "ZoneUnocCl_Sp",
+          "lastUpdate": "2024-07-30T17:02:44.807Z"
+        },
+        {
+          "id": "av,11002",
+          "name": "Zone_LocSp",
+          "fileName": "Zone_LocSp",
+          "lastUpdate": "2024-07-30T17:03:15.992Z"
+        },
+        {
+          "id": "mv,11052",
+          "name": "ZoneDNSLocSpFallback",
+          "fileName": "ZoneDNSLocSpFallback",
+          "lastUpdate": "2024-07-30T17:03:24.828Z"
+        },
+        {
+          "id": "co,11004",
+          "name": "DATClg_CO",
+          "fileName": "DATClg_CO",
+          "lastUpdate": "2024-07-30T17:04:07.023Z"
+        },
+        {
+          "id": "co,11201",
+          "name": "MATLimit_CO",
+          "fileName": "MATLimit_CO",
+          "lastUpdate": "2024-07-30T17:04:07.045Z"
+        },
+        {
+          "id": "co,11003",
+          "name": "DATHtg_CO",
+          "fileName": "DATHtg_CO",
+          "lastUpdate": "2024-07-30T17:04:07.065Z"
+        },
+        {
+          "id": "co,11001",
+          "name": "ZoneClg_CO",
+          "fileName": "ZoneClg_CO",
+          "lastUpdate": "2024-07-30T17:04:07.072Z"
+        },
+        {
+          "id": "co,11002",
+          "name": "ZoneHtg_CO",
+          "fileName": "ZoneHtg_CO",
+          "lastUpdate": "2024-07-30T17:04:07.095Z"
+        },
+        {
+          "id": "av,11041",
+          "name": "Zone_LocHtg",
+          "fileName": "Zone_LocHtg",
+          "lastUpdate": "2024-07-30T17:06:00.602Z"
+        },
+        {
+          "id": "av,11031",
+          "name": "Zone_LocClg",
+          "fileName": "Zone_LocClg",
+          "lastUpdate": "2024-07-30T17:06:10.903Z"
+        },
+        {
+          "id": "av,11036",
+          "name": "ZoneClgRamp",
+          "fileName": "ZoneClgRamp",
+          "lastUpdate": "2024-07-30T17:06:35.883Z"
+        },
+        {
+          "id": "av,11046",
+          "name": "ZoneHtgRamp",
+          "fileName": "ZoneHtgRamp",
+          "lastUpdate": "2024-07-30T17:06:41.996Z"
+        },
+        {
+          "id": "av,11030",
+          "name": "Zone_EffClg",
+          "fileName": "Zone_EffClg",
+          "lastUpdate": "2024-07-30T17:07:05.825Z"
+        },
+        {
+          "id": "av,11040",
+          "name": "Zone_EffHtg",
+          "fileName": "Zone_EffHtg",
+          "lastUpdate": "2024-07-30T17:07:05.835Z"
+        },
+        {
+          "id": "av,11035",
+          "name": "ZoneClRamp_Sp",
+          "fileName": "ZoneClRamp_Sp",
+          "lastUpdate": "2024-07-30T17:07:21.494Z"
+        },
+        {
+          "id": "bv,11031",
+          "name": "ZoneClDemand",
+          "fileName": "ZoneClDemand",
+          "lastUpdate": "2024-07-30T17:07:28.926Z"
+        },
+        {
+          "id": "mv,11003",
+          "name": "ZoneControlMode",
+          "fileName": "ZoneControlMode",
+          "lastUpdate": "2024-07-30T17:07:43.239Z"
+        },
+        {
+          "id": "av,11022",
+          "name": "ZoneDbDelay_Sp",
+          "fileName": "ZoneDbDelay_Sp",
+          "lastUpdate": "2024-07-30T17:08:45.474Z"
+        },
+        {
+          "id": "mv,11004",
+          "name": "ZonePrevControlMode",
+          "fileName": "ZonePrevControlMode",
+          "lastUpdate": "2024-07-30T17:08:45.483Z"
+        },
+        {
+          "id": "av,11045",
+          "name": "ZoneHtRamp_Sp",
+          "fileName": "ZoneHtRamp_Sp",
+          "lastUpdate": "2024-07-30T17:08:45.492Z"
+        },
+        {
+          "id": "bv,11041",
+          "name": "ZoneHtDemand",
+          "fileName": "ZoneHtDemand",
+          "lastUpdate": "2024-07-30T17:08:45.512Z"
+        },
+        {
+          "id": "bv,11032",
+          "name": "ZoneUnocClCall",
+          "fileName": "ZoneUnocClCall",
+          "lastUpdate": "2024-07-30T17:08:45.529Z"
+        },
+        {
+          "id": "av,11009",
+          "name": "ZoneUnocDb_Sp",
+          "fileName": "ZoneUnocDb_Sp",
+          "lastUpdate": "2024-07-30T17:08:45.537Z"
+        },
+        {
+          "id": "bv,11042",
+          "name": "ZoneUnocHtCall",
+          "fileName": "ZoneUnocHtCall",
+          "lastUpdate": "2024-07-30T17:08:45.544Z"
+        },
+        {
+          "id": "av,11065",
+          "name": "DATResetHigh_Sp",
+          "fileName": "DATResetHigh_Sp",
+          "lastUpdate": "2024-07-30T17:09:44.079Z"
+        },
+        {
+          "id": "av,11064",
+          "name": "DATResetLow_Sp",
+          "fileName": "DATResetLow_Sp",
+          "lastUpdate": "2024-07-30T17:09:44.088Z"
+        },
+        {
+          "id": "av,11062",
+          "name": "DAT_LocSp",
+          "fileName": "DAT_LocSp",
+          "lastUpdate": "2024-07-30T17:09:44.095Z"
+        },
+        {
+          "id": "av,11066",
+          "name": "DATOffset_Sp",
+          "fileName": "DATOffset_Sp",
+          "lastUpdate": "2024-07-30T17:09:44.101Z"
+        },
+        {
+          "id": "ai,2",
+          "name": "DAT_Local",
+          "fileName": "DAT_Local",
+          "lastUpdate": "2024-07-30T17:09:44.124Z"
+        },
+        {
+          "id": "av,11233",
+          "name": "EconMinOAPct_Sp",
+          "fileName": "EconMinOAPct_Sp",
+          "lastUpdate": "2024-07-30T17:10:14.841Z"
+        },
+        {
+          "id": "av,11232",
+          "name": "Econ_RemMinOAPct",
+          "fileName": "Econ_RemMinOAPct",
+          "lastUpdate": "2024-07-30T17:10:14.851Z"
+        },
+        {
+          "id": "av,11210",
+          "name": "EconRampDelay",
+          "fileName": "EconRampDelay",
+          "lastUpdate": "2024-07-30T17:10:14.887Z"
+        },
+        {
+          "id": "ao,4",
+          "name": "Economizer",
+          "fileName": "Economizer",
+          "lastUpdate": "2024-07-30T17:10:14.911Z"
+        },
+        {
+          "id": "aoc,11",
+          "name": "Economizerr_Pct_AOC",
+          "fileName": "Economizerr_Pct_AOC",
+          "lastUpdate": "2024-07-30T17:10:14.918Z"
+        },
+        {
+          "id": "bv,11240",
+          "name": "EconMATWarn",
+          "fileName": "EconMATWarn",
+          "lastUpdate": "2024-07-30T17:10:14.933Z"
+        },
+        {
+          "id": "bv,11220",
+          "name": "EconFreeClg",
+          "fileName": "EconFreeClg",
+          "lastUpdate": "2024-07-30T17:10:14.940Z"
+        },
+        {
+          "id": "av,11242",
+          "name": "EconMATLimit_Sp",
+          "fileName": "EconMATLimit_Sp",
+          "lastUpdate": "2024-07-30T17:10:14.947Z"
+        },
+        {
+          "id": "av,11221",
+          "name": "Econ_LocClg",
+          "fileName": "Econ_LocClg",
+          "lastUpdate": "2024-07-30T17:10:14.959Z"
+        },
+        {
+          "id": "av,11222",
+          "name": "Econ_RemClg",
+          "fileName": "Econ_RemClg",
+          "lastUpdate": "2024-07-30T17:10:14.966Z"
+        },
+        {
+          "id": "av,11211",
+          "name": "EconRamp",
+          "fileName": "EconRamp",
+          "lastUpdate": "2024-07-30T17:10:14.976Z"
+        },
+        {
+          "id": "av,11241",
+          "name": "EconMATLimit",
+          "fileName": "EconMATLimit",
+          "lastUpdate": "2024-07-30T17:10:14.983Z"
+        },
+        {
+          "id": "av,11230",
+          "name": "Econ_EffMinOAPct",
+          "fileName": "Econ_EffMinOAPct",
+          "lastUpdate": "2024-07-30T17:10:14.988Z"
+        },
+        {
+          "id": "av,11231",
+          "name": "Econ_LocMinOAPct",
+          "fileName": "Econ_LocMinOAPct",
+          "lastUpdate": "2024-07-30T17:10:14.995Z"
+        },
+        {
+          "id": "av,11220",
+          "name": "Econ_EffClg",
+          "fileName": "Econ_EffClg",
+          "lastUpdate": "2024-07-30T17:10:15.000Z"
+        },
+        {
+          "id": "bv,11102",
+          "name": "RunStatusInt",
+          "fileName": "RunStatusInt",
+          "lastUpdate": "2024-07-30T17:11:35.064Z"
+        },
+        {
+          "id": "av,1",
+          "name": "ZoneTemp_RemAverage",
+          "fileName": "ZoneTemp_RemAverage",
+          "lastUpdate": "2024-07-30T17:13:17.946Z"
+        },
+        {
+          "id": "av,11200",
+          "name": "RAT_Eff",
+          "fileName": "RAT_Eff",
+          "lastUpdate": "2024-07-30T17:13:29.726Z"
+        },
+        {
+          "id": "bv,11111",
+          "name": "FanStatus",
+          "fileName": "FanStatus",
+          "lastUpdate": "2024-07-30T17:14:42.404Z"
+        },
+        {
+          "id": "bv,11107",
+          "name": "FanMode",
+          "fileName": "FanMode",
+          "lastUpdate": "2024-07-30T17:15:00.794Z"
+        },
+        {
+          "id": "bdc,10",
+          "name": "FanMode_BDC",
+          "fileName": "FanMode_BDC",
+          "lastUpdate": "2024-07-30T17:15:00.803Z"
+        },
+        {
+          "id": "av,11090",
+          "name": "Zone_EffTemp",
+          "fileName": "Zone_EffTemp",
+          "lastUpdate": "2024-07-30T17:20:54.648Z"
+        },
+        {
+          "id": "mic,2",
+          "name": "SingleZoneControlMode_MIC",
+          "fileName": "SingleZoneControlMode_MIC",
+          "lastUpdate": "2024-07-30T17:23:04.328Z"
+        },
+        {
+          "id": "mic,6",
+          "name": "DNSLocSpFallback_MIC",
+          "fileName": "DNSLocSpFallback_MIC",
+          "lastUpdate": "2024-07-30T17:23:47.969Z"
         }
       ]
     }
