@@ -1,8 +1,8 @@
 {
-  "displayName": "MultiZoneOccMode_MIC",
+  "displayName": "SingleZoneOccMode_MIC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "mic,3"
+    "value": "mic,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "MultiZoneOccMode_MIC"
+    "value": "SingleZoneOccMode_MIC"
   },
   "description": {
     "$base": "String",
@@ -23,23 +23,27 @@
   "state-text": {
     "1": {
       "$base": "String",
-      "value": "Occupied"
+      "value": "Unoccupied"
     },
     "2": {
       "$base": "String",
-      "value": "Warmup"
+      "value": "Standby"
     },
     "3": {
       "$base": "String",
-      "value": "Unoc Heating"
+      "value": "Occupied"
     },
     "4": {
       "$base": "String",
-      "value": "Unoc Cooling"
+      "value": "Bypass"
     },
     "5": {
       "$base": "String",
-      "value": "Off"
+      "value": "WarmUp"
+    },
+    "6": {
+      "$base": "String",
+      "value": "Purge"
     },
     "$base": "Array"
   },
@@ -89,6 +93,17 @@
       }
     },
     "5": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "6": {
       "$base": "Sequence",
       "lowerRange": {
         "$base": "Real",

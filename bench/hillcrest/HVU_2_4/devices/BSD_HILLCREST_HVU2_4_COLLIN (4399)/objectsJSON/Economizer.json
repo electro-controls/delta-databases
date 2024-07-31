@@ -231,7 +231,7 @@
     },
     "13": {
       "$base": "ObjectIdentifier",
-      "value": "program,11201"
+      "value": "program,8"
     },
     "14": {
       "$base": "ObjectIdentifier",
@@ -266,7 +266,7 @@
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-02-13T09:31:27.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -286,7 +286,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-03-11T15:21:14.00"
+      "value": "2000-01-02T16:58:07.70"
     },
     "11": {
       "$base": "DateTime",
@@ -298,7 +298,7 @@
     },
     "13": {
       "$base": "DateTime",
-      "value": "2000-01-05T04:13:52.90"
+      "value": "2000-01-02T18:29:02.30"
     },
     "14": {
       "$base": "DateTime",
@@ -426,6 +426,27 @@
     "value": "alarm"
   },
   "event-time-stamps": {
+    "1": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "2": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
+    "3": {
+      "$base": "Choice",
+      "dateTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      }
+    },
     "$base": "Array"
   },
   "hal-flags": {

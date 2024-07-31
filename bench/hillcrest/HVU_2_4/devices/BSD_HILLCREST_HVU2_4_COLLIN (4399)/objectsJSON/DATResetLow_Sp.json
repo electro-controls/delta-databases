@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "50"
+    "value": "-1"
   },
   "gcl-value": {
     "$base": "Real",

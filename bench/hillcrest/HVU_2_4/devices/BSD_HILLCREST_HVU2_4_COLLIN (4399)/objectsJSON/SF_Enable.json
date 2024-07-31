@@ -70,24 +70,24 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T19:48:49.000000-07:00"
+    "value": "2000-01-02T18:35:11.400000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "3"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2000-01-01T19:06:37.200000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T17:24:14.70"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-01T19:48:49.000000-07:00"
+      "value": "2000-01-02T18:35:11.400000-07:00"
     },
     "$base": "Array"
   },
@@ -203,10 +203,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -229,7 +226,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,5"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -265,7 +262,7 @@
     },
     "13": {
       "$base": "ObjectIdentifier",
-      "value": "program,2"
+      "value": "program,19"
     },
     "14": {
       "$base": "ObjectIdentifier",
@@ -277,7 +274,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,65984"
     },
     "$base": "Array"
   },
@@ -296,7 +293,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-02T12:34:57.60"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
@@ -332,7 +329,7 @@
     },
     "13": {
       "$base": "DateTime",
-      "value": "2000-01-02T12:34:58.20"
+      "value": "2000-01-02T18:47:54.40"
     },
     "14": {
       "$base": "DateTime",
@@ -344,7 +341,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-01T14:10:50.30"
     },
     "$base": "Array"
   },

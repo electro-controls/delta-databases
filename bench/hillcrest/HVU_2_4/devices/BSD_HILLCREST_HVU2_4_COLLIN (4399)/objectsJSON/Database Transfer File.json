@@ -34,7 +34,7 @@
   },
   "modification-date": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:02:27.500000-07:00"
+    "value": "2000-01-01T14:12:21.300000-07:00"
   },
   "archive": {
     "$base": "Boolean",

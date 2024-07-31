@@ -6,7 +6,7 @@ Variable ClCall
 Variable LastState
 
 // Effective SP
-If ('ZoneOccMode' = 3) Or ('ZoneOccMode' = 4) Or ('ZoneOccMode' = 5) Then //Occ, Bypass, Warmup 
+If ('ZoneOccMode' = 3) Or ('ZoneOccMode' = 4) Or ('ZoneOccMode' = 5) Then //Occ, Bypass, Warmup
     'ZoneHeat_EffSp' = Min (('Zone_EffSp' - ('ZoneDb_Sp' * 0.5)), 'ZoneOcHtgMax_Sp')
     'ZoneCool_EffSp' = Max (('Zone_EffSp' + ('ZoneDb_Sp' * 0.5)), 'ZoneOcClgMin_Sp')
   ElseIf  'ZoneOccMode' = 2 Then //Standby

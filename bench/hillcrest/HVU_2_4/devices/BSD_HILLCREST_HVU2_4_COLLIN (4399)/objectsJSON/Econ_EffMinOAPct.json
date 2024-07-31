@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "5"
+    "value": "10"
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "5"
+    "value": "10"
   },
   "status-flags": {
     "$base": "BitString",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,11201"
+    "value": "program,8"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-05T04:14:09.900000-07:00"
+    "value": "2000-01-02T18:29:02.300000-07:00"
   },
   "cov-increment": {
     "$base": "Real",

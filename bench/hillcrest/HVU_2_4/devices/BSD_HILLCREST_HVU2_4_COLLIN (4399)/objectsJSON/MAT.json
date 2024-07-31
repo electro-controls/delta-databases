@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "MAT",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -19,19 +18,19 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "fault;out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
     "value": "55"
   },
-  "st-value": {
+  "last-value": {
     "$base": "Real",
-    "value": 0
+    "value": "36"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault;out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -39,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "°F"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -55,7 +54,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "missing-cfg-object"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -63,23 +62,23 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "Temperature_DegF_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "200"
+    "value": "16"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": 0
+    "value": "-58"
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "300"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.02442"
+    "value": "0.0874237"
   },
   "cov-increment": {
     "$base": "Real",
@@ -93,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "15375"
+      "value": "59813"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "4095"
   },
   "calibration": {
     "$base": "Real",
