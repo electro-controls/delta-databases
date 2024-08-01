@@ -259,7 +259,7 @@
   },
   "average-error": {
     "$base": "Real",
-    "value": "0.6"
+    "value": "1.08"
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "14181"
+      "value": "18121"
     }
   },
   "self-adj-enable": {
@@ -300,7 +300,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "18000"
+      "value": "36000"
     }
   },
   "setpoint-crossings": {
