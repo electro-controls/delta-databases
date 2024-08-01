@@ -1,0 +1,47 @@
+//Look for faults then triggers a BV for alarm purposes
+Variable PageFault As Integer
+Variable AIFault As Integer
+Variable AVFault As Integer
+Variable COFault As Integer
+
+ForAll Pages In "PG*:*"
+If (Pages.Reliability <> 0) Then
+    PageFault = On
+End If
+If (Pages.Reliability = 0) OnFor 60S Then
+    PageFault = Off
+End If
+End For
+
+ForAll AIs In "AI*:*"
+If (AIs.Reliability <> 0) Then
+    AIFault = On
+End If
+If (AIs.Reliability = 0) OnFor 60S Then
+   AIFault = Off
+End If
+End For
+
+ForAll AVs In "AV*:*"
+If (AVs.Reliability <> 0) Then
+    AVFault = On
+End If
+If (AVs.Reliability = 0) OnFor 60S Then
+    AVFault = Off
+End If
+End For
+
+ForAll Loops In "CO*:*"
+If (Loops.Reliability <> 0) Then
+    COFault = On
+End If
+If (Loops.Reliability = 0) OnFor 60S Then
+    COFault = Off
+End If
+End For
+
+If PageFault Or AIFault Or AVFault Or COFault Then
+    '4192003.BV98' = On
+  Else
+    '4192003.BV98' = Off
+End If

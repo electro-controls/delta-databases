@@ -1,0 +1,35 @@
+{
+  "displayName": "HWP1_HWP2  BDC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,10"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-device-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "HWP1_HWP2  BDC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "HWP1"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "HWP2"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

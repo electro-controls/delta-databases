@@ -1,0 +1,79 @@
+{
+  "displayName": "HWP1_Fail",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "binary-value,11"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "HWP1_Fail"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "gcl-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,3"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Alarm"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Normal"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,6"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-02T03:54:08.700000-07:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Normal"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

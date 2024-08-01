@@ -1,0 +1,79 @@
+{
+  "displayName": "LagStop_Sp",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,36"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "LagStop_Sp"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "35"
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": "100"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "%"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "device,4194299"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2018-12-13T09:46:15.400000-07:00"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}
