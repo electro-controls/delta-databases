@@ -15,6 +15,7 @@ Variable B1Rate
 Variable B2Rate
 Variable B3Rate
 
+// determine how many boilers need to fire
 If Lag3Latch Then
   Lead1 = EffDemand
   Lead2 = EffDemand
@@ -45,101 +46,99 @@ If (EffDemand < 'LagStop_Sp') OnFor 3S Then
   Lag3Latch = Off
 End If
 
-
-
 //Boilers enabled by heat stage.  Once enabled then fire rate scaled of
 If  HW_LeadBoiler = 1 Then
-  B1Rate = Scale (Lead1, 0, 10, 0, 100, HW_B1HWSLimit_CO)
+  B1Rate = Scale (Lead1, 0, 10, 0, 100, 'B1HWSLimit_CO')
   B2Rate = Scale (Lead2, 0, 10, 0, 100, 'B2HWSLimit_CO')
-  B3Rate = Scale (Lead3, 0, 10, 0, 100, HW_B3HWSLimit_CO)
-  B1Call = Switch ( B1Call, (Lead1 * HW_B1HWSLimit_CO * 0.01), 8, 1)
+  B3Rate = Scale (Lead3, 0, 10, 0, 100, 'B3HWSLimit_CO')
+  B1Call = Switch ( B1Call, (Lead1 * 'B1HWSLimit_CO' * 0.01), 8, 1)
   B2Call = Switch ( B2Call, (Lead2 * 'B2HWSLimit_CO' * 0.01), 8, 1)
-  B3Call = Switch ( B3Call, (Lead3 * HW_B3HWSLimit_CO * 0.01), 8, 1)
+  B3Call = Switch ( B3Call, (Lead3 * 'B3HWSLimit_CO' * 0.01), 8, 1)
 ElseIf  HW_LeadBoiler = 2 Then
-  B1Rate = Scale (Lead3, 0, 10, 0, 100, HW_B1HWSLimit_CO)
+  B1Rate = Scale (Lead3, 0, 10, 0, 100, 'B1HWSLimit_CO')
   B2Rate = Scale (Lead1, 0, 10, 0, 100, 'B2HWSLimit_CO')
-  B3Rate = Scale (Lead2, 0, 10, 0, 100, HW_B3HWSLimit_CO)
-  B1Call = Switch ( B1Call, (Lead3 * HW_B1HWSLimit_CO * 0.01), 8, 1)
+  B3Rate = Scale (Lead2, 0, 10, 0, 100, 'B3HWSLimit_CO')
+  B1Call = Switch ( B1Call, (Lead3 * 'B1HWSLimit_CO' * 0.01), 8, 1)
   B2Call = Switch ( B2Call, (Lead1 * 'B2HWSLimit_CO' * 0.01), 8, 1)
-  B3Call = Switch ( B3Call, (Lead2 * HW_B3HWSLimit_CO * 0.01), 8, 1)
+  B3Call = Switch ( B3Call, (Lead2 * 'B3HWSLimit_CO' * 0.01), 8, 1)
 ElseIf  HW_LeadBoiler = 3 Then
-  B1Rate = Scale (Lead2, 0, 10, 0, 100, HW_B1HWSLimit_CO)
+  B1Rate = Scale (Lead2, 0, 10, 0, 100, 'B1HWSLimit_CO')
   B2Rate = Scale (Lead3, 0, 10, 0, 100, 'B2HWSLimit_CO')
-  B3Rate = Scale (Lead1, 0, 10, 0, 100, HW_B3HWSLimit_CO)
-  B1Call = Switch ( B1Call, (Lead2 * HW_B1HWSLimit_CO * 0.01), 8, 1)
+  B3Rate = Scale (Lead1, 0, 10, 0, 100, 'B3HWSLimit_CO')
+  B1Call = Switch ( B1Call, (Lead2 * 'B1HWSLimit_CO' * 0.01), 8, 1)
   B2Call = Switch ( B2Call, (Lead3 * 'B2HWSLimit_CO' * 0.01), 8, 1)
-  B3Call = Switch ( B3Call, (Lead1 * HW_B3HWSLimit_CO * 0.01), 8, 1)
+  B3Call = Switch ( B3Call, (Lead1 * 'B3HWSLimit_CO' * 0.01), 8, 1)
 End If
 
 //boiler firerate
 If B1Enable Then
-  B1_Firerate = Scale (B1Rate, 0, 0, 20, 100, 100)
+  'B1_Firerate' = Scale (B1Rate, 0, 0, 20, 100, 100)
 Else
-  B1_Firerate = 0
+  'B1_Firerate' = 0
 End If
 
 If B2Enable Then
-  B2_Firerate = Scale (B2Rate, 0, 0, 20, 100, 100)
+  'B2_Firerate' = Scale (B2Rate, 0, 0, 20, 100, 100)
 Else
-  B2_Firerate = 0
+  'B2_Firerate' = 0
 End If
 
 If B3Enable Then
-  B3_Firerate = Scale (B3Rate, 0, 0, 20, 100, 100)
+  'B3_Firerate' = Scale (B3Rate, 0, 0, 20, 100, 100)
 Else
-  B3_Firerate = 0
+  'B3_Firerate' = 0
 End If
 
 //boiler pump 3 and boiler 3 enables
 If B3Call Then
-  BP3_Enable = On
-  If HW_BP3_Status OnFor 20S Then
+  'BP3_Enable' = On
+  If 'HW_BP3_Status' OnFor 20S Then
     B3Enable = On
   End If
 Else
   B3Enable = Off
   If B3Enable OffFor 20M Then
-    BP3_Enable = Off
+    'BP3_Enable' = Off
   End If
 End If
 
 //boiler pump 2 and boiler 2 enables
 If B2Call Then
   BP2_Enable = On
-  If HW_BP2_Status OnFor 20S Then
+  If 'HW_BP2_Status' OnFor 20S Then
     B2Enable = On
   End If
 Else
   B2Enable = Off
   If B2Enable OffFor 20M Then
-    BP2_Enable = Off
+    'BP2_Enable' = Off
   End If
 End If
 
 //boiler pump 1 and boiler 1 enables
 If B1Call Then
-  BP1_Enable = On
-  If HW_BP1_Status OnFor 20S Then
+  'BP1_Enable' = On
+  If 'HW_BP1_Status' OnFor 20S Then
     B1Enable = On
   End If
 Else
   B1Enable = Off
   If B1Enable OffFor 20M Then
-    BP1_Enable = Off
+    'BP1_Enable' = Off
   End If
 End If
 
 //boiler startup loop reset
 IfOnce B1Call Then
-  HW_B1HWSLimit_CO.Bias = 20
+  'B1HWSLimit_CO.Bias' = 20
 End If
 
 IfOnce B2Call Then
-  'B2HWSLimit_CO'.Bias = 20
+  'B2HWSLimit_CO.Bias' = 20
 End If
 
 IfOnce B3Call Then
-  HW_B3HWSLimit_CO.Bias = 20
+  'B3HWSLimit_CO.Bias' = 20
 End If
 
 Variable HWBiasHold
@@ -154,5 +153,11 @@ If HWBiasHold OnFor 30S Then
 End If
 
 If HWBiasHold Then
-  HWS_CO.Bias = HWS_CO.Bias
+  'HWS_CO.Bias' = 'HWS_CO.Bias'
 End If
+
+
+// declaring related analog-values -- remove all code below this line when complete
+'B3HWSLimit_Sp'
+'B2HWSLimit_Sp'
+'B1HWSLimit_Sp'
