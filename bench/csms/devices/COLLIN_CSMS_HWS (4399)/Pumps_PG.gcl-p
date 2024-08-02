@@ -88,11 +88,11 @@ If 'HWP1Status' And HWP1Call Then
     End Do
 End If
 
-//If HWP1Enable Then
-//    HWP1Speed = (HWP1ramp * 0.01) * PumpSignal
-//  Else
-//    HWP1Speed = 0
-//End If
+If HWP1Enable Then
+   'HWP1_Speed' = (HWP1ramp * 0.01) * PumpSignal
+ Else
+   'HWP1_Speed' = 0
+End If
 
 //HWP2 Demand 
 Variable HWP2ramp
@@ -106,18 +106,18 @@ If 'HWP2Status' And HWP2Call Then
     End Do
 End If
 
-//If HWP2Enable Then
-//    HWP2Speed = (HWP2ramp * 0.01) * PumpSignal
-//  Else
-//    HWP2Speed = 0
-//End If
+If HWP2Enable Then
+   'HWP2_Speed' = (HWP2ramp * 0.01) * PumpSignal
+ Else
+   'HWP2_Speed' = 0
+End If
 
 //Flow interlock
 Variable DpFlow
 
-//DpFlow = Switch ( DpFlow, HWDp, (HWDp_Sp * 0.3), (HWDp_Sp * 0.1))
+DpFlow = Switch ( DpFlow, 'HWDp', ('HWDp_Sp' * 0.3), ('HWDp_Sp' * 0.1))
 
-If ('HWP1Status' Or 'HWP2Status') Then //And DpFlow Then
+If ('HWP1Status' Or 'HWP2Status') And DpFlow Then
     'PrimaryFlow' = On
   Else
     'PrimaryFlow' = Off

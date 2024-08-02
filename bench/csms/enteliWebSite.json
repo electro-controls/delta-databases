@@ -5,21 +5,6 @@
     {
       "action": "update",
       "device": 4399,
-      "objectId": "bi,6",
-      "objectName": "BP2Status",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/BP2Status.json",
-        "scheme": "file"
-      },
-      "date": "8/1/2024, 10:51:37 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
       "objectId": "pg,9",
       "objectName": "Critical_PG",
       "siteName": "Bench",
@@ -45,6 +30,171 @@
         "scheme": "file"
       },
       "date": "8/1/2024, 2:08:19 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ao,5",
+      "objectName": "B1_Firerate",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B1_Firerate.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 10:24:23 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ao,4",
+      "objectName": "B2_Firerate",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B2_Firerate.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 10:25:01 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ao,9",
+      "objectName": "B3_Firerate",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B3_Firerate.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 10:25:58 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "ao,4",
+      "objectName": "HWP1_Speed",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/HWP1_Speed.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 10:41:07 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "ao,5",
+      "objectName": "HWP2_Speed",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/HWP2_Speed.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 10:41:23 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bi,6",
+      "objectName": "BP2Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/BP2Status.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 10:43:47 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "ai,12",
+      "objectName": "B2_HWS_Temp copy",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B2_HWS_Temp copy.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 10:46:52 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ai,7",
+      "objectName": "B2_HWS_Temp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B2_HWS_Temp.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 10:47:24 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "ai,12",
+      "objectName": "B3_HWS_Temp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B3_HWS_Temp.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 10:49:29 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,6",
+      "objectName": "Pumps_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/Pumps_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 10:53:55 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "aic,55",
+      "objectName": "FluidDp_psi_AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/FluidDp_psi_AIC.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 10:57:01 AM",
       "templateTriggered": false
     }
   ],
@@ -383,24 +533,6 @@
           "lastUpdate": "2024-08-01T15:42:37.018Z"
         },
         {
-          "id": "bo,1",
-          "name": "Boiler1_Enable",
-          "fileName": "Boiler1_Enable",
-          "lastUpdate": "2024-08-01T15:42:37.018Z"
-        },
-        {
-          "id": "bo,2",
-          "name": "Boiler2_Enable",
-          "fileName": "Boiler2_Enable",
-          "lastUpdate": "2024-08-01T15:42:37.018Z"
-        },
-        {
-          "id": "bo,3",
-          "name": "BP2_Enable",
-          "fileName": "BP2_Enable",
-          "lastUpdate": "2024-08-01T15:42:37.018Z"
-        },
-        {
           "id": "bo,6",
           "name": "HWP1Enable",
           "fileName": "HWP1Enable",
@@ -717,6 +849,54 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-08-01T15:42:37.018Z"
+        },
+        {
+          "id": "ao,1",
+          "name": "B1_Firerate",
+          "fileName": "B1_Firerate",
+          "lastUpdate": "2024-08-02T16:24:19.478Z"
+        },
+        {
+          "id": "ao,2",
+          "name": "B2_Firerate",
+          "fileName": "B2_Firerate",
+          "lastUpdate": "2024-08-02T16:24:52.557Z"
+        },
+        {
+          "id": "ao,3",
+          "name": "B3_Firerate",
+          "fileName": "B3_Firerate",
+          "lastUpdate": "2024-08-02T16:24:54.241Z"
+        },
+        {
+          "id": "aoc,50",
+          "name": "HWPSpeed_Pct_AOC",
+          "fileName": "HWPSpeed_Pct_AOC",
+          "lastUpdate": "2024-08-02T16:40:22.063Z"
+        },
+        {
+          "id": "ao,4",
+          "name": "HWP1_Speed",
+          "fileName": "HWP1_Speed",
+          "lastUpdate": "2024-08-02T16:41:07.190Z"
+        },
+        {
+          "id": "ao,5",
+          "name": "HWP2_Speed",
+          "fileName": "HWP2_Speed",
+          "lastUpdate": "2024-08-02T16:41:23.170Z"
+        },
+        {
+          "id": "ai,12",
+          "name": "B3_HWS_Temp",
+          "fileName": "B3_HWS_Temp",
+          "lastUpdate": "2024-08-02T16:49:29.545Z"
+        },
+        {
+          "id": "aic,55",
+          "name": "FluidDp_psi_AIC",
+          "fileName": "FluidDp_psi_AIC",
+          "lastUpdate": "2024-08-02T16:56:03.140Z"
         }
       ]
     }

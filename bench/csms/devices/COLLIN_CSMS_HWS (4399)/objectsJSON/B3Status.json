@@ -1,5 +1,5 @@
 {
-  "displayName": "BP2Status",
+  "displayName": "B3Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-input,6"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "BP2Status"
+    "value": "B3Status"
   },
   "description": {
     "$base": "String",
