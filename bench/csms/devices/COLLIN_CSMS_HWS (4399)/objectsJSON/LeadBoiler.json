@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "1"
   },
   "gcl-value": {
     "$base": "Unsigned",
@@ -73,11 +73,11 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2022-11-24T20:16:54.700000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",
-    "value": "Boiler 2"
+    "value": "Boiler 1"
   },
   "hal-flags": {
     "$base": "BitString",

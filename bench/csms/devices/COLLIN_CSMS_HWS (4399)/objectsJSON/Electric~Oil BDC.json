@@ -1,5 +1,5 @@
 {
-  "displayName": "Electric/Oil BDC",
+  "displayName": "Electric~Oil BDC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "bdc,6"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Electric/Oil BDC"
+    "value": "Electric~Oil BDC"
   },
   "description": {
     "$base": "String",

@@ -54,7 +54,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive BDC"
+    "value": "Active~Inactive BDC"
   },
   "polarity": {
     "$base": "Enumerated",
@@ -71,29 +71,29 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:00:00.400000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2022-11-25T03:41:52.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:00:00.400000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "8318"
+    "value": 0
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2022-03-01T08:32:39.100000-07:00"
+    "value": "2000-01-03T06:20:45.700000-07:00"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "416"
+    "value": "400"
   },
   "time-delay": {
     "$base": "Unsigned",

@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "B1HWSLimit_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -19,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": "100"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -51,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "383"
+    "value": "433"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -89,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "171.381"
+    "value": "302"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -118,7 +117,7 @@
   },
   "setpoint": {
     "$base": "Real",
-    "value": "180"
+    "value": 0
   },
   "setpoint-reference": {
     "$base": "Sequence",
@@ -260,7 +259,7 @@
   },
   "average-error": {
     "$base": "Real",
-    "value": "9.34078"
+    "value": "60.3065"
   },
   "previous-error": {
     "$base": "Real",
@@ -286,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "572532"
+      "value": "1526485"
     }
   },
   "self-adj-enable": {
@@ -301,20 +300,20 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "576000"
+      "value": "1530000"
     }
   },
   "setpoint-crossings": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "1"
   },
   "setpoint-crossing-flag": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "145.724"
+    "value": "302"
   },
   "hal-flags": {
     "$base": "BitString",

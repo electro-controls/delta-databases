@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "HWP1_Speed",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -59,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "HWPSpeed_Pct_AOC"
   },
   "min-pres-value": {
     "$base": "Real",

@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -54,7 +54,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive BDC"
+    "value": "Active~Inactive BDC"
   },
   "polarity": {
     "$base": "Enumerated",
@@ -71,29 +71,29 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2022-11-25T03:51:19.30"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2022-11-25T04:08:03.000000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2022-11-25T04:08:03.000000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "115"
+    "value": 0
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2022-03-01T08:26:34.600000-07:00"
+    "value": "2000-01-03T06:21:47.900000-07:00"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "391"
+    "value": "408"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -145,7 +145,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Active"
+    "value": "Inactive"
   },
   "hal-flags": {
     "$base": "BitString",

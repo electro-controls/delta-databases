@@ -1,5 +1,5 @@
 {
-  "displayName": "LowHigh/LowLow BDC",
+  "displayName": "LowHigh~LowLow BDC",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "bdc,7"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "LowHigh/LowLow BDC"
+    "value": "LowHigh~LowLow BDC"
   },
   "description": {
     "$base": "String",

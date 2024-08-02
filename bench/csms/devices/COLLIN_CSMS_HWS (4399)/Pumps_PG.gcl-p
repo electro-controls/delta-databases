@@ -88,7 +88,7 @@ If 'HWP1Status' And HWP1Call Then
     End Do
 End If
 
-If HWP1Enable Then
+If 'HWP1Enable' Then
    'HWP1_Speed' = (HWP1ramp * 0.01) * PumpSignal
  Else
    'HWP1_Speed' = 0
@@ -106,7 +106,7 @@ If 'HWP2Status' And HWP2Call Then
     End Do
 End If
 
-If HWP2Enable Then
+If 'HWP2Enable' Then
    'HWP2_Speed' = (HWP2ramp * 0.01) * PumpSignal
  Else
    'HWP2_Speed' = 0
@@ -123,4 +123,4 @@ If ('HWP1Status' Or 'HWP2Status') And DpFlow Then
     'PrimaryFlow' = Off
 End If
 
-//End of Program 
+//End of Program

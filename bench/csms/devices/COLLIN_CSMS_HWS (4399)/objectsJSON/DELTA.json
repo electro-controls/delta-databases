@@ -62,15 +62,15 @@
   },
   "password-start-date": {
     "$base": "DateTime",
-    "value": "2011-06-15T10:31:32.000000-06:00"
+    "value": "2000-01-03T06:21:17.900000-07:00"
   },
   "password-expiry-date": {
     "$base": "DateTime",
-    "value": "2011-12-14T10:31:32.000000-07:00"
+    "value": "2000-07-03T06:21:17.000000-06:00"
   },
   "login-last-date": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "login-last-device": {
     "$base": "ObjectIdentifier",
@@ -86,13 +86,14 @@
   },
   "login-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "login-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "login-failed-date": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "login-max-failures": {
     "$base": "Unsigned",
@@ -118,11 +119,11 @@
   },
   "login-lockout-date": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "loggoff-last-date": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "user-enabled": {
     "$base": "Enumerated",
@@ -400,10 +401,6 @@
       "value": "delete"
     },
     "62": {
-      "$base": "Enumerated",
-      "value": "delete"
-    },
-    "63": {
       "$base": "Enumerated",
       "value": "delete"
     },
