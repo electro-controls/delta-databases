@@ -1,0 +1,93 @@
+{
+  "displayName": "DP_Selection",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,11046"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-input-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "DP_Selection"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Floor1"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Floor2"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Floor3"
+    },
+    "4": {
+      "$base": "String",
+      "value": "Average"
+    },
+    "$base": "Array"
+  },
+  "voltage-range": {
+    "1": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "lighting"
+  }
+}
