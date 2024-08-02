@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Output_Pct_AOC"
+    "value": "FireRate0_10vdc"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -70,7 +70,7 @@
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.392157"
+    "value": "0.404285"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "16"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -140,7 +140,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -173,10 +176,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -195,7 +195,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,9"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -219,7 +219,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,5"
+      "unspecifiedValue": "true"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -243,7 +243,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,65984"
     },
     "$base": "Array"
   },
@@ -262,11 +262,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-08-02T08:02:36.50"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2023-10-26T06:50:52.20"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -278,7 +278,7 @@
     },
     "8": {
       "$base": "DateTime",
-      "value": "2024-06-10T13:32:58.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "9": {
       "$base": "DateTime",
@@ -286,7 +286,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-08-02T08:02:36.40"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -310,7 +310,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2024-08-02T08:01:41.70"
+      "value": "2000-01-03T06:28:59.20"
     },
     "$base": "Array"
   },

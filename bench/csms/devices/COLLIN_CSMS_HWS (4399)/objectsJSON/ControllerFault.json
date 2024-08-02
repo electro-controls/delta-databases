@@ -1,16 +1,16 @@
 {
-  "displayName": "SystemEnable",
+  "displayName": "ControllerFault",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-value,1"
+    "value": "multi-state-value,98"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "binary-value"
+    "value": "multi-state-value"
   },
   "object-name": {
     "$base": "String",
-    "value": "SystemEnable"
+    "value": "ControllerFault"
   },
   "description": {
     "$base": "String",
@@ -18,19 +18,19 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "present-value": {
-    "$base": "Enumerated",
-    "value": "active"
+    "$base": "Unsigned",
+    "value": "1"
   },
   "gcl-value": {
-    "$base": "Enumerated",
-    "value": "active"
+    "$base": "Unsigned",
+    "value": "1"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,2"
+    "value": "mic,10"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -46,31 +46,50 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "missing-cfg-object"
   },
   "out-of-service": {
     "$base": "Boolean",
     "value": 0
   },
-  "active-text": {
-    "$base": "String",
-    "value": "Active"
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "5"
   },
-  "inactive-text": {
-    "$base": "String",
-    "value": "Inactive"
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Normal"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Page Fault"
+    },
+    "3": {
+      "$base": "String",
+      "value": "AI Fault"
+    },
+    "4": {
+      "$base": "String",
+      "value": "AV Fault"
+    },
+    "5": {
+      "$base": "String",
+      "value": "CO Fault"
+    },
+    "$base": "Array"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,3"
+    "value": "program,98"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-03T09:44:49.900000-07:00"
+    "value": "2024-08-02T13:47:28.200000-06:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "Active"
+    "value": "Normal"
   },
   "hal-flags": {
     "$base": "BitString",

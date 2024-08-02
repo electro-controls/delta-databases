@@ -125,21 +125,6 @@
     {
       "action": "update",
       "device": 4399,
-      "objectId": "ai,3",
-      "objectName": "OSA_Temp",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/OSA_Temp.json",
-        "scheme": "file"
-      },
-      "date": "8/2/2024, 11:54:30 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
       "objectId": "av,91",
       "objectName": "Eff_OAT",
       "siteName": "Bench",
@@ -942,6 +927,18 @@
           "name": "B2Alarm",
           "fileName": "B2Alarm",
           "lastUpdate": "2024-08-02T21:10:17.107Z"
+        },
+        {
+          "id": "mv,98",
+          "name": "ControllerFault",
+          "fileName": "ControllerFault",
+          "lastUpdate": "2024-08-02T21:44:13.264Z"
+        },
+        {
+          "id": "mic,10",
+          "name": "FaultDetection_MIC",
+          "fileName": "FaultDetection_MIC",
+          "lastUpdate": "2024-08-02T21:45:14.920Z"
         }
       ]
     }

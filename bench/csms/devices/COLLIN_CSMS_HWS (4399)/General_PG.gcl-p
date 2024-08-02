@@ -8,7 +8,6 @@ IfOnce PowerUp Then
   'SystemEnable' = On
   'HWS_Sp' = 150
   'OATInt1TimeLeft' = 0.1
-
 End If
 
 //Intercontroller Links

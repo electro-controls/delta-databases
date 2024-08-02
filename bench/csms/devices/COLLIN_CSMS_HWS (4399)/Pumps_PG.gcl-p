@@ -1,17 +1,5 @@
 //Pumps Program
 
-
-//Pump Failure
-If ('HWP1Enable' < 'HWPLagStop_Sp') And ('HWPLagAssist' OnFor 20M) Or (Not 'SystemEnable') Or ('HWPLagRelease') Then
-   'HWPLagAssist' = Off
-End If
-
-//If HWPLagAssist Then
-//    PumpSignal = Scale (HWDp_CO, 0, 0, 0, 100, 100)
-//  Else
-//    PumpSignal = Scale (HWDp_CO, 0, 0, 0, 50, 100)
-//End If
-
 //Pump Failure
 If 'HWP1Enable' And (Not 'HWP1Status') OnFor 'PumpFailDly_Sp':S Then
     'HWP1_Fail' = On
