@@ -1,181 +1,158 @@
 //Boiler sequence
 Variable Lead1
 Variable Lead2
-//Variable Lag2Latch
+Variable Lead3
+Variable Lag2Latch
+Variable Lag3Latch
 Variable EffDemand
-Variable B1Call As Integer
-Variable B2Call As Integer
-
-
-If 'Lag2Latch' Then
-    Lead1 = EffDemand
-    Lead2 = EffDemand
-    EffDemand = Scale ('Eff_Demand', 0, 0, 0, 100, 100)
-  Else
-    Lead1 = EffDemand
-    Lead2 = 0
-    EffDemand = Scale ('Eff_Demand', 0, 0, 0, 50, 100)
-End If
-
-If (EffDemand > 'LagStart_Sp') Then
-    DoEvery 30S
-    'LagLatchUptime' = 'LagLatchUptime' + 0.5
-    End Do
-  Else
-    'LagLatchUptime' = 0
-End If
-
-If ('LagLatchUptime' > 'InterstageDly_Sp') Or ('B1_Fail' Or 'B2_Fail') Then
-    'Lag2Latch' = On
-End If
-
-
-If (EffDemand < 'LagStop_Sp') And (Not 'B1_Fail' Or Not 'B2_Fail') OnFor 30:S Then
-    'Lag2Latch' = Off
-End If
-
-//Boilers enabled by heat stage.  Once enabled then fire rate scaled off
-//Eff_Demand
+Variable B1Call
+Variable B2Call
+Variable B3Call
+Variable B1Enable
+Variable B2Enable
+Variable B3Enable
 Variable B1Rate
 Variable B2Rate
+Variable B3Rate
 
-If 'LeadBoiler' = 1 Then
-  B1Rate = Scale (Lead1, 0, 12, 0, 100, 100)
-  B2Rate = Scale (Lead2, 0, 12, 0, 100, 100)
-  B1Call = Switch ( B1Call, Lead1, 8, 1)
-  B2Call = Switch ( B2Call, Lead2, 8, 1)
-  Else
-  B1Rate = Scale (Lead2, 0, 12, 0, 100, 100)
-  B2Rate = 50 Scale (Lead1, 0, 12, 0, 100, 100)
-  B1Call = Switch ( B1Call, Lead2, 8, 1)
-  B2Call = Switch ( B2Call, Lead1, 8, 1)
+If Lag3Latch Then
+  Lead1 = EffDemand
+  Lead2 = EffDemand
+  Lead3 = EffDemand
+  EffDemand = Scale ('Eff_Demand', 0, 0, 0, 100, 100)
+ElseIf  Lag2Latch Then
+  Lead1 = EffDemand
+  Lead2 = EffDemand
+  Lead3 = 0
+  EffDemand = Scale ('Eff_Demand', 0, 0, 0, 66, 100) //Min (100, HWDemand * 2)
+Else
+  Lead1 = EffDemand
+  Lead2 = 0
+  Lead3 = 0
+  EffDemand = Scale ('Eff_Demand', 0, 0, 0, 33, 100) //Min (100, HWDemand * 3)
 End If
 
-//Boiler Failure
-If 'Boiler1_Enable' And (Not 'B1Status') OnFor 60:S Then
-    'B1_Fail' = On
-  Else
-    'B1_Fail' = Off
+If (EffDemand > 'LagStart_Sp') OnFor 'InterstageDly_Sp':S Then
+  Lag2Latch = On
+End If
+If (EffDemand < 'LagStop_Sp') And (Lag3Latch OffFor 5S) Then
+  Lag2Latch = Off
+End If
+If ((EffDemand > 'LagStart_Sp') And Lag2Latch) OnFor 'InterstageDly_Sp':S Then
+  Lag3Latch = On
+End If
+If (EffDemand < 'LagStop_Sp') OnFor 3S Then
+  Lag3Latch = Off
 End If
 
-If 'B2Alarm' Or ('Boiler2_Enable' And (Not 'B2Status')) OnFor 60:S Then
-    'B2_Fail' = On
-  Else
-    'B2_Fail' = Off
+
+
+//Boilers enabled by heat stage.  Once enabled then fire rate scaled of
+If  HW_LeadBoiler = 1 Then
+  B1Rate = Scale (Lead1, 0, 10, 0, 100, HW_B1HWSLimit_CO)
+  B2Rate = Scale (Lead2, 0, 10, 0, 100, 'B2HWSLimit_CO')
+  B3Rate = Scale (Lead3, 0, 10, 0, 100, HW_B3HWSLimit_CO)
+  B1Call = Switch ( B1Call, (Lead1 * HW_B1HWSLimit_CO * 0.01), 8, 1)
+  B2Call = Switch ( B2Call, (Lead2 * 'B2HWSLimit_CO' * 0.01), 8, 1)
+  B3Call = Switch ( B3Call, (Lead3 * HW_B3HWSLimit_CO * 0.01), 8, 1)
+ElseIf  HW_LeadBoiler = 2 Then
+  B1Rate = Scale (Lead3, 0, 10, 0, 100, HW_B1HWSLimit_CO)
+  B2Rate = Scale (Lead1, 0, 10, 0, 100, 'B2HWSLimit_CO')
+  B3Rate = Scale (Lead2, 0, 10, 0, 100, HW_B3HWSLimit_CO)
+  B1Call = Switch ( B1Call, (Lead3 * HW_B1HWSLimit_CO * 0.01), 8, 1)
+  B2Call = Switch ( B2Call, (Lead1 * 'B2HWSLimit_CO' * 0.01), 8, 1)
+  B3Call = Switch ( B3Call, (Lead2 * HW_B3HWSLimit_CO * 0.01), 8, 1)
+ElseIf  HW_LeadBoiler = 3 Then
+  B1Rate = Scale (Lead2, 0, 10, 0, 100, HW_B1HWSLimit_CO)
+  B2Rate = Scale (Lead3, 0, 10, 0, 100, 'B2HWSLimit_CO')
+  B3Rate = Scale (Lead1, 0, 10, 0, 100, HW_B3HWSLimit_CO)
+  B1Call = Switch ( B1Call, (Lead2 * HW_B1HWSLimit_CO * 0.01), 8, 1)
+  B2Call = Switch ( B2Call, (Lead3 * 'B2HWSLimit_CO' * 0.01), 8, 1)
+  B3Call = Switch ( B3Call, (Lead1 * HW_B3HWSLimit_CO * 0.01), 8, 1)
 End If
 
+//boiler firerate
+If B1Enable Then
+  B1_Firerate = Scale (B1Rate, 0, 0, 20, 100, 100)
+Else
+  B1_Firerate = 0
+End If
 
+If B2Enable Then
+  B2_Firerate = Scale (B2Rate, 0, 0, 20, 100, 100)
+Else
+  B2_Firerate = 0
+End If
 
-Variable HWP1Manual
-Variable HWP2Manual
+If B3Enable Then
+  B3_Firerate = Scale (B3Rate, 0, 0, 20, 100, 100)
+Else
+  B3_Firerate = 0
+End If
 
-//FireRates
+//boiler pump 3 and boiler 3 enables
+If B3Call Then
+  BP3_Enable = On
+  If HW_BP3_Status OnFor 20S Then
+    B3Enable = On
+  End If
+Else
+  B3Enable = Off
+  If B3Enable OffFor 20M Then
+    BP3_Enable = Off
+  End If
+End If
+
+//boiler pump 2 and boiler 2 enables
+If B2Call Then
+  BP2_Enable = On
+  If HW_BP2_Status OnFor 20S Then
+    B2Enable = On
+  End If
+Else
+  B2Enable = Off
+  If B2Enable OffFor 20M Then
+    BP2_Enable = Off
+  End If
+End If
+
+//boiler pump 1 and boiler 1 enables
+If B1Call Then
+  BP1_Enable = On
+  If HW_BP1_Status OnFor 20S Then
+    B1Enable = On
+  End If
+Else
+  B1Enable = Off
+  If B1Enable OffFor 20M Then
+    BP1_Enable = Off
+  End If
+End If
+
+//boiler startup loop reset
+IfOnce B1Call Then
+  HW_B1HWSLimit_CO.Bias = 20
+End If
+
+IfOnce B2Call Then
+  'B2HWSLimit_CO'.Bias = 20
+End If
+
+IfOnce B3Call Then
+  HW_B3HWSLimit_CO.Bias = 20
+End If
+
 Variable HWBiasHold
-Variable B1FirerateScale
-Variable B2FirerateScale
-Variable B1FRThreshold
-Variable B2FRThreshold
-
-If 'B1Status' OnFor 20S Then //For cut in and cut out of Boiler
-  B1FRThreshold = 12
-Else
-  B1FRThreshold = 23
-End If
-
-If 'B2Status' OnFor 20S Then //For cut in and cut out of Boiler
-  B2FRThreshold = 12
-Else
-  B2FRThreshold = 23
-End If
-
-
-B1FirerateScale = Scale (B1Rate, 0, 0, B1FRThreshold, 100, 100) //Cut in is at 21%
-B2FirerateScale = Scale (B2Rate, 0, 0, B2FRThreshold, 100, 100) //Cut in is at 21%
-
-
-//If HWHighLimit Then
-//  Boiler1_Enable = Off
-//  ElseIf  (B1Call And PrimaryFlow) Then
-//    3003.AO5 = B1FirerateScale * B1HWSLimit_CO * 0.01
-//  ElseIf  (LeadBoiler = 2) And (Not Lag2Latch) Then
-//    3003.AO5 = 0
-//  ElseIf  ((Not B1Call) And (B1Rate < 1)) OnFor 7:M Then
-//    3003.AO5 = 0
-//End If
-
-//If HWHighLimit  Then  
-//If HWHighLimit Then
-//    bo2 = 0
-//  ElseIf  (B2Call And PrimaryFlow) Then
-//    3003.AO6 = B2FirerateScale * B2HWSLimit_CO * 0.01
-//  ElseIf  (LeadBoiler = 1) And (Not Lag2Latch) Then
-//    3003.AO6 = 0
-//  ElseIf  ((Not B2Call) And (B2Rate < 1)) OnFor 7:M Then
-//    3003.AO6 = 0
-//End If
-
-If 'HWHighLimit' Then
-  'Boiler1_Enable' = Off
-  ElseIf  (B1Call And 'PrimaryFlow') And (B1Rate > 30) Then
-    'Boiler1_Enable' = On
-  ElseIf  ('LeadBoiler' = 2) And (Not 'Lag2Latch') Then
-    'Boiler1_Enable' = Off
-  ElseIf  ((Not B1Call) And (B1Rate < 1)) OnFor 5M Then
-    'Boiler1_Enable' = Off
-End If
-
- 
-If 'HWHighLimit' Or ('B2HWSLimit_CO' < 50) Then
-    'Boiler2_Enable' = Off
-  ElseIf  (B2Call And 'PrimaryFlow') And (B2Rate > 30) Then
-    'Boiler2_Enable' = On
-  ElseIf  ('LeadBoiler' = 1) And (Not 'Lag2Latch') Then
-    'Boiler2_Enable' = Off
-  ElseIf  ((Not B2Call) And (B2Rate < 1)) OnFor 5:M Then
-    'Boiler2_Enable' = Off
-End If
-
-
-If B2Call And (B2Rate > 25) Then
-  'BP2_Enable' = On
-End If
-If 'Boiler2_Enable' OffFor 10:M Then
-  'BP2_Enable' = Off
-End If
-
-  
-
-IfOnce B1Call OnFor 30S Then
+//bias hold on starup
+IfOnce B1Call Or B2Call Or B3Call Then
   HWBiasHold = On
-//  3000.CO31.Bias = 50
-End If
-IfOnce B2Call OnFor 30S Then
-  HWBiasHold = On
-  'B2HWSLimit_CO.Bias' = 50
 End If
 
-If HWBiasHold OnFor 120S Then
-    HWBiasHold = Off
+
+If HWBiasHold OnFor 30S Then
+  HWBiasHold = Off
 End If
 
 If HWBiasHold Then
-  'HWS_CO.Bias' = 'HWS_CO.Bias'
+  HWS_CO.Bias = HWS_CO.Bias
 End If
-
-
-Variable HWBiasCorrect
-
-IfOnce ('HWS' > ('HWS_Sp' + 15)) And (HWBiasCorrect OffFor 5:M) Then
-    HWBiasCorrect = On
-End If
-
-If HWBiasCorrect Then
-    HWBiasCorrect = Off
-End If
-
-If HWBiasCorrect Then
-    'HWS_CO.Bias' = 'HWS_CO.Bias' * 0.8
-End If
-
-
-//End of Program

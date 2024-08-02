@@ -12,10 +12,12 @@
 If (Not 'PrimaryFlow') Or 'HWHighLimit' Or ('HWS' < 0) Then
   'Boiler1_Enable' = Off
   'Boiler2_Enable' = Off
+  'Boiler3_Enable' = Off
 
  Else
   Relinquish 'Boiler1_Enable'
   Relinquish 'Boiler2_Enable'
+  Relinquish 'Boiler3_Enable'
 
 End If
 

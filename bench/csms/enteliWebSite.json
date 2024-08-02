@@ -1,7 +1,53 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [],
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bi,6",
+      "objectName": "BP2Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/BP2Status.json",
+        "scheme": "file"
+      },
+      "date": "8/1/2024, 10:51:37 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,9",
+      "objectName": "Critical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/Critical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/1/2024, 2:08:16 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,4",
+      "objectName": "Boiler_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/Boiler_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/1/2024, 2:08:19 PM",
+      "templateTriggered": false
+    }
+  ],
   "devices": [
     {
       "number": 4399,

@@ -2,5 +2,23 @@
   "name": "",
   "ipAddress": "http://localhost",
   "uploadQueue": [],
-  "devices": []
+  "devices": [
+    {
+      "number": 1100,
+      "objects": [
+        {
+          "id": "mv,50",
+          "name": "LeadBoiler",
+          "fileName": "LeadBoiler",
+          "lastUpdate": "2024-08-01T23:00:40.016Z"
+        },
+        {
+          "id": "bv,1",
+          "name": "SystemEnable",
+          "fileName": "SystemEnable",
+          "lastUpdate": "2024-08-01T23:00:47.410Z"
+        }
+      ]
+    }
+  ]
 }
