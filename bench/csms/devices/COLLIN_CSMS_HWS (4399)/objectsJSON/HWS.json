@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "-51.8926"
+    "value": "-58"
   },
   "last-value": {
     "$base": "Real",
@@ -58,7 +58,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "436"
+    "value": "349"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "1526226"
+      "value": "1635006"
     }
   },
   "ad-value": {
