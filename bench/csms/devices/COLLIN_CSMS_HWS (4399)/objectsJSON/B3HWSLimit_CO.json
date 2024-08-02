@@ -1,8 +1,9 @@
 {
-  "displayName": "B2HWSLimit_CO",
+  "$base": "Object",
+  "displayName": "B3HWSLimit_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "loop,32"
+    "value": "loop,33"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +11,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "B2HWSLimit_CO"
+    "value": "B3HWSLimit_CO"
   },
   "description": {
     "$base": "String",
@@ -18,7 +19,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "present-value": {
     "$base": "Real",
@@ -78,7 +79,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-input,8"
+      "value": "analog-input,12"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -103,7 +104,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,32"
+      "value": "analog-value,33"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -126,7 +127,7 @@
       "type": "0-BACnetObjectPropertyReference",
       "objectIdentifier": {
         "$base": "ObjectIdentifier",
-        "value": "analog-value,32"
+        "value": "analog-value,33"
       },
       "propertyIdentifier": {
         "$base": "Enumerated",

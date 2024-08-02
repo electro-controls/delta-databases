@@ -1,8 +1,9 @@
 {
-  "displayName": "Eff_OAT",
+  "$base": "Object",
+  "displayName": "B3HWSLimit_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,91"
+    "value": "analog-value,33"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +11,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Eff_OAT"
+    "value": "B3HWSLimit_Sp"
   },
   "description": {
     "$base": "String",
@@ -22,11 +23,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "32"
+    "value": "180"
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "-58"
+    "value": "180"
   },
   "status-flags": {
     "$base": "BitString",
@@ -54,11 +55,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,2"
+    "value": "device,361003"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-02T03:54:02.700000-07:00"
+    "value": "2022-11-24T20:16:54.200000-07:00"
   },
   "cov-increment": {
     "$base": "Real",

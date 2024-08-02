@@ -14,25 +14,4 @@ End If
 //Intercontroller Links
 'Eff_OAT' = 'OSA_Temp'
 
-
-
-//Controller will save to flash every 24 hours.  Below code initiates save
-//based on controller address so saves are staggered rather than all at once.  
- Variable T //Time
- Variable A1 //Address 1 to 59
- Variable A2 //Address 60 to 99
-
- T = Time
- A1 = 'COLLIN_CSMS_HWS.DIP_Setting'
-
- If A1 > 59 Then
-   A2 = (A1 - 59) + 99
-  Else
-   A2 = A1
- End If
-
- IfOnce T = A2 Then
-  SaveToFlash
- End If
-
  //End of Program

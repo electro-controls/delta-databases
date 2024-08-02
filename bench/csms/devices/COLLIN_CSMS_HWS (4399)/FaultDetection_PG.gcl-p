@@ -41,7 +41,7 @@ End If
 End For
 
 If PageFault Or AIFault Or AVFault Or COFault Then
-    '4192003.BV98' = On
-  Else
-    '4192003.BV98' = Off
+    // '4192003.BV98' = On
+  Else // todo uncomment
+    // '4192003.BV98' = Off
 End If

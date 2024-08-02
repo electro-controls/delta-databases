@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "-58"
+    "value": "32"
   },
   "last-value": {
     "$base": "Real",
@@ -58,7 +58,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "device-type": {
     "$base": "String",

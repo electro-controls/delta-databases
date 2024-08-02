@@ -71,61 +71,22 @@ ElseIf  HW_LeadBoiler = 3 Then
 End If
 
 //boiler firerate
-If B1Enable Then
+If B1Call Then
   'B1_Firerate' = Scale (B1Rate, 0, 0, 20, 100, 100)
 Else
   'B1_Firerate' = 0
 End If
 
-If B2Enable Then
+If B2Call Then
   'B2_Firerate' = Scale (B2Rate, 0, 0, 20, 100, 100)
 Else
   'B2_Firerate' = 0
 End If
 
-If B3Enable Then
+If B3Call Then
   'B3_Firerate' = Scale (B3Rate, 0, 0, 20, 100, 100)
 Else
   'B3_Firerate' = 0
-End If
-
-//boiler pump 3 and boiler 3 enables
-If B3Call Then
-  'BP3_Enable' = On
-  If 'HW_BP3_Status' OnFor 20S Then
-    B3Enable = On
-  End If
-Else
-  B3Enable = Off
-  If B3Enable OffFor 20M Then
-    'BP3_Enable' = Off
-  End If
-End If
-
-//boiler pump 2 and boiler 2 enables
-If B2Call Then
-  BP2_Enable = On
-  If 'HW_BP2_Status' OnFor 20S Then
-    B2Enable = On
-  End If
-Else
-  B2Enable = Off
-  If B2Enable OffFor 20M Then
-    'BP2_Enable' = Off
-  End If
-End If
-
-//boiler pump 1 and boiler 1 enables
-If B1Call Then
-  'BP1_Enable' = On
-  If 'HW_BP1_Status' OnFor 20S Then
-    B1Enable = On
-  End If
-Else
-  B1Enable = Off
-  If B1Enable OffFor 20M Then
-    'BP1_Enable' = Off
-  End If
 End If
 
 //boiler startup loop reset
@@ -156,8 +117,4 @@ If HWBiasHold Then
   'HWS_CO.Bias' = 'HWS_CO.Bias'
 End If
 
-
-// declaring related analog-values -- remove all code below this line when complete
-'B3HWSLimit_Sp'
-'B2HWSLimit_Sp'
-'B1HWSLimit_Sp'
+//End
