@@ -1,8 +1,8 @@
 {
-  "displayName": "B2Alarm",
+  "displayName": "B3Alarm",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-input,15"
+    "value": "binary-input,16"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "B2Alarm"
+    "value": "B3Alarm"
   },
   "description": {
     "$base": "String",

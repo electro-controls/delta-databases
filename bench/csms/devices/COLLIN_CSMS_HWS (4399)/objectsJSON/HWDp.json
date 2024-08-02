@@ -1,16 +1,17 @@
 {
-  "displayName": "B2Alarm",
+  "$base": "Object",
+  "displayName": "HWDp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-input,15"
+    "value": "analog-input,13"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "binary-input"
+    "value": "analog-input"
   },
   "object-name": {
     "$base": "String",
-    "value": "B2Alarm"
+    "value": "HWDp"
   },
   "description": {
     "$base": "String",
@@ -18,19 +19,27 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;not-commissioned"
+    "value": "not-commissioned"
   },
   "present-value": {
-    "$base": "Enumerated",
-    "value": "inactive"
+    "$base": "Real",
+    "value": 0
+  },
+  "last-value": {
+    "$base": "Real",
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
     "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "%"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -38,7 +47,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,3"
+    "value": "aic,55"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -46,7 +55,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "not-available"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -54,46 +63,58 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Alarm/Normal BDC"
-  },
-  "polarity": {
-    "$base": "Enumerated",
-    "value": "normal"
-  },
-  "active-text": {
-    "$base": "String",
-    "value": "Alarm"
-  },
-  "inactive-text": {
-    "$base": "String",
-    "value": "Normal"
-  },
-  "prev-change-of-state-times": {
-    "1": {
-      "$base": "DateTime",
-      "value": "2022-06-14T08:46:00.700000-06:00"
-    },
-    "2": {
-      "$base": "DateTime",
-      "value": "2022-06-14T08:45:33.70"
-    },
-    "$base": "Array"
-  },
-  "change-of-state-time": {
-    "$base": "DateTime",
-    "value": "2022-06-14T08:46:00.700000-06:00"
-  },
-  "change-of-state-count": {
-    "$base": "Unsigned",
-    "value": "416"
-  },
-  "time-of-state-count-reset": {
-    "$base": "DateTime",
-    "value": "2022-03-01T08:51:29.500000-07:00"
+    "value": ""
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "391"
+    "value": "200"
+  },
+  "min-pres-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "max-pres-value": {
+    "$base": "Real",
+    "value": "100"
+  },
+  "resolution": {
+    "$base": "Real",
+    "value": "0.02442"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "ad-filter": {
+    "$base": "Unsigned",
+    "value": "80"
+  },
+  "filter-delay-timer": {
+    "$base": "Choice",
+    "filter-delay-timer": {
+      "$base": "Unsigned",
+      "value": "15375"
+    }
+  },
+  "ad-value": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "calibration": {
+    "$base": "Real",
+    "value": 0
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "external-control": {
+    "$base": "Boolean",
+    "value": 0
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -103,9 +124,21 @@
     "$base": "Unsigned",
     "value": 0
   },
-  "alarm-value": {
-    "$base": "Enumerated",
-    "value": "inactive"
+  "high-limit": {
+    "$base": "Real",
+    "value": 0
+  },
+  "low-limit": {
+    "$base": "Real",
+    "value": 0
+  },
+  "deadband": {
+    "$base": "Real",
+    "value": 0
+  },
+  "limit-enable": {
+    "$base": "BitString",
+    "value": ""
   },
   "event-enable": {
     "$base": "BitString",
@@ -143,17 +176,13 @@
     },
     "$base": "Array"
   },
-  "text-value": {
-    "$base": "String",
-    "value": "Normal"
+  "previous-reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "lighting"
-  },
-  "value-source": {
-    "$base": "Enumerated",
-    "value": "configuration-(bdc)"
+    "value": "hvac"
   },
   "event-detection-enable": {
     "$base": "Boolean",

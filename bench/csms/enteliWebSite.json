@@ -170,21 +170,6 @@
     {
       "action": "update",
       "device": 4399,
-      "objectId": "pg,6",
-      "objectName": "Pumps_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/Pumps_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/2/2024, 10:53:55 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
       "objectId": "aic,55",
       "objectName": "FluidDp_psi_AIC",
       "siteName": "Bench",
@@ -195,6 +180,96 @@
         "scheme": "file"
       },
       "date": "8/2/2024, 10:57:01 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "ai,13",
+      "objectName": "HWDp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/HWDp.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 11:43:28 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,6",
+      "objectName": "Pumps_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/Pumps_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 11:43:31 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bi,8",
+      "objectName": "B2Alarm",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B2Alarm.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 11:44:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bi,15",
+      "objectName": "B2Alarm copy",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B2Alarm copy.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 11:44:25 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bi,14",
+      "objectName": "B1Alarm",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B1Alarm.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 11:44:58 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bi,16",
+      "objectName": "B3Alarm",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B3Alarm.json",
+        "scheme": "file"
+      },
+      "date": "8/2/2024, 11:45:27 AM",
       "templateTriggered": false
     }
   ],
@@ -897,6 +972,30 @@
           "name": "FluidDp_psi_AIC",
           "fileName": "FluidDp_psi_AIC",
           "lastUpdate": "2024-08-02T16:56:03.140Z"
+        },
+        {
+          "id": "ai,13",
+          "name": "HWDp",
+          "fileName": "HWDp",
+          "lastUpdate": "2024-08-02T17:43:28.500Z"
+        },
+        {
+          "id": "bi,15",
+          "name": "B2Alarm",
+          "fileName": "B2Alarm",
+          "lastUpdate": "2024-08-02T17:44:25.567Z"
+        },
+        {
+          "id": "bi,14",
+          "name": "B1Alarm",
+          "fileName": "B1Alarm",
+          "lastUpdate": "2024-08-02T17:44:58.841Z"
+        },
+        {
+          "id": "bi,16",
+          "name": "B3Alarm",
+          "fileName": "B3Alarm",
+          "lastUpdate": "2024-08-02T17:45:27.423Z"
         }
       ]
     }
