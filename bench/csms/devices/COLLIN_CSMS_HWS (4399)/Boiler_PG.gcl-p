@@ -47,21 +47,21 @@ If (EffDemand < 'LagStop_Sp') OnFor 3S Then
 End If
 
 //Boilers enabled by heat stage.  Once enabled then fire rate scaled of
-If  HW_LeadBoiler = 1 Then
+If  'LeadBoiler' = 1 Then
   B1Rate = Scale (Lead1, 0, 10, 0, 100, 'B1HWSLimit_CO')
   B2Rate = Scale (Lead2, 0, 10, 0, 100, 'B2HWSLimit_CO')
   B3Rate = Scale (Lead3, 0, 10, 0, 100, 'B3HWSLimit_CO')
   B1Call = Switch ( B1Call, (Lead1 * 'B1HWSLimit_CO' * 0.01), 8, 1)
   B2Call = Switch ( B2Call, (Lead2 * 'B2HWSLimit_CO' * 0.01), 8, 1)
   B3Call = Switch ( B3Call, (Lead3 * 'B3HWSLimit_CO' * 0.01), 8, 1)
-ElseIf  HW_LeadBoiler = 2 Then
+ElseIf  'LeadBoiler' = 2 Then
   B1Rate = Scale (Lead3, 0, 10, 0, 100, 'B1HWSLimit_CO')
   B2Rate = Scale (Lead1, 0, 10, 0, 100, 'B2HWSLimit_CO')
   B3Rate = Scale (Lead2, 0, 10, 0, 100, 'B3HWSLimit_CO')
   B1Call = Switch ( B1Call, (Lead3 * 'B1HWSLimit_CO' * 0.01), 8, 1)
   B2Call = Switch ( B2Call, (Lead1 * 'B2HWSLimit_CO' * 0.01), 8, 1)
   B3Call = Switch ( B3Call, (Lead2 * 'B3HWSLimit_CO' * 0.01), 8, 1)
-ElseIf  HW_LeadBoiler = 3 Then
+ElseIf  'LeadBoiler' = 3 Then
   B1Rate = Scale (Lead2, 0, 10, 0, 100, 'B1HWSLimit_CO')
   B2Rate = Scale (Lead3, 0, 10, 0, 100, 'B2HWSLimit_CO')
   B3Rate = Scale (Lead1, 0, 10, 0, 100, 'B3HWSLimit_CO')

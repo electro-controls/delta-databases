@@ -1,8 +1,8 @@
 {
-  "displayName": "B2HWSLimit_CO",
+  "displayName": "HWDp_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "loop,32"
+    "value": "loop,11030"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "B2HWSLimit_CO"
+    "value": "HWDp_CO"
   },
   "description": {
     "$base": "String",
@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "92.1616"
   },
   "status-flags": {
     "$base": "BitString",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "326"
+    "value": "276"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -78,7 +78,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-input,8"
+      "value": "analog-value,11030"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "171"
+    "value": "0.279813"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -103,7 +103,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,32"
+      "value": "analog-value,11031"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -117,7 +117,7 @@
   },
   "setpoint": {
     "$base": "Real",
-    "value": "180"
+    "value": "10"
   },
   "setpoint-reference": {
     "$base": "Sequence",
@@ -126,7 +126,7 @@
       "type": "0-BACnetObjectPropertyReference",
       "objectIdentifier": {
         "$base": "ObjectIdentifier",
-        "value": "analog-value,32"
+        "value": "analog-value,11031"
       },
       "propertyIdentifier": {
         "$base": "Enumerated",
@@ -154,7 +154,7 @@
   },
   "proportional-constant": {
     "$base": "Real",
-    "value": "80"
+    "value": "55"
   },
   "proportional-constant-units": {
     "$base": "Enumerated",
@@ -179,7 +179,7 @@
   },
   "integral-constant": {
     "$base": "Real",
-    "value": "10"
+    "value": "4"
   },
   "integral-constant-units": {
     "$base": "Enumerated",
@@ -204,7 +204,7 @@
   },
   "derivative-constant": {
     "$base": "Real",
-    "value": 0
+    "value": "1"
   },
   "derivative-constant-units": {
     "$base": "Enumerated",
@@ -212,7 +212,7 @@
   },
   "bias": {
     "$base": "Real",
-    "value": "88.8505"
+    "value": "74.5794"
   },
   "derivative": {
     "$base": "Real",
@@ -251,15 +251,15 @@
   },
   "reset-band": {
     "$base": "Real",
-    "value": "20"
+    "value": "8"
   },
   "average-crossings": {
     "$base": "Real",
-    "value": "1.1024"
+    "value": "1.40853"
   },
   "average-error": {
     "$base": "Real",
-    "value": "64.1744"
+    "value": "6.24413"
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "1676348"
+      "value": "69839804"
     }
   },
   "self-adj-enable": {
@@ -294,18 +294,18 @@
   },
   "self-adj-interval": {
     "$base": "Unsigned",
-    "value": "60"
+    "value": "9"
   },
   "self-adj-timer": {
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "1692000"
+      "value": "69843600"
     }
   },
   "setpoint-crossings": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "1"
   },
   "setpoint-crossing-flag": {
     "$base": "Boolean",
@@ -313,7 +313,7 @@
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "180"
+    "value": "9.83093"
   },
   "hal-flags": {
     "$base": "BitString",

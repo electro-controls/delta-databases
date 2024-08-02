@@ -5,36 +5,6 @@
     {
       "action": "update",
       "device": 4399,
-      "objectId": "ao,5",
-      "objectName": "B1_Firerate",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B1_Firerate.json",
-        "scheme": "file"
-      },
-      "date": "8/2/2024, 10:24:23 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "ao,4",
-      "objectName": "B2_Firerate",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/B2_Firerate.json",
-        "scheme": "file"
-      },
-      "date": "8/2/2024, 10:25:01 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
       "objectId": "ao,9",
       "objectName": "B3_Firerate",
       "siteName": "Bench",
@@ -45,36 +15,6 @@
         "scheme": "file"
       },
       "date": "8/2/2024, 10:25:58 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4399,
-      "objectId": "ao,4",
-      "objectName": "HWP1_Speed",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/HWP1_Speed.json",
-        "scheme": "file"
-      },
-      "date": "8/2/2024, 10:41:07 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4399,
-      "objectId": "ao,5",
-      "objectName": "HWP2_Speed",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/csms/devices/COLLIN_CSMS_HWS (4399)/objectsJSON/HWP2_Speed.json",
-        "scheme": "file"
-      },
-      "date": "8/2/2024, 10:41:23 AM",
       "templateTriggered": false
     },
     {
@@ -939,6 +879,12 @@
           "name": "FaultDetection_MIC",
           "fileName": "FaultDetection_MIC",
           "lastUpdate": "2024-08-02T21:45:14.920Z"
+        },
+        {
+          "id": "co,11030",
+          "name": "HWDp_CO",
+          "fileName": "HWDp_CO",
+          "lastUpdate": "2024-08-02T23:10:17.469Z"
         }
       ]
     }

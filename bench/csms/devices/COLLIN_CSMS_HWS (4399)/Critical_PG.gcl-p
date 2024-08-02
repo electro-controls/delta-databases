@@ -12,20 +12,14 @@ If (Not 'PrimaryFlow') Or 'HWHighLimit' Or ('HWS' < 0) Then
   'B1_Firerate' = 0
   'B2_Firerate' = 0
   'B3_Firerate' = 0
-  'HWP1_Speed' = 0
-  'HWP2_Speed' = 0
-  'HWP1Enable' = Off
-  'HWP2Enable' = Off
-  'Comb_Dmp_SSXX' = Off
  Else
   Relinquish 'B1_Firerate'
   Relinquish 'B2_Firerate'
   Relinquish 'B3_Firerate'
-  Relinquish 'HWP1_Speed'
-  Relinquish 'HWP2_Speed'
+  // todo kill me below here
   Relinquish 'HWP1Enable'
   Relinquish 'HWP2Enable'
-  Relinquish 'Comb_Dmp_SSXX'
+  Relinquish 'HWP1_Speed'
+  Relinquish 'HWP2_Speed'
 End If
-
 //End of Program

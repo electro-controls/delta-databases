@@ -1,5 +1,18 @@
 //Pumps Program
 
+
+//Pump Failure what the heck is this?
+If ('HWP1Enable' < 'HWPLagStop_Sp') And ('HWPLagAssist' OnFor 20M) Or (Not 'SystemEnable') Or ('HWPLagRelease') Then
+   'HWPLagAssist' = Off
+End If
+
+Variable PumpSignal
+If 'HWPLagAssist' Then
+   PumpSignal = Scale ('HWDp_CO', 0, 0, 0, 100, 100)
+ Else
+   PumpSignal = Scale ('HWDp_CO', 0, 0, 0, 50, 100)
+End If
+
 //Pump Failure
 If 'HWP1Enable' And (Not 'HWP1Status') OnFor 'PumpFailDly_Sp':S Then
     'HWP1_Fail' = On
@@ -31,6 +44,7 @@ If Not 'HWP2Enable.Priority_Array[5]' Then
   Else
     HWP2Manual = Off
 End If
+
 If 'SystemEnable' Then
  Variable HWP1Call
  Variable HWP2Call
@@ -103,7 +117,7 @@ End If
 //Flow interlock
 Variable DpFlow
 
-DpFlow = Switch ( DpFlow, 'HWDp', ('HWDp_Sp' * 0.3), ('HWDp_Sp' * 0.1))
+DpFlow = Switch ( DpFlow, HWDp, (HWDp_Sp * 0.3), (HWDp_Sp * 0.1))
 
 If ('HWP1Status' Or 'HWP2Status') And DpFlow Then
     'PrimaryFlow' = On
