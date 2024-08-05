@@ -1,0 +1,48 @@
+'HW_BlrDemand_PG13.Write_Priority' = 13
+
+//VARIABLES: Search and replace variables with the actual I/O of your application
+
+//DELETE this note and the above references after the search and replace is performed
+
+
+//Boiler sequence
+
+
+
+If 'HW_LeadBoiler' = 1 Then
+    'HW_B1RateCall' = Scale ('HW_Lead1Demand', 0, 10, 0, 100, 'HW_B1DemandLimit_Sp')
+    'HW_B2RateCall' = Scale ('HW_Lead2Demand', 0, 10, 0, 100, 'HW_B2DemandLimit_Sp')
+    'HW_B3RateCall' = Scale ('HW_Lead3Demand', 0, 10, 0, 100, 'HW_B3DemandLimit_Sp')
+    'HW_B4RateCall' = Scale ('HW_Lead4Demand', 0, 10, 0, 100, 'HW_B4DemandLimit_Sp')
+    'HW_B1Call' = Switch ( 'HW_B1Call', ('HW_Lead1Demand' * 'CO10131' * 0.01), 8, 1)
+    'HW_B2Call' = Switch ( 'HW_B2Call', ('HW_Lead2Demand' * 'CO10132' * 0.01), 8, 1)
+    'HW_B3Call' = Switch ( 'HW_B3Call', ('HW_Lead3Demand' * 'CO10133' * 0.01), 8, 1)
+    'HW_B4Call' = Switch ( 'HW_B4Call', ('HW_Lead4Demand' * 'CO10134' * 0.01), 8, 1)
+  ElseIf  'HW_LeadBoiler' = 2 Then
+    'HW_B1RateCall' = Scale ('HW_Lead4Demand', 0, 10, 0, 100, 'HW_B1DemandLimit_Sp')
+    'HW_B2RateCall' = Scale ('HW_Lead1Demand', 0, 10, 0, 100, 'HW_B2DemandLimit_Sp')
+    'HW_B3RateCall' = Scale ('HW_Lead2Demand', 0, 10, 0, 100, 'HW_B3DemandLimit_Sp')
+    'HW_B4RateCall' = Scale ('HW_Lead3Demand', 0, 10, 0, 100, 'HW_B4DemandLimit_Sp')
+    'HW_B1Call' = Switch ( 'HW_B1Call', ('HW_Lead4Demand' * 'CO10131' * 0.01), 8, 1)
+    'HW_B2Call' = Switch ( 'HW_B2Call', ('HW_Lead1Demand' * 'CO10132' * 0.01), 8, 1)
+    'HW_B3Call' = Switch ( 'HW_B3Call', ('HW_Lead2Demand' * 'CO10133' * 0.01), 8, 1)
+    'HW_B4Call' = Switch ( 'HW_B4Call', ('HW_Lead3Demand' * 'CO10134' * 0.01), 8, 1)
+  ElseIf  'HW_LeadBoiler' = 3 Then
+    'HW_B1RateCall' = Scale ('HW_Lead3Demand', 0, 10, 0, 100, 'HW_B1DemandLimit_Sp')
+    'HW_B2RateCall' = Scale ('HW_Lead4Demand', 0, 10, 0, 100, 'HW_B2DemandLimit_Sp')
+    'HW_B3RateCall' = Scale ('HW_Lead1Demand', 0, 10, 0, 100, 'HW_B3DemandLimit_Sp')
+    'HW_B4RateCall' = Scale ('HW_Lead2Demand', 0, 10, 0, 100, 'HW_B4DemandLimit_Sp')
+    'HW_B1Call' = Switch ( 'HW_B1Call', ('HW_Lead3Demand' * 'CO10131' * 0.01), 8, 1)
+    'HW_B2Call' = Switch ( 'HW_B2Call', ('HW_Lead4Demand' * 'CO10132' * 0.01), 8, 1)
+    'HW_B3Call' = Switch ( 'HW_B3Call', ('HW_Lead1Demand' * 'CO10133' * 0.01), 8, 1)
+    'HW_B4Call' = Switch ( 'HW_B4Call', ('HW_Lead2Demand' * 'CO10134' * 0.01), 8, 1)
+  Else
+    'HW_B1RateCall' = Scale ('HW_Lead2Demand', 0, 10, 0, 100, 'HW_B1DemandLimit_Sp')
+    'HW_B2RateCall' = Scale ('HW_Lead3Demand', 0, 10, 0, 100, 'HW_B2DemandLimit_Sp')
+    'HW_B3RateCall' = Scale ('HW_Lead4Demand', 0, 10, 0, 100, 'HW_B3DemandLimit_Sp')
+    'HW_B4RateCall' = Scale ('HW_Lead1Demand', 0, 10, 0, 100, 'HW_B4DemandLimit_Sp')
+    'HW_B1Call' = Switch ( 'HW_B1Call', ('HW_Lead2Demand' * 'CO10131' * 0.01), 8, 1)
+    'HW_B2Call' = Switch ( 'HW_B2Call', ('HW_Lead3Demand' * 'CO10132' * 0.01), 8, 1)
+    'HW_B3Call' = Switch ( 'HW_B3Call', ('HW_Lead4Demand' * 'CO10133' * 0.01), 8, 1)
+    'HW_B4Call' = Switch ( 'HW_B4Call', ('HW_Lead1Demand' * 'CO10134' * 0.01), 8, 1)
+End If
