@@ -1,5 +1,5 @@
 {
-  "displayName": "BxEnable_Example",
+  "displayName": "HWP1Enable_Example",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "binary-output,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "BxEnable_Example"
+    "value": "HWP1Enable_Example"
   },
   "description": {
     "$base": "String",
@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": "fault;private2;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -50,7 +50,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "not-available"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -93,7 +93,7 @@
   },
   "minimum-off-time": {
     "$base": "Unsigned",
-    "value": "60"
+    "value": 0
   },
   "minimum-on-time": {
     "$base": "Unsigned",
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "17"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -134,7 +134,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -185,7 +188,10 @@
       }
     },
     "13": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "14": {
       "$base": "Choice",
@@ -226,7 +232,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,10003"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -262,7 +268,7 @@
     },
     "13": {
       "$base": "ObjectIdentifier",
-      "value": "program,10210"
+      "unspecifiedValue": "true"
     },
     "14": {
       "$base": "ObjectIdentifier",
@@ -281,73 +287,73 @@
   "time-of-last-write": {
     "1": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "3": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-03-12T12:38:24.80"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2019-06-03T12:11:22.60"
+      "value": "2024-03-12T11:41:31.00"
     },
     "6": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "7": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "8": {
       "$base": "DateTime",
-      "value": "2019-07-16T08:58:48.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "9": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-03-12T11:46:37.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "12": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "13": {
       "$base": "DateTime",
-      "value": "2024-03-12T17:54:44.60"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "14": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "15": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "16": {
       "$base": "DateTime",
-      "value": "2024-03-19T17:32:39.30"
+      "value": "2024-03-19T17:32:46.70"
     },
     "$base": "Array"
   },
   "port-status": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "not-available"
   },
   "da-value": {
     "$base": "Unsigned",
@@ -363,7 +369,7 @@
   },
   "hoa-status": {
     "$base": "Enumerated",
-    "value": "auto"
+    "value": "none"
   },
   "delay-status": {
     "$base": "Enumerated",

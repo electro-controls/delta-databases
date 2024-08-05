@@ -1,7 +1,98 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [],
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,16",
+      "objectName": "HWP2Enable_Example",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HWP2Enable_Example.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 11:23:48 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,15",
+      "objectName": "HWP1Enable_Example",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HWP1Enable_Example.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 11:23:50 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,16",
+      "objectName": "HWP2Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HWP2Enable.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 11:24:16 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,15",
+      "objectName": "HWP1Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HWP1Enable.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 11:24:22 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,1",
+      "objectName": "BxEnable_Example",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/BxEnable_Example.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 11:25:14 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,1",
+      "objectName": "B_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/B_Enable.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 11:25:46 AM",
+      "templateTriggered": false
+    }
+  ],
   "devices": [
     {
       "number": 4399,
@@ -1009,27 +1100,9 @@
           "lastUpdate": "2024-08-05T17:19:58.000Z"
         },
         {
-          "id": "bo,1",
-          "name": "BxEnable_Example",
-          "fileName": "BxEnable_Example",
-          "lastUpdate": "2024-08-05T17:19:58.000Z"
-        },
-        {
           "id": "bo,12",
           "name": "EF2_Enable",
           "fileName": "EF2_Enable",
-          "lastUpdate": "2024-08-05T17:19:58.000Z"
-        },
-        {
-          "id": "bo,15",
-          "name": "HWP1Enable_Example",
-          "fileName": "HWP1Enable_Example",
-          "lastUpdate": "2024-08-05T17:19:58.000Z"
-        },
-        {
-          "id": "bo,16",
-          "name": "HWP2Enable_Example",
-          "fileName": "HWP2Enable_Example",
           "lastUpdate": "2024-08-05T17:19:58.000Z"
         },
         {
@@ -1439,6 +1512,24 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-08-05T17:19:58.000Z"
+        },
+        {
+          "id": "bo,16",
+          "name": "HWP2Enable",
+          "fileName": "HWP2Enable",
+          "lastUpdate": "2024-08-05T17:24:15.625Z"
+        },
+        {
+          "id": "bo,15",
+          "name": "HWP1Enable",
+          "fileName": "HWP1Enable",
+          "lastUpdate": "2024-08-05T17:24:21.108Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "B_Enable",
+          "fileName": "B_Enable",
+          "lastUpdate": "2024-08-05T17:25:43.374Z"
         }
       ]
     }

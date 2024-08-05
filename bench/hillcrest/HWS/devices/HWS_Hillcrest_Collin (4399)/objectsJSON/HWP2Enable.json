@@ -1,8 +1,8 @@
 {
-  "displayName": "HWP1Enable_Example",
+  "displayName": "HWP2Enable_Example",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-output,15"
+    "value": "binary-output,2"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HWP1Enable_Example"
+    "value": "HWP2Enable_Example"
   },
   "description": {
     "$base": "String",
@@ -303,7 +303,7 @@
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-03-12T11:41:31.00"
+      "value": "2024-03-12T11:41:44.50"
     },
     "6": {
       "$base": "DateTime",
@@ -347,7 +347,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2024-03-19T17:32:46.70"
+      "value": "2024-03-19T17:32:46.20"
     },
     "$base": "Array"
   },
