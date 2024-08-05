@@ -61,6 +61,111 @@
       },
       "date": "8/5/2024, 11:27:27 AM",
       "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "bo,11",
+      "objectName": "EF1_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/EF1_Enable.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 3:22:46 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bo,11",
+      "objectName": "EF1_Enable copy",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/EF1_Enable copy.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 3:22:46 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4399,
+      "objectId": "bo,4",
+      "objectName": "EF1_Enable copy 2",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/EF1_Enable copy 2.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 3:23:07 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,13",
+      "objectName": "EF3_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/EF3_Enable.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 3:25:53 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,14",
+      "objectName": "EF4_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/EF4_Enable.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 3:26:22 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,15",
+      "objectName": "EF5_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/EF5_Enable.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 3:26:36 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "bo,16",
+      "objectName": "EF6_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/EF6_Enable.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 3:26:49 PM",
+      "templateTriggered": false
     }
   ],
   "devices": [
@@ -1500,6 +1605,42 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-08-05T17:36:08.297Z"
+        },
+        {
+          "id": "bo,11",
+          "name": "EF1_Enable copy",
+          "fileName": "EF1_Enable copy",
+          "lastUpdate": "2024-08-05T21:22:46.902Z"
+        },
+        {
+          "id": "bo,4",
+          "name": "EF1_Enable copy 2",
+          "fileName": "EF1_Enable copy 2",
+          "lastUpdate": "2024-08-05T21:23:07.933Z"
+        },
+        {
+          "id": "bo,13",
+          "name": "EF3_Enable",
+          "fileName": "EF3_Enable",
+          "lastUpdate": "2024-08-05T21:25:53.265Z"
+        },
+        {
+          "id": "bo,14",
+          "name": "EF4_Enable",
+          "fileName": "EF4_Enable",
+          "lastUpdate": "2024-08-05T21:26:22.498Z"
+        },
+        {
+          "id": "bo,15",
+          "name": "EF5_Enable",
+          "fileName": "EF5_Enable",
+          "lastUpdate": "2024-08-05T21:26:36.882Z"
+        },
+        {
+          "id": "bo,16",
+          "name": "EF6_Enable",
+          "fileName": "EF6_Enable",
+          "lastUpdate": "2024-08-05T21:26:49.940Z"
         }
       ]
     }
