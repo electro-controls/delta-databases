@@ -70,7 +70,7 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:00:00.800000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -78,12 +78,12 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-01T12:29:18.500000-07:00"
   },
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:00:00.800000-07:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "16"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -134,7 +134,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice",
@@ -185,7 +188,10 @@
       }
     },
     "13": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "14": {
       "$base": "Choice",
@@ -200,10 +206,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -226,7 +229,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,10003"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -262,7 +265,7 @@
     },
     "13": {
       "$base": "ObjectIdentifier",
-      "value": "program,10210"
+      "unspecifiedValue": "true"
     },
     "14": {
       "$base": "ObjectIdentifier",
@@ -274,74 +277,74 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,65984"
     },
     "$base": "Array"
   },
   "time-of-last-write": {
     "1": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "3": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-03-12T12:38:24.80"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2019-06-03T12:11:22.60"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "7": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "8": {
       "$base": "DateTime",
-      "value": "2019-07-16T08:58:48.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "9": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-03-12T11:46:37.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "12": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "13": {
       "$base": "DateTime",
-      "value": "2024-03-12T17:54:44.60"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "14": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "15": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "16": {
       "$base": "DateTime",
-      "value": "2024-03-19T17:32:39.30"
+      "value": "2000-01-01T12:29:17.70"
     },
     "$base": "Array"
   },
@@ -470,8 +473,9 @@
   },
   "flick-warn-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "flick-warn-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "flick-warn-active": {
@@ -509,8 +513,9 @@
   },
   "override-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "override-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "reliability-timer": {

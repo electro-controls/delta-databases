@@ -26,7 +26,7 @@
   },
   "free-memory": {
     "$base": "Unsigned",
-    "value": "73092"
+    "value": "73100"
   },
   "object-count": {
     "$base": "Unsigned",
@@ -343,15 +343,15 @@
     },
     "78": {
       "$base": "ObjectIdentifier",
-      "value": "binary-output,12"
+      "value": "binary-output,2"
     },
     "79": {
       "$base": "ObjectIdentifier",
-      "value": "binary-output,15"
+      "value": "binary-output,3"
     },
     "80": {
       "$base": "ObjectIdentifier",
-      "value": "binary-output,16"
+      "value": "binary-output,12"
     },
     "81": {
       "$base": "ObjectIdentifier",
@@ -1117,7 +1117,7 @@
   },
   "time-of-last-chg": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:15:40.400000-07:00"
+    "value": "2000-01-01T12:32:58.200000-07:00"
   },
   "src-user-of-last-chg": {
     "$base": "Sequence",
@@ -1142,7 +1142,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "30"
+    "value": "50"
   },
   "total-graphic-memory": {
     "$base": "Choice",
