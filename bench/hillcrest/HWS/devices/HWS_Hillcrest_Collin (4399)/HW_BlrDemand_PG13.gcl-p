@@ -67,47 +67,19 @@ End If
 //Calculated HWs Demand percent. 
 'HW_HWSDemand_Loc' = 'HW_HWS_CO' * 'HW_SystemRamp' * 0.01
 
-If 'HW_Lag3Latch' Then
+If  'HW_Lag1Latch' Then
     'HW_Lead1Demand' = 'HW_SeqDemand'
     'HW_Lead2Demand' = 'HW_SeqDemand'
-    'HW_Lead3Demand' = 'HW_SeqDemand'
-    'HW_Lead4Demand' = 'HW_SeqDemand'
     'HW_SeqDemand' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 100, 100)
-  ElseIf  'HW_Lag2Latch' Then
-    'HW_Lead1Demand' = 'HW_SeqDemand'
-    'HW_Lead2Demand' = 'HW_SeqDemand'
-    'HW_Lead3Demand' = 'HW_SeqDemand'
-    'HW_Lead4Demand' = 0
-    'HW_SeqDemand' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 75, 100)
-  ElseIf  'HW_Lag1Latch' Then
-    'HW_Lead1Demand' = 'HW_SeqDemand'
-    'HW_Lead2Demand' = 'HW_SeqDemand'
-    'HW_Lead3Demand' = 0
-    'HW_Lead4Demand' = 0
-    'HW_SeqDemand' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 50, 100)
   Else
     'HW_Lead1Demand' = 'HW_SeqDemand'
     'HW_Lead2Demand' = 0
-    'HW_Lead3Demand' = 0
-    'HW_Lead4Demand' = 0
-    'HW_SeqDemand' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 25, 100)
+    'HW_SeqDemand' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 50, 100)
 End If
 
 If ('HW_SeqDemand' > 'HW_LagStart_Sp') OnFor 'HW_InterstageDly_Sp':M Then
     'HW_Lag1Latch' = On
 End If
-If ('HW_SeqDemand' < 'HW_LagStop_Sp') And ('HW_Lag2Latch' OffFor 30S) Then
+If ('HW_SeqDemand' < 'HW_LagStop_Sp') Then
     'HW_Lag1Latch' = Off
-End If
-If (('HW_SeqDemand' > 'HW_LagStart_Sp') And 'HW_Lag1Latch') OnFor 'HW_InterstageDly_Sp':M Then
-    'HW_Lag2Latch' = On
-End If
-If ('HW_SeqDemand' < 'HW_LagStop_Sp') And ('HW_Lag3Latch' OffFor 30S) Then
-    'HW_Lag2Latch' = Off
-End If
-If (('HW_SeqDemand' > 'HW_LagStart_Sp') And 'HW_Lag2Latch') OnFor 'HW_InterstageDly_Sp':M Then
-    'HW_Lag3Latch' = On
-End If
-If ('HW_SeqDemand' < 'HW_LagStop_Sp') OnFor 30S Then
-    'HW_Lag3Latch' = Off
 End If

@@ -16,6 +16,591 @@
       },
       "date": "8/5/2024, 3:23:07 PM",
       "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,2",
+      "objectName": "General_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/General_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:45:48 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,3",
+      "objectName": "Exhaust_Fan_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/Exhaust_Fan_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:49:22 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10183",
+      "objectName": "HW_B3LWT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B3LWT.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10153",
+      "objectName": "HW_B3Ramp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B3Ramp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10163",
+      "objectName": "HW_B3RateCall",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B3RateCall.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,13001",
+      "objectName": "HW_B3ReservedModbusMapping",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B3ReservedModbusMapping.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "bv,10154",
+      "objectName": "HW_B4Call",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B4Call.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10114",
+      "objectName": "HW_B4CutIn_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B4CutIn_Sp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10124",
+      "objectName": "HW_B4CutOut_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B4CutOut_Sp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10174",
+      "objectName": "HW_B4DemandLimit_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B4DemandLimit_Sp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10134",
+      "objectName": "HW_B4HWSLimit_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B4HWSLimit_Sp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10184",
+      "objectName": "HW_B4LWT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B4LWT.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10154",
+      "objectName": "HW_B4Ramp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B4Ramp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10164",
+      "objectName": "HW_B4RateCall",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B4RateCall.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,14001",
+      "objectName": "HW_B4ReservedModbusMapping",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B4ReservedModbusMapping.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "bv,10233",
+      "objectName": "HW_BP3Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_BP3Status.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "bv,10234",
+      "objectName": "HW_BP4Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_BP4Status.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "bv,10231",
+      "objectName": "HW_BP1Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_BP1Status.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "bv,10232",
+      "objectName": "HW_BP2Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_BP2Status.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10133",
+      "objectName": "HW_B3HWSLimit_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B3HWSLimit_Sp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10173",
+      "objectName": "HW_B3DemandLimit_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B3DemandLimit_Sp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10123",
+      "objectName": "HW_B3CutOut_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B3CutOut_Sp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10113",
+      "objectName": "HW_B3CutIn_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B3CutIn_Sp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "bv,10153",
+      "objectName": "HW_B3Call",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B3Call.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10181",
+      "objectName": "HW_B1LWT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B1LWT.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:22 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10182",
+      "objectName": "HW_B2LWT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_B2LWT.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:22 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,10002",
+      "objectName": "HW_General_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_General_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:52:28 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,10003",
+      "objectName": "HW_Critical_PG4",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_Critical_PG4.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:56:12 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10043",
+      "objectName": "HW_Lead3Demand",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_Lead3Demand.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:57:38 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10044",
+      "objectName": "HW_Lead4Demand",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_Lead4Demand.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:57:38 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "bv,10042",
+      "objectName": "HW_Lag2Latch",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_Lag2Latch.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:57:38 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "bv,10043",
+      "objectName": "HW_Lag3Latch",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HW_Lag3Latch.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:57:38 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,10010",
+      "objectName": "HW_BlrDemand_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_BlrDemand_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 4:59:20 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,10011",
+      "objectName": "HW_BlrLeadLag_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_BlrLeadLag_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 5:02:46 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,10012",
+      "objectName": "HW_BlrSeq_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_BlrSeq_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 5:08:38 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10201",
+      "objectName": "HWDp_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HWDp_Sp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 5:13:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4399,
+      "objectId": "av,10281",
+      "objectName": "HWDp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/objectsJSON/HWDp.json",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 5:13:06 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,10210",
+      "objectName": "HW_Pumps_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_Pumps_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 5:15:32 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,1",
+      "objectName": "Main_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/Main_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/5/2024, 5:15:39 PM",
+      "templateTriggered": false
     }
   ],
   "devices": [
@@ -1509,6 +2094,12 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-08-05T22:31:48.645Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "Exhaust_Fan_PG",
+          "fileName": "Exhaust_Fan_PG",
+          "lastUpdate": "2024-08-05T22:46:03.912Z"
         }
       ]
     }

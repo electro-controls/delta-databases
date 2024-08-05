@@ -6,13 +6,8 @@ If PowerUp Then
 End If
 
 
-//Input references
+// Input references
 
 'HW_HWS' = 'HWS_Local'
 'HW_HWR' = 'HWR_Local'
 'HW_MaxHWTemp' = Max ('HW_HWS', 'HW_HWR') //This accounts for anomolies where return exceeds supply
-'HW_B1LWT' = 'OAT'
-'HW_B2LWT' = 'AI4'
-'HW_B3LWT' = 'AI5'
-'HW_B4LWT' = 'Room_Temp'
-//av10281 = HWDp_Local

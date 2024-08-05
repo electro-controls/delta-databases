@@ -1,136 +1,24 @@
 'HW_BlrSeq_PG13.Write_Priority' = 13
 
-//VARIABLES: Search and replace variables with the actual I/O of your application
-Variable B1Enable_XXX
-Variable B2Enable_XXX
-Variable B3Enable_XXX
-Variable B4Enable_XXX
-Variable B1FireRate_XXX
-Variable B2FireRate_XXX
-Variable B3FireRate_XXX
-Variable B4FireRate_XXX
-Variable BP1Enable_XXX
-Variable BP2Enable_XXX
-Variable BP3Enable_XXX
-Variable BP4Enable_XXX
-Variable BP1Current_XXX
-Variable BP2Current_XXX
-Variable BP3Current_XXX
-Variable BP4Current_XXX
-//DELETE this note and the above references after the search and replace is performed
-
-//BP status
-'HW_BP1Status' = Switch ( 'HW_BP1Status', BP1Current_XXX, 1, 0.5)
-'HW_BP2Status' = Switch ( 'HW_BP2Status', BP2Current_XXX, 1, 0.5)
-'HW_BP3Status' = Switch ( 'HW_BP3Status', BP3Current_XXX, 1, 0.5)
-'HW_BP4Status' = Switch ( 'HW_BP4Status', BP4Current_XXX, 1, 0.5)
-
-
 //B1
 If 'HW_B1Call' Then
   BP1Enable_XXX = On
-  If 'HW_BP1Status' OnFor 10S Then //Use BP BO if status is not availabe
-      B1Enable_XXX = On
+  If ('HWP1_Status' Or 'HWP2_Status') OnFor 10S Then //Use BP BO if status is not available
+      'B_Enable' = On
     Else
-      B1Enable_XXX = Off
+      'B_Enable' = Off
   End If
  Else
-  B1Enable_XXX = Off
-  If B1Enable_XXX OffFor 'HWBlrPumpOffDelay_Sp':M Then
+  'B_Enable' = Off
+  If 'B_Enable' OffFor 'HWBlrPumpOffDelay_Sp':M Then
     BP1Enable_XXX = Off
   End If
 End If
-//B2
-If 'HW_B2Call' Then
-  BP2Enable_XXX = On
-  If 'HW_BP2Status' OnFor 10S Then //Use pumps BO if status is not availabe
-      B2Enable_XXX = On
-    Else
-      B2Enable_XXX = Off
-  End If
- Else
-  B2Enable_XXX = Off
-  'HW_B2Ramp' = 0
-  If B2Enable_XXX OffFor 'HWBlrPumpOffDelay_Sp':M Then
-    BP2Enable_XXX = Off
-  End If
-End If
-//B3
-If 'HW_B3Call' Then
-  BP3Enable_XXX = On
-  If 'HW_BP3Status' OnFor 10S Then //Use pumps BO if status is not availabe
-      B3Enable_XXX = On
-    Else
-      B3Enable_XXX = Off
-  End If
- Else
-  B3Enable_XXX = Off
-  'HW_B3Ramp' = 0
-  If B3Enable_XXX OffFor 'HWBlrPumpOffDelay_Sp':M Then
-    BP3Enable_XXX = Off
-  End If
-End If
-//B4
-If 'HW_B4Call' Then
-  BP4Enable_XXX = On
-  If 'HW_BP4Status' OnFor 10S Then //Use pumps BO if status is not availabe
-      B4Enable_XXX = On
-    Else
-      B4Enable_XXX = Off
-  End If
- Else
-  B4Enable_XXX = Off
-  If B4Enable_XXX OffFor 'HWBlrPumpOffDelay_Sp':M Then
-    BP4Enable_XXX = Off
-  End If
-End If
 
-If B1Enable_XXX Then
+If 'B_Enable' Then
     DoEvery 10S
      'HW_B1Ramp' = Min (100, 'HW_B1Ramp' + (100 / ('HW_FireRamp_Sp' * 6)))
     End Do
   Else
     'HW_B1Ramp' = 'HW_B1CutOut_Sp'
-End If
-If B2Enable_XXX Then
-    DoEvery 10S
-     'HW_B2Ramp' = Min (100, 'HW_B2Ramp' + (100 / ('HW_FireRamp_Sp' * 6)))
-    End Do
-  Else
-    'HW_B2Ramp' = 'HW_B1CutOut_Sp'
-End If
-If B3Enable_XXX Then
-    DoEvery 10S
-     'HW_B3Ramp' = Min (100, 'HW_B3Ramp' + (100 / ('HW_FireRamp_Sp' * 6)))
-    End Do
-  Else
-    'HW_B3Ramp' = 'HW_B1CutOut_Sp'
-End If
-If B4Enable_XXX Then
-    DoEvery 10S
-     'HW_B4Ramp' = Min (100, 'HW_B4Ramp' + (100 / ('HW_FireRamp_Sp' * 6)))
-    End Do
-  Else
-    'HW_B4Ramp' = 'HW_B1CutOut_Sp'
-End If
-
-If B1Enable_XXX Then //Use run status if available
-    B1FireRate_XXX = Scale ('HW_B1RateCall' * 'CO10131' * 0.01, 0, 0, 'HW_B1CutOut_Sp', 100, 'HW_B1Ramp')
-  Else
-    B1FireRate_XXX = 0
-End If
-If B2Enable_XXX Then //Use run status if available
-    B2FireRate_XXX = Scale ('HW_B2RateCall' * 'CO10132' * 0.01, 0, 0, 'HW_B2CutOut_Sp', 100, 'HW_B2Ramp')
-  Else
-    B2FireRate_XXX = 0
-End If
-If B3Enable_XXX Then //Use run status if available
-    B3FireRate_XXX = Scale ('HW_B3RateCall' * 'CO10133' * 0.01, 0, 0, 'HW_B3CutOut_Sp', 100, 'HW_B3Ramp')
-  Else
-    B3FireRate_XXX = 0
-End If
-If B4Enable_XXX Then //Use run status if available
-    B4FireRate_XXX = Scale ('HW_B4RateCall' * 'CO10134' * 0.01, 0, 0, 'HW_B4CutOut_Sp', 100, 'HW_B4Ramp')
-  Else
-    B4FireRate_XXX = 0
 End If

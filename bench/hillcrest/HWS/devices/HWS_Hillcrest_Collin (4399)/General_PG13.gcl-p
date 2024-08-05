@@ -19,5 +19,4 @@ If JaceChanged OffFor 10M Then
     'JaceCfail' = Off
 End If
 
-
-//AV91 = xxx.av91 //OAT reference
+'OAT_Eff' = 'OAT' //OAT reference
