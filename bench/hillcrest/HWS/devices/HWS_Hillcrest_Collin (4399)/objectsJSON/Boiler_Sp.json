@@ -42,7 +42,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "aoc,3"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "Temperature_DegF_AOC"
   },
   "min-pres-value": {
     "$base": "Real",

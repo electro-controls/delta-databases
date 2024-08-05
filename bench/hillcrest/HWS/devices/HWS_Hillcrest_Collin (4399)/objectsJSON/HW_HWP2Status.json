@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "out-of-service"
+    "value": ""
   },
   "present-value": {
     "$base": "Enumerated",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "out-of-service"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -50,7 +50,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": "1"
+    "value": 0
   },
   "active-text": {
     "$base": "String",

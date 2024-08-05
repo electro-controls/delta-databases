@@ -1,8 +1,8 @@
 {
-  "displayName": "EF2_Status",
+  "displayName": "HWP2_Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-input,12"
+    "value": "binary-input,5"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "EF2_Status"
+    "value": "HWP2_Status"
   },
   "description": {
     "$base": "String",
@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;out-of-service;not-commissioned"
+    "value": "out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault;out-of-service"
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -46,7 +46,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "not-available"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -89,11 +89,11 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:03:40.200000-07:00"
+    "value": "2000-01-01T16:28:26.800000-07:00"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "333"
+    "value": "324"
   },
   "time-delay": {
     "$base": "Unsigned",

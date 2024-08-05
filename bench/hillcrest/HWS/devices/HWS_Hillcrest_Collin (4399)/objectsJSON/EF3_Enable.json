@@ -78,7 +78,7 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-01T16:26:38.500000-07:00"
   },
   "prev-change-of-state-times": {
     "1": {
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "16"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -206,10 +206,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -280,7 +277,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,65984"
     },
     "$base": "Array"
   },
@@ -347,7 +344,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-01T16:26:25.60"
     },
     "$base": "Array"
   },

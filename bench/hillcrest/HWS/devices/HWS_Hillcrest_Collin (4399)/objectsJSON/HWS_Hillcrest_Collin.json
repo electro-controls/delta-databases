@@ -882,6 +882,33 @@
       "269": {
         "$base": "Choice"
       },
+      "270": {
+        "$base": "Choice"
+      },
+      "271": {
+        "$base": "Choice"
+      },
+      "272": {
+        "$base": "Choice"
+      },
+      "273": {
+        "$base": "Choice"
+      },
+      "274": {
+        "$base": "Choice"
+      },
+      "275": {
+        "$base": "Choice"
+      },
+      "276": {
+        "$base": "Choice"
+      },
+      "277": {
+        "$base": "Choice"
+      },
+      "278": {
+        "$base": "Choice"
+      },
       "$base": "Array"
     }
   },
@@ -907,7 +934,7 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "12:34:10.00"
+    "value": "17:29:44.00"
   },
   "local-date": {
     "$base": "Date",
@@ -1074,7 +1101,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "28.8636"
+    "value": "2.94118"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -1086,7 +1113,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "71"
+    "value": "69"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -1182,7 +1209,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "20512"
+      "value": "197844"
     }
   },
   "logical-base-address": {
@@ -1291,7 +1318,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "50"
+    "value": "78"
   },
   "active-cov-subscriptions": {
     "$base": "List"

@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "out-of-service"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "out-of-service"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -50,15 +50,15 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": "1"
+    "value": 0
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,*"
+    "value": "program,10010"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-06-25T13:29:15.800000-06:00"
+    "value": "2000-01-01T17:28:14.500000-07:00"
   },
   "cov-increment": {
     "$base": "Real",

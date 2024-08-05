@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "bdc,1"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,7 +54,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "ActiveInactive_BDC"
   },
   "polarity": {
     "$base": "Enumerated",
@@ -62,11 +62,11 @@
   },
   "active-text": {
     "$base": "String",
-    "value": "ON"
+    "value": "Active"
   },
   "inactive-text": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Inactive"
   },
   "prev-change-of-state-times": {
     "1": {
@@ -93,7 +93,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "34"
+    "value": "324"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -145,7 +145,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Inactive"
   },
   "hal-flags": {
     "$base": "BitString",
