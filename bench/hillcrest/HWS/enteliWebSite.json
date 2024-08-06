@@ -526,6 +526,21 @@
       },
       "date": "8/5/2024, 5:15:39 PM",
       "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,10003",
+      "objectName": "HW_Critical_PG4",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_Critical_PG4.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/6/2024, 12:10:53 PM",
+      "templateTriggered": false
     }
   ],
   "devices": [
@@ -1085,18 +1100,6 @@
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {
-          "id": "av,10016",
-          "name": "HW_LagStart_Sp",
-          "fileName": "HW_LagStart_Sp",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
-          "id": "av,10017",
-          "name": "HW_LagStop_Sp",
-          "fileName": "HW_LagStop_Sp",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
           "id": "av,10019",
           "name": "HW_InterstageDly_Sp",
           "fileName": "HW_InterstageDly_Sp",
@@ -1136,12 +1139,6 @@
           "id": "av,10041",
           "name": "HW_Lead1Demand",
           "fileName": "HW_Lead1Demand",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
-          "id": "av,10042",
-          "name": "HW_Lead2Demand",
-          "fileName": "HW_Lead2Demand",
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {
@@ -1616,12 +1613,6 @@
           "id": "bv,10022",
           "name": "HW_OATInt2",
           "fileName": "HW_OATInt2",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
-          "id": "bv,10041",
-          "name": "HW_Lag1Latch",
-          "fileName": "HW_Lag1Latch",
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {

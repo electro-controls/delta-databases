@@ -5,8 +5,6 @@
 ///Replace Enable with FireRate in the following section if Fire Rate only on boilers
 If 'HW_HWHighLimit' Or (Not 'HW_HWPFlow') Then
   'B_Enable' = Off
-  'Boiler_Sp' = 0
 Else
   Relinquish 'B_Enable'
-  Relinquish 'Boiler_Sp'
 End If
