@@ -2,7 +2,6 @@
 
 //B1
 If 'HW_B1Call' Then
-  BP1Enable_XXX = On
   If ('HWP1_Status' Or 'HWP2_Status') OnFor 10S Then //Use BP BO if status is not available
       'B_Enable' = On
     Else
@@ -10,9 +9,6 @@ If 'HW_B1Call' Then
   End If
  Else
   'B_Enable' = Off
-  If 'B_Enable' OffFor 'HWBlrPumpOffDelay_Sp':M Then
-    BP1Enable_XXX = Off
-  End If
 End If
 
 If 'B_Enable' Then

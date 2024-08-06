@@ -528,21 +528,6 @@
       "templateTriggered": false
     },
     {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,10012",
-      "objectName": "HW_BlrSeq_PG13",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_BlrSeq_PG13.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/5/2024, 5:08:38 PM",
-      "templateTriggered": false
-    },
-    {
       "action": "delete",
       "device": 4399,
       "objectId": "av,10201",
@@ -2063,12 +2048,6 @@
           "id": "pg,10012",
           "name": "HW_BlrSeq_PG13",
           "fileName": "HW_BlrSeq_PG13",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
-          "id": "pg,10122",
-          "name": "HW_BlrSeq_PG13_OptionFireRateOnly",
-          "fileName": "HW_BlrSeq_PG13_OptionFireRateOnly",
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {
