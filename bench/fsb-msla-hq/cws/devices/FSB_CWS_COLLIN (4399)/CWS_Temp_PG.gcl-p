@@ -17,4 +17,4 @@ Else
     'CWBT_Sp' = 'CWBT_LocSp'
 End If
 
-'Chiller_Sp' = 'CWST_Sp'
+'Chiller_Sp' = Scale('CWST_Sp', 50, 0, 40, 100)
