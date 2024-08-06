@@ -19,12 +19,6 @@
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
-          "id": "ai,104",
-          "name": "ZoneIAQ_Local",
-          "fileName": "ZoneIAQ_Local",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
           "id": "aic,1",
           "name": "Temperature_DegF T3_AIC",
           "fileName": "Temperature_DegF T3_AIC",
@@ -721,18 +715,6 @@
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
-          "id": "av,11055",
-          "name": "ZoneMotionDelay_Sp",
-          "fileName": "ZoneMotionDelay_Sp",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "av,11056",
-          "name": "ZoneMotionTmLeft",
-          "fileName": "ZoneMotionTmLeft",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
           "id": "av,11057",
           "name": "ZoneStandbyDelay_Sp",
           "fileName": "ZoneStandbyDelay_Sp",
@@ -931,60 +913,6 @@
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
-          "id": "av,11250",
-          "name": "ZoneIAQ_Eff",
-          "fileName": "ZoneIAQ_Eff",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "av,11251",
-          "name": "ZoneIAQ_Sp",
-          "fileName": "ZoneIAQ_Sp",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "av,11252",
-          "name": "ZoneIAQ_EffDemand",
-          "fileName": "ZoneIAQ_EffDemand",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "av,11253",
-          "name": "ZoneIAQ_LocDemand",
-          "fileName": "ZoneIAQ_LocDemand",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "av,11254",
-          "name": "ZoneIAQ_RemDemand",
-          "fileName": "ZoneIAQ_RemDemand",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "av,11255",
-          "name": "ZoneIAQ_Airflow",
-          "fileName": "ZoneIAQ_Airflow",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "av,11256",
-          "name": "ZoneIAQ_Limit_Sp",
-          "fileName": "ZoneIAQ_Limit_Sp",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "av,11261",
-          "name": "Dx1OAInt_Sp",
-          "fileName": "Dx1OAInt_Sp",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "av,11262",
-          "name": "Dx2OAInt_Sp",
-          "fileName": "Dx2OAInt_Sp",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
           "id": "bdc,1",
           "name": "ActiveInactive_BDC",
           "fileName": "ActiveInactive_BDC",
@@ -1057,27 +985,9 @@
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
-          "id": "bi,105",
-          "name": "Motion_Local",
-          "fileName": "Motion_Local",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
           "id": "bmd,1",
           "name": "BBMD List1 4399",
           "fileName": "BBMD List1 4399",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "bo,1",
-          "name": "HWV_D1",
-          "fileName": "HWV_D1",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "bo,2",
-          "name": "HWV_D2",
-          "fileName": "HWV_D2",
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
@@ -1165,12 +1075,6 @@
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
-          "id": "bv,11055",
-          "name": "ZoneMotionCall",
-          "fileName": "ZoneMotionCall",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
           "id": "bv,11070",
           "name": "HWVAction",
           "fileName": "HWVAction",
@@ -1237,36 +1141,6 @@
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
-          "id": "bv,11260",
-          "name": "Dx_FlowInt",
-          "fileName": "Dx_FlowInt",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "bv,11261",
-          "name": "Dx1_OAInt",
-          "fileName": "Dx1_OAInt",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "bv,11262",
-          "name": "Dx2_OAInt",
-          "fileName": "Dx2_OAInt",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "bv,11271",
-          "name": "Dx1_Demand",
-          "fileName": "Dx1_Demand",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "bv,11272",
-          "name": "Dx2_Demand",
-          "fileName": "Dx2_Demand",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
           "id": "co,11001",
           "name": "ZoneClg_CO",
           "fileName": "ZoneClg_CO",
@@ -1294,12 +1168,6 @@
           "id": "co,11201",
           "name": "MATLimit_CO",
           "fileName": "MATLimit_CO",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "co,11250",
-          "name": "ZoneIAQ_CO",
-          "fileName": "ZoneIAQ_CO",
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
@@ -1573,21 +1441,9 @@
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
-          "id": "pg,11070",
-          "name": "ZoneHWV3P_PG13",
-          "fileName": "ZoneHWV3P_PG13",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
           "id": "pg,11071",
           "name": "ZoneHWV_PG13_Option",
           "fileName": "ZoneHWV_PG13_Option",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "pg,11072",
-          "name": "ZoneHWVwFB_PG13_Option",
-          "fileName": "ZoneHWVwFB_PG13_Option",
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
@@ -1597,33 +1453,9 @@
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
-          "id": "pg,11102",
-          "name": "FanAOSpeed_PG_Option",
-          "fileName": "FanAOSpeed_PG_Option",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "pg,11103",
-          "name": "Fan2Speed_PG_Option",
-          "fileName": "Fan2Speed_PG_Option",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
           "id": "pg,11201",
           "name": "ZoneEconomizer_PG",
           "fileName": "ZoneEconomizer_PG",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "pg,11250",
-          "name": "ZoneIAQ_PG",
-          "fileName": "ZoneIAQ_PG",
-          "lastUpdate": "2024-08-06T19:14:30.601Z"
-        },
-        {
-          "id": "pg,11260",
-          "name": "Dx_PG",
-          "fileName": "Dx_PG",
           "lastUpdate": "2024-08-06T19:14:30.601Z"
         },
         {
