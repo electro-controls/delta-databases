@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "fault;not-commissioned"
   },
   "present-value": {
     "$base": "Real",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault"
   },
   "reset": {
     "$base": "Boolean",
@@ -42,7 +42,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aoc,3"
+    "value": "aoc,1"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -50,7 +50,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "missing-cfg-object"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Temperature_DegF_AOC"
+    "value": ""
   },
   "min-pres-value": {
     "$base": "Real",
