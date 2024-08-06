@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "175"
+    "value": "140"
   },
   "last-value": {
     "$base": "Real",
-    "value": "-58"
+    "value": "175"
   },
   "status-flags": {
     "$base": "BitString",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "306"
+    "value": "204"
   },
   "min-pres-value": {
     "$base": "Real",

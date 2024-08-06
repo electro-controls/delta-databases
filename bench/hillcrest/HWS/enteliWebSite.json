@@ -423,21 +423,6 @@
       "templateTriggered": false
     },
     {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,10003",
-      "objectName": "HW_Critical_PG4",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_Critical_PG4.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/5/2024, 4:56:12 PM",
-      "templateTriggered": false
-    },
-    {
       "action": "delete",
       "device": 4399,
       "objectId": "av,10043",
@@ -498,36 +483,6 @@
       "templateTriggered": false
     },
     {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,10010",
-      "objectName": "HW_BlrDemand_PG13",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_BlrDemand_PG13.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/5/2024, 4:59:20 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,10011",
-      "objectName": "HW_BlrLeadLag_PG13",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_BlrLeadLag_PG13.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/5/2024, 5:02:46 PM",
-      "templateTriggered": false
-    },
-    {
       "action": "delete",
       "device": 4399,
       "objectId": "av,10201",
@@ -555,21 +510,6 @@
         "scheme": "file"
       },
       "date": "8/5/2024, 5:13:06 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,10210",
-      "objectName": "HW_Pumps_PG13",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_Pumps_PG13.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/5/2024, 5:15:32 PM",
       "templateTriggered": false
     },
     {
@@ -1241,12 +1181,6 @@
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {
-          "id": "av,10112",
-          "name": "HW_B2CutIn_Sp",
-          "fileName": "HW_B2CutIn_Sp",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
           "id": "av,10113",
           "name": "HW_B3CutIn_Sp",
           "fileName": "HW_B3CutIn_Sp",
@@ -1265,12 +1199,6 @@
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {
-          "id": "av,10122",
-          "name": "HW_B2CutOut_Sp",
-          "fileName": "HW_B2CutOut_Sp",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
           "id": "av,10123",
           "name": "HW_B3CutOut_Sp",
           "fileName": "HW_B3CutOut_Sp",
@@ -1286,12 +1214,6 @@
           "id": "av,10131",
           "name": "HW_B1HWSLimit_Sp",
           "fileName": "HW_B1HWSLimit_Sp",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
-          "id": "av,10132",
-          "name": "HW_B2HWSLimit_Sp",
-          "fileName": "HW_B2HWSLimit_Sp",
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {
@@ -1319,12 +1241,6 @@
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {
-          "id": "av,10152",
-          "name": "HW_B2Ramp",
-          "fileName": "HW_B2Ramp",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
           "id": "av,10153",
           "name": "HW_B3Ramp",
           "fileName": "HW_B3Ramp",
@@ -1343,12 +1259,6 @@
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {
-          "id": "av,10162",
-          "name": "HW_B2RateCall",
-          "fileName": "HW_B2RateCall",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
           "id": "av,10163",
           "name": "HW_B3RateCall",
           "fileName": "HW_B3RateCall",
@@ -1364,12 +1274,6 @@
           "id": "av,10171",
           "name": "HW_B1DemandLimit_Sp",
           "fileName": "HW_B1DemandLimit_Sp",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
-          "id": "av,10172",
-          "name": "HW_B2DemandLimit_Sp",
-          "fileName": "HW_B2DemandLimit_Sp",
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {
@@ -1466,12 +1370,6 @@
           "id": "av,11001",
           "name": "HW_B1ReservedModbusMapping",
           "fileName": "HW_B1ReservedModbusMapping",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
-          "id": "av,12001",
-          "name": "HW_B2ReservedModbusMapping",
-          "fileName": "HW_B2ReservedModbusMapping",
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {
@@ -1742,12 +1640,6 @@
           "id": "bv,10151",
           "name": "HW_B1Call",
           "fileName": "HW_B1Call",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
-          "id": "bv,10152",
-          "name": "HW_B2Call",
-          "fileName": "HW_B2Call",
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {
@@ -2036,12 +1928,6 @@
           "id": "pg,10010",
           "name": "HW_BlrDemand_PG13",
           "fileName": "HW_BlrDemand_PG13",
-          "lastUpdate": "2024-08-05T22:31:48.645Z"
-        },
-        {
-          "id": "pg,10011",
-          "name": "HW_BlrLeadLag_PG13",
-          "fileName": "HW_BlrLeadLag_PG13",
           "lastUpdate": "2024-08-05T22:31:48.645Z"
         },
         {

@@ -67,19 +67,5 @@ End If
 //Calculated HWs Demand percent. 
 'HW_HWSDemand_Loc' = 'HW_HWS_CO' * 'HW_SystemRamp' * 0.01
 
-If  'HW_Lag1Latch' Then
-    'HW_Lead1Demand' = 'HW_SeqDemand'
-    'HW_Lead2Demand' = 'HW_SeqDemand'
-    'HW_SeqDemand' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 100, 100)
-  Else
-    'HW_Lead1Demand' = 'HW_SeqDemand'
-    'HW_Lead2Demand' = 0
-    'HW_SeqDemand' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 50, 100)
-End If
-
-If ('HW_SeqDemand' > 'HW_LagStart_Sp') OnFor 'HW_InterstageDly_Sp':M Then
-    'HW_Lag1Latch' = On
-End If
-If ('HW_SeqDemand' < 'HW_LagStop_Sp') Then
-    'HW_Lag1Latch' = Off
-End If
+'HW_Lead1Demand' = 'HW_SeqDemand'
+'HW_SeqDemand' = 'HW_HWSDemand_Eff'

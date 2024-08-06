@@ -1,5 +1,8 @@
 'HW_BlrSeq_PG13.Write_Priority' = 13
 
+//Boiler sequence
+'HW_B1Call' = Switch ( 'HW_B1Call', 'HW_Lead1Demand', 8, 1)
+
 //B1
 If 'HW_B1Call' Then
   If ('HWP1_Status' Or 'HWP2_Status') OnFor 10S Then //Use BP BO if status is not available
@@ -11,10 +14,4 @@ If 'HW_B1Call' Then
   'B_Enable' = Off
 End If
 
-If 'B_Enable' Then
-    DoEvery 10S
-     'HW_B1Ramp' = Min (100, 'HW_B1Ramp' + (100 / ('HW_FireRamp_Sp' * 6)))
-    End Do
-  Else
-    'HW_B1Ramp' = 'HW_B1CutOut_Sp'
-End If
+'Boiler_Sp' = Scale ('HW_HWS_Sp', 0, 100, 0, 185, 100)

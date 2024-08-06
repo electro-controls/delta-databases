@@ -18,15 +18,15 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "fault;not-commissioned"
+    "value": "not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "14.7059"
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "fault"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -50,7 +50,7 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "missing-cfg-object"
+    "value": "no-fault-detected"
   },
   "out-of-service": {
     "$base": "Boolean",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "Output_Pct_AOC"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "13"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -158,10 +158,7 @@
       }
     },
     "13": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "14": {
       "$base": "Choice",
@@ -198,7 +195,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,10003"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -234,7 +231,7 @@
     },
     "13": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,10012"
     },
     "14": {
       "$base": "ObjectIdentifier",
@@ -265,7 +262,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T12:40:53.60"
     },
     "5": {
       "$base": "DateTime",
@@ -301,7 +298,7 @@
     },
     "13": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-02T12:40:53.70"
     },
     "14": {
       "$base": "DateTime",
@@ -327,11 +324,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "37"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "1.47059"
   },
   "port-1-status": {
     "$base": "Enumerated",
