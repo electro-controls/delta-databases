@@ -1,8 +1,8 @@
 {
-  "displayName": "Economizer",
+  "displayName": "HWV",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output,4"
+    "value": "analog-output,3"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Economizer"
+    "value": "HWV"
   },
   "description": {
     "$base": "String",
@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "100"
   },
   "status-flags": {
     "$base": "BitString",
@@ -42,7 +42,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aoc,11"
+    "value": "aoc,31"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Economizerr_Pct_AOC"
+    "value": "HWV_Pct_AOC"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "13"
+    "value": "4"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,10 +104,7 @@
       }
     },
     "4": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "5": {
       "$base": "Choice",
@@ -173,10 +170,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -231,7 +225,7 @@
     },
     "13": {
       "$base": "ObjectIdentifier",
-      "value": "program,11201"
+      "value": "program,11071"
     },
     "14": {
       "$base": "ObjectIdentifier",
@@ -243,7 +237,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,65984"
     },
     "$base": "Array"
   },
@@ -262,11 +256,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-01T14:20:56.90"
+      "value": "2000-01-01T14:14:48.20"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-02-13T09:31:27.90"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -286,7 +280,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-03-11T15:21:14.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -298,7 +292,7 @@
     },
     "13": {
       "$base": "DateTime",
-      "value": "2000-01-01T14:20:56.80"
+      "value": "2000-01-01T14:14:48.40"
     },
     "14": {
       "$base": "DateTime",
@@ -310,7 +304,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-01T13:47:01.50"
     },
     "$base": "Array"
   },
@@ -324,11 +318,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "10"
   },
   "port-1-status": {
     "$base": "Enumerated",

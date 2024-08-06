@@ -1469,6 +1469,30 @@
           "name": "DELTA",
           "fileName": "DELTA",
           "lastUpdate": "2024-08-06T19:14:30.601Z"
+        },
+        {
+          "id": "ai,1",
+          "name": "FanCurrent",
+          "fileName": "FanCurrent",
+          "lastUpdate": "2024-08-06T20:57:26.731Z"
+        },
+        {
+          "id": "bi,3",
+          "name": "Freezestat",
+          "fileName": "Freezestat",
+          "lastUpdate": "2024-08-06T20:57:55.114Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "FanEnable_BO",
+          "fileName": "FanEnable_BO",
+          "lastUpdate": "2024-08-06T20:58:24.106Z"
+        },
+        {
+          "id": "ao,3",
+          "name": "HWV",
+          "fileName": "HWV",
+          "lastUpdate": "2024-08-06T20:59:04.456Z"
         }
       ]
     }

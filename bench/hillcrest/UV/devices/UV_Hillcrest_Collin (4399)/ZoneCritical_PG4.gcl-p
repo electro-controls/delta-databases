@@ -1,14 +1,6 @@
 'ZoneCritical_PG4.Write_Priority' = 4
 
-////The following variables are placeholders for freeze stat, HWV, Econ, Fan
-////Do a search and replace to actual I/O.
-////Rem
-Variable Freeze_BI
-Variable Econ_AO
-Variable Fan_BO
-Variable HWV_AO
-
-If ((('DAT_Eff' < 48) OnFor 30S) Or Freeze_BI) And (Not 'FreezeMode') Then
+If ((('DAT_Eff' < 48) OnFor 30S) Or 'Freezestat') And (Not 'FreezeMode') Then
     'FreezeMode' = On
 End If
 
@@ -20,12 +12,12 @@ IfOnce ('ZoneOccMode' = 3) Then //resets on Occ start
     'FreezeMode' = Off
 End If
 
-If 'FreezeMode' Or Freeze_BI Then
-    Econ_AO = 0
-    HWV_AO = 100
-    Fan_BO = Off
+If 'FreezeMode' Or 'Freezestat' Then
+    'Economizer' = 0
+    'HWV' = 100
+    'FanEnable_BO' = Off
   Else
-//    Relinquish Econ_AO
-//    Relinquish HWV_AO
-//    Relinquish Fan_BO
+   Relinquish 'Economizer'
+   Relinquish 'HWV'
+   Relinquish 'FanEnable_BO'
 End If

@@ -39,7 +39,7 @@ If 'Econ_RemClg' >= 0 Then
     'Econ_EffClg' = 'Econ_LocClg'
 End If
 
-If 'EconFreeClg' And ('ZoneOccMode' = 3 Or 'ZoneOccMode' = 4) And ('ZoneControlMode' = 2) And 'Dx1_OAInt' Then //Occ/Bypass and Dx Cooling allowed
+If 'EconFreeClg' And ('ZoneOccMode' = 3 Or 'ZoneOccMode' = 4) And ('ZoneControlMode' = 2) Then //Occ/Bypass and Dx Cooling allowed
     'Econ_LocClg' = Scale ('DATClg_CO', 0, 0, 0, 50, 100)
   ElseIf  'EconFreeClg' And ('ZoneOccMode' = 3 Or 'ZoneOccMode' = 4) And ('ZoneControlMode' = 2) Then //Full DAT authority to economizer
     'Econ_LocClg' = Scale ('DATClg_CO', 0, 0, 0, 100, 100)
@@ -54,7 +54,7 @@ If 'Econ_RemMinOAPct' >= 0 Then
     'Econ_EffMinOAPct' = 'Econ_LocMinOAPct'
 End If
 
-'Econ_LocMinOAPct' = Scale ('ZoneIAQ_EffDemand', 0, 0, 'EconMinOAPct_Sp', 100, 'ZoneIAQ_Limit_Sp')
+'Econ_LocMinOAPct' = 'EconMinOAPct_Sp'
 
 If 'RunStatusInt' And ('ZoneOccMode' = 3 Or 'ZoneOccMode' = 4) Then //Occ/Bypass
     'Economizer' = (Scale ('Econ_EffClg', 0, 0, 'Econ_EffMinOAPct', 100, 100)) * ('EconMATLimit' * 0.01) * ('EconRamp' * 0.01)

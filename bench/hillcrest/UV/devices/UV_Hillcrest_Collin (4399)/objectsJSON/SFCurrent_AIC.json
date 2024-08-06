@@ -56,7 +56,7 @@
       },
       "value": {
         "$base": "Real",
-        "value": "100"
+        "value": "10"
       },
       "adValue": {
         "$base": "Unsigned",

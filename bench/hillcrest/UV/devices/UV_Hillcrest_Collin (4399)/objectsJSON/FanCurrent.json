@@ -1,8 +1,8 @@
 {
-  "displayName": "DAT_Local",
+  "displayName": "FanCurrent",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,2"
+    "value": "analog-input,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DAT_Local"
+    "value": "FanCurrent"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "60"
+    "value": "5"
   },
   "last-value": {
     "$base": "Real",
-    "value": "-58"
+    "value": "10"
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "°F"
+    "value": "A"
   },
   "commission-flag": {
     "$base": "Enumerated",
@@ -46,7 +46,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "aic,1"
+    "value": "aic,21"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,23 +62,23 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Temperature_DegF T3_AIC"
+    "value": "SFCurrent_AIC"
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "366"
+    "value": "306"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": "-58"
+    "value": 0
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "302"
+    "value": "100"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.0879121"
+    "value": "0.02442"
   },
   "cov-increment": {
     "$base": "Real",

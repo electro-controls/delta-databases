@@ -51,7 +51,7 @@ End If
 
 
 //Intercontroller Links
-//OAT_Eff = xxx.OAT_Eff //Reference AV91 of parent DSC (OAT_Eff)
+'OAT_Eff' = '1000.OAT_Eff' //Reference AV91 of parent DSC (OAT_Eff)
 //SFOntimeRef = xxx.AVxx //reference to associated AHU Ontime (note used to inhibit alarms) 
 
 
