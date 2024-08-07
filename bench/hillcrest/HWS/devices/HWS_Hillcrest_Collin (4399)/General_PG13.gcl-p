@@ -20,3 +20,4 @@ If JaceChanged OffFor 10M Then
 End If
 
 'OAT_Eff' = 'OAT' //OAT reference
+'Zone_RemSchedule' = '1037.Zone_RemSchedule' 

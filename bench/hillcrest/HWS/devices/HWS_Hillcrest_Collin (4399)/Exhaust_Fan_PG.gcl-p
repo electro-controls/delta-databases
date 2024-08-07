@@ -1,6 +1,4 @@
-// todo find out which zone goes with each ehaust fan
-
-If (1 = 1) Then // building occ
+If ('Zone_RemSchedule') Then // building occ... set to 1037 for now.  Addresses are inaccurate on submittal.
     'EF1_Enable' = On
     'EF2_Enable' = On
     'EF3_Enable' = On
