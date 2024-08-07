@@ -76,6 +76,66 @@
       },
       "date": "8/7/2024, 12:02:33 PM",
       "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 7000,
+      "objectId": "lcd,201",
+      "objectName": "LinkLCD2",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/FT_CUH/devices/FT_Hillcrest_Collin (7000)/objectsJSON/LinkLCD2.json",
+        "scheme": "file"
+      },
+      "date": "8/7/2024, 4:39:03 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 7000,
+      "objectId": "lcd,401",
+      "objectName": "LinkLCD4",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/FT_CUH/devices/FT_Hillcrest_Collin (7000)/objectsJSON/LinkLCD4.json",
+        "scheme": "file"
+      },
+      "date": "8/7/2024, 4:39:03 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 7000,
+      "objectId": "lnk,201",
+      "objectName": "LINKnet Device 2",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/FT_CUH/devices/FT_Hillcrest_Collin (7000)/objectsJSON/LINKnet Device 2.json",
+        "scheme": "file"
+      },
+      "date": "8/7/2024, 4:39:03 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 7000,
+      "objectId": "lnk,401",
+      "objectName": "LINKnet Device 4",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/FT_CUH/devices/FT_Hillcrest_Collin (7000)/objectsJSON/LINKnet Device 4.json",
+        "scheme": "file"
+      },
+      "date": "8/7/2024, 4:39:03 PM",
+      "templateTriggered": false
     }
   ],
   "devices": [
@@ -2965,6 +3025,42 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-08-07T22:34:31.937Z"
+        },
+        {
+          "id": "lcd,201",
+          "name": "LinkLCD2",
+          "fileName": "LinkLCD2",
+          "lastUpdate": "2024-08-07T22:39:03.460Z"
+        },
+        {
+          "id": "lcd,401",
+          "name": "LinkLCD4",
+          "fileName": "LinkLCD4",
+          "lastUpdate": "2024-08-07T22:39:03.466Z"
+        },
+        {
+          "id": "lnk,201",
+          "name": "LINKnet Device 2",
+          "fileName": "LINKnet Device 2",
+          "lastUpdate": "2024-08-07T22:39:03.472Z"
+        },
+        {
+          "id": "lnk,401",
+          "name": "LINKnet Device 4",
+          "fileName": "LINKnet Device 4",
+          "lastUpdate": "2024-08-07T22:39:03.493Z"
+        },
+        {
+          "id": "lnk,301",
+          "name": "LINKnet Device 3",
+          "fileName": "LINKnet Device 3",
+          "lastUpdate": "2024-08-07T23:05:54.277Z"
+        },
+        {
+          "id": "lcd,301",
+          "name": "LinkLCD3",
+          "fileName": "LinkLCD3",
+          "lastUpdate": "2024-08-07T23:06:09.063Z"
         }
       ]
     }
