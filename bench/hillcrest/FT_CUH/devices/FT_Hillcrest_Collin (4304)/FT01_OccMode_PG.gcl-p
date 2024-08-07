@@ -1,0 +1,22 @@
+//Set the occ mode. 
+If 'FT01_DNSAlgMode' = 1 And 'FT01_Rem_Schedule' Then
+    'FT01_OccMode' = 3 //Occupied
+  ElseIf  'FT01_BypassCall' Then
+    'FT01_OccMode' = 4 //Bypass
+  ElseIf  'FT01_Rem_WarmupCall' Then
+    'FT01_OccMode' = 5 //Warmup
+  ElseIf  'FT01_DNSAlgMode' = 0 And (Not 'FT01_Rem_Schedule') Then
+    'FT01_OccMode' = 1 //Unocc
+  Else
+    'FT01_OccMode' = 2 //Standby
+End If
+
+IfOnce 'FT01_Rem_Schedule' Then
+    'FT01_DNSAlgMode' = 1
+End If
+
+IfOnce (Not 'FT01_Rem_Schedule') And (Not 'FT01_BypassCall') Then
+    'FT01_DNSAlgMode' = 0
+End If
+
+//End of Program   

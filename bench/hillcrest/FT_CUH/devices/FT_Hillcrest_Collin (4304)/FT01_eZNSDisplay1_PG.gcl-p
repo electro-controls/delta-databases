@@ -1,0 +1,76 @@
+If PowerUp Then
+  'LinkLCD1.Line_2' = 'FT01_Eff_ZoneTemp'
+  'LinkLCD1.Line_3' = 'FT01_Zone_EffSp'
+  'LinkLCD1.Line_2_Units' = 3
+  'LinkLCD1.Line_3_Units' = 3
+  'LinkLCD1.Occupancy' = 2
+  'LinkLCD1.On' = 1
+  'FT01_DNSAlgMode' = 1
+End If
+
+//Local setpoint adjust enable
+//Change mode requires that button 2 be pressed 4 times (or as programmed) 
+//prior to being able to change stat setting. This alleviates unauthorized tampering.
+IfOnce 'FT01_DNSMode' = 1 Then
+    'FT01_EnableDNS' = On
+    'LinkLCD1.Set' = 0
+End If
+
+IfOnce 'FT01_DNSMode' = 2 Then
+    'FT01_EnableDNS' = Off
+    'LinkLCD1.Set' = 0
+End If
+
+If 'FT01_DNSMode' = 3 Then
+  Variable KeyCount
+  IfOnce ('LinkLCD1.Key_Press' = 2) Then
+    KeyCount = KeyCount + 1
+  End If
+  If KeyCount >= 4 Then
+      'FT01_EnableDNS' = On
+  End If
+  If ('LinkLCD1.Key_Press' = 0) OnFor 60S Then
+      'FT01_EnableDNS' = Off
+      KeyCount = 0
+  End If
+  IfOnce 'FT01_EnableDNS' Then
+    'LinkLCD1.Set' = 1
+  End If
+  IfOnce Not 'FT01_EnableDNS' Then
+    'LinkLCD1.Set' = 0
+  End If
+End If
+IfOnce 'FT01_DNSMode' = 2 Then
+    'FT01_EnableDNS' = Off
+    'LinkLCD1.Set' = 0
+End If
+
+//This updates the display temps on a periodic basis
+DoEvery 1M
+  'LinkLCD1.Line_2' = 'FT01_Eff_ZoneTemp'
+  'LinkLCD1.Line_3' = 'FT01_Zone_EffSp'
+  'LinkLCD1.Line_3_Units' = 3
+End Do
+
+//Occupancy Icons
+IfOnce ('FT01_OccMode' = 3) Or ('FT01_OccMode' = 4) Then
+    'LinkLCD1.Occupancy' = 2
+    'LinkLCD1.On' = 1
+    'LinkLCD1.Off' = 0
+End If
+
+IfOnce ('FT01_OccMode' = 1) Or ('FT01_OccMode' = 2) Then
+    'LinkLCD1.Occupancy' = 1
+    'LinkLCD1.On' = 0
+    'LinkLCD1.Off' = 1
+End If
+
+//Heat Icon
+IfOnce ('FT01_EffZoneHtg' >= 5) Then
+    'LinkLCD1.Heating' = 1
+End If
+IfOnce ('FT01_EffZoneHtg' <= 1) Then
+    'LinkLCD1.Heating' = 0
+End If
+
+//End of Program
