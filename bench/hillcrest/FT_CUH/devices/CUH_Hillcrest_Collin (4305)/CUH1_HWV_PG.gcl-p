@@ -21,11 +21,11 @@ End If
 
 //HWV                  
 If 'CUH1_RunStatusInt' And 'CUH1_HWMode' Then
-    'CUH1_HWV' = 'CUH1_DATHtg_CO' * 'CUH1_HtgRamp' * 0.01 //DAT control when fan is running
+    'HWV' = On //DAT control when fan is running
   ElseIf  'CUH1_HWMode' Then
-    'CUH1_HWV' = 'CUH1_EffZoneHtg' * 'CUH1_HtgRamp' * 0.01 //treat as fanless convector when fan switch is off
+    'HWV' = On //treat as fanless convector when fan switch is off
   Else
-    'CUH1_HWV' = 0
+    'HWV' = Off
 End If
 
 //end of HWV  page

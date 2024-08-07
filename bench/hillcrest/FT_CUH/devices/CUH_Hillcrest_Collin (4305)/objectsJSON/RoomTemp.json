@@ -1,8 +1,9 @@
 {
-  "displayName": "CUH1_RoomTemp",
+  "$base": "Object",
+  "displayName": "RoomTemp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,5"
+    "value": "analog-input,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,23 +11,23 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_RoomTemp"
+    "value": "RoomTemp"
   },
   "description": {
     "$base": "String",
-    "value": "26 Oct2023 AV- vs temp probe"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "not-commissioned"
   },
   "present-value": {
     "$base": "Real",
-    "value": "66.1433"
+    "value": 0
   },
   "last-value": {
     "$base": "Real",
-    "value": "66.1433"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,11 +39,11 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "°F"
+    "value": "%"
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -62,27 +63,27 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "Temperature F"
+    "value": ""
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "235"
+    "value": "200"
   },
   "min-pres-value": {
     "$base": "Real",
-    "value": "-58"
+    "value": 0
   },
   "max-pres-value": {
     "$base": "Real",
-    "value": "300"
+    "value": "100"
   },
   "resolution": {
     "$base": "Real",
-    "value": "0.0874237"
+    "value": "0.02442"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "0.1"
+    "value": "1"
   },
   "ad-filter": {
     "$base": "Unsigned",
@@ -92,12 +93,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "188271577"
+      "value": "15375"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "2290"
+    "value": 0
   },
   "calibration": {
     "$base": "Real",

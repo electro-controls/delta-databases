@@ -1,8 +1,9 @@
 {
-  "displayName": "CUH1_Enable",
+  "$base": "Object",
+  "displayName": "FanEnable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-output,1"
+    "value": "binary-output,2"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,19 +11,19 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "CUH1_Enable"
+    "value": "FanEnable"
   },
   "description": {
     "$base": "String",
-    "value": "18Apr2024 AV- visual and amps"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2"
+    "value": "private2;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -34,15 +35,15 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "commissioned"
+    "value": "not-commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,11"
+    "value": "bdc,1"
   },
   "device-type": {
     "$base": "String",
-    "value": "Active/Inactive"
+    "value": ""
   },
   "event-state": {
     "$base": "Enumerated",
@@ -62,19 +63,19 @@
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "OFF"
   },
   "active-text": {
     "$base": "String",
-    "value": "Active"
+    "value": "ON"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-10-26T05:18:36.700000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "77"
+    "value": 0
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +84,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-10-25T16:18:23.50"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-10-26T05:18:36.700000-06:00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
@@ -108,7 +109,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "17"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -170,7 +171,10 @@
       }
     },
     "10": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "11": {
       "$base": "Choice",
@@ -229,7 +233,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "program,10109"
+      "unspecifiedValue": "true"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -253,7 +257,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,10103"
+      "unspecifiedValue": "true"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -296,11 +300,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-10-26T08:40:45.50"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-08-13T09:10:07.00"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "6": {
       "$base": "DateTime",
@@ -320,7 +324,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-10-26T08:40:40.70"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "11": {
       "$base": "DateTime",
@@ -344,7 +348,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "2000-10-26T08:40:26.30"
+      "value": "*-*-*-*T*:*:*.*"
     },
     "$base": "Array"
   },
@@ -354,11 +358,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "255"
+    "value": 0
   },
   "output-volt": {
     "$base": "Real",
-    "value": "10"
+    "value": 0
   },
   "module-type": {
     "$base": "Enumerated",
@@ -374,7 +378,7 @@
   },
   "start-delay-time": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "5"
   },
   "start-delay-flags": {
     "$base": "BitString",
@@ -406,7 +410,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Active"
+    "value": "OFF"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -473,9 +477,8 @@
   },
   "flick-warn-timer": {
     "$base": "Choice",
-    "flick-warn-timer": {
-      "$base": "Unsigned",
-      "value": 0
+    "null": {
+      "$base": "Null"
     }
   },
   "flick-warn-active": {
@@ -513,9 +516,8 @@
   },
   "override-timer": {
     "$base": "Choice",
-    "override-timer": {
-      "$base": "Unsigned",
-      "value": 0
+    "null": {
+      "$base": "Null"
     }
   },
   "reliability-timer": {

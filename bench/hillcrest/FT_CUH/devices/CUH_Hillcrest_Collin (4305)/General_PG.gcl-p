@@ -22,9 +22,9 @@ End Do
 'Eff_OAT' = '1000.Eff_OAT'
 
 //Link Zone Temp here
-'CUH1_Eff_ZoneTemp' = 'CUH1_RoomTemp'
+'CUH1_Eff_ZoneTemp' = 'RoomTemp'
 
 // Room Variance
 'CUH1_ZoneVariance' = 'CUH1_Eff_ZoneTemp' - 'CUH1_Zone_EffSp'
 
- //end of general page
+ //end of general page 

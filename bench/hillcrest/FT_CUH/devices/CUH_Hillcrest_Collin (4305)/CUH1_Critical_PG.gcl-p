@@ -1,4 +1,4 @@
-'PG8.Write_Priority' = 4
+'CUH1_Critical_PG.Write_Priority' = 4
 
 //software freeze mode
 
@@ -16,11 +16,11 @@ End If
 
 
 If 'CUH1_FreezeMode' Then
-    'CUH1_Enable' = Off
-    'CUH1_HWV' = 100
+    'HWV' = On
+    'FanEnable' = Off
   Else
-    Relinquish 'CUH1_Enable'
-    Relinquish 'CUH1_HWV'
+    Relinquish 'HWV'
+    Relinquish 'FanEnable'
 End If
 
 

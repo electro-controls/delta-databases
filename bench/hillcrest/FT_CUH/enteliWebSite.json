@@ -4,81 +4,6 @@
   "uploadQueue": [
     {
       "action": "create",
-      "device": 4305,
-      "objectId": "pg,3",
-      "objectName": "CUH1_HWV_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/FT_CUH/devices/CUH_Hillcrest_Collin (4305)/CUH1_HWV_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/7/2024, 12:02:33 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4305,
-      "objectId": "pg,4",
-      "objectName": "CUH1_OccMode_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/FT_CUH/devices/CUH_Hillcrest_Collin (4305)/CUH1_OccMode_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/7/2024, 12:02:33 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4305,
-      "objectId": "pg,5",
-      "objectName": "CUH1_Zone_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/FT_CUH/devices/CUH_Hillcrest_Collin (4305)/CUH1_Zone_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/7/2024, 12:02:33 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4305,
-      "objectId": "pg,6",
-      "objectName": "FaultDetection_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/FT_CUH/devices/CUH_Hillcrest_Collin (4305)/FaultDetection_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/7/2024, 12:02:33 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 4305,
-      "objectId": "pg,9",
-      "objectName": "CUH1_DAT_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/FT_CUH/devices/CUH_Hillcrest_Collin (4305)/CUH1_DAT_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/7/2024, 12:02:33 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
       "device": 7000,
       "objectId": "lcd,201",
       "objectName": "LinkLCD2",
@@ -395,18 +320,6 @@
           "lastUpdate": "2024-08-07T20:33:16.335Z"
         },
         {
-          "id": "ai,1",
-          "name": "CUH1_Current",
-          "fileName": "CUH1_Current",
-          "lastUpdate": "2024-08-07T20:33:16.350Z"
-        },
-        {
-          "id": "ai,2",
-          "name": "CUH1_DAT",
-          "fileName": "CUH1_DAT",
-          "lastUpdate": "2024-08-07T20:33:16.361Z"
-        },
-        {
           "id": "av,10160",
           "name": "CUH1_DAT_EffSp",
           "fileName": "CUH1_DAT_EffSp",
@@ -479,12 +392,6 @@
           "lastUpdate": "2024-08-07T20:33:16.519Z"
         },
         {
-          "id": "bo,1",
-          "name": "CUH1_Enable",
-          "fileName": "CUH1_Enable",
-          "lastUpdate": "2024-08-07T20:33:16.586Z"
-        },
-        {
           "id": "bv,10190",
           "name": "CUH1_EnableDNS",
           "fileName": "CUH1_EnableDNS",
@@ -525,12 +432,6 @@
           "name": "CUH1_HWV AOC",
           "fileName": "CUH1_HWV AOC",
           "lastUpdate": "2024-08-07T20:33:16.836Z"
-        },
-        {
-          "id": "ao,4",
-          "name": "CUH1_HWV",
-          "fileName": "CUH1_HWV",
-          "lastUpdate": "2024-08-07T20:33:16.852Z"
         },
         {
           "id": "av,10131",
@@ -627,12 +528,6 @@
           "name": "CUH1_RemZoneHtg",
           "fileName": "CUH1_RemZoneHtg",
           "lastUpdate": "2024-08-07T20:33:17.081Z"
-        },
-        {
-          "id": "ai,5",
-          "name": "CUH1_RoomTemp",
-          "fileName": "CUH1_RoomTemp",
-          "lastUpdate": "2024-08-07T20:33:17.090Z"
         },
         {
           "id": "bv,10102",
@@ -819,6 +714,36 @@
           "name": "ControllerFault",
           "fileName": "ControllerFault",
           "lastUpdate": "2024-08-07T21:13:32.004Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "HWV",
+          "fileName": "HWV",
+          "lastUpdate": "2024-08-07T23:21:52.541Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "Open~Close",
+          "fileName": "Open~Close",
+          "lastUpdate": "2024-08-07T23:22:12.026Z"
+        },
+        {
+          "id": "bo,2",
+          "name": "FanEnable",
+          "fileName": "FanEnable",
+          "lastUpdate": "2024-08-07T23:23:31.155Z"
+        },
+        {
+          "id": "ai,3",
+          "name": "FanStatus",
+          "fileName": "FanStatus",
+          "lastUpdate": "2024-08-07T23:26:00.298Z"
+        },
+        {
+          "id": "ai,1",
+          "name": "RoomTemp",
+          "fileName": "RoomTemp",
+          "lastUpdate": "2024-08-07T23:27:45.826Z"
         }
       ]
     },
