@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault;out-of-service"
   },
   "present-value": {
     "$base": "Real",
-    "value": "70.5998"
+    "value": "55"
   },
   "last-value": {
     "$base": "Real",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "fault;out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -54,11 +54,11 @@
   },
   "reliability": {
     "$base": "Enumerated",
-    "value": "no-fault-detected"
+    "value": "shorted-loop"
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "349"
+    "value": "81"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "157033138"
+      "value": "138136"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1704"
+    "value": 0
   },
   "calibration": {
     "$base": "Real",

@@ -2,28 +2,28 @@
 
 //Power up defaults
 If PowerUp Then
-    'Eff_OAT' = 32
-    'FT01_OccMode' = 3
-    'FT01_Rem_Schedule' = On
-    'FT01_DNSAlgMode' = 1
-    'FT01_Zone_RemSp' = - 1
-    'FT01_RemZoneHtg' = - 1
-    'FT01_Rem_WarmupCall' = Off
-    'FT02_OccMode' = 3
-    'FT02_Rem_Schedule' = On
-    'FT02_DNSAlgMode' = 1
-    'FT02_Zone_RemSp' = - 1
-    'FT02_RemZoneHtg' = - 1
-    'FT02_Rem_WarmupCall' = Off
+  'Eff_OAT' = 32
+  'FT01_OccMode' = 3
+  'FT01_Rem_Schedule' = On
+  'FT01_DNSAlgMode' = 1
+  'FT01_Zone_RemSp' = - 1
+  'FT01_RemZoneHtg' = - 1
+  'FT01_Rem_WarmupCall' = Off
+  'FT02_OccMode' = 3
+  'FT02_Rem_Schedule' = On
+  'FT02_DNSAlgMode' = 1
+  'FT02_Zone_RemSp' = - 1
+  'FT02_RemZoneHtg' = - 1
+  'FT02_Rem_WarmupCall' = Off
 
-    'FT04_OccMode' = 3
-    'FT04_Rem_Schedule' = On
-    'FT04_DNSAlgMode' = 1
-    'FT04_Zone_RemSp' = - 1
-    'FT04_RemZoneHtg' = - 1
-    'FT04_Rem_WarmupCall' = Off
+  'FT04_OccMode' = 3
+  'FT04_Rem_Schedule' = On
+  'FT04_DNSAlgMode' = 1
+  'FT04_Zone_RemSp' = - 1
+  'FT04_RemZoneHtg' = - 1
+  'FT04_Rem_WarmupCall' = Off
 
-    'Uptime' = 0
+  'Uptime' = 0
 End If
 
 //Intercontroller Links
