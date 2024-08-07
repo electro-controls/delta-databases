@@ -1,8 +1,8 @@
 {
-  "displayName": "ControllerFault",
+  "displayName": "DNSMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "multi-state-value,98"
+    "value": "multi-state-value,10190"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ControllerFault"
+    "value": "DNSMode"
   },
   "description": {
     "$base": "String",
@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "1"
   },
   "gcl-value": {
     "$base": "Unsigned",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "mic,19"
+    "value": "mic,5"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -50,49 +50,41 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "number-of-states": {
     "$base": "Unsigned",
-    "value": "5"
+    "value": "3"
   },
   "state-text": {
     "1": {
       "$base": "String",
-      "value": "Normal"
+      "value": "UserAdjust"
     },
     "2": {
       "$base": "String",
-      "value": "Page Fault"
+      "value": "UserLockout"
     },
     "3": {
       "$base": "String",
-      "value": "AI Fault"
-    },
-    "4": {
-      "$base": "String",
-      "value": "AV Fault"
-    },
-    "5": {
-      "$base": "String",
-      "value": "CO Fault"
+      "value": "UserPassword"
     },
     "$base": "Array"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,6"
+    "value": "device,65984"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-03T19:02:38.600000-07:00"
+    "value": "2023-08-23T12:05:06.100000-06:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "Page Fault"
+    "value": "UserAdjust"
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "hvac"
+    "value": ""
   }
 }

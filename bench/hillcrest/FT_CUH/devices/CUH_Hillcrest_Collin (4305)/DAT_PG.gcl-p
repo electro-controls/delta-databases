@@ -1,0 +1,26 @@
+//DAT page
+
+//allow remote override of sp
+If ('AV10162' > 0) Then
+    'AV10160' = 'AV10162'
+  Else
+    'AV10160' = 'AV10161'
+End If
+
+
+//determine local sp
+If ('ControlMode' = 1) Then //heating
+    'AV10161' = Scale ('EffZoneHtg', 0, 0, 'ZoneHeat_EffSp', 75, 'AV10164')
+  Else //cooling or deadband
+    'AV10161' = Scale ('EffZoneClg', 0, 0, 'ZoneHeat_EffSp' - 0, 75, 'AV10163')
+End If
+
+IfOnce ('PrevControlMode' = 2) And ('ControlMode' = 3) Then //prev cooling and now deadband
+    'CO10103.Bias' = 1
+End If
+
+IfOnce ('ControlMode' = 2) Then //cooling
+    'CO10104.Bias' = 1
+End If
+
+//end of DAT page

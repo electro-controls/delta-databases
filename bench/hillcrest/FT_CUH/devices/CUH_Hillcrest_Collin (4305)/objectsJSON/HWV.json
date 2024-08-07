@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "HWV",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -43,7 +42,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": "On/Off"
+    "value": "Open/Close"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -63,19 +62,19 @@
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Off"
+    "value": "Close"
   },
   "active-text": {
     "$base": "String",
-    "value": "On"
+    "value": "Open"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-03T18:45:35.800000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "1"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -88,7 +87,7 @@
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-03T18:45:35.800000-07:00"
     },
     "$base": "Array"
   },
@@ -109,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "16"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -171,10 +170,7 @@
       }
     },
     "10": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "11": {
       "$base": "Choice",
@@ -254,7 +250,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,3"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -278,7 +274,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,4000902"
     },
     "$base": "Array"
   },
@@ -321,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-03T19:05:42.00"
     },
     "11": {
       "$base": "DateTime",
@@ -355,11 +351,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "10"
   },
   "module-type": {
     "$base": "Enumerated",
@@ -407,7 +403,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Off"
+    "value": "Open"
   },
   "time-delay": {
     "$base": "Unsigned",

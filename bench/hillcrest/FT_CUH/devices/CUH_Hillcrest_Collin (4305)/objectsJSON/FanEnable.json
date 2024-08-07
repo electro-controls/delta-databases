@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "FanEnable",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -43,7 +42,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "On/Off"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -63,23 +62,23 @@
   },
   "inactive-text": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Off"
   },
   "active-text": {
     "$base": "String",
-    "value": "ON"
+    "value": "On"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-03T18:37:04.200000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "1"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2000-01-03T18:36:21.100000-07:00"
   },
   "prev-change-of-state-times": {
     "1": {
@@ -88,7 +87,7 @@
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-03T18:37:04.200000-07:00"
     },
     "$base": "Array"
   },
@@ -109,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "10"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -171,10 +170,7 @@
       }
     },
     "10": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "11": {
       "$base": "Choice",
@@ -207,10 +203,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -257,7 +250,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,2"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -281,7 +274,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,4000902"
     },
     "$base": "Array"
   },
@@ -324,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-03T19:05:41.40"
     },
     "11": {
       "$base": "DateTime",
@@ -348,7 +341,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-03T18:36:08.80"
     },
     "$base": "Array"
   },
@@ -358,11 +351,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "10"
   },
   "module-type": {
     "$base": "Enumerated",
@@ -410,7 +403,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "OFF"
+    "value": "On"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -437,27 +430,6 @@
     "value": "alarm"
   },
   "event-time-stamps": {
-    "1": {
-      "$base": "Choice",
-      "dateTime": {
-        "$base": "DateTime",
-        "value": "*-*-*-*T*:*:*.*"
-      }
-    },
-    "2": {
-      "$base": "Choice",
-      "dateTime": {
-        "$base": "DateTime",
-        "value": "*-*-*-*T*:*:*.*"
-      }
-    },
-    "3": {
-      "$base": "Choice",
-      "dateTime": {
-        "$base": "DateTime",
-        "value": "*-*-*-*T*:*:*.*"
-      }
-    },
     "$base": "Array"
   },
   "hal-flags": {
@@ -477,8 +449,9 @@
   },
   "flick-warn-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "flick-warn-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "flick-warn-active": {
@@ -516,8 +489,9 @@
   },
   "override-timer": {
     "$base": "Choice",
-    "null": {
-      "$base": "Null"
+    "override-timer": {
+      "$base": "Unsigned",
+      "value": 0
     }
   },
   "reliability-timer": {

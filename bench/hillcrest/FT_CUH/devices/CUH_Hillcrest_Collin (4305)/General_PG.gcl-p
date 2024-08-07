@@ -1,13 +1,12 @@
 //power up defaults
 IfOnce PowerUp Then
-    'CUH1_OccMode' = 3
-    'CUH1_Zone_RemSp' = - 1
-    'CUH1_RemZoneClg' = - 1
-    'CUH1_RemZoneHtg' = - 1
-    'CUH1_DAT_RemSp' = - 1
-    'CUH1_Rem_Schedule' = On
-    'CUH1_Rem_WarmupCall' = Off
-    'CUH1_Rem_PurgeCall' = Off
+    'OccMode' = 3
+    'Zone_RemSp' = - 1
+    'RemZoneClg' = - 1
+    'RemZoneHtg' = - 1
+    'Rem_Schedule' = On
+    'Rem_WarmupCall' = Off
+    'Rem_PurgeCall' = Off
 
     'Eff_OAT' = 32
     'Uptime' = 0
@@ -22,9 +21,9 @@ End Do
 'Eff_OAT' = '1000.Eff_OAT'
 
 //Link Zone Temp here
-'CUH1_Eff_ZoneTemp' = 'RoomTemp'
+'Eff_ZoneTemp' = 'RoomTemp'
 
 // Room Variance
-'CUH1_ZoneVariance' = 'CUH1_Eff_ZoneTemp' - 'CUH1_Zone_EffSp'
+'ZoneVariance' = 'Eff_ZoneTemp' - 'Zone_EffSp'
 
  //end of general page 

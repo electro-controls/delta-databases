@@ -1,8 +1,8 @@
 {
-  "displayName": "ControllerFault",
+  "displayName": "OccMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "multi-state-value,98"
+    "value": "multi-state-value,10101"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "ControllerFault"
+    "value": "OccMode"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "3"
   },
   "gcl-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "3"
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "mic,19"
+    "value": "mic,4"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,45 +54,49 @@
   },
   "number-of-states": {
     "$base": "Unsigned",
-    "value": "5"
+    "value": "6"
   },
   "state-text": {
     "1": {
       "$base": "String",
-      "value": "Normal"
+      "value": "Unoccupied"
     },
     "2": {
       "$base": "String",
-      "value": "Page Fault"
+      "value": "Standby"
     },
     "3": {
       "$base": "String",
-      "value": "AI Fault"
+      "value": "Occupied"
     },
     "4": {
       "$base": "String",
-      "value": "AV Fault"
+      "value": "Bypass"
     },
     "5": {
       "$base": "String",
-      "value": "CO Fault"
+      "value": "WarmUp"
+    },
+    "6": {
+      "$base": "String",
+      "value": "Purge"
     },
     "$base": "Array"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,6"
+    "value": "program,4"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-03T19:02:38.600000-07:00"
+    "value": "2000-01-03T19:05:48.400000-07:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "Page Fault"
+    "value": "Occupied"
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "hvac"
+    "value": ""
   }
 }

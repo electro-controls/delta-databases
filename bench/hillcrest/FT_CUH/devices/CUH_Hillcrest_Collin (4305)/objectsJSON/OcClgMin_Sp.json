@@ -1,8 +1,8 @@
 {
-  "displayName": "Uptime",
+  "displayName": "OcClgMin_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,98"
+    "value": "analog-value,10112"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Uptime"
+    "value": "OcClgMin_Sp"
   },
   "description": {
     "$base": "String",
@@ -18,19 +18,19 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "present-value": {
     "$base": "Real",
-    "value": "313950"
+    "value": "68"
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "313950"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "min"
+    "value": "°F"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -50,19 +50,19 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,7"
+    "value": "device,999"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-03T19:05:21.100000-07:00"
+    "value": "2000-08-06T09:18:43.700000-06:00"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "1"
+    "value": "0.5"
   },
   "fixed-point": {
     "$base": "Boolean",
@@ -74,6 +74,6 @@
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": "hvac"
+    "value": ""
   }
 }

@@ -1,16 +1,16 @@
 {
-  "displayName": "Uptime",
+  "displayName": "FreezeMode",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,98"
+    "value": "binary-value,10195"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "analog-value"
+    "value": "binary-value"
   },
   "object-name": {
     "$base": "String",
-    "value": "Uptime"
+    "value": "FreezeMode"
   },
   "description": {
     "$base": "String",
@@ -21,12 +21,12 @@
     "value": ""
   },
   "present-value": {
-    "$base": "Real",
-    "value": "313950"
+    "$base": "Enumerated",
+    "value": "inactive"
   },
   "gcl-value": {
-    "$base": "Real",
-    "value": "313950"
+    "$base": "Enumerated",
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -36,9 +36,9 @@
     "$base": "Boolean",
     "value": 0
   },
-  "units": {
-    "$base": "Enumerated",
-    "value": "min"
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,11"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -52,25 +52,25 @@
     "$base": "Boolean",
     "value": 0
   },
+  "active-text": {
+    "$base": "String",
+    "value": "ON"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "OFF"
+  },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,7"
+    "value": "program,8"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-03T19:05:21.100000-07:00"
+    "value": "2000-01-03T19:05:43.400000-07:00"
   },
-  "cov-increment": {
-    "$base": "Real",
-    "value": "1"
-  },
-  "fixed-point": {
-    "$base": "Boolean",
-    "value": "1"
-  },
-  "decimal-places": {
-    "$base": "Unsigned",
-    "value": "1"
+  "text-value": {
+    "$base": "String",
+    "value": ""
   },
   "hal-flags": {
     "$base": "BitString",

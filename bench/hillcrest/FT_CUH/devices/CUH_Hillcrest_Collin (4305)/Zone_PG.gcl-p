@@ -1,0 +1,104 @@
+//zone page
+
+//determine effective sp
+If ('OccMode' = 3) Or ('OccMode' = 4) Or ('OccMode' = 5) Then //occ, bypass, or warmup
+    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - ('ZoneDb_Sp' * 0.5)), 'OcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('Zone_EffSp' + ('ZoneDb_Sp' * 0.5)), 'OcClgMin_Sp')
+  ElseIf  ('OccMode' = 2) Then //Standby
+    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - 'StandbyOffset_Sp' - ('ZoneDb_Sp' * 0.5)), 'OcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('Zone_EffSp' + 'StandbyOffset_Sp' + ('ZoneDb_Sp' * 0.5)), 'OcClgMin_Sp')
+  ElseIf  ('OccMode' = 6) Then //Purge
+    'ZoneHeat_EffSp' = Min (('Zone_EffSp' - 'StandbyOffset_Sp' - ('ZoneDb_Sp' * 0.5)), 'OcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max (('Zone_EffSp' + ('ZoneDb_Sp' * 0.5)), 'OcClgMin_Sp')
+  Else //unocc
+    'ZoneHeat_EffSp' = Min ('UnocHt_Sp', 'OcHtgMax_Sp')
+    'ZoneCool_EffSp' = Max ('UnocCl_Sp', 'OcClgMin_Sp')
+End If
+
+//Links remote setpoint to effective
+If ('OccMode' = 6) Then //purge
+    'Zone_EffSp' = 'NightPurgeZone_Sp'
+  ElseIf  ('Zone_RemSp' > 0) Then
+    'Zone_EffSp' = 'Zone_RemSp'
+  Else
+    'Zone_EffSp' = 'Zone_LocSp'
+End If
+
+//calculate local demand after ramp
+'LocZoneHtg' = 'ZoneHtg_CO' * 'HtgRamp' * 0.01
+'LocZoneClg' = 'ZoneClg_CO' * 'ClgRamp' * 0.01
+
+//determine heating and cooling call and previous mode latching
+Variable HtCall
+Variable ClCall
+
+If (('ZoneHtg_CO' > ('EffZoneClg' + 5)) And 'ControlMode' = 3) OnFor 'ZoneDbDelay_Sp':S Then
+    HtCall = On
+    'PrevControlMode' = 3
+  ElseIf  (('ZoneClg_CO' > ('EffZoneHtg' + 5)) And 'ControlMode' = 3) OnFor 'ZoneDbDelay_Sp':S Then
+    ClCall = On
+    'PrevControlMode' = 3
+  ElseIf  (('ControlMode' = 1) And ('EffZoneHtg' <= 0)) OnFor 'ZoneDbDelay_Sp':S Then
+    HtCall = Off
+    'PrevControlMode' = 1
+  ElseIf  (('ControlMode' = 2) And ('EffZoneClg' <= 0)) OnFor 'ZoneDbDelay_Sp':S Then
+    ClCall = Off
+    'PrevControlMode' = 2
+End If
+
+//Set current control mode (heating, cooling, deadband)
+//allow manual override of demand
+If ('RemZoneHtg' >= 0) Then //remote heating demand
+    'EffZoneHtg' = 'RemZoneHtg'
+    'EffZoneClg' = 0
+    'ControlMode' = 1
+  ElseIf  ('RemZoneClg' >= 0) Then //remote cooling demand
+    'EffZoneClg' = 'RemZoneClg'
+    'EffZoneHtg' = 0
+    'ControlMode' = 2
+  ElseIf  ClCall Then //calculated cooling call
+    'ControlMode' = 2
+    'EffZoneHtg' = 'LocZoneHtg'
+    'EffZoneClg' = 'LocZoneClg'
+  ElseIf  HtCall Then //calculated heating call
+    'ControlMode' = 1
+    'EffZoneHtg' = 'LocZoneHtg'
+    'EffZoneClg' = 'LocZoneClg'
+  Else
+    'ControlMode' = 3 //calculated deadband
+    'EffZoneHtg' = 'LocZoneHtg'
+    'EffZoneClg' = 'LocZoneClg'
+End If
+
+//ramp delay to minimize overshoot of cascade control loops and
+//provide smoother sequencing of staged outputs (where applicable)
+If ('ControlMode' = 1) Then
+    DoEvery 10S
+    'HtgRamp' = Min (100, 'HtgRamp' + (1000 / 'ZoneHtRamp_Sp'))
+    End Do
+  Else
+    'HtgRamp' = 0
+End If
+If ('ControlMode' = 2) Then
+    DoEvery 10S
+    'ClgRamp' = Min (100, 'ClgRamp' + (1000 / 'ZoneClRamp_Sp'))
+    End Do
+  Else
+    'ClgRamp' = 0
+End If
+
+//Unoc Demand
+If ('OccMode' = 1) Then //Unoccupied
+    'UnocHtCall' = Switch ( 'UnocHtCall', 'EffZoneHtg', 60, 5)
+    'UnocClCall' = Switch ( 'UnocClCall', 'EffZoneClg', 60, 5)
+  Else
+    'UnocHtCall' = Off
+    'UnocClCall' = Off
+End If
+
+
+//Standby Demand
+'ZoneHtDemand' = Switch ( 'ZoneHtDemand', 'EffZoneHtg', 60, 5)
+'ZoneClDemand' = Switch ( 'ZoneClDemand', 'EffZoneClg', 60, 5)
+
+//end of fan coil zone page
