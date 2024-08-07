@@ -378,21 +378,6 @@
       "templateTriggered": false
     },
     {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,10002",
-      "objectName": "HW_General_PG13",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_General_PG13.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/5/2024, 4:52:28 PM",
-      "templateTriggered": false
-    },
-    {
       "action": "delete",
       "device": 4399,
       "objectId": "av,10043",
@@ -480,36 +465,6 @@
         "scheme": "file"
       },
       "date": "8/5/2024, 5:13:06 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,1",
-      "objectName": "Main_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/Main_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/5/2024, 5:15:39 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 4399,
-      "objectId": "pg,10003",
-      "objectName": "HW_Critical_PG4",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/hillcrest/HWS/devices/HWS_Hillcrest_Collin (4399)/HW_Critical_PG4.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/6/2024, 12:10:53 PM",
       "templateTriggered": false
     }
   ],
