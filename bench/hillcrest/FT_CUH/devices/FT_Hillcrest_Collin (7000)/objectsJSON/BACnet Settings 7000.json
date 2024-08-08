@@ -106,7 +106,7 @@
     "$base": "Sequence",
     "totalSent": {
       "$base": "Unsigned",
-      "value": "1382"
+      "value": "6907"
     },
     "sentByApp": {
       "$base": "Unsigned",
@@ -122,7 +122,7 @@
     },
     "totalRcvd": {
       "$base": "Unsigned",
-      "value": "1485"
+      "value": "19802"
     },
     "rcvdByApp": {
       "$base": "Unsigned",
@@ -134,7 +134,7 @@
     },
     "invalidRcvd": {
       "$base": "Unsigned",
-      "value": 0
+      "value": "1"
     },
     "receiveTimeouts": {
       "$base": "Unsigned",
@@ -211,7 +211,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "7272"
+          "value": "3404333"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -219,15 +219,15 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "8648"
+          "value": "3941337"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
-          "value": "6"
+          "value": "94"
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": 0
+          "value": "39"
         }
       },
       "filterFlags": {
@@ -273,7 +273,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "6575"
+          "value": "2981090"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -289,7 +289,7 @@
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": "2"
+          "value": "7"
         }
       },
       "filterFlags": {
@@ -335,7 +335,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "12"
+          "value": "6057"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -397,7 +397,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "1493"
+          "value": "20091"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -405,11 +405,11 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "1636"
+          "value": "48396"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
-          "value": "55"
+          "value": "133"
         },
         "protocolErrors": {
           "$base": "Unsigned",
@@ -789,7 +789,7 @@
   },
   "free-que": {
     "$base": "Unsigned",
-    "value": "32"
+    "value": "30"
   },
   "short-free-que": {
     "$base": "Unsigned",

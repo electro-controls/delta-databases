@@ -5,8 +5,8 @@ Call 'FT01_eZNSDisplay2_PG'
 Call 'FT02_eZNSDisplay1_PG'
 Call 'FT02_eZNSDisplay2_PG'
 
-Call 'FT04_eZNSDisplay1_PG'
-Call 'FT04_eZNSDisplay2_PG'
+Call 'FT03_eZNSDisplay1_PG'
+Call 'FT03_eZNSDisplay2_PG'
 
 Call 'FaultDetection_PG'
 
@@ -18,6 +18,6 @@ Call 'FT02_HW_PG'
 Call 'FT02_Zone_PG'
 Call 'FT02_OccMode_PG'
 
-Call 'FT04_HW_PG'
-Call 'FT04_Zone_PG'
-Call 'FT04_OccMode_PG'
+Call 'FT03_HW_PG'
+Call 'FT03_Zone_PG'
+Call 'FT03_OccMode_PG'

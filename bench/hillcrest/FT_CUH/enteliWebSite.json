@@ -1180,1133 +1180,6 @@
       ]
     },
     {
-      "number": 7000,
-      "objects": [
-        {
-          "id": "ai,101",
-          "name": "FT01_ZoneTemp",
-          "fileName": "FT01_ZoneTemp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "ai,201",
-          "name": "FT02_ZoneTemp",
-          "fileName": "FT02_ZoneTemp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "ai,401",
-          "name": "FT04_ZoneTemp",
-          "fileName": "FT04_ZoneTemp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "aic,2",
-          "name": "Temperature F",
-          "fileName": "Temperature F",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "aic,8",
-          "name": "eZNS OnBoard Temperature degF AIC",
-          "fileName": "eZNS OnBoard Temperature degF AIC",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,91",
-          "name": "Eff_OAT",
-          "fileName": "Eff_OAT",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,98",
-          "name": "Uptime",
-          "fileName": "Uptime",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10101",
-          "name": "FT01_Zone_EffSp",
-          "fileName": "FT01_Zone_EffSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10102",
-          "name": "FT01_Zone_LocSp",
-          "fileName": "FT01_Zone_LocSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10103",
-          "name": "FT01_Zone_RemSp",
-          "fileName": "FT01_Zone_RemSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10104",
-          "name": "FT01_ZoneHtg_EffSp",
-          "fileName": "FT01_ZoneHtg_EffSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10105",
-          "name": "FT01_ZoneClg_EffSp",
-          "fileName": "FT01_ZoneClg_EffSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10106",
-          "name": "FT01_ZoneDb_Sp",
-          "fileName": "FT01_ZoneDb_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10107",
-          "name": "FT01_UnocHt_Sp",
-          "fileName": "FT01_UnocHt_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10108",
-          "name": "FT01_UnocCl_Sp",
-          "fileName": "FT01_UnocCl_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10109",
-          "name": "FT01_UnocDb_Sp",
-          "fileName": "FT01_UnocDb_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10111",
-          "name": "FT01_DNSAlgMode",
-          "fileName": "FT01_DNSAlgMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10112",
-          "name": "FT01_OcClgMin_Sp",
-          "fileName": "FT01_OcClgMin_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10113",
-          "name": "FT01_OcClgMax_Sp",
-          "fileName": "FT01_OcClgMax_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10114",
-          "name": "FT01_OcHtgMin_Sp",
-          "fileName": "FT01_OcHtgMin_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10115",
-          "name": "FT01_OcHtgMax_Sp",
-          "fileName": "FT01_OcHtgMax_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10117",
-          "name": "FT01_StandbyOffset_Sp",
-          "fileName": "FT01_StandbyOffset_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10118",
-          "name": "FT01_BypassTm_Sp",
-          "fileName": "FT01_BypassTm_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10119",
-          "name": "FT01_BypassTmLeft",
-          "fileName": "FT01_BypassTmLeft",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10120",
-          "name": "FT01_ZoneHtRamp_Sp",
-          "fileName": "FT01_ZoneHtRamp_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10121",
-          "name": "FT01_ZoneClRamp_Sp",
-          "fileName": "FT01_ZoneClRamp_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10122",
-          "name": "FT01_ZoneDbDelay_Sp",
-          "fileName": "FT01_ZoneDbDelay_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10130",
-          "name": "FT01_EffZoneClg",
-          "fileName": "FT01_EffZoneClg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10131",
-          "name": "FT01_LocZoneClg",
-          "fileName": "FT01_LocZoneClg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10132",
-          "name": "FT01_RemZoneClg",
-          "fileName": "FT01_RemZoneClg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10133",
-          "name": "FT01_EffZoneHtg",
-          "fileName": "FT01_EffZoneHtg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10134",
-          "name": "FT01_LocZoneHtg",
-          "fileName": "FT01_LocZoneHtg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10135",
-          "name": "FT01_RemZoneHtg",
-          "fileName": "FT01_RemZoneHtg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10190",
-          "name": "FT01_Eff_ZoneTemp",
-          "fileName": "FT01_Eff_ZoneTemp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10201",
-          "name": "FT02_Zone_EffSp",
-          "fileName": "FT02_Zone_EffSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10202",
-          "name": "FT02_Zone_LocSp",
-          "fileName": "FT02_Zone_LocSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10203",
-          "name": "FT02_Zone_RemSp",
-          "fileName": "FT02_Zone_RemSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10204",
-          "name": "FT02_ZoneHtg_EffSp",
-          "fileName": "FT02_ZoneHtg_EffSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10205",
-          "name": "FT02_ZoneClg_EffSp",
-          "fileName": "FT02_ZoneClg_EffSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10206",
-          "name": "FT02_ZoneDb_Sp",
-          "fileName": "FT02_ZoneDb_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10207",
-          "name": "FT02_UnocHt_Sp",
-          "fileName": "FT02_UnocHt_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10208",
-          "name": "FT02_UnocCl_Sp",
-          "fileName": "FT02_UnocCl_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10209",
-          "name": "FT02_UnocDb_Sp",
-          "fileName": "FT02_UnocDb_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10211",
-          "name": "FT02_DNSAlgMode",
-          "fileName": "FT02_DNSAlgMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10212",
-          "name": "FT02_OcClgMin_Sp",
-          "fileName": "FT02_OcClgMin_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10213",
-          "name": "FT02_OcClgMax_Sp",
-          "fileName": "FT02_OcClgMax_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10214",
-          "name": "FT02_OcHtgMin_Sp",
-          "fileName": "FT02_OcHtgMin_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10215",
-          "name": "FT02_OcHtgMax_Sp",
-          "fileName": "FT02_OcHtgMax_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10217",
-          "name": "FT02_StandbyOffset_Sp",
-          "fileName": "FT02_StandbyOffset_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10218",
-          "name": "FT02_BypassTm_Sp",
-          "fileName": "FT02_BypassTm_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10219",
-          "name": "FT02_BypassTmLeft",
-          "fileName": "FT02_BypassTmLeft",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10220",
-          "name": "FT02_ZoneHtRamp_Sp",
-          "fileName": "FT02_ZoneHtRamp_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10221",
-          "name": "FT02_ZoneClRamp_Sp",
-          "fileName": "FT02_ZoneClRamp_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10222",
-          "name": "FT02_ZoneDbDelay_Sp",
-          "fileName": "FT02_ZoneDbDelay_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10230",
-          "name": "FT02_EffZoneClg",
-          "fileName": "FT02_EffZoneClg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10231",
-          "name": "FT02_LocZoneClg",
-          "fileName": "FT02_LocZoneClg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10232",
-          "name": "FT02_RemZoneClg",
-          "fileName": "FT02_RemZoneClg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10233",
-          "name": "FT02_EffZoneHtg",
-          "fileName": "FT02_EffZoneHtg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10234",
-          "name": "FT02_LocZoneHtg",
-          "fileName": "FT02_LocZoneHtg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10235",
-          "name": "FT02_RemZoneHtg",
-          "fileName": "FT02_RemZoneHtg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10290",
-          "name": "FT02_Eff_ZoneTemp",
-          "fileName": "FT02_Eff_ZoneTemp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10401",
-          "name": "FT04_Zone_EffSp",
-          "fileName": "FT04_Zone_EffSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10402",
-          "name": "FT04_Zone_LocSp",
-          "fileName": "FT04_Zone_LocSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10403",
-          "name": "FT04_Zone_RemSp",
-          "fileName": "FT04_Zone_RemSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10404",
-          "name": "FT04_ZoneHtg_EffSp",
-          "fileName": "FT04_ZoneHtg_EffSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10405",
-          "name": "FT04_ZoneClg_EffSp",
-          "fileName": "FT04_ZoneClg_EffSp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10406",
-          "name": "FT04_ZoneDb_Sp",
-          "fileName": "FT04_ZoneDb_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10407",
-          "name": "FT04_UnocHt_Sp",
-          "fileName": "FT04_UnocHt_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10408",
-          "name": "FT04_UnocCl_Sp",
-          "fileName": "FT04_UnocCl_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10409",
-          "name": "FT04_UnocDb_Sp",
-          "fileName": "FT04_UnocDb_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10411",
-          "name": "FT04_DNSAlgMode",
-          "fileName": "FT04_DNSAlgMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10412",
-          "name": "FT04_OcClgMin_Sp",
-          "fileName": "FT04_OcClgMin_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10413",
-          "name": "FT04_OcClgMax_Sp",
-          "fileName": "FT04_OcClgMax_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10414",
-          "name": "FT04_OcHtgMin_Sp",
-          "fileName": "FT04_OcHtgMin_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10415",
-          "name": "FT04_OcHtgMax_Sp",
-          "fileName": "FT04_OcHtgMax_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10417",
-          "name": "FT04_StandbyOffset_Sp",
-          "fileName": "FT04_StandbyOffset_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10418",
-          "name": "FT04_BypassTm_Sp",
-          "fileName": "FT04_BypassTm_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10419",
-          "name": "FT04_BypassTmLeft",
-          "fileName": "FT04_BypassTmLeft",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10420",
-          "name": "FT04_ZoneHtRamp_Sp",
-          "fileName": "FT04_ZoneHtRamp_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10421",
-          "name": "FT04_ZoneClRamp_Sp",
-          "fileName": "FT04_ZoneClRamp_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10422",
-          "name": "FT04_ZoneDbDelay_Sp",
-          "fileName": "FT04_ZoneDbDelay_Sp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10430",
-          "name": "FT04_EffZoneClg",
-          "fileName": "FT04_EffZoneClg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10431",
-          "name": "FT04_LocZoneClg",
-          "fileName": "FT04_LocZoneClg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10432",
-          "name": "FT04_RemZoneClg",
-          "fileName": "FT04_RemZoneClg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10433",
-          "name": "FT04_EffZoneHtg",
-          "fileName": "FT04_EffZoneHtg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10434",
-          "name": "FT04_LocZoneHtg",
-          "fileName": "FT04_LocZoneHtg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10435",
-          "name": "FT04_RemZoneHtg",
-          "fileName": "FT04_RemZoneHtg",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "av,10490",
-          "name": "FT04_Eff_ZoneTemp",
-          "fileName": "FT04_Eff_ZoneTemp",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bdc,1",
-          "name": "On/Off",
-          "fileName": "On~Off",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bdc,2",
-          "name": "Open/Close",
-          "fileName": "Open~Close",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bdc,3",
-          "name": "Yes/No",
-          "fileName": "Yes~No",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bdc,4",
-          "name": "Local/Remote",
-          "fileName": "Local~Remote",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bdc,5",
-          "name": "Direct/Reverse",
-          "fileName": "Direct~Reverse",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bdc,6",
-          "name": "Temperature Selection BDC",
-          "fileName": "Temperature Selection BDC",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bdc,7",
-          "name": "Alarm/Normal",
-          "fileName": "Alarm~Normal",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bdc,9",
-          "name": "Open/Off",
-          "fileName": "Open~Off",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bdc,10",
-          "name": "Close/Off",
-          "fileName": "Close~Off",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bdc,11",
-          "name": "Active/Inactive",
-          "fileName": "Active~Inactive",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bdc,12",
-          "name": "Cont/Int BDC",
-          "fileName": "Cont~Int BDC",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bmd,1",
-          "name": "BBMD List1 7000",
-          "fileName": "BBMD List1 7000",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bo,1",
-          "name": "FT01_HWV",
-          "fileName": "FT01_HWV",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bo,2",
-          "name": "FT02_HWV",
-          "fileName": "FT02_HWV",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bo,4",
-          "name": "FT04_HWV",
-          "fileName": "FT04_HWV",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10105",
-          "name": "FT01_HWMode",
-          "fileName": "FT01_HWMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10121",
-          "name": "FT01_Rem_Schedule",
-          "fileName": "FT01_Rem_Schedule",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10122",
-          "name": "FT01_BypassCall",
-          "fileName": "FT01_BypassCall",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10125",
-          "name": "FT01_Rem_WarmupCall",
-          "fileName": "FT01_Rem_WarmupCall",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10190",
-          "name": "FT01_EnableDNS",
-          "fileName": "FT01_EnableDNS",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10205",
-          "name": "FT02_HWMode",
-          "fileName": "FT02_HWMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10221",
-          "name": "FT02_Rem_Schedule",
-          "fileName": "FT02_Rem_Schedule",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10222",
-          "name": "FT02_BypassCall",
-          "fileName": "FT02_BypassCall",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10225",
-          "name": "FT02_Rem_WarmupCall",
-          "fileName": "FT02_Rem_WarmupCall",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10290",
-          "name": "FT02_EnableDNS",
-          "fileName": "FT02_EnableDNS",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10405",
-          "name": "FT04_HWMode",
-          "fileName": "FT04_HWMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10421",
-          "name": "FT04_Rem_Schedule",
-          "fileName": "FT04_Rem_Schedule",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10422",
-          "name": "FT04_BypassCall",
-          "fileName": "FT04_BypassCall",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10425",
-          "name": "FT04_Rem_WarmupCall",
-          "fileName": "FT04_Rem_WarmupCall",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "bv,10490",
-          "name": "FT04_EnableDNS",
-          "fileName": "FT04_EnableDNS",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "co,10101",
-          "name": "FT01_ZoneClg_CO",
-          "fileName": "FT01_ZoneClg_CO",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "co,10102",
-          "name": "FT01_ZoneHtg_CO",
-          "fileName": "FT01_ZoneHtg_CO",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "co,10201",
-          "name": "FT02_ZoneClg_CO",
-          "fileName": "FT02_ZoneClg_CO",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "co,10202",
-          "name": "FT02_ZoneHtg_CO",
-          "fileName": "FT02_ZoneHtg_CO",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "co,10401",
-          "name": "FT04_ZoneClg_CO",
-          "fileName": "FT04_ZoneClg_CO",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "co,10402",
-          "name": "FT04_ZoneHtg_CO",
-          "fileName": "FT04_ZoneHtg_CO",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "dbi,7000",
-          "name": "Database Information 7000",
-          "fileName": "Database Information 7000",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "des,1",
-          "name": "Data Exchange Settings 7000",
-          "fileName": "Data Exchange Settings 7000",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "device,7000",
-          "name": "FT_Hillcrest_Collin",
-          "fileName": "FT_Hillcrest_Collin",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "evc,1",
-          "name": "Maintenance",
-          "fileName": "Maintenance",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "evc,2",
-          "name": "Network",
-          "fileName": "Network",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "evc,3",
-          "name": "Security",
-          "fileName": "Security",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "evc,4",
-          "name": "Critical",
-          "fileName": "Critical",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "evc,5",
-          "name": "Notification",
-          "fileName": "Notification",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "evc,6",
-          "name": "Fire",
-          "fileName": "Fire",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "evc,7",
-          "name": "Access Control Event",
-          "fileName": "Access Control Event",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "evc,8",
-          "name": "Access Control Alarm",
-          "fileName": "Access Control Alarm",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "evc,9",
-          "name": "Archival",
-          "fileName": "Archival",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "evs,1",
-          "name": "Event and Alarm Settings 7000",
-          "fileName": "Event and Alarm Settings 7000",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "file,1",
-          "name": "Database Transfer File",
-          "fileName": "Database Transfer File",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "ips,1",
-          "name": "Internet Protocol Settings",
-          "fileName": "Internet Protocol Settings",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "lcd,101",
-          "name": "LinkLCD1",
-          "fileName": "LinkLCD1",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "lnk,101",
-          "name": "LINKnet Device 1",
-          "fileName": "LINKnet Device 1",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mic,3",
-          "name": "Controller Status",
-          "fileName": "Controller Status",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mic,4",
-          "name": "OccMode MIC",
-          "fileName": "OccMode MIC",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mic,5",
-          "name": "DNSMode_MIC",
-          "fileName": "DNSMode_MIC",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mic,19",
-          "name": "FaultDetection_MIC",
-          "fileName": "FaultDetection_MIC",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,98",
-          "name": "ControllerFault",
-          "fileName": "ControllerFault",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10101",
-          "name": "FT01_OccMode",
-          "fileName": "FT01_OccMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10103",
-          "name": "FT01_ControlMode",
-          "fileName": "FT01_ControlMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10104",
-          "name": "FT01_PrevControlMode",
-          "fileName": "FT01_PrevControlMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10190",
-          "name": "FT01_DNSMode",
-          "fileName": "FT01_DNSMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10201",
-          "name": "FT02_OccMode",
-          "fileName": "FT02_OccMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10203",
-          "name": "FT02_ControlMode",
-          "fileName": "FT02_ControlMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10204",
-          "name": "FT02_PrevControlMode",
-          "fileName": "FT02_PrevControlMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10290",
-          "name": "FT02_DNSMode",
-          "fileName": "FT02_DNSMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10401",
-          "name": "FT04_OccMode",
-          "fileName": "FT04_OccMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10403",
-          "name": "FT04_ControlMode",
-          "fileName": "FT04_ControlMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10404",
-          "name": "FT04_PrevControlMode",
-          "fileName": "FT04_PrevControlMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "mv,10490",
-          "name": "FT04_DNSMode",
-          "fileName": "FT04_DNSMode",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "net,1",
-          "name": "BACnet Settings 7000",
-          "fileName": "BACnet Settings 7000",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pan,1",
-          "name": "Priority Names 7000",
-          "fileName": "Priority Names 7000",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,1",
-          "name": "Main_PG",
-          "fileName": "Main_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,2",
-          "name": "FT01_eZNSDisplay1_PG",
-          "fileName": "FT01_eZNSDisplay1_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,3",
-          "name": "FT01_eZNSDisplay2_PG",
-          "fileName": "FT01_eZNSDisplay2_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,4",
-          "name": "FT01_HW_PG",
-          "fileName": "FT01_HW_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,5",
-          "name": "FT01_OccMode_PG",
-          "fileName": "FT01_OccMode_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,6",
-          "name": "FT01_Zone_PG",
-          "fileName": "FT01_Zone_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,7",
-          "name": "General_PG",
-          "fileName": "General_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,8",
-          "name": "FaultDetection_PG",
-          "fileName": "FaultDetection_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,9",
-          "name": "FT02_OccMode_PG",
-          "fileName": "FT02_OccMode_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,10",
-          "name": "FT02_Zone_PG",
-          "fileName": "FT02_Zone_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,11",
-          "name": "FT04_eZNSDisplay1_PG",
-          "fileName": "FT04_eZNSDisplay1_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,12",
-          "name": "FT04_eZNSDisplay2_PG",
-          "fileName": "FT04_eZNSDisplay2_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,13",
-          "name": "FT04_HW_PG",
-          "fileName": "FT04_HW_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,14",
-          "name": "FT04_OccMode_PG",
-          "fileName": "FT04_OccMode_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,15",
-          "name": "FT04_Zone_PG",
-          "fileName": "FT04_Zone_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,16",
-          "name": "FT02_eZNSDisplay1_PG",
-          "fileName": "FT02_eZNSDisplay1_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,17",
-          "name": "FT02_eZNSDisplay2_PG",
-          "fileName": "FT02_eZNSDisplay2_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "pg,18",
-          "name": "FT02_HW_PG",
-          "fileName": "FT02_HW_PG",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "sdl,1",
-          "name": "Slave Device List 7000",
-          "fileName": "Slave Device List 7000",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "sua,1",
-          "name": "DELTA",
-          "fileName": "DELTA",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "sug,1",
-          "name": "Administrator",
-          "fileName": "Administrator",
-          "lastUpdate": "2024-08-07T22:34:31.937Z"
-        },
-        {
-          "id": "lcd,201",
-          "name": "LinkLCD2",
-          "fileName": "LinkLCD2",
-          "lastUpdate": "2024-08-07T22:39:03.460Z"
-        },
-        {
-          "id": "lcd,401",
-          "name": "LinkLCD4",
-          "fileName": "LinkLCD4",
-          "lastUpdate": "2024-08-07T22:39:03.466Z"
-        },
-        {
-          "id": "lnk,201",
-          "name": "LINKnet Device 2",
-          "fileName": "LINKnet Device 2",
-          "lastUpdate": "2024-08-07T22:39:03.472Z"
-        },
-        {
-          "id": "lnk,401",
-          "name": "LINKnet Device 4",
-          "fileName": "LINKnet Device 4",
-          "lastUpdate": "2024-08-07T22:39:03.493Z"
-        },
-        {
-          "id": "lnk,301",
-          "name": "LINKnet Device 3",
-          "fileName": "LINKnet Device 3",
-          "lastUpdate": "2024-08-07T23:05:54.277Z"
-        },
-        {
-          "id": "lcd,301",
-          "name": "LinkLCD3",
-          "fileName": "LinkLCD3",
-          "lastUpdate": "2024-08-07T23:06:09.063Z"
-        }
-      ]
-    },
-    {
       "number": 4305,
       "objects": [
         {
@@ -2938,6 +1811,1109 @@
           "name": "Slave Device List 4305",
           "fileName": "Slave Device List 4305",
           "lastUpdate": "2024-08-07T23:53:14.151Z"
+        }
+      ]
+    },
+    {
+      "number": 7000,
+      "objects": [
+        {
+          "id": "ai,101",
+          "name": "FT01_ZoneTemp",
+          "fileName": "FT01_ZoneTemp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "ai,201",
+          "name": "FT02_ZoneTemp",
+          "fileName": "FT02_ZoneTemp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "ai,401",
+          "name": "FT03_ZoneTemp",
+          "fileName": "FT03_ZoneTemp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "aic,2",
+          "name": "Temperature F",
+          "fileName": "Temperature F",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "aic,8",
+          "name": "eZNS OnBoard Temperature degF AIC",
+          "fileName": "eZNS OnBoard Temperature degF AIC",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,91",
+          "name": "Eff_OAT",
+          "fileName": "Eff_OAT",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,98",
+          "name": "Uptime",
+          "fileName": "Uptime",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10101",
+          "name": "FT01_Zone_EffSp",
+          "fileName": "FT01_Zone_EffSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10102",
+          "name": "FT01_Zone_LocSp",
+          "fileName": "FT01_Zone_LocSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10103",
+          "name": "FT01_Zone_RemSp",
+          "fileName": "FT01_Zone_RemSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10104",
+          "name": "FT01_ZoneHtg_EffSp",
+          "fileName": "FT01_ZoneHtg_EffSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10105",
+          "name": "FT01_ZoneClg_EffSp",
+          "fileName": "FT01_ZoneClg_EffSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10106",
+          "name": "FT01_ZoneDb_Sp",
+          "fileName": "FT01_ZoneDb_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10107",
+          "name": "FT01_UnocHt_Sp",
+          "fileName": "FT01_UnocHt_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10108",
+          "name": "FT01_UnocCl_Sp",
+          "fileName": "FT01_UnocCl_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10109",
+          "name": "FT01_UnocDb_Sp",
+          "fileName": "FT01_UnocDb_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10111",
+          "name": "FT01_DNSAlgMode",
+          "fileName": "FT01_DNSAlgMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10112",
+          "name": "FT01_OcClgMin_Sp",
+          "fileName": "FT01_OcClgMin_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10113",
+          "name": "FT01_OcClgMax_Sp",
+          "fileName": "FT01_OcClgMax_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10114",
+          "name": "FT01_OcHtgMin_Sp",
+          "fileName": "FT01_OcHtgMin_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10115",
+          "name": "FT01_OcHtgMax_Sp",
+          "fileName": "FT01_OcHtgMax_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10117",
+          "name": "FT01_StandbyOffset_Sp",
+          "fileName": "FT01_StandbyOffset_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10118",
+          "name": "FT01_BypassTm_Sp",
+          "fileName": "FT01_BypassTm_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10119",
+          "name": "FT01_BypassTmLeft",
+          "fileName": "FT01_BypassTmLeft",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10120",
+          "name": "FT01_ZoneHtRamp_Sp",
+          "fileName": "FT01_ZoneHtRamp_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10121",
+          "name": "FT01_ZoneClRamp_Sp",
+          "fileName": "FT01_ZoneClRamp_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10122",
+          "name": "FT01_ZoneDbDelay_Sp",
+          "fileName": "FT01_ZoneDbDelay_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10130",
+          "name": "FT01_EffZoneClg",
+          "fileName": "FT01_EffZoneClg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10131",
+          "name": "FT01_LocZoneClg",
+          "fileName": "FT01_LocZoneClg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10132",
+          "name": "FT01_RemZoneClg",
+          "fileName": "FT01_RemZoneClg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10133",
+          "name": "FT01_EffZoneHtg",
+          "fileName": "FT01_EffZoneHtg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10134",
+          "name": "FT01_LocZoneHtg",
+          "fileName": "FT01_LocZoneHtg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10135",
+          "name": "FT01_RemZoneHtg",
+          "fileName": "FT01_RemZoneHtg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10190",
+          "name": "FT01_Eff_ZoneTemp",
+          "fileName": "FT01_Eff_ZoneTemp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10201",
+          "name": "FT02_Zone_EffSp",
+          "fileName": "FT02_Zone_EffSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10202",
+          "name": "FT02_Zone_LocSp",
+          "fileName": "FT02_Zone_LocSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10203",
+          "name": "FT02_Zone_RemSp",
+          "fileName": "FT02_Zone_RemSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10204",
+          "name": "FT02_ZoneHtg_EffSp",
+          "fileName": "FT02_ZoneHtg_EffSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10205",
+          "name": "FT02_ZoneClg_EffSp",
+          "fileName": "FT02_ZoneClg_EffSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10206",
+          "name": "FT02_ZoneDb_Sp",
+          "fileName": "FT02_ZoneDb_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10207",
+          "name": "FT02_UnocHt_Sp",
+          "fileName": "FT02_UnocHt_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10208",
+          "name": "FT02_UnocCl_Sp",
+          "fileName": "FT02_UnocCl_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10209",
+          "name": "FT02_UnocDb_Sp",
+          "fileName": "FT02_UnocDb_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10211",
+          "name": "FT02_DNSAlgMode",
+          "fileName": "FT02_DNSAlgMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10212",
+          "name": "FT02_OcClgMin_Sp",
+          "fileName": "FT02_OcClgMin_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10213",
+          "name": "FT02_OcClgMax_Sp",
+          "fileName": "FT02_OcClgMax_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10214",
+          "name": "FT02_OcHtgMin_Sp",
+          "fileName": "FT02_OcHtgMin_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10215",
+          "name": "FT02_OcHtgMax_Sp",
+          "fileName": "FT02_OcHtgMax_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10217",
+          "name": "FT02_StandbyOffset_Sp",
+          "fileName": "FT02_StandbyOffset_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10218",
+          "name": "FT02_BypassTm_Sp",
+          "fileName": "FT02_BypassTm_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10219",
+          "name": "FT02_BypassTmLeft",
+          "fileName": "FT02_BypassTmLeft",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10220",
+          "name": "FT02_ZoneHtRamp_Sp",
+          "fileName": "FT02_ZoneHtRamp_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10221",
+          "name": "FT02_ZoneClRamp_Sp",
+          "fileName": "FT02_ZoneClRamp_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10222",
+          "name": "FT02_ZoneDbDelay_Sp",
+          "fileName": "FT02_ZoneDbDelay_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10230",
+          "name": "FT02_EffZoneClg",
+          "fileName": "FT02_EffZoneClg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10231",
+          "name": "FT02_LocZoneClg",
+          "fileName": "FT02_LocZoneClg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10232",
+          "name": "FT02_RemZoneClg",
+          "fileName": "FT02_RemZoneClg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10233",
+          "name": "FT02_EffZoneHtg",
+          "fileName": "FT02_EffZoneHtg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10234",
+          "name": "FT02_LocZoneHtg",
+          "fileName": "FT02_LocZoneHtg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10235",
+          "name": "FT02_RemZoneHtg",
+          "fileName": "FT02_RemZoneHtg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10290",
+          "name": "FT02_Eff_ZoneTemp",
+          "fileName": "FT02_Eff_ZoneTemp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10401",
+          "name": "FT03_Zone_EffSp",
+          "fileName": "FT03_Zone_EffSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10402",
+          "name": "FT03_Zone_LocSp",
+          "fileName": "FT03_Zone_LocSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10403",
+          "name": "FT03_Zone_RemSp",
+          "fileName": "FT03_Zone_RemSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10404",
+          "name": "FT03_ZoneHtg_EffSp",
+          "fileName": "FT03_ZoneHtg_EffSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10405",
+          "name": "FT03_ZoneClg_EffSp",
+          "fileName": "FT03_ZoneClg_EffSp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10406",
+          "name": "FT03_ZoneDb_Sp",
+          "fileName": "FT03_ZoneDb_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10407",
+          "name": "FT03_UnocHt_Sp",
+          "fileName": "FT03_UnocHt_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10408",
+          "name": "FT03_UnocCl_Sp",
+          "fileName": "FT03_UnocCl_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10409",
+          "name": "FT03_UnocDb_Sp",
+          "fileName": "FT03_UnocDb_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10411",
+          "name": "FT03_DNSAlgMode",
+          "fileName": "FT03_DNSAlgMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10412",
+          "name": "FT03_OcClgMin_Sp",
+          "fileName": "FT03_OcClgMin_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10413",
+          "name": "FT03_OcClgMax_Sp",
+          "fileName": "FT03_OcClgMax_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10414",
+          "name": "FT03_OcHtgMin_Sp",
+          "fileName": "FT03_OcHtgMin_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10415",
+          "name": "FT03_OcHtgMax_Sp",
+          "fileName": "FT03_OcHtgMax_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10417",
+          "name": "FT03_StandbyOffset_Sp",
+          "fileName": "FT03_StandbyOffset_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10418",
+          "name": "FT03_BypassTm_Sp",
+          "fileName": "FT03_BypassTm_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10419",
+          "name": "FT03_BypassTmLeft",
+          "fileName": "FT03_BypassTmLeft",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10420",
+          "name": "FT03_ZoneHtRamp_Sp",
+          "fileName": "FT03_ZoneHtRamp_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10421",
+          "name": "FT03_ZoneClRamp_Sp",
+          "fileName": "FT03_ZoneClRamp_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10422",
+          "name": "FT03_ZoneDbDelay_Sp",
+          "fileName": "FT03_ZoneDbDelay_Sp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10430",
+          "name": "FT03_EffZoneClg",
+          "fileName": "FT03_EffZoneClg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10431",
+          "name": "FT03_LocZoneClg",
+          "fileName": "FT03_LocZoneClg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10432",
+          "name": "FT03_RemZoneClg",
+          "fileName": "FT03_RemZoneClg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10433",
+          "name": "FT03_EffZoneHtg",
+          "fileName": "FT03_EffZoneHtg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10434",
+          "name": "FT03_LocZoneHtg",
+          "fileName": "FT03_LocZoneHtg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10435",
+          "name": "FT03_RemZoneHtg",
+          "fileName": "FT03_RemZoneHtg",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "av,10490",
+          "name": "FT03_Eff_ZoneTemp",
+          "fileName": "FT03_Eff_ZoneTemp",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bdc,1",
+          "name": "On/Off",
+          "fileName": "On~Off",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "Open/Close",
+          "fileName": "Open~Close",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bdc,3",
+          "name": "Yes/No",
+          "fileName": "Yes~No",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bdc,4",
+          "name": "Local/Remote",
+          "fileName": "Local~Remote",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bdc,5",
+          "name": "Direct/Reverse",
+          "fileName": "Direct~Reverse",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bdc,6",
+          "name": "Temperature Selection BDC",
+          "fileName": "Temperature Selection BDC",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bdc,7",
+          "name": "Alarm/Normal",
+          "fileName": "Alarm~Normal",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bdc,9",
+          "name": "Open/Off",
+          "fileName": "Open~Off",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bdc,10",
+          "name": "Close/Off",
+          "fileName": "Close~Off",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bdc,11",
+          "name": "Active/Inactive",
+          "fileName": "Active~Inactive",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bdc,12",
+          "name": "Cont/Int BDC",
+          "fileName": "Cont~Int BDC",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bmd,1",
+          "name": "BBMD List1 7000",
+          "fileName": "BBMD List1 7000",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "FT01_HWV",
+          "fileName": "FT01_HWV",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bo,2",
+          "name": "FT02_HWV",
+          "fileName": "FT02_HWV",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bo,4",
+          "name": "FT03_HWV",
+          "fileName": "FT03_HWV",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10105",
+          "name": "FT01_HWMode",
+          "fileName": "FT01_HWMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10121",
+          "name": "FT01_Rem_Schedule",
+          "fileName": "FT01_Rem_Schedule",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10122",
+          "name": "FT01_BypassCall",
+          "fileName": "FT01_BypassCall",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10125",
+          "name": "FT01_Rem_WarmupCall",
+          "fileName": "FT01_Rem_WarmupCall",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10190",
+          "name": "FT01_EnableDNS",
+          "fileName": "FT01_EnableDNS",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10205",
+          "name": "FT02_HWMode",
+          "fileName": "FT02_HWMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10221",
+          "name": "FT02_Rem_Schedule",
+          "fileName": "FT02_Rem_Schedule",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10222",
+          "name": "FT02_BypassCall",
+          "fileName": "FT02_BypassCall",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10225",
+          "name": "FT02_Rem_WarmupCall",
+          "fileName": "FT02_Rem_WarmupCall",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10290",
+          "name": "FT02_EnableDNS",
+          "fileName": "FT02_EnableDNS",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10405",
+          "name": "FT03_HWMode",
+          "fileName": "FT03_HWMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10421",
+          "name": "FT03_Rem_Schedule",
+          "fileName": "FT03_Rem_Schedule",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10422",
+          "name": "FT03_BypassCall",
+          "fileName": "FT03_BypassCall",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10425",
+          "name": "FT03_Rem_WarmupCall",
+          "fileName": "FT03_Rem_WarmupCall",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "bv,10490",
+          "name": "FT03_EnableDNS",
+          "fileName": "FT03_EnableDNS",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "co,10101",
+          "name": "FT01_ZoneClg_CO",
+          "fileName": "FT01_ZoneClg_CO",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "co,10102",
+          "name": "FT01_ZoneHtg_CO",
+          "fileName": "FT01_ZoneHtg_CO",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "co,10201",
+          "name": "FT02_ZoneClg_CO",
+          "fileName": "FT02_ZoneClg_CO",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "co,10202",
+          "name": "FT02_ZoneHtg_CO",
+          "fileName": "FT02_ZoneHtg_CO",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "co,10401",
+          "name": "FT03_ZoneClg_CO",
+          "fileName": "FT03_ZoneClg_CO",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "co,10402",
+          "name": "FT03_ZoneHtg_CO",
+          "fileName": "FT03_ZoneHtg_CO",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "dbi,7000",
+          "name": "Database Information 7000",
+          "fileName": "Database Information 7000",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 7000",
+          "fileName": "Data Exchange Settings 7000",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "device,7000",
+          "name": "FT_Hillcrest_Collin",
+          "fileName": "FT_Hillcrest_Collin",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "evc,3",
+          "name": "Security",
+          "fileName": "Security",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "evc,4",
+          "name": "Critical",
+          "fileName": "Critical",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 7000",
+          "fileName": "Event and Alarm Settings 7000",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "ips,1",
+          "name": "Internet Protocol Settings",
+          "fileName": "Internet Protocol Settings",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "lcd,101",
+          "name": "LinkLCD1",
+          "fileName": "LinkLCD1",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "lcd,201",
+          "name": "LINKNET Device 2",
+          "fileName": "LINKNET Device 2",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "lcd,301",
+          "name": "LinkLCD3",
+          "fileName": "LinkLCD3",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "lnk,101",
+          "name": "LINKnet Device 1",
+          "fileName": "LINKnet Device 1",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mic,3",
+          "name": "Controller Status",
+          "fileName": "Controller Status",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mic,4",
+          "name": "OccMode MIC",
+          "fileName": "OccMode MIC",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mic,5",
+          "name": "DNSMode_MIC",
+          "fileName": "DNSMode_MIC",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mic,19",
+          "name": "FaultDetection_MIC",
+          "fileName": "FaultDetection_MIC",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,98",
+          "name": "ControllerFault",
+          "fileName": "ControllerFault",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10101",
+          "name": "FT01_OccMode",
+          "fileName": "FT01_OccMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10103",
+          "name": "FT01_ControlMode",
+          "fileName": "FT01_ControlMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10104",
+          "name": "FT01_PrevControlMode",
+          "fileName": "FT01_PrevControlMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10190",
+          "name": "FT01_DNSMode",
+          "fileName": "FT01_DNSMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10201",
+          "name": "FT02_OccMode",
+          "fileName": "FT02_OccMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10203",
+          "name": "FT02_ControlMode",
+          "fileName": "FT02_ControlMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10204",
+          "name": "FT02_PrevControlMode",
+          "fileName": "FT02_PrevControlMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10290",
+          "name": "FT02_DNSMode",
+          "fileName": "FT02_DNSMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10401",
+          "name": "FT03_OccMode",
+          "fileName": "FT03_OccMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10403",
+          "name": "FT03_ControlMode",
+          "fileName": "FT03_ControlMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10404",
+          "name": "FT03_PrevControlMode",
+          "fileName": "FT03_PrevControlMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "mv,10490",
+          "name": "FT03_DNSMode",
+          "fileName": "FT03_DNSMode",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 7000",
+          "fileName": "BACnet Settings 7000",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 7000",
+          "fileName": "Priority Names 7000",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "FT01_eZNSDisplay1_PG",
+          "fileName": "FT01_eZNSDisplay1_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "FT01_eZNSDisplay2_PG",
+          "fileName": "FT01_eZNSDisplay2_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "FT01_HW_PG",
+          "fileName": "FT01_HW_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,5",
+          "name": "FT01_OccMode_PG",
+          "fileName": "FT01_OccMode_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,6",
+          "name": "FT01_Zone_PG",
+          "fileName": "FT01_Zone_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,7",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,8",
+          "name": "FaultDetection_PG",
+          "fileName": "FaultDetection_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,9",
+          "name": "FT02_OccMode_PG",
+          "fileName": "FT02_OccMode_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,10",
+          "name": "FT02_Zone_PG",
+          "fileName": "FT02_Zone_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,11",
+          "name": "FT03_eZNSDisplay1_PG",
+          "fileName": "FT03_eZNSDisplay1_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,12",
+          "name": "FT03_eZNSDisplay2_PG",
+          "fileName": "FT03_eZNSDisplay2_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,13",
+          "name": "FT03_HW_PG",
+          "fileName": "FT03_HW_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,14",
+          "name": "FT03_OccMode_PG",
+          "fileName": "FT03_OccMode_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,15",
+          "name": "FT03_Zone_PG",
+          "fileName": "FT03_Zone_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,16",
+          "name": "FT02_eZNSDisplay1_PG",
+          "fileName": "FT02_eZNSDisplay1_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,17",
+          "name": "FT02_eZNSDisplay2_PG",
+          "fileName": "FT02_eZNSDisplay2_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "pg,18",
+          "name": "FT02_HW_PG",
+          "fileName": "FT02_HW_PG",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 7000",
+          "fileName": "Slave Device List 7000",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
+        },
+        {
+          "id": "sug,1",
+          "name": "Administrator",
+          "fileName": "Administrator",
+          "lastUpdate": "2024-08-08T16:39:07.534Z"
         }
       ]
     }

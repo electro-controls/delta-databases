@@ -16,12 +16,12 @@ If PowerUp Then
   'FT02_RemZoneHtg' = - 1
   'FT02_Rem_WarmupCall' = Off
 
-  'FT04_OccMode' = 3
-  'FT04_Rem_Schedule' = On
-  'FT04_DNSAlgMode' = 1
-  'FT04_Zone_RemSp' = - 1
-  'FT04_RemZoneHtg' = - 1
-  'FT04_Rem_WarmupCall' = Off
+  'FT03_OccMode' = 3
+  'FT03_Rem_Schedule' = On
+  'FT03_DNSAlgMode' = 1
+  'FT03_Zone_RemSp' = - 1
+  'FT03_RemZoneHtg' = - 1
+  'FT03_Rem_WarmupCall' = Off
 
   'Uptime' = 0
 End If
@@ -36,6 +36,6 @@ End Do
 //Link Zone Temp here
 'FT01_Eff_ZoneTemp' = 'FT01_ZoneTemp'
 'FT02_Eff_ZoneTemp' = 'FT02_ZoneTemp'
-'FT04_Eff_ZoneTemp' = 'FT04_ZoneTemp'
+'FT03_Eff_ZoneTemp' = 'FT03_ZoneTemp'
 
 //End Program

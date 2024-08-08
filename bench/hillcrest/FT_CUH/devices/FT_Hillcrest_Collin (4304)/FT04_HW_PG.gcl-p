@@ -1,5 +1,0 @@
-//Heat Sequence
-
-'FT04_HWV' = Switch ( 'FT04_HWV', 'FT04_EffZoneHtg', 50, 5)
-
-//End of Program
