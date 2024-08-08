@@ -2,7 +2,7 @@
   "displayName": "FT03_ZoneTemp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,401"
+    "value": "analog-input,301"
   },
   "object-type": {
     "$base": "Enumerated",
