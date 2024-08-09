@@ -16,6 +16,7 @@ If 'HW_SystemEnable' OffFor 60S Then
     'HW_SystemRamp' = 0
 End If
 
+// oat interlocks
 If ('OAT_Eff' < 'HW_OATInt1_Sp') Then
     DoEvery 3M
     'HW_OATInt1TmLeft' = Max (0, 'HW_OATInt1TmLeft' - 0.05)
@@ -41,6 +42,11 @@ End If
 //HW system is enabled or when pumps have been off line.
 //This minimizes boiler shock and Loop overshoot on cold starts.
 
+//Ramp delay factors the ramp delay time. If the system is warm,
+//we dont need as long of a ramp.
+Variable RampMult
+RampMult = Scale ('HW_HWS', 0, 110, 1, 160, 0.2)
+
 If 'HW_SystemEnable' Then
     DoEvery 10S
       'HW_SystemRamp' = Min (100, 'HW_SystemRamp' + (100 / ('HW_SystemRamp_Sp' * RampMult * 6)))
@@ -49,13 +55,6 @@ End If
 IfOnce 'HW_HWHighLimit' Then
     'HW_SystemRamp' = 'HW_SystemRamp' * 0.25
 End If
-
-Variable RampMult
-
-//Ramp delay factors the ramp delay time. If the system is warm,
-//we dont need as long of a ramp.
-RampMult = Scale ('HW_HWS', 0, 110, 1, 160, 0.2)
-
 
 //Allows for remote manual override of control loop Demand
 If 'HW_HWSDemand_Rem' >= 0 Then
@@ -67,47 +66,4 @@ End If
 //Calculated HWs Demand percent. 
 'HW_HWSDemand_Loc' = 'HW_HWS_CO' * 'HW_SystemRamp' * 0.01
 
-If 'HW_Lag3Latch' Then
-    'HW_Lead1Demand' = 'HW_SeqDemand'
-    'HW_Lead2Demand' = 'HW_SeqDemand'
-    'HW_Lead3Demand' = 'HW_SeqDemand'
-    'HW_Lead4Demand' = 'HW_SeqDemand'
-    'HW_SeqDemand' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 100, 100)
-  ElseIf  'HW_Lag2Latch' Then
-    'HW_Lead1Demand' = 'HW_SeqDemand'
-    'HW_Lead2Demand' = 'HW_SeqDemand'
-    'HW_Lead3Demand' = 'HW_SeqDemand'
-    'HW_Lead4Demand' = 0
-    'HW_SeqDemand' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 75, 100)
-  ElseIf  'HW_Lag1Latch' Then
-    'HW_Lead1Demand' = 'HW_SeqDemand'
-    'HW_Lead2Demand' = 'HW_SeqDemand'
-    'HW_Lead3Demand' = 0
-    'HW_Lead4Demand' = 0
-    'HW_SeqDemand' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 50, 100)
-  Else
-    'HW_Lead1Demand' = 'HW_SeqDemand'
-    'HW_Lead2Demand' = 0
-    'HW_Lead3Demand' = 0
-    'HW_Lead4Demand' = 0
-    'HW_SeqDemand' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 25, 100)
-End If
-
-If ('HW_SeqDemand' > 'HW_LagStart_Sp') OnFor 'HW_InterstageDly_Sp':M Then
-    'HW_Lag1Latch' = On
-End If
-If ('HW_SeqDemand' < 'HW_LagStop_Sp') And ('HW_Lag2Latch' OffFor 30S) Then
-    'HW_Lag1Latch' = Off
-End If
-If (('HW_SeqDemand' > 'HW_LagStart_Sp') And 'HW_Lag1Latch') OnFor 'HW_InterstageDly_Sp':M Then
-    'HW_Lag2Latch' = On
-End If
-If ('HW_SeqDemand' < 'HW_LagStop_Sp') And ('HW_Lag3Latch' OffFor 30S) Then
-    'HW_Lag2Latch' = Off
-End If
-If (('HW_SeqDemand' > 'HW_LagStart_Sp') And 'HW_Lag2Latch') OnFor 'HW_InterstageDly_Sp':M Then
-    'HW_Lag3Latch' = On
-End If
-If ('HW_SeqDemand' < 'HW_LagStop_Sp') OnFor 30S Then
-    'HW_Lag3Latch' = Off
-End If
+'HW_B1Call' = Switch('HW_B1Call', 'Temp_Local_Sp', 15, 8)

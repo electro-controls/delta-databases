@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "13"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -188,10 +188,7 @@
       }
     },
     "13": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "14": {
       "$base": "Choice",
@@ -206,10 +203,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -232,7 +226,7 @@
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,10003"
     },
     "5": {
       "$base": "ObjectIdentifier",
@@ -268,7 +262,7 @@
     },
     "13": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "program,10123"
     },
     "14": {
       "$base": "ObjectIdentifier",
@@ -280,7 +274,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,*"
     },
     "$base": "Array"
   },
@@ -299,7 +293,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-08-09T16:15:58.00"
     },
     "5": {
       "$base": "DateTime",
@@ -323,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-08-09T15:35:02.00"
     },
     "11": {
       "$base": "DateTime",
@@ -335,7 +329,7 @@
     },
     "13": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-08-09T16:15:58.00"
     },
     "14": {
       "$base": "DateTime",
@@ -347,7 +341,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-08-09T15:41:14.00"
     },
     "$base": "Array"
   },

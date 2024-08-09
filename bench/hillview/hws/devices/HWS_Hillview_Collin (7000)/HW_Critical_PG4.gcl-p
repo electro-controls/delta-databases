@@ -1,80 +1,12 @@
 'HW_Critical_PG4.Write_Priority' = 4
 
-//VARIABLES: Search and replace variables with the actual I/O of your application
-Variable B1FireRate_XXX
-Variable B2FireRate_XXX
-Variable B3FireRate_XXX
-Variable B4FireRate_XXX
-Variable B1Enable_XXX
-Variable B2Enable_XXX
-Variable B3Enable_XXX
-Variable B4Enable_XXX
-Variable BP1Enable_XXX
-Variable BP2Enable_XXX
-Variable BP3Enable_XXX
-Variable BP4Enable_XXX
-Variable Boiler_Sp_XXX
-//DELETE this note and the above references after the search and replace is performed
-//Remove // from relinquish lines below
-
-
-
-
 'HW_HWHighLimit' = Switch ( 'HW_HWHighLimit', 'HW_MaxHWTemp', 190, 180)
 
 ///Replace Enable with FireRate in the following section if Fire Rate only on boilers
-If 'HW_HWHighLimit' Or ('HW_B1LWT' < 0) Or (Not 'HW_BP1Status') Or (Not 'HW_HWPFlow') Then
-  B1Enable_XXX = Off
-  Boiler_Sp_XXX = 0
+If 'HW_HWHighLimit' Or ('HW_B1LWT' < 0) Or (Not 'HW_HWP1Status') Or (Not 'HW_HWPFlow') Then
+  'B1_Enable' = Off
+  'Temp_Local_Sp' = 0
  Else
-//  Relinquish B1Enable_XXX
-   //  Relinquish Boiler_Sp_XXX
-End If
-
-If 'HW_HWHighLimit' Or ('HW_B2LWT' < 0) Or (Not 'HW_BP2Status') Or (Not 'HW_HWPFlow') Then
-  B2Enable_XXX = Off
-  Boiler_Sp_XXX = 0
- Else
-//  Relinquish B2Enable_XXX
-   //  Relinquish Boiler_Sp_XXX
-End If
-
-If 'HW_HWHighLimit' Or ('HW_B3LWT' < 0) Or (Not 'HW_BP3Status') Or (Not 'HW_HWPFlow') Then
-  B3Enable_XXX = Off
-  Boiler_Sp_XXX = 0
- Else
-//  Relinquish B3Enable_XXX
-   //  Relinquish Boiler_Sp_XXX
-End If
-
-If 'HW_HWHighLimit' Or ('HW_B4LWT' < 0) Or (Not 'HW_BP4Status') Or (Not 'HW_HWPFlow') Then
-  B4Enable_XXX = Off
-  Boiler_Sp_XXX = 0
- Else
-//  Relinquish B4Enable_XXX
-   //  Relinquish Boiler_Sp_XXX
-End If
-
-
-
-///REMOVE the following section if Fire Rate only on boilers 
-If B1Enable_XXX Then
-//   Relinquish B1FireRate_XXX
-  Else
-   B1FireRate_XXX = 0
-End If
-If B2Enable_XXX Then
-//   Relinquish B2FireRate_XXX
-  Else
-   B2FireRate_XXX = 0
-End If
-If B3Enable_XXX Then
-//   Relinquish B3FireRate_XXX
-  Else
-   B3FireRate_XXX = 0
-End If
-If B4Enable_XXX Then
-//   Relinquish B4FireRate_XXX
-  Else
-   B4FireRate_XXX = 0
+   Relinquish 'B1_Enable'
+   Relinquish 'Temp_Local_Sp'
 End If

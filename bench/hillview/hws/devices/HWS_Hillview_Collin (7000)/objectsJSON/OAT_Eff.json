@@ -26,7 +26,7 @@
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "40.0632"
+    "value": "32"
   },
   "status-flags": {
     "$base": "BitString",

@@ -1,7 +1,38 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [],
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 7000,
+      "objectId": "pg,10123",
+      "objectName": "HW_BlrSeq_PG13_SetPoint_Option",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/HWS_Hillview_Collin (7000)/HW_BlrSeq_PG13_SetPoint_Option.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/9/2024, 4:20:02 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 7000,
+      "objectId": "pg,10010",
+      "objectName": "HW_BlrDemand_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/HWS_Hillview_Collin (7000)/HW_BlrDemand_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/9/2024, 4:20:34 PM",
+      "templateTriggered": false
+    }
+  ],
   "devices": [
     {
       "number": 7000,
@@ -565,24 +596,6 @@
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
-          "id": "av,10016",
-          "name": "HW_LagStart_Sp",
-          "fileName": "HW_LagStart_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10017",
-          "name": "HW_LagStop_Sp",
-          "fileName": "HW_LagStop_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10019",
-          "name": "HW_InterstageDly_Sp",
-          "fileName": "HW_InterstageDly_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
           "id": "av,10021",
           "name": "HW_OATInt1Delay_Sp",
           "fileName": "HW_OATInt1Delay_Sp",
@@ -613,30 +626,6 @@
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
-          "id": "av,10041",
-          "name": "HW_Lead1Demand",
-          "fileName": "HW_Lead1Demand",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10042",
-          "name": "HW_Lead2Demand",
-          "fileName": "HW_Lead2Demand",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10043",
-          "name": "HW_Lead3Demand",
-          "fileName": "HW_Lead3Demand",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10044",
-          "name": "HW_Lead4Demand",
-          "fileName": "HW_Lead4Demand",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
           "id": "av,10070",
           "name": "HW_MaxHWTemp",
           "fileName": "HW_MaxHWTemp",
@@ -661,69 +650,15 @@
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
-          "id": "av,10112",
-          "name": "HW_B2CutIn_Sp",
-          "fileName": "HW_B2CutIn_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10113",
-          "name": "HW_B3CutIn_Sp",
-          "fileName": "HW_B3CutIn_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10114",
-          "name": "HW_B4CutIn_Sp",
-          "fileName": "HW_B4CutIn_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
           "id": "av,10121",
           "name": "HW_B1CutOut_Sp",
           "fileName": "HW_B1CutOut_Sp",
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
-          "id": "av,10122",
-          "name": "HW_B2CutOut_Sp",
-          "fileName": "HW_B2CutOut_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10123",
-          "name": "HW_B3CutOut_Sp",
-          "fileName": "HW_B3CutOut_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10124",
-          "name": "HW_B4CutOut_Sp",
-          "fileName": "HW_B4CutOut_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
           "id": "av,10131",
           "name": "HW_B1HWSLimit_Sp",
           "fileName": "HW_B1HWSLimit_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10132",
-          "name": "HW_B2HWSLimit_Sp",
-          "fileName": "HW_B2HWSLimit_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10133",
-          "name": "HW_B3HWSLimit_Sp",
-          "fileName": "HW_B3HWSLimit_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10134",
-          "name": "HW_B4HWSLimit_Sp",
-          "fileName": "HW_B4HWSLimit_Sp",
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
@@ -739,93 +674,15 @@
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
-          "id": "av,10152",
-          "name": "HW_B2Ramp",
-          "fileName": "HW_B2Ramp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10153",
-          "name": "HW_B3Ramp",
-          "fileName": "HW_B3Ramp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10154",
-          "name": "HW_B4Ramp",
-          "fileName": "HW_B4Ramp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10161",
-          "name": "HW_B1RateCall",
-          "fileName": "HW_B1RateCall",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10162",
-          "name": "HW_B2RateCall",
-          "fileName": "HW_B2RateCall",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10163",
-          "name": "HW_B3RateCall",
-          "fileName": "HW_B3RateCall",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10164",
-          "name": "HW_B4RateCall",
-          "fileName": "HW_B4RateCall",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
           "id": "av,10171",
           "name": "HW_B1DemandLimit_Sp",
           "fileName": "HW_B1DemandLimit_Sp",
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
-          "id": "av,10172",
-          "name": "HW_B2DemandLimit_Sp",
-          "fileName": "HW_B2DemandLimit_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10173",
-          "name": "HW_B3DemandLimit_Sp",
-          "fileName": "HW_B3DemandLimit_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10174",
-          "name": "HW_B4DemandLimit_Sp",
-          "fileName": "HW_B4DemandLimit_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
           "id": "av,10181",
           "name": "HW_B1LWT",
           "fileName": "HW_B1LWT",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10182",
-          "name": "HW_B2LWT",
-          "fileName": "HW_B2LWT",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10183",
-          "name": "HW_B3LWT",
-          "fileName": "HW_B3LWT",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,10184",
-          "name": "HW_B4LWT",
-          "fileName": "HW_B4LWT",
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
@@ -865,12 +722,6 @@
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
-          "id": "av,10222",
-          "name": "HWP2Ramp",
-          "fileName": "HWP2Ramp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
           "id": "av,10251",
           "name": "HWBlrPumpOffDelay_Sp",
           "fileName": "HWBlrPumpOffDelay_Sp",
@@ -886,24 +737,6 @@
           "id": "av,11001",
           "name": "HW_B1ReservedModbusMapping",
           "fileName": "HW_B1ReservedModbusMapping",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,12001",
-          "name": "HW_B2ReservedModbusMapping",
-          "fileName": "HW_B2ReservedModbusMapping",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,13001",
-          "name": "HW_B3ReservedModbusMapping",
-          "fileName": "HW_B3ReservedModbusMapping",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "av,14001",
-          "name": "HW_B4ReservedModbusMapping",
-          "fileName": "HW_B4ReservedModbusMapping",
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
@@ -1051,18 +884,6 @@
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
-          "id": "bv,10041",
-          "name": "HW_Lag1Latch",
-          "fileName": "HW_Lag1Latch",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "bv,10042",
-          "name": "HW_Lag2Latch",
-          "fileName": "HW_Lag2Latch",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
           "id": "bv,10043",
           "name": "HW_Lag3Latch",
           "fileName": "HW_Lag3Latch",
@@ -1072,24 +893,6 @@
           "id": "bv,10151",
           "name": "HW_B1Call",
           "fileName": "HW_B1Call",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "bv,10152",
-          "name": "HW_B2Call",
-          "fileName": "HW_B2Call",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "bv,10153",
-          "name": "HW_B3Call",
-          "fileName": "HW_B3Call",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "bv,10154",
-          "name": "HW_B4Call",
-          "fileName": "HW_B4Call",
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
@@ -1117,45 +920,9 @@
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
-          "id": "bv,10222",
-          "name": "HW_HWP2Status",
-          "fileName": "HW_HWP2Status",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
           "id": "bv,10226",
           "name": "HW_HWP1Fail",
           "fileName": "HW_HWP1Fail",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "bv,10227",
-          "name": "HW_HWP2Fail",
-          "fileName": "HW_HWP2Fail",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "bv,10231",
-          "name": "HW_BP1Status",
-          "fileName": "HW_BP1Status",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "bv,10232",
-          "name": "HW_BP2Status",
-          "fileName": "HW_BP2Status",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "bv,10233",
-          "name": "HW_BP3Status",
-          "fileName": "HW_BP3Status",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "bv,10234",
-          "name": "HW_BP4Status",
-          "fileName": "HW_BP4Status",
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
@@ -1318,18 +1085,6 @@
           "id": "mv,10001",
           "name": "HW_HWSystemMode",
           "fileName": "HW_HWSystemMode",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "mv,10011",
-          "name": "HW_LeadBoiler",
-          "fileName": "HW_LeadBoiler",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "mv,10211",
-          "name": "HW_LeadPump",
-          "fileName": "HW_LeadPump",
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
