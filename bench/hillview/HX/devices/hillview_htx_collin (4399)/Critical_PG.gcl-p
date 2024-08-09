@@ -1,9 +1,0 @@
-// hi-temp limit check
-
-If ('HighTempLimit') Then
-    'HXFeedValve' = 0
-    'HXPumpEnable' = Off
-Else
-    Relinquish 'HXFeedValve'
-    Relinquish 'HXPumpEnable'
-End If

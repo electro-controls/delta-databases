@@ -1,0 +1,9 @@
+If PowerUp Then
+  'Eff_OAT' = 32
+  'PoolHWS_RemSp' = - 1
+  'HighPoolLimit' = Off
+End If
+
+'Eff_OAT' = '1000.OAT_Eff'
+
+ //End of Program
