@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "88"
+    "value": "102"
   },
   "algorithm": {
     "$base": "Enumerated",
