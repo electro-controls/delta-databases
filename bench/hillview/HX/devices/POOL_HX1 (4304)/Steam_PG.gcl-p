@@ -9,7 +9,7 @@ End If
 'PoolHWS_LocSp' = Scale ('PoolHWR_CO', 0, 0, 'PoolHWR_Sp', 100, 'PoolHWSMax_Sp')
 
 //Pump Status Conversion
-'PumpStatus' = Switch ( 'PumpStatus', 'Spa_Return_Temp', 2, 0.5)
+'PumpStatus' = Switch ( 'PumpStatus', 'Pump_Status', 2, 0.5) // field verify todo
 IfOnce 'PumpStatus' Then
   'PoolHWS_CO.Bias' = 1
 End If
@@ -38,7 +38,7 @@ Else
   'HW_FeedValve' = 0
 End If
 
-IfOnce 'HX_EWT' > ('PoolHWSMax_Sp' + 5) Then
+IfOnce 'Spa_Supply_Temp' > ('PoolHWSMax_Sp' + 5) Then
   'PoolHWR_CO.Bias' = 'PoolHWR_CO.Bias' * 0.2
 End If
 
