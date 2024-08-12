@@ -418,11 +418,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "06:48:07.00"
+    "value": "12:03:50.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2000-01-04"
+    "value": "2000-01-01"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -571,7 +571,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "7.5"
+    "value": "6.95652"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -679,7 +679,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "2404875"
+      "value": "2311"
     }
   },
   "logical-base-address": {
@@ -779,7 +779,7 @@
     "$base": "Choice",
     "dateTime": {
       "$base": "DateTime",
-      "value": "2000-01-02T17:56:48.40"
+      "value": "2000-01-04T06:57:38.80"
     }
   },
   "backup-failure-timeout": {
@@ -788,7 +788,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "5"
   },
   "active-cov-subscriptions": {
     "$base": "List"

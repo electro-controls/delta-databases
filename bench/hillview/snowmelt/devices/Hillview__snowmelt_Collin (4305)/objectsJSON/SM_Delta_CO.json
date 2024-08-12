@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "133"
+    "value": "139"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -259,7 +259,7 @@
   },
   "average-error": {
     "$base": "Real",
-    "value": "40"
+    "value": "8"
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "2404872"
+      "value": "2302"
     }
   },
   "self-adj-enable": {
@@ -300,12 +300,12 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "2412000"
+      "value": "18000"
     }
   },
   "setpoint-crossings": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "2"
   },
   "setpoint-crossing-flag": {
     "$base": "Boolean",
@@ -313,7 +313,7 @@
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "40"
+    "value": "212"
   },
   "hal-flags": {
     "$base": "BitString",

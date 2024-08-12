@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "50"
+    "value": "40"
   },
   "last-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "2396258"
+      "value": "533"
     }
   },
   "ad-value": {
