@@ -1,0 +1,468 @@
+{
+  "name": "Bench",
+  "ipAddress": "http://localhost",
+  "uploadQueue": [],
+  "devices": [
+    {
+      "number": 4305,
+      "objects": [
+        {
+          "id": "ai,1",
+          "name": "SMS_Slab",
+          "fileName": "SMS_Slab",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "ai,2",
+          "name": "SMS_Core",
+          "fileName": "SMS_Core",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "ai,3",
+          "name": "SMS_Moist",
+          "fileName": "SMS_Moist",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "ai,5",
+          "name": "SW1_EWT",
+          "fileName": "SW1_EWT",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "ai,6",
+          "name": "SW1_LWT",
+          "fileName": "SW1_LWT",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "aic,1",
+          "name": "Temperature DegF 10k Thermistor AIC",
+          "fileName": "Temperature DegF 10k Thermistor AIC",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "aic,5",
+          "name": "FanCurrent 0-5V 0-5A AIC",
+          "fileName": "FanCurrent 0-5V 0-5A AIC",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "aic,41",
+          "name": "TekmarMoisture AIC",
+          "fileName": "TekmarMoisture AIC",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "aic,42",
+          "name": "SM_PumpCurrent 0-5V AIC",
+          "fileName": "SM_PumpCurrent 0-5V AIC",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "ao,5",
+          "name": "HWV",
+          "fileName": "HWV",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "aoc,8",
+          "name": "SM_HWV AOC",
+          "fileName": "SM_HWV AOC",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,1",
+          "name": "SMS_SlabTarget_Sp",
+          "fileName": "SMS_SlabTarget_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,2",
+          "name": "SMS_Core_Sp",
+          "fileName": "SMS_Core_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,3",
+          "name": "SMS_Moist_Sp",
+          "fileName": "SMS_Moist_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,10",
+          "name": "SMEffSlabDemand",
+          "fileName": "SMEffSlabDemand",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,11",
+          "name": "SM_EWT_EffSp",
+          "fileName": "SM_EWT_EffSp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,12",
+          "name": "SM_EWT_LocSp",
+          "fileName": "SM_EWT_LocSp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,13",
+          "name": "SM_EWT_RemSp",
+          "fileName": "SM_EWT_RemSp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,21",
+          "name": "SM_EWTMin_Sp",
+          "fileName": "SM_EWTMin_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,22",
+          "name": "SM_EWTMax_Sp",
+          "fileName": "SM_EWTMax_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,23",
+          "name": "SM_MaxDelta_Sp",
+          "fileName": "SM_MaxDelta_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,24",
+          "name": "SM_Delta",
+          "fileName": "SM_Delta",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,25",
+          "name": "SM_HiLimit_Sp",
+          "fileName": "SM_HiLimit_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,31",
+          "name": "SM_OATEnable_Sp",
+          "fileName": "SM_OATEnable_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,33",
+          "name": "SMS_SlabTempEnable_Sp",
+          "fileName": "SMS_SlabTempEnable_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,41",
+          "name": "SMRampDly_Sp",
+          "fileName": "SMRampDly_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,42",
+          "name": "SMRampPct",
+          "fileName": "SMRampPct",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,43",
+          "name": "SMIdleDly_Sp",
+          "fileName": "SMIdleDly_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,44",
+          "name": "SMIdleDlyTmLeft",
+          "fileName": "SMIdleDlyTmLeft",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,45",
+          "name": "SM_MeltMinOnTime_Sp",
+          "fileName": "SM_MeltMinOnTime_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,46",
+          "name": "SM_MeltMinOnLeft",
+          "fileName": "SM_MeltMinOnLeft",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,51",
+          "name": "SMDemandLimit_Sp",
+          "fileName": "SMDemandLimit_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,61",
+          "name": "SM_PipeFrzProtect_Sp",
+          "fileName": "SM_PipeFrzProtect_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,71",
+          "name": "SMS_CorePulseTm",
+          "fileName": "SMS_CorePulseTm",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,72",
+          "name": "SMS_CorePulseTm_Sp",
+          "fileName": "SMS_CorePulseTm_Sp",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,91",
+          "name": "Eff_OAT",
+          "fileName": "Eff_OAT",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "av,98",
+          "name": "Uptime",
+          "fileName": "Uptime",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "Active/Inactive BDC",
+          "fileName": "Active~Inactive BDC",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bdc,3",
+          "name": "Alarm/Normal BDC",
+          "fileName": "Alarm~Normal BDC",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bi,4",
+          "name": "SMP1Status",
+          "fileName": "SMP1Status",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "SMP1_Enable",
+          "fileName": "SMP1_Enable",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bo,2",
+          "name": "SMS_CoreHeater",
+          "fileName": "SMS_CoreHeater",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bv,1",
+          "name": "SMS_SlabTempCall",
+          "fileName": "SMS_SlabTempCall",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bv,3",
+          "name": "SMS_MoistureCall",
+          "fileName": "SMS_MoistureCall",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bv,10",
+          "name": "SM_Call",
+          "fileName": "SM_Call",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bv,11",
+          "name": "SensorCall",
+          "fileName": "SensorCall",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bv,24",
+          "name": "SM_HWHighLimit",
+          "fileName": "SM_HWHighLimit",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bv,31",
+          "name": "SM_OATCall",
+          "fileName": "SM_OATCall",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bv,43",
+          "name": "SM_IdleCall",
+          "fileName": "SM_IdleCall",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "bv,61",
+          "name": "SM_PipeFrzProtect",
+          "fileName": "SM_PipeFrzProtect",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "co,1",
+          "name": "SM_EWT_CO",
+          "fileName": "SM_EWT_CO",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "co,2",
+          "name": "SM_Delta_CO",
+          "fileName": "SM_Delta_CO",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "co,11",
+          "name": "SMS_Slab_CO",
+          "fileName": "SMS_Slab_CO",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "co,12",
+          "name": "SMS_CoreHtrCO",
+          "fileName": "SMS_CoreHtrCO",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "dbi,4305",
+          "name": "Database Information 4305",
+          "fileName": "Database Information 4305",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 4305",
+          "fileName": "Data Exchange Settings 4305",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "device,4305",
+          "name": "Hillview__snowmelt_Collin",
+          "fileName": "Hillview__snowmelt_Collin",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 4305",
+          "fileName": "Event and Alarm Settings 4305",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "lcd,101",
+          "name": "LinkLCD1",
+          "fileName": "LinkLCD1",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "lnk,101",
+          "name": "LINKnet Device 1",
+          "fileName": "LINKnet Device 1",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "mic,19",
+          "name": "FaultDetection_MIC",
+          "fileName": "FaultDetection_MIC",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "mic,25",
+          "name": "SM_MIC",
+          "fileName": "SM_MIC",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "mv,1",
+          "name": "SM_EffSnowMeltMode",
+          "fileName": "SM_EffSnowMeltMode",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "mv,2",
+          "name": "SM_RemSnowMeltMode",
+          "fileName": "SM_RemSnowMeltMode",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "mv,98",
+          "name": "ControllerFault",
+          "fileName": "ControllerFault",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 4305",
+          "fileName": "BACnet Settings 4305",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 4305",
+          "fileName": "Priority Names 4305",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "SM_Sensor_PG",
+          "fileName": "SM_Sensor_PG",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "SM_PG",
+          "fileName": "SM_PG",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "pg,9",
+          "name": "Critical_PG",
+          "fileName": "Critical_PG",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "pg,98",
+          "name": "FaultDetection_PG",
+          "fileName": "FaultDetection_PG",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 4305",
+          "fileName": "Slave Device List 4305",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-08-12T17:20:50.892Z"
+        }
+      ]
+    }
+  ]
+}

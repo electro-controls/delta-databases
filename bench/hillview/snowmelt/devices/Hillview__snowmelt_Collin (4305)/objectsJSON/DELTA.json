@@ -1,0 +1,15 @@
+{
+  "displayName": "DELTA",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "sua,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "system-user-access"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "DELTA"
+  }
+}

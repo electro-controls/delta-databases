@@ -1,0 +1,13 @@
+//General page
+
+//Power up defaults
+If PowerUp Then
+    'Eff_OAT' = 32
+    'Uptime' = 0
+End If
+
+DoEvery 1M
+  'Uptime' = 'Uptime' + 1
+End Do
+
+ //end of general page
