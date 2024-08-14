@@ -1,0 +1,204 @@
+{
+  "name": "Bench",
+  "ipAddress": "http://localhost",
+  "uploadQueue": [],
+  "devices": [
+    {
+      "number": 7000,
+      "objects": [
+        {
+          "id": "ai,1101",
+          "name": "GUH_1_STATUS",
+          "fileName": "GUH_1_STATUS",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "ai,1102",
+          "name": "GUH_2_STATUS",
+          "fileName": "GUH_2_STATUS",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "ai,1103",
+          "name": "OAT",
+          "fileName": "OAT",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "aic,1",
+          "name": "CURRENT_AIC",
+          "fileName": "CURRENT_AIC",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "aic,5",
+          "name": "Temperature_DegF_AIC",
+          "fileName": "Temperature_DegF_AIC",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "bdc,1",
+          "name": "ActiveInactive_BDC",
+          "fileName": "ActiveInactive_BDC",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "bi,1104",
+          "name": "OCC_LOCAL",
+          "fileName": "OCC_LOCAL",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "bmd,1",
+          "name": "BBMD List1 7000",
+          "fileName": "BBMD List1 7000",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "bo,1101",
+          "name": "GUH_1_Stage_1",
+          "fileName": "GUH_1_Stage_1",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "bo,1102",
+          "name": "GUH_1_Stage_2",
+          "fileName": "GUH_1_Stage_2",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "bo,1103",
+          "name": "GUH_2_Stage_1",
+          "fileName": "GUH_2_Stage_1",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "bo,1104",
+          "name": "GUH_2_Stage_2",
+          "fileName": "GUH_2_Stage_2",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "dbi,7000",
+          "name": "Database Information 7000",
+          "fileName": "Database Information 7000",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 7000",
+          "fileName": "Data Exchange Settings 7000",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "device,7000",
+          "name": "eBM_11_DMA_FH_Collin",
+          "fileName": "eBM_11_DMA_FH_Collin",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "evc,3",
+          "name": "Security",
+          "fileName": "Security",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "evc,4",
+          "name": "Critical",
+          "fileName": "Critical",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 7000",
+          "fileName": "Event and Alarm Settings 7000",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "ips,1",
+          "name": "Internet Protocol Settings",
+          "fileName": "Internet Protocol Settings",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 7000",
+          "fileName": "BACnet Settings 7000",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 7000",
+          "fileName": "Priority Names 7000",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 7000",
+          "fileName": "Slave Device List 7000",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "ELECTRO",
+          "fileName": "ELECTRO",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        },
+        {
+          "id": "sug,1",
+          "name": "Administrator",
+          "fileName": "Administrator",
+          "lastUpdate": "2024-08-14T19:30:31.817Z"
+        }
+      ]
+    }
+  ]
+}
