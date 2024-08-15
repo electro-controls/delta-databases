@@ -26,258 +26,262 @@
   },
   "free-memory": {
     "$base": "Unsigned",
-    "value": "316480"
+    "value": "316388"
   },
   "object-count": {
     "$base": "Unsigned",
-    "value": "62"
+    "value": "63"
   },
   "object-list": {
     "1": {
       "$base": "ObjectIdentifier",
-      "value": "analog-input,1101"
+      "value": "analog-input,101"
     },
     "2": {
       "$base": "ObjectIdentifier",
-      "value": "analog-input,1102"
+      "value": "analog-input,1101"
     },
     "3": {
       "$base": "ObjectIdentifier",
-      "value": "analog-input,1103"
+      "value": "analog-input,1102"
     },
     "4": {
       "$base": "ObjectIdentifier",
-      "value": "binary-input,1104"
+      "value": "analog-input,1103"
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "value": "binary-output,1101"
+      "value": "binary-input,1104"
     },
     "6": {
       "$base": "ObjectIdentifier",
-      "value": "binary-output,1102"
+      "value": "binary-output,1101"
     },
     "7": {
       "$base": "ObjectIdentifier",
-      "value": "binary-output,1103"
+      "value": "binary-output,1102"
     },
     "8": {
       "$base": "ObjectIdentifier",
-      "value": "binary-output,1104"
+      "value": "binary-output,1103"
     },
     "9": {
       "$base": "ObjectIdentifier",
-      "value": "device,7000"
+      "value": "binary-output,1104"
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "file,1"
+      "value": "device,7000"
     },
     "11": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,1"
+      "value": "file,1"
     },
     "12": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,2"
+      "value": "notification-class,1"
     },
     "13": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,3"
+      "value": "notification-class,2"
     },
     "14": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,4"
+      "value": "notification-class,3"
     },
     "15": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,5"
+      "value": "notification-class,4"
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,6"
+      "value": "notification-class,5"
     },
     "17": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,7"
+      "value": "notification-class,6"
     },
     "18": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,8"
+      "value": "notification-class,7"
     },
     "19": {
       "$base": "ObjectIdentifier",
-      "value": "notification-class,9"
+      "value": "notification-class,8"
     },
     "20": {
       "$base": "ObjectIdentifier",
-      "value": "des,1"
+      "value": "notification-class,9"
     },
     "21": {
       "$base": "ObjectIdentifier",
-      "value": "aic,1"
+      "value": "des,1"
     },
     "22": {
       "$base": "ObjectIdentifier",
-      "value": "aic,5"
+      "value": "aic,1"
     },
     "23": {
       "$base": "ObjectIdentifier",
-      "value": "bdc,1"
+      "value": "aic,5"
     },
     "24": {
       "$base": "ObjectIdentifier",
-      "value": "dbi,7000"
+      "value": "bdc,1"
     },
     "25": {
       "$base": "ObjectIdentifier",
-      "value": "sua,1"
+      "value": "dbi,7000"
     },
     "26": {
       "$base": "ObjectIdentifier",
-      "value": "net,1"
+      "value": "sua,1"
     },
     "27": {
       "$base": "ObjectIdentifier",
-      "value": "evn,1"
+      "value": "net,1"
     },
     "28": {
       "$base": "ObjectIdentifier",
-      "value": "evn,2"
+      "value": "evn,1"
     },
     "29": {
       "$base": "ObjectIdentifier",
-      "value": "evn,3"
+      "value": "evn,2"
     },
     "30": {
       "$base": "ObjectIdentifier",
-      "value": "evn,4"
+      "value": "evn,3"
     },
     "31": {
       "$base": "ObjectIdentifier",
-      "value": "evn,5"
+      "value": "evn,4"
     },
     "32": {
       "$base": "ObjectIdentifier",
-      "value": "evn,6"
+      "value": "evn,5"
     },
     "33": {
       "$base": "ObjectIdentifier",
-      "value": "evn,7"
+      "value": "evn,6"
     },
     "34": {
       "$base": "ObjectIdentifier",
-      "value": "evn,8"
+      "value": "evn,7"
     },
     "35": {
       "$base": "ObjectIdentifier",
-      "value": "evn,9"
+      "value": "evn,8"
     },
     "36": {
       "$base": "ObjectIdentifier",
-      "value": "evn,10"
+      "value": "evn,9"
     },
     "37": {
       "$base": "ObjectIdentifier",
-      "value": "eva,1"
+      "value": "evn,10"
     },
     "38": {
       "$base": "ObjectIdentifier",
-      "value": "eva,2"
+      "value": "eva,1"
     },
     "39": {
       "$base": "ObjectIdentifier",
-      "value": "eva,3"
+      "value": "eva,2"
     },
     "40": {
       "$base": "ObjectIdentifier",
-      "value": "eva,4"
+      "value": "eva,3"
     },
     "41": {
       "$base": "ObjectIdentifier",
-      "value": "eva,5"
+      "value": "eva,4"
     },
     "42": {
       "$base": "ObjectIdentifier",
-      "value": "eva,6"
+      "value": "eva,5"
     },
     "43": {
       "$base": "ObjectIdentifier",
-      "value": "eva,7"
+      "value": "eva,6"
     },
     "44": {
       "$base": "ObjectIdentifier",
-      "value": "eva,8"
+      "value": "eva,7"
     },
     "45": {
       "$base": "ObjectIdentifier",
-      "value": "eva,9"
+      "value": "eva,8"
     },
     "46": {
       "$base": "ObjectIdentifier",
-      "value": "eva,10"
+      "value": "eva,9"
     },
     "47": {
       "$base": "ObjectIdentifier",
-      "value": "eva,11"
+      "value": "eva,10"
     },
     "48": {
       "$base": "ObjectIdentifier",
-      "value": "eva,12"
+      "value": "eva,11"
     },
     "49": {
       "$base": "ObjectIdentifier",
-      "value": "eva,13"
+      "value": "eva,12"
     },
     "50": {
       "$base": "ObjectIdentifier",
-      "value": "eva,14"
+      "value": "eva,13"
     },
     "51": {
       "$base": "ObjectIdentifier",
-      "value": "eva,15"
+      "value": "eva,14"
     },
     "52": {
       "$base": "ObjectIdentifier",
-      "value": "eva,16"
+      "value": "eva,15"
     },
     "53": {
       "$base": "ObjectIdentifier",
-      "value": "eva,17"
+      "value": "eva,16"
     },
     "54": {
       "$base": "ObjectIdentifier",
-      "value": "eva,18"
+      "value": "eva,17"
     },
     "55": {
       "$base": "ObjectIdentifier",
-      "value": "eva,19"
+      "value": "eva,18"
     },
     "56": {
       "$base": "ObjectIdentifier",
-      "value": "eva,20"
+      "value": "eva,19"
     },
     "57": {
       "$base": "ObjectIdentifier",
-      "value": "evs,1"
+      "value": "eva,20"
     },
     "58": {
       "$base": "ObjectIdentifier",
-      "value": "pan,1"
+      "value": "evs,1"
     },
     "59": {
       "$base": "ObjectIdentifier",
-      "value": "sdl,1"
+      "value": "pan,1"
     },
     "60": {
       "$base": "ObjectIdentifier",
-      "value": "bmd,1"
+      "value": "sdl,1"
     },
     "61": {
       "$base": "ObjectIdentifier",
-      "value": "sug,1"
+      "value": "bmd,1"
     },
     "62": {
+      "$base": "ObjectIdentifier",
+      "value": "sug,1"
+    },
+    "63": {
       "$base": "ObjectIdentifier",
       "value": "ips,1"
     },
@@ -289,7 +293,7 @@
   },
   "time-of-last-chg": {
     "$base": "DateTime",
-    "value": "2024-08-14T13:25:43.300000-06:00"
+    "value": "2024-08-14T13:51:43.500000-06:00"
   },
   "src-user-of-last-chg": {
     "$base": "Sequence",
@@ -314,7 +318,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "18"
+    "value": "19"
   },
   "total-graphic-memory": {
     "$base": "Choice",

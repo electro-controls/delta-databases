@@ -1,8 +1,8 @@
 {
-  "displayName": "OAT",
+  "displayName": "ZONE_TEMP",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,1103"
+    "value": "analog-input,101"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "OAT"
+    "value": "ZONE_TEMP"
   },
   "description": {
     "$base": "String",
@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "30"
+    "value": "60"
   },
   "last-value": {
     "$base": "Real",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "32"
+    "value": "31"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "12621"
+      "value": "27449"
     }
   },
   "ad-value": {

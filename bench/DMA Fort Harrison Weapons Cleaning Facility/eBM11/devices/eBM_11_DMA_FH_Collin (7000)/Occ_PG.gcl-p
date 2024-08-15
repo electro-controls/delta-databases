@@ -1,0 +1,19 @@
+//occ mode page
+If ('Occ_Temp_RemSp' >= 0) Then
+    'Occ_Temp_Sp' = 'Occ_Temp_RemSp'
+Else
+    'Occ_Temp_Sp' = 'Occ_Temp_LocSp'
+End If
+
+If ('UnOcc_Temp_RemSp' >= 0) Then
+    'UnOcc_Temp_Sp' = 'UnOcc_Temp_RemSp'
+Else
+    'UnOcc_Temp_Sp' = 'UnOcc_Temp_LocSp'
+End If
+
+If 'OCC_LOCAL' Then
+    'Temp_Sp' = 'Occ_Temp_Sp'
+Else
+    'Temp_Sp' = 'UnOcc_Temp_Sp'
+End If
+//end of occmode pg

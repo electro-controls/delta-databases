@@ -1,0 +1,81 @@
+//Heat page
+
+Variable currentStage
+Variable previousStage
+
+If ('Eff_OAT' < 'OAT_Trigger_Below_Sp') Then
+    If (currentStage = 2 OnFor 30:M) And ('Heat_CO' >= 50) Then // stage 3/4
+        If ('Heat_CO' >= 75) Then
+            'GUH_1_Stage_1' = On
+            'GUH_2_Stage_1' = On
+            'GUH_1_Stage_2' = On
+            'GUH_2_Stage_2' = On
+
+            previousStage = currentStage
+            currentStage = 4
+        Else If ('Heat_CO' > 50) And (Not stageUp) Then
+            'GUH_1_Stage_1' = On
+            'GUH_2_Stage_1' = On
+
+            // exercise both evenly. Lead boiler integrated and selected on a schedule from front end. todo
+            If ('Lead_Heater' = 2) Then
+                'GUH_1_Stage_2' = Off 
+                'GUH_2_Stage_2' = On
+            Else
+                'GUH_1_Stage_2' = On 
+                'GUH_2_Stage_2' = Off
+            End If
+
+            previousStage = currentStage
+            currentStage = 3
+        End If
+    Else If (('Heat_CO' < 50) And (Not stageUp)) Then// stage 1/2
+
+        'GUH_1_Stage_2' = Off
+        'GUH_2_Stage_2' = Off
+
+        If (('Heat_CO' >= 25) And (Not stageUp)) Then
+            'GUH_1_Stage_1' = On
+            'GUH_2_Stage_1' = On
+            previousStage = currentStage
+            currentStage = 2
+        ElseIf (('Heat_CO' >= 5) And (Not stageUp)) Then
+            // lead-lag
+            If ('Lead_Heater' = 2) Then
+                'GUH_1_Stage_1' = Off
+                'GUH_2_Stage_1' = On
+            Else
+                'GUH_1_Stage_1' = On
+                'GUH_2_Stage_1' = Off
+            End If
+
+            previousStage = currentStage
+            currentStage = 1
+        ElseIf (Not stageUp) Then
+            'GUH_1_Stage_1' = Off
+            'GUH_2_Stage_1' = Off
+
+            previousStage = currentStage
+            currentStage = 0
+        End If
+    End If
+
+Else If (Not stageUp) Then // disable
+    'GUH_1_Stage_1' = Off
+    'GUH_2_Stage_1' = Off
+    'GUH_1_Stage_2' = Off
+    'GUH_2_Stage_2' = Off
+
+    previousStage = currentStage
+    currentStage = 0
+End If
+
+//set timeout when raising stages, prevents dropping stage soon after initiating
+Variable stageUp
+If currentStage > previousStage Then
+    stageUp = On
+End If
+
+If stageUp OnFor 'Decrease_Stage_Lockout_Sp':S Then
+    stageUp = Off
+End If
