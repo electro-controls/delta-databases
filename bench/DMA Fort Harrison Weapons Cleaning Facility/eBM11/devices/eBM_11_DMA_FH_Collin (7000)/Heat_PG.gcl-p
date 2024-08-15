@@ -8,7 +8,7 @@ If ('Eff_OAT' < 'OAT_Trigger_Below_Sp') Then
 
     temperatureInterlock = On
 
-ElseIf (Not (lockDownStage And currentStage >= 1)) Then // disable
+ElseIf (Not (lockDownStage And currentStage >= 1)) Then
     'GUH_1_Stage_1' = Off
     'GUH_2_Stage_1' = Off
     'GUH_1_Stage_2' = Off
@@ -19,7 +19,7 @@ ElseIf (Not (lockDownStage And currentStage >= 1)) Then // disable
     currentStage = 0
 End If
 
-If (temperatureInterlock) And (currentStage = 2 OnFor 30:M) And ('Heat_CO' >= 50) Then // stage 3/4
+If ((temperatureInterlock) And ('Heat_CO' >= 50)) And ((currentStage = 2) OnFor 30:M) Then
     If ('Heat_CO' >= 75) Then
         'GUH_1_Stage_1' = On
         'GUH_2_Stage_1' = On
@@ -44,7 +44,7 @@ If (temperatureInterlock) And (currentStage = 2 OnFor 30:M) And ('Heat_CO' >= 50
         previousStage = currentStage
         currentStage = 3
     End If
-ElseIf (temperatureInterlock) And ('Heat_CO' < 50) Then// stage 1/2
+ElseIf (temperatureInterlock) Then
 
     'GUH_1_Stage_2' = Off
     'GUH_2_Stage_2' = Off
@@ -84,5 +84,3 @@ End If
 If (lockDownStage OnFor 'Decrease_Stage_Lockout_Sp':S) Then
     lockDownStage = Off
 End If
-
-'GUH_1_Stage_1' = On
