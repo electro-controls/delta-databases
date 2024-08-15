@@ -84,3 +84,5 @@ End If
 If (lockDownStage OnFor 'Decrease_Stage_Lockout_Sp':S) Then
     lockDownStage = Off
 End If
+
+'GUH_1_Stage_1' = On
