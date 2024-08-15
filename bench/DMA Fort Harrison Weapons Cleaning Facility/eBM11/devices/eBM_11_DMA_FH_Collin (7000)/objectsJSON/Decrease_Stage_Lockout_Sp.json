@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Decrease_Stage_Lockout_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "60"
   },
   "gcl-value": {
     "$base": "Real",
-    "value": 0
+    "value": "60"
   },
   "status-flags": {
     "$base": "BitString",
@@ -55,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "program,2"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-08-15T13:32:48.100000-06:00"
   },
   "cov-increment": {
     "$base": "Real",
@@ -71,7 +70,7 @@
   },
   "decimal-places": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "hal-flags": {
     "$base": "BitString",

@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Occ_Temp_RemSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -55,7 +54,7 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "device,65984"
   },
   "time-of-last-write": {
     "$base": "DateTime",

@@ -8,7 +8,7 @@ If ('OAT_Trigger_Below_RemSp' >= 0) Then
     'OAT_Trigger_Below_Sp' = 'OAT_Trigger_Below_RemSp'
 Else
     'OAT_Trigger_Below_Sp' = 'OAT_Trigger_Below_LocSp'
-End If 
+End If
 
 If ('Decrease_Stage_Lockout_RemSp' >= 0) Then
     'Decrease_Stage_Lockout_Sp' = 'Decrease_Stage_Lockout_RemSp'

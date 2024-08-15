@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "Decrease_Stage_Lockout_LocSp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -55,7 +54,7 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "device,65984"
   },
   "time-of-last-write": {
     "$base": "DateTime",
@@ -71,7 +70,7 @@
   },
   "decimal-places": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "hal-flags": {
     "$base": "BitString",

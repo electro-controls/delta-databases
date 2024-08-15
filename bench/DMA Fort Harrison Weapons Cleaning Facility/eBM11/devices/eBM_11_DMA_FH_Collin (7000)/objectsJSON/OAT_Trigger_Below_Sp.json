@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "OAT_Trigger_Below_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "40"
   },
   "gcl-value": {
     "$base": "Real",
-    "value": 0
+    "value": "40"
   },
   "status-flags": {
     "$base": "BitString",
@@ -55,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "program,2"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-08-15T13:32:49.100000-06:00"
   },
   "cov-increment": {
     "$base": "Real",
