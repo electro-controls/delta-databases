@@ -1,5 +1,5 @@
 {
-  "displayName": "Heat_CO",
+  "displayName": "GUH1_Heat_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "loop,1"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Heat_CO"
+    "value": "GUH1_Heat_CO"
   },
   "description": {
     "$base": "String",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "14"
+    "value": "60"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "60"
+    "value": "73.1"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -117,7 +117,7 @@
   },
   "setpoint": {
     "$base": "Real",
-    "value": 0
+    "value": "70"
   },
   "setpoint-reference": {
     "$base": "Sequence",
@@ -154,7 +154,7 @@
   },
   "proportional-constant": {
     "$base": "Real",
-    "value": "2"
+    "value": "10"
   },
   "proportional-constant-units": {
     "$base": "Enumerated",
@@ -212,7 +212,7 @@
   },
   "bias": {
     "$base": "Real",
-    "value": "50"
+    "value": "25.9865"
   },
   "derivative": {
     "$base": "Real",
@@ -224,7 +224,7 @@
   },
   "derivative-counter": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "1"
   },
   "previous-chg-errors": {
     "1": {
@@ -247,7 +247,7 @@
   },
   "deadband": {
     "$base": "Real",
-    "value": 0
+    "value": "1"
   },
   "reset-band": {
     "$base": "Real",
@@ -255,15 +255,15 @@
   },
   "average-crossings": {
     "$base": "Real",
-    "value": "0.1024"
+    "value": "0.000489254"
   },
   "average-error": {
     "$base": "Real",
-    "value": "35.424"
+    "value": "3.11237"
   },
   "previous-error": {
     "$base": "Real",
-    "value": "-60"
+    "value": "-3.1"
   },
   "maximum-output": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "864654"
+      "value": "1565114"
     }
   },
   "self-adj-enable": {
@@ -300,7 +300,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "882000"
+      "value": "1566000"
     }
   },
   "setpoint-crossings": {

@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-08-15T14:47:53.300000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "1"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -87,7 +87,7 @@
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-08-15T14:47:53.300000-06:00"
     },
     "$base": "Array"
   },
@@ -253,7 +253,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,3"
+      "value": "program,6"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -320,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-08-15T13:32:49.10"
+      "value": "2024-08-15T17:47:20.40"
     },
     "11": {
       "$base": "DateTime",
@@ -354,11 +354,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "10"
   },
   "module-type": {
     "$base": "Enumerated",
@@ -406,7 +406,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "Active"
   },
   "time-delay": {
     "$base": "Unsigned",

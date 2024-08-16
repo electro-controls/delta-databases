@@ -264,6 +264,75 @@
       "63": {
         "$base": "Choice"
       },
+      "64": {
+        "$base": "Choice"
+      },
+      "65": {
+        "$base": "Choice"
+      },
+      "66": {
+        "$base": "Choice"
+      },
+      "67": {
+        "$base": "Choice"
+      },
+      "68": {
+        "$base": "Choice"
+      },
+      "69": {
+        "$base": "Choice"
+      },
+      "70": {
+        "$base": "Choice"
+      },
+      "71": {
+        "$base": "Choice"
+      },
+      "72": {
+        "$base": "Choice"
+      },
+      "73": {
+        "$base": "Choice"
+      },
+      "74": {
+        "$base": "Choice"
+      },
+      "75": {
+        "$base": "Choice"
+      },
+      "76": {
+        "$base": "Choice"
+      },
+      "77": {
+        "$base": "Choice"
+      },
+      "78": {
+        "$base": "Choice"
+      },
+      "79": {
+        "$base": "Choice"
+      },
+      "80": {
+        "$base": "Choice"
+      },
+      "81": {
+        "$base": "Choice"
+      },
+      "82": {
+        "$base": "Choice"
+      },
+      "83": {
+        "$base": "Choice"
+      },
+      "84": {
+        "$base": "Choice"
+      },
+      "85": {
+        "$base": "Choice"
+      },
+      "86": {
+        "$base": "Choice"
+      },
       "$base": "Array"
     }
   },
@@ -289,11 +358,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "13:54:20.00"
+    "value": "08:35:23.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2024-08-14"
+    "value": "2024-08-16"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -404,7 +473,7 @@
     "$base": "Choice",
     "time-sync-timer": {
       "$base": "Unsigned",
-      "value": "39223"
+      "value": "1587083"
     }
   },
   "latitude": {
@@ -456,7 +525,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "89.0909"
+    "value": "15.6522"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -468,7 +537,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "308"
+    "value": "301"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -564,7 +633,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "28614"
+      "value": "1565119"
     }
   },
   "logical-base-address": {
@@ -673,7 +742,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "19"
+    "value": "137"
   },
   "active-cov-subscriptions": {
     "$base": "List"

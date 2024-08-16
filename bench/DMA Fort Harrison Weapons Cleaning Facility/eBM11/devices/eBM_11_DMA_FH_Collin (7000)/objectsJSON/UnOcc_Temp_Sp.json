@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "UnOcc_Temp_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -23,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "70"
   },
   "gcl-value": {
     "$base": "Real",
-    "value": 0
+    "value": "70"
   },
   "status-flags": {
     "$base": "BitString",
@@ -55,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "program,3"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-08-16T08:35:20.300000-06:00"
   },
   "cov-increment": {
     "$base": "Real",
