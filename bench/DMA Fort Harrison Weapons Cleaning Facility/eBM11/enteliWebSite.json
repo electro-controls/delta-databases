@@ -16,21 +16,6 @@
       },
       "date": "8/15/2024, 5:47:57 PM",
       "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 7000,
-      "objectId": "bdc,1",
-      "objectName": "AlarmNormal_BDC",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/DMA Fort Harrison Weapons Cleaning Facility/eBM11/devices/eBM_11_DMA_FH_Collin (7000)/objectsJSON/AlarmNormal_BDC.json",
-        "scheme": "file"
-      },
-      "date": "8/16/2024, 9:53:53 AM",
-      "templateTriggered": false
     }
   ],
   "devices": [
@@ -162,12 +147,6 @@
           "name": "Decrease_Stage_Lockout_LocSp",
           "fileName": "Decrease_Stage_Lockout_LocSp",
           "lastUpdate": "2024-08-16T15:43:03.792Z"
-        },
-        {
-          "id": "bdc,1",
-          "name": "AlarmNormal_BDC",
-          "fileName": "AlarmNormal_BDC",
-          "lastUpdate": "2024-08-16T15:52:07.901Z"
         },
         {
           "id": "bi,1104",
@@ -372,6 +351,24 @@
           "name": "GUH1_Ten_Degrees_Below_Setpoint",
           "fileName": "GUH1_Ten_Degrees_Below_Setpoint",
           "lastUpdate": "2024-08-16T15:51:15.475Z"
+        },
+        {
+          "id": "bdc,1",
+          "name": "ActiveInactive_BDC",
+          "fileName": "ActiveInactive_BDC",
+          "lastUpdate": "2024-08-16T15:55:08.081Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "AlarmNormal_BDC",
+          "fileName": "AlarmNormal_BDC",
+          "lastUpdate": "2024-08-16T15:55:13.190Z"
+        },
+        {
+          "id": "bv,2",
+          "name": "GUH2_Ten_Degrees_Below_Setpoint",
+          "fileName": "GUH2_Ten_Degrees_Below_Setpoint",
+          "lastUpdate": "2024-08-16T16:00:49.647Z"
         }
       ]
     }

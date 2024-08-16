@@ -18,4 +18,4 @@ End If
 
 // Alarm if zone temp falls below sp
 'GUH1_Ten_Degrees_Below_Setpoint' = ('GUH1_Zone_Temp' < ('Temp_Sp' - 10))
- 
+'GUH2_Ten_Degrees_Below_Setpoint' = ('GUH2_Zone_Temp' < ('Temp_Sp' - 10))
