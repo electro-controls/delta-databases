@@ -1,53 +1,7 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [
-    {
-      "action": "delete",
-      "device": 7000,
-      "objectId": "pg,2",
-      "objectName": "General_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/DMA Fort Harrison Weapons Cleaning Facility/eBM12/devices/eBM12_FHWC_Collin (7000)/General_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/16/2024, 9:37:00 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 7000,
-      "objectId": "pg,1",
-      "objectName": "Main_PG",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/DMA Fort Harrison Weapons Cleaning Facility/eBM12/devices/eBM12_FHWC_Collin (7000)/Main_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/16/2024, 9:37:07 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "delete",
-      "device": 7000,
-      "objectId": "bv,1",
-      "objectName": "Occupied",
-      "siteName": "Bench",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/bench/DMA Fort Harrison Weapons Cleaning Facility/eBM12/devices/eBM12_FHWC_Collin (7000)/objectsJSON/Occupied.json",
-        "scheme": "file"
-      },
-      "date": "8/16/2024, 9:37:16 AM",
-      "templateTriggered": false
-    }
-  ],
+  "uploadQueue": [],
   "devices": [
     {
       "number": 7000,
@@ -221,12 +175,6 @@
           "lastUpdate": "2024-08-16T15:03:58.369Z"
         },
         {
-          "id": "bv,1",
-          "name": "Occupied",
-          "fileName": "Occupied",
-          "lastUpdate": "2024-08-16T15:06:25.708Z"
-        },
-        {
           "id": "bv,2",
           "name": "Damper_Alarm",
           "fileName": "Damper_Alarm",
@@ -237,12 +185,6 @@
           "name": "AlarmNormal_BDC",
           "fileName": "AlarmNormal_BDC",
           "lastUpdate": "2024-08-16T15:21:46.263Z"
-        },
-        {
-          "id": "pg,2",
-          "name": "General_PG",
-          "fileName": "General_PG",
-          "lastUpdate": "2024-08-16T15:35:14.885Z"
         }
       ]
     }
