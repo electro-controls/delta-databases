@@ -1,0 +1,295 @@
+{
+  "name": "Bench",
+  "ipAddress": "http://localhost",
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 7000,
+      "objectId": "bdc,2",
+      "objectName": "OpenClose_BDC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/DMA Fort Harrison Weapons Cleaning Facility/eBM12/devices/eBM12_FHWC_Collin (7000)/objectsJSON/OpenClose_BDC.json",
+        "scheme": "file"
+      },
+      "date": "8/16/2024, 9:03:08 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 7000,
+      "objectId": "pg,4",
+      "objectName": "Damper_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/DMA Fort Harrison Weapons Cleaning Facility/eBM12/devices/eBM12_FHWC_Collin (7000)/Damper_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/16/2024, 9:04:09 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 7000,
+      "objectId": "bo,1201",
+      "objectName": "DAMPER_ENABLE",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/DMA Fort Harrison Weapons Cleaning Facility/eBM12/devices/eBM12_FHWC_Collin (7000)/objectsJSON/DAMPER_ENABLE.json",
+        "scheme": "file"
+      },
+      "date": "8/16/2024, 9:04:30 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 7000,
+      "objectId": "bv,1",
+      "objectName": "Occupied",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/DMA Fort Harrison Weapons Cleaning Facility/eBM12/devices/eBM12_FHWC_Collin (7000)/objectsJSON/Occupied.json",
+        "scheme": "file"
+      },
+      "date": "8/16/2024, 9:06:25 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 7000,
+      "objectId": "pg,3",
+      "objectName": "Fan_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/DMA Fort Harrison Weapons Cleaning Facility/eBM12/devices/eBM12_FHWC_Collin (7000)/Fan_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/16/2024, 9:06:28 AM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 7000,
+      "objectId": "pg,1",
+      "objectName": "Main_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/DMA Fort Harrison Weapons Cleaning Facility/eBM12/devices/eBM12_FHWC_Collin (7000)/Main_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/16/2024, 9:06:47 AM",
+      "templateTriggered": false
+    }
+  ],
+  "devices": [
+    {
+      "number": 7000,
+      "objects": [
+        {
+          "id": "av,91",
+          "name": "OAT_Eff",
+          "fileName": "OAT_Eff",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "bdc,1",
+          "name": "ActiveInactive_BDC",
+          "fileName": "ActiveInactive_BDC",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "bi,1201",
+          "name": "EF_STATUS",
+          "fileName": "EF_STATUS",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "bi,1202",
+          "name": "DAMPER_STATUS",
+          "fileName": "DAMPER_STATUS",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "bmd,1",
+          "name": "BBMD List1 7000",
+          "fileName": "BBMD List1 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "bo,1201",
+          "name": "DAMPER_ENABLE",
+          "fileName": "DAMPER_ENABLE",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "dbi,7000",
+          "name": "Database Information 7000",
+          "fileName": "Database Information 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 7000",
+          "fileName": "Data Exchange Settings 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "device,7000",
+          "name": "eBM12_FHWC_Collin",
+          "fileName": "eBM12_FHWC_Collin",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,3",
+          "name": "Security",
+          "fileName": "Security",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,4",
+          "name": "Critical",
+          "fileName": "Critical",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 7000",
+          "fileName": "Event and Alarm Settings 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "ips,1",
+          "name": "Internet Protocol Settings",
+          "fileName": "Internet Protocol Settings",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 7000",
+          "fileName": "BACnet Settings 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 7000",
+          "fileName": "Priority Names 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 7000",
+          "fileName": "Slave Device List 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "sug,1",
+          "name": "Administrator",
+          "fileName": "Administrator",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-08-16T15:00:42.579Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-08-16T15:01:01.963Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "Fan_PG",
+          "fileName": "Fan_PG",
+          "lastUpdate": "2024-08-16T15:01:38.479Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "OpenClose_BDC",
+          "fileName": "OpenClose_BDC",
+          "lastUpdate": "2024-08-16T15:03:08.983Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "Damper_PG",
+          "fileName": "Damper_PG",
+          "lastUpdate": "2024-08-16T15:03:58.369Z"
+        },
+        {
+          "id": "bv,1",
+          "name": "Occupied",
+          "fileName": "Occupied",
+          "lastUpdate": "2024-08-16T15:06:25.708Z"
+        }
+      ]
+    }
+  ]
+}

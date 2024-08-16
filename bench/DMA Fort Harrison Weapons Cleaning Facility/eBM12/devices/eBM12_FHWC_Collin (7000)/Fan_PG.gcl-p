@@ -1,0 +1,3 @@
+// run exhaust fan when occupied
+'DAMPER_ENABLE' = 'Occupied'
+ 
