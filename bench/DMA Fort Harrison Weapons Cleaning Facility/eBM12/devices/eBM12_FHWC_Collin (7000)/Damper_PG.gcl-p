@@ -2,8 +2,4 @@
 'DAMPER_ENABLE' = 'EF_STATUS'
 
 // alarm if damper not open when needed when enabled
-If ('DAMPER_STATUS' = 'DAMPER_ENABLE') OnFor 60:S Then
-    'Damper_Alarm' = On
-Else
-    'Damper_Alarm' = Off
-End If 
+'Damper_Alarm' = ('DAMPER_STATUS' And 'DAMPER_ENABLE') OffFor 60:S
