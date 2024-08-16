@@ -1,16 +1,17 @@
 {
-  "displayName": "Eff_OAT",
+  "$base": "Object",
+  "displayName": "GUH1_Ten_Degrees_Below_Setpoint",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,1"
+    "value": "binary-value,1"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "analog-value"
+    "value": "binary-value"
   },
   "object-name": {
     "$base": "String",
-    "value": "Eff_OAT"
+    "value": "GUH1_Ten_Degrees_Below_Setpoint"
   },
   "description": {
     "$base": "String",
@@ -21,12 +22,12 @@
     "value": ""
   },
   "present-value": {
-    "$base": "Real",
-    "value": "30"
+    "$base": "Enumerated",
+    "value": "inactive"
   },
   "gcl-value": {
-    "$base": "Real",
-    "value": "30"
+    "$base": "Enumerated",
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -36,9 +37,9 @@
     "$base": "Boolean",
     "value": 0
   },
-  "units": {
-    "$base": "Enumerated",
-    "value": "°F"
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,2"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -52,25 +53,25 @@
     "$base": "Boolean",
     "value": 0
   },
+  "active-text": {
+    "$base": "String",
+    "value": "ON"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "OFF"
+  },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,2"
+    "unspecifiedValue": "true"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-08-16T09:40:20.000000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
-  "cov-increment": {
-    "$base": "Real",
-    "value": "1"
-  },
-  "fixed-point": {
-    "$base": "Boolean",
-    "value": "1"
-  },
-  "decimal-places": {
-    "$base": "Unsigned",
-    "value": "1"
+  "text-value": {
+    "$base": "String",
+    "value": "OFF"
   },
   "hal-flags": {
     "$base": "BitString",

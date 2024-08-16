@@ -15,3 +15,7 @@ If ('Decrease_Stage_Lockout_RemSp' >= 0) Then
 Else
     'Decrease_Stage_Lockout_Sp' = 'Decrease_Stage_Lockout_LocSp'
 End If
+
+// Alarm if zone temp falls below sp
+'GUH1_Ten_Degrees_Below_Setpoint' = ('GUH1_Zone_Temp' < ('Temp_Sp' - 10))
+ 

@@ -1,5 +1,5 @@
 {
-  "displayName": "eBM_11_DMA_FH_Collin",
+  "displayName": "eBM11_FHWC_Collin",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "device,7000"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "eBM_11_DMA_FH_Collin"
+    "value": "eBM11_FHWC_Collin"
   },
   "description": {
     "$base": "String",
@@ -358,7 +358,7 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "08:35:23.00"
+    "value": "09:40:23.00"
   },
   "local-date": {
     "$base": "Date",
@@ -473,7 +473,7 @@
     "$base": "Choice",
     "time-sync-timer": {
       "$base": "Unsigned",
-      "value": "1587083"
+      "value": "20491"
     }
   },
   "latitude": {
@@ -494,7 +494,7 @@
   },
   "last-reset-time": {
     "$base": "DateTime",
-    "value": "2024-08-14T13:06:39.530000-06:00"
+    "value": "2024-08-16T09:37:51.540000-06:00"
   },
   "reset-count": {
     "$base": "Unsigned",
@@ -525,7 +525,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "15.6522"
+    "value": "16.7391"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -537,7 +537,7 @@
   },
   "static-ram-free": {
     "$base": "Unsigned",
-    "value": "301"
+    "value": "302"
   },
   "dynamic-ram-total": {
     "$base": "Unsigned",
@@ -633,7 +633,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "1565119"
+      "value": "1522"
     }
   },
   "logical-base-address": {
@@ -733,7 +733,7 @@
     "$base": "Choice",
     "dateTime": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-08-16T09:37:43.30"
     }
   },
   "backup-failure-timeout": {
@@ -742,7 +742,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "137"
+    "value": "38"
   },
   "active-cov-subscriptions": {
     "$base": "List"

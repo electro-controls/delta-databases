@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-08-15T14:47:53.300000-06:00"
+    "value": "2024-08-16T09:38:23.100000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "3"
+    "value": "1"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-08-15T14:06:55.80"
+      "value": "2024-08-16T09:37:53.10"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2024-08-15T14:47:53.300000-06:00"
+      "value": "2024-08-16T09:38:23.100000-06:00"
     },
     "$base": "Array"
   },
@@ -253,7 +253,7 @@
     },
     "10": {
       "$base": "ObjectIdentifier",
-      "value": "program,6"
+      "value": "program,5"
     },
     "11": {
       "$base": "ObjectIdentifier",
@@ -320,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-08-16T08:35:21.70"
+      "value": "2024-08-16T09:40:22.10"
     },
     "11": {
       "$base": "DateTime",
@@ -350,7 +350,7 @@
   },
   "port-status": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "not-available"
   },
   "da-value": {
     "$base": "Unsigned",
