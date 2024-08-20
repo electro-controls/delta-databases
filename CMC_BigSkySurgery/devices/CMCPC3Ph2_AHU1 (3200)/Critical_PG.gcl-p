@@ -1,0 +1,88 @@
+'Critical_PG.Write_Priority' = 4
+
+//FeezeMode
+If ('DAT' < 'FreezeModeSp') OnFor 2:M Then
+    'FreezeMode' = On
+End If
+
+If PowerUp Then //Allow occupant/tech to reset by cycling power
+  'FreezeMode' = Off
+End If
+
+IfOnce ('Mode' = 1) Then //Retrys on occupancy. Allows occupant to reset by turning stat off and back on.
+  'FreezeMode' = Off
+End If
+
+ If 'Smoke_OR' And (Not ('HiStatic' Or 'Smoke_Bdlg')) Then
+      'SFVFD1Enable' = On
+      'SFVFD2Enable' = On
+      'RF1Enable' = On
+      'RF2Enable' = On
+      'EF_Enable' = On
+      Relinquish 'SFVFD1Speed'
+      Relinquish 'SFVFD2Speed'
+      Relinquish 'RF1Speed'
+      Relinquish 'RF2Speed'
+      'Economizer' = 100
+      'EADamper' = 100
+  ElseIf  'FreezeStat' Or 'FreezeMode' Or 'HiStatic' Or 'Smoke_Bdlg' Then
+      'SFVFD1Enable' = Off
+      'SFVFD2Enable' = Off
+      'RF1Enable' = Off
+      'RF2Enable' = Off
+      'EF_Enable' = Off
+      'SFVFD1Speed' = 0
+      'SFVFD2Speed' = 0
+      'RF1Speed' = 0
+      'RF2Speed' = 0
+      'Economizer' = 0
+      'EADamper' = 0
+  ElseIf  'LoStatic' Then
+      Relinquish 'SFVFD1Enable'
+      Relinquish 'SFVFD2Enable'
+      Relinquish 'RF1Enable'
+      Relinquish 'RF2Enable'
+      'EF_Enable' = Off
+      Relinquish 'SFVFD1Speed'
+      Relinquish 'SFVFD2Speed'
+      Relinquish 'RF1Speed'
+      Relinquish 'RF2Speed'
+      Relinquish 'Economizer'
+      Relinquish 'EADamper'
+  Else
+      Relinquish 'SFVFD1Enable'
+      Relinquish 'SFVFD2Enable'
+      Relinquish 'RF1Enable'
+      Relinquish 'RF2Enable'
+      Relinquish 'EF_Enable'
+      Relinquish 'SFVFD1Speed'
+      Relinquish 'SFVFD2Speed'
+      Relinquish 'RF1Speed'
+      Relinquish 'RF2Speed'
+      Relinquish 'Economizer'
+      Relinquish 'EADamper'
+End If
+   
+
+  
+
+
+If 'FreezeStat' Or 'FreezeMode' Then
+      'HWV' = 100
+      'CWV' = 0
+      If ('CWV' <= 0) OnFor 60S Then
+        'CWDrain' = 100
+      End If
+  Else
+      Relinquish 'HWV'
+      Relinquish 'CWV'
+      Relinquish 'CWDrain'
+End If
+
+If 'RunStatusInt' And 'DX_FlowInt' Then
+   Relinquish 'DXCirc1Enable'
+   Relinquish 'DXCirc2Signal'
+  Else
+    'DXCirc1Enable' = Off
+    'DXCirc2Signal' = 0
+End If

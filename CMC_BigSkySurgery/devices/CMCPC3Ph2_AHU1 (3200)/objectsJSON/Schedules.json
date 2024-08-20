@@ -1,0 +1,73 @@
+{
+  "displayName": "Schedules",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "mn,103"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "menu"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Schedules"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "previous-menu-ref": {
+    "$base": "ObjectIdentifier",
+    "unspecifiedValue": "true"
+  },
+  "previous-menu-item": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "menu-function-list": {
+    "1": {
+      "$base": "Sequence",
+      "objectRef": {
+        "$base": "ObjectIdentifier",
+        "value": "schedule,*"
+      },
+      "menuFunction": {
+        "$base": "Enumerated",
+        "value": "edit-object"
+      },
+      "objectName": {
+        "$base": "String",
+        "value": ""
+      }
+    },
+    "$base": "Array"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  },
+  "disable-password": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "total-events": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "scroll-delay": {
+    "$base": "Unsigned",
+    "value": "1"
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "displayName": "Access Control Setup",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "as,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "access-setup-object"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Access Control Setup"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "pin-size": {
+    "$base": "Unsigned",
+    "value": "4"
+  },
+  "security-device-list": {
+    "$base": "Array"
+  },
+  "apb-global-reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "apb-reset-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "all",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "apb-reset-ref-last": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "site-code-list": {
+    "$base": "Array"
+  },
+  "degraded-mode-pulse-time": {
+    "$base": "Choice",
+    "degraded-mode-pulse-time": {
+      "$base": "Unsigned",
+      "value": "10"
+    }
+  },
+  "use-indexing": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "wiegand-queue": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "reserved": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "event-queue-size": {
+    "$base": "Unsigned",
+    "value": "5"
+  },
+  "event-queue": {
+    "1": {
+      "$base": "Sequence",
+      "eventTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      },
+      "eventType": {
+        "$base": "Enumerated",
+        "value": "none"
+      },
+      "eventSiteCode": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "eventCardNum": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "eventCardUser": {
+        "$base": "ObjectIdentifier",
+        "unspecifiedValue": "true"
+      },
+      "eventArg1": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "eventTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      },
+      "eventType": {
+        "$base": "Enumerated",
+        "value": "none"
+      },
+      "eventSiteCode": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "eventCardNum": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "eventCardUser": {
+        "$base": "ObjectIdentifier",
+        "unspecifiedValue": "true"
+      },
+      "eventArg1": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "eventTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      },
+      "eventType": {
+        "$base": "Enumerated",
+        "value": "none"
+      },
+      "eventSiteCode": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "eventCardNum": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "eventCardUser": {
+        "$base": "ObjectIdentifier",
+        "unspecifiedValue": "true"
+      },
+      "eventArg1": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "eventTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      },
+      "eventType": {
+        "$base": "Enumerated",
+        "value": "none"
+      },
+      "eventSiteCode": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "eventCardNum": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "eventCardUser": {
+        "$base": "ObjectIdentifier",
+        "unspecifiedValue": "true"
+      },
+      "eventArg1": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "5": {
+      "$base": "Sequence",
+      "eventTime": {
+        "$base": "DateTime",
+        "value": "*-*-*-*T*:*:*.*"
+      },
+      "eventType": {
+        "$base": "Enumerated",
+        "value": "none"
+      },
+      "eventSiteCode": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "eventCardNum": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "eventCardUser": {
+        "$base": "ObjectIdentifier",
+        "unspecifiedValue": "true"
+      },
+      "eventArg1": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "commission-flag": {
+    "$base": "Enumerated",
+    "value": "commissioned"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "accesscontrol"
+  },
+  "index-in-use": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "adm-update": {
+    "$base": "Boolean",
+    "value": 0
+  }
+}

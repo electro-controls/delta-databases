@@ -1,0 +1,3616 @@
+{
+  "displayName": "IO Mapping",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "iom,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "io-mapping"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "IO Mapping"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "io-map": {
+    "1": {
+      "$base": "Sequence",
+      "portNumber": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "enabled": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "status": {
+        "$base": "Enumerated",
+        "value": "offline"
+      },
+      "ioRange": {
+        "$base": "String",
+        "value": "1001 - 9899"
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "portNumber": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "port": {
+        "$base": "Enumerated",
+        "value": "linknet-1"
+      },
+      "enabled": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "status": {
+        "$base": "Enumerated",
+        "value": "offline"
+      },
+      "ioRange": {
+        "$base": "String",
+        "value": "201001 - 299099"
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "portNumber": {
+        "$base": "Unsigned",
+        "value": "4"
+      },
+      "port": {
+        "$base": "Enumerated",
+        "value": "lbus-1"
+      },
+      "enabled": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "status": {
+        "$base": "Enumerated",
+        "value": "offline"
+      },
+      "ioRange": {
+        "$base": "String",
+        "value": "--"
+      }
+    },
+    "$base": "Array"
+  },
+  "device-statuses": {
+    "1": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "1000"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "online"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": ""
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "220.237"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "eBX"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "2000"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "3000"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "4000"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "5": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "5000"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "6": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "6000"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "7": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "7000"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "8": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "8000"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "9": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "9000"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "10": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "1100"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "online"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "26"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "8"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "eBM-404"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "11": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "1200"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "online"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "23"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "8"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "eBM-440"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "12": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "1300"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "online"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "23"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "8"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "eBM-440"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "13": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "1400"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "online"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "23"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "8"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "eBM-440"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "14": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "1500"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "online"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "23"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "8"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "eBM-440"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "15": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "1600"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "online"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "23"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "8"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "eBM-440"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "16": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "1700"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "offline"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "17": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "1800"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "offline"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "18": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "2100"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "19": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "2200"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "20": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "2300"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "21": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "2400"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "22": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "2500"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "23": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "2600"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "24": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "2700"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "25": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "2800"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "26": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "3100"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "27": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "3200"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "28": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "3300"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "29": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "3400"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "30": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "3500"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "31": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "3600"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "32": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "3700"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "33": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "3800"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "34": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "4100"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "35": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "4200"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "36": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "4300"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "37": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "4400"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "38": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "4500"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "39": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "4600"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "40": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "4700"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "41": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "4800"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "42": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "5100"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "43": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "5200"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "44": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "5300"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "45": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "5400"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "46": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "5500"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "47": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "5600"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "48": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "5700"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "49": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "5800"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "50": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "6100"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "51": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "6200"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "52": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "6300"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "53": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "6400"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "54": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "6500"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "55": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "6600"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "56": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "6700"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "57": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "6800"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "58": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "7100"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "59": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "7200"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "60": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "7300"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "61": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "7400"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "62": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "7500"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "63": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "7600"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "64": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "7700"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "65": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "7800"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "66": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "8100"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "67": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "8200"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "68": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "8300"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "69": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "8400"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "70": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "8500"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "71": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "8600"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "72": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "8700"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "73": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "8800"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "74": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "9100"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "75": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "9200"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "76": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "9300"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "77": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "9400"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "78": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "9500"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "79": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "9600"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "80": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "9700"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "81": {
+      "$base": "Sequence",
+      "port": {
+        "$base": "Enumerated",
+        "value": "ebus-1"
+      },
+      "deviceId": {
+        "$base": "Unsigned",
+        "value": "9800"
+      },
+      "deviceStatus": {
+        "$base": "Enumerated",
+        "value": "not-present"
+      },
+      "deviceModelName": {
+        "$base": "String",
+        "value": ""
+      },
+      "hwVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "swVersion": {
+        "$base": "String",
+        "value": "-"
+      },
+      "serialNumber": {
+        "$base": "String",
+        "value": ""
+      },
+      "deviceType": {
+        "$base": "String",
+        "value": "-"
+      },
+      "cabinet": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "module": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "find-devices": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "create-objects": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "update-devices": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "reserved-1": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "reserved-2": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "reserved": {
+    "$base": "Array"
+  }
+}

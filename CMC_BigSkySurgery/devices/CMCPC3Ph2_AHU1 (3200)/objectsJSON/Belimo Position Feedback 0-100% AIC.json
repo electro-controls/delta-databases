@@ -1,0 +1,91 @@
+{
+  "displayName": "Belimo Position Feedback 0-100% AIC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "aic,2"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-input-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Belimo Position Feedback 0-100% AIC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "%"
+  },
+  "max-value": {
+    "$base": "Real",
+    "value": "100"
+  },
+  "min-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "scale-range": {
+    "1": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.9"
+      },
+      "value": {
+        "$base": "Real",
+        "value": 0
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "1"
+      },
+      "value": {
+        "$base": "Real",
+        "value": 0
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "5"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "100"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "sort-required": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "displayName": "OccMode MIC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,20"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-input-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "OccMode MIC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Occupied"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Unoccupied"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Standby"
+    },
+    "4": {
+      "$base": "String",
+      "value": "Bypass"
+    },
+    "5": {
+      "$base": "String",
+      "value": "WarmUp"
+    },
+    "6": {
+      "$base": "String",
+      "value": "PurgeMode"
+    },
+    "$base": "Array"
+  },
+  "voltage-range": {
+    "1": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "5": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "6": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

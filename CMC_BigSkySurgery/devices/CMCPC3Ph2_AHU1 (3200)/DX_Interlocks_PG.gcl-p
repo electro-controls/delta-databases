@@ -1,0 +1,46 @@
+//Outdoor Air Interlocks
+'DxStg1_OAInt' = Switch ( 'DxStg1_OAInt', 'Eff_OAT', 'DX1OAInt_Sp', 'DX1OAInt_Sp' - 3)
+'DxStg2_OAInt' = Switch ( 'DxStg2_OAInt', 'Eff_OAT', 'DX2OAInt_Sp', 'DX2OAInt_Sp' - 3)
+
+//DX air Flow Interlocks
+
+If 'RunStatusInt' Then
+    'DX_FlowInt' = Switch ( 'DX_FlowInt', 'DuctStatic', ('DuctStatic_Sp' * 0.6), ('DuctStatic_Sp' * 0.4))
+  Else
+    'DX_FlowInt' = Off
+End If
+
+//DX1 Interlocks
+If ('DX_Lead' Or 'DXStg2_Demand') And 'DXStg1_Demand' And 'DxStg1_OAInt' And 'DX_FlowInt' Then
+    'DXCirc1Enable' = On
+  Else
+    'DXCirc1Enable' = Off
+End If
+
+//If DX2_Demand And Dx2_OAInt And DX_FlowInt Then
+//    3200.AO1403 = 100
+//    DX2_STG = On
+//  Else
+//    3200.AO1403 = 0
+//    DX2_STG = Off
+//End If
+
+
+If ((Not 'DX_Lead') Or 'DXStg1_Demand') And 'DXStg2_Demand' And 'DxStg2_OAInt' And 'DX_FlowInt' And 'FreeCooling' Then
+    'DXCirc2Signal' = Scale ('DATClg_CO', 0, 50, 15, 100, 100) //15 should correlate to 1.5vdc compressor start threshold
+  ElseIf  ((Not 'DX_Lead') Or 'DXStg1_Demand') And 'DXStg2_Demand' And 'DxStg2_OAInt' And 'DX_FlowInt' Then
+    'DXCirc2Signal' = Scale ('DATClg_CO', 0, 25, 15, 100, 100) //15 should correlate to 1.5vdc compressor start threshold
+  Else
+    'DXCirc2Signal' = 0
+End If
+
+IfOnce 'DXCirc1Enable' Then
+    'DATClg_CO.Bias' = 'DATClg_CO.Bias' * 0.5
+End If
+IfOnce ('DXCirc2Signal' > 0) Then
+    'DATClg_CO.Bias' = 'DATClg_CO.Bias' * 0.5
+End If
+
+//IfOnce DX2_STG Then
+//    DATClg_CO.Bias = DATClg_CO.Bias * 0.5
+//End If
