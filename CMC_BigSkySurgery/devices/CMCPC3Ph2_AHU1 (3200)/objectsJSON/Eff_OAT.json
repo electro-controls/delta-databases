@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "71.166"
+    "value": "76.44"
   },
   "gcl-value": {
     "$base": "Real",
@@ -58,7 +58,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2004-06-18T10:48:29.610000-06:00"
+    "value": "2004-06-18T12:51:49.010000-06:00"
   },
   "cov-increment": {
     "$base": "Real",

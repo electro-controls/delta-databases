@@ -1639,7 +1639,7 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "10:57:12.00"
+    "value": "13:04:54.00"
   },
   "local-date": {
     "$base": "Date",
@@ -1754,7 +1754,7 @@
     "$base": "Choice",
     "time-sync-timer": {
       "$base": "Unsigned",
-      "value": "23077705"
+      "value": "23149705"
     }
   },
   "latitude": {
@@ -1806,11 +1806,11 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "35.4545"
+    "value": "35.6818"
   },
   "io-scan-rate": {
     "$base": "Real",
-    "value": "35.4545"
+    "value": "35.6818"
   },
   "static-ram-total": {
     "$base": "Unsigned",
@@ -1914,7 +1914,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "23068826"
+      "value": "23145440"
     }
   },
   "logical-base-address": {

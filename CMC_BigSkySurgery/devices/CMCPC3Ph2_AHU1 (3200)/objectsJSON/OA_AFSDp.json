@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "0.0205527"
+    "value": "0.0396353"
   },
   "last-value": {
     "$base": "Real",
-    "value": "0.0203226"
+    "value": "0.0474937"
   },
   "status-flags": {
     "$base": "BitString",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "23068388"
+      "value": "23144672"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "921"
+    "value": "1176"
   },
   "calibration": {
     "$base": "Real",

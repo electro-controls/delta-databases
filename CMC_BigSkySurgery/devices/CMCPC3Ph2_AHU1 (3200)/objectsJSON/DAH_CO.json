@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "76.9831"
+    "value": "74.4801"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -229,19 +229,19 @@
   "previous-chg-errors": {
     "1": {
       "$base": "Real",
-      "value": "-0.0213623"
+      "value": "-0.00357819"
     },
     "2": {
       "$base": "Real",
-      "value": "0.00915527"
+      "value": "-0.00222015"
     },
     "3": {
       "$base": "Real",
-      "value": "0.010498"
+      "value": "-0.00231171"
     },
     "4": {
       "$base": "Real",
-      "value": "0.00184631"
+      "value": "-0.00452423"
     },
     "$base": "Array"
   },
@@ -259,11 +259,11 @@
   },
   "average-error": {
     "$base": "Real",
-    "value": "58.1437"
+    "value": "54.5217"
   },
   "previous-error": {
     "$base": "Real",
-    "value": "-56.9696"
+    "value": "-54.4772"
   },
   "maximum-output": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "23068825"
+      "value": "23145445"
     }
   },
   "self-adj-enable": {
@@ -300,7 +300,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "23076000"
+      "value": "23148000"
     }
   },
   "setpoint-crossings": {
