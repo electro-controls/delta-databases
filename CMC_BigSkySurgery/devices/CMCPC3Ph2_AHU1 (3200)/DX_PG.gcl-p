@@ -1,0 +1,74 @@
+
+//DX mechanical cooling sequence
+
+Variable DATDemand
+
+
+If 'DX_FlowInt' And (('Mode' = 1) Or ('Mode' = 4)) Then
+    DATDemand = Switch ( DATDemand, 'DAT', 'DATClg_Sp' + 3, 'DATClg_Sp' - 2.5)
+  Else
+    DATDemand = 0
+End If
+
+If ((('DATClg_CO' >= 95) And 'DxStg1_OAInt' And DATDemand And (Not 'DXStg1_Demand')) OnFor 600S) Then //This is 2nd stage (without scroll on this stage)
+    'DXStg1_Demand' = On
+End If
+
+If ((('DATClg_CO' < 5) And ('DAT' < ('DATClg_Sp' - 5))) OnFor 15M) Then //turns off if DAT overshoots
+    'DXStg1_Demand' = Off
+End If
+
+If (('DAT' < 43) OnFor 120S) Then //prevent frost on coil
+    'DXStg1_Demand' = Off
+End If
+
+If ('DATClg_CO' < 1) OnFor 60M Then //Turns off if DAT demand is met for a long duration
+    'DXStg1_Demand' = Off
+End If
+
+If Not 'DxStg1_OAInt' Then //Kick off on OATInt
+    'DXStg1_Demand' = Off
+End If
+
+IfOnce (Not 'DXCirc1Enable') And 'DX_Lead' Then //This ensurea it start back with delays in case of manual override or non typical inactive
+    'DXStg1_Demand' = Off
+End If
+
+//If (DATClg_Sp > (Eff_OAT - 2)) And (DXStg1_Demand OnFor 30M) Then //This should bounce it back to economizer for a try
+//    DXStg1_Demand = Off
+//End If
+
+
+//DX2 Interlocks
+If (('DATClg_CO' >= 90) And 'DxStg2_OAInt' And DATDemand) OnFor 300S Then //This is 1st stage due to scroll compressor
+    'DXStg2_Demand' = On
+End If
+
+If ((('DATClg_CO' < 1) And (Not 'DXStg1_Demand') And ('DAT' < ('DATClg_Sp' - 5))) OnFor 15M) Then
+    'DXStg2_Demand' = Off
+End If
+
+If (('DAT' < 43) OnFor 120S) And 'DXStg1_Demand' Then //Frost control
+    'DXStg2_Demand' = Off
+End If
+
+If (('DATClg_CO' < 1) And 'DXStg1_Demand') OnFor 60M Then
+    'DXStg2_Demand' = Off
+End If
+
+If Not 'DxStg2_OAInt' Then
+    'DXStg2_Demand' = Off
+End If
+
+IfOnce ('DXCirc2Signal' < 1) And (Not 'DX_Lead') Then
+    'DXStg2_Demand' = Off
+End If
+
+//If (DATClg_Sp > (Eff_OAT - 2)) And (DXStg2_Demand OnFor 30M) Then
+//    DXStg2_Demand = Off
+//End If
+
+If ('Mode' = 5) Then
+    'DXStg1_Demand' = Off
+    'DXStg2_Demand' = Off
+End If
