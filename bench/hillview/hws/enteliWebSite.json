@@ -373,18 +373,6 @@
           "lastUpdate": "2024-08-09T21:02:56.956Z"
         },
         {
-          "id": "ao,4",
-          "name": "HWP1_Enable",
-          "fileName": "HWP1_Enable",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
-          "id": "ao,5",
-          "name": "Temp_Local_Sp",
-          "fileName": "Temp_Local_Sp",
-          "lastUpdate": "2024-08-09T21:02:56.956Z"
-        },
-        {
           "id": "aoc,1",
           "name": "Output_Pct_AOC",
           "fileName": "Output_Pct_AOC",
@@ -1127,6 +1115,30 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-08-09T21:02:56.956Z"
+        },
+        {
+          "id": "bo,4",
+          "name": "HWP1_Enable",
+          "fileName": "HWP1_Enable",
+          "lastUpdate": "2024-08-20T23:32:04.400Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "HW_BlrSeq_PG13",
+          "fileName": "HW_BlrSeq_PG13",
+          "lastUpdate": "2024-08-20T23:38:15.755Z"
+        },
+        {
+          "id": "ao,5",
+          "name": "B1FireRate",
+          "fileName": "B1FireRate",
+          "lastUpdate": "2024-08-20T23:43:57.562Z"
+        },
+        {
+          "id": "av,1",
+          "name": "HW_B1RateCall",
+          "fileName": "HW_B1RateCall",
+          "lastUpdate": "2024-08-20T23:45:46.513Z"
         }
       ]
     }

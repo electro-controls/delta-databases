@@ -7,7 +7,7 @@ If 'HW_HWP1Status' Then
 End If
 
 
-If (('HWP1_Enable' > 49) And Not ('HW_HWP1Status')) OnFor 'HW_PumpFailDly_Sp':S Then
+If ('HWP1_Enable' And Not ('HW_HWP1Status')) OnFor 'HW_PumpFailDly_Sp':S Then
     'HW_HWP1Fail' = On
   Else
     'HW_HWP1Fail' = Off
@@ -25,7 +25,7 @@ End If
 
 Variable HWP1Call
 If 'HW_HWPCall' Then
-    'HWP1_Enable' = 100
+    'HWP1_Enable' = On
     HWP1Call = On
 End If
 
@@ -34,11 +34,11 @@ If Not 'HW_HWPCall' Then
 End If
 
 If 'HWP1Ramp' < 1 And Not HWP1Call Then
-  'HWP1_Enable' = 0
+  'HWP1_Enable' = Off
 End If
 
 If 'HW_SystemEnable' OffFor 'HWPmpOffDelay_Sp':M Then
     'HW_HWPCall' = Off
   Else
     'HW_HWPCall' = On
-End If
+End If 
