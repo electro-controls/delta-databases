@@ -1,8 +1,8 @@
 {
-  "displayName": "SpaHWR_CO",
+  "displayName": "SpaHWS_CO",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "loop,1"
+    "value": "loop,2"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "SpaHWR_CO"
+    "value": "SpaHWS_CO"
   },
   "description": {
     "$base": "String",
@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "75"
+    "value": "81"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -78,7 +78,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-input,5"
+      "value": "analog-input,6"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "78.1742"
+    "value": "77.4653"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -103,7 +103,7 @@
     "type": "0-BACnetObjectPropertyReference",
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "analog-value,1"
+      "value": "analog-value,5"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -117,7 +117,7 @@
   },
   "setpoint": {
     "$base": "Real",
-    "value": "104"
+    "value": "110"
   },
   "setpoint-reference": {
     "$base": "Sequence",
@@ -126,7 +126,7 @@
       "type": "0-BACnetObjectPropertyReference",
       "objectIdentifier": {
         "$base": "ObjectIdentifier",
-        "value": "analog-value,1"
+        "value": "analog-value,5"
       },
       "propertyIdentifier": {
         "$base": "Enumerated",
@@ -154,7 +154,7 @@
   },
   "proportional-constant": {
     "$base": "Real",
-    "value": "5"
+    "value": "100"
   },
   "proportional-constant-units": {
     "$base": "Enumerated",
@@ -179,7 +179,7 @@
   },
   "integral-constant": {
     "$base": "Real",
-    "value": "5"
+    "value": "8"
   },
   "integral-constant-units": {
     "$base": "Enumerated",
@@ -204,7 +204,7 @@
   },
   "derivative-constant": {
     "$base": "Real",
-    "value": "0.1"
+    "value": "0.01"
   },
   "derivative-constant-units": {
     "$base": "Enumerated",
@@ -212,7 +212,7 @@
   },
   "bias": {
     "$base": "Real",
-    "value": "0.0951771"
+    "value": "89.3797"
   },
   "derivative": {
     "$base": "Real",
@@ -224,7 +224,7 @@
   },
   "derivative-counter": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "1"
   },
   "previous-chg-errors": {
     "1": {
@@ -251,15 +251,15 @@
   },
   "reset-band": {
     "$base": "Real",
-    "value": "1.25"
+    "value": "40"
   },
   "average-crossings": {
     "$base": "Real",
-    "value": "0.0104561"
+    "value": "0.00140364"
   },
   "average-error": {
     "$base": "Real",
-    "value": "26.4913"
+    "value": "29.818"
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "949243"
+      "value": "1808733"
     }
   },
   "self-adj-enable": {
@@ -300,7 +300,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "972000"
+      "value": "1836000"
     }
   },
   "setpoint-crossings": {
@@ -313,7 +313,7 @@
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "162"
+    "value": "168"
   },
   "hal-flags": {
     "$base": "BitString",

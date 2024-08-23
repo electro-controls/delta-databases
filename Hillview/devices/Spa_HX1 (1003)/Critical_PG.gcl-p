@@ -3,7 +3,7 @@
 If ('Spa_Supply_Temp' > 'SpaHWSMax_Sp') Then
     'HighSpaLimit' = On
 End If
-If ('Spa_Supply_Temp' < 'SpaHWS_EffSp') And (HighSpaLimit OnFor 5M) Then
+If ('Spa_Supply_Temp' < 'SpaHWS_EffSp') And ('HighSpaLimit' OnFor 5M) Then
     'HighSpaLimit' = Off
 End If
 
