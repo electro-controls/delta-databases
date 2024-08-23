@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "948735"
+      "value": "1795477"
     }
   },
   "ad-value": {

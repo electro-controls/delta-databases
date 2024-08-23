@@ -1,10 +1,10 @@
 'Critical_PG.Write_Priority' = 4
 
-If 'Pump_Current' > ('PoolHWR_Sp' + 8) Then
+If 'Spa_Supply_Temp' > 'PoolHWSMax_Sp' Then
     'HighPoolLimit' = On
 End If
-If ('HighPoolLimit' OnFor 5M) And ('Pump_Current' < 'PoolHWR_Sp') Then
-    'HighPoolLimit' = Off
+If ('HighPoolLimit' OnFor 5M) And ('Spa_Supply_Temp' < 'PoolHWS_EffSp') Then
+    'HighPoolLimit' = Off // todo send alarm
 End If
 
 If (Not 'PumpStatus') Or 'HighPoolLimit' Then
