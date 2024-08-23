@@ -1,38 +1,7 @@
 {
   "name": "Hillview",
   "ipAddress": "http://localhost",
-  "uploadQueue": [
-    {
-      "action": "update",
-      "device": 1002,
-      "objectId": "pg,3",
-      "objectName": "Steam_PG",
-      "siteName": "Hillview",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Hillview/devices/Pool_HX1 (1002)/Steam_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/23/2024, 11:13:03 AM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 1002,
-      "objectId": "pg,9",
-      "objectName": "Critical_PG",
-      "siteName": "Hillview",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Hillview/devices/Pool_HX1 (1002)/Critical_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/23/2024, 11:30:11 AM",
-      "templateTriggered": false
-    }
-  ],
+  "uploadQueue": [],
   "devices": [
     {
       "number": 1000,

@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "110"
+    "value": "130"
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "180"
+    "value": "130"
   },
   "status-flags": {
     "$base": "BitString",

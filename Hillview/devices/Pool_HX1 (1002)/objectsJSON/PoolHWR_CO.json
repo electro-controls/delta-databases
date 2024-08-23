@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "83"
+    "value": "104"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "72.5655"
+    "value": "72.7385"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "1810613"
+      "value": "1814983"
     }
   },
   "self-adj-enable": {
