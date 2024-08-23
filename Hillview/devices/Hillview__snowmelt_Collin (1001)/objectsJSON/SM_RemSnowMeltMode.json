@@ -14,11 +14,11 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "put back in service once integrated"
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "present-value": {
     "$base": "Unsigned",
@@ -30,7 +30,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -50,7 +50,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "number-of-states": {
     "$base": "Unsigned",
@@ -81,11 +81,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,888"
+    "value": "device,4123321"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2002-05-20T15:15:40.700000-06:00"
+    "value": "2000-01-03T12:54:36.900000-07:00"
   },
   "text-value": {
     "$base": "String",
