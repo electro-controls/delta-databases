@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-03T14:40:12.200000-07:00"
+    "value": "2000-01-03T14:45:35.100000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "14"
+    "value": "16"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-03T14:40:12.200000-07:00"
+      "value": "2000-01-03T14:45:35.100000-07:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-03T14:39:45.30"
+      "value": "2000-01-03T14:45:25.10"
     },
     "$base": "Array"
   },
@@ -103,7 +103,7 @@
     "$base": "Choice",
     "minimum-delay-timer": {
       "$base": "Unsigned",
-      "value": 0
+      "value": "1827950"
     }
   },
   "current-priority": {
@@ -143,10 +143,7 @@
       }
     },
     "6": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "7": {
       "$base": "Choice",
@@ -293,7 +290,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2000-01-03T14:42:37.90"
+      "value": "2000-01-03T14:45:44.00"
     },
     "5": {
       "$base": "DateTime",
@@ -317,7 +314,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-03T14:42:37.90"
+      "value": "2000-01-03T14:45:44.00"
     },
     "11": {
       "$base": "DateTime",
@@ -399,7 +396,7 @@
   },
   "delay-count-down": {
     "$base": "Time",
-    "value": "00:00:00.00"
+    "value": "00:00:50.00"
   },
   "text-value": {
     "$base": "String",

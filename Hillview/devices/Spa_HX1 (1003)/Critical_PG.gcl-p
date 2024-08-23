@@ -7,7 +7,7 @@ If ('Spa_Supply_Temp' < 'SpaHWS_EffSp') And ('HighSpaLimit' OnFor 5M) Then
     'HighSpaLimit' = Off
 End If
 
-If ('HighSpaLimit' Or 'Hi_Temp_Limit') Then // what if the boiler loop is cooler than the ewt of the tub?
+If ('HighSpaLimit' Or 'Hi_Temp_Limit') Then
   'HW_FeedValve' = 0
   'HX_Pump_Enable' = Off
  Else
