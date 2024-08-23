@@ -49,7 +49,7 @@
     "$base": "Choice",
     "real": {
       "$base": "Real",
-      "value": "101.514"
+      "value": "103.545"
     }
   },
   "subscriber-count": {
@@ -58,7 +58,7 @@
   },
   "last-received": {
     "$base": "Unsigned",
-    "value": "1808162"
+    "value": "1818823"
   },
   "update-frequency": {
     "$base": "Unsigned",

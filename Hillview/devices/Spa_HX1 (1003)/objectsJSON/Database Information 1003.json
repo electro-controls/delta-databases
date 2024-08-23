@@ -389,7 +389,7 @@
   },
   "time-of-last-chg": {
     "$base": "DateTime",
-    "value": "2000-01-03T14:13:59.500000-07:00"
+    "value": "2000-01-03T14:29:44.300000-07:00"
   },
   "src-user-of-last-chg": {
     "$base": "Sequence",
@@ -414,7 +414,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "29"
+    "value": "30"
   },
   "total-graphic-memory": {
     "$base": "Choice",
