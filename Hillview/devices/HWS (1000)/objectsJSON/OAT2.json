@@ -1,8 +1,8 @@
 {
-  "displayName": "OAT",
+  "displayName": "OAT2",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-input,3"
+    "value": "analog-input,6"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,11 +10,11 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "OAT"
+    "value": "OAT2"
   },
   "description": {
     "$base": "String",
-    "value": "8/21/24 CEF:  needs investigation. reading 82F in the shade at ~65°F OAT"
+    "value": ""
   },
   "flags": {
     "$base": "BitString",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "103.177"
+    "value": "82.5434"
   },
   "last-value": {
     "$base": "Real",
-    "value": "103.166"
+    "value": "82.5358"
   },
   "status-flags": {
     "$base": "BitString",
@@ -97,7 +97,7 @@
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1478"
+    "value": "1924"
   },
   "calibration": {
     "$base": "Real",

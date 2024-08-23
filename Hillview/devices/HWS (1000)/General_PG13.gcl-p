@@ -20,7 +20,7 @@ If JaceChanged OffFor 10M Then
 End If
 
 //OAT reference
-'OAT_Loc' = 'OAT'
+'OAT_Loc' = Min ('OAT', 'OAT2')
 
 //delete later and write to Eff from front end
 'OAT_Eff' = 'OAT_Loc'
