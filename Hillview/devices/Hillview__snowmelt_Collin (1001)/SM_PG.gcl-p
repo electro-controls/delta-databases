@@ -1,7 +1,7 @@
 //Snowmelt page
 
  //smowmelt pump enable
-If ('SM_EffSnowMeltMode' <> 3) Then // not "inactive"
+If (('SM_EffSnowMeltMode' <> 3) Or 'Eff_OAT' < 35) Then // not "inactive"
     'SMP1_Enable' = On
   Else
     'SMP1_Enable' = Off

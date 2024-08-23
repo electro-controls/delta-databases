@@ -5,21 +5,6 @@
     {
       "action": "update",
       "device": 1000,
-      "objectId": "pg,10002",
-      "objectName": "HW_General_PG13",
-      "siteName": "Hillview",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/Hillview/devices/HWS (1000)/HW_General_PG13.gcl-p",
-        "scheme": "file"
-      },
-      "date": "8/22/2024, 2:05:02 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 1000,
       "objectId": "pg,10210",
       "objectName": "HW_Pumps_PG13",
       "siteName": "Hillview",

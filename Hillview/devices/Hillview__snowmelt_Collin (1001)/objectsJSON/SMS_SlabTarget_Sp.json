@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "integrate this and allow it to modulate when snowmelt needed, default to 25"
   },
   "flags": {
     "$base": "BitString",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,888"
+    "value": "device,4123321"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2002-05-20T17:16:13.200000-06:00"
+    "value": "2000-01-03T13:38:21.900000-07:00"
   },
   "cov-increment": {
     "$base": "Real",
