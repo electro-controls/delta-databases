@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "84 in spec, provide front end override"
   },
   "flags": {
     "$base": "BitString",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "104"
+    "value": "84"
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "180"
+    "value": "84"
   },
   "status-flags": {
     "$base": "BitString",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,4004300"
+    "value": "device,4123321"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2019-07-05T05:15:44.200000-06:00"
+    "value": "2000-01-03T13:58:27.100000-07:00"
   },
   "cov-increment": {
     "$base": "Real",

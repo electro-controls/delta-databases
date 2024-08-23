@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "95.6688"
+    "value": "147.994"
   },
   "last-value": {
     "$base": "Real",
-    "value": "95.6716"
+    "value": "147.984"
   },
   "status-flags": {
     "$base": "BitString",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "72"
+    "value": "80"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "948666"
+      "value": "1810496"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1637"
+    "value": "788"
   },
   "calibration": {
     "$base": "Real",

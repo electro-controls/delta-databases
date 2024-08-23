@@ -1,5 +1,5 @@
 {
-  "displayName": "Spa_Supply_Temp",
+  "displayName": "Pool_Supply_Temp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "analog-input,6"
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "Spa_Supply_Temp"
+    "value": "Pool_Supply_Temp"
   },
   "description": {
     "$base": "String",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "75.3343"
+    "value": "86.3426"
   },
   "last-value": {
     "$base": "Real",
-    "value": "75.3343"
+    "value": "86.3426"
   },
   "status-flags": {
     "$base": "BitString",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "84"
+    "value": "74"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "1799066"
+      "value": "1810483"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "2086"
+    "value": "1837"
   },
   "calibration": {
     "$base": "Real",

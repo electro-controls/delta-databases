@@ -38,7 +38,7 @@ Else
   'HW_FeedValve' = 0
 End If
 
-IfOnce 'Spa_Supply_Temp' > ('PoolHWSMax_Sp' + 5) Then
+IfOnce 'Pool_Supply_Temp' > ('PoolHWSMax_Sp' + 5) Then
   'PoolHWR_CO.Bias' = 'PoolHWR_CO.Bias' * 0.2
 End If
 
