@@ -1,7 +1,23 @@
 {
   "name": "Hillview",
   "ipAddress": "http://localhost",
-  "uploadQueue": [],
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 1002,
+      "objectId": "pg,3",
+      "objectName": "Steam_PG",
+      "siteName": "Hillview",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/Hillview/devices/Pool_HX1 (1002)/Steam_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/23/2024, 11:13:03 AM",
+      "templateTriggered": false
+    }
+  ],
   "devices": [
     {
       "number": 1000,

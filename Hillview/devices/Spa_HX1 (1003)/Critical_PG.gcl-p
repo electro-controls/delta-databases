@@ -1,13 +1,13 @@
 'Critical_PG.Write_Priority' = 4
 
-If 'Hi_Temp_Limit' Or ('Spa_Return_Temp' > ('SpaHWR_Sp' + 8)) Then
+If ('Spa_Supply_Temp' > 'SpaHWSMax_Sp') Then
     'HighSpaLimit' = On
 End If
-If (Not 'Hi_Temp_Limit') And ('Spa_Return_Temp' < 'SpaHWR_Sp') OnFor 5M Then //And (HighSpaLimit OnFor 5M)
+If ('Spa_Supply_Temp' < 'SpaHWS_EffSp') And (HighSpaLimit OnFor 5M) Then
     'HighSpaLimit' = Off
 End If
 
-If 'HighSpaLimit' Then
+If ('HighSpaLimit' Or 'Hi_Temp_Limit') Then
   'HW_FeedValve' = 0
   'HX_Pump_Enable' = Off
  Else

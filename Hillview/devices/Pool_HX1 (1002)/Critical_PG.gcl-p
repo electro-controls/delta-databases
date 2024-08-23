@@ -7,8 +7,10 @@ If ('HighPoolLimit' OnFor 5M) And ('Spa_Supply_Temp' < 'PoolHWS_EffSp') Then
     'HighPoolLimit' = Off // todo send alarm
 End If
 
-If (Not 'PumpStatus') Or 'HighPoolLimit' Then
+If ('HighPoolLimit' Or 'Hi_Temp_Limit') Then
   'HW_FeedValve' = 0
+  'HX_Pump_Enable' = Off
  Else
   Relinquish 'HW_FeedValve'
+  Relinquish 'HX_Pump_Enable'
 End If

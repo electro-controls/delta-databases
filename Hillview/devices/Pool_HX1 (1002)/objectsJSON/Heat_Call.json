@@ -71,21 +71,21 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-02T14:19:30.200000-07:00"
+      "value": "2000-01-03T13:58:26.200000-07:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-02T14:19:30.10"
+      "value": "2000-01-03T13:58:26.10"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-02T14:19:30.200000-07:00"
+    "value": "2000-01-03T13:58:26.200000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "394"
+    "value": "764"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -93,7 +93,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "74"
+    "value": "72"
   },
   "time-delay": {
     "$base": "Unsigned",

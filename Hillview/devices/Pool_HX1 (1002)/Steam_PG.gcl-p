@@ -9,7 +9,7 @@ End If
 'PoolHWS_LocSp' = Scale ('PoolHWR_CO', 0, 0, 'PoolHWR_Sp', 100, 'PoolHWSMax_Sp')
 
 //Pump Status Conversion
-'PumpStatus' = Switch ( 'PumpStatus', 'Pump_Current', 0.6, 0.4) // field verify todo
+'PumpStatus' = Switch ( 'PumpStatus', 'Pump_Current', 0.6, 0.4) // 3.34 A when active
 IfOnce 'PumpStatus' Then
   'PoolHWS_CO.Bias' = 1
 End If
