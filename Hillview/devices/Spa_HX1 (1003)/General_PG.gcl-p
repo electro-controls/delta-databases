@@ -1,0 +1,8 @@
+If PowerUp Then
+  'Eff_OAT' = 32
+  'SpaHWS_RemSp' = - 1
+  'HighSpaLimit' = Off
+End If
+
+'Eff_OAT' = '1000.OAT_Eff'
+ //End of Program

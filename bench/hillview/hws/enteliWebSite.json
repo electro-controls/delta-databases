@@ -1,7 +1,23 @@
 {
   "name": "Bench",
   "ipAddress": "http://localhost",
-  "uploadQueue": [],
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 7000,
+      "objectId": "pg,10010",
+      "objectName": "HW_BlrDemand_PG13",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/HWS_Hillview_Collin (7000)/HW_BlrDemand_PG13.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/21/2024, 10:50:33 AM",
+      "templateTriggered": false
+    }
+  ],
   "devices": [
     {
       "number": 7000,

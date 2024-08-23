@@ -1,0 +1,45 @@
+//HW Valve Program 
+
+If 'SpaHWS_RemSp' >= 0 Then
+  'SpaHWS_EffSp' = 'SpaHWS_RemSp'
+Else
+  'SpaHWS_EffSp' = 'SpaHWS_LocSp'
+End If
+
+'SpaHWS_LocSp' = Scale ('SpaHWR_CO', 0, 0, 'SpaHWR_Sp', 100, 'SpaHWSMax_Sp')
+
+//Pump Status Conversion
+'PumpStatus' = Switch ( 'PumpStatus', 'Pump_Current', 0.7, 0.5) // field verify todo
+IfOnce 'PumpStatus' Then
+  'SpaHWS_CO.Bias' = 1
+End If
+If 'HighSpaLimit' Then
+  'SpaHWS_CO.Bias' = 1
+End If
+
+//Ramp delay factors the ramp delay time. If the system is warm,
+//we dont need as long of a ramp.
+Variable RampMult
+
+RampMult = Scale ('Spa_Return_Temp', 0, 100, 1, 'SpaHWR_Sp', 0.1)
+
+If 'PumpStatus' And (Not 'HighSpaLimit') Then
+  DoEvery 10S
+    'SystemRamp' = Min (100, 'SystemRamp' + (100 / ('SystemRamp_Sp' * RampMult * 6)))
+  End Do
+Else
+  'SystemRamp' = 0
+End If
+
+//HX Valve Operation
+If 'PumpStatus' Then
+  'HW_FeedValve' = Scale ('SpaHWS_CO', 0, 0, 0, 100, 'SystemRamp')
+Else
+  'HW_FeedValve' = 0
+End If
+
+IfOnce 'Spa_Supply_Temp' > ('SpaHWSMax_Sp' + 5) Then
+  'SpaHWR_CO.Bias' = 'SpaHWR_CO.Bias' * 0.2
+End If
+
+//End of Program

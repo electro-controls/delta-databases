@@ -1,7 +1,16 @@
 'HW_BlrDemand_PG13.Write_Priority' = 13
+
+Variable localHeatCall
+
+If ('Snowmelt_Heat_Call' Or 'Pool_Heat_Call' Or 'Spa_Heat_Call') Then
+  localHeatCall = On
+Else
+  localHeatCall = Off
+End If
+
 //System enable
 If ('HW_HWSystemMode' = 1) Then
-    If 'HW_Rem_BldgHeatCall' Or ('HW_OATInt1' And 'HW_Rem_BldgOccMWUCall') Or 'HW_OATInt2' Then
+    If 'HW_Rem_BldgHeatCall' Or ('HW_OATInt1' And 'HW_Rem_BldgOccMWUCall') Or 'HW_OATInt2' Or localHeatCall Then
       'HW_SystemEnable' = On
     Else
       'HW_SystemEnable' = Off
@@ -24,7 +33,7 @@ If ('OAT_Eff' < 'HW_OATInt1_Sp') Then
   Else
     'HW_OATInt1TmLeft' = 'HW_OATInt1Delay_Sp'
 End If
-// todo update in
+
 If 'HW_OATInt1TmLeft' <= 0 Then
     'HW_OATInt1' = On
   Else
@@ -38,12 +47,7 @@ If (('OAT_Eff' > 'HW_OATInt2_Sp') And 'HW_OATInt2') OnFor 30M Then
     'HW_OATInt2' = Off
 End If
 
-//Boiler ramp sequence to provide a smooth start when
-//HW system is enabled or when pumps have been off line.
-//This minimizes boiler shock and Loop overshoot on cold starts.
-
-//Ramp delay factors the ramp delay time. If the system is warm,
-//we dont need as long of a ramp.
+//Ramp delay. If the system is warm, we dont need as long of a ramp.
 Variable RampMult
 RampMult = Scale ('HW_HWS', 0, 110, 1, 160, 0.2)
 
@@ -63,7 +67,13 @@ If 'HW_HWSDemand_Rem' >= 0 Then
     'HW_HWSDemand_Eff' = 'HW_HWSDemand_Loc'
 End If
 
-//Calculated HWs Demand percent. 
+//Calculated HWs Demand percent.
 'HW_HWSDemand_Loc' = 'HW_HWS_CO' * 'HW_SystemRamp' * 0.01
 
-'HW_B1Call' = ('HW_SystemEnable' = On)
+//boiler call
+//below is applicable for one boiler only
+If 'HW_SystemEnable' Then
+    'HW_B1Call' = On
+  Else
+    'HW_B1Call' = Off
+End If

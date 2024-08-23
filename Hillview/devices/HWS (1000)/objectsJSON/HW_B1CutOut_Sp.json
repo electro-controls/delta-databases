@@ -1,0 +1,79 @@
+{
+  "displayName": "HW_B1CutOut_Sp",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,10121"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "HW_B1CutOut_Sp"
+  },
+  "description": {
+    "$base": "String",
+    "value": "8/21/24 CEF:  confirmed with mark from vemco that cutout signal needs to be 2V. below 2V, boiler defaults to 75% fire rate.  but mark set up boiler so that 2V from us equals 10% fire rate.  so our fire rate signal should scale from min cutout of 2V (10%) up to 10V (100%) \n \nIf boiler uses a cut out on fire rate signal enter that here. Default is 1pct \nNote: This is ussually only applicablefor boilers that use fire rate signal only, not enable and fire rates."
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": "out-of-service"
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "10"
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": "out-of-service"
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "%"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "device,4000748"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-02T07:31:50.800000-07:00"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

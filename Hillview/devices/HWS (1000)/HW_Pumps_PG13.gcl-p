@@ -1,0 +1,38 @@
+'HW_Pumps_PG13.Write_Priority' = 13
+
+If 'HW_HWP1Status' Then
+    'HW_HWPFlow' = On
+  Else
+    'HW_HWPFlow' = Off
+End If
+
+
+If ('HWP1_Enable' And Not ('HW_HWP1Status')) OnFor 'HW_PumpFailDly_Sp':S Then
+    'HW_HWP1Fail' = On
+  Else
+    'HW_HWP1Fail' = Off
+End If
+
+Variable HWP1Manual
+
+If Not 'HWP1_Enable.Priority_Array[5]' Then
+  HWP1Manual = On
+ ElseIf  Not 'HWP1_Enable.Priority_Array[8]' Then
+  HWP1Manual = On
+ Else
+  HWP1Manual = Off
+End If
+
+If 'HW_SystemEnable' Then
+    'HW_HWPCall' = On
+  Else
+    'HW_HWPCall' = Off
+End If
+
+If 'HW_HWPCall' Then
+    'HWP1_Enable' = On
+End If
+
+If (Not 'HW_HWPCall') OnFor 10M Then
+  'HWP1_Enable' = Off
+End If
