@@ -58,7 +58,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-03T08:07:06.700000-07:00"
+    "value": "2000-01-08T11:22:09.500000-07:00"
   },
   "cov-increment": {
     "$base": "Real",

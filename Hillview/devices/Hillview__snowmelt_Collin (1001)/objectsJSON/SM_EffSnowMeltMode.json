@@ -85,7 +85,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-03T13:49:47.000000-07:00"
+    "value": "2000-01-05T07:49:44.100000-07:00"
   },
   "text-value": {
     "$base": "String",

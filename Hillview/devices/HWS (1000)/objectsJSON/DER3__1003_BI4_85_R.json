@@ -43,13 +43,13 @@
   },
   "remote-flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "out-of-service;not-commissioned"
   },
   "remote-value": {
     "$base": "Choice",
     "enumerated": {
       "$base": "Enumerated",
-      "value": 0
+      "value": "1"
     }
   },
   "subscriber-count": {
@@ -58,7 +58,7 @@
   },
   "last-received": {
     "$base": "Unsigned",
-    "value": "748111"
+    "value": "3304116"
   },
   "update-frequency": {
     "$base": "Unsigned",

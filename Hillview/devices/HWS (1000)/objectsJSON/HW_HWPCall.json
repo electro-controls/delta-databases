@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "gcl-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -66,11 +66,11 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-04T06:35:58.600000-07:00"
+    "value": "2000-01-08T11:22:43.700000-07:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "Active"
   },
   "hal-flags": {
     "$base": "BitString",

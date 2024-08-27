@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "8/21/24 CEF:  with boiler off, supply and return temps both approached 87°F."
+    "value": "8/26/24 dmp: calibrated to match HX EWT  \n \n8/21/24 CEF:  with boiler off, supply and return temps both approached 87°F."
   },
   "flags": {
     "$base": "BitString",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "187.708"
+    "value": "160.019"
   },
   "last-value": {
     "$base": "Real",
-    "value": "187.708"
+    "value": "160.022"
   },
   "status-flags": {
     "$base": "BitString",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "209"
+    "value": "224"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -82,7 +82,7 @@
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "2"
+    "value": "0.1"
   },
   "ad-filter": {
     "$base": "Unsigned",
@@ -92,16 +92,16 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "842870"
+      "value": "3304234"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "440"
+    "value": "674"
   },
   "calibration": {
     "$base": "Real",
-    "value": 0
+    "value": "1.4"
   },
   "fixed-point": {
     "$base": "Boolean",

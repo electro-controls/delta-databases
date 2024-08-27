@@ -9,7 +9,7 @@ End If
 'PoolHWS_LocSp' = Scale ('PoolHWR_CO', 0, 0, 'PoolHWR_Sp', 100, 'PoolHWSMax_Sp')
 
 //Pump Status Conversion
-'PumpStatus' = Switch ( 'PumpStatus', 'Pump_Current', 0.6, 0.4) // 3.34 A when active
+'PumpStatus' = Switch ( 'PumpStatus', 'Pump_Current', 0.6, 0.4) // 0.8A when active
 IfOnce 'PumpStatus' Then
   'PoolHWS_CO.Bias' = 1
 End If
@@ -21,7 +21,7 @@ End If
 //we dont need as long of a ramp.
 Variable RampMult
 
-RampMult = Scale ('Pump_Current', 0, 100, 1, 'PoolHWR_Sp', 0.1)
+RampMult = Scale ('Pool_Return_Temp', 0, 50, 1, 'PoolHWR_Sp', 0.1)
 
 If 'PumpStatus' And (Not 'HighPoolLimit') Then
   DoEvery 10S
@@ -31,11 +31,13 @@ Else
   'SystemRamp' = 0
 End If
 
-//Steam Valve Operation
+//HX Valve Operation
 If 'PumpStatus' Then
   'HW_FeedValve' = Scale ('PoolHWS_CO', 0, 0, 0, 100, 'SystemRamp')
 Else
-  'HW_FeedValve' = 0
+  DoEvery 5S //close over 2m to avoid HW short circuiting back to boiler which may cause hi limit trip
+  'HW_FeedValve' = Max (0, 'HW_FeedValve' - 2.5)
+  End Do
 End If
 
 IfOnce 'Pool_Supply_Temp' > ('PoolHWSMax_Sp' + 5) Then

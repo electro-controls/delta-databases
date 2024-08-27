@@ -1,13 +1,13 @@
 'Critical_PG.Write_Priority' = 4
 
-If 'Pool_Supply_Temp' > 'PoolHWSMax_Sp' Then
+If 'Hi_Temp_Limit' Or ('Pool_Supply_Temp' > 'PoolHWS_HiLimit_Sp') OnFor 30S Then
     'HighPoolLimit' = On
 End If
-If ('HighPoolLimit' OnFor 5M) And ('Pool_Supply_Temp' < 'PoolHWS_EffSp') Then
+If (Not 'Hi_Temp_Limit') And ('Pool_Supply_Temp' < 'PoolHWS_EffSp') Then
     'HighPoolLimit' = Off // todo send alarm
 End If
 
-If 'HighPoolLimit' Or 'Hi_Temp_Limit' Then
+If 'HighPoolLimit' Then
   'HW_FeedValve' = 0
   'HX_Pump_Enable' = Off
  Else

@@ -1,8 +1,8 @@
 {
-  "displayName": "HW_SystemRamp",
+  "displayName": "PoolHWS_HiLimit_Sp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,10015"
+    "value": "analog-value,6"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,27 +10,27 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HW_SystemRamp"
+    "value": "PoolHWS_HiLimit_Sp"
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "8/23/2024 dmp: set at 118F for now? trying to avoid scalding people. hi temp switch is set at 130 for now but not sure it is working yet."
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "present-value": {
     "$base": "Real",
-    "value": "100"
+    "value": "118"
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "100"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -38,7 +38,7 @@
   },
   "units": {
     "$base": "Enumerated",
-    "value": "%"
+    "value": "°F"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -50,19 +50,19 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,10010"
+    "value": "device,4000748"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-08T11:22:07.600000-07:00"
+    "value": "2000-01-04T06:06:34.100000-07:00"
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "5"
+    "value": "1"
   },
   "fixed-point": {
     "$base": "Boolean",

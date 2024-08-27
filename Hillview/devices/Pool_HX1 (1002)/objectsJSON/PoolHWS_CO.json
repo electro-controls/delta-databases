@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "104"
+    "value": "81"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -88,7 +88,7 @@
   },
   "controlled-variable-value": {
     "$base": "Real",
-    "value": "93.9337"
+    "value": "106.759"
   },
   "controlled-variable-units": {
     "$base": "Enumerated",
@@ -154,7 +154,7 @@
   },
   "proportional-constant": {
     "$base": "Real",
-    "value": "100"
+    "value": "80"
   },
   "proportional-constant-units": {
     "$base": "Enumerated",
@@ -212,7 +212,7 @@
   },
   "bias": {
     "$base": "Real",
-    "value": "84.0106"
+    "value": "95.9805"
   },
   "derivative": {
     "$base": "Real",
@@ -255,11 +255,11 @@
   },
   "average-crossings": {
     "$base": "Real",
-    "value": 0
+    "value": "0.00188895"
   },
   "average-error": {
     "$base": "Real",
-    "value": "34.2451"
+    "value": "10.5574"
   },
   "previous-error": {
     "$base": "Real",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "1814983"
+      "value": "3305973"
     }
   },
   "self-adj-enable": {
@@ -300,7 +300,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "1836000"
+      "value": "3312000"
     }
   },
   "setpoint-crossings": {
@@ -313,7 +313,7 @@
   },
   "max-deviation": {
     "$base": "Real",
-    "value": "41.934"
+    "value": "94.6908"
   },
   "hal-flags": {
     "$base": "BitString",

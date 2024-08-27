@@ -1,8 +1,8 @@
 {
-  "displayName": "DER4__1001_BV1_85_R",
+  "displayName": "DER1__1000_AV91_85_R",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "der,4"
+    "value": "der,1"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "DER4__1001_BV1_85_R"
+    "value": "DER1__1000_AV91_85_R"
   },
   "exchange-flags": {
     "$base": "BitString",
@@ -29,11 +29,11 @@
     "type": "0-BACnetDeviceObjectPropertyReference",
     "deviceIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "device,1001"
+      "value": "device,1000"
     },
     "objectIdentifier": {
       "$base": "ObjectIdentifier",
-      "value": "binary-value,1"
+      "value": "analog-value,91"
     },
     "propertyIdentifier": {
       "$base": "Enumerated",
@@ -47,9 +47,9 @@
   },
   "remote-value": {
     "$base": "Choice",
-    "enumerated": {
-      "$base": "Enumerated",
-      "value": 0
+    "real": {
+      "$base": "Real",
+      "value": "86.5333"
     }
   },
   "subscriber-count": {
@@ -58,7 +58,7 @@
   },
   "last-received": {
     "$base": "Unsigned",
-    "value": "3304117"
+    "value": "3304125"
   },
   "update-frequency": {
     "$base": "Unsigned",

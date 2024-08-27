@@ -44,7 +44,7 @@
     "$base": "Choice",
     "poll-timer": {
       "$base": "Unsigned",
-      "value": "1810703"
+      "value": "3306203"
     }
   },
   "actual-poll-time": {
@@ -63,7 +63,7 @@
     "$base": "Choice",
     "broadcast-timer": {
       "$base": "Unsigned",
-      "value": "1810873"
+      "value": "3306073"
     }
   },
   "actual-broadcast-time": {
@@ -99,7 +99,7 @@
     "$base": "Choice",
     "subscription-timer": {
       "$base": "Unsigned",
-      "value": "1828123"
+      "value": "3322123"
     }
   },
   "actual-subscription-time": {
@@ -114,7 +114,7 @@
     "$base": "Choice",
     "subscription-check-timer": {
       "$base": "Unsigned",
-      "value": "1810703"
+      "value": "3306503"
     }
   },
   "subscription-extra-lifetime": {

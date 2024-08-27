@@ -2,7 +2,7 @@
 
 Variable localHeatCall
 
-If ('Snowmelt_Heat_Call' Or 'Pool_Heat_Call' Or 'Spa_Heat_Call') Then
+If ('Snowmelt_Heat_Call' Or 'Pool_Heat_Call' Or 'Spa_Heat_Call') OnFor 10S Then
   localHeatCall = On
 Else
   localHeatCall = Off

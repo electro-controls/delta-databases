@@ -14,19 +14,19 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "8/21/24 CEF:  current of 1.0A when commanded to run"
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": 0
+    "value": "0.918193"
   },
   "last-value": {
     "$base": "Real",
-    "value": 0
+    "value": "0.918193"
   },
   "status-flags": {
     "$base": "BitString",
@@ -42,7 +42,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "88"
+    "value": "81"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "1828984"
+      "value": "3306150"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "376"
   },
   "calibration": {
     "$base": "Real",

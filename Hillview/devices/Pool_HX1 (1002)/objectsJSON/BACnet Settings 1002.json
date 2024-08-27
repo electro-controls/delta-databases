@@ -50,7 +50,7 @@
       },
       "localNetworkNumber": {
         "$base": "Unsigned",
-        "value": "50002"
+        "value": "50010"
       },
       "maxBroadcastSize": {
         "$base": "Unsigned",
@@ -106,7 +106,7 @@
     "$base": "Sequence",
     "totalSent": {
       "$base": "Unsigned",
-      "value": "303283"
+      "value": "539843"
     },
     "sentByApp": {
       "$base": "Unsigned",
@@ -122,7 +122,7 @@
     },
     "totalRcvd": {
       "$base": "Unsigned",
-      "value": "11170"
+      "value": "3865"
     },
     "rcvdByApp": {
       "$base": "Unsigned",
@@ -151,7 +151,7 @@
   },
   "main-network": {
     "$base": "Unsigned",
-    "value": "50002"
+    "value": "50010"
   },
   "main-mac": {
     "$base": "Sequence",
@@ -211,7 +211,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "7491014"
+          "value": "13898066"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -219,15 +219,15 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "28265594"
+          "value": "51811078"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
-          "value": "36"
+          "value": "40"
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": "15"
+          "value": "20"
         }
       },
       "filterFlags": {
@@ -273,7 +273,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "8458872"
+          "value": "15490095"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -289,7 +289,7 @@
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": "15"
+          "value": "19"
         }
       },
       "filterFlags": {

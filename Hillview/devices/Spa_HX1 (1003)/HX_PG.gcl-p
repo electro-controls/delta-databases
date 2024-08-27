@@ -9,7 +9,7 @@ End If
 'SpaHWS_LocSp' = Scale ('SpaHWR_CO', 0, 0, 'SpaHWR_Sp', 100, 'SpaHWSMax_Sp')
 
 //Pump Status Conversion
-'PumpStatus' = Switch ( 'PumpStatus', 'Pump_Current', 0.7, 0.5) // field verify todo
+'PumpStatus' = Switch ( 'PumpStatus', 'Pump_Current', 0.7, 0.5) // 1A when active
 IfOnce 'PumpStatus' Then
   'SpaHWS_CO.Bias' = 1
 End If
@@ -21,7 +21,7 @@ End If
 //we dont need as long of a ramp.
 Variable RampMult
 
-RampMult = Scale ('Spa_Return_Temp', 0, 100, 1, 'SpaHWR_Sp', 0.1)
+RampMult = Scale ('Spa_Return_Temp', 0, 70, 1, 'SpaHWR_Sp', 0.1)
 
 If 'PumpStatus' And (Not 'HighSpaLimit') Then
   DoEvery 10S
@@ -35,7 +35,9 @@ End If
 If 'PumpStatus' Then
   'HW_FeedValve' = Scale ('SpaHWS_CO', 0, 0, 0, 100, 'SystemRamp')
 Else
-  'HW_FeedValve' = 0
+  DoEvery 5S //close over 2m to avoid HW short circuiting back to boiler which may cause hi limit trip
+  'HW_FeedValve' = Max (0, 'HW_FeedValve' - 2.5)
+  End Do
 End If
 
 IfOnce 'Spa_Supply_Temp' > ('SpaHWSMax_Sp' + 5) Then

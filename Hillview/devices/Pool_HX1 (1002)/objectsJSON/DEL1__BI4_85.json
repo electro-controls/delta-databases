@@ -85,7 +85,7 @@
         "$base": "Choice",
         "refreshTimer": {
           "$base": "Unsigned",
-          "value": "1844199"
+          "value": "3340205"
         }
       }
     },

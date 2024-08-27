@@ -50,7 +50,7 @@
       },
       "localNetworkNumber": {
         "$base": "Unsigned",
-        "value": "50002"
+        "value": "50010"
       },
       "maxBroadcastSize": {
         "$base": "Unsigned",
@@ -106,7 +106,7 @@
     "$base": "Sequence",
     "totalSent": {
       "$base": "Unsigned",
-      "value": "307912"
+      "value": "541091"
     },
     "sentByApp": {
       "$base": "Unsigned",
@@ -122,7 +122,7 @@
     },
     "totalRcvd": {
       "$base": "Unsigned",
-      "value": "14764"
+      "value": "5302"
     },
     "rcvdByApp": {
       "$base": "Unsigned",
@@ -151,7 +151,7 @@
   },
   "main-network": {
     "$base": "Unsigned",
-    "value": "50002"
+    "value": "50010"
   },
   "main-mac": {
     "$base": "Sequence",
@@ -211,7 +211,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "12835618"
+          "value": "23742690"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -219,15 +219,15 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "23058177"
+          "value": "41971228"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
-          "value": "36"
+          "value": "42"
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": "8"
+          "value": "3"
         }
       },
       "filterFlags": {
@@ -273,7 +273,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "8497833"
+          "value": "15490382"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -289,7 +289,7 @@
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": "15"
+          "value": "20"
         }
       },
       "filterFlags": {
@@ -382,7 +382,7 @@
   },
   "free-que": {
     "$base": "Unsigned",
-    "value": "31"
+    "value": "34"
   },
   "short-free-que": {
     "$base": "Unsigned",
@@ -390,7 +390,7 @@
   },
   "transmit-1-que": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": 0
   },
   "transmit-2-que": {
     "$base": "Unsigned",

@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -50,7 +50,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
@@ -71,21 +71,21 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-03T14:28:17.800000-07:00"
+      "value": "2000-01-04T05:42:16.90"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-03T14:00:22.10"
+      "value": "2000-01-04T05:43:33.100000-07:00"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-03T14:28:17.800000-07:00"
+    "value": "2000-01-04T05:43:33.100000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "765"
+    "value": "1595"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -93,7 +93,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "72"
+    "value": "81"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -145,7 +145,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "Active"
   },
   "hal-flags": {
     "$base": "BitString",

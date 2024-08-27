@@ -14,19 +14,19 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "8/26/24 dmp: calibrated to match pool and spa HX EWTw/ boiler loop supply temp when valves were wide open"
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": "141.487"
+    "value": "158.517"
   },
   "last-value": {
     "$base": "Real",
-    "value": "141.487"
+    "value": "158.517"
   },
   "status-flags": {
     "$base": "BitString",
@@ -42,7 +42,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "80"
+    "value": "81"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -82,7 +82,7 @@
   },
   "cov-increment": {
     "$base": "Real",
-    "value": "1"
+    "value": "0.1"
   },
   "ad-filter": {
     "$base": "Unsigned",
@@ -92,16 +92,16 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "1819527"
+      "value": "3306146"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "868"
+    "value": "672"
   },
   "calibration": {
     "$base": "Real",
-    "value": 0
+    "value": "-0.3"
   },
   "fixed-point": {
     "$base": "Boolean",

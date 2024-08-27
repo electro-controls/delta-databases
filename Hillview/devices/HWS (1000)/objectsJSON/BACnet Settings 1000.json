@@ -106,7 +106,7 @@
     "$base": "Sequence",
     "totalSent": {
       "$base": "Unsigned",
-      "value": "19809"
+      "value": "9951"
     },
     "sentByApp": {
       "$base": "Unsigned",
@@ -122,7 +122,7 @@
     },
     "totalRcvd": {
       "$base": "Unsigned",
-      "value": "21172"
+      "value": "5724"
     },
     "rcvdByApp": {
       "$base": "Unsigned",
@@ -211,7 +211,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "3418488"
+          "value": "15024154"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -227,7 +227,7 @@
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": "6"
+          "value": "7"
         }
       },
       "filterFlags": {
@@ -273,7 +273,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "3159491"
+          "value": "13899888"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -281,15 +281,15 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "11678821"
+          "value": "51795244"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
-          "value": "26"
+          "value": "37"
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": "4"
+          "value": "2"
         }
       },
       "filterFlags": {
@@ -459,7 +459,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "31283"
+          "value": "17429"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -467,7 +467,7 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "33295"
+          "value": "13058"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
@@ -789,7 +789,7 @@
   },
   "free-que": {
     "$base": "Unsigned",
-    "value": "30"
+    "value": "33"
   },
   "short-free-que": {
     "$base": "Unsigned",

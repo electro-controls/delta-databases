@@ -14,11 +14,11 @@
   },
   "description": {
     "$base": "String",
-    "value": "84 in spec, provide front end override"
+    "value": "8/26/24 dmp: john w/ facilities said we are ok to operate at 84 \n \n84F in spec, provide front end override"
   },
   "flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "present-value": {
     "$base": "Real",
@@ -26,11 +26,11 @@
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "84"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -50,15 +50,15 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,4123321"
+    "value": "device,4000748"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-03T13:58:27.100000-07:00"
+    "value": "2000-01-04T05:49:17.300000-07:00"
   },
   "cov-increment": {
     "$base": "Real",

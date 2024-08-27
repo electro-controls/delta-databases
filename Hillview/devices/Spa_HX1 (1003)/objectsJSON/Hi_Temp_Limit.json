@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": "out-of-service;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "out-of-service"
   },
   "reset": {
     "$base": "Boolean",
@@ -50,7 +50,7 @@
   },
   "out-of-service": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "device-type": {
     "$base": "String",
@@ -58,7 +58,7 @@
   },
   "polarity": {
     "$base": "Enumerated",
-    "value": "normal"
+    "value": "reverse"
   },
   "active-text": {
     "$base": "String",
@@ -71,21 +71,21 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:28:44.900000-07:00"
+      "value": "2000-01-04T05:03:51.900000-07:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:21:04.40"
+      "value": "2000-01-04T04:24:39.50"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:28:44.900000-07:00"
+    "value": "2000-01-04T05:03:51.900000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "4"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -93,7 +93,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "88"
+    "value": "86"
   },
   "time-delay": {
     "$base": "Unsigned",
