@@ -1,0 +1,128 @@
+{
+  "displayName": "DEL1__AI3_85",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "del,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "data-exchange-local-data"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "DEL1__AI3_85"
+  },
+  "exchange-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "exchange-type": {
+    "$base": "Enumerated",
+    "value": "optimized-broadcast"
+  },
+  "last-error": {
+    "$base": "Signed",
+    "value": 0
+  },
+  "local-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "device,1000"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-input,3"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "present-value",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "local-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "local-value": {
+    "$base": "Choice",
+    "real": {
+      "$base": "Real",
+      "value": "-58"
+    }
+  },
+  "subscribers": {
+    "1": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "device": {
+          "$base": "ObjectIdentifier",
+          "value": "2000"
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "12039652"
+        }
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "device": {
+          "$base": "ObjectIdentifier",
+          "value": "3000"
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": 0
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "12037589"
+        }
+      }
+    },
+    "$base": "Array"
+  },
+  "last-sent": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "send-frequency": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": 0
+  }
+}

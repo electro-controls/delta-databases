@@ -1,0 +1,96 @@
+//Boiler sequence
+Variable Lead1
+Variable Lead2
+Variable Lag2Latch As Integer
+Variable BoilerDemand
+Variable B1Call As Integer
+Variable B2Call As Integer
+
+If Lag2Latch Then
+  Lead1 = BoilerDemand
+  Lead2 = BoilerDemand
+  BoilerDemand = Scale ('Eff_Demand', 0, 0, 0, 100, 100)
+Else
+  Lead1 = BoilerDemand
+  Lead2 = 0
+  BoilerDemand = Scale ('Eff_Demand', 0, 0, 0, 50, 100)
+End If
+
+//lag 2 latch
+If (BoilerDemand > 'BoilerLagStart_Sp') OnFor 'BoilerLagDly_Sp':M Then
+  Lag2Latch = On
+End If
+If (BoilerDemand < 'BoilerLagStop_Sp') Then
+  Lag2Latch = Off
+End If
+
+//boiler fire rates
+Variable B1Rate
+Variable B2Rate
+
+If 'LeadBoiler' = 1 Then
+  B1Rate = ('B1_LWT_Limit_CO' / 100) * Scale (Lead1, 0, 0, 0, 100, 100)
+  B2Rate = ('B2_LWT_Limit_CO' / 100) * Scale (Lead2, 0, 0, 0, 100, 100)
+  B1Call = Switch ( B1Call, Lead1, 12, 1)
+  B2Call = Switch ( B2Call, Lead2, 12, 1)
+Else
+  B1Rate = ('B1_LWT_Limit_CO' / 100) * Scale (Lead2, 0, 0, 0, 100, 100)
+  B2Rate = ('B2_LWT_Limit_CO' / 100) * Scale (Lead1, 0, 0, 0, 100, 100)
+  B1Call = Switch ( B1Call, Lead2, 12, 1)
+  B2Call = Switch ( B2Call, Lead1, 12, 1)
+End If
+
+//boiler pump enable
+If B1Call Then
+    'HWP1_Enable' = On
+End If
+
+If B1Call OffFor 5M Then
+    'HWP1_Enable' = Off
+End If
+
+If B2Call Then
+    'HWP2_Enable' = On
+End If
+
+If B2Call OffFor 5M Then
+    'HWP2_Enable' = Off
+End If
+
+
+//boiler pump status
+'BP1_Run_Status' = Switch ( 'BP1_Run_Status', 'BP1_Status', 1, 0.5) //confirm threshold in field
+'BP2_Run_Status' = Switch ( 'BP2_Run_Status', 'BP2_Status', 1, 0.5) //confirm threshold in field
+
+//b1 enable
+Variable B1_Ready
+If 'SystemFlow' And B1Call And 'BP1_Run_Status' Then
+    B1_Ready = On
+  Else
+    B1_Ready = Off
+End If
+
+If B1_Ready OnFor 1M Then
+    'B1_Enable' = Switch ( 'B1_Enable', B1Rate, 25, 1)
+    'B1_FireRate' = B1Rate
+  Else
+    'B1_Enable' = Off
+    'B1_FireRate' = 0
+End If
+
+//b2 enable
+Variable B2_Ready
+If 'SystemFlow' And B2Call And 'BP2_Run_Status' Then
+    B2_Ready = On
+    'B2_FireRate' = B2Rate
+  Else
+    B2_Ready = Off
+    'B2_FireRate' = 0
+End If
+
+If B2_Ready OnFor 1M Then
+    'B2_Enable' = Switch ( 'B2_Enable', B2Rate, 25, 1)
+  Else
+    'B2_Enable' = Off
+End If
+//end of boiler page

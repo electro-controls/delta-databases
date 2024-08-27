@@ -1,0 +1,151 @@
+{
+  "displayName": "Internet Protocol Settings",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "ips,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "311"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Internet Protocol Settings"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "available-services": {
+    "$base": "BitString",
+    "value": "ip;email;eweb"
+  },
+  "ip": {
+    "$base": "Sequence",
+    "ipAddress": {
+      "$base": "String",
+      "value": "000.000.000.000"
+    },
+    "subnetMask": {
+      "$base": "String",
+      "value": "000.000.000.000"
+    },
+    "gatewayAddr": {
+      "$base": "String",
+      "value": "000.000.000.000"
+    },
+    "proxyAddr": {
+      "$base": "String",
+      "value": ""
+    },
+    "dnsServer": {
+      "$base": "String",
+      "value": "000.000.000.000"
+    },
+    "enableDHCP": {
+      "$base": "Boolean",
+      "value": "1"
+    },
+    "dhcpCommand": {
+      "$base": "Enumerated",
+      "value": "none"
+    },
+    "dhcpLeaseTime": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "dhcpLeaseExpires": {
+      "$base": "Unsigned",
+      "value": "18"
+    },
+    "dhcpServerIP": {
+      "$base": "String",
+      "value": "000.000.000.000"
+    }
+  },
+  "email": {
+    "$base": "Sequence",
+    "panelEmail": {
+      "$base": "String",
+      "value": ""
+    },
+    "emailServer": {
+      "$base": "String",
+      "value": ""
+    },
+    "userID": {
+      "$base": "String",
+      "value": ""
+    },
+    "password": {
+      "$base": "String",
+      "value": ""
+    },
+    "smtpTimeout": {
+      "$base": "Unsigned",
+      "value": "10"
+    },
+    "tcpPort": {
+      "$base": "Unsigned",
+      "value": "25"
+    }
+  },
+  "sntp": {
+    "$base": "Sequence",
+    "enable": {
+      "$base": "Boolean",
+      "value": 0
+    },
+    "serverAddr": {
+      "$base": "String",
+      "value": "pool.ntp.org"
+    },
+    "serverUdpPort": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "pollInterval": {
+      "$base": "Unsigned",
+      "value": "781"
+    },
+    "lastUpdated": {
+      "$base": "DateTime",
+      "value": "*-*-*-*T00:00:00.00"
+    },
+    "numOfRetry": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "retryInterval": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "eweb": {
+    "$base": "Sequence",
+    "enable": {
+      "$base": "Boolean",
+      "value": 0
+    },
+    "tcpPort": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "passwordCheck": {
+      "$base": "Boolean",
+      "value": 0
+    }
+  }
+}

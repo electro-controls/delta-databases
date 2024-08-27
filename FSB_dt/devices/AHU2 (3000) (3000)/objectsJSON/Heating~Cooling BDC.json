@@ -1,0 +1,35 @@
+{
+  "displayName": "Heating/Cooling BDC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,14"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-device-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Heating/Cooling BDC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Heating"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Cooling"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

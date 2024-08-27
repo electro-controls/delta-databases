@@ -1,0 +1,11 @@
+//Main page
+
+//call all other programs
+Call 'General_PG'
+Call 'HWSystem_PG'
+Call 'Boiler_PG'
+Call 'Pumps_PG'
+Call 'Pumps2_PG'
+Call 'Critical_PG'
+Call 'FaultDetection_PG'
+//end of main page

@@ -1,0 +1,47 @@
+//Fan Program
+//supply fan start/stop sequence
+
+If ('Mode' <> 5) Then
+  'SF_VFD_Enable' = On
+Else
+  'SF_VFD_Enable' = Off
+End If
+
+//Run status interlock allows RF to be enabled and interlock used by other routines
+If ('SF_VFD_Enable' And 'SF_VFD_Status') Then
+  'RF_VFD_Enable' = On
+Else
+  'RF_VFD_Enable' = Off
+End If
+
+
+//If either fan set has status we will let it roll. If there are not back draft dampers then change the "or" to an "and"
+If ('SF_VFD_Status' And 'RF_VFD_Status') Then
+    'RunStatusInt' = On
+  Else
+    'RunStatusInt' = Off
+End If
+
+//VFDRamp will ramp on start up
+If 'RunStatusInt' Then
+  DoEvery 10S
+   'VFDRampResult' = Min (100, 'VFDRampResult' + (1000 / 'VFDRampTime_Sp'))
+  End Do
+Else
+   'VFDRampResult' = 0
+   'SupplyDuctStatic_CO.Bias' = 1
+   'RFAirflow_CO.Bias' = 50
+End If
+
+If PowerUp Then //start ramp sequence again on powerup
+'VFDRampResult' = 0
+End If
+
+//SA VFD speed calc based on ramp and duct static demand
+'SF_VFD_Speed' = ('VFDRampResult' * 0.01) * 'SupplyDuctStatic_CO'
+
+//RF speed tracks SF minus offset during occupied mode
+// todo: if RF < 40% SFspeed, relief duct goes negative (not sure if true for this application, need to figure out what the percentage is here)
+'RF_VFD_Speed' = Scale ('RFAirflow_CO', 0, 0, ('SF_VFD_Speed' * 0.6), 100, Min (100, ('SF_VFD_Speed' * 1.4))) //Max need to be about x.x in unoc mode
+//done
+//End of Program

@@ -1,0 +1,28 @@
+'CUH3_Critical_PG.Write_Priority' = 4
+
+
+//software freeze mode
+
+If ('CUH3_Eff_ZoneTemp' < 42) OnFor 60S Then
+    'CUH3_FreezeMode' = On
+End If
+
+If ('CUH3_Eff_ZoneTemp' > 45) OnFor 60S Then
+    'CUH3_FreezeMode' = Off
+End If
+
+If PowerUp Then
+    'CUH3_FreezeMode' = Off
+End If
+
+
+If 'CUH3_FreezeMode' Then
+    'CUH3_Enable' = Off
+    'CUH3_HWV' = 100
+  Else
+    Relinquish 'CUH3_Enable'
+    Relinquish 'CUH3_HWV'
+End If
+
+
+//end of critical page

@@ -1,0 +1,72 @@
+//Economizer sequence
+//Economizer ramp dalay is automatically longer during cold weather
+'EconRampDly' = Scale ('Eff_OAT', 0, 20, 2000, 60, 60)
+
+Variable MATInt
+
+If ('MAT' < ('MATLimit_Sp' - 5)) OnFor 30S Then
+    MATInt = Off
+  Else
+    MATInt = On
+End If
+
+//Allow OA damper to ramp open if MAT limit sp is satisfied
+If 'RunStatusInt' And MATInt And (('Mode' = 1) Or ('Mode' = 4)) Then //Occ Mode or UnOcc Cooling
+   DoEvery 10S
+   'EconRampPct' = Min (100, 'EconRampPct' + (100 / 'EconRampDly' * 10))
+   End Do
+  Else
+   'EconRampPct' = 0
+End If
+
+//Determine if free cooling is possible by comparing OAT and rem_zt.
+'FreeCooling' = Switch ( 'FreeCooling', 'Eff_OAT', 'Rem_ZoneTemp' - 1, 'Rem_ZoneTemp' + 1)
+
+//Allow free cooling in Occ mode or UnOcc Cooling
+If (Not 'HWMode') And 'FreeCooling' And ('Mode' = 1 Or 'Mode' = 4) Then
+    'EconClgPct' = Scale ('DATClg_CO', 0, 0, 0, 50, 100)
+  Else
+    'EconClgPct' = 0
+End If
+
+//Scales economizer
+
+//Allow CO2 demand to increase min OA demand
+'EconCalcMinOA' = Max ('MinOA_EffSp', 'Rem_CO2Demand')
+
+//OA Damper modulates in Occ Mode or UnOcc Cooling
+If 'RunStatusInt' And ('Mode' = 1 Or 'Mode' = 4) Then
+  'OADamper' = Max (Scale ('EconClgPct', 0, 0, 0, 100, 'EconRampPct'), Scale ('MinOAAirflow_CO', 0, 0, 0, 100, 'EconRampPct')) * ('MATLimit_CO' * 0.01)
+Else
+  'OADamper' = Scale ('EconClgPct', 0, 0, 0, 100, 'EconRampPct') * ('MATLimit_CO' * 0.01)
+End If
+
+'MADamper' = Scale ('OADamper', 0, 0, 100, 100, 0) //Inverse of OA damper
+
+//Do not open relief damper unless we have positive pressure in relief plenum
+Variable ReliefTrackMin
+Variable ReliefTrackMax
+ReliefTrackMin = Scale ('OADamper', 0, 50, 0, 100, 50)
+ReliefTrackMax = Scale ('OADamper', 0, 0, 0, 80, 100)
+If 'RF_VFD_Status' And ('Building_Pressure' > 'Space_Static_Min_SP') Then
+    'EADamper' = Scale ('OADamper', 0, 0, ReliefTrackMin, 100, ReliefTrackMax) //limit max relief damper by plenum pressure
+ Else
+    'EADamper' = 0
+End If
+
+//calculate RF cfm Sp.  //offset only when ventilating
+Variable MinOAScale
+
+MinOAScale = Scale ('MinOAAirflow_CO', 0, 0, 75, 100, 100)
+
+If ('Mode' = 1) And 'RunStatusInt' Then
+    'MinOADemand' = Scale ('MinOA_EffSp', 0, 0, 0, 'EconMinOA_Sp', MinOAScale)
+  Else
+    'MinOADemand' = 0
+    'MinOAAirflow_CO.Bias' = 50
+End If
+
+'RFairflow_EffSp' = ('SF_Airflow' - 'MinOA_EffSp')
+
+'MinOA_EffSp' = 'EconMinOA_Sp' * ('MATLimit_CO' * 0.01) * ('EconRampPct' * 0.01)
+//done

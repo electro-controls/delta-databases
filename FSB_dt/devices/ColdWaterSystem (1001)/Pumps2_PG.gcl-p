@@ -1,0 +1,90 @@
+//Pump sequence continued from PG6...
+
+//enable, status, speed, ramps, failure, & flow interlock
+
+//enable pumps
+
+If 'CWP1_Call' Then
+    'CWP1_Enable' = On
+End If
+
+If ('CWP1_Ramp' < 1) And (Not 'CWP1_Call') Then
+    'CWP1_Enable' = Off
+End If
+
+If 'CWP2_Call' Then
+    'CWP2_Enable' = On
+End If
+
+If ('CWP2_Ramp' < 1) And (Not 'CWP2_Call') Then
+    'CWP2_Enable' = Off
+End If
+
+//pump status using CTs. confirm amp thresholds
+'CWP1_Run_Status' = Switch ( 'CWP1_Run_Status', 'CWP1_Status', 2, 1)
+'CWP2_Run_Status' = Switch ( 'CWP2_Run_Status', 'CWP2_Status', 2, 1)
+
+If ('CWP1_Enable') Then
+  'CWP1_SpeedRef' = Max ('CWDp_CO', Scale (MaxRamp, 0, 0, 100, 'Pump_Speed_Min_Sp', 100))
+Else
+  'CWP1_SpeedRef' = 0
+End If
+
+If ('CWP2_Enable') Then
+  'CWP2_SpeedRef' = Max ('CWDp_CO', Scale (MaxRamp, 0, 0, 100, 'Pump_Speed_Min_Sp', 100))
+Else
+  'CWP2_SpeedRef' = 0
+End If
+
+//ramps
+Variable MaxRamp
+MaxRamp = Max ('CWP1_Ramp', 'CWP2_Ramp')
+
+If 'CWP1_Call' And 'CWP1_Status' Then
+    DoEvery 10S
+      'CWP1_Ramp' = Min (100, 'CWP1_Ramp' + (100 / ('PmpRamp_Sp' * 6))) //takes 2 min to ramp up from 0 to 100
+    End Do
+  Else
+    DoEvery 10S
+      'CWP1_Ramp' = Max (0, 'CWP1_Ramp' - (100 / ('PmpRamp_Sp' * 15))) //takes 5min to ramp down from 100 to 0
+    End Do
+End If
+
+If 'CWP2_Call' And 'CWP2_Status' Then
+    DoEvery 10S
+      'CWP2_Ramp' = Min (100, 'CWP2_Ramp' + (100 / ('PmpRamp_Sp' * 6))) //takes 2 min to ramp up from 0 to 100
+    End Do
+  Else
+    DoEvery 10S
+      'CWP2_Ramp' = Max (0, 'CWP2_Ramp' - (100 / ('PmpRamp_Sp' * 15))) //takes 5min to ramp down from 100 to 0
+    End Do
+End If
+
+//pump failure
+If ('CWP1_Enable' And (Not 'CWP1_Status')) OnFor 'PumpFailDly_Sp':S Then
+    'CWP1_Fail' = On
+  Else
+    'CWP1_Fail' = Off
+End If
+
+If ('CWP2_Enable' And (Not 'CWP2_Status')) OnFor 'PumpFailDly_Sp':S Then
+    'CWP2_Fail' = On
+  Else
+    'CWP2_Fail' = Off
+End If
+
+//flow interlock
+Variable DpFlow
+DpFlow = Switch ( DpFlow, 'CWDp', ('CWDp_Sp' * 0.15), ('CWDp_Sp' * 0.1))
+
+If ('CWP1_Status' Or 'CWP2_Status') And DpFlow Then
+    'SystemFlow' = On
+  Else
+    'SystemFlow' = Off
+End If
+
+If Not 'SystemFlow' Then
+    'CWDp_CO.Bias' = 1
+End If
+
+//end of pump sequence

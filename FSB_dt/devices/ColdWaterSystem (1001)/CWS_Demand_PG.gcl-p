@@ -1,0 +1,88 @@
+
+If 'Eff_OAT' < ('OATInterlock_Sp' - 1) And ('OATInterlock' OnFor 300S) Then
+    'OATInterlock' = Off
+End If
+If 'Eff_OAT' > ('OATInterlock_Sp' + 1) And ('OATInterlock' OffFor 300S) Then
+    'OATInterlock' = On
+End If
+
+
+If 'Rem_CWDemand' >= 0 Then
+    'Eff_CWDemand' = 'Rem_CWDemand'
+    'CWS_CO.Bias' = 'Rem_CWDemand'
+  Else
+    'Eff_CWDemand' = 'Loc_CWDemand'
+End If
+
+IfOnce ('Rem_CWDemand' = 0) Then
+  'ChillerCallUptime' = 0
+End If
+
+Variable SampleHold
+If ('Rem_CWDemand' >= 0) And ('Rem_CWDemand' < 'Loc_CWDemand') Then
+    SampleHold = 'Rem_CWDemand'
+End If
+IfOnce 'Rem_CWDemand' < 0 Then
+    'ChillerCallUptime' = 'CWStartRamp_Sp' * SampleHold * 0.01
+End If
+
+
+If 'ChillerCall' OnFor 1S Then
+  'Loc_CWDemand' = 'CWS_CO' * 'CWStartRamp' * 'CWDemandLimit_Sp' * 0.0001 //Ensures a smooth step up of compressors
+End If
+If 'ChillerCall' OffFor 1S Then
+  'Loc_CWDemand' = 'CWS_CO' * 'CWStopRamp' * 'CWDemandLimit_Sp' * 0.0001 //Ensures a smooth step down of compressors
+End If
+
+If 'Rem_ChillerCall' Or (Not 'OATInterlock') Then // todo switch to And once front end is integrated
+    'ChillerCall' = On
+  Else
+    'ChillerCall' = Off
+End If
+
+If 'ChillerCall' Then
+    DoEvery 6S
+      'ChillerCallUptime' = 'ChillerCallUptime' + 0.1
+    End Do
+    'ChillerEnable' = On
+    'SystemEnable' = On
+  Else
+    'ChillerCallUptime' = 0
+    'CWS_CO.Bias' = 1
+    'ChillerEnable' = Off
+    'SystemEnable' = Off
+End If
+If (Not 'ChillerCall') Then
+    DoEvery 6S
+      'ChillerCallOfftime' = 'ChillerCallOfftime' + 0.1
+    End Do
+  Else
+    'ChillerCallOfftime' = 0
+End If
+
+'CWStartRamp' = Scale ('ChillerCallUptime', 0, 0, 0, 'CWStartRamp_Sp', 100)
+
+Variable StartRampStore //Store start ramp % incase a stop is initiated before the start ramp reached 100%
+If 'ChillerCall' Then
+    StartRampStore = 'CWStartRamp'
+End If
+
+
+'CWStopRamp' = Scale ('ChillerCallOfftime', 0, 0, StartRampStore, CWStopRamp_Sp, 0)
+
+//below sequnce to prevent overshoot when load changes suddenly
+Variable BiasWait As Integer
+
+IfOnce (CWS < (CWS_Sp - 3)) And (Not BiasWait) Then
+    'CWS_CO.Bias' = 'CWS_CO.Bias' * 0.5
+    BiasWait = On
+End If
+
+IfOnce (CWS < 40) And (Not BiasWait) Then
+    'CWS_CO.Bias' = 'CWS_CO.Bias' * 0.5
+    BiasWait = On
+End If
+
+If BiasWait OnFor 60S Then
+    BiasWait = Off
+End If
