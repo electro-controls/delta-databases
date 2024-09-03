@@ -1,0 +1,79 @@
+{
+  "displayName": "HWV_LocDemand",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,11071"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "HWV_LocDemand"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Local HWV demand"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": "out-of-service"
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "100"
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": "100"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": "out-of-service"
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "%"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "device,4178302"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-05T13:57:33.100000-07:00"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

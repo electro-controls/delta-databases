@@ -1,0 +1,102 @@
+{
+  "displayName": "ZoneOccMode",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "multi-state-value,11001"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "ZoneOccMode"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Current occupancy mode"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "gcl-value": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,1"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "6"
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Unoccupied"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Standby"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Occupied"
+    },
+    "4": {
+      "$base": "String",
+      "value": "Bypass"
+    },
+    "5": {
+      "$base": "String",
+      "value": "WarmUp"
+    },
+    "6": {
+      "$base": "String",
+      "value": "Purge"
+    },
+    "$base": "Array"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,11051"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-05T18:10:51.600000-07:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Occupied"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "displayName": "ZonePurgeHold",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "binary-value,11039"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "ZonePurgeHold"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Purge state that will lock out HWV after a purge mode"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "gcl-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,1"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Active"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Inactive"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,11070"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-05T18:10:13.800000-07:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Inactive"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

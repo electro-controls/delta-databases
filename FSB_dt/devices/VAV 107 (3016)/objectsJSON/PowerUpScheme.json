@@ -1,0 +1,90 @@
+{
+  "displayName": "PowerUpScheme",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "multi-state-value,90"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "PowerUpScheme"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "gcl-value": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,90"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "ResetAll"
+    },
+    "2": {
+      "$base": "String",
+      "value": "ResetPri8"
+    },
+    "3": {
+      "$base": "String",
+      "value": "NoResets"
+    },
+    "$base": "Array"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "unspecifiedValue": "true"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2023-07-11T16:53:16.400000-06:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "ResetAll"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

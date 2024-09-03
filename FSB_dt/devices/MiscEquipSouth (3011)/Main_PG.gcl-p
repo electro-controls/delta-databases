@@ -1,0 +1,19 @@
+//main page
+
+//call all other pages
+
+Call 'CUH2_Critical_PG'
+Call 'FaultDetection_PG'
+
+Call 'CUH2_General_PG'
+Call 'CUH2_Zone_PG'
+Call 'CUH2_OccMode_PG'
+Call 'CUH2_DAT_PG'
+Call 'CUH2_Heat_PG'
+Call 'CUH_2_HWV_PG'
+
+Call 'EF2_General_PG'
+Call 'EH1_General_PG'
+Call 'EH2_General_PG'
+
+//end of main page

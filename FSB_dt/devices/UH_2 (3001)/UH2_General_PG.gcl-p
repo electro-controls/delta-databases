@@ -1,0 +1,17 @@
+If PowerUp Then
+ 'UH2_Zone_RemSp' = - 1
+ 'UH2_RemZoneHtg' = - 1
+ 'UH2_Rem_Schedule' = On
+ 'UH2_PrevControlMode' = 3
+End If
+
+//temp - remove once Andrew rewires
+'UH2_Eff_ZoneTemp' = 'UH2_ZoneTemp'
+
+If 'UH2_Rem_Schedule' Then
+   'UH2_OccMode' = 3
+Else
+   'UH2_OccMode' = 1
+End If
+
+ //End of Program

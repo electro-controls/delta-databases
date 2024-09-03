@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": "Incomplete 00 8c 20 0c 10 94 b4 02 02 12 ac 10 29 55"
+    "value": "Incomplete 18 8c 70 0c 10 96 b4 07 12 52 e4 10 2b 55"
   },
   "present-value": {
     "$base": "Boolean",
@@ -289,7 +289,7 @@
   },
   "time-of-last-chg": {
     "$base": "DateTime",
-    "value": "2000-01-01T13:04:36.200000-07:00"
+    "value": "2000-01-01T12:00:47.300000-07:00"
   },
   "src-user-of-last-chg": {
     "$base": "Sequence",
@@ -314,7 +314,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "3"
   },
   "total-graphic-memory": {
     "$base": "Choice",

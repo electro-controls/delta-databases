@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "inactive"
+    "value": "active"
   },
   "status-flags": {
     "$base": "BitString",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-01T12:00:00.400000-07:00"
+    "value": "2000-01-05T14:33:31.800000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "7"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:00:00.400000-07:00"
+      "value": "2000-01-05T10:54:06.40"
     },
     "2": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2000-01-05T14:33:31.800000-07:00"
     },
     "$base": "Array"
   },
@@ -227,7 +227,7 @@
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "value": "device,*"
+      "value": "device,4178302"
     },
     "6": {
       "$base": "ObjectIdentifier",
@@ -294,7 +294,7 @@
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:00:17.50"
+      "value": "2000-01-05T14:33:31.800000-07:00"
     },
     "6": {
       "$base": "DateTime",
@@ -314,7 +314,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-15T09:39:49.40"
+      "value": "2000-01-05T17:13:06.50"
     },
     "11": {
       "$base": "DateTime",
@@ -348,11 +348,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "10"
   },
   "module-type": {
     "$base": "Enumerated",

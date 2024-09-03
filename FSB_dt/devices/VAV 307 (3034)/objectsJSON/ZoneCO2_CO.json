@@ -1,0 +1,322 @@
+{
+  "displayName": "ZoneCO2_CO",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "loop,11950"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "loop"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "ZoneCO2_CO"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "output-units": {
+    "$base": "Enumerated",
+    "value": "%"
+  },
+  "update-interval": {
+    "$base": "Unsigned",
+    "value": "474"
+  },
+  "algorithm": {
+    "$base": "Enumerated",
+    "value": "pi"
+  },
+  "action": {
+    "$base": "Enumerated",
+    "value": "direct"
+  },
+  "manipulated-variable-reference": {
+    "$base": "Sequence",
+    "type": "0-BACnetObjectPropertyReference",
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "all",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "controlled-variable-reference": {
+    "$base": "Sequence",
+    "type": "0-BACnetObjectPropertyReference",
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,11950"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "present-value",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "controlled-variable-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "controlled-variable-units": {
+    "$base": "Enumerated",
+    "value": "%"
+  },
+  "enable-ref-flags": {
+    "$base": "BitString",
+    "value": "setpoint-reference"
+  },
+  "setpoint-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetObjectPropertyReference",
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "analog-value,11951"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "present-value",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "setpoint-ref-enable": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "setpoint": {
+    "$base": "Real",
+    "value": "900"
+  },
+  "setpoint-reference": {
+    "$base": "Sequence",
+    "setpointReference": {
+      "$base": "Sequence",
+      "type": "0-BACnetObjectPropertyReference",
+      "objectIdentifier": {
+        "$base": "ObjectIdentifier",
+        "value": "analog-value,11951"
+      },
+      "propertyIdentifier": {
+        "$base": "Enumerated",
+        "value": "present-value",
+        "type": "0-BACnetPropertyIdentifier"
+      }
+    }
+  },
+  "proportional-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetObjectPropertyReference",
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "all",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "proportional-ref-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "proportional-constant": {
+    "$base": "Real",
+    "value": "1000"
+  },
+  "proportional-constant-units": {
+    "$base": "Enumerated",
+    "value": "%"
+  },
+  "integral-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetObjectPropertyReference",
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "all",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "integral-ref-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "integral-constant": {
+    "$base": "Real",
+    "value": "10"
+  },
+  "integral-constant-units": {
+    "$base": "Enumerated",
+    "value": "cph"
+  },
+  "derivative-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetObjectPropertyReference",
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "all",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "derivative-ref-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "derivative-constant": {
+    "$base": "Real",
+    "value": 0
+  },
+  "derivative-constant-units": {
+    "$base": "Enumerated",
+    "value": "cph"
+  },
+  "bias": {
+    "$base": "Real",
+    "value": "50"
+  },
+  "derivative": {
+    "$base": "Real",
+    "value": 0
+  },
+  "derivative-sample-time": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "derivative-counter": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "previous-chg-errors": {
+    "1": {
+      "$base": "Real",
+      "value": 0
+    },
+    "2": {
+      "$base": "Real",
+      "value": 0
+    },
+    "3": {
+      "$base": "Real",
+      "value": 0
+    },
+    "4": {
+      "$base": "Real",
+      "value": 0
+    },
+    "$base": "Array"
+  },
+  "deadband": {
+    "$base": "Real",
+    "value": "50"
+  },
+  "reset-band": {
+    "$base": "Real",
+    "value": "100"
+  },
+  "average-crossings": {
+    "$base": "Real",
+    "value": 0
+  },
+  "average-error": {
+    "$base": "Real",
+    "value": "900"
+  },
+  "previous-error": {
+    "$base": "Real",
+    "value": 0
+  },
+  "maximum-output": {
+    "$base": "Real",
+    "value": "100"
+  },
+  "minimum-output": {
+    "$base": "Real",
+    "value": 0
+  },
+  "priority-for-writing": {
+    "$base": "Unsigned",
+    "value": "11"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "co-timer": {
+    "$base": "Choice",
+    "co-timer": {
+      "$base": "Unsigned",
+      "value": "4713138"
+    }
+  },
+  "self-adj-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "self-adj-interval": {
+    "$base": "Unsigned",
+    "value": "30"
+  },
+  "self-adj-timer": {
+    "$base": "Choice",
+    "self-adj-timer": {
+      "$base": "Unsigned",
+      "value": "4716000"
+    }
+  },
+  "setpoint-crossings": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "setpoint-crossing-flag": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "max-deviation": {
+    "$base": "Real",
+    "value": "900"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

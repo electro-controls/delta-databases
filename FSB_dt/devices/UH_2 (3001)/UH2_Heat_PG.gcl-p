@@ -1,0 +1,26 @@
+//  HWV
+
+If 'UH2_OccMode' = 6 Then
+    'UH2_PurgeHold' = On
+    'UH2_PurgeHoldTmLeft' = 'UH2_PurgeHold_Sp'
+  Else
+    DoEvery 1M
+    'UH2_PurgeHoldTmLeft' = Max (0, 'UH2_PurgeHoldTmLeft' - 1)
+    End Do
+End If
+
+If 'Eff_OAT' < 40 Or ('UH2_PurgeHoldTmLeft' = 0) Then
+    'UH2_PurgeHold' = Off
+End If
+
+'UH2_HWVLock' = Switch ( 'UH2_HWVLock', 'UH2_EffZoneClg', 99, 90)
+
+If 'UH2_HWVLock' Or 'UH2_PurgeHold' Then
+  'UH2_FanEnable' = 0
+  'UH2_HWV' = 0
+ Else
+  'UH2_FanEnable' = Switch ( 'UH2_FanEnable', 'UH2_EffZoneHtg', 50, 1)
+  'UH2_HWV' = 'UH2_EffZoneHtg'
+End If
+
+//End of Program

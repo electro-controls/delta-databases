@@ -1,0 +1,1475 @@
+{
+  "displayName": "VAV 206",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "device,3023"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "device"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "VAV 206"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Version 05Oct23 - Added Standby setpoint and Standby time left \nVersion 02Oct23 - Added JaceUptime and JaceCfail \nVersion 02Oct23 - Standby mode corrects zone htg/clg bias \nVersion 29Aug23 - Increased bypass time resolution from .5 hrs to .1Hrs \nVersion 29Aug23 - Added CO2 calibration objects \nVersion 17Jul23 - Added power up MV90 scheme \nVersion 13Mar23 - Add save to flash BV. Changed zero cal thresholds. \nVersion 06Feb23 - Reorginized CO2 to avoid conflict with Critical Room App \nVersion 16Jan23 - added Override Reset BV98 \nVesrion 31Jan22 - 10k reorganize"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "system-status": {
+    "$base": "Enumerated",
+    "value": "operational"
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "vendor-name": {
+    "$base": "String",
+    "value": "Delta Controls"
+  },
+  "vendor-identifier": {
+    "$base": "Unsigned",
+    "value": "8"
+  },
+  "model-name": {
+    "$base": "String",
+    "value": "DVC_304"
+  },
+  "firmware-revision": {
+    "$base": "String",
+    "value": "232760"
+  },
+  "hardware-revision": {
+    "$base": "String",
+    "value": "r4.3 [DCE r3]"
+  },
+  "application-software-version": {
+    "$base": "String",
+    "value": "V3.40"
+  },
+  "location": {
+    "$base": "String",
+    "value": ""
+  },
+  "protocol-version": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "protocol-revision": {
+    "$base": "Unsigned",
+    "value": "6"
+  },
+  "protocol-services-supported": {
+    "$base": "BitString",
+    "value": "acknowledgeAlarm;confirmedCOVNotification;getAlarmSummary;getEnrollmentSummary;subscribeCOV;atomicReadFile;atomicWriteFile;createObject;deleteObject;readProperty;readPropertyMultiple;writeProperty;writePropertyMultiple;deviceCommunicationControl;confirmedPrivateTransfer;reinitializeDevice;i-Am;i-Have;unconfirmedCOVNotification;unconfirmedPrivateTransfer;timeSynchronization;who-Has;who-Is;readRange;subscribeCOVProperty;getEventInformation"
+  },
+  "protocol-object-types-supported": {
+    "$base": "BitString",
+    "value": "analog-input;analog-output;analog-value;binary-input;binary-output;binary-value;calendar;device;event-enrollment;file;loop;multi-state-input;notification-class;program;schedule;multi-state-value;trend-log;structured-view"
+  },
+  "object-list": {
+    "$base": "Choice",
+    "object-list": {
+      "1": {
+        "$base": "Choice"
+      },
+      "2": {
+        "$base": "Choice"
+      },
+      "3": {
+        "$base": "Choice"
+      },
+      "4": {
+        "$base": "Choice"
+      },
+      "5": {
+        "$base": "Choice"
+      },
+      "6": {
+        "$base": "Choice"
+      },
+      "7": {
+        "$base": "Choice"
+      },
+      "8": {
+        "$base": "Choice"
+      },
+      "9": {
+        "$base": "Choice"
+      },
+      "10": {
+        "$base": "Choice"
+      },
+      "11": {
+        "$base": "Choice"
+      },
+      "12": {
+        "$base": "Choice"
+      },
+      "13": {
+        "$base": "Choice"
+      },
+      "14": {
+        "$base": "Choice"
+      },
+      "15": {
+        "$base": "Choice"
+      },
+      "16": {
+        "$base": "Choice"
+      },
+      "17": {
+        "$base": "Choice"
+      },
+      "18": {
+        "$base": "Choice"
+      },
+      "19": {
+        "$base": "Choice"
+      },
+      "20": {
+        "$base": "Choice"
+      },
+      "21": {
+        "$base": "Choice"
+      },
+      "22": {
+        "$base": "Choice"
+      },
+      "23": {
+        "$base": "Choice"
+      },
+      "24": {
+        "$base": "Choice"
+      },
+      "25": {
+        "$base": "Choice"
+      },
+      "26": {
+        "$base": "Choice"
+      },
+      "27": {
+        "$base": "Choice"
+      },
+      "28": {
+        "$base": "Choice"
+      },
+      "29": {
+        "$base": "Choice"
+      },
+      "30": {
+        "$base": "Choice"
+      },
+      "31": {
+        "$base": "Choice"
+      },
+      "32": {
+        "$base": "Choice"
+      },
+      "33": {
+        "$base": "Choice"
+      },
+      "34": {
+        "$base": "Choice"
+      },
+      "35": {
+        "$base": "Choice"
+      },
+      "36": {
+        "$base": "Choice"
+      },
+      "37": {
+        "$base": "Choice"
+      },
+      "38": {
+        "$base": "Choice"
+      },
+      "39": {
+        "$base": "Choice"
+      },
+      "40": {
+        "$base": "Choice"
+      },
+      "41": {
+        "$base": "Choice"
+      },
+      "42": {
+        "$base": "Choice"
+      },
+      "43": {
+        "$base": "Choice"
+      },
+      "44": {
+        "$base": "Choice"
+      },
+      "45": {
+        "$base": "Choice"
+      },
+      "46": {
+        "$base": "Choice"
+      },
+      "47": {
+        "$base": "Choice"
+      },
+      "48": {
+        "$base": "Choice"
+      },
+      "49": {
+        "$base": "Choice"
+      },
+      "50": {
+        "$base": "Choice"
+      },
+      "51": {
+        "$base": "Choice"
+      },
+      "52": {
+        "$base": "Choice"
+      },
+      "53": {
+        "$base": "Choice"
+      },
+      "54": {
+        "$base": "Choice"
+      },
+      "55": {
+        "$base": "Choice"
+      },
+      "56": {
+        "$base": "Choice"
+      },
+      "57": {
+        "$base": "Choice"
+      },
+      "58": {
+        "$base": "Choice"
+      },
+      "59": {
+        "$base": "Choice"
+      },
+      "60": {
+        "$base": "Choice"
+      },
+      "61": {
+        "$base": "Choice"
+      },
+      "62": {
+        "$base": "Choice"
+      },
+      "63": {
+        "$base": "Choice"
+      },
+      "64": {
+        "$base": "Choice"
+      },
+      "65": {
+        "$base": "Choice"
+      },
+      "66": {
+        "$base": "Choice"
+      },
+      "67": {
+        "$base": "Choice"
+      },
+      "68": {
+        "$base": "Choice"
+      },
+      "69": {
+        "$base": "Choice"
+      },
+      "70": {
+        "$base": "Choice"
+      },
+      "71": {
+        "$base": "Choice"
+      },
+      "72": {
+        "$base": "Choice"
+      },
+      "73": {
+        "$base": "Choice"
+      },
+      "74": {
+        "$base": "Choice"
+      },
+      "75": {
+        "$base": "Choice"
+      },
+      "76": {
+        "$base": "Choice"
+      },
+      "77": {
+        "$base": "Choice"
+      },
+      "78": {
+        "$base": "Choice"
+      },
+      "79": {
+        "$base": "Choice"
+      },
+      "80": {
+        "$base": "Choice"
+      },
+      "81": {
+        "$base": "Choice"
+      },
+      "82": {
+        "$base": "Choice"
+      },
+      "83": {
+        "$base": "Choice"
+      },
+      "84": {
+        "$base": "Choice"
+      },
+      "85": {
+        "$base": "Choice"
+      },
+      "86": {
+        "$base": "Choice"
+      },
+      "87": {
+        "$base": "Choice"
+      },
+      "88": {
+        "$base": "Choice"
+      },
+      "89": {
+        "$base": "Choice"
+      },
+      "90": {
+        "$base": "Choice"
+      },
+      "91": {
+        "$base": "Choice"
+      },
+      "92": {
+        "$base": "Choice"
+      },
+      "93": {
+        "$base": "Choice"
+      },
+      "94": {
+        "$base": "Choice"
+      },
+      "95": {
+        "$base": "Choice"
+      },
+      "96": {
+        "$base": "Choice"
+      },
+      "97": {
+        "$base": "Choice"
+      },
+      "98": {
+        "$base": "Choice"
+      },
+      "99": {
+        "$base": "Choice"
+      },
+      "100": {
+        "$base": "Choice"
+      },
+      "101": {
+        "$base": "Choice"
+      },
+      "102": {
+        "$base": "Choice"
+      },
+      "103": {
+        "$base": "Choice"
+      },
+      "104": {
+        "$base": "Choice"
+      },
+      "105": {
+        "$base": "Choice"
+      },
+      "106": {
+        "$base": "Choice"
+      },
+      "107": {
+        "$base": "Choice"
+      },
+      "108": {
+        "$base": "Choice"
+      },
+      "109": {
+        "$base": "Choice"
+      },
+      "110": {
+        "$base": "Choice"
+      },
+      "111": {
+        "$base": "Choice"
+      },
+      "112": {
+        "$base": "Choice"
+      },
+      "113": {
+        "$base": "Choice"
+      },
+      "114": {
+        "$base": "Choice"
+      },
+      "115": {
+        "$base": "Choice"
+      },
+      "116": {
+        "$base": "Choice"
+      },
+      "117": {
+        "$base": "Choice"
+      },
+      "118": {
+        "$base": "Choice"
+      },
+      "119": {
+        "$base": "Choice"
+      },
+      "120": {
+        "$base": "Choice"
+      },
+      "121": {
+        "$base": "Choice"
+      },
+      "122": {
+        "$base": "Choice"
+      },
+      "123": {
+        "$base": "Choice"
+      },
+      "124": {
+        "$base": "Choice"
+      },
+      "125": {
+        "$base": "Choice"
+      },
+      "126": {
+        "$base": "Choice"
+      },
+      "127": {
+        "$base": "Choice"
+      },
+      "128": {
+        "$base": "Choice"
+      },
+      "129": {
+        "$base": "Choice"
+      },
+      "130": {
+        "$base": "Choice"
+      },
+      "131": {
+        "$base": "Choice"
+      },
+      "132": {
+        "$base": "Choice"
+      },
+      "133": {
+        "$base": "Choice"
+      },
+      "134": {
+        "$base": "Choice"
+      },
+      "135": {
+        "$base": "Choice"
+      },
+      "136": {
+        "$base": "Choice"
+      },
+      "137": {
+        "$base": "Choice"
+      },
+      "138": {
+        "$base": "Choice"
+      },
+      "139": {
+        "$base": "Choice"
+      },
+      "140": {
+        "$base": "Choice"
+      },
+      "141": {
+        "$base": "Choice"
+      },
+      "142": {
+        "$base": "Choice"
+      },
+      "143": {
+        "$base": "Choice"
+      },
+      "144": {
+        "$base": "Choice"
+      },
+      "145": {
+        "$base": "Choice"
+      },
+      "146": {
+        "$base": "Choice"
+      },
+      "147": {
+        "$base": "Choice"
+      },
+      "148": {
+        "$base": "Choice"
+      },
+      "149": {
+        "$base": "Choice"
+      },
+      "150": {
+        "$base": "Choice"
+      },
+      "151": {
+        "$base": "Choice"
+      },
+      "152": {
+        "$base": "Choice"
+      },
+      "153": {
+        "$base": "Choice"
+      },
+      "154": {
+        "$base": "Choice"
+      },
+      "155": {
+        "$base": "Choice"
+      },
+      "156": {
+        "$base": "Choice"
+      },
+      "157": {
+        "$base": "Choice"
+      },
+      "158": {
+        "$base": "Choice"
+      },
+      "159": {
+        "$base": "Choice"
+      },
+      "160": {
+        "$base": "Choice"
+      },
+      "161": {
+        "$base": "Choice"
+      },
+      "162": {
+        "$base": "Choice"
+      },
+      "163": {
+        "$base": "Choice"
+      },
+      "164": {
+        "$base": "Choice"
+      },
+      "165": {
+        "$base": "Choice"
+      },
+      "166": {
+        "$base": "Choice"
+      },
+      "167": {
+        "$base": "Choice"
+      },
+      "168": {
+        "$base": "Choice"
+      },
+      "169": {
+        "$base": "Choice"
+      },
+      "170": {
+        "$base": "Choice"
+      },
+      "171": {
+        "$base": "Choice"
+      },
+      "172": {
+        "$base": "Choice"
+      },
+      "173": {
+        "$base": "Choice"
+      },
+      "174": {
+        "$base": "Choice"
+      },
+      "175": {
+        "$base": "Choice"
+      },
+      "176": {
+        "$base": "Choice"
+      },
+      "177": {
+        "$base": "Choice"
+      },
+      "178": {
+        "$base": "Choice"
+      },
+      "179": {
+        "$base": "Choice"
+      },
+      "180": {
+        "$base": "Choice"
+      },
+      "181": {
+        "$base": "Choice"
+      },
+      "182": {
+        "$base": "Choice"
+      },
+      "183": {
+        "$base": "Choice"
+      },
+      "184": {
+        "$base": "Choice"
+      },
+      "185": {
+        "$base": "Choice"
+      },
+      "186": {
+        "$base": "Choice"
+      },
+      "187": {
+        "$base": "Choice"
+      },
+      "188": {
+        "$base": "Choice"
+      },
+      "189": {
+        "$base": "Choice"
+      },
+      "190": {
+        "$base": "Choice"
+      },
+      "191": {
+        "$base": "Choice"
+      },
+      "192": {
+        "$base": "Choice"
+      },
+      "193": {
+        "$base": "Choice"
+      },
+      "194": {
+        "$base": "Choice"
+      },
+      "195": {
+        "$base": "Choice"
+      },
+      "196": {
+        "$base": "Choice"
+      },
+      "197": {
+        "$base": "Choice"
+      },
+      "198": {
+        "$base": "Choice"
+      },
+      "199": {
+        "$base": "Choice"
+      },
+      "200": {
+        "$base": "Choice"
+      },
+      "201": {
+        "$base": "Choice"
+      },
+      "202": {
+        "$base": "Choice"
+      },
+      "203": {
+        "$base": "Choice"
+      },
+      "204": {
+        "$base": "Choice"
+      },
+      "205": {
+        "$base": "Choice"
+      },
+      "206": {
+        "$base": "Choice"
+      },
+      "207": {
+        "$base": "Choice"
+      },
+      "208": {
+        "$base": "Choice"
+      },
+      "209": {
+        "$base": "Choice"
+      },
+      "210": {
+        "$base": "Choice"
+      },
+      "211": {
+        "$base": "Choice"
+      },
+      "212": {
+        "$base": "Choice"
+      },
+      "213": {
+        "$base": "Choice"
+      },
+      "214": {
+        "$base": "Choice"
+      },
+      "215": {
+        "$base": "Choice"
+      },
+      "216": {
+        "$base": "Choice"
+      },
+      "217": {
+        "$base": "Choice"
+      },
+      "218": {
+        "$base": "Choice"
+      },
+      "219": {
+        "$base": "Choice"
+      },
+      "220": {
+        "$base": "Choice"
+      },
+      "221": {
+        "$base": "Choice"
+      },
+      "222": {
+        "$base": "Choice"
+      },
+      "223": {
+        "$base": "Choice"
+      },
+      "224": {
+        "$base": "Choice"
+      },
+      "225": {
+        "$base": "Choice"
+      },
+      "226": {
+        "$base": "Choice"
+      },
+      "227": {
+        "$base": "Choice"
+      },
+      "228": {
+        "$base": "Choice"
+      },
+      "229": {
+        "$base": "Choice"
+      },
+      "230": {
+        "$base": "Choice"
+      },
+      "231": {
+        "$base": "Choice"
+      },
+      "232": {
+        "$base": "Choice"
+      },
+      "233": {
+        "$base": "Choice"
+      },
+      "234": {
+        "$base": "Choice"
+      },
+      "235": {
+        "$base": "Choice"
+      },
+      "236": {
+        "$base": "Choice"
+      },
+      "237": {
+        "$base": "Choice"
+      },
+      "238": {
+        "$base": "Choice"
+      },
+      "239": {
+        "$base": "Choice"
+      },
+      "240": {
+        "$base": "Choice"
+      },
+      "241": {
+        "$base": "Choice"
+      },
+      "242": {
+        "$base": "Choice"
+      },
+      "243": {
+        "$base": "Choice"
+      },
+      "244": {
+        "$base": "Choice"
+      },
+      "245": {
+        "$base": "Choice"
+      },
+      "246": {
+        "$base": "Choice"
+      },
+      "247": {
+        "$base": "Choice"
+      },
+      "248": {
+        "$base": "Choice"
+      },
+      "249": {
+        "$base": "Choice"
+      },
+      "250": {
+        "$base": "Choice"
+      },
+      "251": {
+        "$base": "Choice"
+      },
+      "252": {
+        "$base": "Choice"
+      },
+      "253": {
+        "$base": "Choice"
+      },
+      "254": {
+        "$base": "Choice"
+      },
+      "255": {
+        "$base": "Choice"
+      },
+      "256": {
+        "$base": "Choice"
+      },
+      "257": {
+        "$base": "Choice"
+      },
+      "258": {
+        "$base": "Choice"
+      },
+      "259": {
+        "$base": "Choice"
+      },
+      "260": {
+        "$base": "Choice"
+      },
+      "261": {
+        "$base": "Choice"
+      },
+      "262": {
+        "$base": "Choice"
+      },
+      "263": {
+        "$base": "Choice"
+      },
+      "264": {
+        "$base": "Choice"
+      },
+      "265": {
+        "$base": "Choice"
+      },
+      "266": {
+        "$base": "Choice"
+      },
+      "267": {
+        "$base": "Choice"
+      },
+      "268": {
+        "$base": "Choice"
+      },
+      "269": {
+        "$base": "Choice"
+      },
+      "270": {
+        "$base": "Choice"
+      },
+      "271": {
+        "$base": "Choice"
+      },
+      "272": {
+        "$base": "Choice"
+      },
+      "273": {
+        "$base": "Choice"
+      },
+      "274": {
+        "$base": "Choice"
+      },
+      "275": {
+        "$base": "Choice"
+      },
+      "276": {
+        "$base": "Choice"
+      },
+      "277": {
+        "$base": "Choice"
+      },
+      "278": {
+        "$base": "Choice"
+      },
+      "279": {
+        "$base": "Choice"
+      },
+      "280": {
+        "$base": "Choice"
+      },
+      "281": {
+        "$base": "Choice"
+      },
+      "282": {
+        "$base": "Choice"
+      },
+      "283": {
+        "$base": "Choice"
+      },
+      "284": {
+        "$base": "Choice"
+      },
+      "285": {
+        "$base": "Choice"
+      },
+      "286": {
+        "$base": "Choice"
+      },
+      "287": {
+        "$base": "Choice"
+      },
+      "288": {
+        "$base": "Choice"
+      },
+      "289": {
+        "$base": "Choice"
+      },
+      "290": {
+        "$base": "Choice"
+      },
+      "291": {
+        "$base": "Choice"
+      },
+      "292": {
+        "$base": "Choice"
+      },
+      "293": {
+        "$base": "Choice"
+      },
+      "294": {
+        "$base": "Choice"
+      },
+      "295": {
+        "$base": "Choice"
+      },
+      "296": {
+        "$base": "Choice"
+      },
+      "297": {
+        "$base": "Choice"
+      },
+      "298": {
+        "$base": "Choice"
+      },
+      "299": {
+        "$base": "Choice"
+      },
+      "300": {
+        "$base": "Choice"
+      },
+      "301": {
+        "$base": "Choice"
+      },
+      "302": {
+        "$base": "Choice"
+      },
+      "303": {
+        "$base": "Choice"
+      },
+      "304": {
+        "$base": "Choice"
+      },
+      "305": {
+        "$base": "Choice"
+      },
+      "$base": "Array"
+    }
+  },
+  "max-apdu-length-accepted": {
+    "$base": "Unsigned",
+    "value": "480"
+  },
+  "segmentation-supported": {
+    "$base": "Enumerated",
+    "value": "segmented-both"
+  },
+  "apdu-segment-timeout": {
+    "$base": "Unsigned",
+    "value": "5000"
+  },
+  "apdu-timeout": {
+    "$base": "Unsigned",
+    "value": "7000"
+  },
+  "number-of-apdu-retries": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "local-time": {
+    "$base": "Time",
+    "value": "18:24:10.00"
+  },
+  "local-date": {
+    "$base": "Date",
+    "value": "2000-01-05"
+  },
+  "time-zone-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "utc-offset": {
+    "$base": "Signed",
+    "value": 0
+  },
+  "daylight-savings-status": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "daylight-savings-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "daylight-savings-standard": {
+    "$base": "Enumerated",
+    "value": "north-america"
+  },
+  "daylight-savings-start": {
+    "$base": "Choice",
+    "weekNDay": {
+      "$base": "Sequence",
+      "month": {
+        "$base": "Enumerated",
+        "value": "march"
+      },
+      "weekOfMonth": {
+        "$base": "Enumerated",
+        "value": "second"
+      },
+      "dayOfWeek": {
+        "$base": "Enumerated",
+        "value": "sunday"
+      }
+    }
+  },
+  "daylight-savings-start-on-after": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "daylight-savings-end": {
+    "$base": "Choice",
+    "weekNDay": {
+      "$base": "Sequence",
+      "month": {
+        "$base": "Enumerated",
+        "value": "november"
+      },
+      "weekOfMonth": {
+        "$base": "Enumerated",
+        "value": "first"
+      },
+      "dayOfWeek": {
+        "$base": "Enumerated",
+        "value": "sunday"
+      }
+    }
+  },
+  "daylight-savings-end-on-after": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "daylight-savings-offset": {
+    "$base": "Unsigned",
+    "value": "60"
+  },
+  "daylight-savings-transition": {
+    "$base": "Time",
+    "value": "02:00:00.00"
+  },
+  "daylight-saving-start-day": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  },
+  "daylight-saving-end-day": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  },
+  "time-synchronization-recipients": {
+    "$base": "List"
+  },
+  "time-sync-interval": {
+    "$base": "Unsigned",
+    "value": "3600"
+  },
+  "time-sync-timer": {
+    "$base": "Choice",
+    "time-sync-timer": {
+      "$base": "Unsigned",
+      "value": "28563"
+    }
+  },
+  "latitude": {
+    "$base": "Real",
+    "value": 0
+  },
+  "longitude": {
+    "$base": "Real",
+    "value": 0
+  },
+  "site-elevation": {
+    "$base": "Signed",
+    "value": 0
+  },
+  "site-elevation-units": {
+    "$base": "Enumerated",
+    "value": "m"
+  },
+  "last-reset-time": {
+    "$base": "DateTime",
+    "value": "*-*-*-*T*:*:*.*"
+  },
+  "reset-count": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "reason-for-reset": {
+    "$base": "Enumerated",
+    "value": 0
+  },
+  "power-down-time": {
+    "$base": "DateTime",
+    "value": "2012-09-19T18:03:00.000000-06:00"
+  },
+  "flash-load-time": {
+    "$base": "DateTime",
+    "value": "*-*-*-*T*:*:*.*"
+  },
+  "max-master": {
+    "$base": "Unsigned",
+    "value": "127"
+  },
+  "max-info-frames": {
+    "$base": "Unsigned",
+    "value": "8"
+  },
+  "device-address-binding": {
+    "$base": "List"
+  },
+  "scan-rate": {
+    "$base": "Real",
+    "value": "1.85185"
+  },
+  "io-scan-rate": {
+    "$base": "Real",
+    "value": "16.6667"
+  },
+  "static-ram-total": {
+    "$base": "Unsigned",
+    "value": "127"
+  },
+  "static-ram-free": {
+    "$base": "Unsigned",
+    "value": "47"
+  },
+  "dynamic-ram-total": {
+    "$base": "Unsigned",
+    "value": "163"
+  },
+  "dynamic-ram-free": {
+    "$base": "Unsigned",
+    "value": "97"
+  },
+  "flash-type": {
+    "$base": "Enumerated",
+    "value": "1mb-29f800"
+  },
+  "expansion-cards": {
+    "1": {
+      "$base": "String",
+      "value": ""
+    },
+    "2": {
+      "$base": "String",
+      "value": ""
+    },
+    "3": {
+      "$base": "String",
+      "value": ""
+    },
+    "4": {
+      "$base": "String",
+      "value": ""
+    },
+    "$base": "Array"
+  },
+  "expansion-boards": {
+    "1": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "2": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "3": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "4": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "5": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "6": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "7": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "8": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "9": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "10": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "11": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "12": {
+      "$base": "String",
+      "value": "No Device"
+    },
+    "$base": "Array"
+  },
+  "cpu-speed": {
+    "$base": "Unsigned",
+    "value": "25"
+  },
+  "gcl-timeout": {
+    "$base": "Unsigned",
+    "value": "20"
+  },
+  "object-execution-timer": {
+    "$base": "Choice",
+    "object-execution-timer": {
+      "$base": "Unsigned",
+      "value": "3686504"
+    }
+  },
+  "logical-base-address": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "command": {
+    "$base": "Choice",
+    "null": {
+      "$base": "Null"
+    }
+  },
+  "address-source": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "dip-setting": {
+    "$base": "Unsigned",
+    "value": "23"
+  },
+  "jumper-setting": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "dip-address": {
+    "$base": "Unsigned",
+    "value": "3023"
+  },
+  "device-instance": {
+    "$base": "Unsigned",
+    "value": "3023"
+  },
+  "debug-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "area-overridden": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "area": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "system-overridden": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "system": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "reset-password": {
+    "$base": "Octet",
+    "value": "0x"
+  },
+  "dcc-password": {
+    "$base": "Octet",
+    "value": "0x64f311dca93e9cf370d6ea22df3fd639"
+  },
+  "config-password": {
+    "$base": "Octet",
+    "value": "0x"
+  },
+  "security-enable": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "link-net-enable": {
+    "$base": "Enumerated",
+    "value": "lnk-net2"
+  },
+  "commission-flag": {
+    "$base": "Enumerated",
+    "value": "commissioned"
+  },
+  "platform": {
+    "$base": "Enumerated",
+    "value": "zone"
+  },
+  "hardware-status": {
+    "$base": "BitString",
+    "value": "database-default;ee-ok;rtc-not-present;lcd-not-present;uart-not-present;ethernet-not-present"
+  },
+  "configuration-files": {
+    "1": {
+      "$base": "ObjectIdentifier",
+      "value": "file,1"
+    },
+    "$base": "Array"
+  },
+  "last-restore-time": {
+    "$base": "Choice",
+    "dateTime": {
+      "$base": "DateTime",
+      "value": "2024-02-28T15:02:38.60"
+    }
+  },
+  "backup-failure-timeout": {
+    "$base": "Unsigned",
+    "value": "60"
+  },
+  "database-revision": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-cov-subscriptions": {
+    "$base": "List"
+  },
+  "max-segments-accepted": {
+    "$base": "Unsigned",
+    "value": "21"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  },
+  "panel-email": {
+    "$base": "String",
+    "value": ""
+  },
+  "email-server": {
+    "$base": "String",
+    "value": ""
+  },
+  "dns-server": {
+    "$base": "String",
+    "value": "000.000.000.000"
+  },
+  "smtp-timeout": {
+    "$base": "Unsigned",
+    "value": "60"
+  },
+  "enable-auto-startup-delay": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "output-startup-delay": {
+    "$base": "Unsigned",
+    "value": "21"
+  },
+  "gcl-print-buffer": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "ip-address": {
+    "$base": "String",
+    "value": ""
+  },
+  "subnet-mask": {
+    "$base": "String",
+    "value": ""
+  },
+  "gateway": {
+    "$base": "String",
+    "value": ""
+  },
+  "use-dhcp": {
+    "$base": "Boolean",
+    "value": ""
+  },
+  "features-supported": {
+    "$base": "BitString",
+    "value": "bde-supported;ors-supported"
+  },
+  "suppress-ds-update": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "ds-update-timer": {
+    "$base": "Choice",
+    "ds-update-timer": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "controller-graphic": {
+    "$base": "String",
+    "value": ""
+  },
+  "prev-hw-status": {
+    "$base": "BitString",
+    "value": "database-ok;ee-ok;rtc-present;lcd-not-present;uart-present;ethernet-present"
+  },
+  "firmware-image-name": {
+    "$base": "String",
+    "value": "Boot:DAC8:---"
+  },
+  "structured-object-list": {
+    "$base": "Array"
+  }
+}

@@ -50,7 +50,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "20"
+    "value": "19"
   },
   "algorithm": {
     "$base": "Enumerated",
@@ -285,7 +285,7 @@
     "$base": "Choice",
     "co-timer": {
       "$base": "Unsigned",
-      "value": "12011973"
+      "value": "3643927"
     }
   },
   "self-adj-enable": {
@@ -300,7 +300,7 @@
     "$base": "Choice",
     "self-adj-timer": {
       "$base": "Unsigned",
-      "value": "12024000"
+      "value": "3654000"
     }
   },
   "setpoint-crossings": {
