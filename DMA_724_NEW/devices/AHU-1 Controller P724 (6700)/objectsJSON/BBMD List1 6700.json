@@ -1,0 +1,34 @@
+{
+  "displayName": "BBMD List1 6700",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bmd,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "bbmd-list"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "BBMD List1 6700"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "bbmd-list": {
+    "$base": "Array"
+  },
+  "max-foreign-devices": {
+    "$base": "Unsigned",
+    "value": "20"
+  },
+  "filter-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "filter-options": {
+    "$base": "Octet",
+    "value": "0x"
+  }
+}

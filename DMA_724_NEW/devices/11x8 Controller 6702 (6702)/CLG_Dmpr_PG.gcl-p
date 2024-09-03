@@ -1,0 +1,9 @@
+// cooling damper program
+
+If ('Eff_OAT' + 2) < 'Eff_ZoneSp_Mech' Then //if OAT is at least 2 under the setpoint allow cooling
+ 'Cooling_Dmpr' = Round ('ZoneClg_CO', - 1) //rounds to every 10 to avoid constant changing of the damper
+ElseIf  'Eff_OAT' > 'Eff_ZoneSp_Mech' Then //create a 2 degree deadband
+ 'Cooling_Dmpr' = 0
+End If
+
+ 'Eff_ZoneTemp_Mech' = 'MechRM_Temp'

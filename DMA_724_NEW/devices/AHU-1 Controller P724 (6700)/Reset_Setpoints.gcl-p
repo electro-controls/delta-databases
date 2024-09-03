@@ -1,0 +1,23 @@
+Variable HeatingSP
+Variable CoolingSP
+
+HeatingSP = Scale ('Heating_Demand', 0, 0, 65, 100, 70)
+CoolingSP = Scale ('Cooling_Demand', 0, 0, 65, 100, 52)
+
+If 'Heating_Demand' >= 'Cooling_Demand' And 'SA_Reset_SP_Ovd' = 0 Then
+'SA_Reset_SP' = HeatingSP
+ElseIf  'Heating_Demand' < 'Cooling_Demand' And 'SA_Reset_SP_Ovd' = 0 Then
+'SA_Reset_SP' = CoolingSP
+Else If 'SA_Reset_SP_Ovd' >= 50 And 'SA_Reset_SP_Ovd' <= 70 Then
+'SA_Reset_SP' = 'SA_Reset_SP_Ovd'
+Else If 'SA_Reset_SP_Ovd' < 50 Then
+'SA_Reset_SP' = 50
+Else If 'SA_Reset_SP_Ovd' > 70 Then
+'SA_Reset_SP' = 70
+End If
+End If
+End If
+End If
+
+
+'MA_Reset_SP' = Limit (('SA_Reset_SP' - 'MA_Offset_SP'), 50, 70)

@@ -1,0 +1,76 @@
+{
+  "displayName": "DuctStatic_inH2O_AIC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "aic,40"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-input-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "DuctStatic_inH2O_AIC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "inWC"
+  },
+  "max-value": {
+    "$base": "Real",
+    "value": "5"
+  },
+  "min-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "scale-range": {
+    "1": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": 0
+      },
+      "value": {
+        "$base": "Real",
+        "value": 0
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "5"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "5"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "sort-required": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

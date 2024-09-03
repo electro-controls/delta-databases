@@ -1,0 +1,7 @@
+'PG10003.Write_Priority' = 4
+
+If 'Eff_ZoneTemp_Mech' <= 50 Then //close damper if zone gets very cold
+    'Cooling_Dmpr' = 0
+  Else
+    Relinquish 'Cooling_Dmpr'
+End If

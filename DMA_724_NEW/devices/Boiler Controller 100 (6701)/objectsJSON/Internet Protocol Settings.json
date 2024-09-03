@@ -1,0 +1,179 @@
+{
+  "displayName": "Internet Protocol Settings",
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "ips,1"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Internet Protocol Settings"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "311"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "object-size": {
+    "$base": "Unsigned",
+    "value": "207"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "available-services": {
+    "$base": "BitString",
+    "value": "ip;email"
+  },
+  "ip": {
+    "$base": "Sequence",
+    "ipAddress": {
+      "$base": "String",
+      "value": "000.000.000.000"
+    },
+    "subnetMask": {
+      "$base": "String",
+      "value": "000.000.000.000"
+    },
+    "gatewayAddr": {
+      "$base": "String",
+      "value": "000.000.000.000"
+    },
+    "proxyAddr": {
+      "$base": "String",
+      "value": ""
+    },
+    "dnsServer": {
+      "$base": "String",
+      "value": "000.000.000.000"
+    },
+    "enableDHCP": {
+      "$base": "Boolean",
+      "value": 0
+    },
+    "dhcpCommand": {
+      "$base": "Enumerated",
+      "value": "none"
+    },
+    "dhcpLeaseTime": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "dhcpLeaseExpires": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "dhcpServerIP": {
+      "$base": "String",
+      "value": "000.000.000.000"
+    }
+  },
+  "email": {
+    "$base": "Sequence",
+    "panelEmail": {
+      "$base": "String",
+      "value": ""
+    },
+    "emailServer": {
+      "$base": "String",
+      "value": ""
+    },
+    "userID": {
+      "$base": "String",
+      "value": ""
+    },
+    "password": {
+      "$base": "String",
+      "value": ""
+    },
+    "smtpTimeout": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "tcpPort": {
+      "$base": "Unsigned",
+      "value": "25"
+    }
+  },
+  "sntp": {
+    "$base": "Sequence",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "enable": {
+      "$base": "Boolean",
+      "error": "0",
+      "errorText": "Unspecified Error",
+      "value": ""
+    },
+    "serverAddr": {
+      "$base": "String",
+      "error": "0",
+      "errorText": "Unspecified Error",
+      "value": ""
+    },
+    "serverUdpPort": {
+      "$base": "Unsigned",
+      "error": "0",
+      "errorText": "Unspecified Error",
+      "value": ""
+    },
+    "pollInterval": {
+      "$base": "Unsigned",
+      "error": "0",
+      "errorText": "Unspecified Error",
+      "value": ""
+    },
+    "lastUpdated": {
+      "$base": "DateTime",
+      "error": "0",
+      "errorText": "Unspecified Error",
+      "value": ""
+    },
+    "numOfRetry": {
+      "$base": "Unsigned",
+      "error": "0",
+      "errorText": "Unspecified Error",
+      "value": ""
+    },
+    "retryInterval": {
+      "$base": "Unsigned",
+      "error": "0",
+      "errorText": "Unspecified Error",
+      "value": ""
+    }
+  },
+  "eweb": {
+    "$base": "Sequence",
+    "error": "0",
+    "errorText": "Unspecified Error",
+    "enable": {
+      "$base": "Boolean",
+      "error": "0",
+      "errorText": "Unspecified Error",
+      "value": 0
+    },
+    "tcpPort": {
+      "$base": "Unsigned",
+      "error": "0",
+      "errorText": "Unspecified Error",
+      "value": ""
+    },
+    "passwordCheck": {
+      "$base": "Boolean",
+      "error": "0",
+      "errorText": "Unspecified Error",
+      "value": ""
+    }
+  }
+}

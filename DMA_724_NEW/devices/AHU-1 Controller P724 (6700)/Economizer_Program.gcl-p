@@ -1,0 +1,30 @@
+Variable EconRamp As Integer
+Variable CO2Reset As Integer
+Variable OSA_Return As Integer
+Variable MA_Limit As Integer
+
+OSA_Return = Switch ( OSA_Return, 'OSA_Temp', ('RA_Temp' - 2), ('RA_Temp' - 4))
+CO2Reset = Min ((Scale ('Duct_CO2', 0, 'CO2_SP', 'Min_OSA_SP', ('CO2_SP' + 100), 80)), EconRamp)
+MA_Limit = Scale ('MA_Temp', 0, 28, 100, 45, 0)
+
+//Economizer
+If 'SAF_VFD_Status' On And OSA_Return Off Then
+DoEvery 10:S
+EconRamp = Limit ((EconRamp + 5), 0, 100)
+End Do
+'Economizer' = Max ((Min (EconRamp, 'Economizer_Control')), 'Min_OSA_SP', CO2Reset) - MA_Limit
+Else If 'SAF_VFD_Status' On And OSA_Return On Then
+'Economizer' = 'Min_OSA_SP'
+Else
+EconRamp = 0
+'Economizer' = 0
+End If
+End If
+
+//Cooling Valve
+
+If 'SAF_VFD_Status' On And 'OSA_Temp' >= 50 Then
+'Cooling_Valve' = 'Cooling_Control'
+Else
+'Cooling_Valve' = 0
+End If

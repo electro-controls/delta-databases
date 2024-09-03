@@ -1,0 +1,32 @@
+Variable RampVFD As Integer
+Variable FreezeAlm As Integer
+If 'Freezestat' On Then
+Start FreezeAlm
+End If
+If FreezeAlm On And 'Freeze_Reset' On Then
+Stop FreezeAlm
+End If
+
+
+If 'Schedule' On And FreezeAlm Off And 'Hi_Duct_Static' Off And ('Fire_Alarm' OffFor 10:S) Then
+Start 'SAF_VFD_SS'
+Else
+Stop 'SAF_VFD_SS'
+End If
+
+If 'SAF_VFD_Status' On Then
+DoEvery 10:S
+RampVFD = Limit (RampVFD + 5, 0, 100)
+End Do
+'SAF_VFD_Ctrl' = Min ('SAF_VFD_Control', RampVFD)
+Else
+RampVFD = 0
+'SAF_VFD_Ctrl' = 0
+End If
+
+If 'Fire_Alarm' On Then
+Stop 'Smoke_Dampers'
+Stop 'SAF_VFD_SS'
+Else
+Start 'Smoke_Dampers'
+End If

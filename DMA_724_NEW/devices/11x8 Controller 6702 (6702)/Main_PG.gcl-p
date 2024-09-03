@@ -1,0 +1,9 @@
+Call 'General_PG'
+Call 'FaultDetection_PG'
+
+//dhw operation
+Call 'DHW_PG'
+
+// damper cooling for mech room
+Call 'CLG_Dmpr_PG'
+Call 'Critical_PG4'

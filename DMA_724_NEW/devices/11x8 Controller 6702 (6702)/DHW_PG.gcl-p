@@ -1,0 +1,14 @@
+//dhw system
+If 'Rem_Schedule' Then
+  'DHWP_Enable' = Switch ( 'DHWP_Enable', 'DHWR', 'DHWR_Sp' - 2, 'DHWR_Sp')
+Else
+  'DHWP_Enable' = Off
+End If
+
+'RP_Status' = Switch ( 'RP_Status', 'DHWR_Current', .1, 0.05) // CEF: 0.186, 0
+
+If ('DHWP_Enable' And (Not 'RP_Status')) OnFor 2M Then
+  'RP_Alarm' = On
+Else
+  'RP_Alarm' = Off
+End If

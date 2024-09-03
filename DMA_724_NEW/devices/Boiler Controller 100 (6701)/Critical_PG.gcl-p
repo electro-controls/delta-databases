@@ -1,0 +1,13 @@
+'Critical_PG.Write_Priority' = 4
+
+'HWHighLimit' = Switch ( 'HWHighLimit', 'MaxHWTemp', 205, 180)
+
+'MaxHWTemp' = Max ('HWS_Temp', 'HWR_Temp', 'Blr1_LWT', 'Blr2_LWT')
+
+If (Not 'PrimaryFlow') Or 'HWHighLimit' Or ('HWS_Temp' < 0) Then
+  'Boiler_Setpoint' = 0
+  'Boiler_Enable' = Off
+Else
+  Relinquish 'Boiler_Setpoint'
+  Relinquish 'Boiler_Enable'
+End If
