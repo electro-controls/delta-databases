@@ -1,113 +1,7 @@
 {
   "name": "Air Card .70",
   "ipAddress": "http://localhost",
-  "uploadQueue": [
-    {
-      "action": "delete",
-      "device": 3011,
-      "objectId": "bo,10",
-      "objectName": "Freeze_Stat_Reset_Relay",
-      "siteName": "Air Card .70",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB_dt/devices/MiscEquipSouth (3011)/objectsJSON/Freeze_Stat_Reset_Relay.json",
-        "scheme": "file"
-      },
-      "date": "9/3/2024, 4:29:53 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 2000,
-      "objectId": "bo,10",
-      "objectName": "FreezeStat_Reset_Relay",
-      "siteName": "Air Card .70",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB_dt/devices/AHU1 (2000) (2000)/objectsJSON/FreezeStat_Reset_Relay.json",
-        "scheme": "file"
-      },
-      "date": "9/3/2024, 4:30:58 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 2000,
-      "objectId": "pg,9",
-      "objectName": "Critical_PG",
-      "siteName": "Air Card .70",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB_dt/devices/AHU1 (2000) (2000)/Critical_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "9/3/2024, 4:31:08 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "create",
-      "device": 3000,
-      "objectId": "bo,10",
-      "objectName": "FreezeStat_Reset_Relay",
-      "siteName": "Air Card .70",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB_dt/devices/AHU2 (3000) (3000)/objectsJSON/FreezeStat_Reset_Relay.json",
-        "scheme": "file"
-      },
-      "date": "9/3/2024, 4:31:49 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 3000,
-      "objectId": "pg,9",
-      "objectName": "Critical_PG",
-      "siteName": "Air Card .70",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB_dt/devices/AHU2 (3000) (3000)/Critical_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "9/3/2024, 4:31:55 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 3011,
-      "objectId": "pg,7",
-      "objectName": "CUH_2_HWV_PG",
-      "siteName": "Air Card .70",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB_dt/devices/MiscEquipSouth (3011)/CUH_2_HWV_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "9/3/2024, 4:34:10 PM",
-      "templateTriggered": false
-    },
-    {
-      "action": "update",
-      "device": 3011,
-      "objectId": "pg,1",
-      "objectName": "Main_PG",
-      "siteName": "Air Card .70",
-      "ipAddress": "http://localhost",
-      "uri": {
-        "$mid": 1,
-        "path": "/c:/Development/electro-controls/delta-databases/FSB_dt/devices/MiscEquipSouth (3011)/Main_PG.gcl-p",
-        "scheme": "file"
-      },
-      "date": "9/3/2024, 4:36:40 PM",
-      "templateTriggered": false
-    }
-  ],
+  "uploadQueue": [],
   "devices": [
     {
       "number": 1000,
@@ -22036,12 +21930,6 @@
           "name": "Administrator",
           "fileName": "Administrator",
           "lastUpdate": "2024-09-03T22:02:55.954Z"
-        },
-        {
-          "id": "bo,10",
-          "name": "Freeze_Stat_Reset_Relay",
-          "fileName": "Freeze_Stat_Reset_Relay",
-          "lastUpdate": "2024-09-03T22:29:20.515Z"
         },
         {
           "id": "pg,7",
