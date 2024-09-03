@@ -1829,12 +1829,6 @@
           "lastUpdate": "2024-08-27T20:44:58.759Z"
         },
         {
-          "id": "bi,3",
-          "name": "Hi_Temp_Limit",
-          "fileName": "Hi_Temp_Limit",
-          "lastUpdate": "2024-08-27T20:44:58.759Z"
-        },
-        {
           "id": "bi,4",
           "name": "Heat_Call",
           "fileName": "Heat_Call",
@@ -2007,6 +2001,12 @@
           "name": "DELTA",
           "fileName": "DELTA",
           "lastUpdate": "2024-08-27T20:44:58.759Z"
+        },
+        {
+          "id": "bv,2",
+          "name": "Alarm_Hi_Temp (bv2)",
+          "fileName": "Alarm_Hi_Temp (bv2)",
+          "lastUpdate": "2024-09-03T16:37:54.812Z"
         }
       ]
     },
@@ -2182,12 +2182,6 @@
           "lastUpdate": "2024-08-27T20:44:59.158Z"
         },
         {
-          "id": "bi,3",
-          "name": "Hi_Temp_Limit",
-          "fileName": "Hi_Temp_Limit",
-          "lastUpdate": "2024-08-27T20:44:59.158Z"
-        },
-        {
           "id": "bi,4",
           "name": "Heat_Call",
           "fileName": "Heat_Call",
@@ -2360,6 +2354,12 @@
           "name": "DELTA",
           "fileName": "DELTA",
           "lastUpdate": "2024-08-27T20:44:59.158Z"
+        },
+        {
+          "id": "bv,2",
+          "name": "Alarm_Hi_Temp",
+          "fileName": "Alarm_Hi_Temp",
+          "lastUpdate": "2024-09-03T16:39:20.024Z"
         }
       ]
     }

@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "8/28/24 DMP:  2-3/8\" paddle is not long enough for the PVC tee it's installed in. replace flow switch or provide new tee"
   },
   "flags": {
     "$base": "BitString",
@@ -93,7 +93,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "81"
+    "value": "84"
   },
   "time-delay": {
     "$base": "Unsigned",

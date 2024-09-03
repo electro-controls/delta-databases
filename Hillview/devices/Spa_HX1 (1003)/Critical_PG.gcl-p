@@ -1,9 +1,11 @@
 'Critical_PG.Write_Priority' = 4
 
-If 'Hi_Temp_Limit' Or ('Spa_Supply_Temp' > 'SpaHWS_HiLimit_Sp') OnFor 30S Then
+'Alarm_Hi_Temp' = ('Spa_Supply_Temp' >= 130)
+
+If 'Alarm_Hi_Temp' Or ('Spa_Supply_Temp' > 'SpaHWS_HiLimit_Sp') OnFor 30S Then
     'HighSpaLimit' = On
 End If
-If (Not 'Hi_Temp_Limit') And ('Spa_Supply_Temp' < 'SpaHWS_EffSp') Then
+If (Not 'Alarm_Hi_Temp') And ('Spa_Supply_Temp' < 'SpaHWS_EffSp') Then
     'HighSpaLimit' = Off
 End If
 
@@ -13,4 +15,4 @@ If 'HighSpaLimit' Then // what if the boiler loop is cooler than the ewt of the 
  Else
   Relinquish 'HW_FeedValve'
   Relinquish 'HX_Pump_Enable'
-End If
+End If 

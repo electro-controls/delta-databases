@@ -1,9 +1,11 @@
 'Critical_PG.Write_Priority' = 4
 
-If 'Hi_Temp_Limit' Or ('Pool_Supply_Temp' > 'PoolHWS_HiLimit_Sp') OnFor 30S Then
+'Alarm_Hi_Temp' = ('Pool_Supply_Temp' >= 130)
+
+If 'Alarm_Hi_Temp' Or ('Pool_Supply_Temp' > 'PoolHWS_HiLimit_Sp') OnFor 30S Then
     'HighPoolLimit' = On
 End If
-If (Not 'Hi_Temp_Limit') And ('Pool_Supply_Temp' < 'PoolHWS_EffSp') Then
+If (Not 'Alarm_Hi_Temp') And ('Pool_Supply_Temp' < 'PoolHWS_EffSp') Then
     'HighPoolLimit' = Off // todo send alarm
 End If
 

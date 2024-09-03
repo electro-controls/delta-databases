@@ -14,19 +14,19 @@
   },
   "description": {
     "$base": "String",
-    "value": "8/26/24 dmp:  is this a strap on sensor on PVC pipe? it appears to be lagging way behind the display shown by the digital temp switch.  switch display showed 17-24°F higher than this temp a few minutes after starting up.  keep this in mind for setting high limits and tuning control loops."
+    "value": "8/28/24 DMP:  drew added a standard immersion sensor into the thermowell that had been used for the dwyer high limit device that is now taken out of commission. reading much better.  \n8/26/24 dmp:  is this a strap on sensor on PVC pipe? it appears to be lagging way behind the display shown by the digital temp switch.  switch display showed 17-24°F higher than this temp a few minutes after starting up.  keep this in mind for setting high limits and tuning control loops."
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": "106.759"
+    "value": "85.9729"
   },
   "last-value": {
     "$base": "Real",
-    "value": "106.759"
+    "value": "85.9729"
   },
   "status-flags": {
     "$base": "BitString",
@@ -42,7 +42,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "80"
+    "value": "97"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "3305636"
+      "value": "9397330"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1416"
+    "value": "1845"
   },
   "calibration": {
     "$base": "Real",

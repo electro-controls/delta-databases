@@ -1,17 +1,15 @@
 {
-  "displayName": "PoolHWS_EffSp",
+  "$base": "Object",
+  "displayName": "Alarm_Hi_Temp",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-value,2"
+    "value": "binary-value,2"
   },
   "object-type": {
     "$base": "Enumerated",
-    "value": "analog-value"
+    "value": "binary-value"
   },
-  "object-name": {
-    "$base": "String",
-    "value": "PoolHWS_EffSp"
-  },
+  "object-name": "Alarm_Hi_Temp",
   "description": {
     "$base": "String",
     "value": ""
@@ -21,12 +19,12 @@
     "value": ""
   },
   "present-value": {
-    "$base": "Real",
-    "value": "84"
+    "$base": "Enumerated",
+    "value": "inactive"
   },
   "gcl-value": {
-    "$base": "Real",
-    "value": "84"
+    "$base": "Enumerated",
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -36,9 +34,9 @@
     "$base": "Boolean",
     "value": 0
   },
-  "units": {
-    "$base": "Enumerated",
-    "value": "°F"
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "unspecifiedValue": "true"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -52,25 +50,25 @@
     "$base": "Boolean",
     "value": 0
   },
+  "active-text": {
+    "$base": "String",
+    "value": "ON"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "OFF"
+  },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,3"
+    "unspecifiedValue": "true"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-12T09:02:12.200000-07:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
-  "cov-increment": {
-    "$base": "Real",
-    "value": "1"
-  },
-  "fixed-point": {
-    "$base": "Boolean",
-    "value": "1"
-  },
-  "decimal-places": {
-    "$base": "Unsigned",
-    "value": "1"
+  "text-value": {
+    "$base": "String",
+    "value": "OFF"
   },
   "hal-flags": {
     "$base": "BitString",
