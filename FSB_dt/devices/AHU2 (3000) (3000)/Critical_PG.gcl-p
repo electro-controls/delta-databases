@@ -13,16 +13,15 @@ End If
 
 
 
- If 'FreezeMode' Or 'Smoke' Or 'Supply_Duct_Hi-Limit' Or 'Return_Duct_Low-Limit' Then
+ If 'FreezeMode' Or 'Smoke/TempOverride' Or 'Supply_Duct_Hi-Limit' Or 'Return_Duct_Low-Limit' Then
       'SF_VFD_Enable' = Off
       'RF_VFD_Enable' = Off
       'SF_VFD_Speed' = 0
       'RF_VFD_Speed' = 0
       'EADamper' = 100
       'HWV' = 100
-      'OADamper' = 0
+      'EconoDamper' = 0
       'CWV' = 100
-      'MADamper' = 0
    Else
       Relinquish 'SF_VFD_Enable'
       Relinquish 'RF_VFD_Enable'
@@ -30,9 +29,8 @@ End If
       Relinquish 'RF_VFD_Speed'
       Relinquish 'EADamper'
       Relinquish 'HWV'
-      Relinquish 'OADamper'
+      Relinquish 'EconoDamper'
       Relinquish 'CWV'
-      Relinquish 'MADamper'
 End If
 
 // Done

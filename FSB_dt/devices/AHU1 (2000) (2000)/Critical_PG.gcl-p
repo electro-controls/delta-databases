@@ -18,7 +18,7 @@ End If
       'RF_VFD_Enable' = Off
       'SF_VFD_Speed' = 0
       'RF_VFD_Speed' = 0
-      'EADamper' = 100
+      'EADamper' = 0
       'HWV' = 100
       'Economizer' = 0
       'CWV' = 100

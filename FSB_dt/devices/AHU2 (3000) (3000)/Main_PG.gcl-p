@@ -5,7 +5,7 @@ Call 'Economizer_PG'
 Call 'Fan_PG'
 Call 'FaultDetection_PG'
 Call 'General_PG'
-Call 'Humidity_PG'
+//Call 'Humidity_PG'
 Call 'HW_CWV_PG'
 
 //End of Program
