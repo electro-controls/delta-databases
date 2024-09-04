@@ -1,8 +1,8 @@
 {
-  "displayName": "OADamper",
+  "displayName": "NotUsed",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "analog-output,5"
+    "value": "analog-output,6"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "OADamper"
+    "value": "NotUsed"
   },
   "description": {
     "$base": "String",
@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "overridden;not-commissioned"
+    "value": "not-commissioned"
   },
   "present-value": {
     "$base": "Real",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "overridden"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "5"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,7 +104,10 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
       "$base": "Choice"
@@ -256,7 +259,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:41:29.10"
+      "value": "2024-09-03T15:51:12.90"
     },
     "5": {
       "$base": "DateTime",
@@ -280,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:41:29.20"
+      "value": "2024-09-04T08:09:07.20"
     },
     "11": {
       "$base": "DateTime",
@@ -338,7 +341,7 @@
   },
   "hoa-status": {
     "$base": "Enumerated",
-    "value": "hand"
+    "value": "auto"
   },
   "fback-value": {
     "$base": "Real",

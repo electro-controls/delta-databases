@@ -26,7 +26,7 @@
   },
   "max-value": {
     "$base": "Real",
-    "value": "20"
+    "value": "65.34"
   },
   "min-value": {
     "$base": "Real",
@@ -52,11 +52,11 @@
       "$base": "Sequence",
       "voltage": {
         "$base": "Real",
-        "value": "0.31"
+        "value": "1"
       },
       "value": {
         "$base": "Real",
-        "value": "1.8"
+        "value": 0
       },
       "adValue": {
         "$base": "Unsigned",
@@ -71,7 +71,7 @@
       },
       "value": {
         "$base": "Real",
-        "value": "20"
+        "value": "65.34"
       },
       "adValue": {
         "$base": "Unsigned",

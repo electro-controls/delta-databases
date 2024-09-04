@@ -71,6 +71,6 @@
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "hvac"
   }
 }

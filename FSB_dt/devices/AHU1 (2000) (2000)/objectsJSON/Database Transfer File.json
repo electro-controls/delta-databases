@@ -34,7 +34,7 @@
   },
   "modification-date": {
     "$base": "DateTime",
-    "value": "2024-08-27T09:05:06.500000-06:00"
+    "value": "2024-09-04T08:09:06.300000-06:00"
   },
   "archive": {
     "$base": "Boolean",

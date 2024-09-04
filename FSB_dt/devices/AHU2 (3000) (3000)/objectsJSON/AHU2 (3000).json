@@ -22,7 +22,7 @@
   },
   "system-status": {
     "$base": "Enumerated",
-    "value": "non-operational"
+    "value": "operational"
   },
   "reset": {
     "$base": "Boolean",
@@ -588,6 +588,9 @@
       "171": {
         "$base": "Choice"
       },
+      "172": {
+        "$base": "Choice"
+      },
       "$base": "Array"
     }
   },
@@ -613,11 +616,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "09:41:59.00"
+    "value": "08:09:21.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2024-08-27"
+    "value": "2024-09-04"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -714,7 +717,7 @@
     "$base": "Choice",
     "time-sync-timer": {
       "$base": "Unsigned",
-      "value": "45104"
+      "value": "4309390"
     }
   },
   "latitude": {
@@ -735,11 +738,11 @@
   },
   "last-reset-time": {
     "$base": "DateTime",
-    "value": "2024-08-27T08:56:50.480000-06:00"
+    "value": "2024-08-30T08:30:09.680000-06:00"
   },
   "reset-count": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "3"
   },
   "reason-for-reset": {
     "$base": "Enumerated",
@@ -766,7 +769,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "4.77273"
+    "value": "4.13043"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -874,7 +877,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "27098"
+      "value": "4307808"
     }
   },
   "logical-base-address": {
@@ -893,7 +896,7 @@
   },
   "address-source": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "dip-setting": {
     "$base": "Unsigned",
@@ -917,7 +920,7 @@
   },
   "area-overridden": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "area": {
     "$base": "Unsigned",
@@ -925,7 +928,7 @@
   },
   "system-overridden": {
     "$base": "Boolean",
-    "value": 0
+    "value": "1"
   },
   "system": {
     "$base": "Unsigned",
@@ -983,7 +986,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "23"
+    "value": "34"
   },
   "active-cov-subscriptions": {
     "$base": "List"

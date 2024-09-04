@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -58,7 +58,7 @@
   },
   "polarity": {
     "$base": "Enumerated",
-    "value": "normal"
+    "value": "reverse"
   },
   "active-text": {
     "$base": "String",
@@ -71,21 +71,21 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-08-29T04:49:55.300000-06:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:00:43.700000-06:00"
+      "value": "2024-08-29T04:36:48.80"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-08-27T09:00:43.700000-06:00"
+    "value": "2024-08-29T04:49:55.300000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "4"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -93,7 +93,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "195"
+    "value": "227"
   },
   "time-delay": {
     "$base": "Unsigned",
@@ -145,7 +145,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Alarm"
+    "value": "Normal"
   },
   "hal-flags": {
     "$base": "BitString",

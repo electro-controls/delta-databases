@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "overridden;not-commissioned"
+    "value": "not-commissioned"
   },
   "present-value": {
     "$base": "Real",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "overridden"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -193,7 +193,7 @@
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "value": "device,*"
+      "value": "device,4178302"
     },
     "6": {
       "$base": "ObjectIdentifier",
@@ -256,11 +256,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:41:29.10"
+      "value": "2024-09-04T08:09:06.20"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-08-27T08:59:10.00"
+      "value": "2024-09-03T15:49:54.80"
     },
     "6": {
       "$base": "DateTime",
@@ -280,7 +280,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:41:29.00"
+      "value": "2024-09-04T08:09:06.20"
     },
     "11": {
       "$base": "DateTime",
@@ -338,7 +338,7 @@
   },
   "hoa-status": {
     "$base": "Enumerated",
-    "value": "off"
+    "value": "auto"
   },
   "fback-value": {
     "$base": "Real",

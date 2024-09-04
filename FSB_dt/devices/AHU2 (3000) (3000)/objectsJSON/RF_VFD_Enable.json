@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "overridden;private2;not-commissioned"
+    "value": "private2;not-commissioned"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -26,7 +26,7 @@
   },
   "status-flags": {
     "$base": "BitString",
-    "value": "overridden"
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -70,7 +70,7 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-08-27T08:56:52.600000-06:00"
+    "value": "2024-08-30T08:30:11.400000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -83,7 +83,7 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-08-27T08:56:52.600000-06:00"
+      "value": "2024-08-30T08:30:11.400000-06:00"
     },
     "2": {
       "$base": "DateTime",
@@ -290,7 +290,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:41:51.10"
+      "value": "2024-09-04T08:09:16.80"
     },
     "5": {
       "$base": "DateTime",
@@ -314,7 +314,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:41:51.10"
+      "value": "2024-09-04T08:09:16.80"
     },
     "11": {
       "$base": "DateTime",
@@ -360,7 +360,7 @@
   },
   "hoa-status": {
     "$base": "Enumerated",
-    "value": "off"
+    "value": "auto"
   },
   "delay-status": {
     "$base": "Enumerated",

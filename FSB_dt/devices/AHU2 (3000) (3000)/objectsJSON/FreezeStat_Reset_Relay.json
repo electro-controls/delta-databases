@@ -1,5 +1,4 @@
 {
-  "$base": "Object",
   "displayName": "FreezeStat_Reset_Relay",
   "object-identifier": {
     "$base": "ObjectIdentifier",
@@ -43,7 +42,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "On/Off BDC"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -63,11 +62,11 @@
   },
   "inactive-text": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Off"
   },
   "active-text": {
     "$base": "String",
-    "value": "ON"
+    "value": "On"
   },
   "change-of-state-time": {
     "$base": "DateTime",
@@ -79,7 +78,7 @@
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-09-03T15:50:14.000000-06:00"
   },
   "prev-change-of-state-times": {
     "1": {
@@ -109,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "17"
+    "value": "16"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -207,10 +206,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -281,7 +277,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,4123456"
     },
     "$base": "Array"
   },
@@ -348,7 +344,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-09-03T15:49:54.40"
     },
     "$base": "Array"
   },
@@ -410,7 +406,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "OFF"
+    "value": "Off"
   },
   "time-delay": {
     "$base": "Unsigned",

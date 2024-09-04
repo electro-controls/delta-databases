@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "DM 9_6_24  tested by blowing into hi port and holding around 2.5inches    \n \nsensor is located on 2nd floor_ same side of building as this ahu and on the wall above the ceiling by the door to the stairwell"
   },
   "flags": {
     "$base": "BitString",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "0.001221"
+    "value": 0
   },
   "last-value": {
     "$base": "Real",
-    "value": "0.001221"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "179"
+    "value": "187"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "26700"
+      "value": "4307609"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "813"
   },
   "calibration": {
     "$base": "Real",

@@ -14,7 +14,7 @@
   },
   "description": {
     "$base": "String",
-    "value": ""
+    "value": "DM 9_3_24  tested by blowing into high port and getting a steady reading"
   },
   "flags": {
     "$base": "BitString",
@@ -22,11 +22,11 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "0.003663"
+    "value": "0.926435"
   },
   "last-value": {
     "$base": "Real",
-    "value": "0.002442"
+    "value": "0.924908"
   },
   "status-flags": {
     "$base": "BitString",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "187"
+    "value": "195"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "10077"
+      "value": "5305907"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "1426"
   },
   "calibration": {
     "$base": "Real",

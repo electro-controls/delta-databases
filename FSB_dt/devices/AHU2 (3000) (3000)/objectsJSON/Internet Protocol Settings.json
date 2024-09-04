@@ -68,7 +68,7 @@
     },
     "dhcpLeaseExpires": {
       "$base": "Unsigned",
-      "value": "18"
+      "value": "19"
     },
     "dhcpServerIP": {
       "$base": "String",

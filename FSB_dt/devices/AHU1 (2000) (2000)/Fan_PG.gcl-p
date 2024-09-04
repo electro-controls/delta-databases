@@ -8,7 +8,7 @@ Else
 End If
 
 //Run status interlock allows RF to be enabled and interlock used by other routines
-If ('SF_VFD_Enable' And 'SF_VFD_Status') Then
+If ('SF_VFD_Enable' And 'BI6') Then
   'RF_VFD_Enable' = On
 Else
   'RF_VFD_Enable' = Off
@@ -16,7 +16,7 @@ End If
 
 
 //If either fan set has status we will let it roll. If there are not back draft dampers then change the "or" to an "and"
-If ('SF_VFD_Status' And 'RF_VFD_Status') Then
+If ('BI6' And 'BI7') Then
     'RunStatusInt' = On
   Else
     'RunStatusInt' = Off

@@ -52,6 +52,21 @@
       "$base": "Sequence",
       "voltage": {
         "$base": "Real",
+        "value": "1"
+      },
+      "value": {
+        "$base": "Real",
+        "value": 0
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
         "value": "5"
       },
       "value": {

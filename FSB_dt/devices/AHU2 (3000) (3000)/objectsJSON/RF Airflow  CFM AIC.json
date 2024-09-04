@@ -52,36 +52,6 @@
       "$base": "Sequence",
       "voltage": {
         "$base": "Real",
-        "value": "2.9"
-      },
-      "value": {
-        "$base": "Real",
-        "value": "9900"
-      },
-      "adValue": {
-        "$base": "Unsigned",
-        "value": 0
-      }
-    },
-    "3": {
-      "$base": "Sequence",
-      "voltage": {
-        "$base": "Real",
-        "value": "4.3"
-      },
-      "value": {
-        "$base": "Real",
-        "value": "14000"
-      },
-      "adValue": {
-        "$base": "Unsigned",
-        "value": 0
-      }
-    },
-    "4": {
-      "$base": "Sequence",
-      "voltage": {
-        "$base": "Real",
         "value": "5"
       },
       "value": {
@@ -101,6 +71,6 @@
   },
   "hal-flags": {
     "$base": "BitString",
-    "value": ""
+    "value": "hvac"
   }
 }

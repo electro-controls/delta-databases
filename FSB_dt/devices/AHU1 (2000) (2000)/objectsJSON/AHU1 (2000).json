@@ -22,7 +22,7 @@
   },
   "system-status": {
     "$base": "Enumerated",
-    "value": "non-operational"
+    "value": "operational"
   },
   "reset": {
     "$base": "Boolean",
@@ -588,6 +588,9 @@
       "171": {
         "$base": "Choice"
       },
+      "172": {
+        "$base": "Choice"
+      },
       "$base": "Array"
     }
   },
@@ -613,11 +616,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "09:18:32.00"
+    "value": "08:12:54.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2024-08-27"
+    "value": "2024-09-04"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -714,7 +717,7 @@
     "$base": "Choice",
     "time-sync-timer": {
       "$base": "Unsigned",
-      "value": "42795"
+      "value": "5341538"
     }
   },
   "latitude": {
@@ -735,11 +738,11 @@
   },
   "last-reset-time": {
     "$base": "DateTime",
-    "value": "2024-08-27T09:00:42.000000-06:00"
+    "value": "2024-08-29T04:49:53.520000-06:00"
   },
   "reset-count": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "2"
   },
   "reason-for-reset": {
     "$base": "Enumerated",
@@ -766,7 +769,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "5.21739"
+    "value": "4.13043"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -874,7 +877,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "10714"
+      "value": "5306083"
     }
   },
   "logical-base-address": {
@@ -983,7 +986,7 @@
   },
   "database-revision": {
     "$base": "Unsigned",
-    "value": "23"
+    "value": "42"
   },
   "active-cov-subscriptions": {
     "$base": "List"

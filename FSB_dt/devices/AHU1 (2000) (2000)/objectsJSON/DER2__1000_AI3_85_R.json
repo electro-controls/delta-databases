@@ -58,7 +58,7 @@
   },
   "last-received": {
     "$base": "Unsigned",
-    "value": "10610"
+    "value": "5306041"
   },
   "update-frequency": {
     "$base": "Unsigned",
