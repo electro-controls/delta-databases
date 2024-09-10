@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
@@ -38,7 +38,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "10"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -104,10 +104,16 @@
       }
     },
     "4": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "5": {
-      "$base": "Choice"
+      "$base": "Choice",
+      "null": {
+        "$base": "Null"
+      }
     },
     "6": {
       "$base": "Choice",
@@ -193,7 +199,7 @@
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "value": "device,4178302"
+      "unspecifiedValue": "true"
     },
     "6": {
       "$base": "ObjectIdentifier",
@@ -256,11 +262,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:09:07.40"
+      "value": "2024-09-05T08:03:56.90"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-08-27T11:58:53.00"
+      "value": "2024-09-04T09:09:15.40"
     },
     "6": {
       "$base": "DateTime",
@@ -280,7 +286,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:09:07.20"
+      "value": "2024-09-05T08:03:56.90"
     },
     "11": {
       "$base": "DateTime",

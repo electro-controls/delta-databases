@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": "private2"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",

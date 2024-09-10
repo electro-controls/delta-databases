@@ -38,7 +38,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -58,7 +58,7 @@
   },
   "device-type": {
     "$base": "String",
-    "value": ""
+    "value": "UH1_Valve 0-10V 0-100 % AOC"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -263,7 +263,7 @@
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-08-27T08:56:06.50"
+      "value": "2000-01-02T20:21:31.90"
     },
     "6": {
       "$base": "DateTime",
@@ -283,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:19:05.60"
+      "value": "2000-01-07T16:22:37.90"
     },
     "11": {
       "$base": "DateTime",
@@ -321,11 +321,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "255"
+    "value": 0
   },
   "output-volt": {
     "$base": "Real",
-    "value": "10"
+    "value": 0
   },
   "port-1-status": {
     "$base": "Enumerated",

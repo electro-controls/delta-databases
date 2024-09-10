@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "polarity;not-commissioned"
+    "value": "polarity"
   },
   "present-value": {
     "$base": "Real",
-    "value": "98.1637"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "5"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -110,10 +110,7 @@
       }
     },
     "5": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "6": {
       "$base": "Choice",
@@ -173,10 +170,7 @@
       }
     },
     "16": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "$base": "Array"
   },
@@ -199,7 +193,7 @@
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,4123456"
     },
     "6": {
       "$base": "ObjectIdentifier",
@@ -243,7 +237,7 @@
     },
     "16": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,4123456"
     },
     "$base": "Array"
   },
@@ -262,11 +256,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:12:41.70"
+      "value": "2024-09-05T08:07:42.20"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-09-04T07:59:57.80"
+      "value": "2024-09-04T14:01:39.10"
     },
     "6": {
       "$base": "DateTime",
@@ -286,7 +280,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:12:41.60"
+      "value": "2024-09-05T08:07:42.20"
     },
     "11": {
       "$base": "DateTime",
@@ -310,7 +304,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-09-04T09:16:23.20"
     },
     "$base": "Array"
   },
@@ -324,11 +318,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "4"
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": "0.183629"
+    "value": "10"
   },
   "port-1-status": {
     "$base": "Enumerated",

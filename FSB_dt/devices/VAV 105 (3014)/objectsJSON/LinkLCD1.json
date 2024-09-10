@@ -26,7 +26,7 @@
   },
   "change": {
     "$base": "Boolean",
-    "value": "1"
+    "value": 0
   },
   "line-1": {
     "$base": "String",

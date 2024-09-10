@@ -18,15 +18,15 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": "19999.9"
+    "value": "41.4688"
   },
   "last-value": {
     "$base": "Real",
-    "value": "19999.9"
+    "value": "41.4437"
   },
   "status-flags": {
     "$base": "BitString",
@@ -42,7 +42,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "195"
+    "value": "174"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "5305914"
+      "value": "6166879"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "4095"
+    "value": "9"
   },
   "calibration": {
     "$base": "Real",

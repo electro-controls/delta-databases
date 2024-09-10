@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -70,7 +70,7 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-05T15:15:31.500000-07:00"
+    "value": "2000-01-06T09:11:01.300000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-05T15:15:31.500000-07:00"
+      "value": "2000-01-06T09:11:01.300000-07:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-05T15:15:28.70"
+      "value": "2000-01-06T09:10:58.60"
     },
     "$base": "Array"
   },
@@ -320,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-05T15:15:49.10"
+      "value": "2000-01-06T09:11:25.00"
     },
     "11": {
       "$base": "DateTime",

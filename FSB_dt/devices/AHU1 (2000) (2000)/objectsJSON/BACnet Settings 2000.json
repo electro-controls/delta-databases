@@ -106,7 +106,7 @@
     "$base": "Sequence",
     "totalSent": {
       "$base": "Unsigned",
-      "value": "883060"
+      "value": "1040687"
     },
     "sentByApp": {
       "$base": "Unsigned",
@@ -122,7 +122,7 @@
     },
     "totalRcvd": {
       "$base": "Unsigned",
-      "value": "43739"
+      "value": "66954"
     },
     "rcvdByApp": {
       "$base": "Unsigned",
@@ -211,7 +211,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "24863508"
+          "value": "28897873"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -227,7 +227,7 @@
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": "5"
+          "value": "9"
         }
       },
       "filterFlags": {
@@ -273,7 +273,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "11667230"
+          "value": "13487641"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -281,15 +281,15 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "130660771"
+          "value": "152032082"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
-          "value": "1771"
+          "value": "2063"
         },
         "protocolErrors": {
           "$base": "Unsigned",
-          "value": "18"
+          "value": "21"
         }
       },
       "filterFlags": {
@@ -335,7 +335,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "49299"
+          "value": "57300"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -397,7 +397,7 @@
         "$base": "Sequence",
         "totalSent": {
           "$base": "Unsigned",
-          "value": "71286"
+          "value": "120869"
         },
         "sendFailures": {
           "$base": "Unsigned",
@@ -405,7 +405,7 @@
         },
         "totalRcvd": {
           "$base": "Unsigned",
-          "value": "92963"
+          "value": "148852"
         },
         "invalidRcvd": {
           "$base": "Unsigned",
@@ -789,7 +789,7 @@
   },
   "free-que": {
     "$base": "Unsigned",
-    "value": "32"
+    "value": "33"
   },
   "short-free-que": {
     "$base": "Unsigned",

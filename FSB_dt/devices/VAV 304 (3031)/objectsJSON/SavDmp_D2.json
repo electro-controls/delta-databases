@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Enumerated",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-06T22:39:02.400000-07:00"
+    "value": "2000-01-07T18:45:17.100000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "23822"
+    "value": "28060"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-06T22:39:02.400000-07:00"
+      "value": "2000-01-07T18:45:17.100000-07:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-06T22:39:00.30"
+      "value": "2000-01-07T18:44:24.10"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "5"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -140,10 +140,7 @@
       }
     },
     "5": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "6": {
       "$base": "Choice",
@@ -233,7 +230,7 @@
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,4123456"
     },
     "6": {
       "$base": "ObjectIdentifier",
@@ -300,7 +297,7 @@
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-01-02T19:25:54.00"
+      "value": "2000-01-07T18:45:17.00"
     },
     "6": {
       "$base": "DateTime",
@@ -320,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-06T22:47:08.70"
+      "value": "2000-01-08T16:37:38.60"
     },
     "11": {
       "$base": "DateTime",

@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": "private2"
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-09-04T08:00:02.900000-06:00"
+    "value": "2024-09-04T14:00:40.900000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "2"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-08-29T04:49:55.40"
+      "value": "2024-09-04T14:00:40.900000-06:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:00:02.900000-06:00"
+      "value": "2024-09-04T08:00:02.90"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "5"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -140,10 +140,7 @@
       }
     },
     "5": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "6": {
       "$base": "Choice",
@@ -233,7 +230,7 @@
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,4123456"
     },
     "6": {
       "$base": "ObjectIdentifier",
@@ -296,11 +293,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:12:49.70"
+      "value": "2024-09-09T16:12:14.70"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-09-04T07:59:57.80"
+      "value": "2024-09-04T14:00:40.80"
     },
     "6": {
       "$base": "DateTime",
@@ -320,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:12:49.70"
+      "value": "2024-09-09T16:12:14.80"
     },
     "11": {
       "$base": "DateTime",
@@ -354,11 +351,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "255"
+    "value": 0
   },
   "output-volt": {
     "$base": "Real",
-    "value": "10"
+    "value": 0
   },
   "module-type": {
     "$base": "Enumerated",
@@ -406,7 +403,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Active"
+    "value": "Inactive"
   },
   "time-delay": {
     "$base": "Unsigned",

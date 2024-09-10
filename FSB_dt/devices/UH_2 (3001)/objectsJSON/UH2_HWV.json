@@ -38,7 +38,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -283,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-05T17:37:58.30"
+      "value": "2000-01-06T11:42:22.00"
     },
     "11": {
       "$base": "DateTime",

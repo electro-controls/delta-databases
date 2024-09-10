@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -70,7 +70,7 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-08-13T11:38:05.900000-06:00"
+    "value": "2024-08-29T04:47:55.000000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -83,7 +83,7 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-08-13T11:38:05.900000-06:00"
+      "value": "2024-08-29T04:47:55.000000-06:00"
     },
     "2": {
       "$base": "DateTime",
@@ -293,7 +293,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:07:33.30"
+      "value": "2024-09-05T06:52:04.10"
     },
     "5": {
       "$base": "DateTime",
@@ -317,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:07:33.30"
+      "value": "2024-09-05T06:52:04.10"
     },
     "11": {
       "$base": "DateTime",

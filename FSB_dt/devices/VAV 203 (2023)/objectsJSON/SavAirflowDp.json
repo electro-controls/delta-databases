@@ -42,7 +42,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "458"
+    "value": "449"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,7 +92,7 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "706432"
+      "value": "723617"
     }
   },
   "ad-value": {
@@ -109,7 +109,7 @@
   },
   "decimal-places": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "3"
   },
   "external-control": {
     "$base": "Boolean",

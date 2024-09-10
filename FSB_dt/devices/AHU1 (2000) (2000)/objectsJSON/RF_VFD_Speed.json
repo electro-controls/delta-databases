@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": "100"
+    "value": 0
   },
   "status-flags": {
     "$base": "BitString",
@@ -38,7 +38,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -78,7 +78,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "5"
   },
   "relinquish-default": {
     "$base": "Real",
@@ -110,10 +110,7 @@
       }
     },
     "5": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "6": {
       "$base": "Choice",
@@ -199,7 +196,7 @@
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "unspecifiedValue": "true"
+      "value": "device,4123456"
     },
     "6": {
       "$base": "ObjectIdentifier",
@@ -262,11 +259,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:12:42.40"
+      "value": "2024-09-09T16:12:08.40"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-09-04T07:59:57.80"
+      "value": "2024-09-04T14:01:15.80"
     },
     "6": {
       "$base": "DateTime",
@@ -286,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:12:42.30"
+      "value": "2024-09-09T16:12:08.50"
     },
     "11": {
       "$base": "DateTime",
@@ -310,7 +307,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-09-09T16:10:22.50"
     },
     "$base": "Array"
   },
@@ -324,11 +321,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "255"
+    "value": 0
   },
   "output-volt": {
     "$base": "Real",
-    "value": "10"
+    "value": 0
   },
   "port-1-status": {
     "$base": "Enumerated",

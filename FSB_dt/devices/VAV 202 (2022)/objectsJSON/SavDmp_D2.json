@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Enumerated",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-08-26T14:03:56.500000-06:00"
+    "value": "2000-01-08T16:37:28.400000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "2"
+    "value": "39427"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-08-26T14:03:56.500000-06:00"
+      "value": "2000-01-08T16:37:28.400000-07:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:00:01.90"
+      "value": "2000-01-08T16:37:25.20"
     },
     "$base": "Array"
   },
@@ -300,7 +300,7 @@
     },
     "5": {
       "$base": "DateTime",
-      "value": "2000-01-01T14:14:08.40"
+      "value": "2000-01-06T23:07:27.50"
     },
     "6": {
       "$base": "DateTime",
@@ -320,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:37:05.50"
+      "value": "2000-01-08T16:37:35.50"
     },
     "11": {
       "$base": "DateTime",

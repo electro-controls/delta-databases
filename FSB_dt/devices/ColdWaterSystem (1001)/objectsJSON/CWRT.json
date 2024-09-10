@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "-58"
+    "value": "63.7071"
   },
   "last-value": {
     "$base": "Real",
@@ -42,7 +42,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -66,7 +66,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "195"
+    "value": "200"
   },
   "min-pres-value": {
     "$base": "Real",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "12009658"
+      "value": "5346619"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "4095"
+    "value": "2356"
   },
   "calibration": {
     "$base": "Real",

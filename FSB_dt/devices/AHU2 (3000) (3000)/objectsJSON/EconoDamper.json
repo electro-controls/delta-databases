@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
@@ -38,7 +38,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -196,7 +196,7 @@
     },
     "5": {
       "$base": "ObjectIdentifier",
-      "value": "device,4123456"
+      "value": "device,*"
     },
     "6": {
       "$base": "ObjectIdentifier",
@@ -259,11 +259,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-09-03T15:51:12.90"
+      "value": "2024-09-05T08:03:56.90"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-09-04T07:47:36.20"
+      "value": "2024-09-05T06:25:34.50"
     },
     "6": {
       "$base": "DateTime",
@@ -283,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:09:07.20"
+      "value": "2024-09-05T08:03:56.90"
     },
     "11": {
       "$base": "DateTime",

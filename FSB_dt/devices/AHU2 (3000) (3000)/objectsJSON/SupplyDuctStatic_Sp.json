@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Real",
-    "value": "0.6"
+    "value": "1.6"
   },
   "gcl-value": {
     "$base": "Real",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,4178302"
+    "value": "device,4123456"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-09-03T15:43:56.800000-06:00"
+    "value": "2024-09-04T11:35:28.900000-06:00"
   },
   "cov-increment": {
     "$base": "Real",

@@ -26,7 +26,7 @@
   },
   "gcl-value": {
     "$base": "Real",
-    "value": "384"
+    "value": "412"
   },
   "status-flags": {
     "$base": "BitString",
@@ -54,11 +54,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,*"
+    "value": "program,11143"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-02-28T12:01:26.300000-07:00"
+    "value": "2000-01-02T21:21:44.900000-07:00"
   },
   "cov-increment": {
     "$base": "Real",

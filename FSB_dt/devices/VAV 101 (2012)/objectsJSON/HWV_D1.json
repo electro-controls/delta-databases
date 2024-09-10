@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -70,7 +70,7 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-08-27T08:16:54.400000-06:00"
+    "value": "2000-01-07T16:15:24.100000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-08-27T08:16:54.400000-06:00"
+      "value": "2000-01-07T13:31:57.10"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-01T12:00:02.00"
+      "value": "2000-01-07T16:15:24.100000-07:00"
     },
     "$base": "Array"
   },
@@ -108,7 +108,7 @@
   },
   "current-priority": {
     "$base": "Unsigned",
-    "value": "10"
+    "value": "5"
   },
   "critical-control": {
     "$base": "Boolean",
@@ -140,10 +140,7 @@
       }
     },
     "5": {
-      "$base": "Choice",
-      "null": {
-        "$base": "Null"
-      }
+      "$base": "Choice"
     },
     "6": {
       "$base": "Choice",
@@ -300,7 +297,7 @@
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-02-13T09:14:32.40"
+      "value": "2000-01-07T16:15:24.100000-07:00"
     },
     "6": {
       "$base": "DateTime",
@@ -320,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-08-27T09:26:13.20"
+      "value": "2000-01-07T16:24:44.20"
     },
     "11": {
       "$base": "DateTime",
@@ -354,11 +351,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "10"
   },
   "module-type": {
     "$base": "Enumerated",
@@ -406,7 +403,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "Active"
   },
   "time-delay": {
     "$base": "Unsigned",

@@ -18,11 +18,11 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": "private2"
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "status-flags": {
     "$base": "BitString",
@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -70,11 +70,11 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-09-04T07:59:57.800000-06:00"
+    "value": "2024-09-04T14:00:40.900000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "7"
+    "value": "8"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-09-03T15:08:24.80"
+      "value": "2024-09-04T14:00:40.900000-06:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2024-09-04T07:59:57.800000-06:00"
+      "value": "2024-09-04T07:59:57.80"
     },
     "$base": "Array"
   },
@@ -296,11 +296,11 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:12:49.70"
+      "value": "2024-09-09T16:18:33.20"
     },
     "5": {
       "$base": "DateTime",
-      "value": "2024-09-04T07:59:57.800000-06:00"
+      "value": "2024-09-09T15:53:01.90"
     },
     "6": {
       "$base": "DateTime",
@@ -320,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:12:49.70"
+      "value": "2024-09-09T16:18:33.20"
     },
     "11": {
       "$base": "DateTime",
@@ -354,11 +354,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": "255"
+    "value": 0
   },
   "output-volt": {
     "$base": "Real",
-    "value": "10"
+    "value": 0
   },
   "module-type": {
     "$base": "Enumerated",
@@ -406,7 +406,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Active"
+    "value": "Inactive"
   },
   "time-delay": {
     "$base": "Unsigned",

@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "polarity;not-commissioned"
+    "value": "polarity"
   },
   "present-value": {
     "$base": "Real",
@@ -38,7 +38,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -262,7 +262,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:12:41.70"
+      "value": "2024-09-05T08:07:42.20"
     },
     "5": {
       "$base": "DateTime",
@@ -286,7 +286,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-09-04T08:12:41.60"
+      "value": "2024-09-05T08:07:42.20"
     },
     "11": {
       "$base": "DateTime",

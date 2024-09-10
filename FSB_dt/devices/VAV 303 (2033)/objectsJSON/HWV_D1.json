@@ -34,7 +34,7 @@
   },
   "commission-flag": {
     "$base": "Enumerated",
-    "value": "not-commissioned"
+    "value": "commissioned"
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
@@ -70,7 +70,7 @@
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2000-01-05T09:00:41.900000-07:00"
+    "value": "2000-01-06T06:55:54.200000-07:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
@@ -83,11 +83,11 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2000-01-05T09:00:41.900000-07:00"
+      "value": "2000-01-06T06:55:26.90"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2000-01-05T09:00:39.10"
+      "value": "2000-01-06T06:55:54.200000-07:00"
     },
     "$base": "Array"
   },
@@ -320,7 +320,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2000-01-05T13:06:26.60"
+      "value": "2000-01-06T06:55:55.30"
     },
     "11": {
       "$base": "DateTime",
@@ -354,11 +354,11 @@
   },
   "da-value": {
     "$base": "Unsigned",
-    "value": 0
+    "value": "255"
   },
   "output-volt": {
     "$base": "Real",
-    "value": 0
+    "value": "10"
   },
   "module-type": {
     "$base": "Enumerated",
@@ -406,7 +406,7 @@
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "Active"
   },
   "time-delay": {
     "$base": "Unsigned",

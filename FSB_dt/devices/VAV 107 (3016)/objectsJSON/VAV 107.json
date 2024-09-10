@@ -1015,11 +1015,11 @@
   },
   "local-time": {
     "$base": "Time",
-    "value": "18:26:36.00"
+    "value": "09:50:29.00"
   },
   "local-date": {
     "$base": "Date",
-    "value": "2000-01-05"
+    "value": "2000-01-07"
   },
   "time-zone-enable": {
     "$base": "Boolean",
@@ -1168,7 +1168,7 @@
   },
   "scan-rate": {
     "$base": "Real",
-    "value": "2.18182"
+    "value": "1.92308"
   },
   "io-scan-rate": {
     "$base": "Real",
@@ -1276,7 +1276,7 @@
     "$base": "Choice",
     "object-execution-timer": {
       "$base": "Unsigned",
-      "value": "3687968"
+      "value": "5106300"
     }
   },
   "logical-base-address": {
