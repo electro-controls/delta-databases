@@ -1,0 +1,36 @@
+//Boiler sequence
+Variable EffDemand
+Variable B1Call
+Variable B1Rate
+
+B1Rate = Scale ('Eff_Demand', 0, 10, 0, 100, 'B1HWSLimit_CO')
+B1Call = Switch ( B1Call, ('Eff_Demand' * 'B1HWSLimit_CO' * 0.01), 8, 1)
+
+//boiler firerate
+If B1Call Then
+  'B1_Firerate' = Scale (B1Rate, 0, 0, 20, 100, 100)
+Else
+  'B1_Firerate' = 0
+End If
+
+//boiler startup loop reset
+IfOnce B1Call Then
+  'B1HWSLimit_CO.Bias' = 20
+End If
+
+Variable HWBiasHold
+//bias hold on starup
+IfOnce B1Call Then
+  HWBiasHold = On
+End If
+
+
+If HWBiasHold OnFor 30S Then
+  HWBiasHold = Off
+End If
+
+If HWBiasHold Then
+  'HWS_CO.Bias' = 'HWS_CO.Bias'
+End If
+
+//End

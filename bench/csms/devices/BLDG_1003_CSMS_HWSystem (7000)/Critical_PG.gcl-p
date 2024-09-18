@@ -1,0 +1,16 @@
+//Critical Program
+
+//Writes at a higher priority to 
+//override any other program or Manual Overrides 
+'Critical_PG.Write_Priority' = 4
+
+'MaxHWTemp' = 'HWS'
+
+'HWHighLimit' = Switch ( 'HWHighLimit', 'MaxHWTemp', 200, 180)
+
+If (Not 'PrimaryFlow') Or 'HWHighLimit' Or ('HWS' < 0) Then
+  'B1_Firerate' = 0
+ Else
+  Relinquish 'B1_Firerate'
+End If
+//End of Program
