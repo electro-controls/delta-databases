@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "private2;not-commissioned"
+    "value": "private2"
   },
   "present-value": {
     "$base": "Enumerated",
@@ -293,7 +293,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-09-05T06:52:04.10"
+      "value": "2024-09-11T09:24:32.00"
     },
     "5": {
       "$base": "DateTime",
@@ -317,7 +317,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-09-05T06:52:04.10"
+      "value": "2024-09-11T09:24:32.00"
     },
     "11": {
       "$base": "DateTime",
@@ -341,7 +341,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-09-11T09:23:56.10"
     },
     "$base": "Array"
   },

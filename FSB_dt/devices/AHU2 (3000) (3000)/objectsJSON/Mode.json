@@ -81,11 +81,11 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,2"
+    "value": "device,10999"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-08-30T08:30:11.300000-06:00"
+    "value": "2024-09-10T13:29:06.300000-06:00"
   },
   "text-value": {
     "$base": "String",

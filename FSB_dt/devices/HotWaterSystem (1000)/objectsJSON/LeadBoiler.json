@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Unsigned",
-    "value": "1"
+    "value": "2"
   },
   "gcl-value": {
     "$base": "Unsigned",
@@ -69,15 +69,15 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "device,999"
+    "value": "device,10999"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "*-*-*-*T*:*:*.*"
+    "value": "2024-09-11T09:23:02.700000-06:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "B1"
+    "value": "B2"
   },
   "hal-flags": {
     "$base": "BitString",

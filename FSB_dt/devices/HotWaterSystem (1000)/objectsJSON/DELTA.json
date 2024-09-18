@@ -1,28 +1,36 @@
 {
   "displayName": "DELTA",
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
   "object-identifier": {
     "$base": "ObjectIdentifier",
     "value": "sua,1"
-  },
-  "object-type": {
-    "$base": "Enumerated",
-    "value": "system-user-access"
   },
   "object-name": {
     "$base": "String",
     "value": "DELTA"
   },
-  "description": {
-    "$base": "String",
-    "value": ""
-  },
-  "flags": {
-    "$base": "BitString",
-    "value": ""
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "system-user-access"
   },
   "present-value": {
     "$base": "Enumerated",
     "value": "logged-out"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "object-size": {
+    "$base": "Unsigned",
+    "value": "411"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
   },
   "reset": {
     "$base": "Boolean",
@@ -890,10 +898,6 @@
       "value": "delete"
     },
     "$base": "Array"
-  },
-  "status-flags": {
-    "$base": "BitString",
-    "value": ""
   },
   "hal-flags": {
     "$base": "BitString",

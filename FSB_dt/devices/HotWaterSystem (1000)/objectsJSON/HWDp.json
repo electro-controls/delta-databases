@@ -18,15 +18,15 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
-    "value": "0.0633706"
+    "value": "0.0702083"
   },
   "last-value": {
     "$base": "Real",
-    "value": "0.0610501"
+    "value": "0.0763133"
   },
   "status-flags": {
     "$base": "BitString",
@@ -92,12 +92,12 @@
     "$base": "Choice",
     "filter-delay-timer": {
       "$base": "Unsigned",
-      "value": "6122854"
+      "value": "11398375"
     }
   },
   "ad-value": {
     "$base": "Unsigned",
-    "value": "824"
+    "value": "822"
   },
   "calibration": {
     "$base": "Real",

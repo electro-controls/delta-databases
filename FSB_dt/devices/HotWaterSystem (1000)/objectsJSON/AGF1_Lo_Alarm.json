@@ -71,21 +71,21 @@
   "prev-change-of-state-times": {
     "1": {
       "$base": "DateTime",
-      "value": "2024-08-05T14:29:51.700000-06:00"
+      "value": "2024-09-03T08:05:46.700000-06:00"
     },
     "2": {
       "$base": "DateTime",
-      "value": "2024-08-05T14:29:51.40"
+      "value": "2024-09-03T08:03:37.60"
     },
     "$base": "Array"
   },
   "change-of-state-time": {
     "$base": "DateTime",
-    "value": "2024-08-05T14:29:51.700000-06:00"
+    "value": "2024-09-03T08:05:46.700000-06:00"
   },
   "change-of-state-count": {
     "$base": "Unsigned",
-    "value": "12"
+    "value": "26"
   },
   "time-of-state-count-reset": {
     "$base": "DateTime",
@@ -93,7 +93,7 @@
   },
   "update-interval": {
     "$base": "Unsigned",
-    "value": "222"
+    "value": "220"
   },
   "time-delay": {
     "$base": "Unsigned",

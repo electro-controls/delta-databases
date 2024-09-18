@@ -18,7 +18,7 @@
   },
   "flags": {
     "$base": "BitString",
-    "value": "not-commissioned"
+    "value": ""
   },
   "present-value": {
     "$base": "Real",
@@ -259,7 +259,7 @@
     },
     "4": {
       "$base": "DateTime",
-      "value": "2024-09-05T06:52:23.40"
+      "value": "2024-09-11T09:23:51.20"
     },
     "5": {
       "$base": "DateTime",
@@ -283,7 +283,7 @@
     },
     "10": {
       "$base": "DateTime",
-      "value": "2024-09-05T06:52:23.30"
+      "value": "2024-09-11T09:23:51.30"
     },
     "11": {
       "$base": "DateTime",
@@ -307,7 +307,7 @@
     },
     "16": {
       "$base": "DateTime",
-      "value": "*-*-*-*T*:*:*.*"
+      "value": "2024-09-11T09:23:32.50"
     },
     "$base": "Array"
   },

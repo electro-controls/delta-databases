@@ -66,7 +66,7 @@
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-08-27T09:08:21.600000-06:00"
+    "value": "2024-09-11T09:24:40.500000-06:00"
   },
   "text-value": {
     "$base": "String",

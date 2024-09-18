@@ -1,8 +1,8 @@
 {
-  "displayName": "HWP1_Status",
+  "displayName": "BP1Status",
   "object-identifier": {
     "$base": "ObjectIdentifier",
-    "value": "binary-value,21"
+    "value": "binary-value,10231"
   },
   "object-type": {
     "$base": "Enumerated",
@@ -10,7 +10,7 @@
   },
   "object-name": {
     "$base": "String",
-    "value": "HWP1_Status"
+    "value": "BP1Status"
   },
   "description": {
     "$base": "String",
@@ -38,7 +38,7 @@
   },
   "type-reference": {
     "$base": "ObjectIdentifier",
-    "value": "bdc,2"
+    "unspecifiedValue": "true"
   },
   "event-state": {
     "$base": "Enumerated",
@@ -54,23 +54,23 @@
   },
   "active-text": {
     "$base": "String",
-    "value": "Active"
+    "value": "ON"
   },
   "inactive-text": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "OFF"
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "value": "program,8"
+    "unspecifiedValue": "true"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2024-09-11T09:24:39.700000-06:00"
+    "value": "*-*-*-*T*:*:*.*"
   },
   "text-value": {
     "$base": "String",
-    "value": "Inactive"
+    "value": "OFF"
   },
   "hal-flags": {
     "$base": "BitString",

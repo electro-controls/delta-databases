@@ -14,14 +14,14 @@ If 'HW_HWP1Status' Or 'HW_HWP2Status' Then
     'HW_HWPFlow' = Off
 End If
 
-//
-If (HWP1Enable_XXX And Not 'HW_BP1Status') OnFor 'HW_PumpFailDly_Sp':S Then
+// todo replace with hwp statuses, not boiler pump statuses in standard
+If (HWP1Enable_XXX And Not 'HW_HWP1Status') OnFor 'HW_PumpFailDly_Sp':S Then
     'HW_HWP1Fail' = On
   Else
     'HW_HWP1Fail' = Off
 End If
 
-If (HWP2Enable_XXX And Not 'HW_BP2Status') OnFor 'HW_PumpFailDly_Sp':S Then
+If (HWP2Enable_XXX And Not 'HW_HWP2Status') OnFor 'HW_PumpFailDly_Sp':S Then
     'HW_HWP2Fail' = On
   Else
     'HW_HWP2Fail' = Off
@@ -81,7 +81,7 @@ End If
 //Pump ramp sequence to provide a smooth start when
 //pump is enabled. This minimizes Loop overshoot on start.
 //HWP1 Demand
-If 'HW_BP1Status' And HWP1Call Then
+If 'HW_HWP1Status' And HWP1Call Then
     DoEvery 10S
       'HWP1Ramp' = Min (100, 'HWP1Ramp' + (100 / ('HWPmpRamp_Sp' * 6)))
     End Do
@@ -102,7 +102,7 @@ Else
 End If
 
 //HWP2 Demand 
-If 'HW_BP2Status' And HWP2Call Then
+If 'HW_HWP2Status' And HWP2Call Then
     DoEvery 10S
       'HWP2Ramp' = Min (100, 'HWP2Ramp' + (100 / ('HWPmpRamp_Sp' * 6)))
     End Do
