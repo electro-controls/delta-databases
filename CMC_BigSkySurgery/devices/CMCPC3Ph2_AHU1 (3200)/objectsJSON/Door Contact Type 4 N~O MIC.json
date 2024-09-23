@@ -1,0 +1,93 @@
+{
+  "displayName": "Door Contact Type 4 N/O MIC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,4"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-input-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Door Contact Type 4 N/O MIC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Door Closed"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Door Open"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Trouble (shorted)"
+    },
+    "4": {
+      "$base": "String",
+      "value": "Trouble (open)"
+    },
+    "$base": "Array"
+  },
+  "voltage-range": {
+    "1": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": "1.17"
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": "2.89"
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": "2.9"
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": "4.02"
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": "1.16"
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": "4.03"
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": "5"
+      }
+    },
+    "$base": "Array"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "accesscontrol"
+  }
+}

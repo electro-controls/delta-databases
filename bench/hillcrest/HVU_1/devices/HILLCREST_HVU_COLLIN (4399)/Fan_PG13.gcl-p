@@ -1,0 +1,28 @@
+'Fan_PG13.Write_Priority' = 13
+
+////On/Off single speed fan sequence. Delete other fan pages and make sure this page is called.
+If ('ZoneOccMode' <> 1) Then //Unoccupied
+    If 'FanMode' And ('ZoneOccMode' <> 2) Then //Continuous and not standby
+      'SF_Enable' = On
+    ElseIf  ('ZoneHtDemand') Then
+      'SF_Enable' = On
+    Else
+      'SF_Enable' = Off
+    End If
+ElseIf  ('ZoneOccMode' = 6) Then //Purge mode
+    'SF_Enable' = On
+Else
+    If ('ZoneUnocHtCall') Then
+      'SF_Enable' = On
+    Else
+      'SF_Enable' = Off
+    End If
+End If
+
+'FanStatus' = Switch ( 'FanStatus', 'SF_Status', 0.45, 0.3)
+
+If 'FanStatus' Then //Note: add addition airflow interlocks when avaialable
+    'RunStatusInt' = On
+  Else
+    'RunStatusInt' = Off
+End If

@@ -1,0 +1,35 @@
+{
+  "displayName": "DWP1_DWP2  BDC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,9"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-device-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "DWP1_DWP2  BDC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "DWP1"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "DWP2"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

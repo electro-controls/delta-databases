@@ -1,0 +1,2 @@
+// trigger
+'CUH2_Enable' = ('CUH2_ZoneTemp' < 'CUH2_Zone_EffSp')

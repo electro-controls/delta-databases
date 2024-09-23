@@ -1,0 +1,138 @@
+'PG10110.Write_Priority' = 13
+//VARIABLES: Search and replace variables with the actual I/O of your application
+Variable HWP1Enable_XXX
+Variable HWP2Enable_XXX
+Variable HWP1Speed_XXX
+Variable HWP2Speed_XXX
+Variable HWP1Current_XXX
+Variable HWP2Current_XXX
+//DELETE this note and the above references after the search and replace is performed
+
+If 'HW_HWP1Status' Or 'HW_HWP2Status' Then
+    'HW_HWPFlow' = On
+  Else
+    'HW_HWPFlow' = Off
+End If
+
+// todo replace with hwp statuses, not boiler pump statuses in standard
+If (HWP1Enable_XXX And Not 'HW_HWP1Status') OnFor 'HW_PumpFailDly_Sp':S Then
+    'HW_HWP1Fail' = On
+  Else
+    'HW_HWP1Fail' = Off
+End If
+
+If (HWP2Enable_XXX And Not 'HW_HWP2Status') OnFor 'HW_PumpFailDly_Sp':S Then
+    'HW_HWP2Fail' = On
+  Else
+    'HW_HWP2Fail' = Off
+End If
+
+Variable HWP1Manual
+Variable HWP2Manual
+
+//REMOVE comments and this note after search and replace of pump enables
+//If Not 'HWP1Enable_xxx.PriorityArray[5]' Then
+//    HWP1Manual = On
+//  ElseIf  Not 'HWP1Enable_xxx.PriorityArray[8]' Then
+//    HWP1Manual = On
+//  Else
+    HWP1Manual = Off
+//End If
+//If Not 'HWP2Enable_xxx.PriorityArray[5]' Then
+//    HWP2Manual = On
+//  ElseIf  Not 'HWP2Enable_xxx.PriorityArray[8]' Then
+//    HWP2Manual = On
+//  Else
+    HWP2Manual = Off
+//End If
+
+Variable HWP1Call
+Variable HWP2Call
+If 'HW_HWPCall' And (('HW_LeadPump' = 1) Or 'HW_HWP2Fail' Or HWP2Manual Or 'HW_HWPLagAssist') Then
+    HWP1Enable_XXX = On
+    HWP1Call = On
+End If
+
+If Not 'HW_HWPCall' Then
+    HWP1Call = Off
+ ElseIf  (Not 'HW_HWPLagAssist') And (('HW_LeadPump' = 2)) And (Not 'HW_HWP2Fail') And (Not HWP2Manual) And (HWP2Speed_XXX >= (HWP1Speed_XXX * 0.9)) Then
+    HWP1Call = Off
+End If
+
+If 'HWP1Ramp' < 1 And Not HWP1Call Then
+  HWP1Enable_XXX = Off
+End If
+
+If 'HW_HWPCall' And ((('HW_LeadPump' = 2)) Or 'HW_HWP1Fail' Or HWP1Manual Or 'HW_HWPLagAssist') Then
+    HWP2Enable_XXX = On
+    HWP2Call = On
+End If
+If Not 'HW_HWPCall' Then
+    HWP2Call = Off
+  ElseIf  (Not 'HW_HWPLagAssist') And ('HW_LeadPump' = 1) And (Not 'HW_HWP1Fail') And (Not HWP1Manual) And (HWP1Speed_XXX >= (HWP2Speed_XXX * 0.9)) Then
+    HWP2Call = Off
+End If
+
+If 'HWP2Ramp' < 1 And Not HWP2Call Then
+  HWP2Enable_XXX = Off
+End If
+
+
+//Pump ramp sequence to provide a smooth start when
+//pump is enabled. This minimizes Loop overshoot on start.
+//HWP1 Demand
+If 'HW_HWP1Status' And HWP1Call Then
+    DoEvery 10S
+      'HWP1Ramp' = Min (100, 'HWP1Ramp' + (100 / ('HWPmpRamp_Sp' * 6)))
+    End Do
+   Else
+    DoEvery 10S
+      'HWP1Ramp' = Max (0, 'HWP1Ramp' - (100 / ('HWPmpRamp_Sp' * 16)))
+    End Do
+End If
+
+If HWP1Manual Off Then
+ If HWP1Enable_XXX Then
+    HWP1Speed_XXX = ('HWP1Ramp' * 0.01) * 'HWDp_CO'
+  Else
+    HWP1Speed_XXX = 'HWP1Ramp'
+ End If
+Else
+ HWP1Speed_XXX = 0
+End If
+
+//HWP2 Demand 
+If 'HW_HWP2Status' And HWP2Call Then
+    DoEvery 10S
+      'HWP2Ramp' = Min (100, 'HWP2Ramp' + (100 / ('HWPmpRamp_Sp' * 6)))
+    End Do
+  Else
+    DoEvery 10S
+      'HWP2Ramp' = Max (0, 'HWP2Ramp' - (100 / ('HWPmpRamp_Sp' * 16)))
+    End Do
+End If
+
+If HWP2Manual Off Then
+ If HWP2Enable_XXX Then
+    HWP2Speed_XXX = ('HWP2Ramp' * 0.01) * 'HWDp_CO'
+  Else
+    HWP2Speed_XXX = 'HWP2Ramp'
+ End If
+Else
+ HWP2Speed_XXX = 0
+End If
+
+
+If 'HW_SystemEnable' OffFor 'HWPmpOffDelay_Sp':M Then
+    'HW_HWPCall' = Off
+  Else
+    'HW_HWPCall' = On
+End If
+
+If ((Not 'HW_HWPLagAssist') And ('HWPmpRamp' > 99) And ('HWDp_CO' > 98) And ('HWDp' < ('HWDp_Sp' * 0.95))) OnFor 15M Then
+    'HW_HWPLagAssist' = On
+End If
+
+If (('HWDp_CO' < 50) And ('HWDp' >= ('HWDp_Sp' * 0.98))) OnFor 15M Then
+    'HW_HWPLagAssist' = Off
+End If

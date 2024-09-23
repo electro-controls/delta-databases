@@ -1,0 +1,12 @@
+'HW_Critical_PG4.Write_Priority' = 4
+
+'HW_HWHighLimit' = Switch ( 'HW_HWHighLimit', 'HW_MaxHWTemp', 190, 180)
+
+///Replace Enable with FireRate in the following section if Fire Rate only on boilers
+If 'HW_HWHighLimit' Or ('HW_B1LWT' < 0) Or (Not 'HW_HWP1Status') Or (Not 'HW_HWPFlow') Then
+  'B1_Enable' = Off
+  'Temp_Local_Sp' = 0
+ Else
+   Relinquish 'B1_Enable'
+   Relinquish 'Temp_Local_Sp'
+End If

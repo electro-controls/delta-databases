@@ -1,0 +1,68 @@
+//Economizer sequence
+//Economizer ramp dalay is automatically longer during
+//cold weather.
+'EconRampDly' = Scale ('Eff_OAT', 0, 0, 4000, 60, 60)
+'MATLimit' = 'MATLimit_CO'
+
+//Determines if free cooling can be achived by comparing
+// OAT and RAT
+
+If 'Eff_OAT' > 'FreeCoolingLO_Sp' Then
+    'FreeCooling' = Off
+End If
+
+If ('Eff_OAT' < 'FreeCoolingLO_Sp') And ('FreeCooling' OffFor 5M) Then
+    'FreeCooling' = On
+End If
+
+
+
+Variable RAStaticLimit
+RAStaticLimit = Scale ('RADuctStatic_CO', 0, 70, 100, 100, 70)
+
+If 'FreeCooling' And (Not 'LoStatic') And ('Mode' = 1 Or 'Mode' = 4 Or 'Mode' = 6) And 'EconMode' Then //Occ/UnOcc Cooling/Purge
+    'EconClgPct' = Scale ('DATClg_CO', 0, 0, 0, 40, RAStaticLimit)
+  Else
+    DoEvery 10S
+    'EconClgPct' = Max (0, 'EconClgPct' - 2)
+    End Do
+End If
+
+//hey...not real crazy about building static pressure...this is a shot at
+//giving it a little authority on the min OA position. This might have to be
+//shit canned and use building static as a refernce/trend only, or perhaps to bias
+//the return duct static loop...food for thought
+Variable BldgBias
+BldgBias = Scale ('BuildingStatic_CO', 0, 0, 5, 100, 20)
+
+If 'RunStatusInt' And ('Mode' = 1) Then
+    'EconCalcMinOA' = Scale ('MinOA_CO', 0, 0, BldgBias, 100, 40) //limiting max (40) to prevent possible Frz issue
+  Else
+    'EconCalcMinOA' = 0
+End If
+
+//CG Added Per Ron wanting the Economizer to never go above 75 becusae of problems with static pressure. 
+Variable EconLimit
+
+If 'RunStatusInt' And ('Mode' = 1 Or 'Mode' = 4 Or 'Mode' = 6) Then //Occ/UnOcc Cooling/Purge
+    EconLimit = (Max ('EconCalcMinOA', 'EconClgPct')) * ('EconRampPct' * 0.01) * ('MATLimit_CO' * 0.01)
+    'Economizer' = Min ('EconMaxPos_Sp', EconLimit) //per Ron never wants Econ to open more then 75 CG 6/10/2014
+Else
+    'Economizer' = 0
+End If
+
+Variable MATInt
+
+If ('MAT' < ('MATLimit_Sp' - 5)) OnFor 30S Then
+    MATInt = Off
+  Else
+    MATInt = On
+End If
+
+If 'RunStatusInt' And MATInt And ('Mode' = 1 Or 'Mode' = 4 Or 'Mode' = 6) Then //Occ/UnOcc Cooling/Purge
+   DoEvery 10S
+   'EconRampPct' = Min (100, 'EconRampPct' + (100 / 'EconRampDly' * 10))
+   End Do
+  Else
+   'EconRampPct' = 0
+End If

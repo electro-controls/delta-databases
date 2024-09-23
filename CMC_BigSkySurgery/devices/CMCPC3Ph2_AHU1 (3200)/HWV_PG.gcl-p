@@ -1,0 +1,52 @@
+//HWV Sequence
+Variable ItsCold
+Variable HWVstandby
+Variable HWVSignal
+ItsCold = Switch ( ItsCold, 'MAT', 45, 48)
+
+//If its cold we want the valve to go open when fan is off
+//for frost prevention.
+If ItsCold Or 'FreezeStat' Then
+    HWVstandby = 100
+  Else
+    HWVstandby = 0
+End If
+
+//This prevents the valve from going open after
+//cooling has been running.
+If 'Mode' = 6 Then
+    'PurgeHold' = On
+End If
+If ('Mode' <> 6) OnFor 6H Then
+    'PurgeHold' = Off
+End If
+
+If 'PurgeHold' Then
+    'HWMode' = Off
+  Else
+    'HWMode' = Switch ( 'HWMode', 'DATHtg_CO', 'DATClg_CO' + 5, 'DATClg_CO' - 5)
+End If
+
+
+ If ItsCold Or 'HWMode' Then
+    HWVSignal = 'DATHtg_CO'
+ Else
+    HWVSignal = 0
+ End If
+
+ If 'RunStatusInt' Then
+    'HWV' = HWVSignal
+  Else
+    'HWV' = HWVstandby
+End If
+
+Variable CWLoopHold
+If 'HWV' > 2 Then
+    CWLoopHold = On
+End If
+If ('HWV' < 1) OnFor 60S Then
+  CWLoopHold = Off
+End If
+If CWLoopHold Then
+  'DATClg_CO.Bias' = 1
+End If

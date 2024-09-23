@@ -1,0 +1,26 @@
+'CUH2_Critical_PG.Write_Priority' = 4
+
+//software freeze mode
+If ('CUH2_Eff_ZoneTemp' < 42) OnFor 60S Then
+    'CUH2_FreezeMode' = On
+    //done
+End If
+
+If ('CUH2_Eff_ZoneTemp' > 45) OnFor 60S Then
+    'CUH2_FreezeMode' = Off
+    // done
+End If
+
+If PowerUp Then
+    'CUH2_FreezeMode' = Off
+End If
+
+
+If 'CUH2_FreezeMode' Then
+    'CUH2_Enable' = On
+  Else
+    Relinquish 'CUH2_Enable'
+End If
+
+
+//end of critical page

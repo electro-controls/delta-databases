@@ -1,0 +1,10 @@
+'HW_BlrSeq_PG13_SetPoint_Option.Write_Priority' = 13
+
+//B1
+If ('HW_B1Call' And 'HW_HWP1Status') OnFor 10S Then //Use BP BO if status is not availabe
+  'B1_Enable' = On
+Else
+  'B1_Enable' = Off
+End If
+
+'Temp_Local_Sp' = Scale ('HW_HWS_Sp', 0, 100, 0, 185, 100) //todo field verify

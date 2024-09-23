@@ -1,0 +1,108 @@
+'AHx_Dx34_PG13.Write_Priority' = 13
+//VARIABLES: Search and replace variables with the actual I/O of your application
+Variable DX3Enable_XXX
+Variable DX4Enable_XXX
+//Delete this note and the above references after the search and replace is performed
+
+//Outdoor Air Interlocks
+'AHx_Dx3OAInt' = Switch ( 'AHx_Dx3OAInt', 'OAT_Eff', 'AHx_Dx3OATInt_Sp', 'AHx_Dx3OATInt_Sp' - 3)
+'AHx_Dx4OAInt' = Switch ( 'AHx_Dx4OAInt', 'OAT_Eff', 'AHx_Dx4OATInt_Sp', 'AHx_Dx4OATInt_Sp' - 3)
+
+IfOnce DX3Enable_XXX Then
+    'AHx_DxDATDemand' = Off
+End If
+IfOnce DX4Enable_XXX Then
+    'AHx_DxDATDemand' = Off
+End If
+
+
+If ((('AHx_DATClg_CO' >= 99) And 'AHx_Dx3OAInt' And 'AHx_DxDATDemand') OnFor 60S) And ('AHx_Dx2OnTime' > 5) Then
+    'AHx_Dx3Call' = On
+End If
+
+If (('AHx_DAT' < ('AHx_DATClg_Sp' - 3)) And ('AHx_Dx4OffTime' > 3) And ('AHx_DATClg_CO' < 5) And DX3Enable_XXX) OnFor 30M Then //Low demand drop off
+    'AHx_Dx3Call' = Off
+End If
+If (('AHx_MAT' < ('AHx_DATClg_Sp' - 3)) And ('AHx_Dx4OffTime' > 3) And DX3Enable_XXX) OnFor 300S Then //Low MAT drop off
+    'AHx_Dx3Call' = Off
+End If
+If (('OAT_Eff' < ('AHx_DATClg_Sp')) And ('AHx_Dx4OffTime' > 3) And DX3Enable_XXX) OnFor 30M Then //Revert back to economizer when OAT is cold enough
+    'AHx_Dx3Call' = Off
+End If
+If ('AHx_DAT' < 43) And ('AHx_Dx4OffTime' > 3) OnFor 5M Then //frost prevention drop off
+    'AHx_Dx3Call' = Off
+End If
+If (Not 'AHx_Dx3OAInt') Then //OAT Int drop off
+    'AHx_Dx3Call' = Off
+End If
+IfOnce (Not DX3Enable_XXX) Then //Accounts for a manual override off
+    'AHx_Dx3Call' = Off
+End If
+
+If 'AHx_Dx3Call' And 'AHx_Dx3OAInt' And 'AHx_DxMinAirflowInt' And ('AHx_Dx2OnTime' > 5) Then
+    DX3Enable_XXX = On
+  Else
+    DX3Enable_XXX = Off
+End If
+
+IfOnce DX3Enable_XXX Then //Use compressor current feedback when available
+    'AHx_DATClg_CO.Bias' = 'AHx_DATClg_CO.Bias' * 0.5 //offsets DAT Clg loop so capacity signal will go to mid range
+End If
+
+If DX3Enable_XXX Then
+    DoEvery 15S
+    'AHx_Dx3OnTime' = 'AHx_Dx3OnTime' + 0.25
+    End Do
+    'AHx_Dx3OffTime' = 0
+  Else
+    'AHx_Dx3OnTime' = 0
+    DoEvery 15S
+    'AHx_Dx3OffTime' = 'AHx_Dx3OffTime' + 0.25
+    End Do
+End If
+
+
+If ((('AHx_DATClg_CO' >= 99) And 'AHx_Dx4OAInt' And 'AHx_DxDATDemand') OnFor 60S) And ('AHx_Dx2OnTime' > 5) Then
+    'AHx_Dx4Call' = On
+End If
+
+If (('AHx_DAT' < ('AHx_DATClg_Sp' - 3)) And ('AHx_DATClg_CO' < 5) And DX4Enable_XXX) OnFor 30M Then //Low demand drop off
+    'AHx_Dx4Call' = Off
+End If
+If (('AHx_MAT' < ('AHx_DATClg_Sp' - 3)) And DX4Enable_XXX) OnFor 300S Then //Low MAT drop off
+    'AHx_Dx4Call' = Off
+End If
+If (('OAT_Eff' < ('AHx_DATClg_Sp')) And DX4Enable_XXX) OnFor 30M Then //Revert back to economizer when OAT is cold enough
+    'AHx_Dx4Call' = Off
+End If
+If ('AHx_DAT' < 43) OnFor 5M Then //frost prevention drop off
+    'AHx_Dx4Call' = Off
+End If
+If (Not 'AHx_Dx4OAInt') Then //OAT Int drop off
+    'AHx_Dx4Call' = Off
+End If
+IfOnce (Not DX4Enable_XXX) Then //Accounts for a manual override off
+    'AHx_Dx4Call' = Off
+End If
+
+If 'AHx_Dx4Call' And 'AHx_Dx4OAInt' And 'AHx_DxMinAirflowInt' And ('AHx_Dx2OnTime' > 5) Then
+    DX4Enable_XXX = On
+  Else
+    DX4Enable_XXX = Off
+End If
+
+IfOnce DX4Enable_XXX Then //Use compressor current feedback when available
+    'AHx_DATClg_CO.Bias' = 'AHx_DATClg_CO.Bias' * 0.5 //offsets DAT Clg loop so capacity signal will go to mid range
+End If
+
+If DX4Enable_XXX Then
+    DoEvery 15S
+    'AHx_Dx4OnTime' = 'AHx_Dx4OnTime' + 0.25
+    End Do
+    'AHx_Dx4OffTime' = 0
+  Else
+    'AHx_Dx4OnTime' = 0
+    DoEvery 15S
+    'AHx_Dx4OffTime' = 'AHx_Dx4OffTime' + 0.25
+    End Do
+End If

@@ -1,0 +1,73 @@
+//Hot Water System Program
+
+//Allows for remote manual override of loop demand
+If 'Rem_Demand' >= 0 Then
+    'Eff_Demand' = 'Rem_Demand'
+  Else
+    'Eff_Demand' = 'Loc_Demand'
+End If
+
+//Calculated HW demand percent. 
+'Loc_Demand' = 'SystemRamp' * 0.01 * 'HWS_CO'
+
+//Boiler Demand
+Variable RampMult
+
+//Ramp delay factors the ramp delay time. If the system is warm,
+//we dont need as long of a ramp.
+RampMult = Scale ('HWS', 0, 110, 1, 140, 0.1)
+
+Variable Iscold
+Variable SystemCold
+
+Iscold = Switch ( Iscold, 'Eff_OAT', 35, 38)
+SystemCold = Switch ( SystemCold, 'HWS', 50, 120)
+
+//System enable
+If ('HWSystemMode' = 1) Then //auto
+    If 'Rem_HWHeatCall' Or 'OATInt1' Or 'OATInt2' Then
+      'SystemEnable' = On
+    Else
+      'SystemEnable' = Off
+    End If
+  ElseIf  ('HWSystemMode' = 2) Then //man on
+      'SystemEnable' = On
+  Else
+      'SystemEnable' = Off
+End If
+
+If 'SystemEnable' OffFor 60S Then
+    'HWS_CO.Bias' = 1
+End If
+
+//Outdoor Air Interlocks
+If ('Eff_OAT' < 'OATInt1_Sp') Then
+    DoEvery 1.5M
+    'OATInt1TimeLeft' = Max (0, 'OATInt1TimeLeft' - 0.025)
+    End Do
+End If
+
+If ('Eff_OAT' > 'OATInt1_Sp') Then
+    'OATInt1TimeLeft' = 'OATDelayInt1_Sp'
+End If
+
+If 'OATInt1TimeLeft' > 0 Then
+    'OATInt1' = Off
+  Else
+    'OATInt1' = On
+End If
+
+'OATInt2' = Switch ( 'OATInt2', 'Eff_OAT', 'OATInt2_Sp' - 1, 'OATInt2_Sp' + 1)
+
+//Boiler ramp sequence to provide a smooth start when
+//HW system is enabled or when pumps have been off line.
+//This minimizes boiler shock and Loop overshoot on cold starts.
+If 'SystemEnable' Then
+    DoEvery 10S
+      'SystemRamp' = Min (100, 'SystemRamp' + (100 / ('SystemRamp_Sp' * RampMult * 6)))
+    End Do
+  Else
+    'SystemRamp' = 0
+End If
+
+//End of Program

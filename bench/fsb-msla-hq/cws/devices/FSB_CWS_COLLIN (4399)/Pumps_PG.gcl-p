@@ -1,0 +1,58 @@
+//Pump sequence
+
+//manual off, lag assist, & pump calls:
+
+//determine if pumps are manually off in delta or tridium
+Variable CWP1ManualOff
+Variable CWP2ManualOff
+
+If Not 'CWP1_Enable.Priority_Array[5]' Then
+    CWP1ManualOff = On
+  ElseIf  Not 'CWP1_Enable.Priority_Array[8]' Then
+    CWP1ManualOff = On
+  Else
+    CWP1ManualOff = Off
+End If
+
+If Not 'CWP2_Enable.Priority_Array[5]' Then
+    CWP2ManualOff = On
+  ElseIf  Not 'CWP2_Enable.Priority_Array[8]' Then
+    CWP2ManualOff = On
+  Else
+    CWP2ManualOff = Off
+End If
+
+//turn on lag assist latch if lead pump has fully ramped and is pegged for 10min
+If (Not 'CWPLagAssist') And (('CWP1_Ramp' >= 100) Or ('CWP2_Ramp' >= 100)) And ('CWDp_CO' > 'PLagStart_Sp') And ('CWDp' < 0.9 * 'CWDp_Sp') OnFor 10M Then
+    'CWPLagAssist' = On
+End If
+
+If 'CWPLagAssist' And ('CWDp_CO' < 'PLagStop_Sp') OnFor 10M Then
+    'CWPLagAssist' = Off
+End If
+
+//CWP1 call
+If 'SystemEnable' And (('LeadPump' = 1) Or CWP2ManualOff Or 'CWP2_Fail' Or (('LeadPump' = 2) And 'CWPLagAssist')) Then
+    'CWP1_Call' = On
+End If
+
+If (('LeadPump' = 2) And (Not CWP2ManualOff) And (Not 'CWP2_Fail') And (Not 'CWPLagAssist')) Then
+    'CWP1_Call' = Off
+End If
+
+If 'SystemEnable' OffFor 15M Then
+    'CWP1_Call' = Off
+End If
+
+//P2 call
+If 'SystemEnable' And (('LeadPump' = 2) Or CWP1ManualOff Or 'CWP1_Fail' Or (('LeadPump' = 1) And 'CWPLagAssist')) Then
+    'CWP2_Call' = On
+End If
+
+If (('LeadPump' = 1) And (Not CWP1ManualOff) And (Not 'CWP1_Fail') And (Not 'CWPLagAssist')) Then
+    'CWP2_Call' = Off
+End If
+
+If 'SystemEnable' OffFor 15M Then
+    'CWP2_Call' = Off
+End If

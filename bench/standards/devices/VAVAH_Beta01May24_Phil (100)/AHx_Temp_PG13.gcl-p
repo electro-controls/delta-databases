@@ -1,0 +1,53 @@
+'AHx_Temp_PG13.Write_Priority' = 13
+//VARIABLES: Search and replace variables with the actual I/O of your application
+Variable HWV_XXX
+Variable CWV_XXX
+//Delete this note and the above references after the search and replace is performed
+
+If ('AHx_DATClg_CO' > 5) OnFor 30S Then
+    'AHx_HeatCoolMode' = Off //cooling
+End If
+If ('AHx_DATClg_CO' <= 0) And ('AHx_DATHtg_CO' > 5) And ('AHx_HeatCoolMode' OffFor 5M) Then
+    'AHx_HeatCoolMode' = On //heating
+End If
+IfOnce 'AHx_HeatCoolMode' Changed Then //allows for smooth transition of heat/cool
+    'AHx_DATHtg_CO.Bias' = 1
+    'AHx_DATClg_CO.Bias' = 1
+End If
+
+
+//HWV sequence
+If 'AHx_MAT' < 300 Then //Valid MAT
+  If 'AHx_RunStatusInt' And 'AHx_HeatCoolMode' Then
+    HWV_XXX = 'AHx_DATHtg_CO'
+  ElseIf  'AHx_RunStatusInt' Then
+    HWV_XXX = 0
+  Else
+    HWV_XXX = Scale ('AHx_EconMATLimit_CO', 0, 0, 100, 100, 'AHx_DATHtg_CO') //Standing by MA Loop is inverted
+  End If
+Else //No Valid MAT
+  If 'AHx_RunStatusInt' And 'AHx_HeatCoolMode' Then
+    HWV_XXX = 'AHx_DATHtg_CO'
+  ElseIf  'AHx_RunStatusInt' Then
+    HWV_XXX = 0
+  Else
+    HWV_XXX = Scale ('OAT_Eff', 0, 0, 100, 35, 50) //HWV position could be modified based on Glycol integrity
+  End If
+End If
+
+
+//Remove CWV section if Dx cooling is in play
+Variable CWVCall As Integer
+If ('AHx_SFUptime' > 15) And (Not 'AHx_HeatCoolMode') And 'AHx_EconFreeCooling' Then //Allows for time delay to let economizer take the lead
+    CWV_XXX = Scale ('AHx_DATClg_CO', 0, 'AHx_EconAuthority', 0, 100, 100) //Econ gets higher during colder weather
+    CWVCall = On
+  ElseIf  ('AHx_SFUptime' > 1) And (Not 'AHx_HeatCoolMode') Then
+    CWV_XXX = Scale ('AHx_DATClg_CO', 0, 0, 0, 100, 100) //Full authority to CWV
+    CWVCall = On
+  ElseIf  ('AHx_SFUptime' > 1) Then
+    CWV_XXX = 0 //CWV standing by waiting for mode change
+    CWVCall = Off
+  Else
+    CWV_XXX = 0 //Modifiy this fail safe position if non glycol CW coil and depending on HW vs CW coil arrangement
+    CWVCall = Off
+End If

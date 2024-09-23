@@ -1,0 +1,79 @@
+{
+  "displayName": "SavZeroCountCal",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,11161"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "SavZeroCountCal"
+  },
+  "description": {
+    "$base": "String",
+    "value": "Used to hold the offset for Zero calibration.  This value represents the A to D count of the airflow transducer at 0 cfm.  The damper should be closed and the fan off.  This should not be overriden once the Auto Zero has been used. \nThe default on a new job should be set to -1. This will invoke alerts to ensure zero cal is complete. TAB will not be allowed to calibrate box until azero cal is performed."
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "414"
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": "414"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": ""
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,11143"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-01T17:04:52.700000-07:00"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

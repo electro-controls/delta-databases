@@ -1,0 +1,42 @@
+//Heat page
+
+Variable currentStage
+Variable previousStage
+
+// replace below then with comment if commissioners are dicks
+If (('Eff_OAT' < 'OAT_Trigger_Below_Sp') And ('GUH1_Heat_CO' >= 50)) Then // And ((currentStage = 1) OnFor 30:M) Then
+
+    'GUH_1_Stage_1' = On
+    'GUH_1_Stage_2' = On
+
+    previousStage = currentStage
+    currentStage = 2
+
+ElseIf  ('Eff_OAT' < 'OAT_Trigger_Below_Sp') And (Not (lockDownStage And currentStage = 2)) Then
+
+    'GUH_1_Stage_2' = Off
+    If ('GUH1_Heat_CO' >= 10) Then
+        'GUH_1_Stage_1' = On
+        previousStage = currentStage
+        currentStage = 1
+    Else
+        'GUH_1_Stage_1' = Off
+        previousStage = currentStage
+        currentStage = 0
+    End If
+ElseIf  (Not (lockDownStage And currentStage = 2)) Then
+    'GUH_1_Stage_1' = Off
+    'GUH_1_Stage_2' = Off
+    previousStage = currentStage
+    currentStage = 0
+End If
+
+//set timeout when raising stages, prevents dropping stage soon after initiating
+Variable lockDownStage
+If (currentStage > previousStage) Then
+    lockDownStage = On
+End If
+
+If (lockDownStage OnFor 'Decrease_Stage_Lockout_Sp':S) Then
+    lockDownStage = Off
+End If

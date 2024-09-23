@@ -1,0 +1,39 @@
+'Fan_PG13.Write_Priority' = 13
+////The follow variable is for a placeholder. Use search and replace to the actual Fan BO
+Variable Fan_BO As Integer
+////The follow variable is for a placeholder. Use search and replace to the actual Fan Current AI
+Variable FanCurrent_AI
+
+
+////On/Off single speed fan sequence. Delete other fan pages and make sure this page is called.
+
+If ('ZoneOccMode' <> 1) Then //Unoccupied
+    If 'FanMode' And ('ZoneOccMode' <> 2) Then //Continuous and not standby
+      Fan_BO = On
+    ElseIf  ('ZoneClDemand' Or 'ZoneHtDemand') Then
+      Fan_BO = On
+    Else
+      Fan_BO = Off
+    End If
+ElseIf  ('ZoneOccMode' = 6) Then //Purge mode
+    If 'Zone_EffClg' > 10 Then
+      Fan_BO = On
+    End If
+    If ('Zone_EffClg' < 5) OnFor 15M Then
+      Fan_BO = Off
+    End If
+Else
+    If ('ZoneUnocClCall' Or 'ZoneUnocHtCall') Then
+      Fan_BO = On
+    Else
+      Fan_BO = Off
+    End If
+End If
+
+'FanStatus' = Switch ( 'FanStatus', FanCurrent_AI, 0.45, 0.3)
+
+If 'FanStatus' Then //Note: add addition airflow interlocks when avaialable 
+    'RunStatusInt' = On
+  Else
+    'RunStatusInt' = Off
+End If

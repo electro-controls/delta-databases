@@ -1,0 +1,86 @@
+{
+  "displayName": "LeadBoiler",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "multi-state-value,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "LeadBoiler"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Unsigned",
+    "value": "2"
+  },
+  "gcl-value": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,1"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "2"
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Boiler 1"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Boiler 2"
+    },
+    "$base": "Array"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "unspecifiedValue": "true"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2023-07-16T03:43:19.800000-06:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Boiler 2"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

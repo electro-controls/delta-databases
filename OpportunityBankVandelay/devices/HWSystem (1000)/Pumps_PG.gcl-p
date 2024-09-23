@@ -1,0 +1,138 @@
+//Pump Status
+  'HWP1_Status' = Switch ( 'HWP1_Status', 'HWP1_Current', 0.5, 0.25)
+  'HWP2_Status' = Switch ( 'HWP2_Status', 'HWP2_Current', 0.5, 0.25)
+
+  'HW_BP1_Status' = Switch ( 'HW_BP1_Status', 'BP1_Current', 0.4, 0.2)
+  'HW_BP2_Status' = Switch ( 'HW_BP2_Status', 'BP2_Current', 0.4, 0.2)
+  'HW_BP3_Status' = Switch ( 'HW_BP3_Status', 'BP3_Current', 0.4, 0.2)
+  'DHWP1_Status' = Switch ( 'DHWP1_Status', 'DHWP1_Current', 0.17, 0.1)
+
+//Pump Failure
+If (HWP1Call And Not 'HWP1_Status') OnFor 'PumpFailDly_Sp':S Then
+  'HWP1_Fail' = On
+Else
+  'HWP1_Fail' = Off
+End If
+
+If (HWP2Call And Not 'HWP2_Status') OnFor 'PumpFailDly_Sp':S Then
+  'HWP2_Fail' = On
+Else
+  'HWP2_Fail' = Off
+End If
+
+Variable HWP1Manual
+Variable HWP2Manual
+
+If Not 'HWP1_Speed.Priority_Array[5]' Then
+  HWP1Manual = On
+ElseIf  Not 'HWP1_Speed.Priority_Array[8]' Then
+  HWP1Manual = On
+Else
+  HWP1Manual = Off
+End If
+If Not 'HWP2_Speed.Priority_Array[5]' Then
+  HWP2Manual = On
+ElseIf  Not 'HWP2_Speed.Priority_Array[8]' Then
+  HWP2Manual = On
+Else
+  HWP2Manual = Off
+End If
+
+
+//Grundfos optimized sequence for analog signal only performing linear control with stop feature
+Variable HWP1Call
+Variable HWP2Call
+If 'SystemEnable' Then
+  If ('HWPLead' Or 'HWP2_Fail' Or HWP2Manual Or 'HWPLagAssist') Then
+    HWP1Call = On
+  End If
+  If (Not 'HWPLead') And (Not 'HWP2_Fail') And (Not 'HWPLagAssist') And (Not HWP2Manual) And ('HWP2_Speed' >= ('HWP1_Speed' * 0.9)) Then
+    HWP1Call = Off
+  End If
+
+  If ((Not 'HWPLead') Or 'HWP1_Fail' Or HWP1Manual Or 'HWPLagAssist') Then
+    HWP2Call = On
+  End If
+
+  If 'HWPLead' And (Not 'HWP1_Fail') And (Not 'HWPLagAssist') And (Not HWP1Manual) And ('HWP1_Speed' >= ('HWP2_Speed' * 0.9)) Then
+    HWP2Call = Off
+  End If
+ElseIf  ('SystemEnable' OffFor 20M) Or (('OATInt1' Or 'OATInt2' Or ('HWSystemMode' = 2)) OffFor 20M) Then
+  HWP1Call = Off
+  HWP2Call = Off
+End If
+
+
+//Pump ramp sequence to provide a smooth start when
+//pump is enabled. This minimizes Loop overshoot on start.
+//HWP1 Demand
+Variable HWP1ramp
+If 'HWP1_Status' And HWP1Call Then
+  DoEvery 10S
+    HWP1ramp = Min (100, HWP1ramp + (100 / ('HWPmpRamp_Sp' * 6)))
+  End Do
+Else
+  DoEvery 10S
+    HWP1ramp = Max (0, HWP1ramp - (100 / ('HWPmpRamp_Sp' * 16)))
+  End Do
+End If
+
+Variable HWP1SpeedDem
+HWP1SpeedDem = ((HWP1ramp * 0.01) * 'HWDp_CO')
+
+If HWP1Call Then
+  'HWP1_Speed' = Max (HWP1SpeedDem, 15)
+Else
+  'HWP1_Speed' = 0
+End If
+
+//HWP2 Demand
+Variable HWP2ramp
+If 'HWP2_Status' And HWP2Call Then
+  DoEvery 10S
+    HWP2ramp = Min (100, HWP2ramp + (100 / ('HWPmpRamp_Sp' * 6)))
+  End Do
+Else
+  DoEvery 10S
+    HWP2ramp = Max (0, HWP2ramp - (100 / ('HWPmpRamp_Sp' * 16)))
+  End Do
+End If
+
+Variable HWP2SpeedDem
+HWP2SpeedDem = ((HWP2ramp * 0.01) * 'HWDp_CO')
+
+If HWP2Call Then
+  'HWP2_Speed' = Max (HWP2SpeedDem, 15)
+Else
+  'HWP2_Speed' = 0
+End If
+
+//Flow interlock
+Variable DpFlow
+DpFlow = Switch ( DpFlow, 'Eff_HWDP', ('HWDp_Sp' * 0.3), ('HWDp_Sp' * 0.1))
+
+If ('HWP1_Status' Or 'HWP2_Status') And DpFlow Then
+  'PrimaryFlow' = On
+Else
+  'PrimaryFlow' = Off
+End If
+
+//DP Selection
+If 'DP_Select' = 1 Then
+  'Eff_HWDP' = 'HWDp1'
+ElseIf  'DP_Select' = 2 Then
+  'Eff_HWDP' = 'HWDp2'
+ElseIf  'DP_Select' = 3 Then
+  'Eff_HWDP' = 'HWDp3'
+ElseIf  'DP_Select' = 4 Then
+  'Eff_HWDP' = Average ('HWDp1', 'HWDp2', 'HWDp3')
+End If
+
+
+If (('HWP1_Speed' >= 15 Or 'HWP2_Speed' >= 15) And ('HWDp_CO' >= 100)) OnFor 60S Then
+    'HWPLagAssist' = On
+End If
+
+If ('HWPLagAssist' OnFor 30M) And ('HWDp_CO' < 65) Then
+    'HWPLagAssist' = Off
+End If

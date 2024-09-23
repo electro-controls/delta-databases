@@ -1,0 +1,29 @@
+  //control valve sequence
+
+If 'PurgeHold' Then
+    'HWMode' = Off
+  ElseIf  ('ControlMode' = 2) Then //cooling
+    'HWMode' = Off
+  ElseIf  ('ControlMode' = 3) And ('PrevControlMode' = 2) Then //deadband and previous cooling
+    'HWMode' = Off
+  Else
+    'HWMode' = On
+End If
+
+If ('OccMode' = 6) Then //Purge
+    'PurgeHold' = On
+End If
+
+If ('OccMode' <> 6) OnFor 'PurgeHoldDly_Sp':H Then
+    'PurgeHold' = Off
+End If
+
+
+//HWV
+If 'HWMode' Then
+    'HWV' = On
+  Else
+    'HWV' = Off
+End If
+
+//end of HWV  page

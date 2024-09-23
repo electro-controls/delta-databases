@@ -1,0 +1,236 @@
+{
+  "displayName": "Event and Alarm Settings 3014",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "evs,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "event-and-alarm-settings"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Event and Alarm Settings 3014"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "max-notification-records": {
+    "$base": "Unsigned",
+    "value": "10"
+  },
+  "retry-interval": {
+    "$base": "Unsigned",
+    "value": "60"
+  },
+  "object-lock-wait-time": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-event-list-type": {
+    "$base": "Enumerated",
+    "value": "track-local-events"
+  },
+  "auto-load-active-event-list": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "max-event-activity-records": {
+    "$base": "Unsigned",
+    "value": "20"
+  },
+  "v3-master-panel-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "unspecifiedValue": "true"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "all",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "auto-connect-devices": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "event-notifications-in-use": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "event-activity-records-in-use": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "cob-long-format": {
+    "$base": "Array"
+  },
+  "cos-long-format": {
+    "$base": "Array"
+  },
+  "cov-long-format": {
+    "$base": "Array"
+  },
+  "command-failure-long-format": {
+    "$base": "Array"
+  },
+  "floating-limit-long-format": {
+    "$base": "Array"
+  },
+  "out-of-range-long-format": {
+    "$base": "Array"
+  },
+  "proprietary-long-format": {
+    "$base": "Array"
+  },
+  "buffer-ready-long-format": {
+    "$base": "Array"
+  },
+  "v2-long-format": {
+    "$base": "Array"
+  },
+  "cob-short-format": {
+    "$base": "Array"
+  },
+  "cos-short-format": {
+    "$base": "Array"
+  },
+  "cov-short-format": {
+    "$base": "Array"
+  },
+  "command-failure-short-format": {
+    "$base": "Array"
+  },
+  "floating-limit-short-format": {
+    "$base": "Array"
+  },
+  "out-of-range-short-format": {
+    "$base": "Array"
+  },
+  "proprietary-short-format": {
+    "$base": "Array"
+  },
+  "buffer-ready-short-format": {
+    "$base": "Array"
+  },
+  "v2-short-format": {
+    "$base": "Array"
+  },
+  "stats": {
+    "1": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "2": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "3": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "4": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "5": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "6": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "7": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "8": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "9": {
+      "$base": "Unsigned",
+      "value": "10"
+    },
+    "10": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "11": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "12": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "13": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "14": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "15": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "16": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "17": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "18": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "19": {
+      "$base": "Unsigned",
+      "value": "10"
+    },
+    "20": {
+      "$base": "Unsigned",
+      "value": 0
+    },
+    "$base": "Array"
+  },
+  "connect-duration": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "retry-timer": {
+    "$base": "Choice",
+    "retry-timer": {
+      "$base": "Unsigned",
+      "value": 0
+    }
+  },
+  "local-active-count": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "local-unacked-count": {
+    "$base": "Unsigned",
+    "value": 0
+  }
+}

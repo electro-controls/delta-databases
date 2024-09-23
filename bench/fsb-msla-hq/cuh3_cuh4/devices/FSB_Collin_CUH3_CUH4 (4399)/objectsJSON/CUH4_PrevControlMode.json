@@ -1,0 +1,90 @@
+{
+  "displayName": "CUH4_PrevControlMode",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "multi-state-value,10204"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "CUH4_PrevControlMode"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "gcl-value": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,3"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "number-of-states": {
+    "$base": "Unsigned",
+    "value": "3"
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Heating"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Cooling"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Deadband"
+    },
+    "$base": "Array"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,14"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2024-07-02T10:30:07.500000-06:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Deadband"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

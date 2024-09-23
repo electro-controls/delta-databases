@@ -1,0 +1,29 @@
+'ZoneGeneral_PG13.Write_Priority' = 13
+//Power up defaults
+If PowerUp Then
+    'Zone_RemSchedule' = On
+    'Zone_RemSp' = - 1
+    'Zone_RemClg' = - 1
+    'Zone_RemHtg' = - 1
+    'DAT_RemSp' = - 1
+    'HWV_RemDemand' = - 1 //Only needed with 3pt floating
+    'Zone_RemWarmCall' = Off
+    'Zone_RemPurgeCall' = Off
+End If
+IfOnce 'JaceCfail' Then
+    'Zone_RemSchedule' = On
+    'Zone_RemWarmCall' = Off
+    'Zone_RemPurgeCall' = Off
+End If
+
+
+//Effective values
+'Zone_EffTemp' = 'ZoneTemp_Local'
+'RAT_Eff' = 'ZoneTemp_Local' //Refernce RAT input. If no RAT then reference zone temp
+'DAT_Eff' = 'DAT_Local'
+'MAT_Eff' = 'DAT_Local' //Refernce MAT input when available. If no MAT then refernce DAT AI
+'ZoneIAQ_Eff' = 'ZoneIAQ_Local' //Make this 0 if no CO2
+
+
+// Room Variance
+'ZoneVariance' = 'Zone_EffTemp' - 'Zone_EffSp'

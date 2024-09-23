@@ -1,0 +1,36 @@
+'Critical_PG.Write_Priority' = 4
+
+If ((Not 'FreezeMode') And ('DAT' < 42)) OnFor 120S Then
+    'FreezeMode' = On
+End If
+If ('DAT' > 45) And ('FreezeMode' OnFor 8H) Then //Auto retry
+    'FreezeMode' = Off
+End If
+
+If PowerUp Then //allow technician to reset by powering off and on
+    'FreezeMode' = Off
+End If
+
+
+
+ If 'FreezeMode' Or 'Smoke' Or 'Supply_Duct_Hi-Limit' Or 'Return_Duct_Low-Limit' Then
+      'SF_VFD_Enable' = Off
+      'RF_VFD_Enable' = Off
+      'SF_VFD_Speed' = 0
+      'RF_VFD_Speed' = 0
+      'EADamper' = 0
+      'HWV' = 100
+      'Economizer' = 0
+      'CWV' = 100
+   Else
+      Relinquish 'SF_VFD_Enable'
+      Relinquish 'RF_VFD_Enable'
+      Relinquish 'SF_VFD_Speed'
+      Relinquish 'RF_VFD_Speed'
+      Relinquish 'EADamper'
+      Relinquish 'HWV'
+      Relinquish 'Economizer'
+      Relinquish 'CWV'
+End If
+
+// Done

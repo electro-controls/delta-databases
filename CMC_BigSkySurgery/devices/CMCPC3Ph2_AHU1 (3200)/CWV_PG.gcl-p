@@ -1,0 +1,50 @@
+Variable CWVSignal
+Variable WWRamp
+
+If ('MAT' > 48) OnFor 60S Then //SR 3/30/20 Changed per Ron to 48 from 58
+    'WWMode' = On
+End If
+If ('MAT' < 45) OnFor 60S Then //SR 3/20/20 Changed per Ron to 45 from 52
+    'WWMode' = Off
+End If
+
+
+If 'WWMode' And (Not 'HWMode') Then
+    DoEvery 10S
+    WWRamp = Min (100, WWRamp + 1)
+    End Do
+  Else
+    DoEvery 10S
+    WWRamp = Max (0, WWRamp - 1)
+    End Do
+End If
+
+If ('CWV' = 0) And 'ItsBelowFrz' And ('WWMode' OffFor 15M) Then
+    DoEvery 10S
+    'CWDrain' = Min (100, 'CWDrain' + 1)
+    End Do
+  Else
+    'CWDrain' = 0
+End If
+
+If 'FreeCooling' Then
+    CWVSignal = Scale ('DATClg_CO', 0, 40, 0, 65, WWRamp) //Note: econ is from 0-40%
+ElseIf  'DXStg1_Demand' Or 'DXStg2_Demand' Then //Keep CWV full open for 2nd stage cooling with DX Call
+    CWVSignal = 100 * WWRamp * 0.01
+Else
+    CWVSignal = 'DATClg_CO' * WWRamp * 0.01
+End If
+
+//If ItsBelowFrz And RunStatusInt Then
+    //CWV = 25
+//ElseIf  RunStatusInt And (HWMode OffFor 60S) Then
+    //CWV = CWVSignal
+//Else
+    //CWV = 0
+//End If
+
+If 'RunStatusInt' And ('HWMode' OffFor 60S) And ('Mode' <> 6) Then
+    'CWV' = CWVSignal
+Else
+    'CWV' = 0
+End If

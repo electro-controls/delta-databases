@@ -1,0 +1,30 @@
+'Critical_PG.Write_Priority' = 4
+
+//equipment safeties
+
+//software high limit. set to trip before local hardware limits
+'MaxHWTemp' = Max ('HWST', 'HWRT')
+'HWHighLimit' = Switch ( 'HWHighLimit', 'MaxHWTemp', 195, 185)
+
+If 'HWHighLimit' Or (Not 'SystemFlow') Then
+    'HWP1_Enable' = Off
+    'HWP2_Enable' = Off
+    'B1_Enable' = Off
+    'B2_Enable' = Off
+    'B1_FireRate' = 0
+    'B2_FireRate' = 0
+    'HWP1_SpeedRef' = 0
+    'HWP2_SpeedRef' = 0
+  Else
+    Relinquish 'HWP1_Enable'
+    Relinquish 'HWP2_Enable'
+    Relinquish 'B1_Enable'
+    Relinquish 'B2_Enable'
+    Relinquish 'B1_FireRate'
+    Relinquish 'B2_FireRate'
+    Relinquish 'HWP1_SpeedRef'
+    Relinquish 'HWP2_SpeedRef'
+End If
+
+
+//end of critical page

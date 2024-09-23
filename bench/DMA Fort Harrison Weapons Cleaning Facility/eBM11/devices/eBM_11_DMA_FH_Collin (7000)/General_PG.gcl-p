@@ -1,0 +1,21 @@
+IfOnce PowerUp Then
+    'Eff_OAT' = 32
+End If
+
+'Eff_OAT' = 'OAT'
+
+If ('OAT_Trigger_Below_RemSp' >= 0) Then
+    'OAT_Trigger_Below_Sp' = 'OAT_Trigger_Below_RemSp'
+Else
+    'OAT_Trigger_Below_Sp' = 'OAT_Trigger_Below_LocSp'
+End If
+
+If ('Decrease_Stage_Lockout_RemSp' >= 0) Then
+    'Decrease_Stage_Lockout_Sp' = 'Decrease_Stage_Lockout_RemSp'
+Else
+    'Decrease_Stage_Lockout_Sp' = 'Decrease_Stage_Lockout_LocSp'
+End If
+
+// Alarm if zone temp falls below sp
+'GUH1_Ten_Degrees_Below_Setpoint' = ('GUH1_Zone_Temp' < ('Temp_Sp' - 10))
+'GUH2_Ten_Degrees_Below_Setpoint' = ('GUH2_Zone_Temp' < ('Temp_Sp' - 10))

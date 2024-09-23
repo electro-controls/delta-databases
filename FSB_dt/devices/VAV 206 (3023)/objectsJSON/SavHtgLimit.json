@@ -1,0 +1,79 @@
+{
+  "displayName": "SavHtgLimit",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,11146"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "SavHtgLimit"
+  },
+  "description": {
+    "$base": "String",
+    "value": "This limits the box from going to htg max if the DAT is not warmer then the room. This is tied to GCL programming if there is a DAT sensor. If the card does not have DAT then it should be left at 100% unless part of a supervisory sequence linked to the HW system status. Comment out GCL if GCL is not used."
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "100"
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": "100"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "%"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,11140"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-05T18:23:54.000000-07:00"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

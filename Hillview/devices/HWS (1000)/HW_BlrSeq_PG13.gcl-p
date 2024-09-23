@@ -1,0 +1,27 @@
+'HW_BlrSeq_PG13.Write_Priority' = 13
+
+//B1
+If 'HW_B1Call' And 'HW_HWP1Status' OnFor 10S Then //Use BP BO if status is not availabe
+    'B1_Enable' = On
+Else
+    'B1_Enable' = Off
+End If
+
+If 'B1_Enable' Then
+    DoEvery 10S
+     'HW_B1Ramp' = Min (100, 'HW_B1Ramp' + (100 / ('HW_FireRamp_Sp' * 6)))
+    End Do
+  Else
+    'HW_B1Ramp' = 0
+End If
+
+'HW_B1RateCall' = Scale ('HW_HWSDemand_Eff', 0, 0, 0, 100, 'HW_B1Ramp')
+
+If 'B1_Enable' And 'HW_HWP1Status' Then //Use run status if available
+    'B1FireRate' = Scale ('HW_B1RateCall', 0, 0, 'HW_B1CutOut_Sp', 100, 'HW_B1HWSLimit_CO')
+  Else
+    'B1FireRate' = 0
+End If
+
+
+ 

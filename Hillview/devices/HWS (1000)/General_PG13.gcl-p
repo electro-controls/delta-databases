@@ -1,0 +1,30 @@
+'General_PG13.Write_Priority' = 13
+If PowerUp Then
+  'OAT_Eff' = 35
+  'Uptime' = 0
+End If
+
+//Jace communication monitoring
+Variable JaceChanged As Integer
+If 'JaceUptime' Changed Then
+    JaceChanged = On
+End If
+If JaceChanged OnFor 10S Then
+    JaceChanged = Off
+End If
+
+If JaceChanged OffFor 10M Then
+    'JaceCfail' = On
+  Else
+    'JaceCfail' = Off
+End If
+
+//OAT reference
+'OAT_Loc' = Min ('OAT', 'OAT2')
+
+//delete later and write to Eff from front end
+'OAT_Eff' = 'OAT_Loc'
+
+'Snowmelt_Heat_Call' = '1001.SMS_SlabTempCall'
+'Pool_Heat_Call' = '1002.Heat_Call'
+'Spa_Heat_Call' = '1003.Heat_Call'

@@ -1,0 +1,106 @@
+{
+  "displayName": "DEL1__BI4_85",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "del,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "data-exchange-local-data"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "DEL1__BI4_85"
+  },
+  "exchange-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "exchange-type": {
+    "$base": "Enumerated",
+    "value": "cov-unconfirmed"
+  },
+  "last-error": {
+    "$base": "Signed",
+    "value": 0
+  },
+  "local-ref": {
+    "$base": "Sequence",
+    "type": "0-BACnetDeviceObjectPropertyReference",
+    "deviceIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "device,1003"
+    },
+    "objectIdentifier": {
+      "$base": "ObjectIdentifier",
+      "value": "binary-input,4"
+    },
+    "propertyIdentifier": {
+      "$base": "Enumerated",
+      "value": "present-value",
+      "type": "0-BACnetPropertyIdentifier"
+    }
+  },
+  "local-flags": {
+    "$base": "BitString",
+    "value": "out-of-service;not-commissioned"
+  },
+  "local-value": {
+    "$base": "Choice",
+    "enumerated": {
+      "$base": "Enumerated",
+      "value": "1"
+    }
+  },
+  "subscribers": {
+    "1": {
+      "$base": "Sequence",
+      "subscriber": {
+        "$base": "Choice",
+        "address": {
+          "$base": "Sequence",
+          "network-number": {
+            "$base": "Unsigned",
+            "value": "50010"
+          },
+          "mac-address": {
+            "$base": "Octet",
+            "value": "0x00"
+          }
+        }
+      },
+      "id": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "useConfirmed": {
+        "$base": "Boolean",
+        "value": "1"
+      },
+      "flags": {
+        "$base": "BitString",
+        "value": ""
+      },
+      "refreshTimer": {
+        "$base": "Choice",
+        "refreshTimer": {
+          "$base": "Unsigned",
+          "value": "3340179"
+        }
+      }
+    },
+    "$base": "Array"
+  },
+  "last-sent": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "send-frequency": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": 0
+  }
+}

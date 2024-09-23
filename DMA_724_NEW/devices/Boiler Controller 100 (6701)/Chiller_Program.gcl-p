@@ -1,0 +1,29 @@
+Variable ChillerOSA As Integer
+Variable ClgDmd As Integer
+
+ChillerOSA = Switch ( ChillerOSA, 'OSA_Temp', ('OSA_Pump_SP' + 2), ('OSA_Pump_SP' - 1))
+ClgDmd = Switch ( ClgDmd, 'CoolingDemand', 40, 10)
+
+
+If (ChillerOSA On And ClgDmd On) Or 'Chiller_SS' Then
+Start 'CWP_1_SS'
+End If
+
+If ('CWP_1_Stt' And ClgDmd And ChillerOSA) OnFor 1:M Then
+Start 'Chiller_SS'
+End If
+
+//Emergency Flow Shutdown
+If 'CWP_1_Stt' Off Then
+Stop 'Chiller_SS'
+End If
+
+//Normal Shutdown
+If (ChillerOSA Off Or ClgDmd Off) And ('Chiller_SS' OnFor 5:M) Then
+  Stop 'Chiller_SS'
+End If
+
+
+If (ChillerOSA Off Or ClgDmd Off) And ('Chiller_SS' OffFor 3:M) Then
+Stop 'CWP_1_SS'
+End If

@@ -1,0 +1,24 @@
+'AHx_General_PG13.Write_Priority' = 13
+
+//Power up defaults  These will be written to after power up from Jace.
+
+IfOnce PowerUp Then
+    'AHx_DATClg_Sp' = 60
+    'AHx_DATHtg_Sp' = 55
+    'AHx_EconMATLimit_Sp' = 50
+    'AHx_Mode' = 1 //Occupied
+End If
+IfOnce 'JaceCfail' Then
+  'AHx_Mode' = 1 //Occupied  
+  'AHx_DATClg_Sp' = Scale ('OAT_Eff', 0, 10, 65, 40, 55)
+  'AHx_DATHtg_Sp' = 'AHx_DATClg_Sp' - 5
+End If
+
+///Input references
+'AHx_DAT' = 'AHx_DAT_Local' //Reference DAT AI#
+'AHx_MAT' = 'AHx_MAT_Local' //302  //If NO MAT put in value 302
+'AHx_RAT' = 'AHx_RAT_Local' //If NO RAT remove this line and write avg zone temp from Tridium
+'AHx_DAH' = 50 //reference AI# if applicable 
+'AHx_RAH' = 50 //reference AI# if applicable
+'AHx_IAQ_Eff' = 0 //reference AI# if applicable, or this line should be delted if it is a remote Tridium refernce
+'AHx_DuctStatic' = 'AHx_SDuctStatic_Local' //Reference Duct Static AI#

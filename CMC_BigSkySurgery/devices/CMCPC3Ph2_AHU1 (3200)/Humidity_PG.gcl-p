@@ -1,0 +1,67 @@
+If (Not 'HumAirflowInterlock') And (('SpaceHumidity_CO' > 5) OnFor 5M) Then
+    DoEvery 30S
+    'HumidifierUptime' = 'HumidifierUptime' + 0.5
+    End Do
+  Else
+    'HumidifierUptime' = 0
+End If
+
+If 'DAH_RemSp' >= 0 Then
+    'DAH_EffSp' = 'DAH_RemSp'
+  Else
+    'DAH_EffSp' = 'DAH_LocSp'
+End If
+
+
+'Eff_SpaceHumidity' = Max ('RAH', 'SpaceHumidity_Rem') // add REMOTEZONE_HUMID if available
+
+
+'DAH_LocSp' = Scale ('SpaceHumidity_CO' * 'DewpointLimit_CO' * 0.01, 0, 10, 'DAHResetLow_Sp', 100, 'DAHResetHigh_Sp')
+
+
+If Not 'RunStatusInt' Then
+    'HumAirflowInterlock' = On
+End If
+    
+If 'RunStatusInt' OnFor 5M Then
+    'HumAirflowInterlock' = Off
+End If
+
+IfOnce (Not 'HumAirflowInterlock') Then
+    'SpaceHumidity_CO.Bias' = 1
+    'DAH_CO.Bias' = 1
+End If
+
+
+'HumiditySignal' = Scale ('HumidifierUptime', 0, 0, 0, 'HumidifierRamp_Sp', 'DAH_CO')
+
+
+If 'Eff_SpaceHumidity' > 90 Then
+    'ZoneHumSensorHighFault' = On
+End If
+If ('ZoneHumSensorHighFault' And ('Eff_SpaceHumidity' < 80)) OnFor 5M Then
+    'ZoneHumSensorHighFault' = Off
+End If
+If 'Eff_SpaceHumidity' < 3 Then
+    'ZoneHumSensorLowFault' = On
+End If
+If ('ZoneHumSensorLowFault' And ('Eff_SpaceHumidity' > 8)) OnFor 5M Then
+    'ZoneHumSensorLowFault' = Off
+End If
+
+If 'DAH' > 90 Then
+    'DAHSensorHighFault' = On
+End If
+If ('DAHSensorHighFault' And ('DAH' < 80)) OnFor 5M Then
+    'DAHSensorHighFault' = Off
+End If
+If 'DAH' < 3 Then
+    'DAHSensorLowFault' = On
+End If
+If ('DAHSensorLowFault' And ('DAH' > 8)) OnFor 5M Then
+    'DAHSensorLowFault' = Off
+End If
+
+//Dewpoint limit will mitigate the possiblity of condensate forming on the the diffusors
+'DADewpoint' = DewPoint ('DAH', 'DAT', °F)
+'SpaceDewpoint' = DewPoint ('Eff_SpaceHumidity', 'RAT', °F)

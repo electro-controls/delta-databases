@@ -1,0 +1,13 @@
+'HW_General_PG13.Write_Priority' = 13
+If PowerUp Then
+  'HW_Rem_BldgHeatCall' = On
+  'HW_Rem_BldgOccMWUCall' = On
+  'HW_HWS_Sp' = 170
+End If
+
+//Input references
+'HW_HWS' = 'HWS_Local'
+'HW_HWR' = 'HWR_Local'
+'HW_MaxHWTemp' = Max ('HW_HWS', 'HW_HWR') //This accounts for anomolies where return exceeds supply
+'HW_B1LWT' = 'HWS_Local'
+'HW_HWP1Status' = Switch ( 'HW_HWP1Status', 'HWP1_Current', 1, 0.5) // todo field verify

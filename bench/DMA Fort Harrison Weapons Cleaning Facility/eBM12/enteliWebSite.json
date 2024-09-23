@@ -1,0 +1,192 @@
+{
+  "name": "Bench",
+  "ipAddress": "http://localhost",
+  "uploadQueue": [],
+  "devices": [
+    {
+      "number": 7000,
+      "objects": [
+        {
+          "id": "bdc,1",
+          "name": "ActiveInactive_BDC",
+          "fileName": "ActiveInactive_BDC",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "bi,1201",
+          "name": "EF_STATUS",
+          "fileName": "EF_STATUS",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "bi,1202",
+          "name": "DAMPER_STATUS",
+          "fileName": "DAMPER_STATUS",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "bmd,1",
+          "name": "BBMD List1 7000",
+          "fileName": "BBMD List1 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "bo,1201",
+          "name": "DAMPER_ENABLE",
+          "fileName": "DAMPER_ENABLE",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "dbi,7000",
+          "name": "Database Information 7000",
+          "fileName": "Database Information 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 7000",
+          "fileName": "Data Exchange Settings 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "device,7000",
+          "name": "eBM12_FHWC_Collin",
+          "fileName": "eBM12_FHWC_Collin",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,3",
+          "name": "Security",
+          "fileName": "Security",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,4",
+          "name": "Critical",
+          "fileName": "Critical",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 7000",
+          "fileName": "Event and Alarm Settings 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "ips,1",
+          "name": "Internet Protocol Settings",
+          "fileName": "Internet Protocol Settings",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 7000",
+          "fileName": "BACnet Settings 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 7000",
+          "fileName": "Priority Names 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 7000",
+          "fileName": "Slave Device List 7000",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "sug,1",
+          "name": "Administrator",
+          "fileName": "Administrator",
+          "lastUpdate": "2024-08-16T14:56:02.783Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-08-16T15:00:42.579Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "OpenClose_BDC",
+          "fileName": "OpenClose_BDC",
+          "lastUpdate": "2024-08-16T15:03:08.983Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "Damper_PG",
+          "fileName": "Damper_PG",
+          "lastUpdate": "2024-08-16T15:03:58.369Z"
+        },
+        {
+          "id": "bv,2",
+          "name": "Damper_Alarm",
+          "fileName": "Damper_Alarm",
+          "lastUpdate": "2024-08-16T15:20:33.116Z"
+        },
+        {
+          "id": "bdc,3",
+          "name": "AlarmNormal_BDC",
+          "fileName": "AlarmNormal_BDC",
+          "lastUpdate": "2024-08-16T15:21:46.263Z"
+        }
+      ]
+    }
+  ]
+}

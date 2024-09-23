@@ -1,0 +1,79 @@
+{
+  "displayName": "CWP1_Call",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "binary-value,8"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "CWP1_Call"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Enumerated",
+    "value": "active"
+  },
+  "gcl-value": {
+    "$base": "Enumerated",
+    "value": "active"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "unspecifiedValue": "true"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "ON"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "OFF"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,4"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-15T09:36:46.900000-07:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "ON"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

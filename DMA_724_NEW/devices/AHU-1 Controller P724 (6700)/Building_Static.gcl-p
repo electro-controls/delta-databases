@@ -1,0 +1,9 @@
+
+
+If 'SAF_VFD_Status' On And 'Fire_Alarm' Off Then
+'East_Damper' = 'EastBldgStc_Control'
+'West_Damper' = 'EastBldgStc_Control'
+Else
+'East_Damper' = 0
+'West_Damper' = 0
+End If

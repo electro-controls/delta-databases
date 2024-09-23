@@ -1,0 +1,79 @@
+{
+  "displayName": "HW_HWHighLimit",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "binary-value,10004"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "HW_HWHighLimit"
+  },
+  "description": {
+    "$base": "String",
+    "value": "8/21/24 CEF:  confirmed with mark from vemco that local auto reset is 200F and manual reset is 210F at boiler. so leave software high limit at 190"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "present-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "gcl-value": {
+    "$base": "Enumerated",
+    "value": "inactive"
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "type-reference": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,2"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Alarm"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Normal"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "program,10003"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-15T07:10:48.300000-07:00"
+  },
+  "text-value": {
+    "$base": "String",
+    "value": "Normal"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

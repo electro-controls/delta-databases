@@ -22,7 +22,7 @@
   },
   "present-value": {
     "$base": "Enumerated",
-    "value": "active"
+    "value": "inactive"
   },
   "gcl-value": {
     "$base": "Enumerated",
@@ -62,15 +62,15 @@
   },
   "last-writer": {
     "$base": "ObjectIdentifier",
-    "unspecifiedValue": "true"
+    "value": "device,999"
   },
   "time-of-last-write": {
     "$base": "DateTime",
-    "value": "2000-01-02T09:13:14.200000-07:00"
+    "value": "2000-10-26T06:58:39.300000-06:00"
   },
   "text-value": {
     "$base": "String",
-    "value": "Continuous"
+    "value": "Intermittent"
   },
   "hal-flags": {
     "$base": "BitString",

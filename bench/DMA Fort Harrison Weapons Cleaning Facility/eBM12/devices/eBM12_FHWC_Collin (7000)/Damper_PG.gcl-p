@@ -1,0 +1,5 @@
+// open damper when exhaust fan energized
+'DAMPER_ENABLE' = 'EF_STATUS'
+
+// alarm if damper not open when needed when enabled
+'Damper_Alarm' = ('DAMPER_STATUS' And 'DAMPER_ENABLE') OffFor 60:S

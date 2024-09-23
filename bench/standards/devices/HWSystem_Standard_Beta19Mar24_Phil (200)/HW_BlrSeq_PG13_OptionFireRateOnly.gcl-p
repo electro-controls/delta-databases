@@ -1,0 +1,51 @@
+'HW_BlrSeq_PG13.Write_Priority' = 13
+
+//VARIABLES: Search and replace variables with the actual I/O of your application
+Variable B1FireRate_XXX
+Variable B2FireRate_XXX
+Variable B3FireRate_XXX
+Variable B4FireRate_XXX
+Variable BP1Enable_XXX
+Variable BP2Enable_XXX
+Variable BP3Enable_XXX
+Variable BP4Enable_XXX
+Variable BP1Current_XXX
+Variable BP2Current_XXX
+Variable BP3Current_XXX
+Variable BP4Current_XXX
+//DELETE this note and the above references after the search and replace is performed
+
+//BP status
+'HW_BP1Status' = Switch ( 'HW_BP1Status', BP1Current_XXX, 1, 0.5)
+'HW_BP2Status' = Switch ( 'HW_BP2Status', BP2Current_XXX, 1, 0.5)
+'HW_BP3Status' = Switch ( 'HW_BP3Status', BP3Current_XXX, 1, 0.5)
+'HW_BP4Status' = Switch ( 'HW_BP4Status', BP4Current_XXX, 1, 0.5)
+
+
+
+//B1
+If 'HW_B1Call' Then
+    BP1Enable_XXX = On
+    IfOnce 'HW_BP1Status' OnFor 10S Then //Use BP BO if status is not availabe
+       B1FireRate_XXX = 'HW_B1CutIn_Sp' + 2
+    End If
+  Else
+    If (B1FireRate_XXX <= 0) OnFor 'HWBlrPumpOffDelay_Sp':M Then
+      BP1Enable_XXX = Off
+    End If
+End If
+
+If ('HW_B1Call' And 'HW_BP1Status') OnFor 30S Then
+    B1FireRate_XXX = Scale ('HW_B1RateCall' * 'HW_B1HWSLimit_CO' * 0.01, 0, 0, 'HW_B1CutOut_Sp' + 1, 100, 'HW_B1Ramp')
+  Else
+    B1FireRate_XXX = 0
+End If
+
+///Boiler Ramps
+If (B1FireRate_XXX > 0) Then
+    DoEvery 10S
+     'HW_B1Ramp' = Min (100, 'HW_B1Ramp' + (100 / ('HW_FireRamp_Sp' * 6)))
+    End Do
+  Else
+    'HW_B1Ramp' = 'HW_B1CutIn_Sp'
+End If

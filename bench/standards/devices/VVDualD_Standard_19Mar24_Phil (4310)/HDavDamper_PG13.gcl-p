@@ -1,0 +1,150 @@
+'HDavDamper_PG13.Write_Priority' = 13
+
+If 'HDavAutoZeroCal' Then
+    'HDav_EffDemand' = 0
+   ElseIf  'HDav_RemDemand' >= 0 Then
+    'HDav_EffDemand' = 'HDav_RemDemand'
+  Else
+    'HDav_EffDemand' = 'HDav_LocDemand'
+End If
+
+If ('HDav_EffSp' < 1) Then
+    'HDav_LocDemand' = 0
+    'HDav_CO.Bias' = 0.1
+  Else
+    'HDav_LocDemand' = 'HDav_CO'
+End If
+
+
+If PowerUp Then
+  'HDavDmpRecalc' = On
+End If
+
+//Auto recalc routine
+//This ensures that damper position is recalculated every so often (168 hrs in a week)
+
+DoEvery 3M
+  'HDavTimeLastRecalc' = 'HDavTimeLastRecalc' + 0.05
+End Do
+
+If 'HDavDmpRecalc' Then
+    'HDavTimeLastRecalc' = 0
+End If
+
+If ('HDav_EffDemand' >= 100) OnFor 10M Then
+    'HDavTimeLastRecalc' = 0
+End If
+If ('HDav_EffDemand' <= 0) OnFor 10M Then
+    'HDavTimeLastRecalc' = 0
+End If
+
+IfOnce (Time >= Starttime) And (Time < (1 + Starttime)) And ('HDavTimeLastRecalc' > 504) Then //Random recal after midnight plus address * 2
+   'HDavDmpRecalc' = On //After X days since last cal                                         //After 3 weeks since last recal.
+End If
+
+Variable Starttime As Integer
+Starttime = ((('DIPSetting' * 2) / 60) * 100) + 100
+
+
+Variable CurrentTm
+CurrentTm = Time
+
+If 'HDavDmpRecalc' OnFor ('HDavDmpRuntime_Sp' * 2):S Then
+  'HDavDmpRecalc' = Off
+End If
+
+If 'HDavDmpAction' Then
+    If 'HDavAutoZeroCal' Or 'HDavDmpRecalc' Then
+      'HDav_D1' = Off
+      'HDav_D2' = On
+      Else
+      'HDav_D1' = Driveopen
+      'HDav_D2' = Driveclose
+    End If
+    If 'HDav_D1' Then
+      'HDavDmpRuntimeDir' = On //Open
+    ElseIf  'HDav_D2' Then
+      'HDavDmpRuntimeDir' = Off //Close
+    End If
+Else
+    If 'HDavAutoZeroCal' Or 'HDavDmpRecalc' Then
+      'HDav_D1' = On
+      'HDav_D2' = Off
+      Else
+      'HDav_D1' = Driveclose
+      'HDav_D2' = Driveopen
+    End If
+     If 'HDav_D1' Then
+      'HDavDmpRuntimeDir' = Off //Close
+    ElseIf  'HDav_D2' Then
+      'HDavDmpRuntimeDir' = On //Open
+    End If
+End If
+
+//PvDmp is 3 point floating
+Variable Driveopen
+Variable Driveclose
+Variable Min_Step As Real // Holds the minimum step for valve runtime
+
+// Calculate the Minimum Step for the Valve Runtime
+Min_Step = Truncate ((100 / 'HDavDmpRuntime_Sp') + 1)
+
+ If 'HDavDmpAction' Then
+      If 'HDav_D1' Then
+        DoEvery 1S
+        'HDavDmpRuntime' = Min ('HDavDmpRuntime' + 1, 'HDavDmpRuntime_Sp')
+        End Do
+      End If
+      If 'HDav_D2' Then
+        DoEvery 1S
+        'HDavDmpRuntime' = Max ('HDavDmpRuntime' - 1, 0)
+        End Do
+      End If
+  Else
+      If 'HDav_D2' Then
+        DoEvery 1S
+        'HDavDmpRuntime' = Min ('HDavDmpRuntime' + 1, 'HDavDmpRuntime_Sp')
+        End Do
+      End If
+      If 'HDav_D1' Then
+        DoEvery 1S
+        'HDavDmpRuntime' = Max ('HDavDmpRuntime' - 1, 0)
+        End Do
+      End If
+End If
+
+//Actual Valve Operation
+DoEvery 1S
+'HDavCalcPct' = Scale ('HDavDmpRuntime', 0, 0, 0, 'HDavDmpRuntime_Sp', 100)
+If ('HDavCalcPct' > ('HDav_EffDemand' + Min_Step)) Then
+      Driveclose = On
+      Driveopen = Off
+     Else If ('HDavCalcPct' < ('HDav_EffDemand' - Min_Step)) Then
+      Driveopen = On
+      Driveclose = Off
+     Else If 'HDav_EffDemand' = 0 Then
+      DoEvery 30S
+      Driveclose = On
+      Driveopen = Off
+      End Do
+      If Driveclose OnFor 2S Then
+        Driveclose = Off
+        Driveopen = Off
+      End If
+     Else If 'HDav_EffDemand' = 100 Then
+      DoEvery 30S
+      Driveclose = Off
+      Driveopen = On
+      End Do
+      If Driveopen OnFor 2S Then
+        Driveclose = Off
+        Driveopen = Off
+      End If
+    Else
+      Driveclose = Off
+      Driveopen = Off
+    End If
+    End If
+    End If
+End If
+End Do

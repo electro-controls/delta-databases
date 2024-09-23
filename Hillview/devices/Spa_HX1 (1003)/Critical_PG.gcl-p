@@ -1,0 +1,18 @@
+'Critical_PG.Write_Priority' = 4
+
+'Alarm_Hi_Temp' = ('Spa_Supply_Temp' >= 130)
+
+If 'Alarm_Hi_Temp' Or ('Spa_Supply_Temp' > 'SpaHWS_HiLimit_Sp') OnFor 30S Then
+    'HighSpaLimit' = On
+End If
+If (Not 'Alarm_Hi_Temp') And ('Spa_Supply_Temp' < 'SpaHWS_EffSp') Then
+    'HighSpaLimit' = Off
+End If
+
+If 'HighSpaLimit' Then // what if the boiler loop is cooler than the ewt of the tub?
+  'HW_FeedValve' = 0 //dave doesn't know the intent of that question 
+  'HX_Pump_Enable' = Off
+ Else
+  Relinquish 'HW_FeedValve'
+  Relinquish 'HX_Pump_Enable'
+End If 

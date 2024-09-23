@@ -1,0 +1,178 @@
+{
+  "displayName": "AH1_IO_Menu",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "mn,1000"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "menu"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "AH1_IO_Menu"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": ""
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "previous-menu-ref": {
+    "$base": "ObjectIdentifier",
+    "unspecifiedValue": "true"
+  },
+  "previous-menu-item": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "menu-function-list": {
+    "1": {
+      "$base": "Sequence",
+      "objectRef": {
+        "$base": "ObjectIdentifier",
+        "value": "mn,1001"
+      },
+      "menuFunction": {
+        "$base": "Enumerated",
+        "value": "goto-menu"
+      },
+      "objectName": {
+        "$base": "String",
+        "value": ""
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "objectRef": {
+        "$base": "ObjectIdentifier",
+        "value": "mn,1002"
+      },
+      "menuFunction": {
+        "$base": "Enumerated",
+        "value": "goto-menu"
+      },
+      "objectName": {
+        "$base": "String",
+        "value": ""
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "objectRef": {
+        "$base": "ObjectIdentifier",
+        "value": "mn,1003"
+      },
+      "menuFunction": {
+        "$base": "Enumerated",
+        "value": "goto-menu"
+      },
+      "objectName": {
+        "$base": "String",
+        "value": ""
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "objectRef": {
+        "$base": "ObjectIdentifier",
+        "value": "mn,1004"
+      },
+      "menuFunction": {
+        "$base": "Enumerated",
+        "value": "goto-menu"
+      },
+      "objectName": {
+        "$base": "String",
+        "value": ""
+      }
+    },
+    "5": {
+      "$base": "Sequence",
+      "objectRef": {
+        "$base": "ObjectIdentifier",
+        "value": "mn,1005"
+      },
+      "menuFunction": {
+        "$base": "Enumerated",
+        "value": "goto-menu"
+      },
+      "objectName": {
+        "$base": "String",
+        "value": ""
+      }
+    },
+    "6": {
+      "$base": "Sequence",
+      "objectRef": {
+        "$base": "ObjectIdentifier",
+        "value": "mn,1006"
+      },
+      "menuFunction": {
+        "$base": "Enumerated",
+        "value": "goto-menu"
+      },
+      "objectName": {
+        "$base": "String",
+        "value": ""
+      }
+    },
+    "7": {
+      "$base": "Sequence",
+      "objectRef": {
+        "$base": "ObjectIdentifier",
+        "value": "mn,1007"
+      },
+      "menuFunction": {
+        "$base": "Enumerated",
+        "value": "goto-menu"
+      },
+      "objectName": {
+        "$base": "String",
+        "value": ""
+      }
+    },
+    "8": {
+      "$base": "Sequence",
+      "objectRef": {
+        "$base": "ObjectIdentifier",
+        "value": "mn,1008"
+      },
+      "menuFunction": {
+        "$base": "Enumerated",
+        "value": "goto-menu"
+      },
+      "objectName": {
+        "$base": "String",
+        "value": ""
+      }
+    },
+    "$base": "Array"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  },
+  "disable-password": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "total-events": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "scroll-delay": {
+    "$base": "Unsigned",
+    "value": "1"
+  }
+}

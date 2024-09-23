@@ -1,0 +1,9 @@
+//fan program
+
+If ('CUH4_FanMode' = On) And (('CUH4_OccMode' = 3) Or ('CUH4_OccMode' = 4)) Then
+    'CUH4_Enable' = On //in continuous mode, fan shall run during occupied or bypass mode.
+  Else
+    'CUH4_Enable' = Switch ( 'CUH4_Enable', 'CUH4_EffZoneHtg', 90, 10) //otherwise fan shall cycle w/ heating load
+End If
+
+//end of fan program

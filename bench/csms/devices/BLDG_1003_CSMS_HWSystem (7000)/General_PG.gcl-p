@@ -1,0 +1,16 @@
+//General PG
+
+//Power up defaults
+//These will be written to once after power up.
+IfOnce PowerUp Then
+  'Eff_OAT' = 32
+  'Rem_Demand' = - 1
+  'SystemEnable' = On
+  'HWS_Sp' = 150
+  'OATInt1TimeLeft' = 0.1
+End If
+
+//Intercontroller Links
+'Eff_OAT' = 'OSA_Temp'
+
+ //End of Program

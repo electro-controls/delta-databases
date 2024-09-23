@@ -1,0 +1,204 @@
+//Fan start/stop sequence
+If 'Mode' <> 5 Then //Off
+    'SFVFD1Enable' = On
+    'SFVFD2Enable' = On
+End If
+
+If ('Mode' = 5) OnFor 60S Then
+    'SFVFD1Enable' = Off
+    'SFVFD2Enable' = Off
+End If
+
+'SF1VFDStatus' = Switch ( 'SF1VFDStatus', 'SF1_Current', 1, 0.5) //Supply Fan 1 VFD Status (2 Fans)
+'SF2VFDStatus' = Switch ( 'SF2VFDStatus', 'SF2_Current', 1, 0.5) //Supply Fan 2 VFD Status (2 Fans)
+'RF1Status' = Switch ( 'RF1Status', 'RF1_Current', 1, 0.5) //Return Fan 1 Status
+'RF2Status' = Switch ( 'RF2Status', 'RF2_Current', 1, 0.5) //Return Fan 1 Status
+
+
+Variable ReliefCall
+
+If 'RunStatusInt' And ('RADuctStatic_CO' > 20) And ('Economizer' > 'EconCalcMinOA') And (('RADuctStatic' > ('RADuctStatic_Sp' * 0.9)) OnFor 20S) Then
+    ReliefCall = On
+End If
+
+If ('RADuctStatic_CO' < 1) And ('RADuctStatic' < 'RADuctStatic_Sp') Then
+    ReliefCall = Off
+End If
+
+If Not 'RunStatusInt' Then
+    ReliefCall = Off
+End If
+
+
+
+If 'EF_Enable' Then
+    'EFSpeed' = Scale ('RADuctStatic_CO', 0, 30, 0, 80, Min (100, ((Max ('SFVFD1Speed', 'SFVFD2Speed')) * 1.3)))
+    'OAReliefBypass' = Scale ('RADuctStatic_CO', 0, 0, 100, 35, 0)
+    'EADamper' = 100
+  Else
+    'EFSpeed' = 0
+    'OAReliefBypass' = 0
+    'EADamper' = 0
+End If
+
+
+If 'RunStatusInt' And ReliefCall Then
+ 'EF_Enable' = On
+Else
+ 'EF_Enable' = Off
+End If
+
+
+//Running status interlock sequence. Used by
+//other routines (economizer, VFD speed, etc..)
+If ('SFVFD1Enable' Or 'SFVFD2Enable') And ('SF1VFDStatus' Or 'SF2VFDStatus') Then
+    'RunStatusInt' = On
+  Else
+    'RunStatusInt' = Off
+End If
+
+If Not ('SF1VFDStatus' Or 'SF2VFDStatus') Then
+    'DuctStatic_CO.Bias' = 1
+End If
+
+
+//VFD speed sequence. Insures smooth start up via
+//the ramp routine.
+If 'SF1VFDStatus' Then
+    'SFVFD1Speed' = ('VFDRampResult' * 0.01) * 'DuctStatic_CO'
+  Else
+    'SFVFD1Speed' = 0
+End If
+
+If 'SF2VFDStatus' Then
+    'SFVFD2Speed' = ('VFDRampResult' * 0.01) * 'DuctStatic_CO'
+  Else
+    'SFVFD2Speed' = 0
+End If
+
+If 'RunStatusInt' Then
+  DoEvery 10S
+  'VFDRampResult' = Min (100, 'VFDRampResult' + (1000 / 'VSDRamp_Sp'))
+  End Do
+Else
+  'VFDRampResult' = 0
+End If
+
+If PowerUp Then
+'VFDRampResult' = 0
+End If
+
+'OAVelocity' = Sqrt ('OA_AFSDp') * 2550 //4005
+'OAFlow_Dv' = 'OAVelocity' * 'OAArea_Sp' * 'OAFlowCf'
+
+
+//Added this in case one drive is reset and starts when the first drive is at 100%...prevent tripping limit
+IfOnce 'SF1VFDStatus' Then
+    'VFDRampResult' = 0
+End If
+IfOnce 'SF2VFDStatus' Then
+    'VFDRampResult' = 0
+End If
+
+////////////
+//RF Fan Failure
+If ('RF1Enable' And Not 'RF1Status') OnFor 'RFFailDly_Sp':S Then
+  'RF1_Fail' = On
+Else
+  'RF1_Fail' = Off
+End If
+
+If ('RF2Enable' And Not 'RF2Status') OnFor 'RFFailDly_Sp':S Then
+  'RF2_Fail' = On
+Else
+  'RF2_Fail' = Off
+End If
+
+
+Variable RF1Manual
+Variable RF2Manual
+
+If Not 'RF1Enable.Priority_Array[5]' Then
+  RF1Manual = On
+ElseIf  Not 'RF1Enable.Priority_Array[8]' Then
+  RF1Manual = On
+Else
+  RF1Manual = Off
+End If
+If Not 'RF2Enable.Priority_Array[5]' Then
+  RF2Manual = On
+ElseIf  Not 'RF2Enable.Priority_Array[8]' Then
+  RF2Manual = On
+Else
+  RF2Manual = Off
+End If
+
+Variable RF1Call
+Variable RF2Call
+
+If 'Mode' <> 5 Then
+  If ('RF_Lead' Or 'RF2_Fail' Or RF1Manual) Then
+    'RF1Enable' = On
+    RF1Call = On
+  End If
+  If (Not 'RF_Lead') And (Not 'RF2_Fail') And (Not RF1Manual) And ('RF2Speed' >= ('RF1Speed' * 0.9)) Then
+    RF1Call = Off
+  End If
+
+  If RF1ramp < 1 And Not RF1Call Then
+    'RF1Enable' = Off
+  End If
+
+  If ((Not 'RF_Lead') Or 'RF1_Fail' Or RF2Manual) Then
+    'RF2Enable' = On
+    RF2Call = On
+  End If
+
+  If 'RF_Lead' And (Not 'RF1_Fail') And (Not RF2Manual) And ('RF1Speed' >= ('RF2Speed' * 0.8)) Then
+    RF2Call = Off
+  End If
+  If RF2ramp < 1 And Not RF2Call Then
+    'RF2Enable' = Off
+  End If
+ElseIf  ('Mode' = 5) OnFor 60S Then
+  'RF1Enable' = Off
+  'RF2Enable' = Off
+End If
+
+//Pump ramp sequence to provide a smooth start when
+//pump is enabled. This minimizes Loop overshoot on start.
+//RF1 Demand
+Variable RF1ramp
+If 'RF1Status' And RF1Call Then
+  DoEvery 10S
+    RF1ramp = Min (100, RF1ramp + (100 / ('RFRamp_Sp' * 6)))
+  End Do
+Else
+  DoEvery 10S
+    RF1ramp = Max (0, RF1ramp - (100 / ('RFRamp_Sp' * 16)))
+  End Do
+End If
+
+If 'RF1Enable' Then
+  'RF1Speed' = (RF1ramp * 0.01) * 'RF1Speed_Sp'
+Else
+  'RF1Speed' = 0
+End If
+
+//RF2 Demand 
+Variable RF2ramp
+If 'RF2Status' And RF2Call Then
+  DoEvery 10S
+    RF2ramp = Min (100, RF2ramp + (100 / ('RFRamp_Sp' * 6)))
+  End Do
+Else
+  DoEvery 10S
+    RF2ramp = Max (0, RF2ramp - (100 / ('RFRamp_Sp' * 16)))
+  End Do
+End If
+
+If 'RF2Enable' Then
+  'RF2Speed' = (RF2ramp * 0.01) * 'RF2Speed_Sp'
+Else
+  'RF2Speed' = 0
+End If

@@ -1,0 +1,20 @@
+'ZoneDAT_PG13.Write_Priority' = 13
+// DATSp reset based off of effective zone heating and cooling demand.
+If 'DAT_RemSp' >= 0 Then
+    'DAT_EffSp' = 'DAT_RemSp'
+  Else
+    'DAT_EffSp' = 'DAT_LocSp'
+End If
+
+If 'ZoneOccMode' = 5 Then //Warmup
+  'DAT_LocSp' = Scale ('Zone_EffHtg', 0, 0, 'ZoneHeat_EffSp', 20, 'DATResetHigh_Sp' * 1.3)
+ ElseIf  'ZoneControlMode' = 1 Then //Heating
+  'DAT_LocSp' = Scale ('Zone_EffHtg', 0, 0, 'ZoneHeat_EffSp', 100, 'DATResetHigh_Sp')
+ Else //Cooling or Deadband
+  'DAT_LocSp' = Scale ('Zone_EffClg', 0, 0, 'ZoneHeat_EffSp' - 'DATOffset_Sp', 100, 'DATResetLow_Sp')
+End If
+
+
+IfOnce (('ZoneOccMode' = 2) And ('ZoneControlMode' = 3)) Then
+    'DATHtg_CO.Bias' = 1
+End If

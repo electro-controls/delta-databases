@@ -1,0 +1,122 @@
+//Pump Failure
+If ('HWP1_Enable' And Not 'HWP1Status') OnFor 'PumpFailDly_Sp':S Then
+  'P1_Fail' = On
+Else
+  'P1_Fail' = Off
+End If
+
+If ('HWP2_Enable' And Not 'HWP2Status') OnFor 'PumpFailDly_Sp':S Then
+  'P2_Fail' = On
+Else
+  'P2_Fail' = Off
+End If
+
+Variable HWP1Manual
+Variable HWP2Manual
+
+If Not 'HWP1_Enable.Priority_Array[5]' Then
+  HWP1Manual = On
+ElseIf  Not 'HWP1_Enable.Priority_Array[8]' Then
+  HWP1Manual = On
+Else
+  HWP1Manual = Off
+End If
+If Not 'HWP2_Enable.Priority_Array[5]' Then
+  HWP2Manual = On
+ElseIf  Not 'HWP2_Enable.Priority_Array[8]' Then
+  HWP2Manual = On
+Else
+  HWP2Manual = Off
+End If
+
+Variable HWP1Call
+Variable HWP2Call
+If 'SystemEnable' Then
+  If ('HWPLead' Or 'P2_Fail' Or HWP2Manual Or 'HWPLagAssist') Then
+    'HWP1_Enable' = On
+    HWP1Call = On
+  End If
+  If (Not 'HWPLead') And (Not 'P2_Fail') And (Not 'HWPLagAssist') And (Not HWP2Manual) And ('HWP2_Speed' >= ('HWP1_Speed' * 0.9)) Then
+    HWP1Call = Off
+  End If
+
+  If HWP1ramp < 1 And Not HWP1Call Then
+    'HWP1_Enable' = Off
+  End If
+
+  If ((Not 'HWPLead') Or 'P1_Fail' Or HWP1Manual Or 'HWPLagAssist') Then
+    'HWP2_Enable' = On
+    HWP2Call = On
+  End If
+
+  If 'HWPLead' And (Not 'P1_Fail') And (Not 'HWPLagAssist') And (Not HWP1Manual) And ('HWP1_Speed' >= ('HWP2_Speed' * 0.9)) Then
+    HWP2Call = Off
+  End If
+  If HWP2ramp < 1 And Not HWP2Call Then
+    'HWP2_Enable' = Off
+  End If
+ElseIf  'SystemEnable' OffFor 30M Then
+  'HWP1_Enable' = Off
+  'HWP2_Enable' = Off
+End If
+
+//Pump ramp sequence to provide a smooth start when
+//pump is enabled. This minimizes Loop overshoot on start.
+//HWP1 Demand
+Variable HWP1ramp
+If 'HWP1Status' And HWP1Call Then
+  DoEvery 10S
+    HWP1ramp = Min (100, HWP1ramp + (100 / ('HWPmpRamp_Sp' * 6)))
+  End Do
+Else
+  DoEvery 10S
+    HWP1ramp = Max (0, HWP1ramp - (100 / ('HWPmpRamp_Sp' * 16)))
+  End Do
+End If
+
+If 'HWP1_Enable' Then
+  'HWP1_Speed' = (HWP1ramp * 0.01) * 'HWDp_CO'
+Else
+  'HWP1_Speed' = 0
+End If
+
+//HWP2 Demand
+Variable HWP2ramp
+If 'HWP2Status' And HWP2Call Then
+  DoEvery 10S
+    HWP2ramp = Min (100, HWP2ramp + (100 / ('HWPmpRamp_Sp' * 6)))
+  End Do
+Else
+  DoEvery 10S
+    HWP2ramp = Max (0, HWP2ramp - (100 / ('HWPmpRamp_Sp' * 16)))
+  End Do
+End If
+
+If 'HWP2_Enable' Then
+  'HWP2_Speed' = (HWP2ramp * 0.01) * 'HWDp_CO'
+Else
+  'HWP2_Speed' = 0
+End If
+
+//Flow interlock
+Variable DpFlow
+DpFlow = Switch ( DpFlow, 'Eff_HWDP', ('HWDp_Sp' * 0.3), ('HWDp_Sp' * 0.1))
+
+If ('HWP1Status' Or 'HWP2Status') And DpFlow Then
+  'PrimaryFlow' = On
+Else
+  'PrimaryFlow' = Off
+End If
+
+//DP Selection
+'Eff_HWDP' = 'Pump_DP'
+
+
+
+If (('HWP1_Enable' Or 'HWP2_Enable') And ('HWDp_CO' >= 100)) OnFor 60S Then
+    'HWPLagAssist' = On
+End If
+
+If ('HWPLagAssist' OnFor 30M) And ('HWDp_CO' < 65) Then
+    'HWPLagAssist' = Off
+End If

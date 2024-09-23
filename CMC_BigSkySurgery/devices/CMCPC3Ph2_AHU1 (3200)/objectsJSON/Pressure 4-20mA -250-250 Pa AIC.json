@@ -1,0 +1,91 @@
+{
+  "displayName": "Pressure 4-20mA -250-250 Pa AIC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "aic,21"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-input-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Pressure 4-20mA -250-250 Pa AIC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "Pa"
+  },
+  "max-value": {
+    "$base": "Real",
+    "value": "250"
+  },
+  "min-value": {
+    "$base": "Real",
+    "value": "-250"
+  },
+  "scale-range": {
+    "1": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.9"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "-250"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "1"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "-250"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "5"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "250"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "sort-required": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

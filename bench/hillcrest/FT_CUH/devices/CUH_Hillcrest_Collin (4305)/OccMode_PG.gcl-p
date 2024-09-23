@@ -1,0 +1,25 @@
+//occ mode page
+
+If 'DNSAlgMode' = 1 And 'Rem_Schedule' Then
+    'OccMode' = 3 //Occupied
+  ElseIf  'BypassCall' Then
+    'OccMode' = 4 //Bypass
+  ElseIf  'Rem_PurgeCall' Then
+    'OccMode' = 6 //Purge
+  ElseIf  'Rem_WarmupCall' Then
+    'OccMode' = 5 //Warmup
+  ElseIf  'DNSAlgMode' = 0 And (Not 'Rem_Schedule') Then
+    'OccMode' = 1 //Unocc
+  Else
+    'OccMode' = 2 //Standby
+End If
+
+IfOnce 'Rem_Schedule' Then
+    'DNSAlgMode' = 1
+End If
+
+IfOnce (Not 'Rem_Schedule') And (Not 'BypassCall') Then
+    'DNSAlgMode' = 0
+End If
+
+//end of occmode pg

@@ -1,0 +1,27 @@
+'Critical_PG.Write_Priority' = 4
+
+//software freeze mode
+
+If ('Eff_ZoneTemp' < 42) OnFor 60S Then
+    'FreezeMode' = On
+End If
+
+If ('Eff_ZoneTemp' > 45) OnFor 60S Then
+    'FreezeMode' = Off
+End If
+
+If PowerUp Then
+    'FreezeMode' = Off
+End If
+
+
+If 'FreezeMode' Then
+    'HWV' = On
+    'FanEnable' = Off
+  Else
+    Relinquish 'HWV'
+    Relinquish 'FanEnable'
+End If
+
+
+//end of critical page

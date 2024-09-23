@@ -1,0 +1,15 @@
+If ('Zone_RemSchedule') Then // building occ... set to 1037 for now.  Addresses are inaccurate on submittal.
+    'EF1_Enable' = On
+    'EF2_Enable' = On
+    'EF3_Enable' = On
+    'EF4_Enable' = On
+    'EF5_Enable' = On
+    'EF6_Enable' = On
+Else // building unocc
+    'EF1_Enable' = Off
+    'EF2_Enable' = Off
+    'EF3_Enable' = Off
+    'EF4_Enable' = Off
+    'EF5_Enable' = Off
+    'EF6_Enable' = Off
+End If

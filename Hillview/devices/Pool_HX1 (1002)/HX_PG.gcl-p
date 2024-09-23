@@ -1,0 +1,47 @@
+//Steam Valve Program 
+
+If 'PoolHWS_RemSp' >= 0 Then
+  'PoolHWS_EffSp' = 'PoolHWS_RemSp'
+Else
+  'PoolHWS_EffSp' = 'PoolHWS_LocSp'
+End If
+
+'PoolHWS_LocSp' = Scale ('PoolHWR_CO', 0, 0, 'PoolHWR_Sp', 100, 'PoolHWSMax_Sp')
+
+//Pump Status Conversion
+'PumpStatus' = Switch ( 'PumpStatus', 'Pump_Current', 0.6, 0.4) // 0.8A when active
+IfOnce 'PumpStatus' Then
+  'PoolHWS_CO.Bias' = 1
+End If
+If 'HighPoolLimit' Then
+  'PoolHWS_CO.Bias' = 1
+End If
+
+//Ramp delay factors the ramp delay time. If the system is warm,
+//we dont need as long of a ramp.
+Variable RampMult
+
+RampMult = Scale ('Pool_Return_Temp', 0, 50, 1, 'PoolHWR_Sp', 0.1)
+
+If 'PumpStatus' And (Not 'HighPoolLimit') Then
+  DoEvery 10S
+    'SystemRamp' = Min (100, 'SystemRamp' + (100 / ('SystemRamp_Sp' * RampMult * 6)))
+  End Do
+Else
+  'SystemRamp' = 0
+End If
+
+//HX Valve Operation
+If 'PumpStatus' Then
+  'HW_FeedValve' = Scale ('PoolHWS_CO', 0, 0, 0, 100, 'SystemRamp')
+Else
+  DoEvery 5S //close over 2m to avoid HW short circuiting back to boiler which may cause hi limit trip
+  'HW_FeedValve' = Max (0, 'HW_FeedValve' - 2.5)
+  End Do
+End If
+
+IfOnce 'Pool_Supply_Temp' > ('PoolHWSMax_Sp' + 5) Then
+  'PoolHWR_CO.Bias' = 'PoolHWR_CO.Bias' * 0.2
+End If
+
+//End of Program

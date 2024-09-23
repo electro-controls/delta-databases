@@ -1,10 +1,10 @@
 //fan program 
 
 If ('CUH3_FanMode' = On) And (('CUH3_OccMode' = 3) Or ('CUH3_OccMode' = 4)) Then
-    'CUH3_Enable' = On //in continuous mode, fan shall run during occupied or bypass mode. 
+    'CUH3_Enable' = On //in continuous mode, fan shall run during occupied or bypass mode.
   Else
     'CUH3_Enable' = Switch ( 'CUH3_Enable', 'CUH3_EffZoneHtg', 90, 10) //otherwise fan shall cycle w/ heating load
-End If 
+End If
 
 //fan status
 'CUH3_FanStatus' = Switch ( 'CUH3_FanStatus', 'CUH3_Current', 0.7, 0.4)

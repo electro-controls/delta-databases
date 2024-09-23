@@ -1,0 +1,79 @@
+{
+  "displayName": "SpaHWSMax_Sp",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,5"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "SpaHWSMax_Sp"
+  },
+  "description": {
+    "$base": "String",
+    "value": "8/26/24 dmp:  john w/ facilities and i agreed to start at max of 115F so we don't scald anyone \n \n8/23/2024 dmp:  edited down from 130F just to make usre we don't scald anyone.  domestic HW is usually 115 max if it's serving handsinks and showers.  we can raise this sp back up later if we are sure this supply water will get mixed first and won't hit anyone directly. i also created a separate AV for hi limit sp.  this max sp will be used for control.  hi limit sp will be used to kill operation on the critical page if exceeded."
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": "out-of-service"
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "115"
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": "out-of-service"
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "°F"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "device,4000748"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2000-01-04T05:50:40.300000-07:00"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

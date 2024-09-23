@@ -1,0 +1,11 @@
+If 'SystemEnable' And 'PrimaryFlow' Then
+  'Boiler_Enable' = On
+Else
+  'Boiler_Enable' = Off
+End If
+
+If 'Boiler_Enable' And 'PrimaryFlow' Then
+'Boiler_Setpoint' = Scale ('HWS_EffSp', 0, 'HWS_LowSp', 11, 'HWS_HighSp', 'LWT_CO')
+Else
+'Boiler_Setpoint' = 0
+End If

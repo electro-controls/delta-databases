@@ -1,0 +1,5 @@
+If ('Heat_Call') Then
+    'HX_Pump_Enable' = On
+Else
+    'HX_Pump_Enable' = Off
+End If

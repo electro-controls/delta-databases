@@ -1,0 +1,19 @@
+Call 'General_PG13'
+Call 'FaultDetection_PG13'
+
+//NOTE: when alternative pages are invoked, delete
+//unreferenced pages and remove Alt references
+
+Call 'AHx_General_PG13'
+Call 'AHx_Critical_PG4'
+Call //pg10011//alternative pages AHx_Temp_PG13
+Call 'AHx_Fan_PG13'
+Call 'AHx_Economizer_PG13'
+Call 'AHx_HeatCoolInfoModes_PG13'
+
+Call 'AHx_IAQ_PG13'
+
+Call 'AHx_Hum_PG13'
+
+Call 'AHx_Dx12_PG13'
+Call 'AHx_Dx34_PG13'

@@ -1,0 +1,5 @@
+//Intercontroller links
+// EF-Enable enabled if AHU in occupied mode
+If ('3000.Mode' == 1) Then
+    'EF2_Enable' = On
+End If

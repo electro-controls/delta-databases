@@ -1,0 +1,5 @@
+//Heat Sequence
+
+'FT03_HWV' = Switch ( 'FT03_HWV', 'FT03_EffZoneHtg', 50, 5)
+
+//End of Program

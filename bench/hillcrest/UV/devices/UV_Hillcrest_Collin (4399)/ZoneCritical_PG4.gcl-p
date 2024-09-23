@@ -1,0 +1,23 @@
+'ZoneCritical_PG4.Write_Priority' = 4
+
+If ((('DAT_Eff' < 48) OnFor 30S) Or 'Freezestat') And (Not 'FreezeMode') Then
+    'FreezeMode' = On
+End If
+
+IfOnce PowerUp Then
+    'FreezeMode' = Off
+End If
+
+IfOnce ('ZoneOccMode' = 3) Then //resets on Occ start
+    'FreezeMode' = Off
+End If
+
+If 'FreezeMode' Or 'Freezestat' Then
+    'Economizer' = 0
+    'HWV' = 100
+    'FanEnable_BO' = Off
+  Else
+   Relinquish 'Economizer'
+   Relinquish 'HWV'
+   Relinquish 'FanEnable_BO'
+End If

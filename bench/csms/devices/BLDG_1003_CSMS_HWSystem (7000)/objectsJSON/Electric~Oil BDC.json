@@ -1,0 +1,35 @@
+{
+  "displayName": "Electric~Oil BDC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,6"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-device-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Electric~Oil BDC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Electric"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Oil"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

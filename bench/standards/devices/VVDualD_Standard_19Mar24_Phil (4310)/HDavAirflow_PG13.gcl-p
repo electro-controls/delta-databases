@@ -1,0 +1,76 @@
+'HDavAirflow_PG13.Write_Priority' = 13
+//Determines local or remote control of Pv setpoint
+If 'HDav_RemSp' >= 0 Then
+    'HDav_EffSp' = 'HDav_RemSp'
+  Else
+    'HDav_EffSp' = 'HDav_LocSp'
+End If
+
+If 'HDavAutoZeroCal' Then
+    'HDavFanRequest' = Off
+  Else
+    'HDavFanRequest' = Switch ( 'HDavFanRequest', 'HDav_EffSp', 100, 10)
+End If
+
+//This prevents the box from going to max heating if the DAT is not warm.
+//Comment out the following line and set PvHtgLimit to 100% if no DAT sensor is used.
+Variable EffPvMaxHt
+Variable EffPvMaxCl
+
+'HDavHtgLimit' = 100 //no limit on dual duct so value is 100
+
+
+EffPvMaxHt = Scale ('HDavHtgLimit', 0, 0, 'HDavMinHt_Sp', 100, 'HDavMaxHt_Sp')
+EffPvMaxCl = Scale ('HDavDemandLimit_Sp', 0, 0, 'HDavMinCl_Sp', 100, 'HDavMaxCl_Sp')
+
+// Calculates Airflow by converting the pressure transmitters raw
+//A/D count (velocity pressure) converting it, then displaying as CFM
+Variable Last_Value As Real // Used to track last value
+Variable New_Value As Real // New Calc Value 
+Variable MaxSensorCount
+MaxSensorCount = ('HDavSensorMaxV' / 5) * 'ControllerADRange' //Example: 4.5v = 3685
+
+DoEvery 1S
+  Last_Value = 'HDav_EffAirflow' //Note sensor is .5 to 4.5v. So counts need to change for other sensor types                                            
+  New_Value = ('HDavKFactor' + 'HDavCalOffset') * Sqrt (Scale ('HDavCurrentCount', 0, 'HDavZeroCountCal', 0, MaxSensorCount, 1)) / 1
+  'HDav_EffAirflow' = Last_Value + (((0.1 * (100 - (Min ('HDavFilter_Sp', 99))) / 0.1) / 100) * (New_Value - Last_Value))
+End Do
+
+
+
+// Air Flow Setpoint
+If 'ZoneOccMode' = 5 Then //5=WarmUp
+    'HDav_LocSp' = Scale ('Zone_EffHtg', 0, 10, 0, 100, EffPvMaxHt)
+  ElseIf  'ZoneOccMode' = 6 Then //6=Purge
+    If 'Zone_EffTemp' > ('ZoneHeat_EffSp' - 2) Then
+      'HDav_LocSp' = 0
+     Else
+      'HDav_LocSp' = 0
+    End If
+  ElseIf  'ZoneOccMode' = 2 Then //2=Standby
+    If 'ZoneControlMode' = 1 Then //Heating
+      'HDav_LocSp' = Scale ('Zone_EffHtg', 0, 50, 'HDavMinHt_Sp', 100, EffPvMaxHt)
+     ElseIf  'ZoneControlMode' = 2 Then //Cooling
+      'HDav_LocSp' = Scale ('Zone_EffClg', 0, 50, 'HDavMinCl_Sp', 100, EffPvMaxCl)
+     Else
+      'HDav_LocSp' = 0
+     End If
+  ElseIf  ('ZoneOccMode' <> 1) Then //1=Unoc
+      // Heating Airflow SP
+    If 'ZoneControlMode' = 1 Then //Heating
+      'HDav_LocSp' = Scale ('Zone_EffHtg', 0, 0, 'HDavMinHt_Sp', 100, EffPvMaxHt)
+      // Cooling Airflow
+    ElseIf  ('ZoneControlMode' = 2) Then //2 = Cooling
+      'HDav_LocSp' = Scale ('Zone_EffClg', 0, 0, 'HDavMinCl_Sp', 100, EffPvMaxCl)
+    Else
+      'HDav_LocSp' = 'HDavMinCl_Sp'
+    End If
+Else
+  If 'ZoneUnocHtCall' Then
+    'HDav_LocSp' = EffPvMaxHt
+  ElseIf  'ZoneUnocClCall' Then
+    'HDav_LocSp' = EffPvMaxCl
+  Else
+    'HDav_LocSp' = 0 //Unoc ventilation rate
+  End If
+End If

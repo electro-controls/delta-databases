@@ -1,0 +1,916 @@
+{
+  "displayName": "Temperature DegF Precon T2 Model 24 AIC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "aic,3"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-input-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Temperature DegF Precon T2 Model 24 AIC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "°F"
+  },
+  "max-value": {
+    "$base": "Real",
+    "value": "302"
+  },
+  "min-value": {
+    "$base": "Real",
+    "value": "-58"
+  },
+  "scale-range": {
+    "1": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": 0
+      },
+      "value": {
+        "$base": "Real",
+        "value": "302"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.2099"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "240"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.2256"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "235"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.2427"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "230"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "5": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.2613"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "225"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "6": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.2814"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "220"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "7": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.3034"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "215"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "8": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.3274"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "210"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "9": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.3535"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "205"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "10": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.3818"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "200"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "11": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.4127"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "195"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "12": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.4465"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "190"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "13": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.4833"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "185"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "14": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.5229"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "180"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "15": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.5666"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "175"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "16": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.614"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "170"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "17": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.6654"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "165"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "18": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.7214"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "160"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "19": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.782"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "155"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "20": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.8475"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "150"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "21": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.9187"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "145"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "22": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "0.9955"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "140"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "23": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "1.0784"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "135"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "24": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "1.1677"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "130"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "25": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "1.263"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "125"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "26": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "1.365"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "120"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "27": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "1.474"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "115"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "28": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "1.59"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "110"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "29": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "1.712"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "105"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "30": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "1.841"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "100"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "31": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "1.976"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "95"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "32": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "2.115"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "90"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "33": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "2.26"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "85"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "34": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "2.409"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "80"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "35": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "2.561"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "75"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "36": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "2.715"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "70"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "37": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "2.871"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "65"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "38": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "3.024"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "60"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "39": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "3.178"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "55"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "40": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "3.328"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "50"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "41": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "3.474"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "45"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "42": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "3.615"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "40"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "43": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "3.75"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "35"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "44": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "3.878"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "30"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "45": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "3.998"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "25"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "46": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.111"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "20"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "47": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.214"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "15"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "48": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.31"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "10"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "49": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.397"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "5"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "50": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.476"
+      },
+      "value": {
+        "$base": "Real",
+        "value": 0
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "51": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.546"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "-5"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "52": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.609"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "-10"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "53": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.665"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "-15"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "54": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.714"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "-20"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "55": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.758"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "-25"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "56": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.795"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "-30"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "57": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "4.828"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "-35"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "58": {
+      "$base": "Sequence",
+      "voltage": {
+        "$base": "Real",
+        "value": "5"
+      },
+      "value": {
+        "$base": "Real",
+        "value": "-58"
+      },
+      "adValue": {
+        "$base": "Unsigned",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "sort-required": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

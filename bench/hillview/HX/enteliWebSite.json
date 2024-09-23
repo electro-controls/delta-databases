@@ -1,0 +1,531 @@
+{
+  "name": "Bench",
+  "ipAddress": "http://localhost",
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 4399,
+      "objectId": "pg,3",
+      "objectName": "Critical_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/HX/devices/hillview_htx_collin (4399)/Critical_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "8/9/2024, 5:01:46 PM",
+      "templateTriggered": false
+    }
+  ],
+  "devices": [
+    {
+      "number": 4399,
+      "objects": [
+        {
+          "id": "aic,1",
+          "name": "Temperature DegF 10k Thermistor AIC",
+          "fileName": "Temperature DegF 10k Thermistor AIC",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "aic,42",
+          "name": "SM_PumpCurrent 0-5V AIC",
+          "fileName": "SM_PumpCurrent 0-5V AIC",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "ao,1",
+          "name": "HXFeedValve",
+          "fileName": "HXFeedValve",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "Active/Inactive BDC",
+          "fileName": "Active~Inactive BDC",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "bi,3",
+          "name": "HighTempLimit",
+          "fileName": "HighTempLimit",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "bo,2",
+          "name": "HXPumpEnable",
+          "fileName": "HXPumpEnable",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "dbi,4399",
+          "name": "Database Information 4399",
+          "fileName": "Database Information 4399",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 4399",
+          "fileName": "Data Exchange Settings 4399",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "device,4399",
+          "name": "hillview_htx_collin",
+          "fileName": "hillview_htx_collin",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "evc,3",
+          "name": "Security",
+          "fileName": "Security",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "evc,4",
+          "name": "Critical",
+          "fileName": "Critical",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 4399",
+          "fileName": "Event and Alarm Settings 4399",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 4399",
+          "fileName": "BACnet Settings 4399",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 4399",
+          "fileName": "Priority Names 4399",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "Critical_PG",
+          "fileName": "Critical_PG",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 4399",
+          "fileName": "Slave Device List 4399",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-08-09T22:37:50.826Z"
+        }
+      ]
+    },
+    {
+      "number": 4304,
+      "objects": [
+        {
+          "id": "ai,1",
+          "name": "HX_EWT",
+          "fileName": "HX_EWT",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "ai,2",
+          "name": "Pump_Status",
+          "fileName": "Pump_Status",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "ai,5",
+          "name": "Spa_Return_Temp",
+          "fileName": "Spa_Return_Temp",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "ai,6",
+          "name": "Spa_Supply_Temp",
+          "fileName": "Spa_Supply_Temp",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aic,1",
+          "name": "Temperature DegF 10k Thermistor AIC",
+          "fileName": "Temperature DegF 10k Thermistor AIC",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aic,2",
+          "name": "0_10_0_100%",
+          "fileName": "0_10_0_100%",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aic,3",
+          "name": "FlowSignal_AIC",
+          "fileName": "FlowSignal_AIC",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aic,11",
+          "name": "Amps 0-5vdc 0-60",
+          "fileName": "Amps 0-5vdc 0-60",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aic,41",
+          "name": "Pump_Current AIC",
+          "fileName": "Pump_Current AIC",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aic,43",
+          "name": "Senva10A AIC",
+          "fileName": "Senva10A AIC",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aic,44",
+          "name": "SenvaAmps60",
+          "fileName": "SenvaAmps60",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aic,45",
+          "name": "Senva0-5V 0-5 A AIC",
+          "fileName": "Senva0-5V 0-5 A AIC",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aic,46",
+          "name": "Senva5A AIC",
+          "fileName": "Senva5A AIC",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aic,47",
+          "name": "Senva20A AIC",
+          "fileName": "Senva20A AIC",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "ao,4",
+          "name": "HW_FeedValve",
+          "fileName": "HW_FeedValve",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aoc,2",
+          "name": "0_100_0_10vdc",
+          "fileName": "0_100_0_10vdc",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "aoc,5",
+          "name": "Valve_0_10vdc_0_100",
+          "fileName": "Valve_0_10vdc_0_100",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "av,1",
+          "name": "PoolHWR_Sp",
+          "fileName": "PoolHWR_Sp",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "av,2",
+          "name": "PoolHWS_EffSp",
+          "fileName": "PoolHWS_EffSp",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "av,3",
+          "name": "PoolHWS_LocSp",
+          "fileName": "PoolHWS_LocSp",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "av,4",
+          "name": "PoolHWS_RemSp",
+          "fileName": "PoolHWS_RemSp",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "av,5",
+          "name": "PoolHWSMax_Sp",
+          "fileName": "PoolHWSMax_Sp",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "av,10",
+          "name": "SystemRamp_Sp",
+          "fileName": "SystemRamp_Sp",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "av,11",
+          "name": "SystemRamp",
+          "fileName": "SystemRamp",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "av,91",
+          "name": "Eff_OAT",
+          "fileName": "Eff_OAT",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "Active/Inactive BDC",
+          "fileName": "Active~Inactive BDC",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "bdc,3",
+          "name": "Alarm/Normal BDC",
+          "fileName": "Alarm~Normal BDC",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "bi,3",
+          "name": "Hi_Temp_Limit",
+          "fileName": "Hi_Temp_Limit",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "bi,4",
+          "name": "Heat_Call",
+          "fileName": "Heat_Call",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "bmd,1",
+          "name": "BBMD List1 4304",
+          "fileName": "BBMD List1 4304",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "HX_Pump_Enable",
+          "fileName": "HX_Pump_Enable",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "bv,1",
+          "name": "PumpStatus",
+          "fileName": "PumpStatus",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "bv,11",
+          "name": "HighPoolLimit",
+          "fileName": "HighPoolLimit",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "co,1",
+          "name": "PoolHWR_CO",
+          "fileName": "PoolHWR_CO",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "co,2",
+          "name": "PoolHWS_CO",
+          "fileName": "PoolHWS_CO",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "dbi,4304",
+          "name": "Database Information 4304",
+          "fileName": "Database Information 4304",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "der,1",
+          "name": "DER1__1100_AV91_85_R",
+          "fileName": "DER1__1100_AV91_85_R",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 4304",
+          "fileName": "Data Exchange Settings 4304",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "device,4304",
+          "name": "POOL_HX1",
+          "fileName": "POOL_HX1",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 4304",
+          "fileName": "Event and Alarm Settings 4304",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "gw,1",
+          "name": "Modbus Gateway",
+          "fileName": "Modbus Gateway",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "ips,1",
+          "name": "Internet Protocol Settings",
+          "fileName": "Internet Protocol Settings",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "lcd,101",
+          "name": "LinkLCD1",
+          "fileName": "LinkLCD1",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "lnk,101",
+          "name": "LINKnet Device 1",
+          "fileName": "LINKnet Device 1",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "mic,2",
+          "name": "HWSystem MIC",
+          "fileName": "HWSystem MIC",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "mic,5",
+          "name": "OccMode MIC",
+          "fileName": "OccMode MIC",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 4304",
+          "fileName": "BACnet Settings 4304",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 4304",
+          "fileName": "Priority Names 4304",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "Steam_PG",
+          "fileName": "Steam_PG",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "pg,9",
+          "name": "Critical_PG",
+          "fileName": "Critical_PG",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 4304",
+          "fileName": "Slave Device List 4304",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-08-09T23:26:30.220Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "Pump_PG",
+          "fileName": "Pump_PG",
+          "lastUpdate": "2024-08-09T23:38:02.777Z"
+        }
+      ]
+    }
+  ]
+}

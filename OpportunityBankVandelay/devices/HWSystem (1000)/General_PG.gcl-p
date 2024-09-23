@@ -1,0 +1,28 @@
+If PowerUp Then
+  'Eff_OAT' = 32
+  'Rem_Demand' = - 1
+  'SystemEnable' = On
+  'HWS_Sp' = 180
+End If
+ 
+'MaxHWTemp' = Max ('HWS', 'HWR')
+
+'Eff_OAT' = '2000.Eff_OAT'
+
+
+//Power up defaults will be written to after power up or reset
+IfOnce PowerUp Then
+    'Uptime' = 0
+//The following releases any manual overrides on power up
+    ForAll BOPoints In "BO*:*"
+        Reset 'BOPoints'
+    End For
+    ForAll AOPoints In "AO*:*"
+        Reset 'AOPoints'
+    End For
+End If
+
+//Upime is for troubleshooting 
+DoEvery 1M
+'Uptime' = 'Uptime' + 1
+End Do

@@ -1,0 +1,63 @@
+{
+  "displayName": "RTE Fail Secure N/C Contact MIC",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "mic,11"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "multi-state-input-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "RTE Fail Secure N/C Contact MIC"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "state-text": {
+    "1": {
+      "$base": "String",
+      "value": "Door Closed"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Request to Exit"
+    },
+    "$base": "Array"
+  },
+  "voltage-range": {
+    "1": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": 0
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": "2.5"
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "lowerRange": {
+        "$base": "Real",
+        "value": "2.51"
+      },
+      "upperRange": {
+        "$base": "Real",
+        "value": "5"
+      }
+    },
+    "$base": "Array"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "accesscontrol"
+  }
+}

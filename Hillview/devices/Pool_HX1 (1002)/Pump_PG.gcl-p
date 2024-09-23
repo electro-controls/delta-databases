@@ -1,0 +1,7 @@
+If ('Heat_Call') Then
+    'HX_Pump_Enable' = On
+End If
+
+If 'Heat_Call' OffFor 2M Then
+    'HX_Pump_Enable' = Off
+End If

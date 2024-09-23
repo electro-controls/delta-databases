@@ -1,0 +1,21 @@
+//main page
+
+//call all other pages
+
+Call 'General_PG'
+Call 'FaultDetection_PG'
+
+Call 'CUH3_Critical_PG'
+Call 'CUH4_Critical_PG'
+
+Call 'CUH3_Fan_PG'
+Call 'CUH3_HWV_PG'
+Call 'CUH3_Zone_PG'
+Call 'CUH3_OccMode_PG'
+
+Call 'CUH4_Fan_PG'
+Call 'CUH4_HWV_PG'
+Call 'CUH4_Zone_PG'
+Call 'CUH4_OccMode_PG'
+
+//end of main page

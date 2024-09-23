@@ -1,0 +1,35 @@
+{
+  "displayName": "Open/Off",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "bdc,9"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "binary-device-configuration"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Open/Off"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "active-text": {
+    "$base": "String",
+    "value": "Open"
+  },
+  "inactive-text": {
+    "$base": "String",
+    "value": "Off"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": ""
+  }
+}

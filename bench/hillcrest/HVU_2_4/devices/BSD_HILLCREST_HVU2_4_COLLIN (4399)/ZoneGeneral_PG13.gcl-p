@@ -1,0 +1,25 @@
+'ZoneGeneral_PG13.Write_Priority' = 13
+//Power up defaults
+If PowerUp Then
+    'Zone_RemSchedule' = On
+    'Zone_RemSp' = - 1
+    'Zone_RemClg' = - 1
+    'Zone_RemHtg' = - 1
+    'DAT_RemSp' = - 1
+    'Zone_RemWarmCall' = Off
+    'Zone_RemPurgeCall' = Off
+    'ZoneTemp_RemAverage' = - 58
+End If
+IfOnce 'JaceCfail' Then
+    'Zone_RemSchedule' = On
+    'Zone_RemWarmCall' = Off
+    'Zone_RemPurgeCall' = Off
+End If
+
+
+//Effective values
+'Zone_EffTemp' = 'ZoneTemp_RemAverage'
+'RAT_Eff' = 'ZoneTemp_RemAverage'
+'DAT_Eff' = 'MAT_Eff'
+'MAT_Eff' = 'MAT' //Refernce MAT input when available. If no MAT then refernce DAT AI
+'ZoneIAQ_Eff' = 0 //Make this 0 if no CO2

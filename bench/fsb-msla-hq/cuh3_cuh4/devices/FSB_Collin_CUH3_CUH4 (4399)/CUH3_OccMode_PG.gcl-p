@@ -1,0 +1,31 @@
+  //control valve sequence
+
+If 'CUH3_PurgeHold' Then
+    'CUH3_HWMode' = Off
+  ElseIf  ('CUH3_ControlMode' = 2) Then //cooling
+    'CUH3_HWMode' = Off
+  ElseIf  ('CUH3_ControlMode' = 3) And ('CUH3_PrevControlMode' = 2) Then //deadband and previous cooling
+    'CUH3_HWMode' = Off
+  Else
+    'CUH3_HWMode' = On
+End If
+
+If ('CUH3_OccMode' = 6) Then //Purge
+    'CUH3_PurgeHold' = On
+End If
+
+If ('CUH3_OccMode' <> 6) OnFor 'CUH3_PurgeHoldDly_Sp':H Then
+    'CUH3_PurgeHold' = Off
+End If
+
+
+//HWV
+If 'CUH3_HWMode' Then
+    'CUH3_HWV' = 'CUH3_DATHtg_CO' * 'CUH3_HtgRamp' * 0.01 //DAT control when fan is running
+  ElseIf  'CUH3_HWMode' Then
+    'CUH3_HWV' = 'CUH3_EffZoneHtg' * 'CUH3_HtgRamp' * 0.01 //treat as fanless convector when fan switch is off
+  Else
+    'CUH3_HWV' = 0
+End If
+
+//end of HWV  page

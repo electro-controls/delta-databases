@@ -1,0 +1,813 @@
+{
+  "displayName": "GE_PQM1",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "gwt,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "gateway-translation-object"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "GE_PQM1"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "flag": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "interface-id": {
+    "$base": "Enumerated",
+    "value": "no-gateway"
+  },
+  "translations": {
+    "1": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,101"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "3"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1012"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": "7"
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "2": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,102"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "3"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1014"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": "7"
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "3": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,103"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "3"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1016"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": "7"
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "4": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,106"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "5"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1000"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "5": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,107"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "5"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1002"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "6": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,108"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "5"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1004"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "7": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,109"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "5"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1006"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "8": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,110"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "5"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1008"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "9": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,111"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "5"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1010"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "10": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,114"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "48"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1030"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "11": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,115"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "48"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1032"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "12": {
+      "$base": "Sequence",
+      "propertyID": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "reference": {
+        "$base": "Sequence",
+        "type": "0-BACnetObjectPropertyReference",
+        "objectIdentifier": {
+          "$base": "ObjectIdentifier",
+          "value": "analog-value,116"
+        },
+        "propertyIdentifier": {
+          "$base": "Enumerated",
+          "value": "present-value",
+          "type": "0-BACnetPropertyIdentifier"
+        }
+      },
+      "units": {
+        "$base": "Unsigned",
+        "value": "48"
+      },
+      "status": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "register": {
+        "$base": "Unsigned",
+        "value": "1034"
+      },
+      "registerCount": {
+        "$base": "Unsigned",
+        "value": "2"
+      },
+      "decodeFunction": {
+        "$base": "Enumerated",
+        "value": "float"
+      },
+      "memoryType": {
+        "$base": "Enumerated",
+        "value": "hold-register"
+      },
+      "readFlag": {
+        "$base": "Unsigned",
+        "value": "1"
+      },
+      "control1": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "control2": {
+        "$base": "Unsigned",
+        "value": 0
+      },
+      "covDetection": {
+        "$base": "Real",
+        "value": 0
+      }
+    },
+    "$base": "Array"
+  },
+  "names": {
+    "1": {
+      "$base": "String",
+      "value": "Current_PhaseA_PQM1"
+    },
+    "2": {
+      "$base": "String",
+      "value": "Current_PhaseB_PQM1"
+    },
+    "3": {
+      "$base": "String",
+      "value": "Current_PhaseC_PQM1"
+    },
+    "4": {
+      "$base": "String",
+      "value": "Volts_AN_PQM1"
+    },
+    "5": {
+      "$base": "String",
+      "value": "Volts_BN_PQM1"
+    },
+    "6": {
+      "$base": "String",
+      "value": "Volts_CN_PQM1"
+    },
+    "7": {
+      "$base": "String",
+      "value": "Volts_AB_PQM1"
+    },
+    "8": {
+      "$base": "String",
+      "value": "Volts_BC_PQM1"
+    },
+    "9": {
+      "$base": "String",
+      "value": "Volts_CA_PQM1"
+    },
+    "10": {
+      "$base": "String",
+      "value": "RealPowerA_PQM1"
+    },
+    "11": {
+      "$base": "String",
+      "value": "RealPowerB_PQM1"
+    },
+    "12": {
+      "$base": "String",
+      "value": "RealPowerC_PQM1"
+    },
+    "$base": "Array"
+  },
+  "create-all": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "multi-state-offset": {
+    "$base": "Unsigned",
+    "value": 0
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}

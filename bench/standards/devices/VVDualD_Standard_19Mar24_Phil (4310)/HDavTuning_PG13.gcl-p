@@ -1,0 +1,8 @@
+'HDavTuning_PG13.Write_Priority' = 13
+
+If PowerUp Or ('HDavTuningSensitivity_Sp' Changed) Then
+    'HDav_CO.Proportional_Constant' = Scale ('HDavTuningSensitivity_Sp', 0, 1, 'HDavKFactor' * 5, 100, 'HDavKFactor' * 0.5) //Proportional Band
+    'HDav_CO.Reset_Band' = 'HDav_CO.Proportional_Constant' * 0.3
+    'HDav_CO.Deadband' = Scale ('HDavTuningSensitivity_Sp', 0, 1, 'HDavMaxHt_Sp' * 0.1, 100, 'HDavMaxHt_Sp' * 0.02)
+End If
+     

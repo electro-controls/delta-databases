@@ -1,0 +1,64 @@
+//Pump sequence
+
+//manual off, lag assist, & pump calls:
+
+//determine if pumps are manually off in delta or tridium
+Variable HWP1ManualOff
+Variable HWP2ManualOff
+
+
+If Not 'HWP1_Enable.Priority_Array[5]' Then
+    HWP1ManualOff = On
+  ElseIf  Not 'HWP1_Enable.Priority_Array[8]' Then
+    HWP1ManualOff = On
+  Else
+    HWP1ManualOff = Off
+End If
+
+If Not 'HWP2_Enable.Priority_Array[5]' Then
+    HWP2ManualOff = On
+  ElseIf  Not 'HWP2_Enable.Priority_Array[8]' Then
+    HWP2ManualOff = On
+  Else
+    HWP2ManualOff = Off
+End If
+
+
+//turn on lag assist latch if lead pump has fully ramped and is pegged for 10min
+If (Not 'HWPLagAssist') And (('HWP1_Ramp' >= 100) Or ('HWP2_Ramp' >= 100)) And ('HWDp_CO' > 'PLagStart_Sp') And ('HWDp' < 0.9 * 'HWDp_Sp') OnFor 10M Then
+    'HWPLagAssist' = On
+End If
+
+If 'HWPLagAssist' And ('HWDp_CO' < 'PLagStop_Sp') OnFor 10M Then
+    'HWPLagAssist' = Off
+End If
+
+
+//HWP1 call
+If 'SystemEnable' And (('LeadPump' = 1) Or HWP2ManualOff Or 'HWP2_Fail' Or (('LeadPump' = 2) And 'HWPLagAssist')) Then
+    'HWP1_Call' = On
+End If
+
+If (('LeadPump' = 2) And (Not HWP2ManualOff) And (Not 'HWP2_Fail') And (Not 'HWPLagAssist')) Then
+    'HWP1_Call' = Off
+End If
+
+If 'SystemEnable' OffFor 15M Then
+    'HWP1_Call' = Off
+End If
+
+//P2 call
+If 'SystemEnable' And (('LeadPump' = 2) Or HWP1ManualOff Or 'HWP1_Fail' Or (('LeadPump' = 1) And 'HWPLagAssist')) Then
+    'HWP2_Call' = On
+End If
+
+If (('LeadPump' = 1) And (Not HWP1ManualOff) And (Not 'HWP1_Fail') And (Not 'HWPLagAssist')) Then
+    'HWP2_Call' = Off
+End If
+
+If 'SystemEnable' OffFor 15M Then
+    'HWP2_Call' = Off
+End If
+
+
+//pump sequence continued on PG7...

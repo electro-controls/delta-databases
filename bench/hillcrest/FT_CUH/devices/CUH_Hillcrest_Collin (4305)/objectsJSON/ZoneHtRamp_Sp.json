@@ -1,0 +1,79 @@
+{
+  "displayName": "ZoneHtRamp_Sp",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "analog-value,10120"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "analog-value"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "ZoneHtRamp_Sp"
+  },
+  "description": {
+    "$base": "String",
+    "value": "This is delay function that effects deadband transition times and a slow ramp when enetering the heating mode. This allows for smooth transitions from deadband to heating mode. Typical setting would be 120 - 300 seconds"
+  },
+  "flags": {
+    "$base": "BitString",
+    "value": "out-of-service"
+  },
+  "present-value": {
+    "$base": "Real",
+    "value": "120"
+  },
+  "gcl-value": {
+    "$base": "Real",
+    "value": 0
+  },
+  "status-flags": {
+    "$base": "BitString",
+    "value": "out-of-service"
+  },
+  "reset": {
+    "$base": "Boolean",
+    "value": 0
+  },
+  "units": {
+    "$base": "Enumerated",
+    "value": "s"
+  },
+  "event-state": {
+    "$base": "Enumerated",
+    "value": "normal"
+  },
+  "reliability": {
+    "$base": "Enumerated",
+    "value": "no-fault-detected"
+  },
+  "out-of-service": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "last-writer": {
+    "$base": "ObjectIdentifier",
+    "value": "device,4000748"
+  },
+  "time-of-last-write": {
+    "$base": "DateTime",
+    "value": "2023-08-23T09:41:23.600000-06:00"
+  },
+  "cov-increment": {
+    "$base": "Real",
+    "value": "1"
+  },
+  "fixed-point": {
+    "$base": "Boolean",
+    "value": "1"
+  },
+  "decimal-places": {
+    "$base": "Unsigned",
+    "value": "1"
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac"
+  }
+}
