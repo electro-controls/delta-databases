@@ -1,0 +1,30 @@
+//General page
+
+If PowerUp Then
+  'HWS_Sp' = 180 //assumed
+  'Eff_OAT' = 32
+  'Rem_OAT' = 150
+  'Rem_Demand' = - 1
+  'Rem_HWHeatCall' = On
+  'Rem_BuildingOcc' = On
+  'HWSystemMode' = 1
+  'OATInt1TimeLeft' = 0.5
+  'Uptime' = 0
+End If
+
+//uptime
+DoEvery 1M
+  'Uptime' = 'Uptime' + 1
+End Do
+
+//intercontroller links
+
+//allow remote override of OAT
+If 'Rem_OAT' < 140 Then
+    'Eff_OAT' = 'Rem_OAT'
+  Else
+    'Eff_OAT' = 'Loc_OAT'
+End If
+
+'Loc_OAT' = 'OAT'
+ //end of general page 

@@ -1,0 +1,121 @@
+//Snowmelt page
+
+ //smowmelt pump enable
+If ('SM_EffSnowMeltMode' <> 3) Then // not "inactive"
+    'SMP1_Enable' = On
+  Else
+    'SMP1_Enable' = Off
+End If
+
+//snowmelt pump status from binary input
+
+//zone HW valve logic
+If ('SM_EffSnowMeltMode' <> 3) Then // not "inactive"
+    'HWV' = 'SM_EWT_CO' * 'SMRampPct' * 0.01 //SM_EWT_CO * SMRampPct * 0.01
+  Else
+    'HWV' = 0
+End If
+
+If 'SM_HWHighLimit' Then
+    'SM_EWT_CO.Bias' = 1
+    'SMRampPct' = 0
+End If
+
+'SM_Delta' = Max (0, 'SW1_EWT' - 'SW1_LWT')
+
+//after ramp time, demand is based on slab temp 
+//limit slab demand to prevent shock as water delta T gets too high  
+'SMEffSlabDemand' = 'SMS_Slab_CO' * 'SM_Delta_CO' * 'SMRampPct' * 0.0001
+
+//ramp on zone demand
+If (('SM_EffSnowMeltMode' = 2) Or ('SM_EffSnowMeltMode' = 4) Or ('SM_EffSnowMeltMode' = 5)) And 'SM_OATCall' Then //active, idle, or FrzProt
+    DoEvery 10S
+    'SMRampPct' = Min (100, 'SMRampPct' + (100 / ('SMRampDly_Sp' * 6)))
+    End Do
+  Else
+    'SMRampPct' = 0
+    'SM_EWT_CO.Bias' = 1
+End If
+
+//OAT call and sensor queries
+
+//Snow Melt Call 
+IfOnce 'SM_Call' OnFor 10S Then
+    'SM_MeltMinOnLeft' = 'SM_MeltMinOnTime_Sp'
+End If
+DoEvery 15S
+    'SM_MeltMinOnLeft' = Max (0, ('SM_MeltMinOnLeft' - 0.25))
+End Do
+If 'SensorCall' Then
+    'SM_Call' = On
+End If
+If ('SM_MeltMinOnLeft' = 0) And (Not 'SensorCall') Then
+    'SM_Call' = Off
+End If
+
+If Not 'SM_OATCall' Then
+    'SM_MeltMinOnLeft' = 0
+    'SMIdleDlyTmLeft' = 0
+End If
+
+//idle mode
+ IfOnce (Not 'SM_Call') Then
+    'SM_IdleCall' = On
+    'SMIdleDlyTmLeft' = 'SMIdleDly_Sp'
+ End If
+ DoEvery 15S
+    'SMIdleDlyTmLeft' = Max (0, ('SMIdleDlyTmLeft' - 0.25))
+End Do
+
+ If ('SMIdleDlyTmLeft' = 0) Or 'SM_Call' Or 'SM_PipeFrzProtect' Or (Not 'SM_OATCall') Then
+    'SM_IdleCall' = Off
+ End If
+
+
+ //freeze protection
+ Variable PipeFrzInt As Integer
+ PipeFrzInt = Switch ( PipeFrzInt, 'Eff_OAT', 'SM_PipeFrzProtect_Sp', 'SM_PipeFrzProtect_Sp' + 5)
+ 
+If (Not 'SM_Call') And PipeFrzInt Then
+      'SM_PipeFrzProtect' = On
+    Else
+      'SM_PipeFrzProtect' = Off
+ End If
+
+//allow remote sp adjustment
+If 'SM_EWT_RemSp' >= 0 Then
+    'SM_EWT_EffSp' = Limit ('SM_EWT_RemSp', 'SM_PipeFrzProtect_Sp' + 10, 'SM_EWTMax_Sp')
+  Else
+    'SM_EWT_EffSp' = 'SM_EWT_LocSp'
+End If
+
+//local sp
+If ('SM_EffSnowMeltMode' = 2) Or ('SM_EffSnowMeltMode' = 4) Then //Snow Melt active or idle
+    'SM_EWT_LocSp' = Scale ('SMEffSlabDemand', 0, 0, 'SM_EWTMin_Sp', 100, 'SM_EWTMax_Sp')
+//   ElseIf  (SM_EffSnowMeltMode = 4) Then //Idle 
+//    SM_EWT_LocSp = SM_EWTMin_Sp
+   Else //Pipe freeze mode or Inactive
+    'SM_EWT_LocSp' = 'SM_PipeFrzProtect_Sp' + 40
+End If
+
+//mode  
+If 'SM_RemSnowMeltMode' = 2 Then //Manual Active
+    'SM_EffSnowMeltMode' = 2 //active
+  ElseIf  'SM_RemSnowMeltMode' = 3 Then //Manual Off
+    'SM_EffSnowMeltMode' = 3 //Inactive
+  ElseIf  'SM_RemSnowMeltMode' = 4 Then //Manual Idle
+    'SM_EffSnowMeltMode' = 4 //Idle
+  ElseIf  'SM_RemSnowMeltMode' = 5 Then //Manual FreezeProtect
+    'SM_EffSnowMeltMode' = 5 //Freeze Protect
+  ElseIf  'SM_Call' Then
+    'SM_EffSnowMeltMode' = 2 //active
+  ElseIf  'SM_IdleCall' Then
+    'SM_EffSnowMeltMode' = 4 //Idle
+  ElseIf  'SM_PipeFrzProtect' Then
+    'SM_EffSnowMeltMode' = 5 //Freeze protect mode
+  Else
+    'SM_EffSnowMeltMode' = 3 //Inactive
+End If
+
+
+//End of Program

@@ -1,0 +1,58 @@
+//Pump sequence continued from PG6...
+
+//enable, status, speed, ramps, failure, & flow interlock
+
+
+//enable pumps 
+
+If 'HWP1_Call' Then
+    'HWP1_Enable' = On
+End If
+
+If ('HWP1_Ramp' < 1) And (Not 'HWP1_Call') Then
+    'HWP1_Enable' = Off
+End If
+
+If 'SystemEnable' OffFor 2S Then //this is kind of redundant.  calls should be off from PG6,=then 5m;to ramp down 
+    'HWP1_Enable' = Off
+End If
+
+//pump status using CTs. confirm amp thresholds
+'HWP1_Status' = Switch ( 'HWP1_Status', 'P1_Status', 2, 1)
+
+//ramps
+Variable MaxRamp
+MaxRamp = Max ('HWP1_Ramp', 'HWP2_Ramp')
+
+If 'HWP1_Call' And 'HWP1_Status' Then
+    DoEvery 10S
+      'HWP1_Ramp' = Min (100, 'HWP1_Ramp' + (100 / ('PmpRamp_Sp' * 6))) //takes 2 min to ramp up from 0 to 100
+    End Do
+  Else
+    DoEvery 10S
+      'HWP1_Ramp' = Max (0, 'HWP1_Ramp' - (100 / ('PmpRamp_Sp' * 15))) //takes 5min to ramp down from 100 to 0
+    End Do
+End If
+
+//pump failure
+If ('HWP1_Enable' And (Not 'HWP1_Status')) OnFor 'PumpFailDly_Sp':S Then
+    'HWP1_Fail' = On
+  Else
+    'HWP1_Fail' = Off
+End If
+
+//flow interlock
+Variable DpFlow
+DpFlow = Switch ( DpFlow, 'HWDp', ('HWDp_Sp' * 0.15), ('HWDp_Sp' * 0.1))
+
+If ('HWP1_Status') And DpFlow Then
+    'SystemFlow' = On
+  Else
+    'SystemFlow' = Off
+End If
+
+If Not SystemFlow Then
+    HWDp_CO.Bias = 1
+End If
+
+//end of pump sequence 
