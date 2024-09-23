@@ -1,0 +1,25 @@
+//Pump sequence 
+
+//manual off, lag assist, & pump calls:              
+
+//determine if pumps are manually off in delta or tridium
+Variable HWP1ManualOff
+
+If Not 'HWP1_Enable.Priority_Array[5]' Then
+    HWP1ManualOff = On
+  ElseIf  Not 'HWP1_Enable.Priority_Array[8]' Then
+    HWP1ManualOff = On
+  Else
+    HWP1ManualOff = Off
+End If
+
+//HWP1 call
+If 'SystemEnable' And ('LeadPump' = 1) Then
+    'HWP1_Call' = On
+End If
+
+If 'SystemEnable' OffFor 15M Then
+    'HWP1_Call' = Off
+End If
+
+//pump sequence continued on PG7...

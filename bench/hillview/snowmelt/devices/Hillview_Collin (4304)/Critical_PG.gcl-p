@@ -1,0 +1,16 @@
+'Critical_PG.Write_Priority' = 4
+
+//xnowmelt zone high limit
+
+'SM_HWHighLimit' = Switch ( 'SM_HWHighLimit', 'SW1_EWT', 'SM_HiLimit_Sp', 'SM_EWTMax_Sp')
+
+If 'SM_HWHighLimit' Then
+    'HWV' = 0
+    'SMP1_Enable' = Off
+  Else
+    Relinquish 'HWV'
+    Relinquish 'SMP1_Enable'
+End If
+
+
+//end of critical page

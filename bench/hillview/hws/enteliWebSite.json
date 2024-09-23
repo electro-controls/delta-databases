@@ -1,0 +1,1159 @@
+{
+  "name": "Bench",
+  "ipAddress": "http://localhost",
+  "uploadQueue": [
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,1",
+      "objectName": "HWS",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/HWS.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:01:44 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,1",
+      "objectName": "HWST",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/HWST.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:02:18 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,101",
+      "objectName": "HWR_beforeBypass",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/HWR_beforeBypass.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:04:19 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,3",
+      "objectName": "OAT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/OAT.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:04:54 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,8",
+      "objectName": "BP1_Current",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/BP1_Current.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:11:14 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,4",
+      "objectName": "P1_Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/P1_Status.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:11:32 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "aic,8",
+      "objectName": "BP1_Current AIC",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/BP1_Current AIC.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:12:53 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bi,5",
+      "objectName": "B1_Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/B1_Status.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:14:18 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bo,101",
+      "objectName": "BP1_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/BP1_Enable.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:15:38 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "bo,1",
+      "objectName": "B1_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/B1_Enable.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:15:56 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ao,5",
+      "objectName": "Temp_Sp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/Temp_Sp.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:22:31 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ao,4",
+      "objectName": "P1_Pump_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/P1_Pump_Enable.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 3:23:12 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "ai,2",
+      "objectName": "HWRT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/HWRT.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:02:41 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "ai,7",
+      "objectName": "HWDp",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/HWDp.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:03:40 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "ai,9",
+      "objectName": "BP2_Current",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/BP2_Current.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:04:37 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "ai,10",
+      "objectName": "HWP1_Current",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/HWP1_Current.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:04:54 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "ai,11",
+      "objectName": "HWP2_Current",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/HWP2_Current.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:05:08 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "ai,12",
+      "objectName": "B2_LWT",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/B2_LWT.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:05:23 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "ai,102",
+      "objectName": "BoilerRmTempByPanel",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/BoilerRmTempByPanel.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:06:10 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bi,6",
+      "objectName": "CombDamper2_Status",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/CombDamper2_Status.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:08:53 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,1",
+      "objectName": "B1_Stg1",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/B1_Stg1.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:11:31 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,2",
+      "objectName": "B1_Stg2",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/B1_Stg2.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:11:57 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,3",
+      "objectName": "B1_Stg3",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/B1_Stg3.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:11:57 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,4",
+      "objectName": "B1_Stg4",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/B1_Stg4.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:11:57 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,5",
+      "objectName": "B2_Stg1",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/B2_Stg1.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:12:09 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,6",
+      "objectName": "B2_Stg2",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/B2_Stg2.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:12:09 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,7",
+      "objectName": "B2_Stg3",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/B2_Stg3.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:12:09 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,8",
+      "objectName": "B2_Stg4",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/B2_Stg4.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:12:09 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,102",
+      "objectName": "BP2_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/BP2_Enable.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:12:21 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,12",
+      "objectName": "CombDamper",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/CombDamper.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:12:50 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,10",
+      "objectName": "HWP1_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/HWP1_Enable.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:12:51 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "delete",
+      "device": 4304,
+      "objectId": "bo,11",
+      "objectName": "HWP2_Enable",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/objectsJSON/HWP2_Enable.json",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:12:57 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "create",
+      "device": 4304,
+      "objectId": "pg,8",
+      "objectName": "Pumps2_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/Pumps2_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:19:03 PM",
+      "templateTriggered": false
+    },
+    {
+      "action": "update",
+      "device": 4304,
+      "objectId": "pg,15",
+      "objectName": "Boiler_PG",
+      "siteName": "Bench",
+      "ipAddress": "http://localhost",
+      "uri": {
+        "$mid": 1,
+        "path": "/c:/Development/electro-controls/delta-databases/bench/hillview/hws/devices/Hillview_Collin (4304)/Boiler_PG.gcl-p",
+        "scheme": "file"
+      },
+      "date": "6/20/2024, 4:50:00 PM",
+      "templateTriggered": false
+    }
+  ],
+  "devices": [
+    {
+      "number": 4304,
+      "objects": [
+        {
+          "id": "ai,1",
+          "name": "HWST",
+          "fileName": "HWST",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "ai,2",
+          "name": "HWRT",
+          "fileName": "HWRT",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "ai,3",
+          "name": "OAT",
+          "fileName": "OAT",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "ai,4",
+          "name": "P1_Status",
+          "fileName": "P1_Status",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "aic,1",
+          "name": "Temperature DegF 10k Thermistor AIC",
+          "fileName": "Temperature DegF 10k Thermistor AIC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "aic,3",
+          "name": "HWDp AIC",
+          "fileName": "HWDp AIC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "aic,8",
+          "name": "P1_Status AIC",
+          "fileName": "P1_Status AIC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "aic,9",
+          "name": "BP2_Current AIC",
+          "fileName": "BP2_Current AIC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "aic,10",
+          "name": "HWP1_Current AIC",
+          "fileName": "HWP1_Current AIC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "aic,11",
+          "name": "HWP2_Current AIC",
+          "fileName": "HWP2_Current AIC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "ao,4",
+          "name": "P1_Pump_Enable",
+          "fileName": "P1_Pump_Enable",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "ao,5",
+          "name": "Temp_Sp",
+          "fileName": "Temp_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "aoc,1",
+          "name": "DP_ControlValve AIC",
+          "fileName": "DP_ControlValve AIC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "aoc,6",
+          "name": "HWP1_PumpSpeed_AOC",
+          "fileName": "HWP1_PumpSpeed_AOC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "aoc,7",
+          "name": "HWP2_PumpSpeed_AOC",
+          "fileName": "HWP2_PumpSpeed_AOC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,1",
+          "name": "HWS_Sp",
+          "fileName": "HWS_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,9",
+          "name": "SystemRamp_Sp",
+          "fileName": "SystemRamp_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,10",
+          "name": "PmpRamp_Sp",
+          "fileName": "PmpRamp_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,11",
+          "name": "HWP1_Ramp",
+          "fileName": "HWP1_Ramp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,12",
+          "name": "HWP2_Ramp",
+          "fileName": "HWP2_Ramp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,15",
+          "name": "PumpFailDly_Sp",
+          "fileName": "PumpFailDly_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,16",
+          "name": "MaxHWTemp",
+          "fileName": "MaxHWTemp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,17",
+          "name": "B1_LWT_Limit_Sp",
+          "fileName": "B1_LWT_Limit_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,18",
+          "name": "B2_LWT_Limit_Sp",
+          "fileName": "B2_LWT_Limit_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,22",
+          "name": "HWDp_Sp",
+          "fileName": "HWDp_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,30",
+          "name": "InterstageDly_Sp",
+          "fileName": "InterstageDly_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,41",
+          "name": "Eff_Demand",
+          "fileName": "Eff_Demand",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,42",
+          "name": "Loc_Demand",
+          "fileName": "Loc_Demand",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,43",
+          "name": "Rem_Demand",
+          "fileName": "Rem_Demand",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,51",
+          "name": "OATInt1_Sp",
+          "fileName": "OATInt1_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,52",
+          "name": "OATInt2_Sp",
+          "fileName": "OATInt2_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,53",
+          "name": "OATDelayInt1_Sp",
+          "fileName": "OATDelayInt1_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,54",
+          "name": "OATInt1TimeLeft",
+          "fileName": "OATInt1TimeLeft",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,61",
+          "name": "PLagStart_Sp",
+          "fileName": "PLagStart_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,62",
+          "name": "PLagStop_Sp",
+          "fileName": "PLagStop_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,80",
+          "name": "BoilerLagDly_Sp",
+          "fileName": "BoilerLagDly_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,81",
+          "name": "BoilerLagStart_Sp",
+          "fileName": "BoilerLagStart_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,82",
+          "name": "BoilerLagStop_Sp",
+          "fileName": "BoilerLagStop_Sp",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,91",
+          "name": "Eff_OAT",
+          "fileName": "Eff_OAT",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,92",
+          "name": "Loc_OAT",
+          "fileName": "Loc_OAT",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "av,93",
+          "name": "Rem_OAT",
+          "fileName": "Rem_OAT",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bdc,2",
+          "name": "Active~Inactive BDC",
+          "fileName": "Active~Inactive BDC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bdc,3",
+          "name": "Alarm~Normal BDC",
+          "fileName": "Alarm~Normal BDC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bdc,4",
+          "name": "Open~Close BDC",
+          "fileName": "Open~Close BDC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bi,5",
+          "name": "B1_Status",
+          "fileName": "B1_Status",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bo,1",
+          "name": "B1_Enable",
+          "fileName": "B1_Enable",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,1",
+          "name": "SystemEnable",
+          "fileName": "SystemEnable",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,5",
+          "name": "SystemFlow",
+          "fileName": "SystemFlow",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,11",
+          "name": "HWP1_Fail",
+          "fileName": "HWP1_Fail",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,12",
+          "name": "HWP2_Fail",
+          "fileName": "HWP2_Fail",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,17",
+          "name": "HWP1_Call",
+          "fileName": "HWP1_Call",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,18",
+          "name": "HWP2_Call",
+          "fileName": "HWP2_Call",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,21",
+          "name": "HWP1_Status",
+          "fileName": "HWP1_Status",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,22",
+          "name": "HWP2_Status",
+          "fileName": "HWP2_Status",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,24",
+          "name": "HWHighLimit",
+          "fileName": "HWHighLimit",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,31",
+          "name": "BP1_Status",
+          "fileName": "BP1_Status",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,32",
+          "name": "BP2_Status",
+          "fileName": "BP2_Status",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,50",
+          "name": "Rem_HWHeatCall",
+          "fileName": "Rem_HWHeatCall",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,51",
+          "name": "OATInt1",
+          "fileName": "OATInt1",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,52",
+          "name": "OATInt2",
+          "fileName": "OATInt2",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,53",
+          "name": "Rem_BuildingOcc",
+          "fileName": "Rem_BuildingOcc",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "bv,61",
+          "name": "HWPLagAssist",
+          "fileName": "HWPLagAssist",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "co,1",
+          "name": "HWS_CO",
+          "fileName": "HWS_CO",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "co,20",
+          "name": "HWDp_CO",
+          "fileName": "HWDp_CO",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "co,31",
+          "name": "B1_LWT_Limit_CO",
+          "fileName": "B1_LWT_Limit_CO",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "co,32",
+          "name": "B2_LWT_Limit_CO",
+          "fileName": "B2_LWT_Limit_CO",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "dbi,4304",
+          "name": "Database Information 4304",
+          "fileName": "Database Information 4304",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "des,1",
+          "name": "Data Exchange Settings 4304",
+          "fileName": "Data Exchange Settings 4304",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "device,4304",
+          "name": "Hillview_Collin",
+          "fileName": "Hillview_Collin",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "evc,1",
+          "name": "Maintenance",
+          "fileName": "Maintenance",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "evc,2",
+          "name": "Network",
+          "fileName": "Network",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "evc,4",
+          "name": "Critical",
+          "fileName": "Critical",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "evc,5",
+          "name": "Notification",
+          "fileName": "Notification",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "evc,6",
+          "name": "Fire",
+          "fileName": "Fire",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "evc,7",
+          "name": "Access Control Event",
+          "fileName": "Access Control Event",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "evc,8",
+          "name": "Access Control Alarm",
+          "fileName": "Access Control Alarm",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "evc,9",
+          "name": "Archival",
+          "fileName": "Archival",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "evs,1",
+          "name": "Event and Alarm Settings 4304",
+          "fileName": "Event and Alarm Settings 4304",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "file,1",
+          "name": "Database Transfer File",
+          "fileName": "Database Transfer File",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "gwt,1",
+          "name": "GE_PQM1",
+          "fileName": "GE_PQM1",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "lcd,101",
+          "name": "LinkLCD1",
+          "fileName": "LinkLCD1",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "lnk,101",
+          "name": "LINKnet Device 1",
+          "fileName": "LINKnet Device 1",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "mic,2",
+          "name": "HWSystem MIC",
+          "fileName": "HWSystem MIC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "mic,19",
+          "name": "FaultDetection_MIC",
+          "fileName": "FaultDetection_MIC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "mic,23",
+          "name": "LeadPump MIC",
+          "fileName": "LeadPump MIC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "mic,50",
+          "name": "LeadBoiler MIC",
+          "fileName": "LeadBoiler MIC",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "mv,2",
+          "name": "HWSystemMode",
+          "fileName": "HWSystemMode",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "mv,50",
+          "name": "LeadBoiler",
+          "fileName": "LeadBoiler",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "mv,60",
+          "name": "LeadPump",
+          "fileName": "LeadPump",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "mv,98",
+          "name": "ControllerFault",
+          "fileName": "ControllerFault",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "net,1",
+          "name": "BACnet Settings 4304",
+          "fileName": "BACnet Settings 4304",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "pan,1",
+          "name": "Priority Names 4304",
+          "fileName": "Priority Names 4304",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "sdl,1",
+          "name": "Slave Device List 4304",
+          "fileName": "Slave Device List 4304",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "sua,1",
+          "name": "DELTA",
+          "fileName": "DELTA",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "sug,1",
+          "name": "Administrator",
+          "fileName": "Administrator",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "tl,1",
+          "name": "HWS_TL",
+          "fileName": "HWS_TL",
+          "lastUpdate": "2024-06-20T22:21:31.232Z"
+        },
+        {
+          "id": "pg,15",
+          "name": "Boiler_PG",
+          "fileName": "Boiler_PG",
+          "lastUpdate": "2024-06-20T22:43:42.550Z"
+        },
+        {
+          "id": "pg,1",
+          "name": "Main_PG",
+          "fileName": "Main_PG",
+          "lastUpdate": "2024-06-20T22:43:57.860Z"
+        },
+        {
+          "id": "pg,2",
+          "name": "Critical_PG",
+          "fileName": "Critical_PG",
+          "lastUpdate": "2024-06-20T22:44:05.728Z"
+        },
+        {
+          "id": "pg,3",
+          "name": "FaultDetection_PG",
+          "fileName": "FaultDetection_PG",
+          "lastUpdate": "2024-06-20T22:44:12.908Z"
+        },
+        {
+          "id": "pg,4",
+          "name": "General_PG",
+          "fileName": "General_PG",
+          "lastUpdate": "2024-06-20T22:44:16.801Z"
+        },
+        {
+          "id": "pg,5",
+          "name": "HWSystem_PG",
+          "fileName": "HWSystem_PG",
+          "lastUpdate": "2024-06-20T22:44:19.439Z"
+        },
+        {
+          "id": "pg,6",
+          "name": "Pumps_PG",
+          "fileName": "Pumps_PG",
+          "lastUpdate": "2024-06-20T22:44:22.681Z"
+        },
+        {
+          "id": "pg,7",
+          "name": "Pumps2_PG",
+          "fileName": "Pumps2_PG",
+          "lastUpdate": "2024-06-20T22:44:25.109Z"
+        },
+        {
+          "id": "av,98",
+          "name": "Uptime",
+          "fileName": "Uptime",
+          "lastUpdate": "2024-06-20T22:54:29.552Z"
+        },
+        {
+          "id": "bv,2",
+          "name": "HWP1_Enable",
+          "fileName": "HWP1_Enable",
+          "lastUpdate": "2024-06-20T23:07:01.159Z"
+        }
+      ]
+    }
+  ]
+}

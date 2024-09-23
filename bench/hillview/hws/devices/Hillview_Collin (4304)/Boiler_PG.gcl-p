@@ -1,0 +1,32 @@
+//Boiler sequence
+Variable Lead1
+Variable BoilerDemand
+Variable B1Call As Integer
+
+If Lag2Latch Then
+  Lead1 = BoilerDemand
+  BoilerDemand = Scale ('Eff_Demand', 0, 0, 0, 100, 100)
+Else
+  Lead1 = BoilerDemand
+  BoilerDemand = Scale ('Eff_Demand', 0, 0, 0, 50, 100)
+End If
+
+//boiler fire rate          
+Variable B1Rate
+
+B1Rate = ('B1_LWT_Limit_CO' / 100) * Scale (Lead1, 0, 0, 0, 100, 100)
+B1Call = Switch ( B1Call, Lead1, 12, 1)
+
+//boiler pump enable
+If B1Call Then
+    'B1_Enable' = On
+End If
+
+If B1Call OffFor 5M Then
+    'B1_Enable' = Off
+End If
+
+//boiler pump status
+'BP1_Status' = Switch ( 'BP1_Status', 'B1_Status', 1, 0.5) //confirm threshold in field
+         
+//end of boiler page

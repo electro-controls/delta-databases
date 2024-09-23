@@ -1,0 +1,32 @@
+{
+  "displayName": "Administrator",
+  "object-identifier": {
+    "$base": "ObjectIdentifier",
+    "value": "sug,1"
+  },
+  "object-type": {
+    "$base": "Enumerated",
+    "value": "system-user-group"
+  },
+  "object-name": {
+    "$base": "String",
+    "value": "Administrator"
+  },
+  "description": {
+    "$base": "String",
+    "value": ""
+  },
+  "hal-flags": {
+    "$base": "BitString",
+    "value": "hvac;accesscontrol;lighting"
+  },
+  "devices-restriction": {
+    "$base": "Array"
+  },
+  "v2-obj-restriction": {
+    "$base": "Array"
+  },
+  "v3-obj-restriction": {
+    "$base": "Array"
+  }
+}
